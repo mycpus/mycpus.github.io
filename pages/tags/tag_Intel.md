@@ -1,8 +1,8 @@
 ---
-title: "Formatting pages"
-tagName: formatting
+title: "Intel pages"
+tagName: Intel
 search: exclude
-permalink: tag_formatting.html
+permalink: tag_Intel.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
