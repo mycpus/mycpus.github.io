@@ -3,13 +3,13 @@ repository: tomjoht/documentation-theme-jekyll
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Jekyll Documentation Theme
+topnav_title: Honux's CPU Museum
 # this appears on the top navigation bar next to the home button
 
-site_title: Jekyll theme for documentation
+site_title: CPUs in Honux's collection
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Copyright 2021 Google LLC
+company_name: Copyright 2022 Honux
 # this appears in the footer
 
 github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
@@ -18,7 +18,7 @@ github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
 # if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-google_analytics: UA-66296557-1
+google_analytics: 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 host: 127.0.0.1
@@ -33,9 +33,9 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Jekyll documentation theme
+feedback_subject_line: Honux's CPU Museum
 
-feedback_email: tomjoht@gmail.com
+feedback_email: tonyangell@163.com
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -106,7 +106,7 @@ sidebars:
 - product2_sidebar
 - other
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "CPU cpu-collection cpu-galerie cpu-world 古董CPU收藏 CPU博物馆 传统型CPU 中央处理器"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
@@ -117,4 +117,4 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 github: [metadata]
 
 
-# Copyright 2021 Google LLC
+# Copyright 2022 Honux
