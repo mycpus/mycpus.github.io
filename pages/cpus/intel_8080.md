@@ -45,7 +45,7 @@ Versions and speed:
 
 ### Intel MD8080A/B
 
-![Intel-MD8080A/B 正面](/images/cpus/intel/Intel_MD8080AB_1.jpg#pic_left =100x)
-![Intel-MD8080A/B 反面](/images/cpus/intel/Intel_MD8080AB_2.jpg#pic_left =100x)
+![Intel-MD8080A/B 正面](/images/cpus/intel/Intel_MD8080AB_1.jpg)
+![Intel-MD8080A/B 反面](/images/cpus/intel/Intel_MD8080AB_2.jpg)
 
 {% include links.html %}
