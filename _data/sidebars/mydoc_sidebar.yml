@@ -120,6 +120,7 @@ entries:
       url: /mydoc_release_notes_50.html
       output: web, pdf
 
+
   - title: AMD
     output: web, pdf
     folderitems:
@@ -164,6 +165,7 @@ entries:
       url: /mydoc_install_jekyll_on_windows.html
       output: web, pdf
 
+
   - title: Cyrix
     output: web, pdf
 
@@ -196,6 +198,7 @@ entries:
       url: /mydoc_webstorm_text_editor.html
       output: web, pdf
 
+
   - title: VIA
     output: web, pdf
 
@@ -212,6 +215,7 @@ entries:
       url: /mydoc_tags.html
       output: web, pdf
 
+
   - title: Texas Instruments   
     output: web, pdf
 
@@ -220,6 +224,7 @@ entries:
       url: /mydoc_adding_tooltips.html
       output: web, pdf
 
+
   - title: STMicroelectronics N.V.
     output: web, pdf
 
@@ -227,6 +232,7 @@ entries:
     - title: 486
       url: /mydoc_build_arguments.html
       output: web, pdf
+
 
   - title: Geode
     output: web, pdf
@@ -240,6 +246,7 @@ entries:
       url: /mydoc_glossary.html
       output: web, pdf
 
+
   - title: IBM
     output: web, pdf
 
@@ -252,14 +259,15 @@ entries:
       url: /mydoc_troubleshooting.html
       output: web, pdf
 
+
   - title: IDT
     output: web, pdf
 
     folderitems:
-
     - title: WinChip
       url: /mydoc_troubleshooting.html
       output: web, pdf
+
 
   - title: MOTOROLA
     output: web, pdf
@@ -269,6 +277,7 @@ entries:
       url: /mydoc_troubleshooting.html
       output: web, pdf
 
+
   - title: Transmeta
     output: web, pdf
 
@@ -277,6 +286,7 @@ entries:
       url: /mydoc_troubleshooting.html
       output: web, pdf
 
+
   - title: QUALCOMM
     output: web, pdf
 
@@ -284,6 +294,7 @@ entries:
     - title: MSM8928
       url: /mydoc_troubleshooting.html
       output: web, pdf
+
 
   - title: Tag archives
     output: web
