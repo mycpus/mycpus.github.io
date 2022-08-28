@@ -77,51 +77,51 @@ entries:
       output: web, pdf
 
     - title: i386
-      url: /mydoc_release_notes_50.html
+      url: /intel_i386.html
       output: web, pdf
 
     - title: i486
-      url: /mydoc_release_notes_50.html
+      url: /intel_i486.html
       output: web, pdf
 
     - title: i486 OverDrive
-      url: /mydoc_release_notes_50.html
+      url: /intel_i386OverDrive.html
       output: web, pdf
 
     - title: Pentium
-      url: /mydoc_release_notes_50.html
+      url: /intel_Pentium.html
       output: web, pdf
 
     - title: Pentium MMX
-      url: /mydoc_release_notes_50.html
+      url: /intel_PentiumMMX.html
       output: web, pdf
 
     - title: Pentium Pro
-      url: /mydoc_release_notes_50.html
+      url: /intel_PentiumPro.html
       output: web, pdf
 
     - title: Pentium II
-      url: /mydoc_release_notes_50.html
+      url: /intel_PentiumII.html
       output: web, pdf
 
     - title: Pentium III
-      url: /mydoc_release_notes_50.html
+      url: /intel_PentiumIII.html
       output: web, pdf
 
     - title: Pentium 4
-      url: /mydoc_release_notes_50.html
+      url: /intel_Pentium4.html
       output: web, pdf
 
     - title: i860
-      url: /mydoc_release_notes_50.html
+      url: /intel_i860.html
       output: web, pdf
 
-    - title: i890
-      url: /mydoc_release_notes_50.html
+    - title: i960
+      url: /intel_i960.html
       output: web, pdf
 
     - title: FPU
-      url: /mydoc_release_notes_50.html
+      url: /intel_FPU.html
       output: web, pdf
 
 
