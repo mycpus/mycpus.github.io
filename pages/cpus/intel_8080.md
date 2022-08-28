@@ -27,6 +27,7 @@ The 8080 was very popular and was second-sourced by various manufacturers. Clone
  
 Versions and speed:
 | Versions | Speed |
+| ------ | ------ |
 | 8080/8080A | 2.0 MHz |
 | 8080A-1 | 3.125 MHz |
 | 8080A-2 | 2.67 MHz |
