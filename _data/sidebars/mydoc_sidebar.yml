@@ -49,7 +49,7 @@ entries:
     folderitems:
 
     - title: 8080
-      url: /mydoc_release_notes_60.html
+      url: /intel_8080.html
       output: web, pdf
 
     - title: 8085
