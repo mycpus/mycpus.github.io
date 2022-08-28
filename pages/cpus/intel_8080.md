@@ -45,6 +45,18 @@ Versions and speed:
 
 ### Intel MD8080A/B
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-pin PDIP |
+| CPU 时钟 | 2.0 MHz |
+| 内部总线宽度 | 8 Bit |
+| 外部总线宽度 | 8 Bit |
+| 地址总线宽度 | 16 Bit |
+| 晶体管 | 6000 |
+| 技术 | NMOS 6.0 µm |
+| 电压 | 5 Volt (12V & -5V) |
+| 生产日期 | 35/1982 |
+
 ![Intel-MD8080A/B 正面](/images/cpus/intel/Intel_MD8080AB_1.jpg)
 ![Intel-MD8080A/B 反面](/images/cpus/intel/Intel_MD8080AB_2.jpg)
 
