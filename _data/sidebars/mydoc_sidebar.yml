@@ -77,11 +77,11 @@ entries:
       output: web, pdf
 
     - title: i386
-      url: /intel_i386.html
+      url: /intel_80386.html
       output: web, pdf
 
     - title: i486
-      url: /intel_i486.html
+      url: /intel_80486.html
       output: web, pdf
 
     - title: i486 OverDrive
