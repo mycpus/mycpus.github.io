@@ -57,7 +57,7 @@ Versions and speed:
 | 电压 | 5 Volt (12V & -5V) |
 | 生产日期 | 35/1982 |
 
-![Intel-MD8080A/B 正面](/images/cpus/intel/Intel_MD8080AB_1.jpg)
-![Intel-MD8080A/B 反面](/images/cpus/intel/Intel_MD8080AB_2.jpg)
+![Intel-MD8080A/B 正面](/images/cpus/Intel/Intel_MD8080AB_1.jpg)
+![Intel-MD8080A/B 反面](/images/cpus/Intel/Intel_MD8080AB_2.jpg)
 
 {% include links.html %}
