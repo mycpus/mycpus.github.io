@@ -69,11 +69,11 @@ entries:
       output: web, pdf
 
     - title: 80188
-      url: /mydoc_release_notes_50.html
+      url: /intel_80188.html
       output: web, pdf
 
     - title: 80286
-      url: /mydoc_release_notes_50.html
+      url: /intel_80286.html
       output: web, pdf
 
     - title: i386
