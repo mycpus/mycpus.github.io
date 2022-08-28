@@ -48,11 +48,67 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 6.0 Release notes
+    - title: 8080
       url: /mydoc_release_notes_60.html
       output: web, pdf
 
-    - title: 5.0 Release notes
+    - title: 8085
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 8086
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 8088
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 80186
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 80188
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 80286
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 80386
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 80486
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: 80486
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: Pentium
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: Pentium MMX
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: Pentium Pro
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: Pentium II
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: Pentium III
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
+    - title: Pentium 4
       url: /mydoc_release_notes_50.html
       output: web, pdf
 
@@ -175,18 +231,6 @@ entries:
     - title: Workflow maps
       url: /mydoc_workflow_maps.html
       output: web, pdf
-
-  - title: Handling reviews
-    output: web, pdf
-
-    folderitems:
-    - title: Commenting on files
-      url: /mydoc_commenting_on_files.html
-      output: web, pdf
-
-#    - title: Git collaboration
-#      url: /mydoc_git_collaboration
-#      output: web, pdf
 
   - title: STMicroelectronics N.V.
     output: web, pdf
