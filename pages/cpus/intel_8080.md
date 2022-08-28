@@ -30,7 +30,9 @@ Versions and speed:
 8080A-1: 3.125 MHz
 8080A-2: 2.67 MHz
 
-## Intel P8088-2
+## 我的收藏
+
+#### Intel P8088-2
 
 
 {% include links.html %}
