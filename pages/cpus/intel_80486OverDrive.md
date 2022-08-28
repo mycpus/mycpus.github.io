@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Intel 80486 OverDrive
 
- Intel 486 OverDrive是提供80486使用者升级选择（不过还是升级到80486等级）的中央处理器晶片（CPU），基本上其作用原理就是比原来使用更高的倍频。ODP需要使用特殊的转接插座，而ODPR则是将原来的处理器直接换掉（所以针角数是一样的）。Intel 486 OverDrive 早期的命名是以内频为命名基准，所以以ODPR486DX-25来说，其速度为50 Mhz，后来Intel 才使用新的命名方法。 Intel OverDriver DX4 100Mhz Mechanical Sample也是非常少见的藏品，不过以它连工作时脉都标上去了的情况来看，这颗机械样品应该是可以运作的。
+ Intel 486 OverDrive是提供80486使用者升级选择（不过还是升级到80486等级）的中央处理器晶片（CPU），基本上其作用原理就是比原来使用更高的倍频。ODP需要使用特殊的转接插座，而ODPR则是将原来的处理器直接换掉（所以针角数是一样的）。Intel 486 OverDrive 早期的命名是以内频为命名基准，所以以ODPR486DX-25来说，其速度为50 MHz，后来Intel 才使用新的命名方法。 Intel OverDriver DX4 100MHz Mechanical Sample也是非常少见的藏品，不过以它连工作时脉都标上去了的情况来看，这颗机械样品应该是可以运作的。
 
 ## Introduction
 
