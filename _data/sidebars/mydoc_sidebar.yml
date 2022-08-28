@@ -84,8 +84,8 @@ entries:
       url: /intel_80486.html
       output: web, pdf
 
-    - title: i486 OverDrive
-      url: /intel_i386OverDrive.html
+    - title: 80486 OverDrive
+      url: /intel_80486OverDrive.html
       output: web, pdf
 
     - title: Pentium
