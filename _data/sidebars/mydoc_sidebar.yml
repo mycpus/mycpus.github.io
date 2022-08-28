@@ -76,11 +76,11 @@ entries:
       url: /intel_80286.html
       output: web, pdf
 
-    - title: i386
+    - title: 80386
       url: /intel_80386.html
       output: web, pdf
 
-    - title: i486
+    - title: 80486
       url: /intel_80486.html
       output: web, pdf
 
@@ -112,12 +112,12 @@ entries:
       url: /intel_Pentium4.html
       output: web, pdf
 
-    - title: i860
-      url: /intel_i860.html
+    - title: 80860
+      url: /intel_80860.html
       output: web, pdf
 
-    - title: i960
-      url: /intel_i960.html
+    - title: 80960
+      url: /intel_80960.html
       output: web, pdf
 
     - title: FPU
