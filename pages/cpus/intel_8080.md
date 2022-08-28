@@ -2,7 +2,7 @@
 title: The Intel 8080 Processor
 tags: [intel, 8080]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
-last_updated: July 16, 2016
+last_updated: Aug 28, 2022
 summary: ""
 sidebar: mydoc_sidebar
 permalink: intel_8080.html
@@ -12,6 +12,14 @@ folder: cpus
 ## 关于 Intel 8080
 
 Intel 8080 为 8008 的加强版中央处理器晶片（CPU），其运算速度达到 2 Mhz，有直接记忆体定址、支援超过七层堆叠、并支援到 64KB 的记忆体的特点。 8080 被用于当时一种品牌为 Altair （牵牛星，这个名字来源于当时电视剧「星际奇航」的企业号太空船的最终目的地）的电脑上。这也是有史以来第一个知名的个人电脑。当时这种电脑的套件售价是 395 美元，短短数月的时间里面，销售业绩达到了数万部，创造了个人电脑销售历史的一个里程碑。比尔‧盖兹（Bill Gates）当初就是在杂志上看到使用 Intel 8080 当中央处理器晶片（CPU）的 Altair 8080 电脑才决定来帮这款电脑设计 BASIC 程式语言，当然后来的微软霸业也就是从这台电脑开始的。 Intel C8080A 为 Intel C8080 的改良版。P8080A 为 8008 的量产版。实际上，由于这款处理器的成功，很多厂商也投入生产这款处理器，包括日本、俄罗斯、匈牙利、罗马尼亚以及波兰都有生产这款微处理器。
+
+关键数据：
+- 6,000 个晶体管
+- 6.0 µm NMOS 制造技术
+- 8 位内部数据总线
+- 8 位外部数据总线
+- 16 位地址总线
+- 支持高达 64 KB 的内存
 
 ## Introduction
 
