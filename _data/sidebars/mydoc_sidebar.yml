@@ -53,19 +53,19 @@ entries:
       output: web, pdf
 
     - title: 8085
-      url: /mydoc_release_notes_50.html
+      url: /intel_8085.html
       output: web, pdf
 
     - title: 8086
-      url: /mydoc_release_notes_50.html
+      url: /intel_8086.html
       output: web, pdf
 
     - title: 8088
-      url: /mydoc_release_notes_50.html
+      url: /intel_8088.html
       output: web, pdf
 
     - title: 80186
-      url: /mydoc_release_notes_50.html
+      url: /intel_80186.html
       output: web, pdf
 
     - title: 80188
