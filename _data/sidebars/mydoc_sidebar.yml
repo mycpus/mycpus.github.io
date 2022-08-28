@@ -120,6 +120,10 @@ entries:
       url: /mydoc_release_notes_50.html
       output: web, pdf
 
+    - title: FPU
+      url: /mydoc_release_notes_50.html
+      output: web, pdf
+
 
   - title: AMD
     output: web, pdf
