@@ -40,8 +40,6 @@ On older versions Intel labeled the OverDrive chips with the external local bus 
 | 修订 | V4.0 |
 | 生产日期 | 24/1995 |
 
-An i486 DX2 manufactured by IBM.
-
 ![Intel OverDrive DX2ODPR66 (V4.0) 正面](/images/cpus/Intel/Intel_OverDrive_DX2ODPR66_V40_1.jpg)
 ![Intel OverDrive DX2ODPR66 (V4.0) 反面](/images/cpus/Intel/Intel_OverDrive_DX2ODPR66_V40_2.jpg)
 
