@@ -32,7 +32,7 @@ Versions and speed:
 
 ## 我的收藏
 
-#### Intel P8088-2
+#### Intel MD8080A/B
 
 
 {% include links.html %}
