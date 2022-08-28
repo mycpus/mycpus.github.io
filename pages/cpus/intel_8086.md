@@ -41,7 +41,7 @@ The 8086, officially called iAPX 86, is a 16-bit processor designed by Intel in 
 | 电压 | 5 Volt |
 | 生产日期 | 47/1985 |
 
-![Intel-P8085 正面](/images/cpus/Intel/Intel_P8085_1.jpg)
-![Intel-P8085 反面](/images/cpus/Intel/Intel_P8085_2.jpg)
+![Intel-P8086 正面](/images/cpus/Intel/Intel_P8086_1.jpg)
+![Intel-P8086 反面](/images/cpus/Intel/Intel_P8086_2.jpg)
 
 {% include links.html %}
