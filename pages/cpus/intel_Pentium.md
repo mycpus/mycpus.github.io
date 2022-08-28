@@ -13,6 +13,19 @@ folder: cpus
 
 1993年，英特尔发布了Pentium（俗称586）中央处理器晶片（CPU）。本来按照惯常的命名规律是80586，但是因为实际上「586」这样的数字不能注册成为商标使用，因此任何竞争对手都可以用586来扰乱消费市场。事实上在486发展末期，就已经有公司将486等级的产品标识成586来销售了。因此英特尔决定使用自创的品牌来作为新产品的商标——Pentium。第一代Pentium（50~60MHz）的工作电压仍然是5V，并使用Socket 4插槽介面。第二代Pentium(75MHz~)则把十年未变的工作电压降至3.3V，并使用Socket 5插槽介面。这也是英特尔第一次在同一产品线使用两种不同的插槽介面，当然这也造成旧插槽使用者升级的不便。Pentium是x86系列一大革新。其中电晶体数大幅提高并增强了浮点运算功能，不过Pentium刚推出的时候拥有浮点数除法不正确的错误（FDIV Bug），导致英特尔大量回收第一代产品（1994年十二月之前的产品）。Pentium 50Mhz也有这个FDIV错误，不过A80501-50 只是业界样本，从来没有在市场上出现过。
 
+Intel Pentium P5是英特尔的第 5 代 80x86 处理器。它于 1993 年 3 月 22 日上市。主板接口是专门开发的socket 4。从 Pentium P5 开始，所有 Intel 处理器都具有片上集成浮点单元。
+
+Intel Pentium P54 处理器于 1994 年 3 月 7 日推出。这些是 Pentium P5 的进一步发展，时钟频率从 75 MHz 到 200 MHz。P54使用socket 5作为主板接口，后来也使用了新的socket 7。
+
+关键数据：
+- P5 超标量微架构
+- 3,300,000 个晶体管
+- 64 位数据总线
+- 32 位地址总线
+- MMU（内存管理单元）
+- 16 KB L1 高速缓存（指令和数据高速缓存各 8 KB）
+- 支持至 4 GB 内存
+
 ## Introduction
 
 The Intel Pentium is a fifth-generation x86 architecture microprocessor, introduced on March 22, 1993. It is the successor to the 486 line. The Pentium was originally to be named 80586 or i586, but the name was changed to Pentium because numbers could not be trademarked. 586 is however, used in programming referring to all the early Pentium processors, and Pentium-like processors made by the Intel competition.
