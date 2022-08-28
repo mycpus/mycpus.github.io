@@ -9,11 +9,11 @@ permalink: intel_8080.html
 folder: cpus
 ---
 
-## 中文简介
+## 关于 Intel 8080
 
 Intel 8080 为 8008 的加强版中央处理器晶片（CPU），其运算速度达到 2 Mhz，有直接记忆体定址、支援超过七层堆叠、并支援到 64KB 的记忆体的特点。 8080 被用于当时一种品牌为 Altair （牵牛星，这个名字来源于当时电视剧「星际奇航」的企业号太空船的最终目的地）的电脑上。这也是有史以来第一个知名的个人电脑。当时这种电脑的套件售价是 395 美元，短短数月的时间里面，销售业绩达到了数万部，创造了个人电脑销售历史的一个里程碑。比尔‧盖兹（Bill Gates）当初就是在杂志上看到使用 Intel 8080 当中央处理器晶片（CPU）的 Altair 8080 电脑才决定来帮这款电脑设计 BASIC 程式语言，当然后来的微软霸业也就是从这台电脑开始的。 Intel C8080A 为 Intel C8080 的改良版。P8080A 为 8008 的量产版。实际上，由于这款处理器的成功，很多厂商也投入生产这款处理器，包括日本、俄罗斯、匈牙利、罗马尼亚以及波兰都有生产这款微处理器。
 
-## 一般性英文介绍
+## Introduction
 
 The Intel 8080 is an early 8-bit CPU, released in April 1974 running at 2 MHz, and is generally considered to be the first truly usable microprocessor CPU design. It is the successor to the Intel 8008, with which it was assembly language source-compatible because it used the same instruction set developed by Computer Terminal Corporation. The 8080's 40 pin DIP packaging permitted it to provide a 16-bit address bus and an 8-bit data bus, allowing access to 64 kilobytes of memory. It has seven 8-bit registers (six of which could be combined into three 16-bit registers), a 16-bit stack pointer to memory (replacing the 8008's internal stack), and a 16-bit program counter.
  
