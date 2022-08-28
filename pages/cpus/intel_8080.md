@@ -26,9 +26,9 @@ At Intel, the 8080 was followed by the compatible and electrically more elegant 
 The 8080 was very popular and was second-sourced by various manufacturers. Clones of the 8080 were also made in former Eastern Bloc countries like USSR, Poland, CSSR, Hungary and Romania.
  
 Versions and speed:
-8080/8080A: 2.0 MHz
-8080A-1: 3.125 MHz
-8080A-2: 2.67 MHz
+- 8080/8080A: 2.0 MHz
+- 8080A-1: 3.125 MHz
+- 8080A-2: 2.67 MHz
 
 ## 我的收藏
 
