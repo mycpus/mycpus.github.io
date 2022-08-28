@@ -41,5 +41,19 @@ The 8085 was produced at speeds ranging from 3 MHz to 6 MHz:
 
 ### Intel P8085
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-pin PDIP |
+| CPU 时钟 | 3.0 MHz |
+| 内部总线宽度 | 8 Bit |
+| 外部总线宽度 | 8 Bit |
+| 地址总线宽度 | 16 Bit |
+| 晶体管 | 6,500 |
+| 技术 | NMOS 3.0 µm |
+| 电压 | 5 Volt |
+| 生产日期 | 15/1978 |
+
+![Intel-P8085 正面](/images/cpus/Intel/Intel_P8085_1.jpg)
+![Intel-P8085 反面](/images/cpus/Intel/Intel_P8085_2.jpg)
 
 {% include links.html %}
