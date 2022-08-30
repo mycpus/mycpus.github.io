@@ -53,6 +53,7 @@ By early 1999, the Pentium III superseded the Pentium II.
 
 ![Intel Pentium II 400MHz 正面](/images/cpus/Intel/Intel_Pentium_II_400MHz_1.jpg)
 ![Intel Pentium II 400MHz 反面](/images/cpus/Intel/Intel_Pentium_II_400MHz_2.jpg)
+![Intel Pentium II 400MHz 侧面](/images/cpus/Intel/Intel_Pentium_II_400MHz_3.jpg)
 
 ### Intel Mobile Pentium II 366MHz
 
