@@ -54,7 +54,7 @@ By early 1999, the Pentium III superseded the Pentium II.
 ![Intel Pentium II 400MHz 正面](/images/cpus/Intel/Intel_Pentium_II_400MHz_1.jpg)
 ![Intel Pentium II 400MHz 反面](/images/cpus/Intel/Intel_Pentium_II_400MHz_2.jpg)
 
-### Intel Mobile Pentium II 366 MHz
+### Intel Mobile Pentium II 366MHz
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -66,12 +66,12 @@ By early 1999, the Pentium III superseded the Pentium II.
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 36 Bit |
 | Level1 Cache | 16+16 KB |
-| Level2 Cache | 525612 KB |
+| Level2 Cache | 256 KB |
 | 晶体管 | 27,400,000 |
 | 制造工艺 | 0.18 µm |
 | 步进 | SL3AG |
 
-![Intel Mobile Pentium II 366 MHz 正面](/images/cpus/Intel/Intel_Mobile_Pentium_II_366_MHz_1.jpg)
-![Intel Mobile Pentium II 366 MHz 反面](/images/cpus/Intel/Intel_Mobile_Pentium_II_366_MHz_2.jpg)
+![Intel Mobile Pentium II 366MHz 正面](/images/cpus/Intel/Intel_Mobile_Pentium_II_366MHz_1.jpg)
+![Intel Mobile Pentium II 366MHz 反面](/images/cpus/Intel/Intel_Mobile_Pentium_II_366MHz_2.jpg)
 
 {% include links.html %}
