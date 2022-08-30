@@ -120,6 +120,10 @@ entries:
       url: /intel_Pentium4Celeron.html
       output: web, pdf
 
+    - title: Pentium 4 Xeon
+      url: /intel_Pentium4Xeon.html
+      output: web, pdf
+
     - title: 80860
       url: /intel_80860.html
       output: web, pdf
