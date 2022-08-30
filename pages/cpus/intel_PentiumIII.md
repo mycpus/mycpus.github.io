@@ -50,6 +50,7 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 
 ![Intel Pentium III 500MHz 正面](/images/cpus/Intel/Intel_Pentium_III_500MHz_1.jpg)
 ![Intel Pentium III 500MHz 反面](/images/cpus/Intel/Intel_Pentium_III_500MHz_2.jpg)
+![Intel Pentium III 500MHz 侧面](/images/cpus/Intel/Intel_Pentium_III_500MHz_3.jpg)
 
 ### Intel Pentium III 866MHz
 
