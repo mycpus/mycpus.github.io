@@ -46,7 +46,7 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 | 电压(Core / I/O) | 2.0 / 3.3 V |
 | 步进 | SL35E |
 | Introduced | Feb. 26, 1999 |
-| 生产日期 | 12/2000 |
+| 生产日期 | 02/2000 |
 
 ![Intel Pentium III 500MHz 正面](/images/cpus/Intel/Intel_Pentium_III_500MHz_1.jpg)
 ![Intel Pentium III 500MHz 反面](/images/cpus/Intel/Intel_Pentium_III_500MHz_2.jpg)
@@ -70,7 +70,7 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 | 电压 | 1.75 V |
 | 步进 | SL4ZJ |
 | Introduced | March 20, 2000 |
-| 生产日期 | 26/2001 |
+| 生产日期 | 28/2002 |
 
 ![Intel Pentium III 866MHz 正面](/images/cpus/Intel/Intel_Pentium_III_866MHz_1.jpg)
 ![Intel Pentium III 866MHz 反面](/images/cpus/Intel/Intel_Pentium_III_866MHz_2.jpg)
@@ -93,7 +93,7 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 | 制造工艺 | 0.18 µm |
 | 电压 | 1.75 V |
 | 步进 | SL52Q |
-| 生产日期 | 48/2000 |
+| 生产日期 | 28/2001 |
 
 ![Intel Pentium III 933MHz 正面](/images/cpus/Intel/Intel_Pentium_III_933MHz_1.jpg)
 ![Intel Pentium III 933MHz 反面](/images/cpus/Intel/Intel_Pentium_III_933MHz_2.jpg)
