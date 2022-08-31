@@ -130,27 +130,27 @@ entries:
         subfolderitems:
 
         - title: Core Pentium
-          url: /tag_formatting.html
+          url: /intel_CorePentium.html
           output: web, pdf
 
         - title: Core 2
-          url: /tag_formatting.html
+          url: /intel_Core2.html
           output: web, pdf
 
         - title: Core Xeon
-          url: /tag_formatting.html
+          url: /intel_CoreXeon.html
           output: web, pdf
 
         - title: 1 Gen. Nehale
-          url: /tag_formatting.html
+          url: /intel_1Gen_Nehale.html
           output: web, pdf
 
         - title: 2 Gen. Sandy Bridge
-          url: /tag_formatting.html
+          url: /intel_2Gen_SandyBridge.html
           output: web, pdf
 
         - title: 4 Gen. Haswell
-          url: /tag_formatting.html
+          url: /intel_4Gen_Haswell.html
           output: web, pdf
 
     - title: 80860
