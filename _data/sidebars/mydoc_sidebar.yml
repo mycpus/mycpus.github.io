@@ -137,23 +137,6 @@ entries:
           url: /tag_formatting.html
           output: web
 
-      subfolders:
-      - title: Core i3/i5/i7/i9/Xeon
-        output: web
-        subfolderitems:
-
-        - title: 1 Gen. Nehale
-          url: /tag_formatting.html
-          output: web
-
-        - title: 2 Gen. Sandy Bridge
-          url: /tag_formatting.html
-          output: web
-
-        - title: 4 Gen. Haswell
-          url: /tag_formatting.html
-          output: web
-
     - title: 80860
       url: /intel_80860.html
       output: web, pdf
