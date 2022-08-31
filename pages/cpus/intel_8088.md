@@ -34,14 +34,33 @@ The 8088 is a reduced and cheaper version of the 8086 for the 8-bit market. It w
 | CPU 类型 | 40-pin PDIP |
 | CPU 时钟 | 5.0 MHz |
 | 内部总线宽度 | 16 Bit |
-| 外部总线宽度 | 6 Bit |
+| 外部总线宽度 | 8 Bit |
 | 地址总线宽度 | 20 Bit |
 | 晶体管 | 29,000 |
 | 技术 | NMOS 3.0 µm |
 | 电压 | 5 Volt |
-| 生产日期 | 31/1983 |
+| 上市时间 | 06/1979 |
+| 生产日期 | 42/1983 |
 
-![Intel-P8088 正面](/images/cpus/Intel/Intel_P8088_1.jpg)
-![Intel-P8088 反面](/images/cpus/Intel/Intel_P8088_2.jpg)
+![Intel P8088 正面](/images/cpus/Intel/Intel_P8088_1.jpg)
+![Intel P8088 反面](/images/cpus/Intel/Intel_P8088_2.jpg)
+
+### Intel P8088-2
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-pin PDIP |
+| CPU 时钟 | 8.0 MHz |
+| 内部总线宽度 | 16 Bit |
+| 外部总线宽度 | 8 Bit |
+| 地址总线宽度 | 20 Bit |
+| 晶体管 | 29,000 |
+| 技术 | NMOS 3.0 µm |
+| 电压 | 5 Volt |
+| 上市时间 | 06/1979 |
+| 生产日期 | 45/1987 |
+
+![Intel P8088-2 正面](/images/cpus/Intel/Intel_P8088-2_1.jpg)
+![Intel P8088-2 反面](/images/cpus/Intel/Intel_P8088-2_2.jpg)
 
 {% include links.html %}
