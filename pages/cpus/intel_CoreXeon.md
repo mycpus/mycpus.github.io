@@ -11,27 +11,87 @@ folder: cpus
 
 ## 关于 Intel Core Xeon
 
+基于英特尔酷睿微架构的英特尔至强系列属于用于服务器和工作站的 64 位微处理器系列。它们于 2006 年 6 月上市。根据型号的不同，这些处理器有一个、两个、四个或六个处理器内核，并支持单处理器、双处理器或四处理器系统，具体取决于型号系列。
+	
+关键数据：
+- 扩展内存 64 技术
+
+> 全面支持 64 位操作系统和应用程序
+
+- 四路泵送总线接口：
+
+> 提供 1066、1333 和 1600MHz 四泵 FSB 版本
+
+- 高级执行跟踪缓存：
+
+> 是一种高级 L1 指令缓存，用于缓存解密的指令。该技术可实现显着更高性能的指令缓存和更有效地使用缓存内存
+
+- 高级传输缓存：
+
+> 处理器具有高达 6144 KB 的二级缓存，在某些情况下还有大小高达 16384 KB 的三级缓存
+
+- SSE2、SSE3 和 SSSE3：
+
+> 第 2 代的流式 SIMD 扩展将 MMX 和 SSE 扩展了 144 个，第 3 代的扩展了 13 和 16 个新命令
+
+- SSE4.1：
+
+> 4.1 代的 Streaming SIMD Extensions 向现有命令集添加了 47 个新命令
+			
+- 增强的英特尔 Speedstep 技术：
+
+> 在低 CPU 利用率下动态降低电压和时钟
+
+- 执行禁用位：
+
+> 芯片级的病毒和蠕虫防护
+
+- 英特尔虚拟化技术：
+
+> 部分至强支持VT技术，不同操作系统或不同系统版本可以在一个系统上并行运行。这允许z。B. 软件开发人员同时测试他们的程序在多个操作系统上的兼容性
+
 ## 我的收藏
 
-### Intel Pentium Dual Core E5200
+### Intel Xeon 5130
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | 775land FCLGA8 |
-| 核心 | Wolfdale-3M |
-| Socket | 775 |
-| CPU 时钟 | 2500 MHz |
-| 系统时钟 | 200 MHz |
-| 系统总线时钟 | 800 MHz |
-| Clock multiplier | x 12.5 |
-| Level1 Cache | 32+32 KB |
-| Level2 Cache | 2048 KB |
-| 晶体管 | 228,000,000 |
-| 制造工艺 | 45 nm |
-| 步进 | SLAY7 |
-| 生产日期 | 41/2008 |
+| CPU 类型 | 771-land FCLGA6 |
+| 核心 | Woodcrest |
+| Socket | LGA771 |
+| CPU 时钟 | 2000 MHz |
+| 系统时钟 | 333 MHz |
+| 系统总线时钟 | 1333 MHz |
+| Clock multiplier | x 6 |
+| Level1 Cache | 2 x 64 KB (32/32) |
+| Level2 Cache | 4096 KB |
+| 晶体管 | 294,000,000 |
+| 制造工艺 | 65 nm |
+| 步进 | SLABP |
+| 生产日期 | 34/2007 |
 
-![Intel Pentium Dual Core E5200 正面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5200_1.jpg)
-![Intel Pentium Dual Core E5200 反面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5200_2.jpg)
+![Intel Xeon 5130 正面](/images/cpus/Intel/Intel_Xeon_5130_1.jpg)
+![Intel Xeon 5130 反面](/images/cpus/Intel/Intel_Xeon_5130_2.jpg)
+
+### Intel Xeon E5405
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 771-land FCLGA8 |
+| 核心 | Harpertown |
+| Socket | LGA771 |
+| CPU 时钟 | 2000 MHz |
+| 系统时钟 | 333 MHz |
+| 系统总线时钟 | 1333 MHz |
+| Clock multiplier | x 6 |
+| Level1 Cache | 4 x 64 KB (32/32) |
+| Level2 Cache | 2 x 6144 KB |
+| 晶体管 | 820,000,000 |
+| 制造工艺 | 45 nm |
+| 步进 | SLBBP |
+| 生产日期 | 38/2008 |
+
+![Intel Xeon E5405 正面](/images/cpus/Intel/Intel_Xeon_E5405_1.jpg)
+![Intel Xeon E5405 反面](/images/cpus/Intel/Intel_Xeon_E5405_2.jpg)
 
 {% include links.html %}
