@@ -27,10 +27,65 @@ The 80387 is packaged in a 68-pin ceramic PGA, and was manufactured using Intel'
 
 ### Intel D80287-10
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-Pin CerDIP |
+| CPU 时钟 | 10 MHz |
+| 技术 | HMOS III 1.5 µm |
+| 电压 | 5 V |
+| 产地 | Malaysia |
+| 上市时间 | 1980 |
+| 生产日期 | 09/1989 |
+
+![Intel D80287-10 正面](/images/cpus/Intel/Intel_D80287-10_1.jpg)
+![Intel D80287-10 反面](/images/cpus/Intel/Intel_D80287-10_2.jpg)
+
 ### Intel C80287-3
 
-### Intel N80387SX (16-25MHZ)
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-Pin CerDIP |
+| CPU 时钟 | 3 MHz |
+| 技术 | HMOS III 1.5 µm |
+| 电压 | 5 V |
+| 产地 | Malaysia |
+| 上市时间 | 1983 |
+| 生产日期 | 01/1984 |
+
+![Intel C80287-3 正面](/images/cpus/Intel/Intel_C80287-3_1.jpg)
+![Intel C80287-3 反面](/images/cpus/Intel/Intel_C80287-3_2.jpg)
+
+### Intel N80387SX (16-25MHz)
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 68-Pin PLCC |
+| CPU 时钟 | 16-25 MHz |
+| 数据总线 | 32 Bit |
+| 地址总线 | 32 Bit |
+| 一级缓存 | 8 KB |
+| 技术 | CHMOS III 1.5 µm |
+| 电压 | 5 V |
+| 产地 |  |
+| 上市时间 | 1986 |
+| 生产日期 | 23/1992 |
 
 ### Intel A80387DX 16-33
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 68-Pin CPGA |
+| CPU 时钟 | 16/33 MHz |
+| 数据总线 | 32 Bit |
+| 地址总线 | 32 Bit |
+| 一级缓存 | 8 KB |
+| 技术 | CHMOS IV 1.0 µm |
+| 电压 | 5 V |
+| 产地 | Malaysia |
+| 上市时间 | 1989 |
+| 生产日期 | 03/1993 |
+
+![Intel A80387DX 16-33 正面](/images/cpus/Intel/Intel_A80387DX_16-33_1.jpg)
+![Intel A80387DX 16-33 反面](/images/cpus/Intel/Intel_A80387DX_16-33_2.jpg)
 
 {% include links.html %}
