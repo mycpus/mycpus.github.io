@@ -129,6 +129,10 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: Core Pentium
+          url: /tag_formatting.html
+          output: web, pdf
+
         - title: Core 2
           url: /tag_formatting.html
           output: web, pdf
@@ -136,11 +140,6 @@ entries:
         - title: Core Xeon
           url: /tag_formatting.html
           output: web, pdf
-
-      subfolders:
-      - title: Core i3/i5/i7/i9/Xeon
-        output: web, pdf
-        subfolderitems:
 
         - title: 1 Gen. Nehale
           url: /tag_formatting.html
