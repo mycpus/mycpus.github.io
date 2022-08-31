@@ -124,7 +124,7 @@ entries:
       url: /intel_Pentium4Xeon.html
       output: web, pdf
 
-    subfolders:
+      subfolders:
       - title: Core
         output: web
         subfolderitems:
@@ -137,7 +137,7 @@ entries:
           url: /tag_formatting.html
           output: web
 
-    subfolders:
+      subfolders:
       - title: Core i3/i5/i7/i9/Xeon
         output: web
         subfolderitems:
