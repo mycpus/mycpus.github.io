@@ -13,7 +13,7 @@ folder: cpus
 
 ## 我的收藏
 
-### Intel Pentium Dual Core E5200
+### Intel Core i7-950
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -31,7 +31,7 @@ folder: cpus
 | 步进 | SLAY7 |
 | 生产日期 | 41/2008 |
 
-![Intel Pentium Dual Core E5200 正面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5200_1.jpg)
-![Intel Pentium Dual Core E5200 反面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5200_2.jpg)
+![Intel Core i7-950 正面](/images/cpus/Intel/Intel_Core_i7-950_1.jpg)
+![Intel Core i7-950 反面](/images/cpus/Intel/Intel_Core_i7-950_2.jpg)
 
 {% include links.html %}
