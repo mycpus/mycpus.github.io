@@ -50,7 +50,7 @@ Despite the name, the Pentium Pro is actually quite different from Intel's earli
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 3.3 V |
 | 步进 | SL22V |
-| 生产日期 | 30/1997 |
+| 生产日期 | 17/1997(左) , 07/1997(右) |
 
 ![Intel Pentium Pro KB80521EX200 正面](/images/cpus/Intel/Intel_Pentium_Pro_KB80521EX200_1.jpg)
 ![Intel Pentium Pro KB80521EX200 反面](/images/cpus/Intel/Intel_Pentium_Pro_KB80521EX200_2.jpg)

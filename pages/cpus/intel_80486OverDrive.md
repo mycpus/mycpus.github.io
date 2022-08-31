@@ -38,7 +38,7 @@ On older versions Intel labeled the OverDrive chips with the external local bus 
 | 电压 | 5 Volt |
 | 步进 | SZ935 |
 | 修订 | V4.0 |
-| 生产日期 | 24/1995 |
+| 生产日期 | 10/1995 |
 
 ![Intel OverDrive DX2ODPR66 (V4.0) 正面](/images/cpus/Intel/Intel_OverDrive_DX2ODPR66_V40_1.jpg)
 ![Intel OverDrive DX2ODPR66 (V4.0) 反面](/images/cpus/Intel/Intel_OverDrive_DX2ODPR66_V40_2.jpg)

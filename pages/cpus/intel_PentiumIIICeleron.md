@@ -56,7 +56,7 @@ The Celeron product concept was introduced by Intel in response to the company's
 | 制造工艺 | 0.18 µm |
 | 电压 | 1.75 V |
 | 步进 | SL54P |
-| 生产日期 | 38/2001 |
+| 生产日期 | 35/2001 |
 
 ![Intel Celeron 800MHz 正面](/images/cpus/Intel/Intel_Celeron_800MHz_1.jpg)
 ![Intel Celeron 800MHz 反面](/images/cpus/Intel/Intel_Celeron_800MHz_2.jpg)

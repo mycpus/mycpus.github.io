@@ -65,7 +65,7 @@ Following S-Spec numbers are affected:
 | 技术 | Bi-CMOS 0.6 µm |
 | 电压 | 3.3 V |
 | 步进 | SX961 |
-| 生产日期 | 02/1995 |
+| 生产日期 | 49/1994 |
 
 ![Intel Pentium A80502-75 Goldcap 正面](/images/cpus/Intel/Intel_Pentium_A80502-75_Goldcap_1.jpg)
 ![Intel Pentium A80502-75 Goldcap 反面](/images/cpus/Intel/Intel_Pentium_A80502-75_Goldcap_2.jpg)

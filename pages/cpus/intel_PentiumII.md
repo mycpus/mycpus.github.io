@@ -47,7 +47,7 @@ By early 1999, the Pentium III superseded the Pentium II.
 | 制造工艺 | 0.25 µm |
 | 电压 | 2.0 V |
 | 步进 | SL357 |
-| Introduced | April 15, 1998 |
+| 上市时间 | April 15, 1998 |
 | 生产日期 | 08/1999 |
 | 产地 | Malaysia |
 
@@ -71,6 +71,7 @@ By early 1999, the Pentium III superseded the Pentium II.
 | 晶体管 | 27,400,000 |
 | 制造工艺 | 0.18 µm |
 | 步进 | SL3AG |
+| 生产日期 | 47/1999 |
 
 ![Intel Mobile Pentium II 366MHz 正面](/images/cpus/Intel/Intel_Mobile_Pentium_II_366MHz_1.jpg)
 ![Intel Mobile Pentium II 366MHz 反面](/images/cpus/Intel/Intel_Mobile_Pentium_II_366MHz_2.jpg)

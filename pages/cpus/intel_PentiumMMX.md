@@ -69,7 +69,7 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 2.8 V |
 | 步进 | SL23V |
-| 生产日期 | 50/1997 |
+| 生产日期 | 28/1997 |
 
 ![Intel Pentium MMX BP80503166 正面](/images/cpus/Intel/Intel_Pentium_MMX_BP80503166_1.jpg)
 ![Intel Pentium MMX BP80503166 反面](/images/cpus/Intel/Intel_Pentium_MMX_BP80503166_2.jpg)
@@ -92,7 +92,7 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 2.8 V |
 | 步进 | SL27J |
-| 生产日期 | 51/1997 |
+| 生产日期 | 13/1998 |
 
 ![Intel Pentium MMX FV80503200 正面](/images/cpus/Intel/Intel_Pentium_MMX_FV80503200_1.jpg)
 ![Intel Pentium MMX FV80503200 反面](/images/cpus/Intel/Intel_Pentium_MMX_FV80503200_2.jpg)
