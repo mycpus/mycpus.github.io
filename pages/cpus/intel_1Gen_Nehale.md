@@ -17,19 +17,19 @@ folder: cpus
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | 775land FCLGA8 |
-| 核心 | Wolfdale-3M |
-| Socket | 775 |
-| CPU 时钟 | 2500 MHz |
-| 系统时钟 | 200 MHz |
-| 系统总线时钟 | 800 MHz |
-| Clock multiplier | x 12.5 |
-| Level1 Cache | 32+32 KB |
-| Level2 Cache | 2048 KB |
-| 晶体管 | 228,000,000 |
-| 制造工艺 | 45 nm |
-| 步进 | SLAY7 |
-| 生产日期 | 41/2008 |
+| CPU 类型 | 1366 land FC-LGA8 |
+| 核心 | Bloomfield |
+| Socket | LGA 1366 |
+| 主频 | 3.06 GHz |
+| 睿频 | 3.33 GHz |
+| 二级缓存 | 4 x 256 KB |
+| 三级缓存 | 8 MB |
+| 核心 | 4 |
+| 线程 | 8 |
+| TDP | 130W |
+| 内存控制器 | DDR3-800/1066 |
+| 上市时间 | 17.11.2008 |
+| 生产日期 | 52/2010 |
 
 ![Intel Core i7-950 正面](/images/cpus/Intel/Intel_Core_i7-950_1.jpg)
 ![Intel Core i7-950 反面](/images/cpus/Intel/Intel_Core_i7-950_2.jpg)
