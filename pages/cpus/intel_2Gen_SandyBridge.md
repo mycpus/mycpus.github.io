@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Intel 2 Gen. Sandy Bridge Core i
 
-采用 Sandy Bridge 微架构的英特尔微处理器，第 2 代台式机、移动式、嵌入式和服务器处理器，采用 Sandy Bridge-E 内核的台式机处理器属于第 3 代。
+采用 Sandy Bridge 微架构的英特尔微处理器，第 2 代台式机、移动式、嵌入式和服务器处理器。采用 Sandy Bridge-E 内核的台式机处理器属于第 3 代。
 
 关键数据：
 
