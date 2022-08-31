@@ -75,6 +75,9 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 上市时间 | 1986 |
 | 生产日期 | 23/1992 |
 
+![Intel N80387SX (16-25MHz) 正面](/images/cpus/Intel/Intel_N80387SX_(16-25MHz)_1.jpg)
+![Intel N80387SX (16-25MHz) 反面](/images/cpus/Intel/Intel_N80387SX_(16-25MHz)_2.jpg)
+
 ### Intel A80387DX 16-33
 
 | 参数 | 数值 |
