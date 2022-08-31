@@ -23,6 +23,11 @@ The 80387 has itself since been superseded by the Intel 387DX introduced by a qu
  
 The 80387 is packaged in a 68-pin ceramic PGA, and was manufactured using Intel's older 1.5 micron CHMOS III technology, giving it moderate power requirements. Power consumption at 16 MHz is max. 1250 mW (750 mW typical), at 20 MHz max. 1550 mW (950 mW typical), and at 25 MHz max. 1950 mW (1250 mW typical).
 
+## FPU for 386SX CPU
+
+The 387SX is the coprocessor for the Intel 386SX. It has all the features the Intel 80387 offers, including the ability for asynchronous operation of CPU and coprocessor. Due to the 16 bit data path between the CPU and the coprocessor, the 387SX is a bit slower than a 80387 operating at the same frequency.
+In addition, the 387SX is based on the core of the original 80387, which executes instructions slower than the second generation 387DX. The 387SX comes in a 68-pin PLCC package and is available in 16, 20, 25 and 33 MHz versions.
+
 ## 我的收藏
 
 ### Intel D80287-10
