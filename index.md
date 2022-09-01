@@ -5,8 +5,12 @@ tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
 topnav: topnav
+comments: false
 ---
 
-欢迎来到我个人的中央处理器博物馆，这里的 CPU 全部都以我个人的力量收集而成，照片也是我自己照的。左边的列表大致以品牌和推出的时间作为顺序。
+欢迎来到我个人的中央处理器博物馆，这里的 CPU 全部都我个人收集的，照片也是我自己照的。左侧的列表大致以品牌和推出的时间作为顺序。
+
+其实在欧洲和北美，收集 CPU 的人越来越多，相关文件以及展示都非常齐全，而中文的一个都没有。其实拥有 Intel 早期产品的人并不多，借此机会把我的收藏展示出来，也希望抛砖引玉，希望能有更多同好可以加入。
+
 
 {% include links.html %}
