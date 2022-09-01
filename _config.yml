@@ -82,7 +82,6 @@ defaults:
       type: "tooltips"
     values:
       layout: "page"
-      comments: false
       search: true
       tooltip: true
 
