@@ -29,11 +29,11 @@ entries:
       type: homepage
 
     - title: About
-      url: /mydoc_about.html
+      url: /about.html
       output: web, pdf
 
     - title: Support
-      url: /mydoc_support.html
+      url: /support.html
       output: web, pdf
 
   - title: Intel
