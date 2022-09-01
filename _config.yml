@@ -67,7 +67,7 @@ collections:
 defaults:
   -
     scope:
-      path: "pages/cpus"
+      path: ""
       type: "pages"
     values:
       layout: "page"
