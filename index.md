@@ -4,10 +4,9 @@ keywords: CPU, cpu, processor, qualification, information, pictures, core, frequ
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: "欢迎来到我个人的中央处理器博物馆，这里的 CPU 全部都以我个人的力量收集而成，照片也是我自己照的。左边的列表大致以品牌和推出的时间作为顺序。"
 topnav: topnav
 ---
 
-
+欢迎来到我个人的中央处理器博物馆，这里的 CPU 全部都以我个人的力量收集而成，照片也是我自己照的。左边的列表大致以品牌和推出的时间作为顺序。
 
 {% include links.html %}
