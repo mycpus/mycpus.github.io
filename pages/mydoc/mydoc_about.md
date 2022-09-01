@@ -7,6 +7,7 @@ sidebar: mydoc_sidebar
 permalink: about.html
 folder: mydoc
 topnav: topnav
+comments: false
 ---
 
 My name is He Bin (Honux), and I'm a technical fan, engineer, and programmer based in Zhengzhou City, Henan Province, China. For more details, see my [iHonux's Projects](https://fxrj.github.io).
