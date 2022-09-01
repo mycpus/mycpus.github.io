@@ -107,4 +107,8 @@ folder: cpus
 
 ![Intel Core i5-4460 正面](/images/cpus/Intel/Intel_Core_i5-4460_1.jpg)
 
+### Intel Core i7-4770
+
+![Intel Core i7-4770 正面](/images/cpus/Intel/Intel_Core_i7-4770_1.jpg)
+
 {% include links.html %}
