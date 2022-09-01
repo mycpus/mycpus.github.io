@@ -163,43 +163,43 @@ entries:
     folderitems:
 
     - title: 8080
-      url: /mydoc_about_ruby_gems_etc.html
+      url: /AMD_8080.html
       output: web, pdf
 
     - title: 80286
-      url: /mydoc_install_jekyll_on_mac.html
+      url: /AMD_80286.html
       output: web, pdf
 
     - title: 386
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /AMD_386.html
       output: web, pdf
 
     - title: 486
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /AMD_486.html
       output: web, pdf
 
     - title: 5x86
-      url: /mydoc_about_ruby_gems_etc.html
+      url: /AMD_5x86.html
       output: web, pdf
 
     - title: K5
-      url: /mydoc_install_jekyll_on_mac.html
+      url: /AMD_K5.html
       output: web, pdf
 
     - title: K6
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /AMD_K6.html
       output: web, pdf
 
     - title: K7
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /AMD_K7.html
       output: web, pdf
 
     - title: K8
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /AMD_K8.html
       output: web, pdf
 
     - title: K10
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /AMD_K10.html
       output: web, pdf
 
 
@@ -208,31 +208,31 @@ entries:
 
     folderitems:
     - title: Cx486 DLC
-      url: /mydoc_pages.html
+      url: /Cyrix_Cx486DLC.html
       output: web, pdf
 
     - title: Cx486 DX
-      url: /mydoc_posts.html
+      url: /Cyrix_Cx486DX.html
       output: web, pdf
 
     - title: 5x86
-      url: /mydoc_lists.html
+      url: /Cyrix_5x86.html
       output: web, pdf
 
     - title: 6x86
-      url: /mydoc_conditional_logic.html
+      url: /Cyrix_6x686.html
       output: web, pdf
 
     - title: M II
-      url: /mydoc_content_reuse.html
+      url: /Cyrix_MII.html
       output: web, pdf
 
     - title: MediaGX
-      url: /mydoc_collections.html
+      url: /Cyrix_MediaGX.html
       output: web, pdf
 
     - title: FPU
-      url: /mydoc_webstorm_text_editor.html
+      url: /Cyrix_FPU.html
       output: web, pdf
 
 
@@ -241,15 +241,15 @@ entries:
 
     folderitems:
     - title: Cyrix III
-      url: /mydoc_sidebar_navigation.html
+      url: /VIA_CyrixIII.html
       output: web, pdf
 
     - title: C3
-      url: /mydoc_yaml_tutorial.html
+      url: /VIA_C3.html
       output: web, pdf
 
     - title: C3 1GigaPro
-      url: /mydoc_tags.html
+      url: /VIA_C3_1GigaPro.html
       output: web, pdf
 
 
