@@ -127,7 +127,7 @@ folder: cpus
 | 核显最大动态频率 | 1200 MHz |
 | 内存控制器 | DDR3-1333/1600 |
 | 上市时间 | 02.06.2013 |
-| 生产日期 |  |
+| 生产日期 | 20/2014 |
 
 ![Intel Core i7-4770 正面](/images/cpus/Intel/Intel_Core_i7-4770_1.jpg)
 
