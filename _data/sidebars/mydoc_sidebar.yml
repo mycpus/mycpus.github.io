@@ -258,7 +258,7 @@ entries:
 
     folderitems:
     - title: 486
-      url: /mydoc_adding_tooltips.html
+      url: /TI_486.html
       output: web, pdf
 
 
@@ -267,7 +267,7 @@ entries:
 
     folderitems:
     - title: 486
-      url: /mydoc_build_arguments.html
+      url: /ST_486.html
       output: web, pdf
 
 
@@ -276,11 +276,11 @@ entries:
 
     folderitems:
     - title: GXm
-      url: /mydoc_kb_layout.html
+      url: /Geode_GXm.html
       output: web, pdf
 
     - title: GX1
-      url: /mydoc_glossary.html
+      url: /Geode_GX1.html
       output: web, pdf
 
 
@@ -289,11 +289,11 @@ entries:
 
     folderitems:
     - title: 486
-      url: /mydoc_troubleshooting.html
+      url: /IBM_486.html
       output: web, pdf
 
     - title: 6x86MX
-      url: /mydoc_troubleshooting.html
+      url: /IBM_6x86MX.html
       output: web, pdf
 
 
@@ -302,7 +302,7 @@ entries:
 
     folderitems:
     - title: WinChip
-      url: /mydoc_troubleshooting.html
+      url: /IDT_WinChip.html
       output: web, pdf
 
 
@@ -311,7 +311,7 @@ entries:
 
     folderitems:
     - title: PowerPC
-      url: /mydoc_troubleshooting.html
+      url: /MOTOROLA_PowerPC.html
       output: web, pdf
 
 
@@ -320,7 +320,7 @@ entries:
 
     folderitems:
     - title: Crusoe
-      url: /mydoc_troubleshooting.html
+      url: /Transmeta_Crusoe.html
       output: web, pdf
 
 
@@ -329,7 +329,7 @@ entries:
 
     folderitems:
     - title: MSM8928
-      url: /mydoc_troubleshooting.html
+      url: /QUALCOMM_MSM8928.html
       output: web, pdf
 
 
