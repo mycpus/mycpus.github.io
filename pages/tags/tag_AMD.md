@@ -1,8 +1,8 @@
 ---
-title: "Mobile Pages"
+title: "AMD Pages"
+tagName: AMD
 search: exclude
-tagName: mobile
-permalink: tag_mobile.html
+permalink: tag_AMD.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
