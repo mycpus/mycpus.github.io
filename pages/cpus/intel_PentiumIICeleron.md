@@ -9,7 +9,7 @@ permalink: intel_PentiumIICeleron.html
 folder: cpus
 ---
 
-## 关于 Intel Pentium II
+## 关于 Intel Pentium II Celeron
 
 第一代 Intel Celeron 处理器于 1998 年 4 月推出。这些是Pentium II的“低预算”版本，因此属于性能和价格较低的部分。由于性能较低，英特尔赛扬主要安装在所谓的办公 PC 中。
 
