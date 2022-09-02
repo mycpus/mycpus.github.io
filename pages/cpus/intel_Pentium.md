@@ -70,6 +70,28 @@ Following S-Spec numbers are affected:
 ![Intel Pentium A80502-75 Goldcap 正面](/images/cpus/Intel/Intel_Pentium_A80502-75_Goldcap_1.jpg)
 ![Intel Pentium A80502-75 Goldcap 反面](/images/cpus/Intel/Intel_Pentium_A80502-75_Goldcap_2.jpg)
 
+### Intel Pentium A8050275
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-pin SPGA |
+| 核心 | P54C |
+| Socket | 5/7 |
+| CPU 时钟 | 75 MHz |
+| Board Frequency | 50 MHz |
+| Clock multiplier | x 1.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 32 Bit |
+| Level1 Cache | 8+8 KB |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.6 µm |
+| 电压 | 3.3 V |
+| 步进 | SX969 |
+| 生产日期 | 48/1995 |
+
+![Intel Pentium A8050275 正面](/images/cpus/Intel/Intel_Pentium_A8050275_1.jpg)
+![Intel Pentium A8050275 反面](/images/cpus/Intel/Intel_Pentium_A8050275_2.jpg)
+
 ### Intel Pentium BP80502133
 
 | 参数 | 数值 |
@@ -91,5 +113,27 @@ Following S-Spec numbers are affected:
 
 ![Intel Pentium BP80502133 正面](/images/cpus/Intel/Intel_Pentium_BP80502133_1.jpg)
 ![Intel Pentium BP80502133 反面](/images/cpus/Intel/Intel_Pentium_BP80502133_2.jpg)
+
+### Intel Pentium FV80502166
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-pin SPGA |
+| 核心 | P54CS |
+| Socket | 7 |
+| CPU 时钟 | 166 MHz |
+| Board Frequency | 66 MHz |
+| Clock multiplier | x 2.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 32 Bit |
+| Level1 Cache | 8+8 KB |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.5 V |
+| 步进 | SY073 |
+| 生产日期 | 46/1997 |
+
+![Intel Pentium FV80502166 正面](/images/cpus/Intel/Intel_Pentium_FV80502166_1.jpg)
+![Intel Pentium FV80502166 反面](/images/cpus/Intel/Intel_Pentium_FV80502166_2.jpg)
 
 {% include links.html %}
