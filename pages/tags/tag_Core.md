@@ -1,8 +1,8 @@
 ---
-title: "Content types pages"
-tagName: content_types
+title: "Core Pages"
+tagName: Core
 search: exclude
-permalink: tag_content_types.html
+permalink: tag_Core.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

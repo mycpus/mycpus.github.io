@@ -3,15 +3,17 @@
 # In other words, the last line must be the last tag in the allowed-tags list.
 allowed-tags:
   - getting_started
-  - content_types
   - navigation
-  - Intel
   - publishing
-  - single_sourcing
-  - special_layouts
-  - collaboration
-  - news
   - troubleshooting
-  - mobile
+  - news
+  - AMD
+  - Intel
+  - FPU
+  - 8080
+  - 80286
+  - 80386
+  - 80486
+  - Core
 
 # Copyright 2021 Google LLC

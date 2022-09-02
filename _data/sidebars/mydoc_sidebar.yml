@@ -170,12 +170,12 @@ entries:
       url: /AMD_80286.html
       output: web, pdf
 
-    - title: 386
-      url: /AMD_386.html
+    - title: 80386
+      url: /AMD_80386.html
       output: web, pdf
 
-    - title: 486
-      url: /AMD_486.html
+    - title: 80486
+      url: /AMD_80486.html
       output: web, pdf
 
     - title: 5x86
