@@ -15,5 +15,6 @@ allowed-tags:
   - 80386
   - 80486
   - Core
+  - Celeron
 
 # Copyright 2021 Google LLC
