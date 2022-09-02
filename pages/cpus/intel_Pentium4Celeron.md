@@ -3,7 +3,7 @@ title: Intel Pentium 4 Celeron Processor
 tags: [Intel, Pentium 4, Celeron]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 30, 2022
-summary: ""
+summary: "采用 NetBurst 微架构的 Intel Celeron 是 Pentium 4 的直系后代，但二级缓存只有 Pentium 4 的一半。"
 sidebar: mydoc_sidebar
 permalink: intel_Pentium4Celeron.html
 folder: cpus
@@ -13,7 +13,7 @@ folder: cpus
 
 2000 年 6 月，英特尔发布了其最新、最强大的台式机处理器，它采用 NetBurst 微架构，即奔腾 4处理器。然而，未来应该服务于办公 PC 市场的 NetBurst Celeron处理器直到 2002 年 5 月才开始销售，比 Pentium 4 晚了 1 1/2 年。
 
-采用 NetBurst 微架构的Intel Celeron 是 Pentium 4 的直系后代，但二级缓存只有 P4 的一半。第一批赛扬使用其 3650 万个晶体管处理数据，拥有 144 条新的 SSE 指令，并在系统总线上以 100 MHz（400 MHz 四泵）交换数据。
+采用 NetBurst 微架构的 Intel Celeron 是 Pentium 4 的直系后代，但二级缓存只有 Pentium 4 的一半。第一批赛扬使用其 3650 万个晶体管处理数据，拥有 144 条新的 SSE 指令，并在系统总线上以 100 MHz（400 MHz 四泵）交换数据。
 
 Intel 的 Celeron D系列是最后一个具有 NetBurst 架构的 Celeron 处理器系列，于 2004 年 6 月开始销售。这些都是作为单核处理器专门销售的，也不支持超线程技术。
 

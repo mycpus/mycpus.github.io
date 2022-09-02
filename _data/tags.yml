@@ -16,5 +16,6 @@ allowed-tags:
   - 80486
   - Core
   - Celeron
+  - Xeon
 
 # Copyright 2021 Google LLC
