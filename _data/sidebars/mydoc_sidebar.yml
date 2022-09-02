@@ -202,6 +202,10 @@ entries:
       url: /AMD_K10.html
       output: web, pdf
 
+    - title: RISC
+      url: /AMD_RISC.html
+      output: web, pdf
+
 
   - title: Cyrix
     output: web, pdf
