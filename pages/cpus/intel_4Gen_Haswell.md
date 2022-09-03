@@ -96,8 +96,8 @@ folder: cpus
 | 三级缓存 | 6 MB |
 | 核心 | 4 |
 | 线程 | 4 |
-| 制程 | 22nm |
-| TDP | 84W |
+| 制程 | 22 nm |
+| TDP | 84 W |
 | 核显 | HD 4600 |
 | 核显基本频率 | 350 MHz |
 | 核显最大动态频率 | 1100 MHz |
@@ -120,8 +120,8 @@ folder: cpus
 | 三级缓存 | 8 MB |
 | 核心 | 4 |
 | 线程 | 8 |
-| 制程 | 22nm |
-| TDP | 84W |
+| 制程 | 22 nm |
+| TDP | 84 W |
 | 核显 | HD 4600 |
 | 核显基本频率 | 350 MHz |
 | 核显最大动态频率 | 1200 MHz |
@@ -130,5 +130,29 @@ folder: cpus
 | 生产日期 | 20/2014 |
 
 ![Intel Core i7-4770 正面](/images/cpus/Intel/Intel_Core_i7-4770_1.jpg)
+
+### Intel Pentium G3240
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1150 land FC-LGA |
+| 核心 | Haswell |
+| Socket | LGA 1150 |
+| 主频 | 3.1 GHz |
+| 二级缓存 | 2 x 256 KB |
+| 三级缓存 | 3 MB |
+| 核心 | 2 |
+| 线程 | 2 |
+| 制程 | 22 nm |
+| TDP | 53 W |
+| 核显 | HD |
+| 核显基本频率 | 350 MHz |
+| 核显最大动态频率 | 1100 MHz |
+| 内存控制器 | DDR3-1333 |
+| 上市时间 | 01.09.2013 |
+| 生产日期 | 14/2014 |
+
+![Intel Pentium G3240 正面](/images/cpus/Intel/Intel_Pentium_G3240_1.jpg)
+![Intel Pentium G3240 正面](/images/cpus/Intel/Intel_Pentium_G3240_2.jpg)
 
 {% include links.html %}
