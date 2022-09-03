@@ -56,12 +56,11 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 | 修订 | DH-E6 |
 | 步进 | |
 | Socket | 939 |
-| CPU 时钟 | 1800 MHz |
+| 主频 | 1800 MHz |
 | 系统时钟 | 1000 MHz HT |
-| Clock multiplier | x 6.5 |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 512 KB |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 512 KB |
 | 晶体管 | 114,000,000 |
 | 技术 | 90 nm SOI |
 | 生产日期 |  |
@@ -84,11 +83,11 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 | 修订 | E4 |
 | 步进 |  |
 | Socket | 940 |
-| CPU 时钟 | 2400 MHz |
+| 主频 | 2400 MHz |
 | 系统时钟 | 1000 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 1024 KB |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 1024 KB |
 | 晶体管 | 114,000,000 |
 | 技术 | 90 nm SOI |
 | 生产日期 |  |
@@ -111,11 +110,11 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 | 修订 | G2 |
 | 步进 |  |
 | Socket | AM2 |
-| CPU 时钟 | 2600 MHz |
+| 主频 | 2600 MHz |
 | 系统时钟 | 1000 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 2 x 128 KB (64/64) |
-| Level2 Cache | 2 x 512 KB |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 512 KB |
 | 晶体管 | 221,000,000 |
 | 技术 | 65 nm SOI |
 | 生产日期 |  |
@@ -137,11 +136,11 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 | 核心 | Lion |
 | 步进 | NBALB |
 | Socket | S1g2 |
-| CPU 时钟 | 2000 MHz |
+| 主频 | 2000 MHz |
 | 系统时钟 | 1800 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 2 x 128 KB (64/64) |
-| Level2 Cache | 2 x 512 KB |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 512 KB |
 | 晶体管 |  |
 | 技术 | 65 nm SOI |
 | 生产日期 | 05/2009 |
@@ -164,11 +163,11 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 | 修订 | DH-F2 |
 | 步进 | LFBAF |
 | Socket | S1g1 |
-| CPU 时钟 | 2000 MHz |
+| 主频 | 2000 MHz |
 | 系统时钟 | 800 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 512 KB |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 512 KB |
 | 晶体管 | 69,000,000 |
 | 技术 | 90 nm SOI |
 | 生产日期 | 05/2007 |
@@ -191,11 +190,11 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 | 修订 | LG-B1 |
 | 步进 |  |
 | Socket | S1g2 |
-| CPU 时钟 | 2200 MHz |
+| 主频 | 2200 MHz |
 | 系统时钟 | 1800 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 2 x 128 KB (64/64) |
-| Level2 Cache | 2 x 1024 KB |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 1024 KB |
 | 晶体管 |  |
 | 技术 | 65 nm SOI |
 | 生产日期 | 49/2009 |

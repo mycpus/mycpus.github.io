@@ -73,11 +73,11 @@ The K6-2+ is a revised version of the K6-III. Essentially, the K6-2+ is a K6-III
 | CPU 类型 | 321-Pin CPGA |
 | 核心 | K6 (Model 6) |
 | Socket | 7 |
-| CPU 时钟 | 233 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 3.5 |
+| 主频 | 233 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 3.5 |
 | 总线宽度 | 64/32 Bit |
-| Level1 Cache | 64 KB (32/32) |
+| 一级缓存 | 64 KB (32/32) |
 | 晶体管 | 8,800,000 |
 | 技术 | CMOS 0.35 µm |
 | 生产日期 | 11/1998 |
@@ -102,11 +102,11 @@ The K6-2+ is a revised version of the K6-III. Essentially, the K6-2+ is a K6-III
 | CPU 类型 | 321-Pin CPGA |
 | 核心 | Chomper |
 | Socket | Super 7 |
-| CPU 时钟 | 350 MHz |
-| Board Frequency | 100 MHz |
-| Clock multiplier | x 3.5 |
+| 主频 | 350 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 3.5 |
 | 总线宽度 | 64/32 Bit |
-| Level1 Cache | 64 KB (32/32) |
+| 一级缓存 | 64 KB (32/32) |
 | 晶体管 | 9,300,000 |
 | 技术 | CMOS 0.25 µm |
 | 生产日期 | 01/1999 |

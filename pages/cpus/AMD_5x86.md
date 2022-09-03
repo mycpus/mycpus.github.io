@@ -40,11 +40,11 @@ The combination of best-in-class clock speed and the write-back cache allowed th
 | ------ | ------ |
 | CPU 类型 | 168-pin CPGA |
 | Socket | 3 |
-| CPU 时钟 | 133 MHz |
-| Board Frequency | 33 MHz |
-| Clock multiplier | x 4 |
+| 主频 | 133 MHz |
+| 外频 | 33 MHz |
+| 倍频 | x 4 |
 | 总线宽度 | 32 Bit |
-| Level1 Cache | 8 KB write-back |
+| 一级缓存 | 8 KB write-back |
 | 晶体管 | 1,600,000 |
 | 技术 | CHMOS 0.35 µm |
 | 电压 | 3.45 Volt |

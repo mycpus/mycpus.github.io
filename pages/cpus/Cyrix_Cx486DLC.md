@@ -26,8 +26,8 @@ The Cyrix 486DLC is pin compatible to the Intel i386DX. While the internals of t
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | Ceramic PGA-132 |
-| CPU 时钟 | 33 MHz |
-| 总线时钟 | 33 MHz |
+| 主频 | 33 MHz |
+| 外频 | 33 MHz |
 | 数据总线 | 32 Bit |
 | 地址总线 | 32 Bit |
 | 晶体管 | 600,000 |

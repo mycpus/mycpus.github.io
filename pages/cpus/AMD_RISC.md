@@ -24,8 +24,8 @@ AMD Am29000 32-bit RISC microprocessor was designed for use in microcomputers, b
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | CPGA |
-| CPU 时钟 | 25 MHz |
-| 总线时钟 | 25 MHz |
+| 主频 | 25 MHz |
+| 总线频率 | 25 MHz |
 | 总线宽度 | 32 Bit |
 | 晶体管 |  |
 | 技术 | CHMOS |

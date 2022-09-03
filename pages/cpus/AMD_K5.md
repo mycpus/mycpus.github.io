@@ -50,9 +50,9 @@ The K5 project represented an early chance for AMD to take technical leadership 
 | CPU 类型 | 296-Pin CPGA |
 | 核心 | SSA/5 |
 | Socket | 5/7 |
-| CPU 时钟 | 100 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 1.5(fix) |
+| 主频 | 100 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 1.5(fix) |
 | 总线宽度 | 64/32 Bit |
 | Level1 Cache | 24 KB (16/8) |
 | 晶体管 | 4,300,000 |

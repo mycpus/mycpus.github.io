@@ -79,11 +79,11 @@ Beside performance improvements, the families incorporate enhanced power managem
 | 核心 | Champlain |
 | 步进 | NBALB BA |
 | Socket | S1g4 |
-| CPU 时钟 | 2100 MHz |
+| 主频 | 2100 MHz |
 | 系统时钟 | 1600 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 2 x 128 KB (64/64) |
-| Level2 Cache | 2 x 512 KB |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 512 KB |
 | 核心 | 2 |
 | 线程 | 2 |
 | 晶体管 | 234,000,000 |
@@ -107,11 +107,11 @@ Beside performance improvements, the families incorporate enhanced power managem
 | 核心 | Regor |
 | 步进 | WAEKC AE |
 | Socket | AM3/AM2+ |
-| CPU 时钟 | 3100 MHz |
+| 主频 | 3100 MHz |
 | 系统时钟 | 2000 MHz HT |
 | 总线宽度 | 64 Bit |
-| Level1 Cache | 2 x 128 KB (64/64) |
-| Level2 Cache | 2 x 1024 KB |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 1024 KB |
 | 核心 | 2 |
 | 线程 | 2 |
 | 晶体管 | 234,000,000 |

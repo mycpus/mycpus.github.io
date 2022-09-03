@@ -50,11 +50,11 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | CPU 类型 | 242-contact CM |
 | 核心 | Pluto |
 | Socket | Slot A |
-| CPU 时钟 | 650 MHz |
-| Board Frequency | 100 / 200 MHz |
-| Clock multiplier | x 6.5 |
+| 主频 | 650 MHz |
+| 外频 | 100 / 200 MHz |
+| 倍频 | x 6.5 |
 | 总线宽度 | 64/32 Bit |
-| Level1 Cache | 128 KB (64/64) |
+| 一级缓存 | 128 KB (64/64) |
 | Level2 Cache | 512 KB |
 | Level2 时钟 | 325 MHz |
 | 晶体管 | 22,000,000 |
@@ -78,12 +78,12 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | 核心 | Camaro |
 | 步进 | AHLCA |
 | Socket | A |
-| CPU 时钟 | 1000 MHz |
-| Board Frequency | 100 / 200 MHz |
-| Clock multiplier | x 10 |
+| 主频 | 1000 MHz |
+| 外频 | 100 / 200 MHz |
+| 倍频 | x 10 |
 | 总线宽度 | 64/32 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 64 KB |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 64 KB |
 | 晶体管 | 25,200,000 |
 | 技术 | 0.18 µm |
 | 生产日期 | 22/2002 |
@@ -105,12 +105,12 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | 核心 | Thoroughbred |
 | 步进 | BIXJB |
 | Socket | A(462) |
-| CPU 时钟 | 1500 MHz |
-| Board Frequency | 166 / 333 MHz |
-| Clock multiplier | x 9 |
+| 主频 | 1500 MHz |
+| 外频 | 166 / 333 MHz |
+| 倍频 | x 9 |
 | 总线宽度 | 64/32 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 256 KB |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 256 KB |
 | 晶体管 | 37,200,000 |
 | 技术 | 0.13 µm |
 | 生产日期 | 33/2004 |
@@ -132,12 +132,12 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | 核心 | Thoroughbred |
 | 步进 | BCXJB |
 | Socket | A(462) |
-| CPU 时钟 | 1750 MHz |
-| Board Frequency | 166 / 333 MHz |
-| Clock multiplier | x 10.5 |
+| 主频 | 1750 MHz |
+| 外频 | 166 / 333 MHz |
+| 倍频 | x 10.5 |
 | 总线宽度 | 64/32 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 256 KB |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 256 KB |
 | 晶体管 | 37,200,000 |
 | 技术 | 0.13 µm |
 | 生产日期 | 11/2005 |
@@ -158,11 +158,11 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | 核心 | Thoroughbred |
 | 步进 | BJJF |
 | Socket | A(462) |
-| CPU 时钟 | 1000 MHz |
+| 主频 | 1000 MHz |
 | Bus Speed | 266 MHz |
-| Data Width | 32 Bit |
-| Level1 Cache | 128 KB (64/64) |
-| Level2 Cache | 256 KB |
+| 数据宽度 | 32 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 256 KB |
 | 晶体管 |  |
 | 技术 | 0.13 µm |
 | 上市时间 | 5.24.2004 |
