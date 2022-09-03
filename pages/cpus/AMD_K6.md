@@ -3,7 +3,7 @@ title: AMD K6 Processor
 tags: [AMD, K6]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 3, 2022
-summary: ""
+summary: "AMD K6 于 1997 年 4 月推出，是为了与 Intel Pentium MMX 和 Pentium II 竞争。"
 sidebar: mydoc_sidebar
 permalink: AMD_K6.html
 folder: cpus
@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 AMD K6
 
-AMD K6于 1997 年 4 月推出。其 RISC 架构最初是在 NexGen 开发的，并在收购 NexGen 后被 AMD 改用于他们的项目。K6 是与 Intel Pentium MMX 和 Pentium II 竞争的。事实上，K6 是第一个被认真对待的竞争对手，即使它在 FPU 密集型程序中无法完全跟上英特尔的 MMX 处理器。
+AMD K6 于 1997 年 4 月推出。其 RISC 架构最初是在 NexGen 开发的，并在收购 NexGen 后被 AMD 改用于他们的项目。K6 是为了与 Intel Pentium MMX 和 Pentium II 竞争。事实上，K6 是第一个被认真对待的竞争对手，即使它在 FPU 密集型程序中无法完全跟上英特尔的 MMX 处理器。
 
 新的 K6 微架构的优点： 
 - 一个快速整数单元和一个非常短的流水线
