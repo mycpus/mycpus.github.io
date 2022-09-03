@@ -55,7 +55,7 @@ The K5 project represented an early chance for AMD to take technical leadership 
 | Clock multiplier | x 1.5(fix) |
 | 总线宽度 | 64/32 Bit |
 | Level1 Cache | 24 KB (16/8) |
-| 晶体管 | 4.300,000 |
+| 晶体管 | 4,300,000 |
 | 技术 | CHMOS 0.35 µm |
 | 电压 | 3.525 Volt |
 | 生产日期 | 40/1995 |

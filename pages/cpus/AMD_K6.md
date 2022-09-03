@@ -80,12 +80,11 @@ The K6-2+ is a revised version of the K6-III. Essentially, the K6-2+ is a K6-III
 | Level1 Cache | 64 KB (32/32) |
 | 晶体管 | 8,800,000 |
 | 技术 | CMOS 0.35 µm |
-| 电压 | 3.525 Volt |
 | 生产日期 | 11/1998 |
 
 ```
   A = CPGA 设计
-  N = 3,2 Volt Core (3,3 Volt I/O)
+  N = 3.2 Volt Core (3.3 Volt I/O)
   Q = max. 70°C
   黑色标签
   带有 OR 代码和 CPU 时钟
@@ -93,5 +92,31 @@ The K6-2+ is a revised version of the K6-III. Essentially, the K6-2+ is a K6-III
 
 ![AMD-K6-233ANR 正面](/images/cpus/AMD/AMD-K6-233ANR_1.jpg)
 ![AMD-K6-233ANR 反面](/images/cpus/AMD/AMD-K6-233ANR_2.jpg)
+
+### AMD-K6-2/350AFR
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 321-Pin CPGA |
+| 核心 | Chomper |
+| Socket | Super 7 |
+| CPU 时钟 | 350 MHz |
+| Board Frequency | 100 MHz |
+| Clock multiplier | x 3.5 |
+| 总线宽度 | 64/32 Bit |
+| Level1 Cache | 64 KB (32/32) |
+| 晶体管 | 9,300,000 |
+| 技术 | CMOS 0.25 µm |
+| 生产日期 | 01/1999 |
+
+```
+  A = CPGA 设计
+  F = 2.2 Volt Core (3.3 Volt I/O)
+  R = max. 70°C
+  也作为嵌入式 CPU 出售
+```
+
+![AMD-K6-2/350AFR 正面](/images/cpus/AMD/AMD-K6-2350AFR_1.jpg)
+![AMD-K6-2/350AFR 反面](/images/cpus/AMD/AMD-K6-2350AFR_2.jpg)
 
 {% include links.html %}

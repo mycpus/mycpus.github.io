@@ -45,7 +45,7 @@ The combination of best-in-class clock speed and the write-back cache allowed th
 | Clock multiplier | x 4 |
 | 总线宽度 | 32 Bit |
 | Level1 Cache | 8 KB write-back |
-| 晶体管 | 1.600,000 |
+| 晶体管 | 1,600,000 |
 | 技术 | CHMOS 0.35 µm |
 | 电压 | 3.45 Volt |
 | 生产日期 | 10/1997 |
