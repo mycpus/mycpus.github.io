@@ -97,6 +97,8 @@ Beside performance improvements, the families incorporate enhanced power managem
 ![AMD Mobile Athlon II P320 正面](/images/cpus/AMD/AMD_Mobile_Athlon_II_P320_1.jpg)
 ![AMD Mobile Athlon II P320 反面](/images/cpus/AMD/AMD_Mobile_Athlon_II_P320_2.jpg)
 
+---------
+
 ### AMD Athlon II X2 255
 
 | 参数 | 数值 |
