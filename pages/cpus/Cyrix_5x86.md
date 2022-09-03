@@ -49,7 +49,7 @@ The Cyrix 5x86 processor is an example of Cyrix's strategy to design next-genera
 | 地址总线 | 32 Bit |
 | 一级缓存 | 16 KB write-back |
 | 晶体管 | 2,000,000 |
-| 技术 | CMOS 0,65 µm |
+| 技术 | CMOS 0.65 µm |
 | 电压 | 3.45 V |
 | 生产日期 |  |
 
