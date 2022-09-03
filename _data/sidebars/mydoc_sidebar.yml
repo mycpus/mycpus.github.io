@@ -228,7 +228,11 @@ entries:
       output: web, pdf
 
     - title: 6x86
-      url: /Cyrix_6x686.html
+      url: /Cyrix_6x86.html
+      output: web, pdf
+
+    - title: 6x86MX
+      url: /Cyrix_6x86MX.html
       output: web, pdf
 
     - title: M II
