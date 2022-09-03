@@ -73,6 +73,8 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 ![AMD Athlon 64 3000+ 正面](/images/cpus/AMD/AMD_Athlon_64_3000+_1.jpg)
 ![AMD Athlon 64 3000+ 反面](/images/cpus/AMD/AMD_Athlon_64_3000+_2.jpg)
 
+---------
+
 ### AMD Opteron 250
 
 | 参数 | 数值 |
@@ -97,6 +99,8 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 
 ![AMD Opteron 250 正面](/images/cpus/AMD/AMD_Opteron_250_1.jpg)
 ![AMD Opteron 250 反面](/images/cpus/AMD/AMD_Opteron_250_2.jpg)
+
+---------
 
 ### AMD Athlon 64 X2 5000+
 
@@ -123,6 +127,8 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 ![AMD Athlon 64 X2 5000+ 正面](/images/cpus/AMD/AMD_Athlon_64_X2_5000+_1.jpg)
 ![AMD Athlon 64 X2 5000+ 反面](/images/cpus/AMD/AMD_Athlon_64_X2_5000+_2.jpg)
 
+---------
+
 ### AMD Mobile Athlon X2 QL-62
 
 | 参数 | 数值 |
@@ -146,6 +152,8 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 
 ![AMD Mobile Athlon X2 QL-62 正面](/images/cpus/AMD/AMD_Mobile_Athlon_X2_QL-62_1.jpg)
 ![AMD Mobile Athlon X2 QL-62 反面](/images/cpus/AMD/AMD_Mobile_Athlon_X2_QL-62_2.jpg)
+
+---------
 
 ### AMD Turion 64 MK-36
 
@@ -171,6 +179,8 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 
 ![AMD Turion 64 MK-36 正面](/images/cpus/AMD/AMD_Turion_64_MK-36_1.jpg)
 ![AMD Turion 64 MK-36 反面](/images/cpus/AMD/AMD_Turion_64_MK-36_2.jpg)
+
+---------
 
 ### AMD Turion X2 Ultra ZM-82
 
