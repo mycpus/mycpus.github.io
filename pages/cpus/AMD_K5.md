@@ -1,57 +1,74 @@
 ---
-title: AMD 5x86 P75 (Enhanced 486 DX5) Processor
-tags: [AMD, 5x86]
+title: AMD K5 Processor
+tags: [AMD, K5]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 3, 2022
-summary: "AMD 5x86 处理器于 1995 年 11 月 6 日推出。"
+summary: ""
 sidebar: mydoc_sidebar
 permalink: AMD_5x86.html
 folder: cpus
 ---
 
-## 关于 AMD 5x86 P75 (增强型 486 DX5) 处理器
+## 关于 AMD K5
 
-AMD 5x86 处理器于 1995 年 11 月 6 日推出。这些与增强型 Am486DX4 处理器基于相同的微架构，使用 0.35 µm 工艺制造，并具有 16 KB L1 缓存。在 5x86 上，AMD 第一次使用了所谓的 P 等级，这表明相对于对应的 Intel Pentium 的性能。5x86-P75 CPU 的性能应该可以与 Intel Pentium 75 相媲美。与 Pentium 7 5相比，主板的 socket 3 接口仍然使用 5x86 ，因此这些处理器为 486 系统提供了廉价的升级选项，因为486主板可以继续使用。
+AMD 的第一个内部开发产品 K5 处理器于 1996 年 3 月 27 日上市。这些处理器使用 socket 5 作为主板接口，以后的版本使用socket 7。从 K5 开始，所有 AMD CPU 都集成了 FPU（协处理器）。SSA/5 内核在引入“K5”处理器时仍然存在 L1 缓存和分支预测中的错误。
 
 关键数据：
 
-- 1,200,000 个晶体管
+- K5 超标量微架构
+- 4,300,000 个晶体管
 - 0.35 µm CMOS 制造技术
-- 32 位 CPU（数据和地址总线各 32 位）
+- 64 位数据总线
+- 32 位数据宽度
 - MMU（内存管理单元）
-- 16 KB 回写式 L1 高速缓存
-- FPU 和四倍内部时钟
-- 使用 P 或 PR 等级（性能相对到 Intel Pentium）
-- 支持高达 4 GB 的内存          
+- 24 KB L1 高速缓存（16 KB 指令和 8 KB 数据高速缓存）
+- 使用 P 或 PR 等级（性能相对于 Intel Pentium）
+- 支持高达 4 GB 的内存
 
 ## Introduction
 
-Introduced in November 1995, the AMD 5x86 is a standard 486 processor with an internally-set multiplier of 4, allowing it to run at 133 MHz on systems without official support for clock-multiplied DX2 or DX4 486 processors. Like most of the later 486 parts, the 5x86 featured write-back L1 cache, and unlike all but a few, a generous 16 kilobytes rather than the more common 8KB.
+The K5 was developed by AMD to compete with Intel's Pentium microprocessor range. Introduced in 1996 almost 2 years late, AMD's problems were compounded by being unable to manufacture the chip at the clock speeds originally projected. In its favor, the K5 did at least offer good x86 compatibility. All models had 4.3 million transistors on-chip. No K5 supported MMX instructions. Internally ambitious, it was closer to a Pentium Pro than a Pentium, based upon an internal highly parallel RISC processor architecture with an x86 decoding front-end.
  
-Since having a clock multiplier of four was not part of the original Socket 3 design, AMD made the 5x86 look for a two times setting from the motherboard and interpret that as four times instead. In other words, to use the 5x86 you want to set the motherboard to the 2x setting. This will actually cause the 5x86 to run at 4x.
- 
-The combination of best-in-class clock speed and the write-back cache allowed the 5x86 to equal or slightly surpass an Intel Pentium 75 MHz processor in business application performance. Also, because it was based on a pure 486 design, it was compatible with older systems, something its slightly faster rival, the Cyrix 5x86, had trouble with.
+Improvements and differences to the Intel Pentium include:
+
+* Five integer units, which could process instructions out of order, one floating point unit, compared to two units of the Pentium
+* The branch target buffer was four times the size of the Pentium's, although not reportedly more accurate
+* Register renaming improved parallel performance of the pipelines
+* Speculative execution of instructions reduced pipeline stall
+* The instruction cache is 16 Kb, double the Pentium
+* The primary cache is 4-way set associative instead of the Pentium's 2-way
+
+The K5 project represented an early chance for AMD to take technical leadership from Intel. Although the chip addressed the right design concepts, the actual engineering implementation was weak. The low clock rates were due in part to AMD's deficiencies as a manufacturing company in the period. However, having a branch prediction unit four times the size of the Pentium, yet reportedly not delivering superior performance, is an example of how the actual implementation fell short of the project goals. Additionally, while the K5's floating point performance was better than that of the Cyrix 6x86, it was weaker than that of the Pentium. Because it was late to market and did not meet performance expectations, the K5 never gained the acceptance among large computer manufacturers that the Am486 and AMD K6 enjoyed. Overall, the chip failed to deliver, both in terms of raw performance, and financially for AMD.
+
 
 ## 我的收藏
 
-### AMD Am5x86-P75 AMD-X5-133ADZ
+### AMD-K5-PR100ABQ
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | 168-pin CPGA |
-| Socket | 3 |
-| CPU 时钟 | 133 MHz |
-| Board Frequency | 33 MHz |
-| Clock multiplier | x 4 |
-| 总线宽度 | 32 Bit |
-| Level1 Cache | 8 KB write-back |
-| 晶体管 | 1.600,000 |
+| CPU 类型 | 296-Pin CPGA |
+| 核心 | SSA/5 |
+| Socket | 5/7 |
+| CPU 时钟 | 100 MHz |
+| Board Frequency | 66 MHz |
+| Clock multiplier | x 1.5(fix) |
+| 总线宽度 | 64/32 Bit |
+| Level1 Cache | 24 KB (16/8) |
+| 晶体管 | 4.300,000 |
 | 技术 | CHMOS 0.35 µm |
-| 电压 | 3.45 Volt |
-| 生产日期 | 10/1997 |
+| 电压 | 3.525 Volt |
+| 生产日期 | 40/1995 |
 | 产地 | Malaysia |
 
-![AMD Am5x86-P75 AMD-X5-133ADZ 正面](/images/cpus/AMD/AMD_Am5x86-P75_AMD-X5-133ADZ_1.jpg)
-![AMD Am5x86-P75 AMD-X5-133ADZ 反面](/images/cpus/AMD/AMD_Am5x86-P75_AMD-X5-133ADZ_2.jpg)
+```
+  A = 296-Pin CPGA 设计
+  B = 3.525 Volt
+  Q = max. 60°C
+  带散热器的 CPU
+```
+
+![AMD-K5-PR100ABQ 正面](/images/cpus/AMD/AMD-K5-PR100ABQ_1.jpg)
+![AMD-K5-PR100ABQ 反面](/images/cpus/AMD/AMD-K5-PR100ABQ_2.jpg)
 
 {% include links.html %}
