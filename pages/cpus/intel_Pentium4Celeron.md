@@ -43,6 +43,8 @@ Intel 的 Celeron D系列是最后一个具有 NetBurst 架构的 Celeron 处理
 ![Intel Celeron 1.8GHz 正面](/images/cpus/Intel/Intel_Celeron_1.8GHz_1.jpg)
 ![Intel Celeron 1.8GHz 反面](/images/cpus/Intel/Intel_Celeron_1.8GHz_2.jpg)
 
+---------
+
 ### Intel Celeron D 2.4GHz/256/533
 
 | 参数 | 数值 |

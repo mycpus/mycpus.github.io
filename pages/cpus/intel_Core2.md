@@ -53,6 +53,8 @@ Intel Core 2 系列是纯 64 位微处理器系列。它们基于 2006 年 1 月
 ![Intel Core 2 Duo 6320 正面](/images/cpus/Intel/Intel_Core_2_Duo_6320_1.jpg)
 ![Intel Core 2 Duo 6320 反面](/images/cpus/Intel/Intel_Core_2_Duo_6320_2.jpg)
 
+---------
+
 ### Intel Core 2 Duo E7500
 
 | 参数 | 数值 |
@@ -74,6 +76,8 @@ Intel Core 2 系列是纯 64 位微处理器系列。它们基于 2006 年 1 月
 ![Intel Core 2 Duo E7500 正面](/images/cpus/Intel/Intel_Core_2_Duo_E7500_1.jpg)
 ![Intel Core 2 Duo E7500 反面](/images/cpus/Intel/Intel_Core_2_Duo_E7500_2.jpg)
 
+---------
+
 ### Intel Core 2 Duo E8400
 
 | 参数 | 数值 |
@@ -94,6 +98,8 @@ Intel Core 2 系列是纯 64 位微处理器系列。它们基于 2006 年 1 月
 
 ![Intel Core 2 Duo E8400 正面](/images/cpus/Intel/Intel_Core_2_Duo_E8400_1.jpg)
 ![Intel Core 2 Duo E8400 反面](/images/cpus/Intel/Intel_Core_2_Duo_E8400_2.jpg)
+
+---------
 
 ### Intel Core 2 QUAD Q6600
 

@@ -52,6 +52,8 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 ![Intel Pentium MMX A80503166 正面](/images/cpus/Intel/Intel_Pentium_MMX_A80503166_1.jpg)
 ![Intel Pentium MMX A80503166 反面](/images/cpus/Intel/Intel_Pentium_MMX_A80503166_2.jpg)
 
+---------
+
 ### Intel Pentium MMX BP80503166
 
 | 参数 | 数值 |
@@ -74,6 +76,8 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 ![Intel Pentium MMX BP80503166 正面](/images/cpus/Intel/Intel_Pentium_MMX_BP80503166_1.jpg)
 ![Intel Pentium MMX BP80503166 反面](/images/cpus/Intel/Intel_Pentium_MMX_BP80503166_2.jpg)
 ![Intel Pentium MMX BP80503166 侧面](/images/cpus/Intel/Intel_Pentium_MMX_BP80503166_3.jpg)
+
+---------
 
 ### Intel Pentium MMX FV80503200
 

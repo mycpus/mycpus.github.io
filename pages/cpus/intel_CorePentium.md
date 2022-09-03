@@ -52,6 +52,8 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 ![Intel Pentium Dual Core E5200 正面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5200_1.jpg)
 ![Intel Pentium Dual Core E5200 反面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5200_2.jpg)
 
+---------
+
 ### Intel Pentium Dual Core E5300
 
 | 参数 | 数值 |

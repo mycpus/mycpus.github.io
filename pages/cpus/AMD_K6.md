@@ -93,6 +93,8 @@ The K6-2+ is a revised version of the K6-III. Essentially, the K6-2+ is a K6-III
 ![AMD-K6-233ANR 正面](/images/cpus/AMD/AMD-K6-233ANR_1.jpg)
 ![AMD-K6-233ANR 反面](/images/cpus/AMD/AMD-K6-233ANR_2.jpg)
 
+---------
+
 ### AMD-K6-2/350AFR
 
 | 参数 | 数值 |

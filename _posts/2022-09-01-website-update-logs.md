@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-03:
+
+- 完成 AMD CPU 藏品资料的整理工作
+
 2022-09-01:
 
 - 完成 Intel CPU 藏品资料的整理工作

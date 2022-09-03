@@ -68,6 +68,8 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 ![AMD Athlon 650 MHz 正面](/images/cpus/AMD/AMD_Athlon_650_MHz_1.jpg)
 ![AMD Athlon 650 MHz 反面](/images/cpus/AMD/AMD_Athlon_650_MHz_2.jpg)
 
+---------
+
 ### AMD Mobile Duron 1 GHz
 
 | 参数 | 数值 |
@@ -92,6 +94,8 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 
 ![AMD Mobile Duron 1 GHz 正面](/images/cpus/AMD/AMD_Mobile_Duron_1GHz_1.jpg)
 ![AMD Mobile Duron 1 GHz 反面](/images/cpus/AMD/AMD_Mobile_Duron_1GHz_2.jpg)
+
+---------
 
 ### AMD Sempron 2200+
 
@@ -118,6 +122,8 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 ![AMD Sempron 2200+ 正面](/images/cpus/AMD/AMD_Sempron_2200+_1.jpg)
 ![AMD Sempron 2200+ 反面](/images/cpus/AMD/AMD_Sempron_2200+_2.jpg)
 
+---------
+
 ### AMD Sempron 2500+
 
 | 参数 | 数值 |
@@ -139,6 +145,7 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 ```
   OPN: SDA2500DUT3D
 ```
+---------
 
 ![AMD Sempron 2500+ 正面](/images/cpus/AMD/AMD_Sempron_2500+_1.jpg)
 ![AMD Sempron 2500+ 反面](/images/cpus/AMD/AMD_Sempron_2500+_2.jpg)

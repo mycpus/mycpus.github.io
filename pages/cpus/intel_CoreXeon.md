@@ -64,6 +64,8 @@ folder: cpus
 ![Intel Xeon 5130 正面](/images/cpus/Intel/Intel_Xeon_5130_1.jpg)
 ![Intel Xeon 5130 反面](/images/cpus/Intel/Intel_Xeon_5130_2.jpg)
 
+---------
+
 ### Intel Xeon E5405
 
 | 参数 | 数值 |

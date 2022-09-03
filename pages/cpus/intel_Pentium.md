@@ -70,6 +70,8 @@ Following S-Spec numbers are affected:
 ![Intel Pentium A80502-75 Goldcap 正面](/images/cpus/Intel/Intel_Pentium_A80502-75_Goldcap_1.jpg)
 ![Intel Pentium A80502-75 Goldcap 反面](/images/cpus/Intel/Intel_Pentium_A80502-75_Goldcap_2.jpg)
 
+---------
+
 ### Intel Pentium A8050275
 
 | 参数 | 数值 |
@@ -92,6 +94,8 @@ Following S-Spec numbers are affected:
 ![Intel Pentium A8050275 正面](/images/cpus/Intel/Intel_Pentium_A8050275_1.jpg)
 ![Intel Pentium A8050275 反面](/images/cpus/Intel/Intel_Pentium_A8050275_2.jpg)
 
+---------
+
 ### Intel Pentium BP80502133
 
 | 参数 | 数值 |
@@ -113,6 +117,8 @@ Following S-Spec numbers are affected:
 
 ![Intel Pentium BP80502133 正面](/images/cpus/Intel/Intel_Pentium_BP80502133_1.jpg)
 ![Intel Pentium BP80502133 反面](/images/cpus/Intel/Intel_Pentium_BP80502133_2.jpg)
+
+---------
 
 ### Intel Pentium FV80502166
 

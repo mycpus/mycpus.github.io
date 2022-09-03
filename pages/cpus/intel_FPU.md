@@ -45,6 +45,8 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 ![Intel D80287-10 正面](/images/cpus/Intel/Intel_D80287-10_1.jpg)
 ![Intel D80287-10 反面](/images/cpus/Intel/Intel_D80287-10_2.jpg)
 
+---------
+
 ### Intel C80287-3
 
 | 参数 | 数值 |
@@ -59,6 +61,8 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 
 ![Intel C80287-3 正面](/images/cpus/Intel/Intel_C80287-3_1.jpg)
 ![Intel C80287-3 反面](/images/cpus/Intel/Intel_C80287-3_2.jpg)
+
+---------
 
 ### Intel N80387SX (16-25MHz)
 
@@ -77,6 +81,8 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 
 ![Intel N80387SX (16-25MHz) 正面](/images/cpus/Intel/Intel_N80387SX_(16-25MHz)_1.jpg)
 ![Intel N80387SX (16-25MHz) 反面](/images/cpus/Intel/Intel_N80387SX_(16-25MHz)_2.jpg)
+
+---------
 
 ### Intel A80387DX 16-33
 

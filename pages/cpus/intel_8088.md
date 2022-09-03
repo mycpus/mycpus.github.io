@@ -45,6 +45,8 @@ The 8088 is a reduced and cheaper version of the 8086 for the 8-bit market. It w
 ![Intel P8088 正面](/images/cpus/Intel/Intel_P8088_1.jpg)
 ![Intel P8088 反面](/images/cpus/Intel/Intel_P8088_2.jpg)
 
+---------
+
 ### Intel P8088-2
 
 | 参数 | 数值 |

@@ -83,6 +83,8 @@ folder: cpus
 ![Intel Core i3-4170 正面](/images/cpus/Intel/Intel_Core_i3-4170_1.jpg)
 ![Intel Core i3-4170 反面](/images/cpus/Intel/Intel_Core_i3-4170_2.jpg)
 
+---------
+
 ### Intel Core i5-4460
 
 | 参数 | 数值 |
@@ -107,6 +109,8 @@ folder: cpus
 
 ![Intel Core i5-4460 正面](/images/cpus/Intel/Intel_Core_i5-4460_1.jpg)
 
+---------
+
 ### Intel Core i7-4770
 
 | 参数 | 数值 |
@@ -130,6 +134,8 @@ folder: cpus
 | 生产日期 | 20/2014 |
 
 ![Intel Core i7-4770 正面](/images/cpus/Intel/Intel_Core_i7-4770_1.jpg)
+
+---------
 
 ### Intel Pentium G3240
 

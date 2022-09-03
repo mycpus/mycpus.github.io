@@ -50,6 +50,8 @@ All Pentium 4s were manufactured in three types of packages - 423-pin PGA packag
 ![Intel Pentium 4 1.5GHz 正面](/images/cpus/Intel/Intel_Pentium_4_1.5GHz_1.jpg)
 ![Intel Pentium 4 1.5GHz 反面](/images/cpus/Intel/Intel_Pentium_4_1.5GHz_2.jpg)
 
+---------
+
 ### Intel Pentium 4 1.7GHz/256/400/1.75V
 
 | 参数 | 数值 |
@@ -71,6 +73,8 @@ All Pentium 4s were manufactured in three types of packages - 423-pin PGA packag
 
 ![Intel Pentium 4 1.7GHz 正面](/images/cpus/Intel/Intel_Pentium_4_1.7GHz_1.jpg)
 ![Intel Pentium 4 1.7GHz 反面](/images/cpus/Intel/Intel_Pentium_4_1.7GHz_2.jpg)
+
+---------
 
 ### Intel Pentium 4 2.4GHz/512/533
 

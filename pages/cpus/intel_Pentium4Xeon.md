@@ -37,6 +37,8 @@ folder: cpus
 ![Intel Xeon 2400DP 2.4GHz 正面](/images/cpus/Intel/Intel_Xeon_2400DP_1.jpg)
 ![Intel Xeon 2400DP 2.4GHz 反面](/images/cpus/Intel/Intel_Xeon_2400DP_2.jpg)
 
+---------
+
 ### Intel Xeon 3.4GHz 3400DP/2M/800
 
 | 参数 | 数值 |
