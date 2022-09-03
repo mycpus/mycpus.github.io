@@ -28,6 +28,8 @@ folder: cpus
 
 Duron 的直接继任者是基于 Athlon XP 的 AMD Sempron 处理器。
 
+AMD Geode NX 处理器是 AMD 公司针对嵌入式市场推出的 x86 架构处理器产品，高性能、低功率是这种处理器的主要特点，从 1W 到 14W，让用户根据需要选择合适产品。Geode NX 主要针对例如瘦客户端、打印机、零售点，信息和交易服务亭，以及通信网络设备等。
+
 ## Introduction
 
 The Athlon made its debut on August 21, 1999. The original Athlon core revision, codenamed "K7", was available in speeds of 500 to 650 MHz at its introduction and was later sold at speeds up to 1000 MHz.
@@ -82,7 +84,7 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | Level2 Cache | 64 KB |
 | 晶体管 | 25,200,000 |
 | 技术 | 0.18 µm |
-| 生产日期 | 22/2022 |
+| 生产日期 | 22/2002 |
 
 ```
   OPN: DHM1000AVS1B
@@ -93,6 +95,22 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 
 ### AMD Sempron 2200+
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 453-Pin sCPGA |
+| 核心 | Thoroughbred |
+| 步进 | BIXJB |
+| Socket | A(462) |
+| CPU 时钟 | 1500 MHz |
+| Board Frequency | 166 / 333 MHz |
+| Clock multiplier | x 9 |
+| 总线宽度 | 64/32 Bit |
+| Level1 Cache | 128 KB (64/64) |
+| Level2 Cache | 256 KB |
+| 晶体管 | 37,200,000 |
+| 技术 | 0.13 µm |
+| 生产日期 | 33/2004 |
+
 ```
   OPN: SDA2200DUT3D
 ```
@@ -102,6 +120,22 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 
 ### AMD Sempron 2500+
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 453-Pin sCPGA |
+| 核心 | Thoroughbred |
+| 步进 | BCXJB |
+| Socket | A(462) |
+| CPU 时钟 | 1750 MHz |
+| Board Frequency | 166 / 333 MHz |
+| Clock multiplier | x 10.5 |
+| 总线宽度 | 64/32 Bit |
+| Level1 Cache | 128 KB (64/64) |
+| Level2 Cache | 256 KB |
+| 晶体管 | 37,200,000 |
+| 技术 | 0.13 µm |
+| 生产日期 | 11/2005 |
+
 ```
   OPN: SDA2500DUT3D
 ```
@@ -110,5 +144,28 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 ![AMD Sempron 2500+ 反面](/images/cpus/AMD/AMD_Sempron_2500+_2.jpg)
 
 ### AMD Geode NX 1500 (F)
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 453-pin Organic PGA |
+| 核心 | Thoroughbred |
+| 步进 | BJJF |
+| Socket | A(462) |
+| CPU 时钟 | 1000 MHz |
+| Bus Speed | 266 MHz |
+| Data Width | 32 Bit |
+| Level1 Cache | 128 KB (64/64) |
+| Level2 Cache | 256 KB |
+| 晶体管 |  |
+| 技术 | 0.13 µm |
+| 上市时间 | 5.24.2004 |
+| 生产日期 | 46/2007 |
+
+```
+  OPN: ANXL1500FGC3F
+```
+
+![AMD Geode NX 1500 (F) 正面](/images/cpus/AMD/AMD_Geode_NX_1500F_1.jpg)
+![AMD Geode NX 1500 (F) 反面](/images/cpus/AMD/AMD_Geode_NX_1500F_2.jpg)
 
 {% include links.html %}
