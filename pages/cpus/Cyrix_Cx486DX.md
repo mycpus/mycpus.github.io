@@ -21,26 +21,54 @@ The Cyrix Cx486DX was designed to be completely software-compatible with Intel's
 
 ## 我的收藏
 
-### Cyrix Cx486DLC-33GP OEM
+### Cyrix Cx486DX2-V66GP
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | Ceramic PGA-132 |
-| CPU 时钟 | 33 MHz |
-| 总线时钟 | 33 MHz |
-| 数据总线 | 32 Bit |
-| 地址总线 | 32 Bit |
-| 晶体管 | 600,000 |
-| 电压 | 5 V |
-| 上市时间 | 06/1992 |
-| 生产日期 | 03/1993 |
-| 产地 | Japan |
+| CPU 类型 | 168-Pin CPGA |
+| Socket | 3 |
+| 主频 | 66 MHz |
+| 外频 | 33 MHz |
+| 倍频 | x 2 |
+| 数据宽度 | 32 Bit |
+| 一级缓存 | 8 KB write-back |
+| 晶体管 | 1,000,000 |
+| 技术 | CMOS |
+| 电压 | 4 V |
+| 生产日期 | 01/1992 |
+| 生产厂商 | IBM |
 
 ```
-OEM 版本，带有金色的 Cyrix 标志。
+086-4.0V
 ```
 
-![Cyrix Cx486DLC-33GP OEM 正面](/images/cpus/Cyrix/Cyrix_Cx486DLC-33GP_OEM_1.jpg)
-![Cyrix Cx486DLC-33GP OEM 反面](/images/cpus/Cyrix/Cyrix_Cx486DLC-33GP_OEM_2.jpg)
+![Cyrix Cx486DX2-V66GP 正面](/images/cpus/Cyrix/Cyrix_Cx486DX2-V66GP_1.jpg)
+![Cyrix Cx486DX2-V66GP 反面](/images/cpus/Cyrix/Cyrix_Cx486DX2-V66GP_2.jpg)
+
+---------
+
+### Cyrix Cx486DX2-V80GP
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 168-Pin CPGA |
+| Socket | 3 |
+| 主频 | 80 MHz |
+| 外频 | 40 MHz |
+| 倍频 | x 2 |
+| 数据宽度 | 32 Bit |
+| 一级缓存 | 8 KB write-back |
+| 晶体管 | 1,000,000 |
+| 技术 | CMOS |
+| 电压 | 4 V |
+| 生产日期 | 37/1996 |
+| 生产厂商 | IBM |
+
+```
+4.0V
+```
+
+![Cyrix Cx486DX2-V80GP 正面](/images/cpus/Cyrix/Cyrix_Cx486DX2-V80GP_1.jpg)
+![Cyrix Cx486DX2-V80GP 反面](/images/cpus/Cyrix/Cyrix_Cx486DX2-V80GP_2.jpg)
 
 {% include links.html %}
