@@ -47,7 +47,7 @@ After Cyrix was purchased by National Semiconductor in 1997 they terminated thei
 | 技术 | CMOS 0.25 µm |
 | 电压 | 2.9 Volt |
 | 上市时间 | 1998-06-15 |
-| 生产日期 |  |
+| 生产日期 | 11/1999 |
 | 生产厂商 | National S. / USA |
 
 ![Cyrix M II - 333GP 正面](/images/cpus/Cyrix/Cyrix_MII-333GP_1.jpg)
