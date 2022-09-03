@@ -5,7 +5,7 @@ keywords: CPU, cpu, processor, qualification, information, pictures, core, frequ
 last_updated: Sep 3, 2022
 summary: ""
 sidebar: mydoc_sidebar
-permalink: AMD_5x86.html
+permalink: AMD_K5.html
 folder: cpus
 ---
 
