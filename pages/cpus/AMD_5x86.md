@@ -35,6 +35,13 @@ folder: cpus
 | 生产日期 | 40/1995 |
 | 产地 | Malaysia |
 
+```
+  A = 296-Pin CPGA 设计
+  B = 3.525 Volt
+  Q = max. 60°C
+  带散热器的 CPU
+```
+
 ![AMD-K5-PR100ABQ 正面](/images/cpus/AMD/AMD-K5-PR100ABQ_1.jpg)
 ![AMD-K5-PR100ABQ 反面](/images/cpus/AMD/AMD-K5-PR100ABQ_2.jpg)
 
