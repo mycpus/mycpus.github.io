@@ -17,5 +17,6 @@ allowed-tags:
   - Core
   - Celeron
   - Xeon
+  - RISC
 
 # Copyright 2021 Google LLC
