@@ -5,21 +5,25 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-04:
+
+- 完成 VIA CPU 藏品资料的整理工作。
+
 2022-09-03:
 
-- 完成 AMD CPU 藏品资料的整理工作
-- 完成 Cyrix CPU 藏品资料的整理工作
-- 对部分文字进行润色修改
+- 完成 AMD CPU 藏品资料的整理工作。
+- 完成 Cyrix CPU 藏品资料的整理工作。
+- 对部分文字进行润色修改。
 
 2022-09-01:
 
-- 完成 Intel CPU 藏品资料的整理工作
-- 完成网站主体结构建设
+- 完成 Intel CPU 藏品资料的整理工作。
+- 完成网站主体结构建设。
 
 
 2022-08-28:
 
-- 申请 Github 账号，建立 mycpus.github.io 网站
-- 开始整理 Intel CPU 藏品资料
+- 申请 Github 账号，建立 mycpus.github.io 网站。
+- 开始整理 Intel CPU 藏品资料。
 
 {% include links.html %}
