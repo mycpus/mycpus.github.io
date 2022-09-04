@@ -18,5 +18,6 @@ allowed-tags:
   - Celeron
   - Xeon
   - RISC
+  - VIA
 
 # Copyright 2021 Google LLC
