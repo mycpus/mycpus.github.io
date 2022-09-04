@@ -9,7 +9,7 @@ permalink: VIA_C3_1GigaPro.html
 folder: cpus
 ---
 
-## 关于 VIA C3
+## 关于 VIA C3 1Giga Pro
 
 威盛 C3 1Giga Pro 处理器于 2001 年推出。CPU 由威盛科技的子公司 Centaur Technology 开发。C3 1Giga Pro 处理器用于  Socket 370 插槽的主板。
 
@@ -26,7 +26,7 @@ folder: cpus
 
 ## 我的收藏
 
-### 1Giga Pro (667MHz)
+### VIA C3 1Giga Pro (667MHz)
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -45,7 +45,7 @@ folder: cpus
 | 生产日期 | 09/2003 |
 | 产地 | Taiwan, China |
 
-![1Giga Pro (667MHz) 正面](/images/cpus/VIA/1Giga_Pro_(667MHz)_1.jpg)
-![1Giga Pro (667MHz) 反面](/images/cpus/VIA/1Giga_Pro_(667MHz)_2.jpg)
+![VIA C3 1Giga Pro (667MHz) 正面](/images/cpus/VIA/VIA_C3_1Giga_Pro_(667MHz)_1.jpg)
+![VIA C3 1Giga Pro (667MHz) 反面](/images/cpus/VIA/VIA_C3_1Giga_Pro_(667MHz)_2.jpg)
 
 {% include links.html %}
