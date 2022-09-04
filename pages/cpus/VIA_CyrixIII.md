@@ -3,7 +3,7 @@ title: VIA Cyrix III Processor
 tags: [VIA, Cyrix III]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 4, 2022
-summary: "威盛 Cyrix III 处理器于 2000 年 6 月 6 日推出，用于 Socket 370 的主板。"
+summary: "威盛 Cyrix III 处理器于 2000 年 6 月 6 日推出，用在带有 Socket 370 插槽的主板上。"
 sidebar: mydoc_sidebar
 permalink: VIA_CyrixIII.html
 folder: cpus
@@ -11,10 +11,9 @@ folder: cpus
 
 ## 关于 VIA Cyrix III
 
-威盛 Cyrix III 处理器于 2000 年 6 月 6 日推出。这些 CPU 由 VIA Technologies, Inc 的子公司 Centaur Technology 开发，是 IDT WinChip C6 处理器的继承者。Cyrix III CPU 用于 Socket 370 的主板。
+威盛 Cyrix III 处理器于 2000 年 6 月 6 日推出。这些 CPU 由 VIA Technologies, Inc 的子公司 Centaur Technology 开发，是 IDT WinChip C6 处理器的继承者。Cyrix III CPU 用在带有 Socket 370 插槽的主板上。
 
 关键数据：
-
  - 11,300,000 个晶体管
  - 0.18 µm 制造工艺
  - 64 位数据总线
