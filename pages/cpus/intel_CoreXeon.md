@@ -56,6 +56,8 @@ folder: cpus
 | Clock multiplier | x 6 |
 | Level1 Cache | 2 x 64 KB (32/32) |
 | Level2 Cache | 4096 KB |
+| 核心 | 2 |
+| 线程 | 2 |
 | 晶体管 | 294,000,000 |
 | 制造工艺 | 65 nm |
 | 步进 | SLABP |
@@ -79,6 +81,8 @@ folder: cpus
 | Clock multiplier | x 6 |
 | Level1 Cache | 4 x 64 KB (32/32) |
 | Level2 Cache | 2 x 6144 KB |
+| 核心 | 4 |
+| 线程 | 4 |
 | 晶体管 | 820,000,000 |
 | 制造工艺 | 45 nm |
 | 步进 | SLBBP |
