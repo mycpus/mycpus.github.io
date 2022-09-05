@@ -20,5 +20,6 @@ allowed-tags:
   - RISC
   - VIA
   - TI
+  - ST
 
 # Copyright 2021 Google LLC

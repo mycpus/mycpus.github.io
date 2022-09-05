@@ -56,6 +56,8 @@ VIA initially planned to develop the Cyrix III as a successor to the Cyrix M II,
 ![VIA C3-700AMHz 正面](/images/cpus/VIA/VIA_C3-700AMHz_1.jpg)
 ![VIA C3-700AMHz 反面](/images/cpus/VIA/VIA_C3-700AMHz_2.jpg)
 
+---------
+
 ### XP1000 Pro VIA C3-733/133AMHz
 
 | 参数 | 数值 |
