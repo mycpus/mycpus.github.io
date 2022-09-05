@@ -15,6 +15,7 @@ tags: [news]
 - 完成 Motorola CPU 藏品资料的整理工作。
 - 完成 Transmeta CPU 藏品资料的整理工作。
 - 完成 Qualcomm CPU 藏品资料的整理工作。
+- 当前藏品资料整理工作基本完成。
 
 2022-09-04:
 
