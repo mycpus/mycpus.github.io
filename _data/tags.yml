@@ -21,5 +21,6 @@ allowed-tags:
   - VIA
   - TI
   - ST
+  - Geode
 
 # Copyright 2021 Google LLC
