@@ -30,6 +30,14 @@ National Semiconductor Geode GXM 处理器（支持 MMX 的集成 x86 解决方�
  - 16 KB 回写 L1 缓存
  - 支持最大 1 GB 内存
 
+  Geode 处理器的片上系统解决方案最初是由Cyrix为嵌入式和低功耗领域开发的，并以 Media GX 的名义销售。在将该部门出售给 National Semiconductor 之后，NS 用以下名称出售了更进一步开发的几代处理器：
+ ```
+  National Geode GXm
+  National Geode GXLV
+  National Geode GX1
+  National Geode GX2
+ ```
+
 ## 我的收藏
 
 ### Geode GXm-366GP
@@ -43,7 +51,7 @@ National Semiconductor Geode GXM 处理器（支持 MMX 的集成 x86 解决方�
 | 晶体管 | 2,400,000 |
 | 技术 | CMOS 0.35 µm |
 | 电压 | 2.9 Volt |
-| 生产日期(年月) |  |
+| 上市时间 | 1999 |
 | OPN | 30040-23 |
 
 ```
