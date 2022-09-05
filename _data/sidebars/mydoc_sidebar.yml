@@ -269,6 +269,10 @@ entries:
     output: web, pdf
 
     folderitems:
+    - title: 386
+      url: /TI_386.html
+      output: web, pdf
+    
     - title: 486
       url: /TI_486.html
       output: web, pdf

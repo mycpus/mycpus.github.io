@@ -19,5 +19,6 @@ allowed-tags:
   - Xeon
   - RISC
   - VIA
+  - TI
 
 # Copyright 2021 Google LLC
