@@ -5,6 +5,17 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-05:
+
+- 完成 Texas Instruments CPU 藏品资料的整理工作。
+- 完成 STMicroelectronics N.V. CPU 藏品资料的整理工作。
+- 完成 Geode CPU 藏品资料的整理工作。
+- 完成 IBM CPU 藏品资料的整理工作。
+- 完成 IDT CPU 藏品资料的整理工作。
+- 完成 Motorola CPU 藏品资料的整理工作。
+- 完成 Transmeta CPU 藏品资料的整理工作。
+- 完成 Qualcomm CPU 藏品资料的整理工作。
+
 2022-09-04:
 
 - 完成 VIA CPU 藏品资料的整理工作。
