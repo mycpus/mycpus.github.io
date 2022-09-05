@@ -101,4 +101,30 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 ![Intel Pentium MMX FV80503200 正面](/images/cpus/Intel/Intel_Pentium_MMX_FV80503200_1.jpg)
 ![Intel Pentium MMX FV80503200 反面](/images/cpus/Intel/Intel_Pentium_MMX_FV80503200_2.jpg)
 
+---------
+
+### Intel Pentium MMX Tillamook-300M C100
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-pin PPGA |
+| Socket | 7 |
+| 主频 | 300 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 4.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 32 Bit |
+| Level1 Cache | 16+16 KB |
+| 晶体管 | 4,500,000 |
+| 技术 | 0.35 µm |
+| 电压 | 2.0 V |
+
+```
+中国台湾省将 Pentium 300 重新命名为 “Tillamook”。这个假封装内的处理器实际上是一个 Mobile Pentium 266（磁带载体封装），焊接在 PGA PCB 上。金属散热片和大量的导热化合物似乎使这个版本在 300 MHz 下运行有些稳定。
+```
+
+![Intel Pentium MMX Tillamook-300M C100 正面](/images/cpus/Intel/intel_Pentium_MMX_Tillamook-300M_C100_1.jpg)
+![Intel Pentium MMX Tillamook-300M C100 反面](/images/cpus/Intel/intel_Pentium_MMX_Tillamook-300M_C100_2.jpg)
+![Intel Pentium MMX Tillamook-300M C100 侧面](/images/cpus/Intel/intel_Pentium_MMX_Tillamook-300M_C100_3.jpg)
+
 {% include links.html %}
