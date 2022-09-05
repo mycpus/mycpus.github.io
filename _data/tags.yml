@@ -22,5 +22,10 @@ allowed-tags:
   - TI
   - ST
   - Geode
+  - IBM
+  - IDT
+  - Motorola
+  - Transmeta
+  - Qualcomm
 
 # Copyright 2021 Google LLC

@@ -322,12 +322,12 @@ entries:
       output: web, pdf
 
 
-  - title: MOTOROLA
+  - title: Motorola
     output: web, pdf
 
     folderitems:
     - title: PowerPC
-      url: /MOTOROLA_PowerPC.html
+      url: /Motorola_PowerPC.html
       output: web, pdf
 
 
@@ -340,12 +340,12 @@ entries:
       output: web, pdf
 
 
-  - title: QUALCOMM
+  - title: Qualcomm
     output: web, pdf
 
     folderitems:
     - title: MSM8928
-      url: /QUALCOMM_MSM8928.html
+      url: /Qualcomm_MSM8928.html
       output: web, pdf
 
 
