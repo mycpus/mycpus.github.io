@@ -1,15 +1,15 @@
 ---
-title: Geode G1 Processor
-tags: [Geode, G1]
+title: Geode GX1 Processor
+tags: [Geode, GX1]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 5, 2022
-summary: ""
+summary: "Geode GX1 处理器（支持 MMX 的低功耗集成 x86 解决方案）于 2000 年 4 月 12 日上市。"
 sidebar: mydoc_sidebar
-permalink: Geode_G1.html
+permalink: Geode_GX1.html
 folder: cpus
 ---
 
-## 关于 Geode G1
+## 关于 Geode GX1
 
 National Semiconductor Geode GX1 处理器（支持 MMX 的低功耗集成 x86 解决方案）于 2000 年 4 月 12 日上市。由于其特殊的架构和自己的引脚布局，该处理器只能在专门支持此类 CPU 的主板上使用。
 
