@@ -67,22 +67,6 @@ With the AltiVec unit, the G4 microprocessor can do four-way single precision fl
 
 ---------
 
-### MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF
-
-| 参数 | 数值 |
-| ------ | ------ |
-| 处理器类型 | PowerPC G4 7455 |
-| 核心 | 7450 |
-| Socket | CBGA483 |
-| 主频 | 1000 MHz |
-| 外频 | 100 MHz |
-| 倍频 | x 10 |
-
-![MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF 正面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XC7455A_RX1000PF_1.jpg)
-![MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF 反面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XC7455A_RX1000PF_2.jpg)
-
----------
-
 ### MOTOROLA PowerPC 7450(G4) XPC7451 RX800PE
 
 | 参数 | 数值 |
@@ -96,5 +80,21 @@ With the AltiVec unit, the G4 microprocessor can do four-way single precision fl
 
 ![MOTOROLA PowerPC 7450(G4) XPC7451 RX800PE 正面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XPC7451_RX800PE_1.jpg)
 ![MOTOROLA PowerPC 7450(G4) XPC7451 RX800PE 反面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XPC7451_RX800PE_2.jpg)
+
+---------
+
+### MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 处理器类型 | PowerPC G4 7455 |
+| 核心 | 7450 |
+| Socket | CBGA483 |
+| 主频 | 1000 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 10 |
+
+![MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF 正面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XC7455A_RX1000PF_1.jpg)
+![MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF 反面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XC7455A_RX1000PF_2.jpg)
 
 {% include links.html %}
