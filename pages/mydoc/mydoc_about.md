@@ -9,6 +9,8 @@ topnav: topnav
 comments: false
 ---
 
+![tx](/images/tx.jpg)
+
 My name is Honux, and I'm the curator of this museum, a technical fan, engineer, and programmer based in Zhengzhou City, Henan Province, China. For more details, see my [iHonux's Projects](https://fxrj.github.io) website.
 
 {% include links.html %}
