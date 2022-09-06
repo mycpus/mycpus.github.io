@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 IBM 6x86MX
 
-IBM 6x86MX 处理器属于第五代 x86 处理器，于 1997 年 5 月 30 日推出。这些超标量和超流水线微处理器是 6x86 处理器的继任者，已获得 MMX 兼容的多媒体扩展。与 6x86 一样，6x86MX 与Intel Pentium MMX 引脚兼容，因此可以在当时常见的 Socket 7主板上运行。由于同主频的 6x86MX 的整数性能明显优于 Intel Pentium MMX 处理器，因此与 6x86 一样使用了所谓的 P 等级。例如，具有 133 MHz 处理器时钟的 IBM 6x86MX PR166 与具有 166 MHz 的 Intel Pentium MMX 一样快。
+IBM 6x86MX 处理器属于第五代 x86 处理器，于 1997 年 5 月 30 日推出。这些超标量和超流水线微处理器是 6x86 处理器的继任者，已获得与 MMX 兼容的多媒体扩展。与 6x86 一样，6x86MX 与 Intel Pentium MMX 引脚兼容，因此可以在当时常见的 Socket 7 主板上运行。由于同主频的 6x86MX 的整数性能明显优于 Intel Pentium MMX 处理器，因此与 6x86 一样使用了所谓的 P 等级。例如，具有 133 MHz 处理器时钟的 IBM 6x86MX PR166 与具有 166 MHz 的 Intel Pentium MMX 一样快。
 
 关键数据：
  - 6,500,000 个晶体管
