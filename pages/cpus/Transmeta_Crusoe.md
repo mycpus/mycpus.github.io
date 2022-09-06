@@ -3,7 +3,7 @@ title: Transmeta Crusoe Processor
 tags: [Transmeta, Crusoe]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 5, 2022
-summary: ""
+summary: "Crusoe 是一款具有强大实力，应用于笔记本电脑和 Internet 设备的新处理器，采用硬件引擎核心和软件核心的合成结构。"
 sidebar: mydoc_sidebar
 permalink: Transmeta_Crusoe.html
 folder: cpus
