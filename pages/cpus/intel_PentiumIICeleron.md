@@ -36,13 +36,13 @@ The Celeron product concept was introduced by Intel in response to the company's
 | CPU 类型 | 370-pin PPGA |
 | 核心 | Mendocino |
 | Socket | 370 |
-| CPU 时钟 | 433 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 6.5 |
+| 主频 | 433 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 6.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 36 Bit |
-| Level1 Cache | 16+16 KB |
-| Level2 Cache | 128 KB |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
 | 晶体管 | 19,000,000 |
 | 制造工艺 | 0.25 µm |
 | 步进 | SL3BA |

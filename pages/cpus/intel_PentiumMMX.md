@@ -37,12 +37,12 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P55C |
 | Socket | 7 |
-| CPU 时钟 | 166 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 2.5 |
+| 主频 | 166 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 16+16 KB |
+| 一级缓存 | 16+16 KB |
 | 晶体管 | 4,500,000 |
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 2.8 V |
@@ -61,12 +61,12 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P55C |
 | Socket | 7 |
-| CPU 时钟 | 166 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 2.5 |
+| 主频 | 166 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 16+16 KB |
+| 一级缓存 | 16+16 KB |
 | 晶体管 | 4,500,000 |
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 2.8 V |
@@ -86,12 +86,12 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P55C |
 | Socket | 7 |
-| CPU 时钟 | 200 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 3 |
+| 主频 | 200 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 3 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 16+16 KB |
+| 一级缓存 | 16+16 KB |
 | 晶体管 | 4,500,000 |
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 2.8 V |
@@ -114,7 +114,7 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | 倍频 | x 4.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 16+16 KB |
+| 一级缓存 | 16+16 KB |
 | 晶体管 | 4,500,000 |
 | 技术 | 0.35 µm |
 | 电压 | 2.0 V |

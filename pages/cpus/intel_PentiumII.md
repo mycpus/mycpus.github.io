@@ -3,7 +3,7 @@ title: Intel Pentium II Processor
 tags: [Intel, Pentium II]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 29, 2022
-summary: "Intel Pentium II 处理器于 1997 年 5 月 7 日推出。第一款具有 Klamath 内核的Pentium II 拥有 750 万个晶体管、512 KB L2 高速缓存，并使用 0.35 微米生产工艺制造。Pentium II 内核基于Pentium Pro内核，但经过优化以显着加快运行 16 位代码的速度。它还支持 Pentium MMX 引入的 MMX 指令集扩展。采用 Deschutes 内核的第二代 Pentium II 处理器采用 0.25 微米生产工艺制造。基于新的工艺，从 PII 350 开始实现了 100 MHz 的 FSB，而不是之前习惯的 66 MHz。"
+summary: "Intel Pentium II 处理器于 1997 年 5 月 7 日推出。第一款具有 Klamath 内核的Pentium II 拥有 750 万个晶体管、512 KB L2 高速缓存，并使用 0.35 微米生产工艺制造。Pentium II 内核基于 Pentium Pro 内核，但经过优化以显着加快运行 16 位代码的速度。它还支持 Pentium MMX 引入的 MMX 指令集扩展。采用 Deschutes 内核的第二代 Pentium II 处理器采用 0.25 微米生产工艺制造。基于新的工艺，从 PII 350 开始实现了 100 MHz 的 FSB，而不是之前习惯的 66 MHz。"
 sidebar: mydoc_sidebar
 permalink: intel_PentiumII.html
 folder: cpus
@@ -36,13 +36,13 @@ By early 1999, the Pentium III superseded the Pentium II.
 | CPU 类型 | 242-pin S.E.C.C.2 OLGA |
 | 核心 | Deschutes |
 | Socket | Slot 1 |
-| CPU 时钟 | 400 MHz |
-| Board Frequency | 100 MHz |
-| Clock multiplier | x 4 |
+| 主频 | 400 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 4 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 36 Bit |
-| Level1 Cache | 16+16 KB |
-| Level2 Cache | 512 KB |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 512 KB |
 | 晶体管 | 7,500,000 |
 | 制造工艺 | 0.25 µm |
 | 电压 | 2.0 V |

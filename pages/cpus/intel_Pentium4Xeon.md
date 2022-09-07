@@ -24,12 +24,12 @@ folder: cpus
 | CPU 类型 | 604-pin FCmPGA |
 | 核心 | Prestonia |
 | Socket | 604 |
-| CPU 时钟 | 2400 MHz |
-| 系统时钟 | 133 MHz |
-| 系统总线时钟 | 533 MHz |
-| Clock multiplier | x 18 |
-| Level1 Cache | 8 KB |
-| Level2 Cache | 512 KB |
+| 主频 | 2400 MHz |
+| 外频 | 133 MHz |
+| 总线频率 | 533 MHz |
+| 倍频 | x 18 |
+| 一级缓存 | 8 KB |
+| 二级缓存 | 512 KB |
 | 晶体管 |  |
 | 制造工艺 | 0.13 µm |
 | 电压 | 1.5 V |
@@ -48,12 +48,12 @@ folder: cpus
 | CPU 类型 | 604-pin FCmPGA |
 | 核心 | Irwindale |
 | Socket | mPGA604 |
-| CPU 时钟 | 3400 MHz |
-| 系统时钟 | 200 MHz |
-| 系统总线时钟 | 800 MHz |
-| Clock multiplier | x 17 |
-| Level1 Cache | 16 KB |
-| Level2 Cache | 2048 KB |
+| 主频 | 3400 MHz |
+| 外频 | 200 MHz |
+| 总线频率 | 800 MHz |
+| 倍频 | x 17 |
+| 一级缓存 | 16 KB |
+| 二级缓存 | 2048 KB |
 | 晶体管 |  |
 | 制造工艺 | 90 nm |
 | 步进 | SL8P4 |

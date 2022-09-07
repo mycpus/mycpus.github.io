@@ -45,13 +45,13 @@ The Celeron product concept was introduced by Intel in response to the company's
 | CPU 类型 | 370-pin FC-PGA |
 | 核心 | Coppermine-128 |
 | Socket | 370 |
-| CPU 时钟 | 800 MHz |
-| Board Frequency | 100 MHz |
-| Clock multiplier | x 8 |
+| 主频 | 800 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 8 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 36 Bit |
-| Level1 Cache | 16+16 KB |
-| Level2 Cache | 128 KB |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
 | 晶体管 | 28,100,000 |
 | 制造工艺 | 0.18 µm |
 | 电压 | 1.75 V |

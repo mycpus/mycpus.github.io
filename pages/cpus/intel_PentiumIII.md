@@ -34,13 +34,13 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 | CPU 类型 | 242-pin S.E.C.C.2 |
 | 核心 | Katmai |
 | Socket | Slot 1 |
-| CPU 时钟 | 500 MHz |
-| Board Frequency | 100 MHz |
-| Clock multiplier | x 5 |
+| 主频 | 500 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 36 Bit |
-| Level1 Cache | 16+16 KB |
-| Level2 Cache | 512 KB |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 512 KB |
 | 晶体管 | 9,500,000 |
 | 制造工艺 | 0.25 µm |
 | 电压(Core / I/O) | 2.0 / 3.3 V |

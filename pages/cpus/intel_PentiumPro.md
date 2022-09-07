@@ -39,13 +39,13 @@ Despite the name, the Pentium Pro is actually quite different from Intel's earli
 | CPU 类型 | 387-pin SPGA |
 | 核心 | P6 |
 | Socket | 8 |
-| CPU 时钟 | 200 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 3 |
+| 主频 | 200 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 3 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 8+8 KB |
-| Level2 Cache | 256 KB |
+| 一级缓存 | 8+8 KB |
+| 二级缓存 | 256 KB |
 | 晶体管 | 5,500,000 |
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 3.3 V |

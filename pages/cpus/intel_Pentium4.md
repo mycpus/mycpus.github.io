@@ -45,12 +45,12 @@ All Pentium 4s were manufactured in three types of packages - 423-pin PGA packag
 | CPU 类型 | 423-Pin OLGA |
 | 核心 | Willamette |
 | Socket | 423 |
-| CPU 时钟 | 1500 MHz |
-| 系统时钟 | 100 MHz |
-| 系统总线时钟 | 400 MHz |
-| Clock multiplier | x 15 |
-| Level1 Cache | 8 KB |
-| Level2 Cache | 256 KB |
+| 主频 | 1500 MHz |
+| 外频 | 100 MHz |
+| 总线频率 | 400 MHz |
+| 倍频 | x 15 |
+| 一级缓存 | 8 KB |
+| 二级缓存 | 256 KB |
 | 晶体管 | 42,000,000 |
 | 制造工艺 | 0.18 µm |
 | 电压 | 1.75 V |
@@ -69,12 +69,12 @@ All Pentium 4s were manufactured in three types of packages - 423-pin PGA packag
 | CPU 类型 | 478-Pin FCPGA2 |
 | 核心 | Willamette |
 | Socket | 478 |
-| CPU 时钟 | 1700 MHz |
-| 系统时钟 | 100 MHz |
-| 系统总线时钟 | 400 MHz |
-| Clock multiplier | x 17 |
-| Level1 Cache | 8 KB |
-| Level2 Cache | 256 KB |
+| 主频 | 1700 MHz |
+| 外频 | 100 MHz |
+| 总线频率 | 400 MHz |
+| 倍频 | x 17 |
+| 一级缓存 | 8 KB |
+| 二级缓存 | 256 KB |
 | 晶体管 | 42,000,000 |
 | 制造工艺 | 0.18 µm |
 | 电压 | 1.75 V |
@@ -93,12 +93,12 @@ All Pentium 4s were manufactured in three types of packages - 423-pin PGA packag
 | CPU 类型 | 478-Pin FCPGA2 |
 | 核心 | Northwood |
 | Socket | 478 |
-| CPU 时钟 | 2400 MHz |
-| 系统时钟 | 100 MHz |
-| 系统总线时钟 | 400 MHz |
-| Clock multiplier | x 24 |
-| Level1 Cache | 8 KB |
-| Level2 Cache | 512 KB |
+| 主频 | 2400 MHz |
+| 外频 | 100 MHz |
+| 总线频率 | 400 MHz |
+| 倍频 | x 24 |
+| 一级缓存 | 8 KB |
+| 二级缓存 | 512 KB |
 | 晶体管 | 55,000,000 |
 | 制造工艺 | 0.13 µm |
 | 电压 | 1.75 V |

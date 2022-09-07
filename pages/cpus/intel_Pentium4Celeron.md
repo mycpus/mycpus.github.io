@@ -26,12 +26,12 @@ Intel 的 Celeron D系列是最后一个具有 NetBurst 架构的 Celeron 处理
 | CPU 类型 | 478-pin FCPGA2 |
 | 核心 | Willamette-128 |
 | Socket | 478 |
-| CPU 时钟 | 1800 MHz |
-| 系统时钟 | 100 MHz |
-| 系统总线时钟 | 400 MHz |
-| Clock multiplier | x 18 |
-| Level1 Cache | 8 KB |
-| Level2 Cache | 128 KB |
+| 主频 | 1800 MHz |
+| 外频 | 100 MHz |
+| 总线频率 | 400 MHz |
+| 倍频 | x 18 |
+| 一级缓存 | 8 KB |
+| 二级缓存 | 128 KB |
 | 晶体管 | 42,000,000 |
 | 制造工艺 | 0.18 µm |
 | 电压 | 1.75 V |
@@ -50,12 +50,12 @@ Intel 的 Celeron D系列是最后一个具有 NetBurst 架构的 Celeron 处理
 | CPU 类型 | 478-pin FCPGA4 |
 | 核心 | Prescott-256 |
 | Socket | 478 |
-| CPU 时钟 | 2400 MHz |
-| 系统时钟 | 133 MHz |
-| 系统总线时钟 | 533 MHz |
-| Clock multiplier | x 18 |
-| Level1 Cache | 16 KB |
-| Level2 Cache | 256 KB |
+| 主频 | 2400 MHz |
+| 外频 | 133 MHz |
+| 总线频率 | 533 MHz |
+| 倍频 | x 18 |
+| 一级缓存 | 16 KB |
+| 二级缓存 | 256 KB |
 | 晶体管 | 125,000,000 |
 | 制造工艺 | 90nm |
 | 电压 |  |
