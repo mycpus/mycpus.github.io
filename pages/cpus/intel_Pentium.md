@@ -37,7 +37,7 @@ The early versions of 60-100 MHz Pentiums had a problem in the floating point un
 FDIV-Bug
 Following S-Spec numbers are affected:
 
-|  | 步进 |
+| CPU 型号 | 步进 |
 | ------ | ------ |
 | P5-50:	| Q0399 |
 | P5-60:	| Q0352, Q0394, Q0400, Q0412, Q0466, SX753, SX835, SZ949 |
