@@ -3,7 +3,7 @@ title: Intel Pentium MMX Processor
 tags: [Intel, Pentium MMX]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 29, 2022
-summary: "Intel Pentium MMX（Multi-Media eXtension）处理器于1997年1月8日面向市场发布。桌面版的主频从166 MHz到233 MHz，移动版的主频从133 MHz到300 MHz。"
+summary: "Intel Pentium MMX（Multi-Media eXtension）处理器于 1997 年 1 月 8 日面向市场发布。桌面版的主频从 166 MHz 到 233 MHz，移动版的主频从 133 MHz 到 300 MHz。"
 sidebar: mydoc_sidebar
 permalink: intel_PentiumMMX.html
 folder: cpus
@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Intel Pentium MMX
 
-Pentium MMX 等于是Pentium的加强版中央处理器晶片（CPU），除了增加67个MMX（Multi-Media eXtension）指令以及64位元资料型态之外之外，也将内建指令及资料暂存（Cache）从之前的8KB增加到16KB，内部工作电压降到2.8V。而英特尔之后的桌上型中央处理器皆包含了MMX指令。
+Pentium MMX 等于是 Pentium 的加强版中央处理器，除了增加 67 个 MMX（Multi-Media eXtension） 指令以及 64 位数据总线之外，也将指令缓存和数据缓存（Cache）从之前的 8KB 增加到 16KB，内部工作电压降到 2.8 V 。从这以后，英特尔的桌上型中央处理器皆包含了 MMX 指令。
 
 关键数据：
 - P5 超标量微架构

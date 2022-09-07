@@ -3,7 +3,7 @@ title: Intel Pentium III Celeron Processor
 tags: [Intel, Pentium III, Celeron]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 30, 2022
-summary: "第二代赛扬，基于Pentium III。 Celeron 系列是基于 Pentium P6 设计的 x86 处理器系列。它由英特尔作为第二线销售，以补充其更昂贵但性能更高的Pentium CPU。"
+summary: "第二代赛扬，基于 Pentium III。 Celeron 系列是基于 Pentium P6 设计的 x86 处理器系列。它由英特尔作为第二线销售，以补充其更昂贵但性能更高的 Pentium CPU。"
 sidebar: mydoc_sidebar
 permalink: intel_PentiumIIICeleron.html
 folder: cpus
@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Intel Pentium III Celeron
 
-具有 Coppermine-128 内核的 Intel Celeron 处理器于 2000 年 3 月 29 日推出。这些时钟频率从 533 到 1100 MHz，从 800 MHz Celeron 总线时钟从 66 MHz 增加到 100 MHz。FC-PGA 封装中的赛扬需要第二代Socket 370作为主板接口。
+具有 Coppermine-128 内核的 Intel Celeron 处理器于 2000 年 3 月 29 日推出。这些处理器的时钟频率从 533 到 1100 MHz，从 800 MHz 的 Celeron 开始，Celeron 的总线时钟从 66 MHz 提高到 100 MHz。FC-PGA 封装中的赛扬需要第二代 Socket 370 作为主板接口。
 
 由于制造成本低，赛扬主要安装在廉价的预算 PC 中。
 
