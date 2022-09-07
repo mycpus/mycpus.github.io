@@ -11,7 +11,9 @@ folder: cpus
 
 ## 关于 Intel Pentium 4 Xeon
 
-## Introduction
+基于 NetBurst 微架构的英特尔至强处理器是专门用于服务器和工作站的微处理器，于 2001 年 5 月推出。
+
+与 Pentium 4 一样，Xeon 最初有一个 100 MHz（400 MHz 四倍并发总线接口）前端总线，有 4500 万个晶体管，并使用 180 nm 工艺制造。
 
 ## 我的收藏
 

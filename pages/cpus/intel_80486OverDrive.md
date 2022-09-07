@@ -3,7 +3,7 @@ title: Intel 80486 OverDrive Processor
 tags: [Intel, 80486 OverDrive]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 28, 2022
-summary: "英特尔的 OVER Drive 处理器于 1992 年推出。这些使用特殊的过渡插槽作为主板接口，替换处理器使用Socket 1、Socket 2或Socket 3。"
+summary: "英特尔的 OVER Drive 处理器于 1992 年推出。这些使用特殊的过渡插槽作为主板接口，替换处理器使用 Socket 1、Socket 2 或 Socket 3。"
 sidebar: mydoc_sidebar
 permalink: intel_80486OverDrive.html
 folder: cpus
@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Intel 80486 OverDrive
 
- Intel 486 OverDrive是提供80486使用者升级选择（不过还是升级到80486等级）的中央处理器晶片（CPU），基本上其作用原理就是比原来使用更高的倍频。ODP需要使用特殊的转接插座，而ODPR则是将原来的处理器直接换掉（所以针角数是一样的）。Intel 486 OverDrive 早期的命名是以内频为命名基准，所以以ODPR486DX-25来说，其速度为50 MHz，后来Intel 才使用新的命名方法。 Intel OverDriver DX4 100MHz Mechanical Sample也是非常少见的藏品，不过以它连工作时脉都标上去了的情况来看，这颗机械样品应该是可以运作的。
+ Intel 486 OverDrive 是提供 80486 使用者升级选择（不过还是升级到 80486 等级）的中央处理器，基本上其作用原理就是比原来使用更高的倍频。ODP 需要使用特殊的转接插座，而 ODPR 则是将原来的处理器直接换掉（所以针角数是一样的）。Intel 486 OverDrive 早期的命名是以内频为命名基准，所以以 ODPR486DX-25 来说，其速度为 50 MHz，后来 Intel 才使用新的命名方法。 Intel OverDriver DX4 100MHz Mechanical Sample 也是非常少见的藏品，不过以它连工作频率都标上去了的情况来看，这颗机械样品应该是可以运作的。
 
 ## Introduction
 

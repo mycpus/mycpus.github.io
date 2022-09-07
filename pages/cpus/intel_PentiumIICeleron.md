@@ -11,13 +11,13 @@ folder: cpus
 
 ## 关于 Intel Pentium II Celeron
 
-第一代 Intel Celeron 处理器于 1998 年 4 月推出。这些是Pentium II的“低预算”版本，因此属于性能和价格较低的部分。由于性能较低，英特尔赛扬主要安装在所谓的办公 PC 中。
+第一代 Intel Celeron 处理器于 1998 年 4 月推出。这些是 Pentium II 的“低预算”版本，因此属于性能和价格较低的部分。由于性能较低，英特尔赛扬主要安装在所谓的办公 PC 中。
 
-第一个具有 Covington 内核的 Celeron 尤其处于不利地位，因为英特尔将它们投放市场时没有任何用于数据缓冲的 L2 缓存。这种不足甚至意味着赛扬不仅比具有相同时钟速度的 Pentium II 慢得多，而且在大多数应用领域中甚至不如第一代时钟频率仅为 200 MHz 的Pentium MMX 。
+第一个具有 Covington 内核的 Celeron 尤其处于不利地位，因为英特尔将它们投放市场时没有任何用于数据缓冲的 L2 缓存。这种不足甚至意味着赛扬不仅比具有相同时钟速度的 Pentium II 慢得多，而且在大多数应用领域中甚至不如第一代时钟频率仅为 200 MHz 的 Pentium MMX 。
 
 在赛扬上市几个月后，英特尔为其配备了 128 KB 的二级缓存。由于与 Pentium II 相比，此高速缓存以全速访问，而不仅仅是处理器时钟的一半，这意味着第二代 Celeron 采用 Mendocino Core 在某些应用领域甚至比具有相同时钟的 Pentium II 更快。
 
-虽然第一代赛扬仍然采用 SEPP（单边处理器封装）设计用于 Slot 1，但第二代完全采用 FCPGA（倒装芯片引脚网格阵列）设计用于 Socket 370。自 2000 年 3 月起上市的具有 Coppermine-128 内核的处理器直接来自Intel Pentium III，但与之相比，其 L2 缓存只有一半大。
+虽然第一代赛扬仍然采用 SEPP（单边处理器封装）设计用于 Slot 1，但第二代完全采用 FCPGA（倒装芯片引脚网格阵列）设计用于 Socket 370。自 2000 年 3 月起上市的具有 Coppermine-128 内核的处理器直接来自 Intel Pentium III，但与之相比，其 L2 缓存只有一半大。
 
 另一个重要的创新是 x86 微架构的 SSE 指令集扩展，这是当时 Intel 新开发的。这一扩展于 1999 年初与新的 Pentium III 一起出现，并且也在第二代赛扬中实施。这 70 个额外的 Streaming SIMD Extensions 专门加速浮点数据类型和多媒体内容的应用程序。
 

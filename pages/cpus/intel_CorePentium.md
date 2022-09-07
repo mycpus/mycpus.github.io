@@ -12,10 +12,10 @@ folder: cpus
 ## 关于 Intel Core Pentium
 
 Intel Core Pentium 处理器基于2006 年 1 月推出的 Core 微架构。Core Pentium 既可用作台式机处理器，也可用作移动处理器，并且始终设计为 64 位处理器。
-	
-与 M 微架构处理器一样，英特尔酷睿处理器是Pentium Pro通过Pentium III使用的英特尔 P6 架构的高度优化版本。
 
-与以前的具有 NetBurst 架构的双核处理器相反，双核处理器将两个内核结合在一个芯片上。
+与 M 微架构处理器一样， Intel Core 处理器是从 Pentium Pro 到 Pentium III 使用的 Intel P6 架构的高度优化版本。
+
+与以前的具有 NetBurst 架构的双核处理器不同，双核处理器将两个内核结合在一个芯片上。
 
 Core 微架构通常针对相对较低的功耗进行了优化，这确保了移动版本的笔记本电脑和笔记本电脑的较长电池寿命。更少的功耗也意味着更低的温度，这有助于在狭窄的机箱中进行冷却并降低风扇噪音。
 

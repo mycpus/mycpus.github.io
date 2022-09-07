@@ -11,13 +11,11 @@ folder: cpus
 
 ## 关于 Intel Pentium 4 Celeron
 
-2000 年 6 月，英特尔发布了其最新、最强大的台式机处理器，它采用 NetBurst 微架构，即奔腾 4处理器。然而，未来应该服务于办公 PC 市场的 NetBurst Celeron处理器直到 2002 年 5 月才开始销售，比 Pentium 4 晚了 1 1/2 年。
+2000 年 6 月，英特尔发布了其最新、最强大的台式机处理器，它采用 NetBurst 微架构，即奔腾 4处理器。然而，未来应该服务于办公 PC 市场的 NetBurst Celeron 处理器直到 2002 年 5 月才开始销售，比 Pentium 4 晚了一年半。
 
-采用 NetBurst 微架构的 Intel Celeron 是 Pentium 4 的直系后代，但二级缓存只有 Pentium 4 的一半。第一批赛扬使用其 3650 万个晶体管处理数据，拥有 144 条新的 SSE 指令，并在系统总线上以 100 MHz（400 MHz 四泵）交换数据。
+采用 NetBurst 微架构的 Intel Celeron 是 Pentium 4 的直系后代，但二级缓存只有 Pentium 4 的一半。第一批赛扬使用其 3650 万个晶体管处理数据，拥有 144 条新的 SSE 指令，并在系统总线上以 100 MHz（400 MHz 四倍并发总线接口）交换数据。
 
 Intel 的 Celeron D系列是最后一个具有 NetBurst 架构的 Celeron 处理器系列，于 2004 年 6 月开始销售。这些都是作为单核处理器专门销售的，也不支持超线程技术。
-
-## Introduction
 
 ## 我的收藏
 

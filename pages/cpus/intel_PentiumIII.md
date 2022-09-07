@@ -3,7 +3,7 @@ title: Intel Pentium III Processor
 tags: [Intel, Pentium III]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 30, 2022
-summary: "Pentium III是给桌上型电脑的中央处理器晶片（CPU），等于是Pentium II的加强版，新增七十条新指令(SIMD，SSE)。Pentium III与Pentium II一样有Mobile、Xeon以及Cerelon等不同的版本。特别的是，Pentium III光光是桌上型就拥有Katmai Slot 1 、Coppermine Slot 1以及Coppermine Socket 370等三种不同的系列。到后期，英特尔放弃插卡式介面而又回归到插槽介面（Socket 370）。"
+summary: "Pentium III 是 Pentium II 的加强版，新增七十条新指令(SIMD，SSE)，与 Pentium II 一样有 Mobile、Xeon 以及 Cerelon 等不同的版本。特别的是，Pentium III 光是桌面型就拥有 Katmai Slot 1 、Coppermine Slot 1 以及 Coppermine Socket 370 等三种不同的系列。到后期，英特尔放弃插卡式接口而又回归到插槽接口（Socket 370）。"
 sidebar: mydoc_sidebar
 permalink: intel_PentiumIII.html
 folder: cpus
@@ -17,7 +17,7 @@ Intel Pentium III 处理器于 1999 年 2 月推出。第一款具有 Katmai 内
 
 英特尔在 2001 年又向前迈进了一步，推出了带有 Tualatin 内核的 Pentium III。有 2 个版本，分别是具有 256 KB L2 缓存的 Pentium III 和具有 512 KB L2 缓存的 Pentium III-S，主要用于服务器。
 
-Pentium III 以不同的包装销售。与其前身 Pentium II 一样，它最初是在插槽 1 主板的 SECC 外壳中制造的。不久之后，用于套接字 370 的 FCPGA 封装中的第一批处理器找到了零售商。
+Pentium III 以不同的包装销售。与其前身 Pentium II 一样，它最初是在 Slot 1 主板的 S.E.C.C. 外壳中制造的。不久之后，用于 Socket 370 的 FCPGA 封装中的第一批处理器找到了零售商。
 
 FCPGA2 封装实现了对日益重要的散热的改进，该封装具有大型散热器。
 

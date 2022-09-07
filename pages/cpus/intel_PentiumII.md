@@ -11,11 +11,11 @@ folder: cpus
 
 ## 关于 Intel Pentium II
 
-Pentium II是给桌上型电脑的中央处理器晶片（CPU），除了内建L2 Cache以外，也支援双处理器架构（就是Pentium Pro MMX Edition）。英特尔也正式推广新的插卡式介面。
+Pentium II 是桌面型电脑的中央处理器，除了内建 L2 Cache 以外，也支持双处理器架构（就是Pentium Pro MMX Edition）。英特尔也正式推广新的插卡式接口。
 
-Pentium II Mobile是给笔记型电脑用，而后来推出的Pentium II Xeon 则是用来取代Pentium Pro的伺服器微处理器（支援多处理器架构）。Pentium II Celeron则是被简化的Pentium II，英特尔故意减低其L2 Cache的大小来达到减低其效能的目的，其目标市场则是低价电脑，不过期初期的产品由于效能太差（完全没有L2 Cache）而导致被使用者诟病。英特尔于是就调整战略：将Celeron处理器的L2 Cache设定为只有Pentium II的一半(也就是128KB)，这样既有合理的效能，又有相对低廉的售价（有A字尾的）；这样的策略一直延续到今天。不过很快有人发现，使用双Celeron的系统与双Pentium II的系统差距不大，而价格却便宜很多，结果造成了Celeron冲击高阶市场的局面。后来英特尔决定取消Celeron处理器的SMP功能，才解决了这个问题。
+Pentium II Mobile 是给笔记本型电脑使用的，而后来推出的 Pentium II Xeon 则是用来取代Pentium Pro 的服务器微处理器（支持多处理器架构）。Pentium II Celeron 则是被简化的Pentium II，英特尔故意减低其 L2 Cache 的大小来达到减低其效能的目的，其目标市场则是低价电脑，不过初期的产品由于效能太差（完全没有L2 Cache）而导致被使用者诟病。英特尔于是就调整战略：将 Celeron 处理器的 L2 Cache 设定为只有 Pentium II 的一半(也就是 128 KB )，这样既有合理的效能，又有相对低廉的售价（有A字尾的）；这样的策略一直延续到今天。不过很快有人发现，使用双 Celeron 的系统与双 Pentium II 的系统差距不大，而价格却便宜很多，结果造成了 Celeron 冲击高端市场的局面。后来英特尔决定取消 Celeron 处理器的 SMP 功能，才解决了这个问题。
 
-Intel Pentium II Celeron 300MhzA是这里Celeron中唯一有L2 Cache的（128KB）。Pentium II Xeon ES Intel Confidential虽然是工程版，可是因为Pentium II Xoen本身是给业界大厂使用，所以存世量还不少，虽然说现在贸然要找还是很不容易，但是拍卖市场价格并不高（因为大部分收藏家都有了）。
+Intel Pentium II Celeron 300MHz A 是这里 Celeron 中唯一有 L2 Cache 的（128KB）。Pentium II Xeon ES Intel Confidential 虽然是工程版，可是因为 Pentium II Xoen 本身是给业界大厂使用，所以存世量还不少，虽然说现在贸然要找还是很不容易，但是拍卖市场价格并不高（因为大部分收藏家都有了）。
 
 ## Introduction
 
