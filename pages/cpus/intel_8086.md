@@ -40,7 +40,7 @@ The 8086, officially called iAPX 86, is a 16-bit processor designed by Intel in 
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 40-pin PDIP |
-| CPU 时钟 | 5.0 MHz |
+| 主频 | 5.0 MHz |
 | 内部总线宽度 | 16 Bit |
 | 外部总线宽度 | 16 Bit |
 | 地址总线宽度 | 20 Bit |

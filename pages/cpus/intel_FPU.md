@@ -35,7 +35,7 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 40-Pin CerDIP |
-| CPU 时钟 | 10 MHz |
+| 主频 | 10 MHz |
 | 技术 | HMOS III 1.5 µm |
 | 电压 | 5 V |
 | 产地 | Malaysia |
@@ -52,7 +52,7 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 40-Pin CerDIP |
-| CPU 时钟 | 3 MHz |
+| 主频 | 3 MHz |
 | 技术 | HMOS III 1.5 µm |
 | 电压 | 5 V |
 | 产地 | Malaysia |
@@ -69,7 +69,7 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 68-Pin PLCC |
-| CPU 时钟 | 16-25 MHz |
+| 主频 | 16-25 MHz |
 | 数据总线 | 32 Bit |
 | 地址总线 | 32 Bit |
 | 一级缓存 | 8 KB |
@@ -89,7 +89,7 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 68-Pin CPGA |
-| CPU 时钟 | 16/33 MHz |
+| 主频 | 16/33 MHz |
 | 数据总线 | 32 Bit |
 | 地址总线 | 32 Bit |
 | 一级缓存 | 8 KB |

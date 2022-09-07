@@ -50,12 +50,12 @@ folder: cpus
 | CPU 类型 | 771-land FCLGA6 |
 | 核心 | Woodcrest |
 | Socket | LGA771 |
-| CPU 时钟 | 2000 MHz |
-| 系统时钟 | 333 MHz |
-| 系统总线时钟 | 1333 MHz |
-| Clock multiplier | x 6 |
-| Level1 Cache | 2 x 64 KB (32/32) |
-| Level2 Cache | 4096 KB |
+| 主频 | 2000 MHz |
+| 外频 | 333 MHz |
+| 总线频率 | 1333 MHz |
+| 倍频 | x 6 |
+| 一级缓存 | 2 x 64 KB (32/32) |
+| 二级缓存 | 4096 KB |
 | 核心 | 2 |
 | 线程 | 2 |
 | 晶体管 | 294,000,000 |
@@ -75,12 +75,12 @@ folder: cpus
 | CPU 类型 | 771-land FCLGA8 |
 | 核心 | Harpertown |
 | Socket | LGA771 |
-| CPU 时钟 | 2000 MHz |
-| 系统时钟 | 333 MHz |
-| 系统总线时钟 | 1333 MHz |
-| Clock multiplier | x 6 |
-| Level1 Cache | 4 x 64 KB (32/32) |
-| Level2 Cache | 2 x 6144 KB |
+| 主频 | 2000 MHz |
+| 外频 | 333 MHz |
+| 总线频率 | 1333 MHz |
+| 倍频 | x 6 |
+| 一级缓存 | 4 x 64 KB (32/32) |
+| 二级缓存 | 2 x 6144 KB |
 | 核心 | 4 |
 | 线程 | 4 |
 | 晶体管 | 820,000,000 |

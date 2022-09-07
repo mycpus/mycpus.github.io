@@ -55,12 +55,12 @@ Following S-Spec numbers are affected:
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P54C |
 | Socket | 5/7 |
-| CPU 时钟 | 75 MHz |
-| Board Frequency | 50 MHz |
-| Clock multiplier | x 1.5 |
+| 主频 | 75 MHz |
+| 外频 | 50 MHz |
+| 倍频 | x 1.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 8+8 KB |
+| 一级缓存 | 8+8 KB |
 | 晶体管 | 3,300,000 |
 | 技术 | Bi-CMOS 0.6 µm |
 | 电压 | 3.3 V |
@@ -79,12 +79,12 @@ Following S-Spec numbers are affected:
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P54C |
 | Socket | 5/7 |
-| CPU 时钟 | 75 MHz |
-| Board Frequency | 50 MHz |
-| Clock multiplier | x 1.5 |
+| 主频 | 75 MHz |
+| 外频 | 50 MHz |
+| 倍频 | x 1.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 8+8 KB |
+| 一级缓存 | 8+8 KB |
 | 晶体管 | 3,300,000 |
 | 技术 | Bi-CMOS 0.6 µm |
 | 电压 | 3.3 V |
@@ -103,12 +103,12 @@ Following S-Spec numbers are affected:
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P54CS |
 | Socket | 5/7 |
-| CPU 时钟 | 133 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 2 |
+| 主频 | 133 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 8+8 KB |
+| 一级缓存 | 8+8 KB |
 | 晶体管 | 3,300,000 |
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 3.3 V |
@@ -127,12 +127,12 @@ Following S-Spec numbers are affected:
 | CPU 类型 | 296-pin SPGA |
 | 核心 | P54CS |
 | Socket | 7 |
-| CPU 时钟 | 166 MHz |
-| Board Frequency | 66 MHz |
-| Clock multiplier | x 2.5 |
+| 主频 | 166 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2.5 |
 | 外部总线宽度 | 64 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 8+8 KB |
+| 一级缓存 | 8+8 KB |
 | 晶体管 | 3,300,000 |
 | 技术 | Bi-CMOS 0.35 µm |
 | 电压 | 3.5 V |

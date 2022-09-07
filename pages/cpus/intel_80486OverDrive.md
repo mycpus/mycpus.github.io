@@ -27,12 +27,12 @@ On older versions Intel labeled the OverDrive chips with the external local bus 
 | ------ | ------ |
 | CPU 类型 | 169-pin CPGA |
 | Socket | Overdrive Socket |
-| CPU 时钟 | 66 MHz |
-| Board Frequency | 33 MHz |
-| Clock multiplier | x 2 |
+| 主频 | 66 MHz |
+| 外频 | 33 MHz |
+| 倍频 | x 2 |
 | 外部总线宽度 | 32 Bit |
 | 地址总线宽度 | 32 Bit |
-| Level1 Cache | 8 KB |
+| 一级缓存 | 8 KB |
 | 晶体管 |  |
 | 技术 | CHMOS |
 | 电压 | 5 Volt |

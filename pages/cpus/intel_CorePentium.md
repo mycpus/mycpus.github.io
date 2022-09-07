@@ -38,12 +38,12 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 | CPU 类型 | 775land FCLGA8 |
 | 核心 | Wolfdale-3M |
 | Socket | 775 |
-| CPU 时钟 | 2500 MHz |
-| 系统时钟 | 200 MHz |
-| Clock multiplier | x 12.5 |
-| 系统总线时钟 | 800 MHz |
-| Level1 Cache | 32+32 KB |
-| Level2 Cache | 2048 KB |
+| 主频 | 2500 MHz |
+| 外频 | 200 MHz |
+| 倍频 | x 12.5 |
+| 总线频率 | 800 MHz |
+| 一级缓存 | 32+32 KB |
+| 二级缓存 | 2048 KB |
 | 晶体管 | 228,000,000 |
 | 制造工艺 | 45 nm |
 | 步进 | SLAY7 |
@@ -61,10 +61,10 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 | CPU 类型 | 775land FCLGA8 |
 | 核心 | Wolfdale-3M |
 | Socket | 775 |
-| CPU 时钟 | 2600 MHz |
-| 系统时钟 | 200 MHz |
-| Clock multiplier | x 13 |
-| 系统总线时钟 | 800 MHz |
+| 主频 | 2600 MHz |
+| 外频 | 200 MHz |
+| 倍频 | x 13 |
+| 总线频率 | 800 MHz |
 | Level1 Cache | 32+32 KB |
 | Level2 Cache | 2048 KB |
 | 晶体管 | 228,000,000 |

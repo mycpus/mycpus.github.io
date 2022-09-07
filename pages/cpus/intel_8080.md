@@ -52,7 +52,7 @@ Versions and speed:
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 40-pin PDIP |
-| CPU 时钟 | 2.0 MHz |
+| 主频 | 2.0 MHz |
 | 内部总线宽度 | 8 Bit |
 | 外部总线宽度 | 8 Bit |
 | 地址总线宽度 | 16 Bit |

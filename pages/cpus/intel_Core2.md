@@ -38,12 +38,12 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 | CPU 类型 | 775 FlipChipLGA6 |
 | 核心 | Conroe |
 | Socket | 775 |
-| CPU 时钟 | 1867 MHz |
-| 系统时钟 | 266 MHz |
-| 系统总线时钟 | 1066 MHz |
-| Clock multiplier | x 7 |
-| Level1 Cache | 2 x 64 KB (32/32) |
-| Level2 Cache | 4096 KB |
+| 主频 | 1867 MHz |
+| 外频 | 266 MHz |
+| 总线频率 | 1066 MHz |
+| 倍频 | x 7 |
+| 一级缓存 | 2 x 64 KB (32/32) |
+| 二级缓存 | 4096 KB |
 | 晶体管 | 291,000,000 |
 | 制造工艺 | 65 nm |
 | 步进 | SLA4U |
@@ -61,12 +61,12 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 | CPU 类型 | 775 FlipChipLGA8 |
 | 核心 | Wolfdale-3M |
 | Socket | 775 |
-| CPU 时钟 | 2933 MHz |
-| 系统时钟 | 266 MHz |
-| 系统总线时钟 | 1066 MHz |
-| Clock multiplier | x 11 |
-| Level1 Cache | 2 x 64 KB (32/32) |
-| Level2 Cache | 3072 KB |
+| 主频 | 2933 MHz |
+| 外频 | 266 MHz |
+| 总线频率 | 1066 MHz |
+| 倍频 | x 11 |
+| 一级缓存 | 2 x 64 KB (32/32) |
+| 二级缓存 | 3072 KB |
 | 晶体管 | 228,000,000 |
 | 制造工艺 | 45 nm |
 | 步进 | SLGTE |
@@ -84,12 +84,12 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 | CPU 类型 | 775 FlipChipLGA8 |
 | 核心 | Wolfdale |
 | Socket | 775 |
-| CPU 时钟 | 3000 MHz |
-| 系统时钟 | 333 MHz |
-| 系统总线时钟 | 1333 MHz |
-| Clock multiplier | x 9 |
-| Level1 Cache | 2 x 64 KB (32/32) |
-| Level2 Cache | 6144 KB |
+| 主频 | 3000 MHz |
+| 外频 | 333 MHz |
+| 总线频率 | 1333 MHz |
+| 倍频 | x 9 |
+| 一级缓存 | 2 x 64 KB (32/32) |
+| 二级缓存 | 6144 KB |
 | 晶体管 | 410,000,000 |
 | 制造工艺 | 45 nm |
 | 步进 | SLB9J |
@@ -107,12 +107,12 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 | CPU 类型 | 775-land FCLGA6 |
 | 核心 | Kentsfield |
 | Socket | 775 |
-| CPU 时钟 | 2400 MHz |
-| 系统时钟 | 266 MHz |
-| 系统总线时钟 | 1066 MHz |
-| Clock multiplier | x 9 |
-| Level1 Cache | 4 x 64 KB (32/32) |
-| Level2 Cache | 2 x 4096 KB |
+| 主频 | 2400 MHz |
+| 外频 | 266 MHz |
+| 总线频率 | 1066 MHz |
+| 倍频 | x 9 |
+| 一级缓存 | 4 x 64 KB (32/32) |
+| 二级缓存 | 2 x 4096 KB |
 | 晶体管 | 582,000,000 |
 | 制造工艺 | 65 nm |
 | 步进 | SLACR |

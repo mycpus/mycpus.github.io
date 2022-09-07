@@ -32,7 +32,7 @@ The 8088 is a reduced and cheaper version of the 8086 for the 8-bit market. It w
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 40-pin PDIP |
-| CPU 时钟 | 5.0 MHz |
+| 主频 | 5.0 MHz |
 | 内部总线宽度 | 16 Bit |
 | 外部总线宽度 | 8 Bit |
 | 地址总线宽度 | 20 Bit |
@@ -52,7 +52,7 @@ The 8088 is a reduced and cheaper version of the 8086 for the 8-bit market. It w
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 40-pin PDIP |
-| CPU 时钟 | 8.0 MHz |
+| 主频 | 8.0 MHz |
 | 内部总线宽度 | 16 Bit |
 | 外部总线宽度 | 8 Bit |
 | 地址总线宽度 | 20 Bit |
