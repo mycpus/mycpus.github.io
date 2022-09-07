@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Cyrix Cx486DX
 
-Cyrix 486 处理器于1993年第二季度推出。Cx486 推出时使用 socket 1 作为主板接口，后来也使用 socket 2 和socket 3。
+Cyrix 486 处理器于 1993 年第二季度推出。Cx486 刚推出时使用 socket 1 作为主板接口，后来也使用 socket 2 和socket 3。
 
 Cyrix Cx486DX 旨在与 Intel 的 i486DX 处理器完全软件兼容。它不仅仅是 Intel 的克隆，而是 Cyrix 的全新设计。与 i486DX 相比，Cx486DX 具有改进的缓存算法，因此在特定应用中速度更快。Cx486DX 的价格比 Intel 的 486DX 略低，这使得该处理器成为非常常见的 i486DX 替代品。
 

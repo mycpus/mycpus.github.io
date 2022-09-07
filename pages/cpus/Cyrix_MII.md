@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Cyrix M II
 
-Cyrix M II 处理器系列于 1998 年 4 月 15 日被美国国家半导体公司（National Semiconductor）收购。然而，Cyrix M II 又不是 6x86MX 的进一步发展，而只是对其进行了重命名。1998 年底，生产从 0.35 µm 切换到 0.25 µm 5 层 CMOS 工艺，最近销售的时钟频率高达 300MHz（额定 433）。相应地，M II 也使用 Socket 7 作为主板接口。1999 年年中，Cyrix 被威盛科技收购。
+Cyrix M II 处理器系列于 1998 年 4 月 15 日被美国国家半导体公司（National Semiconductor）收购。然而，Cyrix M II 又不是 6x86MX 的进一步发展，而只是对其进行了重命名。1998 年底，生产工艺从 0.35 µm 切换到 0.25 µm 5 层 CMOS 工艺，最近销售的时钟频率高达 300MHz（额定 433）。相应地，M II 也使用 Socket 7 作为主板接口。1999 年年中，Cyrix 被威盛科技收购。
 
 关键数据：
  - 6,500,000 个晶体管
