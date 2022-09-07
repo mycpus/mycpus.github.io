@@ -24,7 +24,7 @@ folder: cpus
 
 第一代Athlon的直接继任者是 Athlon XP，从 2001 年 10 月开始销售。
 	
-随着 2000 年 6 月 Duron 的推出，AMD 发布了其“低预算”处理器，覆盖了与 Intel 的 Celeron 相同的市场。该处理器专为办公 PC 设计，其二级缓存比 Athlon 系列小得多，但购买成本要低得多。
+随着 2000 年 6 月 Duron 的推出，AMD 发布了其“低预算”处理器，覆盖了与 Intel Celeron 相同的市场。该处理器专为办公 PC 设计，其二级缓存比 Athlon 系列小得多，但购买成本要低得多。
 
 Duron 的直接继任者是基于 Athlon XP 的 AMD Sempron 处理器。
 
