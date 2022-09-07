@@ -14,7 +14,6 @@ folder: cpus
 英特尔微处理器采用 Haswell 微架构，第 4 代台式机、移动式、嵌入式和服务器处理器。采用 Haswell-E 内核的台式机处理器属于第 5 代。
 
 关键数据：
-
 - 处理器和组件：
     - 22 nm 制造工艺
     - 大部分集成图形处理器
@@ -22,14 +21,12 @@ folder: cpus
     - Direct Media Interface
     - Quick Path Interconnect v1.1，基于 Xeon
     - PCI Express 3.0 接口
-
 - 标准扩展：
     - MMX 指令
     - SSE、SSE2、SSE3 / 流式 SIMD 扩展
     - SSSE3 / 补充流式 SIMD 扩展 3
     - SSE4 / SSE4.1 + SSE4.2 / 流式 SIMD 扩展 4
     - EM64T / 扩展内存 64 技术
-
 - 附加扩展（部分）：
     - AES / 高级加密标准指令
     - AMT 9.5 / 主动管理技术
@@ -43,14 +40,11 @@ folder: cpus
     - VT-d / 定向 I/O 虚拟化
     - TBT / Turbo Boost 技术 2.0
     - TSX / 事务同步扩展
-
 - 默认安全功能：
     - NX/XD-Bit / 执行禁用位
-
 - 附加安全功能（部分）：
     - TXT / 可信执行技术
     - SMEP / 安全模式执行保护
-
 - 低功耗 Unterstützung：
     - 增强型 SpeedStep 技术
     - C0、C1、C1E、C3、C6 和 C7 处理器内核状态

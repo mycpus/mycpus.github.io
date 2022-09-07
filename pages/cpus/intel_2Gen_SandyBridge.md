@@ -14,7 +14,6 @@ folder: cpus
 采用 Sandy Bridge 微架构的英特尔微处理器，第 2 代台式机、移动式、嵌入式和服务器处理器。采用 Sandy Bridge-E 内核的台式机处理器属于第 3 代。
 
 关键数据：
-
 - 处理器和组件：
     - 32 nm 制造工艺
     - 大部分集成图形处理器
@@ -22,14 +21,12 @@ folder: cpus
     - Direct Media Interface 2.0
     - PCI Express 2.0 接口
     - Xeon 采用 PCI Express 3.0 接口
-
 - 标准扩展：
     - MMX 指令
     - SSE、SSE2、SSE3 / 流式 SIMD 扩展
     - SSSE3 / 补充流式 SIMD 扩展 3
     - SSE4 / SSE4.1 + SSE4.2 / 流式 SIMD 扩展 4
     - EM64T / 扩展内存 64 技术
-
 - 附加扩展（部分）：
     - AES / 高级加密标准指令
     - AMT / 主动管理技术 7.0
@@ -38,13 +35,10 @@ folder: cpus
     - VT-x / 虚拟化技术
     - VT-d / 定向 I/O 虚拟化
     - TBT / 涡轮增压技术2.0
-
 - 默认安全功能：
     - NX/XD 位 / 执行禁用位
-
 - 附加安全功能（部分）：
     - TXT / 可信执行技术
-
 - 低功耗支持：
     - 增强的 SpeedStep-Technology
     - C0、C1/C1E、C3 和 C6 处理器内核状态（以及移动处理器的 C7 状态）
