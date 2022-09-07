@@ -10,3 +10,5 @@ comments: false
 ---
 
 Click **Feedback** on the top navbar to send me an email.
+
+点击顶部导航栏上的 **反馈** 给我发送电子邮件。
