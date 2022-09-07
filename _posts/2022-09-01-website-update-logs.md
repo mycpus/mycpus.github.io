@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-07:
+
+- 完成全部文字介绍的二次校对。
+
 2022-09-05:
 
 - 完成 Texas Instruments CPU 藏品资料的整理工作。
