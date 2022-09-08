@@ -16,6 +16,7 @@ allowed-tags:
   - 80486
   - Core
   - Celeron
+  - Cyrix
   - Xeon
   - RISC
   - VIA
