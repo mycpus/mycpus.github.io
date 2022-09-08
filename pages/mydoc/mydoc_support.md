@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: support.html
 folder: mydoc
 topnav: topnav
-comments: false
+comments: true
 ---
 
 Click **Feedback** on the top navbar to send me an email.
