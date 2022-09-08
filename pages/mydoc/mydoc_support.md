@@ -9,6 +9,6 @@ topnav: topnav
 comments: true
 ---
 
-Click **Feedback** on the top navbar to send me an email.
+Click **Feedback** on the top navbar to send me an email. You can also leave a message in the comment area of any web page.
 
-点击顶部导航栏上的 **Feedback** 给我发送电子邮件。
+点击顶部导航栏上的 **Feedback** 给我发送电子邮件，也可以在任意网页的评论区留言。
