@@ -13,6 +13,8 @@ folder: cpus
 
 威盛 C3 1Giga Pro 处理器于 2001 年推出。CPU 由威盛科技的子公司 Centaur Technology 开发。C3 1Giga Pro 处理器用于  Socket 370 插槽的主板。
 
+这是一款特殊 Logo 的 C3 处理器，虽然主频仅仅 600 MHz，却敢号称“1G专业版” VIA C3是一款 x86 处理器，早期为从 Cyrix 收购来的知识产权，而被命名为“VIA Cyrix III”，但它实际上是由 Integrated Device Technology（IDT）中收购来的 Centaur Technology 部门的开发人员以 WinChip 处理器为基础而开发，由台湾的威盛电子（VIA）制造，与基于 Joshua 核心的 Cyrix III 无关。后被更名为 VIA C3，是 VIA “中国芯” C 系列的经典版本。
+
 关键数据：
  - 11,300,000 个晶体管
  - 0.18 µm 制造工艺
