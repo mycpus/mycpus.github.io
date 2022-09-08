@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: about.html
 folder: mydoc
 topnav: topnav
-comments: false
+comments: true
 ---
 
 ![tx](/images/tx.jpg)
