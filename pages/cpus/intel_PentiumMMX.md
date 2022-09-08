@@ -120,7 +120,7 @@ In October 1996 Intel released the 4th Pentium generation as the 'Pentium with M
 | 电压 | 2.0 V |
 
 ```
-中国台湾省将 Pentium 300 重新命名为 “Tillamook”。这个假封装内的处理器实际上是一个 Mobile Pentium 266（磁带载体封装），焊接在 PGA PCB 上。金属散热片和大量的导热化合物似乎使这个版本在 300 MHz 下运行有些稳定。
+中国台湾省将 Pentium 300 重新命名为 “Tillamook”。金面上标明了产品开发代号 Tillamook 在国外网站上被称为 Gold Fake from China。这个假封装内的处理器实际上是一个 Mobile Pentium 266（磁带载体封装），焊接在 PGA PCB 上。金属散热片和大量的导热化合物似乎使这个版本在 300 MHz 下运行有些稳定。该 CPU 虽然是假货，但是却是 Intel Pentium MMX 的最高水平工艺，加上中国人对金黄色的热爱，使得此 CPU 也成了收藏热门品种。
 ```
 
 ![Intel Pentium MMX Tillamook-300M C100 正面](/images/cpus/Intel/intel_Pentium_MMX_Tillamook-300M_C100_1.jpg)
