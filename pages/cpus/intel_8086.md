@@ -52,4 +52,21 @@ The 8086, officially called iAPX 86, is a 16-bit processor designed by Intel in 
 ![Intel P8086 正面](/images/cpus/Intel/Intel_P8086_1.jpg)
 ![Intel P8086 反面](/images/cpus/Intel/Intel_P8086_2.jpg)
 
+### Intel MD8086/B
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-pin PDIP |
+| 主频 | 5.0 MHz |
+| 内部总线宽度 | 16 Bit |
+| 外部总线宽度 | 16 Bit |
+| 地址总线宽度 | 20 Bit |
+| 晶体管 | 29,000 |
+| 技术 | NMOS 3.0 µm |
+| 电压 | 5 Volt |
+| 生产日期 | 02/1983 |
+
+![Intel MD8086/B 正面](/images/cpus/Intel/Intel_MD8086/B_1.jpg)
+![Intel MD8086/B 反面](/images/cpus/Intel/Intel_MD8086/B_2.jpg)
+
 {% include links.html %}
