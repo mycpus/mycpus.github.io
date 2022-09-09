@@ -59,22 +59,19 @@ folder: cpus
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | 1150 land FC-LGA |
-| 核心 | Haswell |
-| Socket | LGA 1150 |
-| 主频 | 3.7 GHz |
-| 二级缓存 | 2 x 256 KB |
-| 三级缓存 | 3 MB |
-| 核心 | 2 |
-| 线程 | 4 |
-| 制程 | 22nm |
-| TDP | 54W |
-| 核显 | HD 4400 |
-| 核显基本频率 | 350 MHz |
-| 核显最大动态频率 | 1150 MHz |
-| 内存控制器 | DDR3-1333/1600 |
-| 上市时间 | 01.09.2013 |
-| 生产日期 | 47/2015 |
+| 核心 | Broadwell |
+| Socket | LGA 1567 |
+| 主频 | 2.66 GHz |
+| 睿频 | 2.67 GHz |
+| 三级缓存 | 24 MB |
+| 总线速度 | 6.4 GT/s |
+| 核心 | 10 |
+| 线程 | 20 |
+| 制程 | 32 nm |
+| TDP | 130 W |
+| 内存类型 | DDR3 800/978/1066/1333 (Max Speed 1066 MHz) |
+| 上市时间 | Q2'2011 |
+| 生产日期 |  |
 
 ![Intel XEON E7-8860 正面](/images/cpus/Intel/Intel_XEON_E7-8860_1.jpg)
 ![Intel XEON E7-8860 反面](/images/cpus/Intel/Intel_XEON_E7-8860_2.jpg)
