@@ -222,6 +222,10 @@ entries:
       url: /AMD_RISC.html
       output: web, pdf
 
+    - title: FPU
+      url: /AMD_FPU.html
+      output: web, pdf
+
 
   - title: Cyrix
     output: web, pdf
