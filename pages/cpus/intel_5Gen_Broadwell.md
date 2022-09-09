@@ -55,7 +55,7 @@ folder: cpus
 
 ## 我的收藏
 
-### Intel Core i3-4170
+### Intel XEON E7-8860
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -76,7 +76,7 @@ folder: cpus
 | 上市时间 | 01.09.2013 |
 | 生产日期 | 47/2015 |
 
-![Intel Core i3-4170 正面](/images/cpus/Intel/Intel_Core_i3-4170_1.jpg)
-![Intel Core i3-4170 反面](/images/cpus/Intel/Intel_Core_i3-4170_2.jpg)
+![Intel XEON E7-8860 正面](/images/cpus/Intel/Intel_XEON_E7-8860_1.jpg)
+![Intel XEON E7-8860 反面](/images/cpus/Intel/Intel_XEON_E7-8860_2.jpg)
 
 {% include links.html %}
