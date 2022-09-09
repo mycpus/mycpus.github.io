@@ -9,7 +9,7 @@ permalink: intel_FPU.html
 folder: cpus
 ---
 
-## FPU for 80(1)86/88 CPU
+## FPU for 8086/8088/80186 CPU
 
 The 8087 was the first coprocessor that Intel made available for the 80x86 family. It was introduced in 1980 and therefore does not have full compatibility with the IEEE-754 standard for floating-point arithmetic (which was finally released in 1985). It complements the 8088 and 8086 CPUs and can also be interfaced to the 80188 and 80186 processors.
  
