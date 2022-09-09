@@ -125,4 +125,37 @@ Beside performance improvements, the families incorporate enhanced power managem
 ![AMD Athlon II X2 255 正面](/images/cpus/AMD/AMD_Athlon_II_X2_255_1.jpg)
 ![AMD Athlon II X2 255 反面](/images/cpus/AMD/AMD_Athlon_II_X2_255_2.jpg)
 
+---------
+
+### AMD Mobile A4-3300M
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 722-pin mPGA FS1 |
+| 核心 | Llano |
+| Socket | Socket FS1(905针) |
+| 主频 | 1.9 GHz |
+| 睿频 | 2.5 GHz |
+| 一级缓存 | 128 KB |
+| 二级缓存 | 2 x 1024 KB |
+| 核心 | 2 |
+| 线程 | 2 |
+| GPU | HD 6480G |
+| 流处理器 | 240 |
+| GPU 频率 | 444 MHz |
+| 3D API | DirectX 11 |
+| TDP | 35 W |
+| 支持内存 | DDR3(L)-1333 |
+| 晶体管 | 1,178,000,000 |
+| 技术 | 32 nm SOI |
+| 上市时间 | 14.06.2011 |
+| 生产日期 |  |
+
+```
+  OPN: AM3300DDX23GX
+```
+
+![AMD A4-3300M 正面](/images/cpus/AMD/AMD_A4-3300M_1.jpg)
+![AMD A4-3300M 反面](/images/cpus/AMD/AMD_A4-3300M_2.jpg)
+
 {% include links.html %}
