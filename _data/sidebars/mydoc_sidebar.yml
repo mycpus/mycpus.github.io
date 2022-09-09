@@ -170,6 +170,18 @@ entries:
       url: /AMD_8080.html
       output: web, pdf
 
+    - title: 8085
+      url: /AMD_8085.html
+      output: web, pdf
+
+    - title: 8086
+      url: /AMD_8086.html
+      output: web, pdf
+
+    - title: 8088
+      url: /AMD_8088.html
+      output: web, pdf
+
     - title: 80286
       url: /AMD_80286.html
       output: web, pdf
