@@ -52,6 +52,8 @@ The 8086, officially called iAPX 86, is a 16-bit processor designed by Intel in 
 ![Intel P8086 正面](/images/cpus/Intel/Intel_P8086_1.jpg)
 ![Intel P8086 反面](/images/cpus/Intel/Intel_P8086_2.jpg)
 
+---------
+
 ### Intel MD8086/B
 
 | 参数 | 数值 |

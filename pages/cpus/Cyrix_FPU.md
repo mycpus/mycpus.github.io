@@ -17,6 +17,20 @@ The CX-83D87 was introduced in 1989. It is the fastest 387-compatible coprocesso
 
 ## 我的收藏
 
+### Cyrix FasMath CX 83S87-25-JP
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 68-Pin PLCC |
+| 主频 | 25 MHz |
+| 技术 | CMOS |
+| 电压 | 5 Volt |
+
+![Cyrix FasMath CX 83S87-25-JP 正面](/images/cpus/Cyrix/Cyrix_FasMath_CX-83S87-25-JP_1.jpg)
+![Cyrix FasMath CX 83S87-25-JP 反面](/images/cpus/Cyrix/Cyrix_FasMath_CX-83S87-25-JP_2.jpg)
+
+---------
+
 ### Cyrix FasMath CX-83D87-33-GP
 
 | 参数 | 数值 |
