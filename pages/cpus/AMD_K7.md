@@ -70,6 +70,33 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 
 ---------
 
+### AMD Mobile Athlon 4 1.2 GHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 453-Pin sCPGA |
+| 核心 | Palomino |
+| 步进 | AGFCA |
+| Socket | Socket A |
+| 主频 | 1200 MHz |
+| 外频 | 133 / 266 MHz |
+| 倍频 | x 9 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| Level2 Cache | 256 KB |
+| 晶体管 | 37,500,000 |
+| 技术 | 0.18 µm |
+| 生产日期 |  |
+
+```
+OPN: AHM1200AVS3C
+```
+
+![AMD Mobile Athlon 4 1.2 GHz 正面](/images/cpus/AMD/AMD_Mobile_Athlon_4_1200MHz_1.jpg)
+![AMD Mobile Athlon 4 1.2 GHz 反面](/images/cpus/AMD/AMD_Mobile_Athlon_4_1200MHz_2.jpg)
+
+---------
+
 ### AMD Mobile Duron 1 GHz
 
 | 参数 | 数值 |
