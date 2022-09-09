@@ -103,4 +103,27 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 ![Intel Pentium III 933MHz 正面](/images/cpus/Intel/Intel_Pentium_III_933MHz_1.jpg)
 ![Intel Pentium III 933MHz 反面](/images/cpus/Intel/Intel_Pentium_III_933MHz_2.jpg)
 
+### Intel Pentium III-S 1.26GHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 370-pin FC-PGA2 |
+| 核心 | Tualatin |
+| Socket | 370 |
+| CPU 时钟 | 1266 MHz |
+| Board Frequency | 133 MHz |
+| Clock multiplier | x 9.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| Level1 Cache | 16+16 KB |
+| Level2 Cache | 512 KB |
+| 晶体管 | 44,000,000 |
+| 制造工艺 | 0.13 µm |
+| 电压 | 1.45 V |
+| 步进 | SL5QL |
+| 生产日期 | 24/2002 |
+
+![Intel Pentium III-S 1.26GHz 正面](/images/cpus/Intel/Intel_Pentium_III-S_1266MHz_1.jpg)
+![Intel Pentium III-S 1.26GHz 反面](/images/cpus/Intel/Intel_Pentium_III-S_1266MHz_2.jpg)
+
 {% include links.html %}
