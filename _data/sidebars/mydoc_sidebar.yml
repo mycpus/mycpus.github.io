@@ -367,6 +367,14 @@ entries:
       url: /Transmeta_Crusoe.html
       output: web, pdf
 
+  - title: Siemens
+    output: web, pdf
+
+    folderitems:
+    - title: 80186
+      url: /Siemens_80186.html
+      output: web, pdf
+
 
   - title: Qualcomm
     output: web, pdf
