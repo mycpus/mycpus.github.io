@@ -62,11 +62,11 @@ summary: "因特尔处理器是性能优良的代名词，但是，因特尔也�
 
 就好像 1/2 + 1/4 … 最后等于 1 一样。
 
-![](/images/blogs/Brownian_constant_1.png)
+![](/images/blogs/Brun_constant_1.png)
 
 这个常数，就被叫做布朗常数。
 
-![](/images/blogs/Brownian_constant_2.png)
+![](/images/blogs/Brun_constant_2.png)
 
 布朗常数收敛于一个有限值
 
