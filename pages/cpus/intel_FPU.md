@@ -160,5 +160,6 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 
 ![Intel A80487SX 正面](/images/cpus/Intel/Intel_A80487SX_1.jpg)
 ![Intel A80487SX 反面](/images/cpus/Intel/Intel_A80487SX_2.jpg)
+![Intel A80487SX 侧面](/images/cpus/Intel/Intel_A80487SX_3.jpg)
 
 {% include links.html %}
