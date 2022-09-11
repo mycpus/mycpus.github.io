@@ -19,39 +19,6 @@ A neat trick to enhance the processing power of the 8087 for computations that u
  
 With the help of an additional chip, the 8087 can in theory be interfaced to an 80186 CPU. The 80186 was used in some PCs (e.g. from Philips, Siemens) in 1982/1983.
 
-## FPU for 286 CPU
-
-The 80287 is the original Intel coprocessor for the 80286 and was introduced in 1983. It uses the same execution unit as the 8087 and therefore has the same speed (sometimes slower due to additional overhead in CPU coprocessor communication).
-As the 8087, it does not provide full compatibility with the IEEE-754 floating point standard. There are 6 MHz, 8 MHz, and 10 MHz versions. The 80287 has been replaced by its CMOS successor, the Intel 287XL, which has been introduced in 1990. It is based on the 387 core and therefore much faster than the 80287.
- 
-The 80287 was manufactured in NMOS technology, and is packaged in a 40-pin CERDIP. There are 6 MHz, 8 MHz, and 10 MHz versions. Power consumption can be estimated to be the same as that for the 8087, which is 2400 mW max.
-
-## FPU for 386 CPU
-
-The Intel 80387 was the first generation of coprocessors designed specifically for the Intel 80386 CPU. It was introduced in 1986, about one year after the 80386 was brought to market. Early 386 system were therefore equipped with both a 80287 and a 80387 socket. The 80386 does work with an 80287, but the numerical performance is hardly adequate for such a system.
-The 80387 has itself since been superseded by the Intel 387DX introduced by a quiet change in 1989 (see below). You might find it when acquiring an older 386 machine, though. The old 80387 is about 20% slower than the newer 387DX.
- 
-The 80387 is packaged in a 68-pin ceramic PGA, and was manufactured using Intel's older 1.5 micron CHMOS III technology, giving it moderate power requirements. Power consumption at 16 MHz is max. 1250 mW (750 mW typical), at 20 MHz max. 1550 mW (950 mW typical), and at 25 MHz max. 1950 mW (1250 mW typical).
-
-## FPU for 386SX CPU
-
-The 387SX is the coprocessor for the Intel 386SX. It has all the features the Intel 80387 offers, including the ability for asynchronous operation of CPU and coprocessor. Due to the 16 bit data path between the CPU and the coprocessor, the 387SX is a bit slower than a 80387 operating at the same frequency.
-In addition, the 387SX is based on the core of the original 80387, which executes instructions slower than the second generation 387DX. The 387SX comes in a 68-pin PLCC package and is available in 16, 20, 25 and 33 MHz versions.
-
-## FPU for 486SX CPU
-
-英特尔的 i487SX 是最后一个单独插入 486 主板上的 169 针 LIF 或 ZIF 插槽的（协）处理器。因为从 i486DX 开始，所有处理器都集成了协处理器。然而事实上，i487SX 是一个完整的 80486DX CPU。与 80486SX 相比，它的处理器和浮点单元都集成在同一个外壳中。在协处理器插座中使用时，SX 处理器只需使用控制引脚关闭即可。
-
-关键数据：
- - 1,200,000 个晶体管
- - CHMOS 制造技术，配备 1.0 µm
- - 32 位 CPU（数据和地址总线均为 32 位）
- - 8 KB 直写式 L1 高速缓存
- - 支持高达 4 GB 的内存
-
-
-## 我的收藏
-
 ### Intel TD8087-2
 
 | 参数 | 数值 |
@@ -70,6 +37,15 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 
 ![Intel TD8087-2 正面](/images/cpus/Intel/Intel_TD8087-2_1.jpg)
 ![Intel TD8087-2 反面](/images/cpus/Intel/Intel_TD8087-2_2.jpg)
+
+---------
+
+## FPU for 286 CPU
+
+The 80287 is the original Intel coprocessor for the 80286 and was introduced in 1983. It uses the same execution unit as the 8087 and therefore has the same speed (sometimes slower due to additional overhead in CPU coprocessor communication).
+As the 8087, it does not provide full compatibility with the IEEE-754 floating point standard. There are 6 MHz, 8 MHz, and 10 MHz versions. The 80287 has been replaced by its CMOS successor, the Intel 287XL, which has been introduced in 1990. It is based on the 387 core and therefore much faster than the 80287.
+ 
+The 80287 was manufactured in NMOS technology, and is packaged in a 40-pin CERDIP. There are 6 MHz, 8 MHz, and 10 MHz versions. Power consumption can be estimated to be the same as that for the 8087, which is 2400 mW max.
 
 ### Intel D80287-10
 
@@ -104,6 +80,18 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 ![Intel C80287-3 反面](/images/cpus/Intel/Intel_C80287-3_2.jpg)
 
 ---------
+
+## FPU for 386 CPU
+
+The Intel 80387 was the first generation of coprocessors designed specifically for the Intel 80386 CPU. It was introduced in 1986, about one year after the 80386 was brought to market. Early 386 system were therefore equipped with both a 80287 and a 80387 socket. The 80386 does work with an 80287, but the numerical performance is hardly adequate for such a system.
+The 80387 has itself since been superseded by the Intel 387DX introduced by a quiet change in 1989 (see below). You might find it when acquiring an older 386 machine, though. The old 80387 is about 20% slower than the newer 387DX.
+ 
+The 80387 is packaged in a 68-pin ceramic PGA, and was manufactured using Intel's older 1.5 micron CHMOS III technology, giving it moderate power requirements. Power consumption at 16 MHz is max. 1250 mW (750 mW typical), at 20 MHz max. 1550 mW (950 mW typical), and at 25 MHz max. 1950 mW (1250 mW typical).
+
+## FPU for 386SX CPU
+
+The 387SX is the coprocessor for the Intel 386SX. It has all the features the Intel 80387 offers, including the ability for asynchronous operation of CPU and coprocessor. Due to the 16 bit data path between the CPU and the coprocessor, the 387SX is a bit slower than a 80387 operating at the same frequency.
+In addition, the 387SX is based on the core of the original 80387, which executes instructions slower than the second generation 387DX. The 387SX comes in a 68-pin PLCC package and is available in 16, 20, 25 and 33 MHz versions.
 
 ### Intel N80387SX (16-25MHz)
 
@@ -144,6 +132,17 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 ![Intel A80387DX 16-33 反面](/images/cpus/Intel/Intel_A80387DX_16-33_2.jpg)
 
 ---------
+
+## FPU for 486SX CPU
+
+英特尔的 i487SX 是最后一个单独插入 486 主板上的 169 针 LIF 或 ZIF 插槽的（协）处理器。因为从 i486DX 开始，所有处理器都集成了协处理器。然而事实上，i487SX 是一个完整的 80486DX CPU。与 80486SX 相比，它的处理器和浮点单元都集成在同一个外壳中。在协处理器插座中使用时，SX 处理器只需使用控制引脚关闭即可。
+
+关键数据：
+ - 1,200,000 个晶体管
+ - CHMOS 制造技术，配备 1.0 µm
+ - 32 位 CPU（数据和地址总线均为 32 位）
+ - 8 KB 直写式 L1 高速缓存
+ - 支持高达 4 GB 的内存
 
 ### Intel A80487SX
 
