@@ -149,7 +149,7 @@ Beside performance improvements, the families incorporate enhanced power managem
 | 晶体管 | 1,178,000,000 |
 | 技术 | 32 nm SOI |
 | 上市时间 | 14.06.2011 |
-| 生产日期 |  |
+| 生产日期 | 34/2013 |
 
 ```
   OPN: AM3300DDX23GX
