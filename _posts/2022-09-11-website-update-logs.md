@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-11:
+
+- 增加 26 个 CPU 藏品，品牌有 Intel、AMD、Siemens、IBM。进一步完善 AMD CPU 体系。
+
 2022-09-08:
 
 - 添加 LiveRe （来力必）的评论系统。
