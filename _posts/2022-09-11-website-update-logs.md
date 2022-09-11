@@ -8,6 +8,7 @@ tags: [news]
 2022-09-11:
 
 - 增加 26 个 CPU 藏品，品牌有 Intel、AMD、Siemens、IBM。进一步完善 AMD CPU 体系。
+- 完善 CPU 藏品的 tag 标注，体现不同品牌之间的横向联系。
 
 2022-09-08:
 
