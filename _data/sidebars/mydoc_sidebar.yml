@@ -340,6 +340,10 @@ entries:
       url: /IBM_6x86MX.html
       output: web, pdf
 
+    - title: Other
+      url: /IBM_Other.html
+      output: web, pdf
+
 
   - title: IDT
     output: web, pdf
