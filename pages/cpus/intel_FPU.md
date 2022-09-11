@@ -62,7 +62,7 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 电压 | 5 V |
 | 产地 | Philippines |
 | 上市时间 | 1980 |
-| 生产日期 |  |
+| 生产日期 | 40/1989 |
 
 ```
 温度范围 -40°C 至 +85°C
@@ -156,7 +156,7 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 技术 | CHMOS IV 1.0 µm |
 | 电压 | 5 V |
 | 步进 | SZ494 |
-| 生产日期 |  |
+| 生产日期 | 42/1992 |
 
 ![Intel A80487SX 正面](/images/cpus/Intel/Intel_A80487SX_1.jpg)
 ![Intel A80487SX 反面](/images/cpus/Intel/Intel_A80487SX_2.jpg)
