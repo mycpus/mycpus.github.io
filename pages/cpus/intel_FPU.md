@@ -161,6 +161,8 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 | 步进 | SZ494 |
 | 生产日期 | 42/1992 |
 
+[Blog：487是什么？简谈英特尔的“黑历史”](what_is_487.html)
+
 ![Intel A80487SX 正面](/images/cpus/Intel/Intel_A80487SX_1.jpg)
 ![Intel A80487SX 反面](/images/cpus/Intel/Intel_A80487SX_2.jpg)
 ![Intel A80487SX 侧面](/images/cpus/Intel/Intel_A80487SX_3.jpg)
