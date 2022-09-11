@@ -86,7 +86,7 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | Level2 Cache | 256 KB |
 | 晶体管 | 37,500,000 |
 | 技术 | 0.18 µm |
-| 生产日期 |  |
+| 生产日期 | 19/2001 |
 
 ```
 OPN: AHM1200AVS3C
@@ -113,7 +113,7 @@ OPN: AHM1200AVS3C
 | 二级缓存 | 64 KB |
 | 晶体管 | 25,200,000 |
 | 技术 | 0.18 µm |
-| 生产日期 | 22/2002 |
+| 生产日期 | 23/2002 |
 
 ```
   OPN: DHM1000AVS1B
