@@ -40,6 +40,7 @@ With the help of an additional chip, the 8087 can in theory be interfaced to an 
 
 ---------
 
+
 ## FPU for 286 CPU
 
 The 80287 is the original Intel coprocessor for the 80286 and was introduced in 1983. It uses the same execution unit as the 8087 and therefore has the same speed (sometimes slower due to additional overhead in CPU coprocessor communication).
@@ -81,12 +82,34 @@ The 80287 was manufactured in NMOS technology, and is packaged in a 40-pin CERDI
 
 ---------
 
+
 ## FPU for 386 CPU
 
 The Intel 80387 was the first generation of coprocessors designed specifically for the Intel 80386 CPU. It was introduced in 1986, about one year after the 80386 was brought to market. Early 386 system were therefore equipped with both a 80287 and a 80387 socket. The 80386 does work with an 80287, but the numerical performance is hardly adequate for such a system.
 The 80387 has itself since been superseded by the Intel 387DX introduced by a quiet change in 1989 (see below). You might find it when acquiring an older 386 machine, though. The old 80387 is about 20% slower than the newer 387DX.
  
 The 80387 is packaged in a 68-pin ceramic PGA, and was manufactured using Intel's older 1.5 micron CHMOS III technology, giving it moderate power requirements. Power consumption at 16 MHz is max. 1250 mW (750 mW typical), at 20 MHz max. 1550 mW (950 mW typical), and at 25 MHz max. 1950 mW (1250 mW typical).
+
+### Intel A80387DX 16-33
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 68-Pin CPGA |
+| 主频 | 16/33 MHz |
+| 数据总线 | 32 Bit |
+| 地址总线 | 32 Bit |
+| 一级缓存 | 8 KB |
+| 技术 | CHMOS IV 1.0 µm |
+| 电压 | 5 V |
+| 产地 | Malaysia |
+| 上市时间 | 1989 |
+| 生产日期 | 03/1993 |
+
+![Intel A80387DX 16-33 正面](/images/cpus/Intel/Intel_A80387DX_16-33_1.jpg)
+![Intel A80387DX 16-33 反面](/images/cpus/Intel/Intel_A80387DX_16-33_2.jpg)
+
+---------
+
 
 ## FPU for 386SX CPU
 
@@ -113,25 +136,6 @@ In addition, the 387SX is based on the core of the original 80387, which execute
 
 ---------
 
-### Intel A80387DX 16-33
-
-| 参数 | 数值 |
-| ------ | ------ |
-| CPU 类型 | 68-Pin CPGA |
-| 主频 | 16/33 MHz |
-| 数据总线 | 32 Bit |
-| 地址总线 | 32 Bit |
-| 一级缓存 | 8 KB |
-| 技术 | CHMOS IV 1.0 µm |
-| 电压 | 5 V |
-| 产地 | Malaysia |
-| 上市时间 | 1989 |
-| 生产日期 | 03/1993 |
-
-![Intel A80387DX 16-33 正面](/images/cpus/Intel/Intel_A80387DX_16-33_1.jpg)
-![Intel A80387DX 16-33 反面](/images/cpus/Intel/Intel_A80387DX_16-33_2.jpg)
-
----------
 
 ## FPU for 486SX CPU
 
