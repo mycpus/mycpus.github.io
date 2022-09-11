@@ -15,6 +15,7 @@ allowed-tags:
   - 80286
   - 80386
   - 80486
+  - Pentium
   - Core
   - Celeron
   - Cyrix

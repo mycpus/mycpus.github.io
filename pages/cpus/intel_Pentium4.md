@@ -1,6 +1,6 @@
 ---
 title: Intel Pentium 4 Processor
-tags: [Intel, Pentium 4]
+tags: [Intel, Pentium]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 30, 2022
 summary: "Pentium 4（简称奔4或P4）是英特尔公司于 2000 年 11 月发布的第 7 代 x86 微处理器。并且是继 1995 年出品的 Pentium Pro 之后的第一款重新设计的处理器，这一新的架构称做NetBurst。首款产品代码为 Willamette，拥有 1.4GHz 左右的内核时钟，并使用 Socket 423 脚位架构，首款处理器于 2000 年 11 月发布。不同于 Pentium II、Pentium III 和各种 Celeron 处理器，因为是全新设计的产品，所以与 Pentium Pro 的关联很小。值得注意的是，Pentium 4 有着非常快速到 400 MHz 的前端总线，之后更有提升到 533 MHz、800 MHz。它其实是一个为 100 MHz 的四条并列总线(100MHz x4 并列)，因此理论上它可以传送比一般总线多四倍的容量，所以号称有 400 MHz 的速度。AMD Athlon 的前端总线则有 266 MHz 的速度(133 MHz 双倍并列总线)。"
