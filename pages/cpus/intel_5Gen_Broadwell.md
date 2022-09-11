@@ -71,7 +71,7 @@ folder: cpus
 | TDP | 130 W |
 | 内存类型 | DDR3 800/978/1066/1333 (Max Speed 1066 MHz) |
 | 上市时间 | Q2'2011 |
-| 生产日期 |  |
+| 生产日期 | 21/2012 |
 
 ![Intel XEON E7-8860 正面](/images/cpus/Intel/Intel_XEON_E7-8860_1.jpg)
 ![Intel XEON E7-8860 反面](/images/cpus/Intel/Intel_XEON_E7-8860_2.jpg)
