@@ -3,6 +3,7 @@ title:  "x86架构与授权"
 categories: history
 permalink: x86_architecture_and_licensing.html
 tags: [blog]
+summary: "美国有家公司叫IBM，当年IBM很强大，可以说是个非常NB的科技帝国。英特尔当时还非常弱小，不过只是IBM的供应商之一而已。IBM为了规避将来可能出现的采购风险，所以就要求英特尔将x86专利授权授给几家芯片公司，AMD只是其中之一。x86架构与授权就从这里开始了。"
 ---
 
 ## 所谓架构和指令集
