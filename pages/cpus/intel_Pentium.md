@@ -26,6 +26,8 @@ Intel Pentium P54 处理器于 1994 年 3 月 7 日推出。这些是 Pentium P5
 - 16 KB L1 高速缓存（指令和数据高速缓存各 8 KB）
 - 支持至 4 GB 内存
 
+[Blog：这个神秘的数，让芯片巨头英特尔赔了5亿美金](pentium_FDIV_bug.html)
+
 ## Introduction
 
 The Intel Pentium is a fifth-generation x86 architecture microprocessor, introduced on March 22, 1993. It is the successor to the 486 line. The Pentium was originally to be named 80586 or i586, but the name was changed to Pentium because numbers could not be trademarked. 586 is however, used in programming referring to all the early Pentium processors, and Pentium-like processors made by the Intel competition.
