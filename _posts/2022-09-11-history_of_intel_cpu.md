@@ -3,7 +3,6 @@ title:  "英特尔（CPU）发家史"
 categories: history
 permalink: history_of_intel_cpu.html
 tags: [blog]
-summary: ""
 ---
 
 中央处理器（Central Processing Unit，CPU）用于执行逻辑运算，是现代电子产品的核心，其发展水平决定了芯片在人类生活中应用的深度和广度。第一片 CPU 诞生于 1971 年，之后经历了突飞猛进的发展。在大规模集成电路的时代，CPU 架构设计的更迭、集成电路工艺的提升使得 CPU 的晶体管数量遵循摩尔定律的预测，以迅猛的速度不断增长。

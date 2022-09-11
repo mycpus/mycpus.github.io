@@ -3,7 +3,6 @@ title:  "x86架构与授权"
 categories: history
 permalink: x86_architecture_and_licensing.html
 tags: [blog]
-summary: ""
 ---
 
 ## 所谓架构和指令集
