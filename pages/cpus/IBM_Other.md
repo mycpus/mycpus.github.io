@@ -13,6 +13,8 @@ folder: cpus
 
 ### IBM93 09K0106 PQ
 
+暂时没有查到这款 CPU 的有关数据。有知道的朋友，麻烦在评论区留言告知一声。
+
 ![IBM93 09K0106 PQ 正面](/images/cpus/IBM/IBM93_09K0106_PQ_1.jpg)
 ![IBM93 09K0106 PQ 反面](/images/cpus/IBM/IBM93_09K0106_PQ_2.jpg)
 
