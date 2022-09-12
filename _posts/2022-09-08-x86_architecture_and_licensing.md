@@ -54,7 +54,7 @@ AMD告Intel毁约，仲裁判AMD胜诉。但是Intel对此提出上诉。接下�
 
 ## Intel-64和AMD-64架构到底有没有区别？
 
-基本一样！或者说，对于你我，他们就是一样的，所以现在流行的x86-64架构有很多名称（x64，AMD64，x86_64,intel-64)。我一开始以为经过十几年的发展，可能Intel和AMD在发展各自的64位架构上会分隔开，知道我准备在AMD的锐龙处理器上安装某linux发行版的时候，发现，竟然只有一个版本，并没有区分AMD还是Intel的处理器。然后又查了一下维基百科，在维基百科"x86-64"词条是这样说的：
+基本一样！或者说，对于你我，他们就是一样的，所以现在流行的x86-64架构有很多名称（x64，AMD64，x86_64，intel-64)。我一开始以为经过十几年的发展，可能Intel和AMD在发展各自的64位架构上会分隔开，知道我准备在AMD的锐龙处理器上安装某linux发行版的时候，发现，竟然只有一个版本，并没有区分AMD还是Intel的处理器。然后又查了一下维基百科，在维基百科"x86-64"词条是这样说的：
 
 ```
 Differences between AMD64 and Intel 64
@@ -72,7 +72,7 @@ Although nearly identical, there are some differences between the two instructio
 ## 参考
 
 1. x86指令集架构（维基百科） <https://zh.wikipedia.org/wiki/X86>
-2. AMD公司起源（维基百科） <https://zh.wikipedia.org/wiki/%E8%B6%85%E5%A8%81%E5%8D%8A%E5%AF%BC%E4%BD%93>
+2. AMD公司起源（维基百科） <https://zh.wikipedia.org/wiki/超威半导体>
 3. x86处理器的发展（维基百科） <https://zh.wikipedia.org/wiki/X86>
 4. x86-64架构的发展（维基百科） <https://zh.wikipedia.org/wiki/X86-64>
 
