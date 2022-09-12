@@ -112,7 +112,7 @@ summary: "CPU技术应该是人类发展史上最顶尖的发明了，它让人�
 
 ![Pentium](/images/blogs/Pentium-2.png)
 
-### 997 Intel Pentium MMX中央处理器
+### 1997 Intel Pentium MMX中央处理器
 
 > 1997年1月: Intel Pentium MMX中央处理器
 
