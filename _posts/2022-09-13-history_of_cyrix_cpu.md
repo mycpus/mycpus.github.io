@@ -3,7 +3,7 @@ title:  "Cyrix CPU 发展史"
 categories: history
 permalink: history_of_cyrix_cpu.html
 tags: [blog]
-summary: ""
+summary: "Cyrix 成立于 1988 年，最初是一家为 286 和 386 系统提供高性能数学协处理器的专业制造商。该公司由前德州仪器员工创立。Cyrix 一直是无晶圆制造商。早期，他们使用德州仪器和SGS Thomson的生产设施。1994 年，Cyrix 转向IBM微电子。Cyrix 生产了他们自己设计的 CPU，例如 486 级处理器（部分采用 Pentium 技术和 486 引脚，称为 5x86）和 Pentium Pro 级 CPU，带有 Pentium 引脚 (6x86)，使用带有 x86 转换的 RISC 内核。众所周知，6x86 的 FPU 速度较慢。与AMD不同，Cyrix 从未制造或销​​售过英特尔在许可下进行设计，但在内部设计了一切，从头开始。1997 年 8 月 Cyrix与 National Semiconductor合并。 1999 年 6 月，威盛收购了 Cyrix 的剩余部分。到了这个时候，原来的开发团队已经不复存在，产品已经过时了，唯一有价值的就是 Cyrix 的名字。"
 ---
 
 ## 1 Cyrix
