@@ -40,6 +40,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 4004 *
+      url: /intel_4004.html
+      output: web, pdf
+
     - title: 4040
       url: /intel_4040.html
       output: web, pdf
