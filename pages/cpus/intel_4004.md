@@ -68,7 +68,7 @@ The 4004 was the first single chip microprocessor, originally designed and manuf
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | 16-pin CerDIP |
+| CPU 类型 | 16-pin PDIP |
 | 主频 | 0.740 MHz |
 | 内部总线宽度 | 4 Bit |
 | 外部总线宽度 | 4 Bit |
@@ -81,7 +81,7 @@ The 4004 was the first single chip microprocessor, originally designed and manuf
 ![Intel P4004 正反面](/images/cpus/Intel/Intel_P4004.jpg)
 
 ```
-* 由于各种原因，目前我尚未收藏到 Intel 4004 处理器。上面的展示来自 www.cpu-galerie.de ，表示感谢！
+* 由于各种原因，目前我尚未收藏到 Intel 4004 处理器。上面的展示来自 www.cpu-galerie.de ，特表示感谢！
 ```
 
 {% include links.html %}
