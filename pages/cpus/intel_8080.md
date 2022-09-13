@@ -45,6 +45,7 @@ Versions and speed:
 | 8080A-1 | 3.125 MHz |
 | 8080A-2 | 2.67 MHz |
 
+
 ## 我的收藏
 
 ### Intel MD8080A/B
@@ -59,9 +60,31 @@ Versions and speed:
 | 晶体管 | 6000 |
 | 技术 | NMOS 6.0 µm |
 | 电压 | 5 Volt (12V & -5V) |
-| 生产日期 | 40/1982 |
+| 生产日期 | 24/1982 |
 
-![Intel-MD8080A/B 正面](/images/cpus/Intel/Intel_MD8080AB_1.jpg)
-![Intel-MD8080A/B 反面](/images/cpus/Intel/Intel_MD8080AB_2.jpg)
+```
+温度范围 -55°C 至 +125°C
+MIL-STD-883 B 类筛选
+```
+
+![Intel MD8080A/B 正面](/images/cpus/Intel/Intel_MD8080AB_1.jpg)
+![Intel MD8080A/B 反面](/images/cpus/Intel/Intel_MD8080AB_2.jpg)
+
+### Intel P8080A
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-pin PDIP |
+| 主频 | 2.0 MHz |
+| 内部总线宽度 | 8 Bit |
+| 外部总线宽度 | 8 Bit |
+| 地址总线宽度 | 16 Bit |
+| 晶体管 | 6000 |
+| 技术 | NMOS 6.0 µm |
+| 电压 | 5 Volt (12V & -5V) |
+| 生产日期 | 35/1979 |
+
+![Intel P8080A 正面](/images/cpus/Intel/Intel_P8080A_1.jpg)
+![Intel P8080A 反面](/images/cpus/Intel/Intel_P8080A_2.jpg)
 
 {% include links.html %}
