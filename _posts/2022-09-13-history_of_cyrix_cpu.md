@@ -56,7 +56,6 @@ VIA收购Cyrix后，上面说的已经基本开发得差不多了的Gobi，改�
 
 
 ## 2 Centaur
-
 Centaur是IDT（Integrated Device Technology, Inc.，现已被瑞萨收购）的子公司，设计x86处理器。CEO是曾在IBM设计大型机System/360的Glenn Henry。Centaur设计开发采用顺序执行、单管线精简指令集（RISC）的CPU，致力于低能耗的x86兼容实现。CPU并不直接执行x86指令，而是将x86指令集转换成精简指令集后执行。实际上这种做法在Intel Pentium Pro和AMD K6上已经广泛使用，但Intel和AMD采用的是乱序执行管线，很适用于高性能地执行拆分后的精简指令。而Centaur选择精简指令集的理由是精简指令集适宜实现低耗电。
 
 ![](/images/blogs/WinChip-C6.jpg)
