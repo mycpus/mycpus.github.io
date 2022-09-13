@@ -67,6 +67,7 @@ Centaur是IDT（Integrated Device Technology, Inc.，现已被瑞萨收购）的
 接下来推出的C6＋，改善了劣势的FPU部分，跑在了全速上，同时加入了MMX/3DNow!单元。改进制程，提高频率，最终实现了在频率提高到250MHz的同时，耗电维持不变。
 
 ![](/images/blogs/WinChip-2.jpg)
+
 图7 Winchip 2两种规格CPU
 
 改进后的C6＋，以WinChip 2和WinChip 2A的名称发售。其中WinChip 2是0.35μm制程，WinChip 2A是0.25μm。WinChip 2于1998年9月发售，WinChip 2A为1999年3月。
