@@ -7,7 +7,7 @@ tags: [news]
 
 2022-09-15:
 
-- 新增 Intel 4004 CPU 藏品一枚。
+- 新增 Intel 4040 CPU 藏品一枚。
 - 新增 Intel 8008 CPU 藏品一枚。
 - 新增 Intel P8080A CPU 藏品一枚。
 
