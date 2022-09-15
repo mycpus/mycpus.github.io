@@ -44,6 +44,7 @@ The Intel 4040 is the successor to the Intel 4004. It was introduced in 1974. Th
 | 电压 | 15 Volt |
 | 生产日期 | 45/1980 |
 
+![Intel P4040](/images/cpus/Intel/Intel_P4040_3.jpg)
 ![Intel P4040 正面](/images/cpus/Intel/Intel_P4040_1.jpg)
 ![Intel P4040 反面](/images/cpus/Intel/Intel_P4040_2.jpg)
 
