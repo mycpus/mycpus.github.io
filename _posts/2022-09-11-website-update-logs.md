@@ -5,6 +5,12 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-15:
+
+- 新增 Intel 4004 CPU 藏品一枚。
+- 新增 Intel 8008 CPU 藏品一枚。
+- 新增 Intel P8080A CPU 藏品一枚。
+
 2022-09-11:
 
 - 增加 26 个 CPU 藏品，品牌有 Intel、AMD、Siemens、IBM。进一步完善 AMD CPU 体系。
