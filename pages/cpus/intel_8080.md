@@ -84,6 +84,7 @@ MIL-STD-883 B 类筛选
 | 电压 | 5 Volt (12V & -5V) |
 | 生产日期 | 35/1979 |
 
+![Intel P8080A](/images/cpus/Intel/Intel_P8080A_3.jpg)
 ![Intel P8080A 正面](/images/cpus/Intel/Intel_P8080A_1.jpg)
 ![Intel P8080A 反面](/images/cpus/Intel/Intel_P8080A_2.jpg)
 
