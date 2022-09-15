@@ -48,8 +48,9 @@ While a little slower (in terms of MIPs) than the 4-bit Intel 4004 and Intel 404
 | 晶体管 | 3500 |
 | 技术 | PMOS 10.0 µm |
 | 电压 | 5 Volt ± 5% (-9V) |
-| 生产日期 |  |
+| 生产日期 | 36/1980 |
 
+![Intel D8008-1](/images/cpus/Intel/Intel_D8008-1_3.jpg)
 ![Intel D8008-1 正面](/images/cpus/Intel/Intel_D8008-1_1.jpg)
 ![Intel D8008-1 反面](/images/cpus/Intel/Intel_D8008-1_2.jpg)
 
