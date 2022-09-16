@@ -9,7 +9,7 @@ topnav: topnav
 comments: true
 ---
 
-![tx](/images/tx.jpg)
+![tx](/images/tx.jpg "我的第一台电脑 联想天禧6620")
 
 My name is Honux, and I'm the curator of this museum, a technical fan, senior engineer, and programmer based in Zhengzhou City, Henan Province, China. For more details, see my [iHonux's Projects](https://fxrj.github.io) website.
 
