@@ -6,7 +6,7 @@ output: web
 topnav_title: Honux's CPU Museum
 # this appears on the top navigation bar next to the home button
 
-site_title: CPU 博物馆 | Honux's CPU Museum
+site_title: CPU 博物馆 | 微处理器博物馆 | Honux's CPU Museum
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Copyright 2022 Honux
