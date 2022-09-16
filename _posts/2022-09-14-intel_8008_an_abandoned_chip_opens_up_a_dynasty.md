@@ -3,7 +3,7 @@ title:  "Intel 8008：一个被抛弃的芯片开拓了一个王朝"
 categories: history
 permalink: intel_8008_an_abandoned_chip_opens_up_a_dynasty.html
 tags: [blog]
-summary: ""
+summary: "如果以今天的微处理器标准衡量，甚至以过去 30 年的标准衡量，英特尔的 8008 确实是微弱而缓慢的。但它是第一个商用的 8 位单芯片微处理器，您可以用它构建有用的系统。英特尔 8080 和 8085、8 位 Zilog Z80 以及英特尔和其他处理器供应商在过去半个世纪中开发的所有 x86 微处理器都带有原始英特尔 8008 的一些爬行动物 DNA。后来，Federico Faggin 于 1974 年离开英特尔并创立了 Zilog。他将一些 8008 微处理器 DNA 放入极为成功的 8 位 Z80 微处理器中。"
 ---
 
 早期的微处理器跨越了两个主要的计算时代。第一个时代是从 1960 年代后期到 1970 年代，当时的计算机系统工程师使用 TTL 部件、双极 PROM、stone knives,和bearskins实现了小型计算机处理器架构和处理器板。包括 Digital Equipment Corp (DEC)、Data General(DG)、Prime、Computer Automation、IBM、Burroughs、HP、Four-Phase、NCR 和Univac在内的每个小型计算机制造商都有自己的专有小型计算机架构、ISA 和专用外围设备。那是狂野的时代。
