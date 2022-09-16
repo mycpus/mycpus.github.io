@@ -44,7 +44,7 @@ entries:
       url: /intel_3002.html
       output: web, pdf
 
-    - title: 4004 *
+    - title: 4004
       url: /intel_4004.html
       output: web, pdf
 
