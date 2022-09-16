@@ -26,5 +26,7 @@ topnav_dropdowns:
           external_url: https://www.compumuseum.com/
         - title: MyNikko.com 微處理器博物館
           external_url: https://www.mynikko.com/CPU/
+        - title: Zheng-Fu Xu 的 CPU 博物馆
+          external_url: https://www.xuzhengfu.com/Computers/CPUs/
 
 # Copyright 2021 Google LLC
