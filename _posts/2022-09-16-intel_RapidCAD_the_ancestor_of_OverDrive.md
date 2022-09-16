@@ -3,7 +3,7 @@ title:  "Intel RapidCAD"
 categories: history
 permalink: intel_RapidCAD_the_ancestor_of_OverDrive.html
 tags: [blog]
-summary: ""
+summary: "Intel RapidCAD是英特尔有史以来第一款为旧款个人计算机所提供的升级套件（也就是OverDrive的始祖）。原386的使用者不需要更换主板，只要把RapidCAD买回来将主板上旧有的中央处理器替换掉，就可以享受接近486的运算能力。"
 ---
 
 Intel RapidCAD是英特尔有史以来第一款为旧款个人计算机所提供的升级套件（也就是OverDrive的始祖）。原386的使用者不需要更换主板，只要把RapidCAD买回来将主板上旧有的中央处理器芯片（CPU）替换掉，就可以享受接近486的运算能力。RapidCAD其实就是把486 DX芯片去掉内部高速缓存然后装入386的封装里面，RapidCAD也不支持486增加的新指令。不过由于386封装的带宽限制，RapidCAD对整体的效能提升比不上直接升级到486 DX。相同频率下，486 DX可以有比386/387快上两倍的速度，而RapidCAD在整数运算方面最多只能提升35%，在浮点运算方面，则可以提升将近70%。
