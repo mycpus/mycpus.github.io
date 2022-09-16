@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Motorola PowerPC
 
-PowerPC 是 1991 年 Apple - IBM - Motorola 联盟 (AIM) 创建的 RISC 微处理器架构。
+PowerPC 是 1991 年 Apple-IBM-Motorola 联盟 (AIM) 创建的 RISC 微处理器架构。
 
 'Power'（Performance Optimization With Enhanced RISC）采用了 IBM RS/6000 系列的 Power 架构。 PowerPC 是按照 RISC 原则设计的，并允许超标量实现。该设计的版本存在于 32 位和 64 位的实现中。从基本的 POWER 规范开始，PowerPC 添加了：
  - 大端或小端模式（需要重置）
@@ -96,5 +96,15 @@ With the AltiVec unit, the G4 microprocessor can do four-way single precision fl
 
 ![MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF 正面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XC7455A_RX1000PF_1.jpg)
 ![MOTOROLA PowerPC 7450(G4) XC7455A RX1000PF 反面](/images/cpus/Motorola/MOTOROLA_PowerPC_7450(G4)_XC7455A_RX1000PF_2.jpg)
+
+```
+Power PC G4 是第四代 32 位 RISC 处理器，家族数字命名规则为 Power PC 74XX 。
+
+Power PC G4 应用于苹果的 Macintosh 麦金塔电脑，以及 PowerBook 4 笔记本，Power Mac G4 个人电脑。这是苹果采用最后一代摩托罗拉 Power PC 芯片作为自家主机的 CPU，后续的苹果 PowerPC G5 系列采用了 IBM 的 PowerPC 970 处理器，而 G4 的笔记本则采用了 Intel 的处理器。而 Power PC G4 系列则转向其他嵌入式环境，及军工航天领域。
+
+这颗 Power PC7450 代号“Voyager/旅行者”拥有 3300 万个晶体管 2M 三级缓存的 64 位处理器，2001 年初发布 733MHz 版本，系统总线 133MHz，缓存频率217MHz L1-64K/L2 256K/L3-2M 使用133MHz SDRAM 配合 nVIDIA GeForce2MX 显卡芯片共同构成苹果 G4 系统，从性能角度吊打同期 Intel 的 CPU。芯片采用 180nm 制程，106mm² Die。
+
+值得一提的是，这颗 1GHz 主频的 CPU 最终没能出现在苹果 G4 的量产机型里，G4 1G 型号主机搭载的是两颗 Power PC 7455。
+```
 
 {% include links.html %}
