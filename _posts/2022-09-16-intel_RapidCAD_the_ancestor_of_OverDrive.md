@@ -1,5 +1,5 @@
 ---
-title:  "Intel RapidCAD"
+title:  "OverDrive 的始祖 Intel RapidCAD"
 categories: history
 permalink: intel_RapidCAD_the_ancestor_of_OverDrive.html
 tags: [blog]
