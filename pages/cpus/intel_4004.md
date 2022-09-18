@@ -90,6 +90,10 @@ The 4004 was the first single chip microprocessor, originally designed and manuf
 
 ## 我的收藏
 
+```
+* 下面的型号是我的收藏。
+```
+
 ### Intel P4001
 
 ![我收藏的 Intel P4001](/images/cpus/Intel/Intel_P4001_1.jpg)
