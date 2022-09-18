@@ -37,5 +37,6 @@ allowed-tags:
   - Motorola
   - Transmeta
   - Qualcomm
+  - Zilog
 
 # Copyright 2021 Google LLC
