@@ -2,7 +2,7 @@
 title: Intel 3002
 tags: [Intel, 3002]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
-last_updated: Sep 16, 2022
+last_updated: Sep 18, 2022
 summary: "Intel 3002 算是微处理器的雏形，严格来说 Intel 3002 也不算是中央处理器芯片（CPU），因为它没有内建指令，只是一个 2-bit slicer 处理器。"
 sidebar: mydoc_sidebar
 permalink: intel_3002.html
@@ -23,6 +23,7 @@ Intel 3002 算是微处理器的雏形。严格来说 Intel 3002 也不算是中
 | 数据宽度 | 2 Bit |
 | 电压 | 5 Volt |
 
+![Intel D3002 侧面](/images/cpus/Intel/Intel_D3002_3.jpg)
 ![Intel D3002 正面](/images/cpus/Intel/Intel_D3002_1.jpg)
 ![Intel D3002 反面](/images/cpus/Intel/Intel_D3002_2.jpg)
 
