@@ -405,4 +405,13 @@ entries:
       output: web, pdf
 
 
+  - title: Zilog
+    output: web, pdf
+
+    folderitems:
+    - title: Z80
+      url: /Zilog_Z80.html
+      output: web, pdf
+
+
 # Copyright 2021 Google LLC
