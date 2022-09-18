@@ -5,11 +5,18 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-18
+
+- 新增 Intel 4001、4002、4003 各一颗，凑齐 4004 家族。
+- 新增 Intel D3002 一颗。
+- 新增 Intel D80287、D80287-8 各一颗。
+- 新增 Zilog Z80 Z8400PS 两颗。
+
 2022-09-15:
 
-- 新增 Intel 4040 CPU 藏品一枚。
-- 新增 Intel 8008 CPU 藏品一枚。
-- 新增 Intel P8080A CPU 藏品一枚。
+- 新增 Intel 4040 CPU 藏品一颗。
+- 新增 Intel 8008 CPU 藏品一颗。
+- 新增 Intel P8080A CPU 藏品一颗。
 
 2022-09-11:
 
