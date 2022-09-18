@@ -2,7 +2,7 @@
 title: Intel 4004 Processor
 tags: [Intel, 4004]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
-last_updated: Sep 13, 2022
+last_updated: Sep 18, 2022
 summary: "英特尔的 4004 处理器是第一款商用单芯片微处理器，于 1971 年 11 月 15 日推出。"
 sidebar: mydoc_sidebar
 permalink: intel_4004.html
@@ -92,26 +92,22 @@ The 4004 was the first single chip microprocessor, originally designed and manuf
 
 ### Intel P4001
 
-![Intel P4001 正面](/images/cpus/Intel/Intel_P4001_1.jpg)
-![Intel P4001 反面](/images/cpus/Intel/Intel_P4001_2.jpg)
+![我收藏的 Intel P4001](/images/cpus/Intel/Intel_P4001_1.jpg)
 
 ### Intel P4002-1
 
-![Intel P4002-1 正面](/images/cpus/Intel/Intel_P4002-1_1.jpg)
-![Intel P4002-1 反面](/images/cpus/Intel/Intel_P4002-1_2.jpg)
+![我收藏的 Intel P4002-1](/images/cpus/Intel/Intel_P4002-1_1.jpg)
 
 ### Intel P4003
 
-![Intel P4003 正面](/images/cpus/Intel/Intel_P4003_1.jpg)
-![Intel P4003 反面](/images/cpus/Intel/Intel_P4003_2.jpg)
+![我收藏的 Intel P4003](/images/cpus/Intel/Intel_P4003_1.jpg)
 
 ### Intel C4004
 
-![Intel C4004 正面](/images/cpus/Intel/Intel_C4004_1.jpg)
-![Intel C4004 反面](/images/cpus/Intel/Intel_C4004_2.jpg)
+![我收藏的 Intel C4004](/images/cpus/Intel/Intel_C4004_1.jpg)
 
-```
-我的收藏即将上线，尽请期待！
-```
+### Intel 4004 Family
+
+![我收藏的 Intel 4004 全家福](/images/cpus/Intel/Intel_My_4004_Family.jpg)
 
 {% include links.html %}
