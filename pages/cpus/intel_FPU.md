@@ -48,23 +48,6 @@ As the 8087, it does not provide full compatibility with the IEEE-754 floating p
  
 The 80287 was manufactured in NMOS technology, and is packaged in a 40-pin CERDIP. There are 6 MHz, 8 MHz, and 10 MHz versions. Power consumption can be estimated to be the same as that for the 8087, which is 2400 mW max.
 
-### Intel D80287-10
-
-| 参数 | 数值 |
-| ------ | ------ |
-| CPU 类型 | 40-Pin CerDIP |
-| 主频 | 10 MHz |
-| 技术 | HMOS III 1.5 µm |
-| 电压 | 5 V |
-| 产地 | Malaysia |
-| 上市时间 | 1980 |
-| 生产日期 | 09/1989 |
-
-![Intel D80287-10 正面](/images/cpus/Intel/Intel_D80287-10_1.jpg)
-![Intel D80287-10 反面](/images/cpus/Intel/Intel_D80287-10_2.jpg)
-
----------
-
 ### Intel C80287-3
 
 | 参数 | 数值 |
@@ -79,6 +62,58 @@ The 80287 was manufactured in NMOS technology, and is packaged in a 40-pin CERDI
 
 ![Intel C80287-3 正面](/images/cpus/Intel/Intel_C80287-3_1.jpg)
 ![Intel C80287-3 反面](/images/cpus/Intel/Intel_C80287-3_2.jpg)
+
+### Intel D80287
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-Pin CerDIP |
+| 主频 | ? MHz |
+| 技术 | HMOS III 1.5 µm |
+| 电压 | 5 V |
+| 步进 | SX062 |
+| 产地 | Malaysia |
+| 上市时间 | 1983 |
+| 生产日期 | 41/1987 |
+
+![Intel D80287 侧面](/images/cpus/Intel/Intel_D80287_1.jpg)
+![Intel D80287 正面](/images/cpus/Intel/Intel_D80287_2.jpg)
+![Intel D80287 反面](/images/cpus/Intel/Intel_D80287_3.jpg)
+
+---------
+
+### Intel D80287-8
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-Pin CerDIP |
+| 主频 | 8 MHz |
+| 技术 | HMOS III 1.5 µm |
+| 电压 | 5 V |
+| 产地 | Malaysia |
+| 上市时间 | 1983 |
+| 生产日期 | 36/1988 |
+
+![Intel D80287-8 侧面](/images/cpus/Intel/Intel_D80287-8_1.jpg)
+![Intel D80287-8 正面](/images/cpus/Intel/Intel_D80287-8_2.jpg)
+![Intel D80287-8 反面](/images/cpus/Intel/Intel_D80287-8_3.jpg)
+
+---------
+
+### Intel D80287-10
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-Pin CerDIP |
+| 主频 | 10 MHz |
+| 技术 | HMOS III 1.5 µm |
+| 电压 | 5 V |
+| 产地 | Malaysia |
+| 上市时间 | 1980 |
+| 生产日期 | 09/1989 |
+
+![Intel D80287-10 正面](/images/cpus/Intel/Intel_D80287-10_1.jpg)
+![Intel D80287-10 反面](/images/cpus/Intel/Intel_D80287-10_2.jpg)
 
 ---------
 
