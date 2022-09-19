@@ -124,7 +124,7 @@ The 4004 was the first single chip microprocessor, originally designed and manuf
 
 | 参数 | 数值 |
 | ------ | ------ |
-| 类型 | 、cpu |
+| 类型 | CPU |
 | 生产日期 | 48/1976 |
 
 ![我收藏的 Intel C4004](/images/cpus/Intel/Intel_C4004_1.jpg)
