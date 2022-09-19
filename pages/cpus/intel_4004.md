@@ -96,17 +96,36 @@ The 4004 was the first single chip microprocessor, originally designed and manuf
 
 ### Intel P4001
 
+| 参数 | 数值 |
+| ------ | ------ |
+| 类型 | ROM |
+| 生产日期 | 48/1972 |
+
 ![我收藏的 Intel P4001](/images/cpus/Intel/Intel_P4001_1.jpg)
 
 ### Intel P4002-1
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 类型 | RAM |
+| 生产日期 | 46/1980 |
 
 ![我收藏的 Intel P4002-1](/images/cpus/Intel/Intel_P4002-1_1.jpg)
 
 ### Intel P4003
 
+| 参数 | 数值 |
+| ------ | ------ |
+| 类型 | 移位寄存器 |
+
 ![我收藏的 Intel P4003](/images/cpus/Intel/Intel_P4003_1.jpg)
 
 ### Intel C4004
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 类型 | 、cpu |
+| 生产日期 | 48/1976 |
 
 ![我收藏的 Intel C4004](/images/cpus/Intel/Intel_C4004_1.jpg)
 
