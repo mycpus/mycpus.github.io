@@ -21,9 +21,7 @@ x86泛指一系列英特尔公司用于开发处理器的指令集架构，这�
 
 ## 架构授权之争
 
-![x86架构的起源](/images/blogs/origin_of_x86_architecture.jpg)
-
-x86架构的起源
+{% include image.html file="blogs/origin_of_x86_architecture.jpg" alt="x86架构的起源" caption="x86架构的起源" %}
 
 ## 第二供应商
 
