@@ -46,6 +46,8 @@ Intel RapidCAD特殊的地方在于，它是由两颗芯片组成，缺一不可
 
 ```CPU频率33MHZ```
 
+---------
+
 作者：古董电脑梦cxw2008  
 
 出处：<https://www.bilibili.com/read/cv8786619>

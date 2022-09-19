@@ -44,7 +44,7 @@ Z80系统的核心图，有兴趣的可供收藏：
 
 作者：BIGic微视界
 
-出处：https://www.bilibili.com/read/cv7458043/
+出处：<https://www.bilibili.com/read/cv7458043>
 
 
 {% include links.html %}

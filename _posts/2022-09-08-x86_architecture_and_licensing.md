@@ -76,6 +76,8 @@ Although nearly identical, there are some differences between the two instructio
 3. x86处理器的发展（维基百科） <https://zh.wikipedia.org/wiki/X86>
 4. x86-64架构的发展（维基百科） <https://zh.wikipedia.org/wiki/X86-64>
 
+---------
+
 出处：<https://zhuanlan.zhihu.com/p/153050099>
 
 {% include links.html %}
