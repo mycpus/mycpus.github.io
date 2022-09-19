@@ -14,10 +14,9 @@ Z80单板机具有体积小，外设搭配灵活，运行可靠等特点，因�
 
 Zilog Z80 CPU，简称Z80，是一款8位微处理器，与英特尔公司出产的8080微处理器的指令集兼容。Z80可执行为8080所写的CP/M操作系统，所以过去在apple II兼容机盛行的年代，很多人都爱在电脑内加装z80扩展卡，并透过它来运行WordStar、VisiCalc等商业软件。
 
-![Apple 卡](/images/blogs/apple_card.jpg)
-```Apple 卡```
-![Microsoft 卡](/images/blogs/microsoft_card.jpg)
-```Microsoft 卡```
+{% include image.html file="blogs/apple_card.jpg" alt="Apple 卡" caption="Apple 卡" %}
+
+{% include image.html file="blogs/microsoft_card.jpg" alt="Microsoft 卡" caption="Microsoft 卡" %}
 
 Z80也广泛用在一些家用电脑（当时还未使用个人电脑这一名词）中，其中较知名的例如Tandy / Radio Shack的TRS-80。TRS-80 Model II，第二代的TRS-80
 
@@ -35,9 +34,7 @@ Z80微处理器使用了NMOS的大规模IC工艺，可以说是当时的Intel 80
 
 Z80系统的核心图，有兴趣的可供收藏： 
 
-![CMOS版Z84C00核心图（1K精度）](/images/blogs/CMOS_Z84C00.jpg)
-
-```CMOS版Z84C00核心图（1K精度）```
+{% include image.html file="blogs/CMOS_Z84C00.jpg" alt="CMOS版Z84C00核心图（1K精度）" caption="CMOS版Z84C00核心图（1K精度）" %}
 
 ---------
 
