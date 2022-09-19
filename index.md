@@ -19,5 +19,9 @@ comments: false
 
 目前以实物形式详细介绍各类 CPU 的中文资料比较稀少。现实中拥有早期 CPU 产品的人也并不多，借此机会把我收藏的 CPU 展示出来，抛砖引玉，希望能有更多人参与进来，与我交流 CPU 的收藏经历。
 
+CPU 技术应该是人类发展史上最顶尖的发明了，它让人类文明乘上了快速列车！CPU 的大厦也是从简单的 4004 一步一步发展到如今的程度，每一步的变化都是有历史原因的，是有迹可循的。在 <span class="label label-info">News</span> 专栏中，收录了大量与 CPU 有关的各类文章，使我们更好的了解 CPU 背后的故事。
+
+此外，在 <span class="label label-info">Projects</span> 中记录了近些年来我做过的一些主要软件工程。
+
 
 {% include links.html %}
