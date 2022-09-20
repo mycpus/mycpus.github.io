@@ -55,7 +55,7 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | 倍频 | x 6.5 |
 | 总线宽度 | 64/32 Bit |
 | 一级缓存 | 128 KB (64/64) |
-| Level2 Cache | 512 KB |
+| 二级缓存 | 512 KB |
 | Level2 时钟 | 325 MHz |
 | 晶体管 | 22,000,000 |
 | 技术 | 0.18 µm |
@@ -83,7 +83,7 @@ The Duron is pin-compatible with the Athlon and operating on the same motherboar
 | 倍频 | x 9 |
 | 总线宽度 | 64/32 Bit |
 | 一级缓存 | 128 KB (64/64) |
-| Level2 Cache | 256 KB |
+| 二级缓存 | 256 KB |
 | 晶体管 | 37,500,000 |
 | 技术 | 0.18 µm |
 | 生产日期 | 19/2001 |
