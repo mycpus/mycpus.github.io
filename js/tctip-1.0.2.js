@@ -575,16 +575,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-  var url = statUrl + '/version/' + version;
-  document.body.appendChild((0, _dom.createElement)({
-    src: url
-  }, 'script'));
+  //var url = statUrl + '/version/' + version;
+  //document.body.appendChild((0, _dom.createElement)({
+  //  src: url
+  //}, 'script'));
 };
 
 var _dom = __webpack_require__(0);
 
 var version = __webpack_require__(1).version;
-var statUrl = 'http://stat.tctip.com/stat/index';
+//var statUrl = 'http://stat.tctip.com/stat/index';
 
 module.exports = exports['default'];
 
