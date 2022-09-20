@@ -47,7 +47,7 @@ folder: cpus
 | 晶体管 | 56,000 |
 | 技术 | MYMOS 2.0 µm |
 | 电压 | 5 Volt |
-| 生产日期 |  |
+| 生产日期 | 39/1982 |
 
 ![Siemens SAB80186-N 正面](/images/cpus/Siemens/Siemens_SAB80186-N_1.jpg)
 ![Siemens SAB80186-N 反面](/images/cpus/Siemens/Siemens_SAB80186-N_2.jpg)
