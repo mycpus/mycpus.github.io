@@ -22,6 +22,7 @@ Intel 3002 算是微处理器的雏形。严格来说 Intel 3002 也不算是中
 | CPU 类型 | 28-pin CerDIP |
 | 数据宽度 | 2 Bit |
 | 电压 | 5 Volt |
+| 生产日期 | 29/1981 |
 
 ![Intel D3002 侧面](/images/cpus/Intel/Intel_D3002_3.jpg)
 ![Intel D3002 正面](/images/cpus/Intel/Intel_D3002_1.jpg)
