@@ -29,6 +29,60 @@ The Celeron product concept was introduced by Intel in response to the company's
 
 ## 我的收藏
 
+### Intel Celeron 266MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 242-pin S.E.P.P.PLGA |
+| 核心 | Covington |
+| Socket | Slot 1 |
+| 主频 | 266 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 4 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 0 KB |
+| 晶体管 | 7,500,000 |
+| 制造工艺 | 0.25 µm |
+| 步进 | SL2SY |
+| 生产日期 | 10/1998 |
+
+```
+第一款 Celeron（代号 Covington）本质上是一个 266MHz Pentium II，完全没有任何二级缓存。虽然时钟频率为 266 或 300MHz（大大高于旧的 Pentium MMX），但无缓存的 Celeron 比它们设计替换的部件慢很多。首次发布时销量很大，主要是因为英特尔的名字，但赛扬很快在商业媒体和计算机专业人士中名声不佳。许多人不友好但准确地称它为 Slugeron、Celery 或 Decceleron。最初的市场兴趣因性能不佳而迅速消退，而且销量处于非常低的水平，英特尔感到有义务尽快开发出速度更快的替代产品。
+```
+
+![Intel Celeron 266MHz 正面](/images/cpus/Intel/Intel_Celeron_266MHz_1.jpg)
+![Intel Celeron 266MHz 反面](/images/cpus/Intel/Intel_Celeron_266MHz_2.jpg)
+
+### Intel Celeron 300A MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 242-pin S.E.P.P.PLGA |
+| 核心 | Mendocino |
+| Socket | Slot 1 |
+| 主频 | 300 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 4.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 19,000,000 |
+| 制造工艺 | 0.25 µm |
+| 步进 | SL32A |
+| 生产日期 | 39/1998 |
+
+```
+英特尔深知原赛扬名声不佳，决心不再犯同样的错误，结果新的 Mendocino 核心赛扬从一开始就表现出色。事实上，大多数行业分析师认为第一款基于 Mendocino 的 Celeron 过于成功 - 性能足够高，不仅可以与竞争对手的部件进行激烈竞争，而且还可以吸引买家远离英特尔的高利润旗舰 Pentium II。
+ 
+新赛扬性能的关键是缓存。旧型号根本没有二级缓存，而新型号包括 128KB 的二级缓存作为芯片本身的一部分。Mendocino Celeron 在单个芯片上总共有 1920 万个晶体管（包括缓存），制造起来既困难又昂贵，但英特尔完美地执行了一个雄心勃勃的项目。 第一个 Mendocino 内核 Celeron 的时钟频率为当时适中的 300MHz，但在相同时钟速度下几乎是旧的无缓存 Celeron 的两倍。为了与旧型号区分开来，英特尔将其称为 300A。
+```
+
+![Intel Celeron 300A MHz 正面](/images/cpus/Intel/Intel_Celeron_300AMHz_1.jpg)
+![Intel Celeron 300A MHz 反面](/images/cpus/Intel/Intel_Celeron_300AMHz_2.jpg)
+
 ### Intel Celeron 433MHz
 
 | 参数 | 数值 |
@@ -49,6 +103,10 @@ The Celeron product concept was introduced by Intel in response to the company's
 | 生产日期 | 44/1999 |
 
 ```FV524RX433```
+
+```
+Mendocino Celeron 还推出了新包装。当 Mendocinos 首次亮相时，它们采用 Slot 1 和 Socket 370 PPGA 封装。Slot 1 的设计是为了容纳 Pentium II 的片外高速缓存，并且在主板上存在安装问题。然而，由于所有赛扬都是单芯片设计，因此没有理由保留 L2 高速缓存存储的插槽封装，英特尔停止了 Slot 1 变体：从 466 MHz 部分开始，仅提供 PPGA Socket 370 形式。（第三方制造商以几美元的价格提供主板插槽到插槽适配器（昵称 Slockets），例如，可以将 Celeron 500 安装到插槽 1 主板上。）
+```
 
 ![Intel Celeron 433MHz 正面](/images/cpus/Intel/Intel_Celeron_433MHz_1.jpg)
 ![Intel Celeron 433MHz 反面](/images/cpus/Intel/Intel_Celeron_433MHz_2.jpg)
