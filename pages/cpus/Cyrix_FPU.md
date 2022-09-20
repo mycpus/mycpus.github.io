@@ -43,9 +43,7 @@ The CX-83D87 was introduced in 1989. It is the fastest 387-compatible coprocesso
 | 地址总线 | 32 Bit |
 | 技术 | CMOS |
 | 电压 | 5 Volt |
-| 上市时间 |  |
 | 生产日期 |  |
-| 生产厂商 |  |
 
 ![Cyrix FasMath CX-83D87-33-GP 正面](/images/cpus/Cyrix/Cyrix_FasMath_CX-83D87-33-GP_1.jpg)
 ![Cyrix FasMath CX-83D87-33-GP 反面](/images/cpus/Cyrix/Cyrix_FasMath_CX-83D87-33-GP_2.jpg)
