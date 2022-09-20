@@ -1,23 +1,23 @@
 <div></div>
-
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
 <script type="text/javascript">
-    window.tctipConfig = {
-        imagePrefix:  "",
-        cssPrefix:      "",
-        staticPrefix: "http://static.tctip.com",
-        buttonImageId: Math.ceil(Math.random()*8) + 1, //这里可以用一个固定的数字代替随机数
-        buttonTip:    "dashang", //或者 zanzhu
-        list:{
-            bitcoin: { account: "1PhQySHF1ZuoRwoZ8G4CDLEtE6fAnD3GJP"}, //如果没有比特币，此行代码可以删除
-
-            alipay: { qrimg: "http://files.cnblogs.com/files/dinphy/alipay.gif"},    //qrimg需要修改为自己的图片链接
-
-            weixin:{qrimg: "http://files.cnblogs.com/files/dinphy/wechatpay.gif"}, //qrimg需要修改为自己的图片链接
-
-            tenpay: { account: "342285717", className:"myR-on"}, //如果不想添加财付通，此行代码可删除；如果要添加需要修改account为自己的账号
-            
-            another:{icon: "img/litecoin.png", name: "莱特币", className: "", account: "LVCSBrv3ikzZWDtm9v8QPvDvLwn7dcsCEa", desc: "自定义莱特币"} //如果没有莱特币，此行代码可以删除，如果要添加需要修改account为自己的账号
-        }
-    };
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'zanzhu'
+    },
+    list: [
+      {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }, {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'bitcoin',
+        qrContent: '1PhQySHF1ZuoRwoZ8G4CDLEtE6fAnD3GJP'
+      }
+    ]
+  }).init()
 </script>
-<script type="text/javascript" src="https://blog-static.cnblogs.com/files/guoxinyu/tctip.min.js"></script>
