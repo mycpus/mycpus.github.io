@@ -38,4 +38,6 @@ Z80 单板机具有体积小，外设搭配灵活，运行可靠等特点，因�
 ![Zilog Z80 Z8400PS 正面](/images/cpus/Zilog/Zilog_Z80_Z8400PS_1.jpg)
 ![Zilog Z80 Z8400PS 反面](/images/cpus/Zilog/Zilog_Z80_Z8400PS_2.jpg)
 
+{% include donate.html %}
+
 {% include links.html %}
