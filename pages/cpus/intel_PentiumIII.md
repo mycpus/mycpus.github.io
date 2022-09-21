@@ -103,6 +103,12 @@ The Pentium III is an x86 (more precisely, an i686) architecture microprocessor 
 ![Intel Pentium III 933MHz 正面](/images/cpus/Intel/Intel_Pentium_III_933MHz_1.jpg)
 ![Intel Pentium III 933MHz 反面](/images/cpus/Intel/Intel_Pentium_III_933MHz_2.jpg)
 
+```
+无 “Pentium III” 字样的 Intel Pentium III 933MHz CPU
+```
+
+![Intel Pentium III 933MHz 反面](/images/cpus/Intel/Intel_Pentium_III_933MHz_Other.jpg)
+
 ### Intel Pentium III-S 1.26GHz
 
 | 参数 | 数值 |
