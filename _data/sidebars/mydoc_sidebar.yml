@@ -124,26 +124,21 @@ entries:
       url: /intel_PentiumIIICeleron.html
       output: web, pdf
 
-    - title: Pentium III Xeon77
+    - title: Pentium III Xeon
       url: /intel_PentiumIIIXeon.html
       output: web, pdf
 
-      subfolders:
-        - title: "Pentium 4 Family"
-          output: web
-          subfolderitems:
+    - title: Pentium 4
+      url: /intel_Pentium4.html
+      output: web, pdf
 
-            - title: Pentium 4
-              url: /intel_Pentium4.html
-              output: web
+    - title: Pentium 4 Celeron
+      url: /intel_Pentium4Celeron.html
+      output: web, pdf
 
-            - title: Pentium 4 Celeron
-              url: /intel_Pentium4Celeron.html
-              output: web
-
-            - title: Pentium 4 Xeon
-              url: /intel_Pentium4Xeon.html
-              output: web
+    - title: Pentium 4 Xeon
+      url: /intel_Pentium4Xeon.html
+      output: web, pdf
 
       subfolders:
       - title: Core
