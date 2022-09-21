@@ -50,4 +50,24 @@ IBM FRU 20L7645
 ![IBM 6x86MX PR200 正面](/images/cpus/IBM/IBM_6x86MX_PR200_1.jpg)
 ![IBM 6x86MX PR200 反面](/images/cpus/IBM/IBM_6x86MX_PR200_2.jpg)
 
+---------
+
+### IBM 6x86MX PR233
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-Pin sCPGA |
+| Socket | 7 |
+| 主频 | 200 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 3 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 64 KB + 256 Byte |
+| 晶体管 | 6,500,000 |
+| 技术 | CMOS 0.35 µm |
+| 电压 | 2.9 Volt |
+
+![IBM 6x86MX PR233 正面](/images/cpus/IBM/IBM_6x86MX_PR233_1.jpg)
+![IBM 6x86MX PR233 反面](/images/cpus/IBM/IBM_6x86MX_PR233_2.jpg)
+
 {% include links.html %}
