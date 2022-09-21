@@ -27,6 +27,10 @@ Centaur Technology 成立于 1995 年，是集成设备技术 (IDT) 的子公司
 
 Centaur Technology 的第一批处理器由 IDT 以 WinChip 的名义销售。1999 年 9 月被威盛科技公司收购后，IDT WinChip 系列停产，取而代之的是 VIACyrix III 和威盛 C3 处理器系列。
 
+WinChip 由 Centaur Technologies 设计并由 Integrated Device Technologies 制造，于 1997 年推出，作为Pentium MMX处理器的替代品。WinChip 的设计比 Pentium 简单得多，因此芯片比 Pentium 小 27%，比AMD 的 K5小 46% 。例如，它只使用一条流水线，尽可能快地一次处理一条指令，而不是在每个时钟周期执行多条指令。为了在速度比较中与 Intel 和 AMD 竞争，Centaur 将 L1 缓存大小翻了一番，指令为 32KB，数据为 32KB。这使得 WinChip 与具有相同时钟频率的 Pentium MMX 或 K5 一样快。
+ 
+虽然处理器很便宜，但它从未获得太多市场份额，1999 年 IDT 的 Centaur 技术部门被出售给威盛。虽然威盛最初继续使用 Cyrix 名称，但它在其Cyrix III和威盛 C3处理器系列中使用了 WinChip 技术。
+
 ## 我的收藏
 
 ### IDT WinChip C6-PSME200GA
