@@ -61,4 +61,54 @@ The Celeron product concept was introduced by Intel in response to the company's
 ![Intel Celeron 800MHz 正面](/images/cpus/Intel/Intel_Celeron_800MHz_1.jpg)
 ![Intel Celeron 800MHz 反面](/images/cpus/Intel/Intel_Celeron_800MHz_2.jpg)
 
+---------
+
+### Intel Celeron 850MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 370-pin FC-PGA |
+| 核心 | Coppermine-128 |
+| Socket | 370 |
+| 主频 | 850 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 8.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 28,100,000 |
+| 制造工艺 | 0.18 µm |
+| 电压 | 1.75 V |
+| 步进 | SL54Q |
+| 生产日期 | 11/2002 |
+
+![Intel Celeron 850MHz 正面](/images/cpus/Intel/Intel_Celeron_850MHz_1.jpg)
+![Intel Celeron 850MHz 反面](/images/cpus/Intel/Intel_Celeron_850MHz_2.jpg)
+
+---------
+
+### Intel Celeron 900MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 370-pin FC-PGA |
+| 核心 | Coppermine-128 |
+| Socket | 370 |
+| 主频 | 900 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 9 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 28,100,000 |
+| 制造工艺 | 0.18 µm |
+| 电压 | 1.75 V |
+| 步进 | SL5LX |
+| 生产日期 | 37/2001 |
+
+![Intel Celeron 900MHz 正面](/images/cpus/Intel/Intel_Celeron_900MHz_1.jpg)
+![Intel Celeron 900MHz 反面](/images/cpus/Intel/Intel_Celeron_900MHz_2.jpg)
+
 {% include links.html %}
