@@ -69,5 +69,6 @@ However, the introduction of Cascades had some severe drawbacks: The small 256KB
 
 ![Intel Pentium III Xeon 700/100/2M S2 2.8V 正面](/images/cpus/Intel/Intel_PIII_Xeon_700_100_2M_S2_1.jpg)
 ![Intel Pentium III Xeon 700/100/2M S2 2.8V 反面](/images/cpus/Intel/Intel_PIII_Xeon_700_100_2M_S2_2.jpg)
+![Intel Pentium III Xeon 700/100/2M S2 2.8V 侧面](/images/cpus/Intel/Intel_PIII_Xeon_700_100_2M_S2_3.jpg)
 
 {% include links.html %}
