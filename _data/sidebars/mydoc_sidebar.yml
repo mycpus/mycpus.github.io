@@ -181,6 +181,15 @@ entries:
       url: /intel_80960.html
       output: web, pdf
 
+      subfolders:
+      - title: Core999
+        output: web, pdf
+        subfolderitems:
+
+        - title: Core Pentium999
+          url: /intel_CorePentium.html
+          output: web, pdf
+
     - title: FPU
       url: /intel_FPU.html
       output: web, pdf
