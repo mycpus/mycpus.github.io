@@ -5,6 +5,22 @@ permalink: update.html
 tags: [news]
 ---
 
+2022-09-21
+
+- 新增 Cyrix Cx486 DX2 66 带绿色散热片一颗。
+- 新增 IBM 6x86MX PR166 和 PR233 各一颗。
+- 新增 不带 Pentium III 字样的 Pentium III 933 一颗。
+- 新增 Pentium III Celeron 850 和 900 各一颗。
+- 新增 水泥奔腾 100MHz 两颗，编号不同。
+- 新增 Pentium MMX FV80503200 一颗。
+- 新增 Pentium III Xeon 700MHz 两颗，L2 不同。
+- 新增 TI486DX2-G80-GA 一颗。
+
+2022-09-20
+
+- 新增 Intel Celeron 266 和 300A 各一颗。
+- 增加打赏功能，支持微信和支付宝。
+
 2022-09-18
 
 - 新增 Intel 4001、4002、4003 各一颗，凑齐 4004 家族。
