@@ -173,11 +173,11 @@ entries:
           url: /intel_5Gen_Broadwell.html
           output: web, pdf
 
-    - title: 80860
+    - title: "80860"
       url: /intel_80860.html
       output: web, pdf
 
-    - title: 80960
+    - title: "80960"
       url: /intel_80960.html
       output: web, pdf
 
