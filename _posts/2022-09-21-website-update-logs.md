@@ -15,6 +15,7 @@ tags: [news]
 - 新增 Pentium MMX FV80503200 一颗。
 - 新增 Pentium III Xeon 700MHz 两颗，L2 不同。
 - 新增 TI486DX2-G80-GA 一颗。
+- 增加网页统计功能，由 histats.com 提供。
 
 **2022-09-20**
 
