@@ -129,7 +129,7 @@ entries:
       output: web, pdf
 
       subfolders:
-      - title: Pentium 4
+      - title: Pentium 4 Family
         output: web, pdf
         subfolderitems:
 
