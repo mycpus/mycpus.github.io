@@ -144,10 +144,6 @@ entries:
             - title: Pentium 4 Xeon
               url: /intel_Pentium4Xeon.html
               output: web
-    
-    - title: Pentium III Xeon88
-      url: /intel_PentiumIIIXeon.html
-      output: web, pdf
 
       subfolders:
       - title: Core
