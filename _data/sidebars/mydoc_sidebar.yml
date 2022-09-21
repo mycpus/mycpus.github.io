@@ -145,6 +145,8 @@ entries:
           url: /intel_Pentium4Xeon.html
           output: web, pdf
 
+      - title: "aaa"
+
       subfolders:
       - title: Core
         output: web, pdf
