@@ -27,6 +27,30 @@ IBM 6x86MX 处理器属于第五代 x86 处理器，于 1997 年 5 月 30 日推
 
 ## 我的收藏
 
+### IBM 6x86MX PR166
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-Pin sCPGA |
+| Socket | 7 |
+| 主频 | 133 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 64 KB + 256 Byte |
+| 晶体管 | 6,500,000 |
+| 技术 | CMOS 0.35 µm |
+| 电压 | 2.9 Volt |
+
+```
+IBM26x86MX-AVAPR166GB
+```
+
+![IBM 6x86MX PR166 正面](/images/cpus/IBM/IBM_6x86MX_PR166_1.jpg)
+![IBM 6x86MX PR166 反面](/images/cpus/IBM/IBM_6x86MX_PR166_2.jpg)
+
+---------
+
 ### IBM 6x86MX PR200
 
 | 参数 | 数值 |
