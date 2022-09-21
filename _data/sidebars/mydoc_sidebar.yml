@@ -129,21 +129,21 @@ entries:
       output: web, pdf
 
       subfolders:
-      - title: "Pentium 4 Family"
-        output: web
-        subfolderitems:
-
-        - title: Pentium 4
-          url: /intel_Pentium4.html
+        - title: "Pentium 4 Family"
           output: web
+          subfolderitems:
 
-        - title: Pentium 4 Celeron
-          url: /intel_Pentium4Celeron.html
-          output: web
+            - title: Pentium 4
+              url: /intel_Pentium4.html
+              output: web
 
-        - title: Pentium 4 Xeon
-          url: /intel_Pentium4Xeon.html
-          output: web
+            - title: Pentium 4 Celeron
+              url: /intel_Pentium4Celeron.html
+              output: web
+
+            - title: Pentium 4 Xeon
+              url: /intel_Pentium4Xeon.html
+              output: web
     
     - title: Pentium III Xeon88
       url: /intel_PentiumIIIXeon.html
