@@ -98,6 +98,54 @@ Following S-Spec numbers are affected:
 
 ---------
 
+### Intel Pentium A80502100
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-pin SPGA |
+| 核心 | P54C |
+| Socket | 5/7 |
+| 主频 | 100 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 1.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 32 Bit |
+| 一级缓存 | 8+8 KB |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.6 µm |
+| 电压 | 3.3 V |
+| 步进 | SX970 |
+| 生产日期 | 01/1996 |
+
+![Intel Pentium A80502100 正面](/images/cpus/Intel/Intel_Pentium_A80502100_1.jpg)
+![Intel Pentium A80502100 反面](/images/cpus/Intel/Intel_Pentium_A80502100_2.jpg)
+
+---------
+
+### Intel Pentium BP80502100
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 296-pin SPGA |
+| 核心 | P54C |
+| Socket | 5/7 |
+| 主频 | 100 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 1.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 32 Bit |
+| 一级缓存 | 8+8 KB |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.6 µm |
+| 电压 | 3.3 V |
+| 步进 | SU110 |
+| 生产日期 | 19/1996 |
+
+![Intel Pentium BP80502100 正面](/images/cpus/Intel/Intel_Pentium_BP80502100_1.jpg)
+![Intel Pentium BP80502100 反面](/images/cpus/Intel/Intel_Pentium_BP80502100_2.jpg)
+
+---------
+
 ### Intel Pentium BP80502133
 
 | 参数 | 数值 |
