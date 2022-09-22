@@ -4,7 +4,7 @@ tags: [Intel, Core, Pentium]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 31, 2022
 summary: "Intel Core Pentium 处理器基于2006 年 1 月推出的 Core 微架构。Core Pentium 既可用作台式机处理器，也可用作移动处理器，并且始终设计为 64 位处理器。"
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 permalink: intel_CorePentium.html
 folder: cpus
 ---

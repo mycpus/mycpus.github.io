@@ -4,7 +4,7 @@ tags: [Intel, 8088]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 28, 2022
 summary: "8088 不是一个成熟的 16 位微处理器，因为与 8086 相比，外部数据总线只有 8 位宽。8086 的设计以及 8088 的设计基于 Intel 的 8085 处理器，并且经过精心设计，使得 8085 中已经使用的指令集可以自动转换为有效的 8086 源代码。与 8086 一样，8088 也缺少必要的组件，例如中断和 DMA 控制器，这些组件是使用特殊芯片外部集成在主板上的。它也不支持浮点计算，但这个缺点可以通过可选的协处理器来弥补。英特尔的 8088 生产并畅销到 1990 年代，CMOS 和消耗优化的 CHMOS 版本的时钟速度为 5 到 10 MHz。"
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 permalink: intel_8088.html
 folder: cpus
 ---

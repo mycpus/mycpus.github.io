@@ -4,7 +4,7 @@ tags: [VIA, C3 1Giga Pro]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 4, 2022
 summary: "威盛 C3 1Giga Pro 处理器于 2001 年推出，用在带有 Socket 370 插槽的主板上。"
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 permalink: VIA_C3_1GigaPro.html
 folder: cpus
 ---

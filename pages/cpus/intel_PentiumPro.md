@@ -4,7 +4,7 @@ tags: [Intel, Pentium]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Aug 29, 2022
 summary: "Intel Pentium Pro 处理器于 1995 年 11 月 1 日推出。这些用于带有 Socket 8 的主板，与 Pentium Pro 的新 387 针布局相匹配。服务器和工作站是 Pentium Pro 处理器的理想应用领域，因为它们的架构意味着它们可以访问相对较大的 L2 缓存并为每个系统提供多达 4 个处理器的支持。但是，它只能在安装了 32 位操作系统（如 Windows NT 或 OS/2）的计算机上发挥其全部潜力。在这种情况下，Pentium Pro 的性能明显高于具有相同时钟速度的 Pentium I 处理器。它不太适合 1995 年广泛使用的 16 位操作系统和程序。"
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 permalink: intel_PentiumPro.html
 folder: cpus
 ---

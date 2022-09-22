@@ -4,7 +4,7 @@ tags: [AMD, K7]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Sep 3, 2022
 summary: "第一款采用 K7 微架构的 Athlon 处理器于 1999 年 6 月开始销售。"
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 permalink: AMD_K7.html
 folder: cpus
 ---

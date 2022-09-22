@@ -1,0 +1,421 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: CPU 收藏目录
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: About
+      url: /about.html
+      output: web, pdf
+
+    - title: Support
+      url: /support.html
+      output: web, pdf
+
+  - title: Intel
+    output: web, pdf
+    folderitems:
+
+    - title: 3002
+      url: /intel_3002.html
+      output: web, pdf
+
+    - title: 4004
+      url: /intel_4004.html
+      output: web, pdf
+
+    - title: 4040
+      url: /intel_4040.html
+      output: web, pdf
+
+    - title: 8008
+      url: /intel_8008.html
+      output: web, pdf
+
+    - title: 8080
+      url: /intel_8080.html
+      output: web, pdf
+
+    - title: 8085
+      url: /intel_8085.html
+      output: web, pdf
+
+    - title: 8086
+      url: /intel_8086.html
+      output: web, pdf
+
+    - title: 8088
+      url: /intel_8088.html
+      output: web, pdf
+
+    - title: 80186
+      url: /intel_80186.html
+      output: web, pdf
+
+    - title: 80188
+      url: /intel_80188.html
+      output: web, pdf
+
+    - title: 80286
+      url: /intel_80286.html
+      output: web, pdf
+
+    - title: 80386
+      url: /intel_80386.html
+      output: web, pdf
+
+    - title: 80486
+      url: /intel_80486.html
+      output: web, pdf
+
+    - title: 80486 OverDrive
+      url: /intel_80486OverDrive.html
+      output: web, pdf
+
+    - title: Pentium
+      url: /intel_Pentium.html
+      output: web, pdf
+
+    - title: Pentium MMX
+      url: /intel_PentiumMMX.html
+      output: web, pdf
+
+    - title: Pentium Pro
+      url: /intel_PentiumPro.html
+      output: web, pdf
+
+    - title: Pentium II
+      url: /intel_PentiumII.html
+      output: web, pdf
+
+    - title: Pentium II Celeron
+      url: /intel_PentiumIICeleron.html
+      output: web, pdf
+
+    - title: Pentium III
+      url: /intel_PentiumIII.html
+      output: web, pdf
+
+    - title: Pentium III Celeron
+      url: /intel_PentiumIIICeleron.html
+      output: web, pdf
+
+    - title: Pentium III Xeon
+      url: /intel_PentiumIIIXeon.html
+      output: web, pdf
+
+    - title: Pentium 4
+      url: /intel_Pentium4.html
+      output: web, pdf
+
+    - title: Pentium 4 Celeron
+      url: /intel_Pentium4Celeron.html
+      output: web, pdf
+
+    - title: Pentium 4 Xeon
+      url: /intel_Pentium4Xeon.html
+      output: web, pdf
+
+      subfolders:
+      - title: Core
+        output: web, pdf
+        subfolderitems:
+
+        - title: Core Pentium
+          url: /intel_CorePentium.html
+          output: web, pdf
+
+        - title: Core 2
+          url: /intel_Core2.html
+          output: web, pdf
+
+        - title: Core Xeon
+          url: /intel_CoreXeon.html
+          output: web, pdf
+
+        - title: 1 Gen. Nehale
+          url: /intel_1Gen_Nehale.html
+          output: web, pdf
+
+        - title: 2 Gen. Sandy Bridge
+          url: /intel_2Gen_SandyBridge.html
+          output: web, pdf
+
+        - title: 4 Gen. Haswell
+          url: /intel_4Gen_Haswell.html
+          output: web, pdf
+
+        - title: 5 Gen. Broadwell
+          url: /intel_5Gen_Broadwell.html
+          output: web, pdf
+
+    - title: "80860"
+      url: /intel_80860.html
+      output: web, pdf
+
+    - title: "80960"
+      url: /intel_80960.html
+      output: web, pdf
+
+    - title: FPU
+      url: /intel_FPU.html
+      output: web, pdf
+
+
+  - title: AMD
+    output: web, pdf
+    folderitems:
+
+    - title: 8080
+      url: /AMD_8080.html
+      output: web, pdf
+
+    - title: 8085
+      url: /AMD_8085.html
+      output: web, pdf
+
+    - title: 8086
+      url: /AMD_8086.html
+      output: web, pdf
+
+    - title: 8088
+      url: /AMD_8088.html
+      output: web, pdf
+
+    - title: 80186
+      url: /AMD_80186.html
+      output: web, pdf
+
+    - title: 80188
+      url: /AMD_80188.html
+      output: web, pdf
+
+    - title: 80286
+      url: /AMD_80286.html
+      output: web, pdf
+
+    - title: 80386
+      url: /AMD_80386.html
+      output: web, pdf
+
+    - title: 80486
+      url: /AMD_80486.html
+      output: web, pdf
+
+    - title: 5x86
+      url: /AMD_5x86.html
+      output: web, pdf
+
+    - title: K5
+      url: /AMD_K5.html
+      output: web, pdf
+
+    - title: K6
+      url: /AMD_K6.html
+      output: web, pdf
+
+    - title: K7
+      url: /AMD_K7.html
+      output: web, pdf
+
+    - title: K8
+      url: /AMD_K8.html
+      output: web, pdf
+
+    - title: K10
+      url: /AMD_K10.html
+      output: web, pdf
+
+    - title: RISC
+      url: /AMD_RISC.html
+      output: web, pdf
+
+    - title: FPU
+      url: /AMD_FPU.html
+      output: web, pdf
+
+
+  - title: Cyrix
+    output: web, pdf
+
+    folderitems:
+    - title: Cx486 DLC
+      url: /Cyrix_Cx486DLC.html
+      output: web, pdf
+
+    - title: Cx486 DX
+      url: /Cyrix_Cx486DX.html
+      output: web, pdf
+
+    - title: 5x86
+      url: /Cyrix_5x86.html
+      output: web, pdf
+
+    - title: 6x86
+      url: /Cyrix_6x86.html
+      output: web, pdf
+
+    - title: 6x86MX
+      url: /Cyrix_6x86MX.html
+      output: web, pdf
+
+    - title: M II
+      url: /Cyrix_MII.html
+      output: web, pdf
+
+    - title: MediaGX
+      url: /Cyrix_MediaGX.html
+      output: web, pdf
+
+    - title: FPU
+      url: /Cyrix_FPU.html
+      output: web, pdf
+
+
+  - title: VIA
+    output: web, pdf
+
+    folderitems:
+    - title: Cyrix III
+      url: /VIA_CyrixIII.html
+      output: web, pdf
+
+    - title: C3
+      url: /VIA_C3.html
+      output: web, pdf
+
+    - title: C3 1GigaPro
+      url: /VIA_C3_1GigaPro.html
+      output: web, pdf
+
+
+  - title: Texas Instruments   
+    output: web, pdf
+
+    folderitems:
+    - title: 386
+      url: /TI_386.html
+      output: web, pdf
+    
+    - title: 486
+      url: /TI_486.html
+      output: web, pdf
+
+
+  - title: STMicroelectronics N.V.
+    output: web, pdf
+
+    folderitems:
+    - title: 486
+      url: /ST_486.html
+      output: web, pdf
+
+
+  - title: Geode
+    output: web, pdf
+
+    folderitems:
+    - title: GXm
+      url: /Geode_GXm.html
+      output: web, pdf
+
+    - title: GX1
+      url: /Geode_GX1.html
+      output: web, pdf
+
+
+  - title: IBM
+    output: web, pdf
+
+    folderitems:
+    - title: 486
+      url: /IBM_486.html
+      output: web, pdf
+
+    - title: 6x86MX
+      url: /IBM_6x86MX.html
+      output: web, pdf
+
+    - title: Other
+      url: /IBM_Other.html
+      output: web, pdf
+
+
+  - title: IDT
+    output: web, pdf
+
+    folderitems:
+    - title: WinChip
+      url: /IDT_WinChip.html
+      output: web, pdf
+
+
+  - title: Motorola
+    output: web, pdf
+
+    folderitems:
+    - title: PowerPC
+      url: /Motorola_PowerPC.html
+      output: web, pdf
+
+
+  - title: Transmeta
+    output: web, pdf
+
+    folderitems:
+    - title: Crusoe
+      url: /Transmeta_Crusoe.html
+      output: web, pdf
+
+  - title: Siemens
+    output: web, pdf
+
+    folderitems:
+    - title: 80186
+      url: /Siemens_80186.html
+      output: web, pdf
+
+
+  - title: Qualcomm
+    output: web, pdf
+
+    folderitems:
+    - title: MSM8928
+      url: /Qualcomm_MSM8928.html
+      output: web, pdf
+
+
+  - title: Zilog
+    output: web, pdf
+
+    folderitems:
+    - title: Z80
+      url: /Zilog_Z80.html
+      output: web, pdf
+
+
+# Copyright 2021 Google LLC
