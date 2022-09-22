@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: CPU 收藏目录
-  version: 
+  product: Jekyll Doc Theme
+  version: 6.0
   folders:
 
   - title:
@@ -28,394 +28,270 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: About
-      url: /about.html
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
       output: web, pdf
 
     - title: Support
-      url: /support.html
+      url: /mydoc_support.html
       output: web, pdf
 
-  - title: Intel
+  - title: Release Notes
     output: web, pdf
     folderitems:
 
-    - title: 3002
-      url: /intel_3002.html
+    - title: 6.0 Release notes
+      url: /mydoc_release_notes_60.html
       output: web, pdf
 
-    - title: 4004
-      url: /intel_4004.html
+    - title: 5.0 Release notes
+      url: /mydoc_release_notes_50.html
       output: web, pdf
 
-    - title: 4040
-      url: /intel_4040.html
+  - title: Installation
+    output: web, pdf
+    folderitems:
+
+    - title: About Ruby, Gems, Bundler, etc.
+      url: /mydoc_about_ruby_gems_etc.html
       output: web, pdf
 
-    - title: 8008
-      url: /intel_8008.html
+    - title: Install Jekyll on Mac
+      url: /mydoc_install_jekyll_on_mac.html
       output: web, pdf
 
-    - title: 8080
-      url: /intel_8080.html
+    - title: Install Jekyll on Windows
+      url: /mydoc_install_jekyll_on_windows.html
       output: web, pdf
 
-    - title: 8085
-      url: /intel_8085.html
+  - title: Authoring
+    output: web, pdf
+
+    folderitems:
+    - title: Pages
+      url: /mydoc_pages.html
       output: web, pdf
 
-    - title: 8086
-      url: /intel_8086.html
+    - title: Posts
+      url: /mydoc_posts.html
       output: web, pdf
 
-    - title: 8088
-      url: /intel_8088.html
+    - title: Lists
+      url: /mydoc_lists.html
       output: web, pdf
 
-    - title: 80186
-      url: /intel_80186.html
+    - title: Conditional logic
+      url: /mydoc_conditional_logic.html
       output: web, pdf
 
-    - title: 80188
-      url: /intel_80188.html
+    - title: Content reuse
+      url: /mydoc_content_reuse.html
       output: web, pdf
 
-    - title: 80286
-      url: /intel_80286.html
+    - title: Collections
+      url: /mydoc_collections.html
       output: web, pdf
 
-    - title: 80386
-      url: /intel_80386.html
+    - title: WebStorm editor tips
+      url: /mydoc_webstorm_text_editor.html
       output: web, pdf
 
-    - title: 80486
-      url: /intel_80486.html
+    - title: Atom editor tips
+      url: /mydoc_atom_text_editor.html
       output: web, pdf
 
-    - title: 80486 OverDrive
-      url: /intel_80486OverDrive.html
+  - title: Navigation
+    output: web, pdf
+
+    folderitems:
+    - title: Sidebar navigation
+      url: /mydoc_sidebar_navigation.html
       output: web, pdf
 
-    - title: Pentium
-      url: /intel_Pentium.html
+    - title: YAML tutorial in the context of Jekyll
+      url: /mydoc_yaml_tutorial.html
       output: web, pdf
 
-    - title: Pentium MMX
-      url: /intel_PentiumMMX.html
+    - title: Tags
+      url: /mydoc_tags.html
       output: web, pdf
 
-    - title: Pentium Pro
-      url: /intel_PentiumPro.html
+    - title: Series
+      url: /mydoc_series.html
       output: web, pdf
 
-    - title: Pentium II
-      url: /intel_PentiumII.html
+  - title: Formatting
+    output: web, pdf
+
+    folderitems:
+    - title: Tooltips
+      url: /mydoc_adding_tooltips.html
       output: web, pdf
 
-    - title: Pentium II Celeron
-      url: /intel_PentiumIICeleron.html
+    - title: Alerts
+      url: /mydoc_alerts.html
       output: web, pdf
 
-    - title: Pentium III
-      url: /intel_PentiumIII.html
+    - title: Icons
+      url: /mydoc_icons.html
       output: web, pdf
 
-    - title: Pentium III Celeron
-      url: /intel_PentiumIIICeleron.html
+    - title: Images
+      url: /mydoc_images.html
       output: web, pdf
 
-    - title: Pentium III Xeon
-      url: /intel_PentiumIIIXeon.html
+    - title: Code samples
+      url: /mydoc_code_samples.html
       output: web, pdf
 
-    - title: Pentium 4
-      url: /intel_Pentium4.html
+    - title: Labels
+      url: /mydoc_labels.html
       output: web, pdf
 
-    - title: Pentium 4 Celeron
-      url: /intel_Pentium4Celeron.html
+    - title: Links
+      url: /mydoc_hyperlinks.html
       output: web, pdf
 
-    - title: Pentium 4 Xeon
-      url: /intel_Pentium4Xeon.html
+    - title: Navtabs
+      url: /mydoc_navtabs.html
       output: web, pdf
+
+    - title: Tables
+      url: /mydoc_tables.html
+      output: web, pdf
+
+    - title: Syntax highlighting
+      url: /mydoc_syntax_highlighting.html
+      output: web, pdf
+
+    - title: Workflow maps
+      url: /mydoc_workflow_maps.html
+      output: web, pdf
+
+  - title: Handling reviews
+    output: web, pdf
+
+    folderitems:
+    - title: Commenting on files
+      url: /mydoc_commenting_on_files.html
+      output: web, pdf
+
+#    - title: Git collaboration
+#      url: /mydoc_git_collaboration
+#      output: web, pdf
+
+  - title: Publishing
+    output: web, pdf
+
+    folderitems:
+    - title: Build arguments
+      url: /mydoc_build_arguments.html
+      output: web, pdf
+
+    - title: Themes
+      url: /mydoc_themes.html
+      output: web, pdf
+
+    - title: Generating PDFs
+      url: /mydoc_generating_pdfs.html
+      output: web, pdf
+
+    - title: Help APIs and UI tooltips
+      url: /mydoc_help_api.html
+      output: web, pdf
+
+    - title: Search configuration
+      url: /mydoc_search_configuration.html
+      output: web, pdf
+
+    - title: iTerm profiles
+      url: /mydoc_iterm_profiles.html
+      output: web, pdf
+
+    - title: Pushing builds to server
+      url: /mydoc_push_build_to_server.html
+      output: web, pdf
+
+    - title: Publishing on Github Pages
+      url: /mydoc_publishing_github_pages.html
+      output: web, pdf
+
+  - title: Special layouts
+    output: web, pdf
+
+    folderitems:
+    - title: Knowledge-base layout
+      url: /mydoc_kb_layout.html
+      output: web, pdf
+
+    - title: Glossary layout
+      url: /mydoc_glossary.html
+      output: web, pdf
+
+    - title: FAQ layout
+      url: /mydoc_faq_layout.html
+      output: web, pdf
+
+    - title: Shuffle layout
+      url: /mydoc_shuffle.html
+      output: web, pdf
+
+  - title: Troubleshooting
+    output: web, pdf
+
+    folderitems:
+
+    - title: Troubleshooting
+      url: /mydoc_troubleshooting.html
+      output: web, pdf
+
+  - title: Tag archives
+    output: web
+    folderitems:
+
+    - title: Tag archives overview
+      url: /mydoc_tag_archives_overview.html
+      output: web
 
       subfolders:
-      - title: Core
-        output: web, pdf
+      - title: Tag archive pages
+        output: web
         subfolderitems:
 
-        - title: Core Pentium
-          url: /intel_CorePentium.html
-          output: web, pdf
-
-        - title: Core 2
-          url: /intel_Core2.html
-          output: web, pdf
-
-        - title: Core Xeon
-          url: /intel_CoreXeon.html
-          output: web, pdf
-
-        - title: 1 Gen. Nehale
-          url: /intel_1Gen_Nehale.html
-          output: web, pdf
-
-        - title: 2 Gen. Sandy Bridge
-          url: /intel_2Gen_SandyBridge.html
-          output: web, pdf
-
-        - title: 4 Gen. Haswell
-          url: /intel_4Gen_Haswell.html
-          output: web, pdf
-
-        - title: 5 Gen. Broadwell
-          url: /intel_5Gen_Broadwell.html
-          output: web, pdf
-
-    - title: "80860"
-      url: /intel_80860.html
-      output: web, pdf
-
-    - title: "80960"
-      url: /intel_80960.html
-      output: web, pdf
-
-    - title: FPU
-      url: /intel_FPU.html
-      output: web, pdf
-
-
-  - title: AMD
-    output: web, pdf
-    folderitems:
-
-    - title: 8080
-      url: /AMD_8080.html
-      output: web, pdf
-
-    - title: 8085
-      url: /AMD_8085.html
-      output: web, pdf
-
-    - title: 8086
-      url: /AMD_8086.html
-      output: web, pdf
-
-    - title: 8088
-      url: /AMD_8088.html
-      output: web, pdf
-
-    - title: 80186
-      url: /AMD_80186.html
-      output: web, pdf
-
-    - title: 80188
-      url: /AMD_80188.html
-      output: web, pdf
-
-    - title: 80286
-      url: /AMD_80286.html
-      output: web, pdf
-
-    - title: 80386
-      url: /AMD_80386.html
-      output: web, pdf
-
-    - title: 80486
-      url: /AMD_80486.html
-      output: web, pdf
-
-    - title: 5x86
-      url: /AMD_5x86.html
-      output: web, pdf
-
-    - title: K5
-      url: /AMD_K5.html
-      output: web, pdf
-
-    - title: K6
-      url: /AMD_K6.html
-      output: web, pdf
-
-    - title: K7
-      url: /AMD_K7.html
-      output: web, pdf
-
-    - title: K8
-      url: /AMD_K8.html
-      output: web, pdf
-
-    - title: K10
-      url: /AMD_K10.html
-      output: web, pdf
-
-    - title: RISC
-      url: /AMD_RISC.html
-      output: web, pdf
-
-    - title: FPU
-      url: /AMD_FPU.html
-      output: web, pdf
-
-
-  - title: Cyrix
-    output: web, pdf
-
-    folderitems:
-    - title: Cx486 DLC
-      url: /Cyrix_Cx486DLC.html
-      output: web, pdf
-
-    - title: Cx486 DX
-      url: /Cyrix_Cx486DX.html
-      output: web, pdf
-
-    - title: 5x86
-      url: /Cyrix_5x86.html
-      output: web, pdf
-
-    - title: 6x86
-      url: /Cyrix_6x86.html
-      output: web, pdf
-
-    - title: 6x86MX
-      url: /Cyrix_6x86MX.html
-      output: web, pdf
-
-    - title: M II
-      url: /Cyrix_MII.html
-      output: web, pdf
-
-    - title: MediaGX
-      url: /Cyrix_MediaGX.html
-      output: web, pdf
-
-    - title: FPU
-      url: /Cyrix_FPU.html
-      output: web, pdf
-
-
-  - title: VIA
-    output: web, pdf
-
-    folderitems:
-    - title: Cyrix III
-      url: /VIA_CyrixIII.html
-      output: web, pdf
-
-    - title: C3
-      url: /VIA_C3.html
-      output: web, pdf
-
-    - title: C3 1GigaPro
-      url: /VIA_C3_1GigaPro.html
-      output: web, pdf
-
-
-  - title: Texas Instruments   
-    output: web, pdf
-
-    folderitems:
-    - title: 386
-      url: /TI_386.html
-      output: web, pdf
-    
-    - title: 486
-      url: /TI_486.html
-      output: web, pdf
-
-
-  - title: STMicroelectronics N.V.
-    output: web, pdf
-
-    folderitems:
-    - title: 486
-      url: /ST_486.html
-      output: web, pdf
-
-
-  - title: Geode
-    output: web, pdf
-
-    folderitems:
-    - title: GXm
-      url: /Geode_GXm.html
-      output: web, pdf
-
-    - title: GX1
-      url: /Geode_GX1.html
-      output: web, pdf
-
-
-  - title: IBM
-    output: web, pdf
-
-    folderitems:
-    - title: 486
-      url: /IBM_486.html
-      output: web, pdf
-
-    - title: 6x86MX
-      url: /IBM_6x86MX.html
-      output: web, pdf
-
-    - title: Other
-      url: /IBM_Other.html
-      output: web, pdf
-
-
-  - title: IDT
-    output: web, pdf
-
-    folderitems:
-    - title: WinChip
-      url: /IDT_WinChip.html
-      output: web, pdf
-
-
-  - title: Motorola
-    output: web, pdf
-
-    folderitems:
-    - title: PowerPC
-      url: /Motorola_PowerPC.html
-      output: web, pdf
-
-
-  - title: Transmeta
-    output: web, pdf
-
-    folderitems:
-    - title: Crusoe
-      url: /Transmeta_Crusoe.html
-      output: web, pdf
-
-  - title: Siemens
-    output: web, pdf
-
-    folderitems:
-    - title: 80186
-      url: /Siemens_80186.html
-      output: web, pdf
-
-
-  - title: Qualcomm
-    output: web, pdf
-
-    folderitems:
-    - title: MSM8928
-      url: /Qualcomm_MSM8928.html
-      output: web, pdf
-
-
-  - title: Zilog
-    output: web, pdf
-
-    folderitems:
-    - title: Z80
-      url: /Zilog_Z80.html
-      output: web, pdf
-
+        - title: Formatting pages
+          url: /tag_formatting.html
+          output: web
+
+        - title: Navigation pages
+          url: /tag_navigation.html
+          output: web
+
+        - title: Content types pages
+          url: /tag_content_types.html
+          output: web
+
+        - title: Publishing pages
+          url: /tag_publishing.html
+          output: web
+
+        - title: Special layout pages
+          url: /tag_special_layouts.html
+          output: web
+
+        - title: Collaboration pages
+          url: /tag_collaboration.html
+          output: web
+
+        - title: Troubleshooting pages
+          url: /tag_troubleshooting.html
+          output: web
 
 # Copyright 2021 Google LLC
