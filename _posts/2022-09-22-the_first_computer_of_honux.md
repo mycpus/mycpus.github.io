@@ -1,5 +1,5 @@
 ---
-title:  "【原创】我的第一台电脑——联想天禧6620"
+title:  "【首发】我的第一台电脑——联想天禧6620"
 categories: history
 permalink: the_first_computer_of_honux.html
 tags: [blog]
