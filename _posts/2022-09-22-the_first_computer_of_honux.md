@@ -8,17 +8,17 @@ summary: "我的第一台电脑是联想天禧6620电脑，CPU是Intel Pentium I
 
 2000年11月份，我拥有了人生的第一台电脑。那时作为一个还没有接触过电脑的小白来说，对电脑非常陌生。因此决定选择买品牌机，而联想电脑在当年做的也是非常好的。买电脑之前，每逢周末我和爸爸就会去联想1+1电脑专卖店，看了各种机型，先后逛了好几家专卖店。最后，在紫荆山河南饭店旁边的联想1+1专卖店，买了一台天禧6620电脑，宝螺蓝色。主机的配置：CPU是Intel Pentium III 866MHz，内存64M、硬盘20G，带有调制解调器。配备了17寸的CRT彩色显示器、因特网键盘、滚轮鼠标、手写板、耳麦以及联想贴牌的彩色喷墨打印机和扫描仪，还送了一张电脑桌。专卖店派来一辆面包车，把整台电脑送到了家，联想的工程师同时上门把电脑安装调试好，并讲解了基本的电脑操作。
 
-![](/images/blogs/Legend_TX6620_1.jpg)
+![联想天禧6620 宝螺蓝色](/images/blogs/Legend_TX6620_1.jpg)
 
 ***联想 天禧6620 宝螺蓝色***
 
-![](/images/blogs/Legend_TX6620_2.jpg)
+![联想天禧6620 贝壳形主机](/images/blogs/Legend_TX6620_2.jpg)
 
 ***联想 天禧6620 贝壳形主机***
 
 买了联想电脑以后，每个周末可以去专卖店参加电脑培训课程，我和爸爸一起去学习，因为爸爸单位的很多工作也开始需要在电脑上完成，必须具备基本的技能。最初，爸爸不太会用键盘打字，写文档都是用手写板，效率确实不高。后来，爸爸开始学习使用键盘和拼音输入法，打字速度也慢慢上来了。
 
-![](/images/blogs/Legend_TX6620_3.jpg)
+![联想天禧6620 随机配置的手写板](/images/blogs/Legend_TX6620_3.jpg)
 
 ***联想 天禧6620 随机配置的手写板***
 
@@ -28,20 +28,20 @@ summary: "我的第一台电脑是联想天禧6620电脑，CPU是Intel Pentium I
 
 下面的网站截图是当年联想网站上关于天禧电脑的介绍。
 
-<a href ="/images/blogs/Legend_TX_Web01.png"><img src="/images/blogs/Legend_TX_Web01.png"></a>
+<a target="_blank" href="/images/blogs/Legend_TX_Web01.png"><img src="/images/blogs/Legend_TX_Web01.png"></a>
 
-![](/images/blogs/Legend_TX_Web02.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web02.png"><img src="/images/blogs/Legend_TX_Web02.png"></a>
 
-![](/images/blogs/Legend_TX_Web03.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web03.png"><img src="/images/blogs/Legend_TX_Web03.png"></a>
 
-![](/images/blogs/Legend_TX_Web04.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web04.png"><img src="/images/blogs/Legend_TX_Web04.png"></a>
 
-![](/images/blogs/Legend_TX_Web05.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web05.png"><img src="/images/blogs/Legend_TX_Web05.png"></a>
 
-![](/images/blogs/Legend_TX_Web06.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web06.png"><img src="/images/blogs/Legend_TX_Web06.png"></a>
 
-![](/images/blogs/Legend_TX_Web07.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web07.png"><img src="/images/blogs/Legend_TX_Web07.png"></a>
 
-![](/images/blogs/Legend_TX_Web08.png)
+<a target="_blank" href="/images/blogs/Legend_TX_Web08.png"><img src="/images/blogs/Legend_TX_Web08.png"></a>
 
 {% include links.html %}
