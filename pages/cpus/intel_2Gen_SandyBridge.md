@@ -54,7 +54,7 @@ folder: cpus
 | 参数 | 数值 |
 | ------ | ------ |
 | CPU 类型 | 1155 land FC-LGA |
-| 核心 | SandyBridge |
+| 核心 | Sandy Bridge |
 | Socket | LGA 1155 |
 | 主频 | 3.3 GHz |
 | 二级缓存 | 2 x 256 KB |
