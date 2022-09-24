@@ -11,17 +11,17 @@ a {
 a:hover,	a.selected {		
     color: #ffcc00;	
 }
-h1,h2,h4,h5,h6 
+#issues h1,h2,h4,h5,h6 
 {	
     text-align: center;	
     color: #ccc;	
     text-shadow: #000 1px 1px 2px;	
     margin-bottom: 5px;
 }	
-h1 {		
+#issues h1 {		
     font-size: 18px;	
 }	
-h2 {		
+#issues h2 {		
     font-size: 14px;	
 }
 .sociales 
