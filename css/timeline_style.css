@@ -90,7 +90,7 @@
     margin-right: 70px;					
     font-weight: normal;					
     line-height: 22px;					
-    text-shadow: #000 1px 1px 2px;				
+    text-shadow: rgb(33, 33, 33) 1px 1px 2px;				
 }				
 #grad_left,		#grad_right {			
     width: 100px;			
