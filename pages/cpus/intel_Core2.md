@@ -121,4 +121,27 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 ![Intel Core 2 QUAD Q6600 正面](/images/cpus/Intel/Intel_Core_2_QUAD_Q6600_1.jpg)
 ![Intel Core 2 QUAD Q6600 反面](/images/cpus/Intel/Intel_Core_2_QUAD_Q6600_2.jpg)
 
+---------
+
+### Intel Core 2 QUAD Q8200
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 775-land FCLGA8 |
+| 核心 | Yorkfield |
+| Socket | 775 |
+| 主频 | 2333 MHz |
+| 外频 | 333 MHz |
+| 总线频率 | 1333 MHz |
+| 倍频 | x 7 |
+| 一级缓存 | 4 x 64 KB (32/32) |
+| 二级缓存 | 2 x 2048 KB |
+| 晶体管 | 456,000,000 |
+| 制造工艺 | 45 nm |
+| 步进 | SLG9S |
+| 生产日期 | 47/2008 |
+
+![Intel Core 2 QUAD Q8200 正面](/images/cpus/Intel/Intel_Core_2_QUAD_Q8200_1.jpg)
+![Intel Core 2 QUAD Q8200 反面](/images/cpus/Intel/Intel_Core_2_QUAD_Q8200_2.jpg)
+
 {% include links.html %}

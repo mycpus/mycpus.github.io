@@ -141,7 +141,7 @@ entries:
       output: web, pdf
 
       subfolders:
-      - title: Core Architecture
+      - title: Core
         output: web, pdf
         subfolderitems:
 
