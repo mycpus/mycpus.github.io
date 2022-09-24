@@ -2,7 +2,8 @@
     margin: 0;	
     padding: 0;
 }
-#timeline a {	
+#timeline a {
+    font-family: Georgia;
     color: #656363;
     text-decoration: none;	
     -webkit-transition: 0.5s;	
