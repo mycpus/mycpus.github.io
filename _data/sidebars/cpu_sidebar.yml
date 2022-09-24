@@ -165,6 +165,10 @@ entries:
           url: /intel_2Gen_SandyBridge.html
           output: web, pdf
 
+        - title: 3 Gen. Ivy Bridge
+          url: /intel_3Gen_IvyBridge.html
+          output: web, pdf
+
         - title: 4 Gen. Haswell
           url: /intel_4Gen_Haswell.html
           output: web, pdf
