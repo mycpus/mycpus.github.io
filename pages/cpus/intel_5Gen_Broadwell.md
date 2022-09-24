@@ -11,15 +11,15 @@ folder: cpus
 
 ## 关于 Intel 5 Gen. Broadwell Core i
 
-采用 Broadwell 微架构的英特尔微处理器，第 5 代台式机、移动式、嵌入式和 Xeon 处理器。采用 Broadwell-E 内核的台式机处理器属于第 6 代。
+英特尔第五代 Core i 系列处理器，代号 Broadwell，采用最新的 14nm 制程，也就是 Haswell 架构的 22nm 制程工艺的升级版。第五代 Broadwell 英特尔处理器，在功耗上降低 30% 左右，同时性能还有小幅提升。极低的功耗不仅带来了超长的续航时间，而且节省出来的电量可以分配给其他部分，比如高分辨率显示屏。
 
 关键数据：
 - 处理器和组件：
-    - 14纳米制造工艺
-    - 主要是集成图形处理器
+    - 14 纳米制造工艺
+    - 集成图形处理器
     - 双通道和四通道内存总线
-    - 直接媒体接口2.0
-    - PCI Express 3.0接口
+    - Direct Media Interface 2.0
+    - PCI Express 3.0 接口
 - 标准扩展：
     - MMX 指令
     - SSE、SSE2、SSE3 / 流式 SIMD 扩展

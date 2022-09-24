@@ -11,7 +11,7 @@ folder: cpus
 
 ## 关于 Intel 4 Gen. Haswell Core i
 
-英特尔微处理器采用 Haswell 微架构，第 4 代台式机、移动式、嵌入式和服务器处理器。采用 Haswell-E 内核的台式机处理器属于第 5 代。
+Haswell 架构是英特尔第四代 CPU 架构，当然，它和 IVB 一样，继承高端 Core i7，中端 Core i5/Core i3/Xeon e3 和低端奔腾、赛扬市场。Haswell 的最高端核芯显卡 GT3 系列 在移动版 Core i7 使用，而中端的 GT2 则分配给桌面版的 Core i 系列处理器，而最低端的奔腾、赛扬搭载 GT1。此外，Haswell 将会使用 LGA1150 插座，无法和 LGA1155 替换。制程方面，Haswell 继续使用 IVB 的 22nm 制程。
 
 关键数据：
 - 处理器和组件：
@@ -19,7 +19,7 @@ folder: cpus
     - 大部分集成图形处理器
     - 双通道和四通道内存总线
     - Direct Media Interface
-    - Quick Path Interconnect v1.1，基于 Xeon
+    - Xeon 支持 Quick Path Interconnect v1.1
     - PCI Express 3.0 接口
 - 标准扩展：
     - MMX 指令
@@ -65,8 +65,8 @@ folder: cpus
 | 三级缓存 | 3 MB |
 | 核心 | 2 |
 | 线程 | 4 |
-| 制程 | 22nm |
-| TDP | 54W |
+| 制程 | 22 nm |
+| TDP | 54 W |
 | 核显 | HD 4400 |
 | 核显基本频率 | 350 MHz |
 | 核显最大动态频率 | 1150 MHz |

@@ -13,6 +13,8 @@ folder: cpus
 
 采用 Sandy Bridge 微架构的英特尔微处理器，第 2 代台式机、移动式、嵌入式和服务器处理器。采用 Sandy Bridge-E 内核的台式机处理器属于第 3 代。
 
+2009年（TICK时间），Intel 处理器制程迈入 32nm 时代，2010年的 TOCK 时间，Intel 推出代号为 Sandy Bridge 的处理器，该处理器采用 32nm 制程。Sandy Bridge (之前称作Gesher) 是 Nehalem 的继任者，也是其工艺升级版，从 45nm 进化到 32nm。Sandy Bridge 将有八核心版本，二级缓存仍为 512KB，但三级缓存将扩容至 16MB。而 Sandy Bridge 最主要特点则是加入了 game instrution AVX (Advanced Vectors Extensions) 技术，也就是之前的 VSSE。Intel 宣称，使用 AVX 技术进行矩阵计算的时候将比 SSE 技术快 90% 。其重要性堪比 1999 年 Pentium III 引入 SSE。
+
 关键数据：
 - 处理器和组件：
     - 32 nm 制造工艺
@@ -59,8 +61,8 @@ folder: cpus
 | 三级缓存 | 3 MB |
 | 核心 | 2 |
 | 线程 | 4 |
-| 制程 | 32nm |
-| TDP | 65W |
+| 制程 | 32 nm |
+| TDP | 65 W |
 | 核显 | HD 2000 |
 | 核显基本频率 | 850 MHz |
 | 核显最大动态频率 | 1100 MHz |
