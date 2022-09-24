@@ -7,8 +7,6 @@ topnav: topnav
 comments: false
 ---
 
-{% include timeline_intel.html %}
-
 ![CPU 晶圆高清图](/images/cpus/wafer_cpu.jpg)
 
 欢迎来到我的中央处理器博物馆，这里的 CPU 全部都我多年收集的，照片也是自己对实物的拍照。左侧的 <span class="label label-info">收藏目录</span> 大致按照品牌和推出的时间排序。
