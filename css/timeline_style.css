@@ -37,7 +37,7 @@
     width: 800px;		
     height: 350px;		
     overflow: hidden;		
-    margin: 100px auto;		
+    margin: 50px auto;
     position: relative;		
     background: url('../images/dot.gif') left 45px repeat-x;	
 }		
