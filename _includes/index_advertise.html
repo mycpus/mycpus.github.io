@@ -3,7 +3,9 @@
 		$('head').append('<link href=' + file + ' rel="stylesheet" type="text/css">')
 	}
 	addStyle("css/timeline_style.css");
+	addStyle("css/simple_style.css");
 </script>
+
 <script src="js/jquery.timelinr-0.9.4.js" type="text/javascript"></script>
 <script type="text/javascript">$(function(){$().timelinr({autoPlay:'true',autoPlayDirection:'forward',startAt:1,autoPlayPause:6000 })	});</script>
 <div id="timeline">
@@ -84,17 +86,53 @@
 		</li>
 	</ul>
 </div>
-<div id="page_img">
-	<img src="/images/cpus/wafer_cpu.jpg" alt="CPU 晶圆高清图" />
+
+
+<script type="text/javascript" src="js/simple_swiper.js"></script>
+<div id="swiper-demo" class="simple-swiper-container">
+	<a id="prev" class="btn btn-prev"></a>
+	<a id="next" class="btn btn-next"></a>
+	<div class="pagination"></div>
 </div>
+
 <script src="js/current-device.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	if(device.mobile()){
 		var t = document.getElementById('timeline');
 		t.style.display = 'none';
+
+		new SimSwiper("#swiper-demo", {
+			autoplay: 4500,
+			duration: 300,
+			easing: 'ease',
+			button: {
+				prev: "#prev",
+				next: "#next"
+			},
+			pagination: {
+				el: '.pagination'
+			},
+			data: [{
+				index: 1,
+				href: 'javascript:void(0)',
+				src: 'images/swiper/t1.jpg'
+			}, {
+				index: 2,
+				href: '#',
+				src: 'images/swiper/t2.jpg'
+			}, {
+				index: 3,
+				href: 'javascript:void(0)',
+				src: 'images/swiper/t3.jpg'
+			}, {
+				index: 4,
+				href: 'javascript:void(0)',
+				src: 'images/swiper/t4.jpg'
+			}]
+		});
 	}
 	else{
-		var t = document.getElementById('page_img');
+		var t = document.getElementById('swiper-demo');
 		t.style.display = 'none';
 	}
 </script>
