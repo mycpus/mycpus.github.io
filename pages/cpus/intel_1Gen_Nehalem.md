@@ -5,7 +5,7 @@ keywords: CPU, cpu, processor, qualification, information, pictures, core, frequ
 last_updated: Aug 31, 2022
 summary: "采用 Nehalem 微架构的英特尔微处理器 —— 第一代桌面、移动、嵌入式和服务器处理器。"
 sidebar: cpu_sidebar
-permalink: intel_1Gen_Nehale.html
+permalink: intel_1Gen_Nehalem.html
 folder: cpus
 ---
 

@@ -157,8 +157,8 @@ entries:
           url: /intel_CoreXeon.html
           output: web, pdf
 
-        - title: 1 Gen. Nehale
-          url: /intel_1Gen_Nehale.html
+        - title: 1 Gen. Nehalem
+          url: /intel_1Gen_Nehalem.html
           output: web, pdf
 
         - title: 2 Gen. Sandy Bridge
