@@ -45,6 +45,23 @@ The 8085 was produced at speeds ranging from 3 MHz to 6 MHz:
 
 ## 我的收藏
 
+### Intel MD8085AH/B
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 40-pin CerDIP |
+| 主频 | 3.0 MHz |
+| 内部总线宽度 | 8 Bit |
+| 外部总线宽度 | 8 Bit |
+| 地址总线宽度 | 16 Bit |
+| 晶体管 | 6,500 |
+| 技术 | HMOS 3.0 µm |
+| 电压 | 5 Volt |
+| 生产日期 | 07/1975 |
+
+![Intel MD8085AH/B 正面](/images/cpus/Intel/Intel_MD8085AHB_1.jpg)
+![Intel MD8085AH/B 反面](/images/cpus/Intel/Intel_MD8085AHB_2.jpg)
+
 ### Intel P8085
 
 | 参数 | 数值 |
@@ -57,7 +74,7 @@ The 8085 was produced at speeds ranging from 3 MHz to 6 MHz:
 | 晶体管 | 6,500 |
 | 技术 | NMOS 3.0 µm |
 | 电压 | 5 Volt |
-| 生产日期 | 15/1978 |
+| 生产日期 | 47/1977 |
 
 ![Intel P8085 正面](/images/cpus/Intel/Intel_P8085_1.jpg)
 ![Intel P8085 反面](/images/cpus/Intel/Intel_P8085_2.jpg)
