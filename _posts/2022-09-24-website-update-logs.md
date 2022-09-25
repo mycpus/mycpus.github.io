@@ -7,6 +7,12 @@ tags: [news]
 
 **2022-09-21**
 
+- 修改首页，电脑端增加 Intel CPU 发展时间轴展示。
+- 新增 Intel Core 2 QUAD Q8200、Intel Core i3-3240、Intel MD8085AH/B 藏品各一颗。
+- 新增 Intel Celeron 333、366、400 藏品各一颗。
+
+**2022-09-21**
+
 - 新增 Cyrix Cx486 DX2 66 带绿色散热片一颗。
 - 新增 IBM 6x86MX PR166 和 PR233 各一颗。
 - 新增 不带 Pentium III 字样的 Pentium III 933 一颗。
