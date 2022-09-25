@@ -5,7 +5,7 @@ permalink: update.html
 tags: [news]
 ---
 
-**2022-09-21**
+**2022-09-24**
 
 - 修改首页，电脑端增加 Intel CPU 发展时间轴展示。
 - 新增 Intel Core 2 QUAD Q8200、Intel Core i3-3240、Intel MD8085AH/B 藏品各一颗。
