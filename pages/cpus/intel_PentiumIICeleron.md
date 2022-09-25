@@ -83,7 +83,81 @@ The Celeron product concept was introduced by Intel in response to the company's
 ![Intel Celeron 300A MHz 正面](/images/cpus/Intel/Intel_Celeron_300AMHz_1.jpg)
 ![Intel Celeron 300A MHz 反面](/images/cpus/Intel/Intel_Celeron_300AMHz_2.jpg)
 
-### Intel Celeron 433MHz
+---------
+
+### Intel Celeron 333 MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 242-pin S.E.P.P.PLGA |
+| 核心 | Mendocino |
+| Socket | Slot 1 |
+| 主频 | 333 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 19,000,000 |
+| 制造工艺 | 0.25 µm |
+| 步进 | SL2WN |
+| 生产日期 | 46/1998 |
+
+![Intel Celeron 333 MHz 正面](/images/cpus/Intel/Intel_Celeron_333MHz_1.jpg)
+![Intel Celeron 333 MHz 反面](/images/cpus/Intel/Intel_Celeron_333MHz_2.jpg)
+
+---------
+
+### Intel Celeron 366 MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 242-pin S.E.P.P.PLGA |
+| 核心 | Mendocino |
+| Socket | Slot 1 |
+| 主频 | 366 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 5.5 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 19,000,000 |
+| 制造工艺 | 0.25 µm |
+| 步进 | SL376 |
+| 生产日期 | 21/1999 |
+
+![Intel Celeron 366 MHz 正面](/images/cpus/Intel/Intel_Celeron_366MHz_1.jpg)
+![Intel Celeron 366 MHz 反面](/images/cpus/Intel/Intel_Celeron_366MHz_2.jpg)
+
+---------
+
+### Intel Celeron 400 MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 242-pin S.E.P.P.PLGA |
+| 核心 | Mendocino |
+| Socket | Slot 1 |
+| 主频 | 400 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 6 |
+| 外部总线宽度 | 64 Bit |
+| 地址总线宽度 | 36 Bit |
+| 一级缓存 | 16+16 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 19,000,000 |
+| 制造工艺 | 0.25 µm |
+| 步进 | SL39Z |
+| 生产日期 | 08/1999 |
+
+![Intel Celeron 400 MHz 正面](/images/cpus/Intel/Intel_Celeron_400MHz_1.jpg)
+![Intel Celeron 400 MHz 反面](/images/cpus/Intel/Intel_Celeron_400MHz_2.jpg)
+
+---------
+
+### Intel Celeron 433 MHz
 
 | 参数 | 数值 |
 | ------ | ------ |
