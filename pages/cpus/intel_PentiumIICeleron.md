@@ -77,7 +77,7 @@ The Celeron product concept was introduced by Intel in response to the company's
 ```
 英特尔深知原赛扬名声不佳，决心不再犯同样的错误，结果新的 Mendocino 核心赛扬从一开始就表现出色。事实上，大多数行业分析师认为第一款基于 Mendocino 的 Celeron 过于成功 - 性能足够高，不仅可以与竞争对手的部件进行激烈竞争，而且还可以吸引买家远离英特尔的高利润旗舰 Pentium II。
 
-新赛扬性能的关键是缓存。旧型号根本没有二级缓存，而新型号包括 128KB 的二级缓存作为芯片本身的一部分。Mendocino Celeron 在单个芯片上总共有 1920 万个晶体管（包括缓存），制造起来既困难又昂贵，但英特尔完美地执行了一个雄心勃勃的项目。 第一个 Mendocino 内核 Celeron 的时钟频率为当时适中的 300MHz，但在相同时钟速度下几乎是旧的无缓存 Celeron 的两倍。为了与旧型号区分开来，英特尔将其称为 300A。
+新赛扬性能的关键是缓存。旧型号根本没有二级缓存，而新型号包括 128KB 的二级缓存作为芯片本身的一部分。Mendocino Celeron 在单个芯片上总共有 1920 万个晶体管（包括缓存），制造起来既困难又昂贵，但英特尔完美地执行了一个雄心勃勃的项目。 第一个 Mendocino 内核 Celeron 的时钟频率为当时适中的 300MHz，但在相同时钟速度下几乎是旧的无缓存 Celeron 的两倍。为了与旧型号区分开来，英特尔将其称为 300A。尽管其他 Mendocino Celeron（例如，下面的 Celeron 333MHz）没有附加 A，但有些人将所有 Mendocino 处理器称为 Celeron-A，而不管速度如何。
 ```
 
 ![Intel Celeron 300A MHz 正面](/images/cpus/Intel/Intel_Celeron_300AMHz_1.jpg)
