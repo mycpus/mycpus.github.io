@@ -58,6 +58,13 @@
 				a.setAttribute("href", encodeURI(item.href));
 				var img = document.createElement("img");
 				img.setAttribute("src", item.src);
+				img.onload = function(img) {
+					var d = document.getElementById(con.id);
+					if(d.style.height == '') {
+						d.style.height = img.path[0].height + 'px';
+						//console.log('set div height!');
+					}
+				}
 				a.appendChild(img);
 				slide.appendChild(a);
 				frag.appendChild(slide);
