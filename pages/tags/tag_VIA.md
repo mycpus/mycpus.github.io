@@ -3,7 +3,7 @@ title: "VIA Pages"
 tagName: VIA
 search: exclude
 permalink: tag_VIA.html
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 folder: tags
 ---
 {% include taglogic.html %}

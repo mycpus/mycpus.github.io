@@ -3,7 +3,7 @@ title: "Geode Pages"
 tagName: Geode
 search: exclude
 permalink: tag_Geode.html
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 folder: tags
 ---
 {% include taglogic.html %}

@@ -3,7 +3,7 @@ title: "RISC Pages"
 tagName: RISC
 search: exclude
 permalink: tag_RISC.html
-sidebar: mydoc_sidebar
+sidebar: cpu_sidebar
 folder: tags
 ---
 {% include taglogic.html %}
