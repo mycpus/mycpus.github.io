@@ -73,6 +73,8 @@ folder: cpus
 ![Intel Core i3-2120 正面](/images/cpus/Intel/Intel_Core_i3-2120_1.jpg)
 ![Intel Core i3-2120 反面](/images/cpus/Intel/Intel_Core_i3-2120_2.jpg)
 
+---------
+
 ### Intel Celeron G550
 
 | 参数 | 数值 |

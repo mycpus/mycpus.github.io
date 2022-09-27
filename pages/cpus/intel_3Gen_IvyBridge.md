@@ -74,4 +74,30 @@ folder: cpus
 ![Intel Core i3-3240 正面](/images/cpus/Intel/Intel_Core_i3-3240_1.jpg)
 ![Intel Core i3-3240 反面](/images/cpus/Intel/Intel_Core_i3-3240_2.jpg)
 
+---------
+
+### Intel Celeron G1610
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1155 land FC-LGA |
+| 核心 | Ivy Bridge |
+| Socket | LGA 1155 |
+| 主频 | 2.6 GHz |
+| 二级缓存 | 2 x 256 KB |
+| 三级缓存 | 2 MB |
+| 核心 | 2 |
+| 线程 | 2 |
+| 制程 | 22 nm |
+| TDP | 55 W |
+| 核显 | HD |
+| 核显基本频率 | 650 MHz |
+| 核显最大动态频率 | 1050 MHz |
+| 内存控制器 | DDR3-1333 |
+| 上市时间 | 20.01.2013 |
+| 生产日期 | 18/2013 |
+
+![Intel Celeron G1610 正面](/images/cpus/Intel/Intel_Celeron_G1610_1.jpg)
+![Intel Celeron G1610 反面](/images/cpus/Intel/Intel_Celeron_G1610_2.jpg)
+
 {% include links.html %}
