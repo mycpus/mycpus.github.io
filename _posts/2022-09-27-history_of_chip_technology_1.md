@@ -1,5 +1,5 @@
 ---
-title:  "图说芯片技术60多年的发展史"
+title:  "图说芯片技术60多年的发展史（一）"
 categories: history
 permalink: history_of_chip_technology_1.html
 tags: [blog]
