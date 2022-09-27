@@ -73,4 +73,28 @@ folder: cpus
 ![Intel Core i3-2120 正面](/images/cpus/Intel/Intel_Core_i3-2120_1.jpg)
 ![Intel Core i3-2120 反面](/images/cpus/Intel/Intel_Core_i3-2120_2.jpg)
 
+### Intel Celeron G550
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1155 land FC-LGA |
+| 核心 | Sandy Bridge |
+| Socket | LGA 1155 |
+| 主频 | 2.6 GHz |
+| 二级缓存 | 2 x 256 KB |
+| 三级缓存 | 2 MB |
+| 核心 | 2 |
+| 线程 | 2 |
+| 制程 | 32 nm |
+| TDP | 65 W |
+| 核显 | HD |
+| 核显基本频率 | 850 MHz |
+| 核显最大动态频率 | 1000 MHz |
+| 内存控制器 | DDR3-1066 |
+| 上市时间 | 04.09.2011 |
+| 生产日期 | 37/2012 |
+
+![Intel Celeron G550 正面](/images/cpus/Intel/Intel_Celeron_G550_1.jpg)
+![Intel Celeron G550 反面](/images/cpus/Intel/Intel_Celeron_G550_2.jpg)
+
 {% include links.html %}
