@@ -75,6 +75,32 @@ folder: cpus
 
 ---------
 
+### Intel Pentium G620
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1155 land FC-LGA |
+| 核心 | Sandy Bridge |
+| Socket | LGA 1155 |
+| 主频 | 2.6 GHz |
+| 二级缓存 | 2 x 256 KB |
+| 三级缓存 | 3 MB |
+| 核心 | 2 |
+| 线程 | 2 |
+| 制程 | 32 nm |
+| TDP | 65 W |
+| 核显 | HD |
+| 核显基本频率 | 850 MHz |
+| 核显最大动态频率 | 1100 MHz |
+| 内存控制器 | DDR3-1066 |
+| 上市时间 | 22.05.2011 |
+| 生产日期 | 15/2012 |
+
+![Intel Pentium G620 正面](/images/cpus/Intel/Intel_Pentium_G620_1.jpg)
+![Intel Pentium G620 反面](/images/cpus/Intel/Intel_Pentium_G620_2.jpg)
+
+---------
+
 ### Intel Celeron G550
 
 | 参数 | 数值 |
