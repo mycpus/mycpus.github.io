@@ -59,17 +59,17 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 ![](/images/blogs/history_of_chip_technology_fig4.jpg)
 
-图4.晶体管发明三人组
+***图4.晶体管发明三人组***
 
 ![](/images/blogs/history_of_chip_technology_fig5.jpg)
 
-图5.获得1956年诺贝尔物理学奖的三人组
+***图5.获得1956年诺贝尔物理学奖的三人组***
 
 1950年，当蒂尔(G.K.Teal)和利特尔(J.B.Little)研究成功生长大单晶锗的工艺后，威廉姆.肖克莱(W.Shockley)于1950年4月制成第一个双极结型晶体管—PN结型晶体管,这种晶体管实际应用比点触型晶体管广泛得多。今天的晶体管，大部分仍是这种PN结型晶体管。所谓PN结就是P型半导体和N型半导体的结合之处，P型半导体多空穴。N型半导体多电子。
 
 ![](/images/blogs/history_of_chip_technology_fig6.jpg)
 
-图6.PN结型晶体管结构示意图(左)晶体管符号(右)
+***图6.PN结型晶体管结构示意图(左)晶体管符号(右)***
 
 1952年，实用的结场效应晶体管(JunctionField-Effect Transistor，JFET)被制造出来。结场效应晶体管(JFET)是一种用电场效应来控制电流的晶体管。到了1960年，有人提出用二氧化硅改善双极性晶体管的性能，就此金属-氧化物-半导体(Metal Oxid Semiconductor,MOS)场效应晶体管诞生。艾塔拉(M.Atalla)也被认为是MOS场效应晶体管(MOSFET)的发明人之一。
 
@@ -77,23 +77,23 @@ MOSFET宣告了在电子技术中的统治地位，并且支撑了当今信息�
 
 ![](/images/blogs/history_of_chip_technology_fig7.jpg)
 
-图7.MOSFET的发明贡献者及发明年份
+***图7.MOSFET的发明贡献者及发明年份***
 
 ![](/images/blogs/history_of_chip_technology_fig8.jpg)
 
-图8.场效应晶体管(FET)分类及实物图
+***图8.场效应晶体管(FET)分类及实物图***
 
 晶体管从双极型到MOS型，从分立式器件到集成在芯片之中，加上其所用不同的半导体材料，晶体管类型和品种繁多。晶体管主要起到小信号放大、功率放大、电流开关等作用，它是芯片中集成的数量最多的最基本的电路元器件。
 
 ![](/images/blogs/history_of_chip_technology_fig9.jpg)
 
-图9.各种晶体管的分类
+***图9.各种晶体管的分类***
 
 晶体管发明是微电子技术发展历程中第一个里程碑。晶体管的发明使人类步入了飞速发展的电子信息时代。到目前为止，它的应用已长达74年之久。
 
 ![](/images/blogs/history_of_chip_technology_fig10.jpg)
 
-图10.各种封装形式的分立式晶体管
+***图10.各种封装形式的分立式晶体管***
 
 (未完待续)
 
