@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news]
 ---
 
+**2022-09-28**
+
+- 新增 Intel CPU 藏品 3 颗。
+
 **2022-09-24**
 
 - 修改首页，电脑端增加 Intel CPU 发展时间轴展示。
