@@ -12,7 +12,7 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig27.jpg)
 
-图27.Intel 8086 CPU芯片的显微照片和封装后的外观图
+***图27.Intel 8086 CPU芯片的显微照片和封装后的外观图***
 
 也是在1978年，64kb动态随机存储器诞生，不足0.5平方厘米的硅片上集成了多达15万个晶体管，线宽为3微米。标志着芯片技术进入了```超大规模集成电路```(Very Large Scale Integrated circuits，VLSI)时代。
 
@@ -20,13 +20,13 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig28.jpg)
 
-图28. Intel 80286/386/486 CPU芯片的显微照片和封装后的外观图
+***图28. Intel 80286/386/486 CPU芯片的显微照片和封装后的外观图***
 
 1980年，日本东芝(Toshiba)公司的舛岡富士雄(Fujio Muoka)发明了NOR 闪速存储器(NOR Flash Memory)，简称NOR闪存(NOR Flash)。1987年，他又发明了NAND闪速存储器(NAND Flash Memory)，简称NAND闪存(NAND Flash)。
 
 ![](/images/blogs/history_of_chip_technology_fig29.jpg)
 
-图29.日本东芝的舛岡富士雄发明Flash
+***图29.日本东芝的舛岡富士雄发明Flash***
 
 1981年，IBM基于8088推出全球第一台个人计算机(PC)。第一台IBM PC用的Intel 8088主频为4.77MHz，操作系统采用Microsoft的MS-DOS。有人评价说PC的历史就是IBM80年代的历史。IBM PC的研制项目主管是唐.埃斯特利奇(Don Estridge)，他被誉为是IBM PC之父。
 
@@ -34,7 +34,7 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig30.jpg)
 
-图30.埃斯特利奇与最早的IBM PC
+***图30.埃斯特利奇与最早的IBM PC***
 
 1982年，Intel推出80286微处理器(图28)。
 
@@ -52,13 +52,13 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig31.jpg)
 
-图31. Intel奔腾CPU芯片的显微照片和封装后的外观图
+***图31. Intel奔腾CPU芯片的显微照片和封装后的外观图***
 
 奔腾CPU经过四代升级后，Intel推出了新系列的奔腾CPU。1997年Intel开始推出奔腾Ⅱ系列CPU芯片；1999年Intel开始推出奔腾Ⅲ系列CPU芯片；2000年Intel开始推出奔腾Ⅳ系列CPU芯片。每种奔腾产品都有几代的升级版本或者特色款式。
 
 ![](/images/blogs/history_of_chip_technology_fig32.jpg)
 
-图32. Intel奔腾Ⅱ/Ⅲ/Ⅳ CPU芯片的显微照片和封装后的外观图
+***图32. Intel奔腾Ⅱ/Ⅲ/Ⅳ CPU芯片的显微照片和封装后的外观图***
 
 1994年，由于集成1亿个元件的1G DRAM的研制成功，标志着芯片技术进入了```巨大规模集成电路```（Giga Scale Integrated circuits，```GSI```）时代。
 
@@ -66,7 +66,7 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig33.jpg)
 
-图33. IBM公司开发出芯片铜互联技术
+***图33. IBM公司开发出芯片铜互联技术***
 
 1999年，```胡正明教授开发出了鳍式场效晶体管(FinFET)技术。```他被誉为是3D晶体管之父。当晶体管的尺寸小于25nm时，传统的平面晶体管尺寸已经无法缩小，FinFET的出现将晶体管立体化，晶体管密度才能进一步加大，让摩尔定律在今天延续传奇。
 
@@ -74,7 +74,7 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig34.jpg)
 
-图34. FinFET技术的发明人胡正明教授
+***图34. FinFET技术的发明人胡正明教授***
 
 2000年，Intel开始推出奔腾Ⅳ系列CPU芯片(图32)。同年，1Gb RAM投放市场。
 
@@ -90,11 +90,11 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig35.jpg)
 
-图35. Intel酷睿(Core)系列CPU的全家福(2013年留影)
+***图35. Intel酷睿(Core)系列CPU的全家福(2013年留影)***
 
 ![](/images/blogs/history_of_chip_technology_fig36.jpg)
 
-图36. Intel酷睿(Core)系列多核心CPU举例
+***图36. Intel酷睿(Core)系列多核心CPU举例***
 
 2011年，Intel推出了商业化的FinFET工艺，用在了其22nm的工艺节点。
 
@@ -104,19 +104,19 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ![](/images/blogs/history_of_chip_technology_fig37.jpg)
 
-图37. Intel和AMD桌面电脑CPU天梯图
+***图37. Intel和AMD桌面电脑CPU天梯图***
 
 2012年，```三星发明了堆叠式3D NAND Flash，芯片技术迎来了3D时代。```2013年推出第一代24层3D NAND闪存芯片，2014年推出第二代32层V-NAND芯片。
 
 ![](/images/blogs/history_of_chip_technology_fig38.jpg)
 
-图38.三星前两代3D NAND Flash技术比较
+***图38.三星前两代3D NAND Flash技术比较***
 
 2018年，Intel推出的服务器CPU芯片Xeon W-3175X，采用14nm工艺制造，28核心56线程，主频3.1～4.3GHz，三级缓存38.5MB，内存支持六通道DDR4-2666 ECC/512GB，封装接口LGA3647，搭配芯片组C621，售价高达2999美元(2万多元人民币)。
 
 ![](/images/blogs/history_of_chip_technology_fig39.jpg)
 
-图39. Intel Xeon W-3175X 28核心的服务器CPU举例
+***图39. Intel Xeon W-3175X 28核心的服务器CPU举例***
 
 
 ```
@@ -147,7 +147,7 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 9.王新兵，深入了解存储系统之闪存 （FlashMemory），知乎：https://zhuanlan.zhihu.com/p/28347814，2017.8.7
 
-10. DOIT学院，1967年至今，闪存的发展史，搜狐：https://www.sohu.com/a/333668728_120172415，2019.8.14
+10.DOIT学院，1967年至今，闪存的发展史，搜狐：https://www.sohu.com/a/333668728_120172415，2019.8.14
 
 11.爱活网，酷睿i9-10900K处理器首测：游戏之巅不胜寒，看点快报：https://kuaibao.qq.com/s/20200520A0PBKT00?refer=spider，2020.5.20
 
