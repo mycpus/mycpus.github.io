@@ -161,6 +161,10 @@ entries:
           url: /intel_1Gen_Nehalem.html
           output: web, pdf
 
+        - title: 1 Gen. Westmere
+          url: /intel_1Gen_Westmere.html
+          output: web, pdf
+
         - title: 2 Gen. Sandy Bridge
           url: /intel_2Gen_SandyBridge.html
           output: web, pdf
