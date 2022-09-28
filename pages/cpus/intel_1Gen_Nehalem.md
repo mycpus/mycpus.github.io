@@ -11,7 +11,9 @@ folder: cpus
 
 ## 关于 Intel 1 Gen. Nehalem Core i
 
-采用 Nehalem 微架构的英特尔微处理器，第一代桌面、移动、嵌入式和服务器处理器。
+Intel Nehalem 微架构的全称是 Intel Microarchitecture code name Nehalem，这代微架构是基于 45nm 的 Enhanced Intel Core 微架构改进而来的。
+
+采用 Nehalem 微架构的典型代表处理器包括Intel® Core™ i7 Extreme 975、i7 960 和 Intel® Xeon® X3480、E5540、E7540 等处理器。
 
 关键数据：
 - 处理器和组件：
