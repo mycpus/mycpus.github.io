@@ -10,13 +10,13 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 1950年，美国人拉塞尔.奥尔(Russell Ohl)和威廉姆.肖克莱(W.Shockley)发明了离子注入工艺，1954年肖克莱申请了这项发明的专利。离子注入是将杂质电离成离子并聚焦成离子束，在电场中加速后注入到硅材料中去，实现对硅材料的掺杂，目的是改变硅材料的导电性能。离子注入是最早采用的半导体掺杂方法，它是芯片制造的基本工艺之一。
 
-![](/images/blogs/history_of_chip_technology_fig11.jpg)
+![简要的离子注入原理示意图](/images/blogs/history_of_chip_technology_fig11.jpg)
 
 ***图11.简要的离子注入原理示意图***
 
 1956年，美国人富勒(C.S.Fuller)发明了扩散工艺；扩散是掺杂的另一种方法，它也是芯片制造的基本工艺之一。
 
-![](/images/blogs/history_of_chip_technology_fig12.jpg)
+![一种热扩散装置示意图](/images/blogs/history_of_chip_technology_fig12.jpg)
 
 ***图12. 一种热扩散装置示意图***
 
