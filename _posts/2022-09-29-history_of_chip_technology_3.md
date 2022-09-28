@@ -1,12 +1,12 @@
 ---
 title:  "图说芯片技术60多年的发展史（三）"
 categories: history
-permalink: history_of_chip_technology_2.html
+permalink: history_of_chip_technology_3.html
 tags: [blog]
 summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第三期介绍“芯片技术不断成熟，沿摩尔定律快速发展”。"
 ---
 
-## 6.芯片技术不断成熟，沿摩尔定律快速发展
+### 6.芯片技术不断成熟，沿摩尔定律快速发展
 
 1962年，美国无线电公司(RCA)的史蒂文.霍夫施泰因(Steven Hofstein) 弗雷德里克.海曼(Frederic Heiman)研制出了可批量生产的金属氧化物半导体场效应晶体管MOSFET，并采用实验性的16个MOS晶体管集成到一个芯片上，这是全球真正意义上的第一个MOS集成电路。
 
@@ -56,7 +56,7 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
  
 
-## 参考资料：
+### 参考资料：
 
 1.The Story Behind the Invention of FieldEffect Transistors，网站www.circuitstoday.com:http://www.circuitstoday.com/the-story-behind-the-invention-of-field-effect-transistors
 
