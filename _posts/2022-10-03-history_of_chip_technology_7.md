@@ -152,4 +152,8 @@ summary: "中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩
 
 (连载完)
 
+---------
+
+转载：https://www.eet-china.com/mp/a67903.html
+
 {% include links.html %}
