@@ -129,29 +129,29 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 ### 参考资料：
 
-1.蔺晓峰，风风雨雨38年 英特尔桌面处理器发展史，中关村在线：https://biz.zol.com.cn/45/454098.html，2006.11.14
+1. 蔺晓峰，风风雨雨38年 英特尔桌面处理器发展史，中关村在线：https://biz.zol.com.cn/45/454098.html，2006.11.14
 
-2.Andrew Huang，電腦達人養成計畫 2-6：中古前期 CPU 發展史，网站：https://isite.tw/2016/01/26/14760，2016.1.26
+2. Andrew Huang，電腦達人養成計畫 2-6：中古前期 CPU 發展史，网站：https://isite.tw/2016/01/26/14760，2016.1.26
 
-3.Andrew Huang，電腦達人養成計畫 2-7：中古時代後期 CPU 發展史 (上)，网站：https://isite.tw/2016/01/27/14785，2016.1.27
+3. Andrew Huang，電腦達人養成計畫 2-7：中古時代後期 CPU 發展史 (上)，网站：https://isite.tw/2016/01/27/14785，2016.1.27
 
-4.Andrew Huang，電腦達人養成計畫 2-8：中古時代後期 CPU 發展史 (中)，网站：https://isite.tw/2016/01/28/14819，2016.1.28
+4. Andrew Huang，電腦達人養成計畫 2-8：中古時代後期 CPU 發展史 (中)，网站：https://isite.tw/2016/01/28/14819，2016.1.28
 
-5.Andrew Huang，電腦達人養成計畫 2-9：中古時代後期 CPU 發展史 (下)，网站：https://isite.tw/2016/01/30/14850，2016.1.30
+5. Andrew Huang，電腦達人養成計畫 2-9：中古時代後期 CPU 發展史 (下)，网站：https://isite.tw/2016/01/30/14850，2016.1.30
 
-6.红巨星，CPU、SOC芯片图dieshot收集，知乎：https://zhuanlan.zhihu.com/p/114554933，2020.11.23
+6. 红巨星，CPU、SOC芯片图dieshot收集，知乎：https://zhuanlan.zhihu.com/p/114554933，2020.11.23
 
-7.QbitAl，3D晶体管之父胡正明获IEEE最高荣誉，他是台积电前CTO，为摩尔定律续命十几年...，CSDN博客：https://blog.csdn.net/QbitAI/article/details/104765123，2020.3.9
+7. QbitAl，3D晶体管之父胡正明获IEEE最高荣誉，他是台积电前CTO，为摩尔定律续命十几年...，CSDN博客：https://blog.csdn.net/QbitAI/article/details/104765123，2020.3.9
 
-8.摩尔芯闻，一文看懂3D NAND Flash，搜狐：https://www.sohu.com/a/110141175_465984，2016.8.11
+8. 摩尔芯闻，一文看懂3D NAND Flash，搜狐：https://www.sohu.com/a/110141175_465984，2016.8.11
 
-9.王新兵，深入了解存储系统之闪存 （FlashMemory），知乎：https://zhuanlan.zhihu.com/p/28347814，2017.8.7
+9. 王新兵，深入了解存储系统之闪存 （FlashMemory），知乎：https://zhuanlan.zhihu.com/p/28347814，2017.8.7
 
-10.DOIT学院，1967年至今，闪存的发展史，搜狐：https://www.sohu.com/a/333668728_120172415，2019.8.14
+10. DOIT学院，1967年至今，闪存的发展史，搜狐：https://www.sohu.com/a/333668728_120172415，2019.8.14
 
-11.爱活网，酷睿i9-10900K处理器首测：游戏之巅不胜寒，看点快报：https://kuaibao.qq.com/s/20200520A0PBKT00?refer=spider，2020.5.20
+11. 爱活网，酷睿i9-10900K处理器首测：游戏之巅不胜寒，看点快报：https://kuaibao.qq.com/s/20200520A0PBKT00?refer=spider，2020.5.20
 
-12.李博潮，8核5960X配DDR4 Intel Haswell-E首测，中关村在线：https://cpu.zol.com.cn/475/4755866_all.html?_t_t_t=0.7139762167843171，2014.8.30
+12. 李博潮，8核5960X配DDR4 Intel Haswell-E首测，中关村在线：https://cpu.zol.com.cn/475/4755866_all.html?_t_t_t=0.7139762167843171，2014.8.30
 
 (中篇完，请看下篇)
 

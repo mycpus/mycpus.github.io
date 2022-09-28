@@ -58,37 +58,37 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 ### 参考资料：
 
-1.The Story Behind the Invention of FieldEffect Transistors，网站www.circuitstoday.com:http://www.circuitstoday.com/the-story-behind-the-invention-of-field-effect-transistors
+1. The Story Behind the Invention of FieldEffect Transistors，网站www.circuitstoday.com:http://www.circuitstoday.com/the-story-behind-the-invention-of-field-effect-transistors
 
-2.心仪，MOSFET的发明人－－马丁•阿塔拉（Martin M. "John" Atalla）博士，电子工程世界论坛：http://bbs.eeworld.com.cn/thread-96577-1-1.html，2010.2.24
+2. 心仪，MOSFET的发明人－－马丁•阿塔拉（Martin M. "John" Atalla）博士，电子工程世界论坛：http://bbs.eeworld.com.cn/thread-96577-1-1.html，2010.2.24
 
-3.刘亮，PC发展史① 一颗晶体管引发的数字革命，中关村在线：https://power.zol.com.cn/519/5191311_all.html#p5191311，2015.5.14
+3. 刘亮，PC发展史① 一颗晶体管引发的数字革命，中关村在线：https://power.zol.com.cn/519/5191311_all.html#p5191311，2015.5.14
 
-4.华强旗舰微信公众号，电子元器件发展史，360个人图书馆：http://www.360doc.com/content/17/0405/22/30123241_643177613.shtml，2017.4.5
+4. 华强旗舰微信公众号，电子元器件发展史，360个人图书馆：http://www.360doc.com/content/17/0405/22/30123241_643177613.shtml，2017.4.5
 
-5.吉林大学，半导体器件物理精品教学第二章，豆丁网：https://www.docin.com/p-2116387652.html，2018.6.28
+5. 吉林大学，半导体器件物理精品教学第二章，豆丁网：https://www.docin.com/p-2116387652.html，2018.6.28
 
-6.1967年至今，闪存的发展史，存储在线：http://www.dostor.com/p/58538.html，2019.8.9
+6. 1967年至今，闪存的发展史，存储在线：http://www.dostor.com/p/58538.html，2019.8.9
 
-7.Long_龙1993，掺杂——扩散和离子注入，360个人图书馆：http://www.360doc.com/content/20/0212/13/68538116_891471588.shtml，2020.2.12
+7. Long_龙1993，掺杂——扩散和离子注入，360个人图书馆：http://www.360doc.com/content/20/0212/13/68538116_891471588.shtml，2020.2.12
 
-8.科技真相，芯片战争-61：一次意外事故造就氧化层掩膜技术,知乎：https://zhuanlan.zhihu.com/p/359789998，2020.3.22
+8. 科技真相，芯片战争-61：一次意外事故造就氧化层掩膜技术,知乎：https://zhuanlan.zhihu.com/p/359789998，2020.3.22
 
-9.头像被屏蔽，晶体管的分类与特征，电子发烧友论坛：https://bbs.elecfans.com/jishu_1948567_1_1.html，2020.6.9
+9. 头像被屏蔽，晶体管的分类与特征，电子发烧友论坛：https://bbs.elecfans.com/jishu_1948567_1_1.html，2020.6.9
 
-10.脑极体，芯片破壁者（一）：从电子管到晶体管“奇迹”寻踪，凤凰网：https://tech.ifeng.com/c/7xrkgT2K4dg，2020.7.5
+10. 脑极体，芯片破壁者（一）：从电子管到晶体管“奇迹”寻踪，凤凰网：https://tech.ifeng.com/c/7xrkgT2K4dg，2020.7.5
 
-11.TMT研究-爱好者，芯片战争-64：从台面工艺到平面工艺，突破量产化瓶颈，雪球网：https://xueqiu.com/9231373161/156639463，2020.8.14
+11. TMT研究-爱好者，芯片战争-64：从台面工艺到平面工艺，突破量产化瓶颈，雪球网：https://xueqiu.com/9231373161/156639463，2020.8.14
 
-12.亚化，一图读懂半导体集成电路发展史，腾讯网：https://xw.qq.com/amphtml/20200917A0FZSG00，2020.9.17
+12. 亚化，一图读懂半导体集成电路发展史，腾讯网：https://xw.qq.com/amphtml/20200917A0FZSG00，2020.9.17
 
-13.Long_龙1993，为什么芯片上的晶体管越做越小，360个人图书馆：http://www.360doc.com/content/20/1009/21/68538116_939647723.shtml，2020.10.9
+13. Long_龙1993，为什么芯片上的晶体管越做越小，360个人图书馆：http://www.360doc.com/content/20/1009/21/68538116_939647723.shtml，2020.10.9
 
-14.康师兄，电子时代的起点，美篇：https://www.meipian.cn/3cw3o1d9，2021.1.10
+14. 康师兄，电子时代的起点，美篇：https://www.meipian.cn/3cw3o1d9，2021.1.10
 
-15.图解芯片技术，集成电路发展史上的十大里程碑事件!电子发烧友：http://www.elecfans.com/d/1490110.html，2021.2.1
+15. 图解芯片技术，集成电路发展史上的十大里程碑事件!电子发烧友：http://www.elecfans.com/d/1490110.html，2021.2.1
 
-16.传感器专家网，光刻机技术到底是谁发明的？腾讯网：https://new.qq.com/rain/a/20210309A0BB0500，2021.3.9
+16. 传感器专家网，光刻机技术到底是谁发明的？腾讯网：https://new.qq.com/rain/a/20210309A0BB0500，2021.3.9
 
 (上篇完，请看中篇)
 
