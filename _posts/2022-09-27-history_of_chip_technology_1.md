@@ -96,6 +96,6 @@ MOSFET宣告了在电子技术中的统治地位，并且支撑了当今信息�
 ***图10.各种封装形式的分立式晶体管***
 
 
-(未完待续)
+(未完待续) | <a href="history_of_chip_technology_2.html" class="btn btn-primary">下一期</a>
 
 {% include links.html %}
