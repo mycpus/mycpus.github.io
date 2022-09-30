@@ -10,31 +10,35 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 1978年，```Intel发布了新款16位微处理器8086，x86世代王朝创立。```Intel 8086上集成了约4万个晶体管，采用 HMOS工艺制造，+5V电源，时钟频率为4.77MHz～10MHz，外部数据总线均为16位，地址总线为4+16位。在8086推出不久，Intel还发布了其变化版本8088。Intel 8086开创了x86架构计算机时代。x86架构是一种不断扩充和完善的CPU指令集，也是一种CPU芯片内部架构，同时也是一种个人计算机(PC)的行业标准。
 
-![](/images/blogs/history_of_chip_technology_fig27.jpg)
-
-***图27.Intel 8086 CPU芯片的显微照片和封装后的外观图***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig27.jpg"/>
+    <p><b>图27.Intel 8086 CPU芯片的显微照片和封装后的外观图</b></p>
+</div>
 
 也是在1978年，64kb动态随机存储器诞生，不足0.5平方厘米的硅片上集成了多达15万个晶体管，线宽为3微米。标志着芯片技术进入了**超大规模集成电路**(Very Large Scale Integrated circuits，**VLSI**)时代。
 
 ```以x86命名的桌面计算机的时代。```Intel公司基本上每3～4年推出一款创新的微处理器。早期以8086、80186、80286、80386、80486为代表，Intel CPU芯片基本主导了台式计算机和笔记本电脑的天下，PC型号大多数以CPU的名称来命名，例如286、386、486等。Intel CPU代表全球最先进芯片技术，也引领了芯片前沿技术的发展方向。
 
-![](/images/blogs/history_of_chip_technology_fig28.jpg)
-
-***图28. Intel 80286/386/486 CPU芯片的显微照片和封装后的外观图***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig28.jpg"/>
+    <p><b>图28. Intel 80286/386/486 CPU芯片的显微照片和封装后的外观图</b></p>
+</div>
 
 1980年，日本东芝(Toshiba)公司的舛岡富士雄(Fujio Muoka)发明了NOR 闪速存储器(NOR Flash Memory)，简称NOR闪存(NOR Flash)。1987年，他又发明了NAND闪速存储器(NAND Flash Memory)，简称NAND闪存(NAND Flash)。
 
-![](/images/blogs/history_of_chip_technology_fig29.jpg)
-
-***图29.日本东芝的舛岡富士雄发明Flash***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig29.jpg"/>
+    <p><b>图29.日本东芝的舛岡富士雄发明Flash</b></p>
+</div>
 
 1981年，IBM基于8088推出全球第一台个人计算机(PC)。第一台IBM PC用的Intel 8088主频为4.77MHz，操作系统采用Microsoft的MS-DOS。有人评价说PC的历史就是IBM80年代的历史。IBM PC的研制项目主管是唐.埃斯特利奇(Don Estridge)，他被誉为是IBM PC之父。
 
 从IBM PC机开始，PC真正走进了人们的工作和生活，它标志着计算机应用普及时代的开始，也标志着**PC消费驱动芯片技术创新和产业发展**的时代开启。也是在1981年，256kb DRAM和64kb CMOS SRAM问世。
 
-![](/images/blogs/history_of_chip_technology_fig30.jpg)
-
-***图30.埃斯特利奇与最早的IBM PC***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig30.jpg"/>
+    <p><b>图30.埃斯特利奇与最早的IBM PC</b></p>
+</div>
 
 1982年，Intel推出80286微处理器(图28)。
 
@@ -50,31 +54,35 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 1993年，```Intel推出奔腾CPU芯片，计算机的“奔腾”时代到来。```在Intel 80486推出四年之后，人们预测80586 CPU即将推出。但Intel公司1993年向用户展示的是新的CPU系列，命名为**奔腾**(Pentium)。奔腾CPU每个时钟周期可以执行两条指令，在相同时钟速度下，奔腾CPU执行指令的速度大约比80486快五倍。
 
-![](/images/blogs/history_of_chip_technology_fig31.jpg)
-
-***图31. Intel奔腾CPU芯片的显微照片和封装后的外观图***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig31.jpg"/>
+    <p><b>图31. Intel奔腾CPU芯片的显微照片和封装后的外观图</b></p>
+</div>
 
 奔腾CPU经过四代升级后，Intel推出了新系列的奔腾CPU。1997年Intel开始推出奔腾Ⅱ系列CPU芯片；1999年Intel开始推出奔腾Ⅲ系列CPU芯片；2000年Intel开始推出奔腾Ⅳ系列CPU芯片。每种奔腾产品都有几代的升级版本或者特色款式。
 
-![](/images/blogs/history_of_chip_technology_fig32.jpg)
-
-***图32. Intel奔腾Ⅱ/Ⅲ/Ⅳ CPU芯片的显微照片和封装后的外观图***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig32.jpg"/>
+    <p><b>图32. Intel奔腾Ⅱ/Ⅲ/Ⅳ CPU芯片的显微照片和封装后的外观图</b></p>
+</div>
 
 1994年，由于集成1亿个元件的1G DRAM的研制成功，标志着芯片技术进入了**巨大规模集成电路**（Giga Scale Integrated circuits，**GSI**）时代。
 
 1997年，```IBM公司开发出芯片铜互联技术。```当时的铝互连工艺对180nmCMOS而言已不够快。IBM最初的研究，铜的电阻比铝低40%，导致处理器速度暴增15%以上，铜的可靠性更是比铝高100倍。在1998年生产出第一批PowerPC芯片时，与上一代300MHz的PowerPC芯片相比，铜互连版本速度提高了33%。也是在1997年，Intel开始推出奔腾Ⅱ系列CPU芯片(图32)。
 
-![](/images/blogs/history_of_chip_technology_fig33.jpg)
-
-***图33. IBM公司开发出芯片铜互联技术***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig33.jpg"/>
+    <p><b>图33. IBM公司开发出芯片铜互联技术</b></p>
+</div>
 
 1999年，```胡正明教授开发出了鳍式场效晶体管(FinFET)技术。```他被誉为是3D晶体管之父。当晶体管的尺寸小于25nm时，传统的平面晶体管尺寸已经无法缩小，FinFET的出现将晶体管立体化，晶体管密度才能进一步加大，让摩尔定律在今天延续传奇。
 
 这项发明被公认是50多年来半导体技术的重大创新。FinFET是现代纳米电子半导体器件制造的基础，现在7nm芯片使用的就是FinFET设计。2016年5月19日，美国总统奥巴马在白宫为2015年度美国最高科技奖项获得者颁奖，其中包括FinFET的发明者胡正明教授。胡教授还获得了2020年IEEE最高荣誉奖章。也是在1999年，Intel开始推出奔腾Ⅲ系列CPU芯片(图32)。
 
-![](/images/blogs/history_of_chip_technology_fig34.jpg)
-
-***图34. FinFET技术的发明人胡正明教授***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig34.jpg"/>
+    <p><b>图34. FinFET技术的发明人胡正明教授</b></p>
+</div>
 
 2000年，Intel开始推出奔腾Ⅳ系列CPU芯片(图32)。同年，1Gb RAM投放市场。
 
@@ -88,13 +96,15 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 2010年，采用领先的32nm工艺Intel酷睿i系列全新推出，其中包括Corei3系列(2核心)、Core i5系列(2核心、4核心)、Core i7系列(2核心、4核心和6核心)、Core i9(最多12核心)系列等，下一代22nm工艺的版本也陆续推出。
 
-![](/images/blogs/history_of_chip_technology_fig35.jpg)
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig35.jpg"/>
+    <p><b>图35. Intel酷睿(Core)系列CPU的全家福(2013年留影)</b></p>
+</div>
 
-***图35. Intel酷睿(Core)系列CPU的全家福(2013年留影)***
-
-![](/images/blogs/history_of_chip_technology_fig36.jpg)
-
-***图36. Intel酷睿(Core)系列多核心CPU举例***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig36.jpg"/>
+    <p><b>图36. Intel酷睿(Core)系列多核心CPU举例</b></p>
+</div>
 
 2011年，Intel推出了商业化的FinFET工艺，用在了其22nm的工艺节点。
 
@@ -102,21 +112,24 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 两家公司沿着x86路线同向而行，在技术努力创新，互相借鉴，对芯片技术发的发展做出了贡献。Intel和AMD的芯片发展历程可以用他们的桌面CPU天梯图简要表达。
 
-![](/images/blogs/history_of_chip_technology_fig37.jpg)
-
-***图37. Intel和AMD桌面电脑CPU天梯图***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig37.jpg"/>
+    <p><b>图37. Intel和AMD桌面电脑CPU天梯图</b></p>
+</div>
 
 2012年，```三星发明了堆叠式3D NAND Flash，芯片技术迎来了3D时代。```2013年推出第一代24层3D NAND闪存芯片，2014年推出第二代32层V-NAND芯片。
 
-![](/images/blogs/history_of_chip_technology_fig38.jpg)
-
-***图38.三星前两代3D NAND Flash技术比较***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig38.jpg"/>
+    <p><b>图38.三星前两代3D NAND Flash技术比较</b></p>
+</div>
 
 2018年，Intel推出的服务器CPU芯片Xeon W-3175X，采用14nm工艺制造，28核心56线程，主频3.1～4.3GHz，三级缓存38.5MB，内存支持六通道DDR4-2666 ECC/512GB，封装接口LGA3647，搭配芯片组C621，售价高达2999美元(2万多元人民币)。
 
-![](/images/blogs/history_of_chip_technology_fig39.jpg)
-
-***图39. Intel Xeon W-3175X 28核心的服务器CPU举例***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig39.jpg"/>
+    <p><b>图39. Intel Xeon W-3175X 28核心的服务器CPU举例</b></p>
+</div>
 
 
 ```
