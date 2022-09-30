@@ -76,7 +76,7 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 <div align="center">
 <p>(未完待续) </p>
-<a href="history_of_chip_technology_1.html" class="btn btn-primary">上一期</a> | 
+<a href="history_of_chip_technology_1.html" class="btn btn-primary">上一期</a> 
 <a href="history_of_chip_technology_3.html" class="btn btn-primary">下一期</a>
 </div>
 
