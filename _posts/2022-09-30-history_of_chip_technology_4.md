@@ -16,7 +16,7 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 <div align="center">
     <img src="../images/blogs/history_of_chip_technology_fig25.jpg"/>
-    <p>***图25.Intel 4004 CPU芯片的显微照片和封装后的外观图***</p>
+    <p>图25.Intel 4004 CPU芯片的显微照片和封装后的外观图</p>
 </div>
 
 ![Intel 4004 CPU芯片的显微照片和封装后的外观图](/images/blogs/history_of_chip_technology_fig25.jpg)
