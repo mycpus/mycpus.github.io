@@ -67,9 +67,10 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 离子注入、扩散、外延、光刻等工艺技术，加上真空镀膜技术、氧化技术和测试封装技术，构成了硅平面加工技术的主体，通俗地说是构成了芯片制造的主体。没有光刻技术就没有今天的芯片技术和产业，也就没有我们现在的信息化和智能化社会。
 
-
-(未完待续) 
-
+<div align="center">
+<p>(未完待续) </p>
 <a href="history_of_chip_technology_3.html" class="btn btn-primary">下一期</a>
+</div>
+
 
 {% include links.html %}

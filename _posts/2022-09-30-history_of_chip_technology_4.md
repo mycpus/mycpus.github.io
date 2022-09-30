@@ -28,7 +28,9 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 1976年，16kb DRAM和4kb SRAM问世。
 
+<div align="center">
+<p>(未完待续)</p>
+</div>
 
-(未完待续)
 
 {% include links.html %}
