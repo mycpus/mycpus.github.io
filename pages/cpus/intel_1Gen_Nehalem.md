@@ -45,6 +45,30 @@ Intel Nehalem 微架构的全称是 Intel Microarchitecture code name Nehalem，
 
 ## 我的收藏
 
+### Intel Core i5-760
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1156 land FC-LGA8 |
+| 核心 | Lynnfield |
+| Socket | LGA 1156 |
+| 主频 | 2.8 GHz |
+| 睿频 | 3.33 GHz |
+| 二级缓存 | 4 x 256 KB |
+| 三级缓存 | 8 MB |
+| 核心 | 4 |
+| 线程 | 4 |
+| 制程 | 45 nm |
+| TDP | 95 W |
+| 内存控制器 | DDR3-1066/1333 |
+| 上市时间 | 08.09.2009 |
+| 生产日期 | 52/2010 |
+
+![Intel Core i5-760 正面](/images/cpus/Intel/Intel_Core_i5-760_1.jpg)
+![Intel Core i5-760 反面](/images/cpus/Intel/Intel_Core_i5-760_2.jpg)
+
+---------
+
 ### Intel Core i7-950
 
 | 参数 | 数值 |
