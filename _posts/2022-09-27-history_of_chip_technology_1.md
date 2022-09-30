@@ -23,9 +23,10 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 1874年，德国物理学家费迪南德.布劳恩(Ferdinand Braun)观察到某些硫化物的电导与所加电场的方向有关。在它两端加一个正向电压，它是导通的；如果把电压极性反过来，它就不导电，这就是半导体的整流效应，这是人类发现的半导体的第四个特征。同年，出生在德国的英国物理学家亚瑟.舒斯特(Arthur Schuster)又发现了铜(Cu)与氧化铜(CuO)的整流效应。
 
-![](/images/blogs/history_of_chip_technology_fig1.jpg)
-
-***图1.发现半导体特性的四位科学家 (法拉第、贝克雷尔、史密斯、布劳恩)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig1.jpg"/>
+    <p><b>图1.发现半导体特性的四位科学家<br>(法拉第、贝克雷尔、史密斯、布劳恩)</b></p>
+</div>
 
 虽然半导体的这四个效应在1880年以前就先后被科学家发现，但半导体这个名词大概到了1911年才被科尼斯伯格(J.Konigsberger)和维斯(I.Weiss)首次使用。后来，关于半导体的整流理论、能带理论、势垒理论才在众多科学家的努力下逐步完成。
 
@@ -40,15 +41,17 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 1904年，英国物理学家约翰.安布罗斯.弗莱明(John Ambrose Fleming)发明了世界上第一个电子管，它是一个真空二极管，他获得了这项发明的专利。
 
-![](/images/blogs/history_of_chip_technology_fig2.jpg)
-
-***图2.弗莱明发明的真空二极管***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig2.jpg"/>
+    <p><b>图2.弗莱明发明的真空二极管</b></p>
+</div>
 
 1906年，美国工程师李.德.福雷斯特(Lee de Forest)在弗莱明真空二极管的基础上又多加入了一个栅极，发明了另一种电子管，它是一个真空三极管，使得电子管在检波和整流功能之外，还具有了放大和震荡功能。福雷斯特于1908年2月18日拿到了这项发明的专利。
 
-![](/images/blogs/history_of_chip_technology_fig3.jpg)
-
-***图3.福雷斯特发明的真空三极管***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig3.jpg"/>
+    <p><b>图3.福雷斯特发明的真空三极管</b></p>
+</div>
 
 真空三极管被认为是电子工业诞生的起点。它的应用时期长达40多年。由于电子管具有体积大、耗电多、可靠性差的缺点，最终它被后来者晶体管所取代。
 
@@ -57,43 +60,50 @@ summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发�
 
 1947年，美国贝尔实验室的巴丁(J.Bardeen)、布拉顿(W. Brattain)、肖克莱(W.Shockley)三人发明了点触型晶体管，这是一个NPN锗(Ge)晶体管，他们三人因此项发明获得了1956年诺贝尔物理学奖。
 
-![](/images/blogs/history_of_chip_technology_fig4.jpg)
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig4.jpg"/>
+    <p><b>图4.晶体管发明三人组</b></p>
+</div>
 
-***图4.晶体管发明三人组***
-
-![](/images/blogs/history_of_chip_technology_fig5.jpg)
-
-***图5.获得1956年诺贝尔物理学奖的三人组***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig5.jpg"/>
+    <p><b>图5.获得1956年诺贝尔物理学奖的三人组</b></p>
+</div>
 
 1950年，当蒂尔(G.K.Teal)和利特尔(J.B.Little)研究成功生长大单晶锗的工艺后，威廉姆.肖克莱(W.Shockley)于1950年4月制成第一个双极结型晶体管—PN结型晶体管,这种晶体管实际应用比点触型晶体管广泛得多。今天的晶体管，大部分仍是这种PN结型晶体管。所谓PN结就是P型半导体和N型半导体的结合之处，P型半导体多空穴。N型半导体多电子。
 
-![](/images/blogs/history_of_chip_technology_fig6.jpg)
-
-***图6.PN结型晶体管结构示意图(左)晶体管符号(右)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig6.jpg"/>
+    <p><b>图6.PN结型晶体管结构示意图(左)晶体管符号(右)</b></p>
+</div>
 
 1952年，实用的结场效应晶体管(JunctionField-Effect Transistor，JFET)被制造出来。结场效应晶体管(JFET)是一种用电场效应来控制电流的晶体管。到了1960年，有人提出用二氧化硅改善双极性晶体管的性能，就此金属-氧化物-半导体(Metal Oxid Semiconductor,MOS)场效应晶体管诞生。艾塔拉(M.Atalla)也被认为是MOS场效应晶体管(MOSFET)的发明人之一。
 
 MOSFET宣告了在电子技术中的统治地位，并且支撑了当今信息社会的基石——大规模集成电路发展。实际上，场效应晶体管(FET)由朱利叶斯.利林费尔德(JuliusLilienfeld)于1925年和德国物理学家奥斯卡.海尔(Oskar Heil)于1934年分别发明出来，只是一直未能制造出实用的晶体管器件。
 
-![](/images/blogs/history_of_chip_technology_fig7.jpg)
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig7.jpg"/>
+    <p><b>图7.MOSFET的发明贡献者及发明年份</b></p>
+</div>
 
-***图7.MOSFET的发明贡献者及发明年份***
-
-![](/images/blogs/history_of_chip_technology_fig8.jpg)
-
-***图8.场效应晶体管(FET)分类及实物图***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig8.jpg"/>
+    <p><b>图8.场效应晶体管(FET)分类及实物图</b></p>
+</div>
 
 晶体管从双极型到MOS型，从分立式器件到集成在芯片之中，加上其所用不同的半导体材料，晶体管类型和品种繁多。晶体管主要起到小信号放大、功率放大、电流开关等作用，它是芯片中集成的数量最多的最基本的电路元器件。
 
-![](/images/blogs/history_of_chip_technology_fig9.jpg)
-
-***图9.各种晶体管的分类***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig9.jpg"/>
+    <p><b>图9.各种晶体管的分类</b></p>
+</div>
 
 晶体管发明是微电子技术发展历程中第一个里程碑。晶体管的发明使人类步入了飞速发展的电子信息时代。到目前为止，它的应用已长达74年之久。
 
-![](/images/blogs/history_of_chip_technology_fig10.jpg)
-
-***图10.各种封装形式的分立式晶体管***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig10.jpg"/>
+    <p><b>图10.各种封装形式的分立式晶体管</b></p>
+</div>
 
 <div align="center">
 <p>(未完待续) </p>
