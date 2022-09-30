@@ -14,23 +14,15 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 1971年，美国Intel公司推出全球第一个微处理器4004芯片。它是一个4位的中央处理器(CPU)芯片,采用MOS工艺制造，片上集成了2250个晶体管。这是芯片技术发展史上的一个里程碑。同年，Intel公司推出1kb动态随机存储器(DRAM)，标志着大规模集成电路(Large Scale Integrated circuits，LSI)出现。
 
-<center>
-
 ![Intel 4004 CPU芯片的显微照片和封装后的外观图](/images/blogs/history_of_chip_technology_fig25.jpg)
 
 ***图25.Intel 4004 CPU芯片的显微照片和封装后的外观图***
 
-</center>
-
 1974年，美国RCA公司推出第一个CMOS微处理器1802芯片。它是一个8位的CPU芯片,首次采用了CMOS电路结构，处理器的耗电量要小很多。RCA 1802是第一款应用在航天领域的微处理器，例如，Viking、Galileo和 Voyager等航天项目都应用了该芯片。
-
-<center>
 
 ![RCA 1802 CPU芯片的显微照片和封装后的外观图](/images/blogs/history_of_chip_technology_fig26.jpg)
 
 ***图26.RCA 1802 CPU芯片的显微照片和封装后的外观图***
-
-</center>
 
 1976年，16kb DRAM和4kb SRAM问世。
 
