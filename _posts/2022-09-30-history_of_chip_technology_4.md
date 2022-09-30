@@ -14,6 +14,11 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 1971年，美国Intel公司推出全球第一个微处理器4004芯片。它是一个4位的中央处理器(CPU)芯片,采用MOS工艺制造，片上集成了2250个晶体管。这是芯片技术发展史上的一个里程碑。同年，Intel公司推出1kb动态随机存储器(DRAM)，标志着大规模集成电路(Large Scale Integrated circuits，LSI)出现。
 
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig25.jpg"/>
+    <p>***图25.Intel 4004 CPU芯片的显微照片和封装后的外观图***</p>
+</div>
+
 ![Intel 4004 CPU芯片的显微照片和封装后的外观图](/images/blogs/history_of_chip_technology_fig25.jpg)
 
 ***图25.Intel 4004 CPU芯片的显微照片和封装后的外观图***
