@@ -12,100 +12,113 @@ summary: "中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩
 
 汽车导航仪、智能家电等，都是用SoC芯片来实现。移动终端芯片量大面广，功能复杂，要求尺寸尽可能小和薄，功耗尽可能小，这对芯片的设计、制造和封装提出了很高的要求。先进制造工艺、多核心CPU、低功耗设计、3D制造和堆叠封装等技术，在移动终端芯片上都有极其重要的应用。
 
-![](/images/blogs/history_of_chip_technology_fig59.jpg)
-
-***图59.一些面向应用的SoC芯片举例***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig59.jpg"/>
+    <p><b>图59.一些面向应用的SoC芯片举例</b></p>
+</div>
 
 芯片技术按照摩尔定律发展是现实和迫切的需要。每两年不到的时间里，芯片集成度翻倍和性能提升，这是摩尔定律预示的发展规律。而对芯片集成度和功能的提升要求，也是桌面互联网和移动互联网时代对芯片现实和迫切的要求。进入14nm工艺节点以后，光刻机技术难度陡然上升。ASML EUV光刻机的售价达到1.2亿美元，光刻机设备成本占到所有制造设备成本的35%，光刻工序占到所有制造工时的40%左右。光刻工艺成为芯片制造的灵魂技术，光刻机成为了芯片技术的卡脖子装备。
 
-![](/images/blogs/history_of_chip_technology_fig60.jpg)
-
-***图60.芯片制造工艺沿摩尔定律演进年表(来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig60.jpg"/>
+    <p><b>图60.芯片制造工艺沿摩尔定律演进年表(来源：网络图片)</b></p>
+</div>
 
 2014年，华为海思推出第一款手机SoC芯片麒麟910。它使用了当时主流的28nmHPM工艺制程，初次在手机SoC芯片市场崭露头角。同年6月，华为海思发布了麒麟920。它全球首次商用LTE Cat.6，采用业界最先进4xA15＋4xA7的八核心SoC异构架构，性能非常强悍，满足了3G向4G转换时期用户对高速上网体验的需求。当年，搭载麒麟920的荣耀6、荣耀6plus、Mate7成为一代神机。
 
 2015年，三星旗舰产品Galaxy S6弃用美国高通的手机芯片，采用了三星半导体自研的猎户座Exynos7420手机芯片。早在2011年2月,三星半导体正式将自家处理器品牌命名为Exynos。它由两个希腊语单词Exypnos和Prasinos组合而成，分别代表“智能”与“环保”之意。Exynos系列处理器主要应用在智能手机和平板电脑等移动终端上。
 
-![](/images/blogs/history_of_chip_technology_fig61.jpg)
-
-***图61.三星半导体最新的14nm到5nm的移动处理器芯片(来源：三星半导体官网)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig61.jpg"/>
+    <p><b>图61.三星半导体最新的14nm到5nm的移动处理器芯片(来源：三星半导体官网)</b></p>
+</div>
 
 2016年，华为海思推出麒麟960。该芯片各方面综合性能均达到业界一流水准，正式跻身行业顶级手机芯片市场。华为海思的手机芯片与高通、苹果形成三足鼎立的之势。搭载麒麟960的Mate 9系列、P10系列、荣耀9、荣耀V9等手机在市场上取得了巨大的成功。2017年，华为海思发布了麒麟970，首次在SoC中集成了人工智能计算平台NPU，开创端侧AI行业先河。
 
 2017年7月长江存储研制成功了国内首颗3D NAND闪存芯片。2018年三季度32层产品实现量产。2019年三季度64层产品实现量产。目前已宣布成功研发出128层3D NAND闪存芯片系列[13]。长江存储3D NAND闪存技术的快速发展，得益于其独创的“把存储阵列(Cell Array)和外围控制电路(Periphery)分开制造，再合并封装在一起”的XtackingTM技术。
 
-![](/images/blogs/history_of_chip_technology_fig62.jpg)
-
-***图62.长江存储的XtackingTM技术(来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig62.jpg"/>
+    <p><b>图62.长江存储的XtackingTM技术(来源：网络图片)</b></p>
+</div>
 
 2019年，华为海思发布了最新一代旗舰手机芯片麒麟990系列，包括麒麟990和麒麟9905G。麒麟990处理器采用台积电二代的7nm工艺制造，最大的亮点在于内置巴龙5000基带，可以实现真正的5G上网。
 
-![](/images/blogs/history_of_chip_technology_fig63.jpg)
-
-***图63.华为海思手机SoC芯片研发年表(来源：参考资料9)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig63.jpg"/>
+    <p><b>图63.华为海思手机SoC芯片研发年表(来源：参考资料9)</b></p>
+</div>
 
 2020年，美国美光(Micron)176层3D NAND Flash已开始批量生产。它采用了将双88层融合到一起的设计(堆叠512Gbit TLC闪存)。该芯片技术换用了电荷陷阱存储单元的方案，似乎极大地降低了每一层的厚度。目前176层的裸片仅为45μm，与美光的64层浮栅3D NAND相同。16层裸片堆叠式封装的厚度不到1.5 mm，适用于大多数移动/存储卡使用场景[14]。
 
-![](/images/blogs/history_of_chip_technology_fig64.jpg)
-
-***图64. 美光176层3D NAND Flash结构示意图(来源：由网络图片整理)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig64.jpg"/>
+    <p><b>图64. 美光176层3D NAND Flash结构示意图(来源：由网络图片整理)</b></p>
+</div>
 
 2020年10月，华为公司发布了基于5nm工艺制程的手机SoC芯片麒麟9000。该芯片上集成了8个CPU核心、3个NPU核心和24个核心的GPU，采用了5nm的制造工艺，其上集成了153亿个晶体管。它与联发科最强的5G手机芯片天玑2000相比，性能测试的跑分明显占优。
 
 可惜！由于美国多层次对我国芯片产业链的精准打击，封堵了华为高端智能手机芯片的生产渠道，使华为海思设计的高端芯片无法生产，搭载麒麟9000的华为旗舰手机Mate40系列可能成为绝版。
 
-![](/images/blogs/history_of_chip_technology_fig65.jpg)
-
-***图65. 华为海思最强5G手机芯片麒麟9000 (来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig65.jpg"/>
+    <p><b>图65. 华为海思最强5G手机芯片麒麟9000 (来源：网络图片)</b></p>
+</div>
 
 2020年11月，苹果公司推出了搭载了自研处理器芯片M1的MacBook Air、Pro和mini。M1是一颗8核心的SoC芯片,它基于ARM架构开发，拥有4个高性能的Firestorm CPU核和4个高效率的Icestorm CPU核，以及8核心的GPU。M1采用5nm工艺制作，在大约120mm²的芯片上集成了约160亿只晶体管。
 
-![](/images/blogs/history_of_chip_technology_fig66.jpg)
-
-***图66.苹果公司自研的Mac电脑处理器芯片Apple M1(来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig66.jpg"/>
+    <p><b>图66.苹果公司自研的Mac电脑处理器芯片Apple M1(来源：网络图片)</b></p>
+</div>
 
 苹果公司的电脑处理器共经历了四次CPU架构迁移。第一次是1984年，从Macintosh128k开始，CPU从原来MOS Technology的6502处理器转换到了Motorola的68000处理器；第二次是在1994年，CPU改换为IBMPowerPC处理器；第三次是在2005年，乔布斯宣布采用IntelX86处理器。现在则是第四次，苹果公司抛弃了Intel X86处理器，今后将采用自研的基于ARM架构的处理器[16]。
 
 2020年，国产CPU厂商飞腾公司发布了一款面向服务器应用的多核心CPU芯片——腾云S2500。该芯片采用16nm工艺制造，芯片面积达400mm2，最多可配置64个FTC663架构的CPU核心，主频2.0～2.2GHz，三级缓存64MB，支持八通道DDR4内存，可提供800Gbps带宽的四个直连接口，支持2～8路并行，单系统可提供128～512个CPU核心的配置，热设计功耗为150W。长城、浪潮、同方、曙光、中兴通讯等15家国内厂商也同时发布了各自基于腾云S2500的多路服务器产品，软件生态建设取得了可喜突破。
 
-![](/images/blogs/history_of_chip_technology_fig67.jpg)
-
-***图67.飞腾公司64核心CPU芯片腾云S2500 (来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig67.jpg"/>
+    <p><b>图67.飞腾公司64核心CPU芯片腾云S2500 (来源：网络图片)</b></p>
+</div>
 
 2020年11月，三星半导体发布旗舰级芯片猎户座Exynos1080。它采用5nm的制程工艺，采用ARM最新的CPU架构Cortex-A78，以及最新的GPU架构Mali-G78。这是三星半导体首次在中国发布芯片产品，该款芯片专为中国市场设计，vivo将首发搭载该款芯片的新品。
 
-![](/images/blogs/history_of_chip_technology_fig68.jpg)
-
-***图68.三星半导体发布旗舰级手机SoC芯片发布会 (来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig68.jpg"/>
+    <p><b>图68.三星半导体发布旗舰级手机SoC芯片发布会 (来源：网络图片)</b></p>
+</div>
 
 2021年6月的华为鸿蒙发布会上，华为消费者业务CEO余承东公布了华为P50系列的消息。因为众所周知的原因，华为没有公布P50系列上市时间。
 
 2021年7月有网文透露，即将发布的华为P50系列将会有三个芯片版本，一个是4G版的美国高通骁龙888 4G芯片版，一个华为海思麒麟9000L 4G芯片版，一个是华为海思麒麟9000 5G芯片版。据说华为P50系列主推的4G版本手机只准备了三百多万的量，而的麒麟9000 5G版本手机则更少，只有三十多万的量。因为有华为鸿蒙系统加持，相信未来销售将供不应求[12]。
 
-![](/images/blogs/history_of_chip_technology_fig69.jpg)
-
-***图69.预售网站曝光华为P50pro真机图片(来源：网络图片)***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig69.jpg"/>
+    <p><b>图69.预售网站曝光华为P50pro真机图片(来源：网络图片)</b></p>
+</div>
 
 在后摩尔时代，先进封装技术接过工艺微缩、FinFET和3D集成技术的接力棒，延续着摩尔定律的生命力。2020年以后，芯片工艺进阶到7nm以下时，设计、制造和封装费用极高。封装技术从2000年发展至今，已较为成熟。许多先进封装已把不少的芯片集成技术和工艺后移到封装中去，继续谱写着微电子和集成电路技术不断追着“微小而强大”的传奇。目前先进封装技术种类多达几十种，芯片封装可以应不同需求灵活选择。
 
 目前主要的先进封装技术包括：WLP、FIWLP、FOWLP、eWLB、CSP、WLCSP、CoW、WoW、FOPLP、InFO、CoWoS、HBM、HMC、Wide-IO、EMIB、Foveros、Co-EMIB、ODI、3D IC、SoIC、X-Cube、SiP等[15]。
 
-![](/images/blogs/history_of_chip_technology_fig70.jpg)
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig70.jpg"/>
+    <p><b>图70. 12种当今主流的先进封装技术年表(来源：参考资料15)</b></p>
+</div>
 
-***图70. 12种当今主流的先进封装技术年表(来源：参考资料15)***
-
-![](/images/blogs/history_of_chip_technology_fig71.jpg)
-
-***图71.几种先进封装技术示意图(来源：参考资料15)***
-
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig71.jpg"/>
+    <p><b>图71.几种先进封装技术示意图(来源：参考资料15)</b></p>
+</div>
 
 ### 11.回眸60多年发展历史，梳理芯片技术里程碑事件
 
 芯片技术是人类智慧长期积累的结果，但是在关键时刻，一个重要发明和创造可能改变芯片技术发展的走向。并且芯片技术在某一路径上前进的时候，为了满足实际的应用需求，还需要不断进行技术攻关和技术创新，力求克服技术道路上的一道道难关。这些重要的技术发明、创造、和突破都是芯片技术发展的里程碑。
 
-![](/images/blogs/history_of_chip_technology_fig72.jpg)
-
-***图72.芯片技术发展的里程碑***
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig72.jpg"/>
+    <p><b>图72.芯片技术发展的里程碑</b></p>
+</div>
 
 1833年～1947年晶体管的发明，这114年可看成芯片技术的萌芽期；1947年～1971年微处理器i4004推出，这24年可以看成是芯片技术的初创期；1971年～2007年苹果iPhone推出，这36年可以看成桌面互联网推动芯片技术发展的成长期；2007年～至今14年可以看成移动互联网推动芯片技术发展的成熟期，在这期间，新技术发明和创新层出不穷，但由于事项太多，时间间隔很短，并且大多是公司发明，都是集体智慧的结晶。所以，要梳理出2000年以来的里程碑事件难度很大。另外，2000年以后物联网、5G通信和人工智能也是驱动芯片技术发展的一些主线，本文为了文路清晰，并没有介绍这些方面的事件。
 
