@@ -44,12 +44,12 @@ summary: "我的第一台电脑是联想天禧6620电脑，CPU是Intel Pentium I
 买电脑时，联想赠送了13个月的拨号上网服务，不用支付上网费用，只需要按上网时长支付电话费，这样上网会便宜不少。但是最初的几个月，我并没有尝试进行拨号上网。后来，逐渐对电脑熟悉了，也需要获取更多的信息，这就尝试着用联想账号进行拨号上网。当第一张网页徐徐打开的时候，我的内心充满了激动。拨号上网要使用电话线，把电话线插到调制解调器的电话端口，拨号时会发出吱吱嘎嘎的声音，上网期间电话是拨不出去也打不进来的。因此，每次上网都要计划好，抓紧时间，不需要上网时，就赶紧下线。
 
 <div align="center">
-    <a target="_blank" href="../images/blogs/Legend_TX_Web10.png"><img alt="" src="../images/blogs/Legend_TX_Web10.jpg"/></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web10.png"><img alt="" src="../images/blogs/Legend_TX_Web10.png" style="max-height: auto;"/></a>
     <p><b>联想天禧电脑提供的网络服务介绍</b></p>
 </div>
 
 <div align="center">
-    <a target="_blank" href="../images/blogs/Legend_TX_Web11.png"><img alt="" src="../images/blogs/Legend_TX_Web11.jpg"/></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web11.png"><img alt="" src="../images/blogs/Legend_TX_Web11.png" style="max-height: auto;"/></a>
     <p><b>联想天禧电脑基础的拨号上网服务介绍</b></p>
 </div>
 
@@ -58,14 +58,14 @@ summary: "我的第一台电脑是联想天禧6620电脑，CPU是Intel Pentium I
 下面关于天禧电脑的介绍是从当年联想网站截图保存的。
 
 <div align="center">
-    <a target="_blank" href="../images/blogs/Legend_TX_Web01.png"><img src="../images/blogs/Legend_TX_Web01.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web02.png"><img src="../images/blogs/Legend_TX_Web02.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web03.png"><img src="../images/blogs/Legend_TX_Web03.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web04.png"><img src="../images/blogs/Legend_TX_Web04.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web05.png"><img src="../images/blogs/Legend_TX_Web05.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web06.png"><img src="../images/blogs/Legend_TX_Web06.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web07.png"><img src="../images/blogs/Legend_TX_Web07.png"></a>
-    <a target="_blank" href="../images/blogs/Legend_TX_Web08.png"><img src="../images/blogs/Legend_TX_Web08.png"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web01.png"><img src="../images/blogs/Legend_TX_Web01.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web02.png"><img src="../images/blogs/Legend_TX_Web02.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web03.png"><img src="../images/blogs/Legend_TX_Web03.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web04.png"><img src="../images/blogs/Legend_TX_Web04.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web05.png"><img src="../images/blogs/Legend_TX_Web05.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web06.png"><img src="../images/blogs/Legend_TX_Web06.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web07.png"><img src="../images/blogs/Legend_TX_Web07.png" style="max-height: auto;"></a>
+    <a target="_blank" href="../images/blogs/Legend_TX_Web08.png"><img src="../images/blogs/Legend_TX_Web08.png" style="max-height: auto;"></a>
 </div>
 
 ```
