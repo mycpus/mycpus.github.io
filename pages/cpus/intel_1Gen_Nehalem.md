@@ -110,7 +110,7 @@ Intel Nehalem 微架构的全称是 Intel Microarchitecture code name Nehalem，
 | TDP | 95 W |
 | 内存控制器 | DDR3-800/-1066/-1333 |
 | 上市时间 | 30.03.2009 |
-| 生产日期 | 52/2010 |
+| 生产日期 | 02/2010 |
 
 ![Intel Xeon X5570 正面](/images/cpus/Intel/Intel_Xeon-X5570_1.jpg)
 ![Intel Xeon X5570 反面](/images/cpus/Intel/Intel_Xeon-X5570_2.jpg)
