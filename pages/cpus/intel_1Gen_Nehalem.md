@@ -91,4 +91,29 @@ Intel Nehalem 微架构的全称是 Intel Microarchitecture code name Nehalem，
 ![Intel Core i7-950 正面](/images/cpus/Intel/Intel_Core_i7-950_1.jpg)
 ![Intel Core i7-950 反面](/images/cpus/Intel/Intel_Core_i7-950_2.jpg)
 
+---------
+
+### Intel Xeon X5570
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1366 land FC-LGA8 |
+| 核心 | Gainestown |
+| Socket | LGA 1366 |
+| 主频 | 2.933 GHz |
+| 睿频 | 3.333 GHz |
+| 二级缓存 | 4 x 256 KB |
+| 三级缓存 | 8 MB |
+| 核心 | 4 |
+| 线程 | 8 |
+| 制程 | 45 nm |
+| TDP | 95 W |
+| 内存控制器 | DDR3-800/-1066/-1333 |
+| 上市时间 | 30.03.2009 |
+| 生产日期 | 52/2010 |
+
+![Intel Xeon X5570 正面](/images/cpus/Intel/Intel_Xeon-X5570_1.jpg)
+![Intel Xeon X5570 反面](/images/cpus/Intel/Intel_Xeon-X5570_2.jpg)
+
+
 {% include links.html %}
