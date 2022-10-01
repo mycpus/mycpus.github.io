@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news]
 ---
 
+**2022-10-01**
+
+- 新增 Intel CPU 藏品 2 颗。
+
 **2022-09-28**
 
 - 新增 Intel CPU 藏品 3 颗。
