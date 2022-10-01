@@ -165,6 +165,9 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 12. 李博潮，8核5960X配DDR4 Intel Haswell-E首测，中关村在线：https://cpu.zol.com.cn/475/4755866_all.html?_t_t_t=0.7139762167843171，2014.8.30
 
-(中篇完，请看下篇)
+<div align="center">
+<p>(中篇完，请看下篇)</p>
+<a href="history_of_chip_technology_4.html" class="btn btn-primary">上一期</a>
+</div>
 
 {% include links.html %}
