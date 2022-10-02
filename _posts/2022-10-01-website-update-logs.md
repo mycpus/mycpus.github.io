@@ -8,6 +8,8 @@ tags: [news]
 **2022-10-01**
 
 - 新增 Intel CPU 藏品 2 颗。
+- 将本站添加到 Microsoft Bing Webmaster Tools 中。
+- 将本站添加 Microsoft Clarity 追踪功能。
 
 **2022-09-28**
 
