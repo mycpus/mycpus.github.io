@@ -167,7 +167,8 @@ summary: "在长达114年的时间里，科学家开始逐步发现、认识和�
 
 <div align="center">
 <p>(中篇完，请看下篇)</p>
-<a href="history_of_chip_technology_4.html" class="btn btn-primary">上一期</a>
+<a href="history_of_chip_technology_4.html" class="btn btn-primary">上一期</a> 
+<a href="history_of_chip_technology_6.html" class="btn btn-primary">下一期</a>
 </div>
 
 {% include links.html %}
