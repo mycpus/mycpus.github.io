@@ -166,7 +166,8 @@ AuthenTec于2012年被苹果公司收购。Validity于2013年被Synaptics收购�
 
 <div align="center">
 <p>(未完待续)</p>
-<a href="history_of_chip_technology_5.html" class="btn btn-primary">上一期</a>
+<a href="history_of_chip_technology_5.html" class="btn btn-primary">上一期</a> 
+<a href="history_of_chip_technology_7.html" class="btn btn-primary">下一期</a>
 </div>
 
 {% include links.html %}

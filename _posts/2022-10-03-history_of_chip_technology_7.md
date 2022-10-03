@@ -163,7 +163,11 @@ summary: "中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩
 
 － The End －
 
-(连载完)
+
+<div align="center">
+<p>(连载完)</p>
+<a href="history_of_chip_technology_6.html" class="btn btn-primary">上一期</a>
+</div>
 
 ---------
 
