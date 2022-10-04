@@ -94,7 +94,7 @@ ENIAC显示出电子计算机的巨大应用前景，成为这一时期真空管
 
 <div align="center">
     <img src="../images/blogs/tracing_miracle_from_electron_tube_to_transistor_fig05.jpg"/>
-    <p><b>巴丁<左>、布拉顿<右> 和肖克利<中></b></p>
+    <p><b>巴丁（左）、布拉顿（右）和肖克利（中）</b></p>
 </div>
 
 1956年，因为在半导体的研究贡献和晶体管的发明，肖克利与巴丁和布拉顿分享了当年的诺贝尔物理学奖。
