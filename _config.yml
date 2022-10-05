@@ -35,7 +35,7 @@ exclude:
 
 feedback_subject_line: CPU Museum of Honux
 
-feedback_email: tonyangell@163.com
+# feedback_email: tonyangell@163.com
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -44,7 +44,7 @@ feedback_email: tonyangell@163.com
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://www.tapechat.net/uu/GJ14DI/CQS1PYR9"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
