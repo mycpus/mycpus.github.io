@@ -29,10 +29,4 @@ topnav_dropdowns:
         - title: Zheng-Fu Xu 的 CPU 博物馆
           external_url: https://www.xuzhengfu.com/Computers/CPUs/
 
-topnav:
-- title: Topnav
-  items:
-    - title: 留言
-      external_url: https://www.tapechat.net/uu/GJ14DI/CQS1PYR9
-
 # Copyright 2021 Google LLC
