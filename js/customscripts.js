@@ -24,6 +24,7 @@ $( document ).ready(function() {
 
 // needed for nav tabs on pages. See Formatting > Nav tabs for more details.
 // script from http://stackoverflow.com/questions/10523433/how-do-i-keep-the-current-tab-active-with-twitter-bootstrap-after-a-page-reload
+/*
 $(function() {
     var json, tabsState;
     $('a[data-toggle="pill"], a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
@@ -52,3 +53,4 @@ $(function() {
         }
     });
 });
+*/
