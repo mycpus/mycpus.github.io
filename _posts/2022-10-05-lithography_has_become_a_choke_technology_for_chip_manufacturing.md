@@ -133,10 +133,6 @@ summary: "芯片制造用到的技术很多，光刻是芯片制造的灵魂技�
 
 7. EEWORLD订阅号，芯片的雕刻刀！投入占比超光刻机，揭秘走在国产替代前列的刻蚀设备，搜狐网：https://www.sohu.com/a/384411544_774177，2020.03.31 
 
-<div align="center">
-<p>－ The End －</p>
-</div>
-
 ---------
 
 转载：https://www.eet-china.com/mp/a67903.html
