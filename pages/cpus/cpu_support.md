@@ -9,6 +9,8 @@ topnav: topnav
 comments: true
 ---
 
-Click **Feedback** on the top navbar to send me an email or leave a message in the comment area of any web page.
+Click **Feedback** on the top navbar to ask me anything or leave a message in the comment area of any web page.
 
-点击顶部导航栏上的 **Feedback** 给我发送电子邮件，也可以在任意网页的评论区留言。
+点击顶部导航栏上的 **Feedback** 向馆长匿名提问，也可以在任意网页的评论区留言。
+
+Email: <tonyangell@163.com>
