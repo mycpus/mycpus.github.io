@@ -102,7 +102,6 @@ defaults:
 sidebars:
 - home_sidebar
 - cpu_sidebar
-- mydoc_sidebar
 
 description: "CPU cpu-collection cpu-galerie cpu-world 古董CPU收藏 CPU博物馆 传统型CPU 中央处理器"
 # the description is used in the feed.xml file
