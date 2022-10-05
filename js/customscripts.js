@@ -39,8 +39,10 @@ $(function() {
     });
 
     tabsState = localStorage.getItem("tabs-state");
+    console.log(tabsState);
     json = JSON.parse(tabsState || "{}");
 
+    console.log(json);
     $.each(json, function(containerId, href) {
         return $("#" + containerId + " a[href=" + href + "]").tab('show');
     });
