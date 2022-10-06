@@ -70,6 +70,7 @@ CPU就是电脑的中央处理器（Central Processing Unit），也可以把它
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a> 
 </div>
 
 {% include links.html %}
