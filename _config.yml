@@ -6,7 +6,7 @@ output: web
 topnav_title: Honux's CPU Museum
 # this appears on the top navigation bar next to the home button
 
-site_title: CPU 博物馆 | 微处理器博物馆 | Honux's CPU Museum
+site_title: 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Copyright 2022 Honux
@@ -33,7 +33,7 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: CPU Museum of Honux
+# feedback_subject_line: CPU Museum of Honux
 
 # feedback_email: tonyangell@163.com
 # used as a contact email for the Feedback link in the top navigation bar
@@ -103,7 +103,7 @@ sidebars:
 - home_sidebar
 - cpu_sidebar
 
-description: "CPU cpu-collection cpu-galerie cpu-world 古董CPU收藏 CPU博物馆 传统型CPU 中央处理器"
+description: "Honux's CPU Museum - 在线CPU博物馆 微处理器博物馆 古董CPU收藏 中央处理器"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
