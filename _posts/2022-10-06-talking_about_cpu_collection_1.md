@@ -65,4 +65,8 @@ CPU就是电脑的中央处理器（Central Processing Unit），也可以把它
     <p><b>▲ 早期处理器有多昂贵？以这颗Intel C4004来说，拍卖上价格高达1,025美元，折合人民币约7,000元以上。但是相较于其他收藏领域来说，这并不算特别昂贵。</b></p>
 </div>
 
+<div align="center">
+<p>(未完待续)</p>
+</div>
+
 {% include links.html %}
