@@ -1,6 +1,6 @@
 ---
 title:  "大话CPU收藏（一）"
-categories: history
+categories: collection
 permalink: talking_about_cpu_collection_1.html
 tags: [blog]
 summary: "什么是收集CPU？每每跟新遇到的朋友提到这话题，随之而来的就是要先解释CPU 到底是什么玩意。通常朋友们的反应都是：「收集这玩意到底要干嘛？」，其实收集东西的目的有时候就是个人喜好而已，就像有女生喜欢收集Kitty，背后并不是单纯的只是基于其经济效益。对于许多电脑迷而言，CPU 不只是一台电脑的核心元件，甚至可以说是精神象征。"
@@ -73,5 +73,7 @@ CPU就是电脑的中央处理器（Central Processing Unit），也可以把它
 <a href="talking_about_cpu_collection_2.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a> 
 </div>
+
+---------
 
 {% include links.html %}

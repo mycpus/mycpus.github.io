@@ -1,6 +1,6 @@
 ---
 title:  "CPU 收藏感悟"
-categories: blog
+categories: collection
 permalink: understanding_of_cpu_collection.html
 tags: [blog]
 summary: "谈几点对于收藏的认识以及收藏的注意事项。"

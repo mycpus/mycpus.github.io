@@ -1,6 +1,6 @@
 ---
 title:  "大话CPU收藏（三）"
-categories: history
+categories: collection
 permalink: talking_about_cpu_collection_3.html
 tags: [blog]
 summary: "每颗处理器的背后都有其独特的技术发展背景，而这些故事更是与近年来的电脑科技发展息息相关。拥有了1颗处理器，就如同将那段历史的里程碑握在手上，成为电脑发展史的实际参与者。"

@@ -1,6 +1,6 @@
 ---
 title:  "大话CPU收藏（二）"
-categories: history
+categories: collection
 permalink: talking_about_cpu_collection_2.html
 tags: [blog]
 summary: "收集东西背后所驱使的动力通常是因为兴趣。如果对相关科技或是历史没有兴趣的话，收集处理器将会是一个乏味的过程。对于想要入行的朋友，笔者的衷心建议是，先为自己订立明确目标，并选定基本范围。可以从较熟悉、使用过或是对你有特殊意义的产品开始。"
@@ -119,5 +119,7 @@ summary: "收集东西背后所驱使的动力通常是因为兴趣。如果对�
 <a href="talking_about_cpu_collection_1.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a> 
 </div>
+
+---------
 
 {% include links.html %}
