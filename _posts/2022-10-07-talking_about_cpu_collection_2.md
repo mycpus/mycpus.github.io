@@ -117,6 +117,7 @@ summary: "收集东西背后所驱使的动力通常是因为兴趣。如果对�
 <div align="center">
 <p>(未完待续)</p>
 <a href="talking_about_cpu_collection_1.html" class="btn btn-primary">上一篇</a> 
+<a href="talking_about_cpu_collection_3.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a> 
 </div>
 

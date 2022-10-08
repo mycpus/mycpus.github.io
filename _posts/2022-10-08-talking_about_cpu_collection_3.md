@@ -126,6 +126,8 @@ Intel 8086因为身为x86架构创始者，而享有特殊的历史地位。对�
 
 <div align="center">
 <p>(The End)</p>
+<a href="talking_about_cpu_collection_2.html" class="btn btn-primary">上一篇</a> 
+<a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a> 
 </div>
 
 ---------
