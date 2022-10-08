@@ -90,4 +90,6 @@ EM64T 架构从 2004 年就开始广泛用于 Pentium 4 与 Xeon 处理器上，
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
+---------
+
 {% include links.html %}

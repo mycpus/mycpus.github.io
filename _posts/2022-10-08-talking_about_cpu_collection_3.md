@@ -128,4 +128,6 @@ Intel 8086因为身为x86架构创始者，而享有特殊的历史地位。对�
 <p>(The End)</p>
 </div>
 
+---------
+
 {% include links.html %}
