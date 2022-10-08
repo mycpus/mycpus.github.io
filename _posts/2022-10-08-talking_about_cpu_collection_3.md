@@ -119,7 +119,7 @@ Intel 8086因为身为x86架构创始者，而享有特殊的历史地位。对�
 看了这么多产品，除了对电脑中央处理器的历史有更多的了解之外，是否也觉得收集处理器这个嗜好，比想像中有趣许多呢？每颗处理器的背后都有其独特的技术发展背景，而这些故事更是与近年来的电脑科技发展息息相关。拥有了1颗处理器，就如同将那段历史的里程碑握在手上，成为电脑发展史的实际参与者。如果读者看了感到有兴趣，不妨有空多留意一下身边要淘汰的旧电脑，一起加入收集处理器晶片的行列吧！
 
 <div align="center">
-    <img src="../images/blogs/talking_about_cpu_collection_fig25.jpg"/>
+    <img src="../images/blogs/talking_about_cpu_collection_fig26.jpg"/>
     <p><b>▲ Transmeta的第二代产品是由台积电代工，是少数处理器上面印有TAIWAN字样的处理器，图为Transmeta第一代产品TM5600。</b></p>
 </div>
 
