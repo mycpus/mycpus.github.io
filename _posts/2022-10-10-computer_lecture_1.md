@@ -3,7 +3,7 @@ title:  "电脑大讲堂（一）——浅谈处理器"
 categories: course
 permalink: computer_lecture_1.html
 tags: [blog]
-summary: ""
+summary: "中央处理器是计算机核心三大组件之一，本期主要介绍处理器的架构及其发展。"
 ---
 
 中央处理器 (CPU) 全名是 Central Processing Unit, 又叫做 Processor，如果将计算机主机比喻为人体的话，实际上 CPU 就相当于人类的脑袋中负责思考与运算的部分，是计算机核心三大组件之一 (CPU、主板、内存)，且处理器的选择会直接牵动内存与主板的搭配，因此其地位可说是计算机中数一数二的关键零组件。
