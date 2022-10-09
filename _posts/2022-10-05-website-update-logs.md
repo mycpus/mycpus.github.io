@@ -1,6 +1,6 @@
 ---
 title:  "更新日志"
-categories: update
+categories: news
 permalink: update.html
 tags: [news]
 ---
