@@ -2,7 +2,7 @@
 title:  "这个神秘的数，让芯片巨头英特尔赔了5亿美金"
 categories: history
 permalink: pentium_FDIV_bug.html
-tags: [blog]
+tags: [history]
 summary: "英特尔处理器是性能优良的代名词，但是，英特尔也有一段不堪的往事。这件事还和一个神秘的常数，以及一个困扰人类2300多年的神秘数学猜想有关。"
 ---
 

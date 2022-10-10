@@ -2,7 +2,7 @@
 title:  "图说芯片技术60多年的发展史（一）"
 categories: history
 permalink: history_of_chip_technology_1.html
-tags: [blog]
+tags: [history]
 summary: "集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第一期将从半导体发现和研究、电子管的发明和晶体管的发明三个部分进行介绍。"
 ---
 

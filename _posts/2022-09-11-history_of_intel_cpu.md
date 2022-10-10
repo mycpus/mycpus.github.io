@@ -2,7 +2,7 @@
 title:  "Intel CPU 发展史"
 categories: history
 permalink: history_of_intel_cpu.html
-tags: [blog]
+tags: [history]
 summary: "CPU技术应该是人类发展史上最顶尖的发明了，它让人类文明乘上了快速列车！CPU的大厦也是从简单的4004一步一步发展到如今的程度，每一步的变化都是有历史原因的，是有迹可循的。"
 ---
 

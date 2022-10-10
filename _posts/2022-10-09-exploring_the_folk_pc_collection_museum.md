@@ -2,7 +2,7 @@
 title:  "探秘民间PC收藏馆"
 categories: collection
 permalink: exploring_the_folk_pc_collection_museum.html
-tags: [news]
+tags: [news, collection]
 summary: "《IT时报》记者认识了一群民间古董电脑收藏家。他们的私人宝库虽然撑不起千万级规模的计算机博物馆，但是星星之火渐成燎原之势，记者好比管中窥豹，重游了一段PC的童年。"
 ---
 

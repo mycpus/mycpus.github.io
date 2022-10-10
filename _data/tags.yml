@@ -4,6 +4,9 @@
 allowed-tags:
   - news
   - blog
+  - course
+  - collection
+  - history
   - AMD
   - Intel
   - FPU

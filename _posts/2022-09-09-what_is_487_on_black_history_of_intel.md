@@ -2,7 +2,7 @@
 title:  "487是什么？简谈英特尔的“黑历史”"
 categories: history
 permalink: what_is_487.html
-tags: [blog]
+tags: [history]
 summary: "487是给486SX准备的协处理器，和387类似，用来弥补486SX没有浮点单元的问题。但是，你真的以为英特尔会开发单独的浮点计算器吗？"
 ---
 

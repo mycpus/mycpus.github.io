@@ -2,7 +2,7 @@
 title:  "CPU大讲堂（2）——带你看懂CPU规格"
 categories: course
 permalink: computer_lecture_2.html
-tags: [blog]
+tags: [course]
 summary: "处理器的规格其实比绝大多数人想象复杂，本篇主要是教大家如何「使用工具来判读自己计算机目前使用的 CPU 的规格」。"
 ---
 

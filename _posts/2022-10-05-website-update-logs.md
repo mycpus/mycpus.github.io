@@ -1,8 +1,8 @@
 ---
-title:  "更新日志"
+title:  "网站更新日志"
 categories: news
 permalink: update.html
-tags: [news]
+tags: [news, blog]
 ---
 
 **2022-10-05**

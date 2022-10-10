@@ -2,7 +2,7 @@
 title:  "CPU大讲堂（1）——浅谈CPU"
 categories: course
 permalink: computer_lecture_1.html
-tags: [blog]
+tags: [course]
 summary: "中央处理器是计算机核心三大组件之一，本期主要介绍处理器的架构及其发展。"
 ---
 

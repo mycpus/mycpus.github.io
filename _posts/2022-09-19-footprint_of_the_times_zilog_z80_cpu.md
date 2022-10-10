@@ -2,7 +2,7 @@
 title:  "时代脚印 —— Zilog Z80 CPU"
 categories: history
 permalink: footprint_of_the_times_zilog_z80_cpu.html
-tags: [blog]
+tags: [history]
 summary: "Zilog Z80 CPU，简称Z80，是一款8位微处理器，与英特尔公司出产的8080微处理器的指令集兼容。Z80可执行为8080所写的CP/M操作系统，所以过去在apple II兼容机盛行的年代，很多人都爱在电脑内加装z80扩展卡，并透过它来运行WordStar、VisiCalc等商业软件。"
 ---
 

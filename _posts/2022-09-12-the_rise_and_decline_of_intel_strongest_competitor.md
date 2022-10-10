@@ -2,7 +2,7 @@
 title:  "英特尔最强竞争对手的兴起与衰落"
 categories: history
 permalink: the_rise_and_decline_of_intel_strongest_competitor.html
-tags: [blog]
+tags: [history]
 summary: "Cyrix以可实现的廉价PC的形式将个人电脑的世界带给数百万人，结果却被其最好的产品和无法运行一款流行游戏所扼杀，随后又与一家更大的合作伙伴进行了一次糟糕的合并。这家公司曾有机会占领家用电脑市场，将英特尔和AMD远远地抛在身后，但最终未能成功，迅速消失在了科技的坟墓中。"
 ---
 

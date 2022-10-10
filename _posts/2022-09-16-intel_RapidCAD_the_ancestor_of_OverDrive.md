@@ -2,7 +2,7 @@
 title:  "OverDrive 的始祖 Intel RapidCAD"
 categories: history
 permalink: intel_RapidCAD_the_ancestor_of_OverDrive.html
-tags: [blog]
+tags: [history]
 summary: "Intel RapidCAD是英特尔有史以来第一款为旧款个人计算机所提供的升级套件（也就是OverDrive的始祖）。原386的使用者不需要更换主板，只要把RapidCAD买回来将主板上旧有的中央处理器替换掉，就可以享受接近486的运算能力。"
 ---
 

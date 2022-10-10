@@ -2,7 +2,7 @@
 title:  "光刻如何一步一步变成了芯片制造的卡脖子技术？"
 categories: history
 permalink: lithography_has_become_a_choke_technology_for_chip_manufacturing.html
-tags: [blog]
+tags: [history, course]
 summary: "芯片制造用到的技术很多，光刻是芯片制造的灵魂技术，但是开始的时候，光刻并不是所有技术中最厉害的。现在大众认识到了芯片的重要性，讨论芯片产业的卡脖子问题时，提到最多的是光刻和光刻机。那么，光刻是如何一步一步变成了芯片制造的卡脖子技术？本文试图一探究竟。"
 ---
 

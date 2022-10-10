@@ -2,7 +2,7 @@
 title:  "几个关于CPU你所不知道的小秘密"
 categories: history
 permalink: a_few_little_secrets_about_cpu.html
-tags: [blog]
+tags: [course]
 summary: "每一代处理器上市前，厂商自己都会经过复杂多样的温度测算，他们会采用什么令人意想不到的方法呢？第十代英特尔处理器有2核、4核、6核、8核、10核这5种类型，英特尔难道会傻乎乎地开5条线分别生产这5种核心类型的产品吗？如果想在旧主板上使用新的CPU，聪明的厂商会采用什么方法呢？本文将为您揭秘这些小秘密。"
 ---
 

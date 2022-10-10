@@ -2,7 +2,7 @@
 title:  "CPU 历史上著名的破解有哪些？"
 categories: history
 permalink: famous_cracking_in_cpu_history.html
-tags: [blog]
+tags: [history]
 summary: ""
 ---
 
