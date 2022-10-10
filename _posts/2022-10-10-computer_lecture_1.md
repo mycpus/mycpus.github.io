@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（一）——浅谈处理器"
+title:  "CPU大讲堂（一）——浅谈CPU"
 categories: course
 permalink: computer_lecture_1.html
 tags: [blog]
