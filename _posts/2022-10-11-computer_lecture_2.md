@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（二）——带你看懂CPU规格"
+title:  "CPU大讲堂（2）——带你看懂CPU规格"
 categories: course
 permalink: computer_lecture_2.html
 tags: [blog]

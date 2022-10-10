@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（四）——HT、XD？带你认识这些技术名称"
+title:  "CPU大讲堂（4）——HT、XD？带你认识这些技术名称"
 categories: course
 permalink: computer_lecture_4.html
 tags: [blog]

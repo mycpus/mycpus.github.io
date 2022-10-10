@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（三）——鸟瞰历代处理器指令集"
+title:  "CPU大讲堂（3）——鸟瞰历代处理器指令集"
 categories: course
 permalink: computer_lecture_3.html
 tags: [blog]
