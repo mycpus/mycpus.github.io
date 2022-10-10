@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（5）——上古 CPU 发展史"
+title:  "CPU大讲堂（5）——上古CPU发展史"
 categories: course
 permalink: computer_lecture_5.html
 tags: [course]
