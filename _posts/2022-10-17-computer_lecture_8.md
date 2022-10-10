@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（8）——"
+title:  "CPU大讲堂（8）——中古时代后期CPU发展史(中)"
 categories: course
 permalink: computer_lecture_8.html
 tags: [course]
