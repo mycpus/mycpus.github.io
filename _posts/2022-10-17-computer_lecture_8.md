@@ -44,10 +44,10 @@ AMD K6 加入了 MMX 指令集，在性能方面基本上是足以接近 Pentium
 ### 前期产品：K6 (Model 6)
 
  - 发布时间：1997 年 04 月 02 日
- - 运作频率：166 MHz ~ 233 MHz
+ - 运行频率：166 MHz ~ 233 MHz
  - FSB 频率：66 MHz
  - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - 支援插槽：Socket 7
+ - 支持插槽：Socket 7
  - 电压需求：2.9 V ~ 3.3 V
  - 晶体管数：880 万枚
  - 制造工艺：0.35 微米 (µm)
@@ -63,10 +63,10 @@ AMD K6 加入了 MMX 指令集，在性能方面基本上是足以接近 Pentium
 ### 后期产品：K6 “Little Foot” (Model 7)
 
  - 发布时间：1998 年 01 月 06 日
- - 运作频率：200 MHz ~ 300 MHz
+ - 运行频率：200 MHz ~ 300 MHz
  - FSB 频率：66 MHz
  - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - 支援插槽：Socket 7
+ - 支持插槽：Socket 7
  - 电压需求：2.2 V
  - 晶体管数：880 万枚
  - 制造工艺：0.25 微米 (µm)
@@ -128,18 +128,18 @@ Pentium II 长得与以往的处理器相差非常远，是做成有点像游戏
 ### 第一代：Klamath (80522)
 
  - 发布时间：1997 年 05 月 07 日
- - 运作频率：233 MHz ~ 300 MHz
+ - 运行频率：233 MHz ~ 300 MHz
  - FSB 频率：66 MHz
  - TDP：34.8 W ~ 43 W
  - L1 快取大小：32 KB (数据与指令快取各 16 KB)
  - L2 快取大小：512 KB
- - 支援插槽：Slot 1 (卡匣外型)
+ - 支持插槽：Slot 1 (卡匣外型)
  - 电压需求：2.8 V
  - 晶体管数：750 万枚
  - 制造工艺：0.35 微米 (µm)
  - 指令集：x86-32 + MMX
 
-Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推出了 233、266 与 300 三个型号，如同前面说过的，Klamath 的 L2 快取是与 CPU 在同一块电路板上，但并未封装在一起也没有整合入核心，设计上是以处理器主频的一半运作。
+Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推出了 233、266 与 300 三个型号，如同前面说过的，Klamath 的 L2 快取是与 CPU 在同一块电路板上，但并未封装在一起也没有整合入核心，设计上是以处理器主频的一半运行。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/klamath-front.jpg">
@@ -160,12 +160,12 @@ Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推�
 ### 第二代：Deschutes (80523)
 
  - 发布时间：1998 年 01 月 26 日
- - 运作频率：266 MHz ~ 450 MHz
+ - 运行频率：266 MHz ~ 450 MHz
  - FSB 频率：66 MHz ~ 100 MHz
  - TDP：16.8 W ~ 27.1 W
  - L1 快取大小：32 KB (数据与指令快取各 16 KB)
  - L2 快取大小：512 KB
- - 支援插槽：Slot 1 (卡匣外型)
+ - 支持插槽：Slot 1 (卡匣外型)
  - 电压需求：2.0 V
  - 晶体管数：750 万枚
  - 制造工艺：0.25 微米 (µm)
@@ -185,7 +185,7 @@ Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推�
     <p><b>▲ Intel Pentium II (Deschutes) 背面</b></p>
 </div>
 
-其中除了运作频率为 333 MHz 以下的 Deschutes 使用的 FSB 为 66 MHz 外，其余都已提升至 100 MHz，然而 Deschutes 最特别的地方其实不在其本身的特性有多少改变，而是 Intel 就是在这个时候开始创建 Xeon 与 Celeron 这两条产品线的，而且当时的产品都是直接衍伸自 Deschutes。
+其中除了运行频率为 333 MHz 以下的 Deschutes 使用的 FSB 为 66 MHz 外，其余都已提升至 100 MHz，然而 Deschutes 最特别的地方其实不在其本身的特性有多少改变，而是 Intel 就是在这个时候开始创建 Xeon 与 Celeron 这两条产品线的，而且当时的产品都是直接衍伸自 Deschutes。
 
 ### Intel Celeron (based on Deschutes)
 
@@ -200,7 +200,7 @@ Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推�
     <p><b>▲ 少了快取的 Celeron (Covington)，两侧显得相当空旷</b></p>
 </div>
 
-由于缺乏 L2 快取的 Covington 性能真的太差，连带反而救了 AMD 与 Cyrix 等厂商 (AMD 的 K6-2 从价格与性能上都可以把 Covington 压着打)，Intel 在 1998 年 08 月推出了改版的 Celeron，代号为 Mendocino，运作频率从 300 MHz 起跳 (300 MHz 型号为了与 Covington 作出区分所以称为 Celeron 300-A)，最高到 533 MHz，不过这次 Intel 似乎又「矫枉过正」了，Mendocino 内建了 128 KB「全速」的快取，而且 Mendocino 还是第一款将 L2 快取整合到核心中 (on-die) 的零售处理器，这让 Mendocino 的性能大为增强，而且超频潜力依旧庞大。
+由于缺乏 L2 快取的 Covington 性能真的太差，连带反而救了 AMD 与 Cyrix 等厂商 (AMD 的 K6-2 从价格与性能上都可以把 Covington 压着打)，Intel 在 1998 年 08 月推出了改版的 Celeron，代号为 Mendocino，运行频率从 300 MHz 起跳 (300 MHz 型号为了与 Covington 作出区分所以称为 Celeron 300-A)，最高到 533 MHz，不过这次 Intel 似乎又「矫枉过正」了，Mendocino 内建了 128 KB「全速」的快取，而且 Mendocino 还是第一款将 L2 快取整合到核心中 (on-die) 的零售处理器，这让 Mendocino 的性能大为增强，而且超频潜力依旧庞大。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Mendocino.jpg">
@@ -227,7 +227,7 @@ Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推�
     <p><b>▲ 巨无霸级别的 Pentium II Xeon</b></p>
 </div>
 
-相对于 Celeron 而言，Xeon 版本的 Pentium II 就没那么特别了，当时 Xeon 也还不是一个独立的系列，而是附属于 Pentium 品牌之下。发布于 1998 年 06 月的 Pentium II Xeon (代号为 Drake) 同样是基于 Deschutes 的设计，只是将外置的 L2 快取芯片由降半速改为全速的芯片，容量则有所增加，有 512 KB、1 MB、2 MB 三种大小，至于运作频率则从 400 MHz 起跳，最高同样是到 450 MHz。
+相对于 Celeron 而言，Xeon 版本的 Pentium II 就没那么特别了，当时 Xeon 也还不是一个独立的系列，而是附属于 Pentium 品牌之下。发布于 1998 年 06 月的 Pentium II Xeon (代号为 Drake) 同样是基于 Deschutes 的设计，只是将外置的 L2 快取芯片由降半速改为全速的芯片，容量则有所增加，有 512 KB、1 MB、2 MB 三种大小，至于运行频率则从 400 MHz 起跳，最高同样是到 450 MHz。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Pentium_II_Xeon_pcb.jpg">
@@ -274,9 +274,9 @@ Pentium II 同样有推出行动版本，主要分为 Tonga 与 Dixon 两代，�
     <p><b>▲ Mobile Intel Pentium II (Tonga) 长得真的很特别</b></p>
 </div>
 
-Tonga 的 L2 快取仍然是放置于处理器核心外，以处理器主频的一半速度运作，大小则为 512 KB，频率从 233 MHz 起跳至 300 MHz，FSB 则是 66 MHz，当时使用的电压略低于 Deschutes，是较为接近现今处理器使用的 1.6 V ~ 1.7 V。
+Tonga 的 L2 快取仍然是放置于处理器核心外，以处理器主频的一半速度运行，大小则为 512 KB，频率从 233 MHz 起跳至 300 MHz，FSB 则是 66 MHz，当时使用的电压略低于 Deschutes，是较为接近现今处理器使用的 1.6 V ~ 1.7 V。
 
-之后在 1999 年 01 月 25 日，Intel 推出了最后一款 Pentium II 核心，也就是行动版本的 Dixon 核心，基于 0.25 微米或 0.18 微米制造工艺，运作电压最低可以来到 1.55 V，频率则介于 266 MHz 至 400 MHz。
+之后在 1999 年 01 月 25 日，Intel 推出了最后一款 Pentium II 核心，也就是行动版本的 Dixon 核心，基于 0.25 微米或 0.18 微米制造工艺，运行电压最低可以来到 1.55 V，频率则介于 266 MHz 至 400 MHz。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Pentium_II_Mobile_Dixon_b.jpg">
@@ -312,10 +312,10 @@ K6-2 最大的特点是新增了 3D Now! 指令集，是全世界第一款引入
 ### 前期产品：Chomper (26050)
 
  - 发布时间：1998 年 05 月 28 日
- - 运作频率：233 MHz ~ 350 MHz
+ - 运行频率：233 MHz ~ 350 MHz
  - FSB 频率：66 MHz ~ 100 MHz
  - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - 支援插槽：Super Socket 7
+ - 支持插槽：Super Socket 7
  - 电压需求：2.2 V
  - 晶体管数：930 万枚
  - 制造工艺：0.25 微米 (µm)
@@ -331,10 +331,10 @@ K6-2 最大的特点是新增了 3D Now! 指令集，是全世界第一款引入
 ### 后期产品：Chomper Extended (CXT, 26351)
 
  - 发布时间：1998 年 12 月 16 日
- - 运作频率：266 MHz ~ 550 MHz
+ - 运行频率：266 MHz ~ 550 MHz
  - FSB 频率：66 MHz ~ 100 MHz
  - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - 支援插槽：Super Socket 7
+ - 支持插槽：Super Socket 7
  - 电压需求：2.0 V ~ 2.2 V
  - 晶体管数：930 万枚
  - 制造工艺：0.25 微米 (µm)

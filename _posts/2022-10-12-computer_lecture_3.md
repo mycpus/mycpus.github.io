@@ -86,7 +86,7 @@ SIMD 的意思是「Single Instruction, Multiple Data」，也就是单一指令
 
 <div align="center">
     <img src="../images/blogs/computer_lecture_fig18.jpg" alt="KL_Intel_Pentium_4_Wilamette"/>
-    <p><b>▲ 第一代 Intel Pentium 4 (Willamette) 首次支援 SSE2</b></p>
+    <p><b>▲ 第一代 Intel Pentium 4 (Willamette) 首次支持 SSE2</b></p>
 </div>
 
 SSE2 是 SSE 的延伸，新增了 144 条指令，同时具有完全取代 MMX 的能力，AMD 则在 2003 年推出 AMD64 系列处理器时纳入 SSE2 的支持。

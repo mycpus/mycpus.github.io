@@ -19,9 +19,9 @@ summary: ""
 
 ***按：其实 HT 只是 Multi-threading 多种实作方法的其中一种罢了，但由于一般人大概只会接触到基于 SMT 的 HT 技术，因此本篇不会深入去谈其他种类的 Multi-Threading。***
 
-### Hyper-Threading 的运作模式
+### Hyper-Threading 的运行模式
 
-HT 的原理基本上是将处理器内的实体运算核心 (Physical Core) 内的其中一部份前端模块从一组改为两组，称之为 Logical Core (逻辑核心)，以达到「看起来」好像有两个处理核心的效果，但实际上运算核心仍然只有一组，大致上 HT 技术的运作模式可以用下面这张图解释：
+HT 的原理基本上是将处理器内的实体运算核心 (Physical Core) 内的其中一部份前端模块从一组改为两组，称之为 Logical Core (逻辑核心)，以达到「看起来」好像有两个处理核心的效果，但实际上运算核心仍然只有一组，大致上 HT 技术的运行模式可以用下面这张图解释：
 
 <div align="center">
     <img src="../images/blogs/computer_lecture_fig28.png" alt="DBA9869"/>
@@ -44,7 +44,7 @@ HT 的原理基本上是将处理器内的实体运算核心 (Physical Core) 内
 ## 处理器省电调控技术
 
 ### Enhanced Intel SpeedStep Technology (EIST)
-SpeedStep 是 Intel 处理器的省电技术，最早用于行动版 Pentium !!!-M 上，当时的 SpeedStep 技术是让对处理器设计高、低两种不同的运作频率，由于当年还无法做到实时切换，因此主要是设计成使用电池时用低速档，插电使用时则跳为正常频率 (高速檔)。
+SpeedStep 是 Intel 处理器的省电技术，最早用于行动版 Pentium !!!-M 上，当时的 SpeedStep 技术是让对处理器设计高、低两种不同的运行频率，由于当年还无法做到实时切换，因此主要是设计成使用电池时用低速档，插电使用时则跳为正常频率 (高速檔)。
 
 后来在 Pentium M 处理器 (虽然 Pentium M 销售量不是那么高，也不是很为人所记忆的处理器，但其实 Pentium M 在 Intel 后期的发展史很重要)，上新发展出了增强版的 SpeedStep 技术 (EIST)，做到了实时切换的能力，处理器会根据当下的使用率来调整倍频与电压的高低以达到省电的效果，从 Pentium M 以后的 Intel 处理器，倍频锁不再是固定的数字，而是一个范围。
 
@@ -57,13 +57,13 @@ SpeedStep 是 Intel 处理器的省电技术，最早用于行动版 Pentium !!!
 
 ### Intel Turbo Boost Technology
 
-Turbo Boost 其实可以当成反向的 SpeedStep，运用 EIST 技术的原理来达到相反的作用：当处理器负载高的时候，Turbo Boost 可以将特定核心的运作频率拉到比平常还要高一些。以 Intel 的设计而言，搭配 EIST 关闭非使用中核心的功能，当所有核心没有同时在运作中时，Turbo Boost 可以将目前使用中的核心的倍频拉到更高，从上面那张图也可以看到，标准倍频为 34 倍的 4930K，其实可以拉高到 39 倍。
+Turbo Boost 其实可以当成反向的 SpeedStep，运用 EIST 技术的原理来达到相反的作用：当处理器负载高的时候，Turbo Boost 可以将特定核心的运行频率拉到比平常还要高一些。以 Intel 的设计而言，搭配 EIST 关闭非使用中核心的功能，当所有核心没有同时在运行中时，Turbo Boost 可以将目前使用中的核心的倍频拉到更高，从上面那张图也可以看到，标准倍频为 34 倍的 4930K，其实可以拉高到 39 倍。
 
 AMD 后来也推出了类似的功能，称为 TurboCore。
 
 ### AMD PowerNow!
 
-PowerNow! 功能上其实就是 AMD 版本的 SpeedStep，最早也是用在自家的笔记本电脑用处理器上，至于名称的由来则是为了类似 3D Now! 而用，最早出现在 AMD K6-2+ 处理器上，原理与 EIST 相似，是配合 CPU 核心使用率来动态调整运作频率与核心电压。
+PowerNow! 功能上其实就是 AMD 版本的 SpeedStep，最早也是用在自家的笔记本电脑用处理器上，至于名称的由来则是为了类似 3D Now! 而用，最早出现在 AMD K6-2+ 处理器上，原理与 EIST 相似，是配合 CPU 核心使用率来动态调整运行频率与核心电压。
 
 ### AMD Cool’n’Quiet
 
