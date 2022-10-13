@@ -97,6 +97,33 @@ OPN: AHM1200AVS3C
 
 ---------
 
+### AMD Duron 800 MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 453-Pin sCPGA |
+| 核心 | Spitfire |
+| 步进 | ANCA |
+| Socket | A |
+| 主频 | 800 MHz |
+| 外频 | 100 / 200 MHz |
+| 倍频 | x 8 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 64 KB |
+| 晶体管 | 25,000,000 |
+| 技术 | 0.18 µm |
+| 生产日期 | 41/2002 |
+
+```
+  OPN: D800AVS1B
+```
+
+![AMD Duron 800 MHz 正面](/images/cpus/AMD/AMD_Duron_800MHz_1.jpg)
+![AMD Duron 800 MHz 反面](/images/cpus/AMD/AMD_Duron_800MHz_2.jpg)
+
+---------
+
 ### AMD Mobile Duron 1 GHz
 
 | 参数 | 数值 |
