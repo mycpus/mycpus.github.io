@@ -121,4 +121,32 @@ The K6-2+ is a revised version of the K6-III. Essentially, the K6-2+ is a K6-III
 ![AMD-K6-2/350AFR 正面](/images/cpus/AMD/AMD-K6-2350AFR_1.jpg)
 ![AMD-K6-2/350AFR 反面](/images/cpus/AMD/AMD-K6-2350AFR_2.jpg)
 
+---------
+
+### AMD-K6-2+/500ACZ
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 321-Pin CPGA |
+| 核心 |  |
+| Socket | Super 7 |
+| 主频 | 500 MHz |
+| 外频 | 100 MHz |
+| 倍频 | x 5 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 64 KB (32/32) |
+| 二级缓存 | 128 KB |
+| 晶体管 |  |
+| 技术 | CMOS 0.18 µm |
+| 生产日期 | 28/2000 |
+
+```
+  A = CPGA 设计
+  C = 2.0 Volt Core (3.3 Volt I/O)
+  Z = max. 85°C
+```
+
+![AMD-K6-2+/500ACZ 正面](/images/cpus/AMD/AMD-K6-2plus500ACZ_1.jpg)
+![AMD-K6-2+/500ACZ 反面](/images/cpus/AMD/AMD-K6-2plus500ACZ_2.jpg)
+
 {% include links.html %}
