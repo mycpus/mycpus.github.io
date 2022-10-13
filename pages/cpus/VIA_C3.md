@@ -33,6 +33,34 @@ VIA initially planned to develop the Cyrix III as a successor to the Cyrix M II,
 
 ## 我的收藏
 
+### VIA C3-667MHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 370-Pin CPGA |
+| 核心 | Samuel C5A |
+| Socket| 370 |
+| 主频 | 667 MHz |
+| 外频 | 133 MHz |
+| 倍频 | x 5 |
+| 数据总线 | 64 Bit |
+| 地址总线 | 32 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 晶体管 | 11,300,000 |
+| 技术 | 0.18 µm |
+| 电压 | 2.0 Volt |
+| 生产日期 | 38/2002 |
+| 产地 | Taiwan, China |
+
+```
+这颗 CPU 的正面应该被打磨过，背面显示的是它的真实频率。
+```
+
+![VIA C3-667MHz 正面](/images/cpus/VIA/VIA_C3-667MHz_1.jpg)
+![VIA C3-667MHz 反面](/images/cpus/VIA/VIA_C3-667MHz_2.jpg)
+
+---------
+
 ### VIA C3-700AMHz
 
 | 参数 | 数值 |
