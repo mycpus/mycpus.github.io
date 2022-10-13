@@ -40,11 +40,34 @@ National Semiconductor Geode GXM 处理器（支持 MMX 的集成 x86 解决方�
 
 ## 我的收藏
 
+### Geode GXm-266GP
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 320-Pin SPGA |
+| 主频 | 266 MHz |
+| 总线宽度 | 32 Bit |
+| 一级缓存 | 16 KB  |
+| 晶体管 | 2,400,000 |
+| 技术 | CMOS 0.35 µm |
+| 电压 | 2.9 Volt |
+| 上市时间 | 36/2000 |
+| OPN | 30070-53 |
+
+```
+桌面处理器 70°C
+```
+
+![Geode GXm-266GP 正面](/images/cpus/Geode/Geode_GXm-266GP_1.jpg)
+![Geode GXm-266GP 反面](/images/cpus/Geode/Geode_GXm-266GP_2.jpg)
+
+---------
+
 ### Geode GXm-366GP
 
 | 参数 | 数值 |
 | ------ | ------ |
-| CPU 类型 | 320-Pin CPGA |
+| CPU 类型 | 320-Pin SPGA |
 | 主频 | 366 MHz |
 | 总线宽度 | 32 Bit |
 | 一级缓存 | 16 KB  |
