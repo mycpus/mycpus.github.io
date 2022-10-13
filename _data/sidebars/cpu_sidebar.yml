@@ -193,6 +193,10 @@ entries:
       url: /intel_FPU.html
       output: web, pdf
 
+    - title: Other
+      url: /intel_Other.html
+      output: web, pdf
+
 
   - title: AMD
     output: web, pdf
