@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2022-10-12**
+
+- 新增 Intel 芯片 2 颗，AMD 处理器 2 颗，VIA 处理器 1 颗，Geode 处理器 1 颗。
+
 **2022-10-05**
 
 - 优减本站页面。
