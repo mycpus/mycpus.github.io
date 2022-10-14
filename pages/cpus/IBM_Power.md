@@ -28,8 +28,13 @@ folder: cpus
 | L2 缓存 | 4 MB |
 | L3 缓存 | 32 MB |
 
+```
+FT792081
+```
+
 ![IBM Power 6 正面](/images/cpus/IBM/IBM_Power6_1.jpg)
 ![IBM Power 6 反面](/images/cpus/IBM/IBM_Power6_2.jpg)
 ![IBM Power 6 侧面](/images/cpus/IBM/IBM_Power6_3.jpg)
+![IBM Power 6 和散热器](/images/cpus/IBM/IBM_Power6_4.jpg)
 
 {% include links.html %}
