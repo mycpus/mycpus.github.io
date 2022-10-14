@@ -3,7 +3,7 @@ title:  "CPU大讲堂（5）——上古CPU发展史"
 categories: course
 permalink: computer_lecture_5.html
 tags: [course]
-summary: ""
+summary: "在前面的 CPU 概论结束之后，我们接下来要进入的是一段「历史课程」，本篇介绍 CPU 的上古时代，包含 Intel 的 4004、8008、8080、8085 等进入 x86 架构以前的处理器。"
 ---
 
 在前面的 CPU 概论结束之后，我们接下来要进入的是一段「历史课程」，由于现今 x86 个人计算机处理器只剩下 Intel 与 AMD 两大厂商，因此馆长将只谈这两家的产品，并从 Intel 的第一颗处理器－Intel 4004 开始到最新的 Skylake 与即将出现的 AMD Zen，由于这段历史很长，所以可能会拆成五到七篇文章的量。
@@ -136,6 +136,7 @@ Intel 8008 同时身兼了两个「第一」，Intel 旗下的第一款八位处
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_4.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 

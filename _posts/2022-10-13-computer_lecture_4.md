@@ -103,6 +103,7 @@ VT-d 则是关于 I/O 的虚拟化，因此主要是在芯片组的功能，所�
 <div align="center">
 <p>(未完待续)</p>
 <a href="computer_lecture_3.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_5.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
