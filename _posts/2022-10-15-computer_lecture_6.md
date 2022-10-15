@@ -3,7 +3,7 @@ title:  "CPU大讲堂（6）——中古前期CPU发展史"
 categories: course
 permalink: computer_lecture_6.html
 tags: [course]
-summary: ""
+summary: "延续上一节的主题，本节馆长要谈的是「中古时期前半」的个人计算机 CPU 发展史，从这里开始就进入 x86 指令集架构的时代了，后来你所能见到的个人计算机 CPU 几乎都奠基于此。"
 ---
 
 延续上一节的主题，本节馆长要谈的是「中古时期前半」的个人计算机 CPU 发展史，从这里开始就进入 x86 指令集架构的时代了，后来你所能见到的个人计算机 CPU 几乎都奠基于此 (即使是最新的 Skylake Intel Core i7)，这段时间的产品具有多重大的意义自然也就不言可喻了，这段时期与上一节相同，当时的 AMD 还是以生产与 Intel 兼容 (其实说白了就是照抄) 的处理器为生的。
@@ -249,6 +249,7 @@ Intel 80386 有数个不同版本，其中 DX 是完整的版本，具有 32 位
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_4.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
