@@ -11,11 +11,18 @@ folder: cpus
 
 ## 我的收藏
 
-### IBM93 09K0106 PQ
+### IBM 9314 03H9515 ESD
+
+IBM 视频芯片图形 GPU。
+
+![IBM 9314 03H9515 ESD 正面](/images/cpus/IBM/IBM_9314_03H9515_ESD_1.jpg)
+![IBM 9314 03H9515 ESD 反面](/images/cpus/IBM/IBM_9314_03H9515_ESD_2.jpg)
+
+### IBM 93 09K0106 PQ
 
 暂时没有查到这款 CPU 的有关数据。有知道的朋友，麻烦在评论区留言告知一声。
 
-![IBM93 09K0106 PQ 正面](/images/cpus/IBM/IBM93_09K0106_PQ_1.jpg)
-![IBM93 09K0106 PQ 反面](/images/cpus/IBM/IBM93_09K0106_PQ_2.jpg)
+![IBM 93 09K0106 PQ 正面](/images/cpus/IBM/IBM93_09K0106_PQ_1.jpg)
+![IBM 93 09K0106 PQ 反面](/images/cpus/IBM/IBM93_09K0106_PQ_2.jpg)
 
 {% include links.html %}
