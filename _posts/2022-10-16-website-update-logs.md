@@ -5,6 +5,12 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2022-10-16**
+
+- 新增 Intel NT80386DX33 处理器。
+- 新增 IBM 9314 03H9515 ESD 芯片。
+- 新增 NVIDIA GeForce Go6600 NPB 128M 图形处理器。
+
 **2022-10-14**
 
 - 新增 IBM Power 6 处理器。
