@@ -434,4 +434,12 @@ entries:
       output: web, pdf
 
 
+  - title: GPU
+    output: web, pdf
+
+    folderitems:
+    - title: NVDIA
+      url: /NVDIA.html
+      output: web, pdf
+
 # Copyright 2021 Google LLC
