@@ -13,7 +13,7 @@ folder: cpus
 
 ### IBM 9314 03H9515 ESD
 
-IBM 视频芯片图形 GPU。
+可能是 IBM 视频芯片图形 GPU。
 
 ![IBM 9314 03H9515 ESD 正面](/images/cpus/IBM/IBM_9314_03H9515_ESD_1.jpg)
 ![IBM 9314 03H9515 ESD 反面](/images/cpus/IBM/IBM_9314_03H9515_ESD_2.jpg)
