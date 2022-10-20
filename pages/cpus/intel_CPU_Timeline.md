@@ -1,3 +1,8 @@
+---
+last_updated: Oct 20, 2022
+permalink: intel_CPU_Timeline.html
+---
+
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
