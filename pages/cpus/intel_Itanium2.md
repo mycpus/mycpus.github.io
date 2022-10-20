@@ -1,5 +1,5 @@
 ---
-title: Intel Itanium 2*
+title: Intel Itanium 2 Processor*
 tags: [Intel, Itanium]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, RapidCAD, Itanium
 last_updated: Oct 20, 2022
@@ -25,7 +25,7 @@ Itanium 2 最大的支持者仍是 HP，该公司已经计划将高阶 Unix 服�
 | 工作电压 | 0.95 V |
 | 主频 | 900MHz - 1600MHz |
 
-![Intel Itanium 2](/images/cpus/Intel/Itanium-a.jpg)
-![Intel Itanium 2](/images/cpus/Intel/Itanium-b.jpg)
+![Intel Itanium 2](/images/cpus/Intel/Itanium2-a.jpg)
+![Intel Itanium 2](/images/cpus/Intel/Itanium2-b.jpg)
 
 {% include links.html %}
