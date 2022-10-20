@@ -4,6 +4,6 @@ sidebar: cpu_sidebar
 permalink: intel_CPU_Timeline.html
 ---
 
-<script>
+<script type="text/javascript">
     window.location = '/pages/cpus/intel_CPU_Timeline_Real.html'
 </script>
