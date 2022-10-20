@@ -84,8 +84,8 @@ To perform properly, the Pentium OverDrive was dependent on a high amount of sec
 | 步进 | SU082  V1.0 |
 | 生产日期 | 07/1996 |
 
-![Intel PODP5V83](/images/cpus/Intel/PODP5V133-CPGA-F.jpg)
-![Intel PODP5V83](/images/cpus/Intel/PODP5V133-CPGA-R.jpg)
+![Intel PODP5V133](/images/cpus/Intel/PODP5V133-CPGA-F.jpg)
+![Intel PODP5V133](/images/cpus/Intel/PODP5V133-CPGA-R.jpg)
 
 ---------
 
@@ -93,9 +93,63 @@ To perform properly, the Pentium OverDrive was dependent on a high amount of sec
 
 #### Intel PODP3V125
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80502 Upgrade |
+| Socket | 7 |
+| 主频 | 125 MHz |
+| 外频 | 50 MHz |
+| 倍频 | x 2.5 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 16 Kb (8/8) |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SU081  V1.0 |
+| 生产日期 | 12/1996 |
+
+![Intel PODP3V125](/images/cpus/Intel/PODP3V125-CPGA-F.jpg)
+![Intel PODP3V125](/images/cpus/Intel/PODP3V125-CPGA-R.jpg)
+
 #### Intel PODP3V150
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80502 Upgrade |
+| Socket | 7 |
+| 主频 | 150 MHz |
+| 外频 | 60 MHz |
+| 倍频 | x 2.5 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 16 Kb (8/8) |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SU083  V1.0 |
+| 生产日期 | 07/1996 |
+
+![Intel PODP3V150](/images/cpus/Intel/PODP3V150-CPGA-F.jpg)
+![Intel PODP3V150](/images/cpus/Intel/PODP3V150-CPGA-R.jpg)
+
 #### Intel PODP3V166
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80502 Upgrade |
+| Socket | 7 |
+| 主频 | 166 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2.5 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 16 Kb (8/8) |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SU084  V1.0 |
+| 生产日期 | 12/1996 |
+
+![Intel PODP3V166](/images/cpus/Intel/PODP3V166-CPGA-F.jpg)
+![Intel PODP3V166](/images/cpus/Intel/PODP3V166-CPGA-R.jpg)
 
 ---------
 
@@ -103,12 +157,102 @@ To perform properly, the Pentium OverDrive was dependent on a high amount of sec
 
 #### Intel PODPMT60X150
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80503 Upgrade |
+| Socket | 7 |
+| 主频 | 150 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2.5 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 32 Kb (16/16) |
+| 晶体管 | 4,500,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SL24V  V1.0 |
+| 生产日期 | 18/1997 |
+
+![Intel PODPMT60X150](/images/cpus/Intel/PODPMT60x150MMX-CPGA-F.jpg)
+![Intel PODPMT60X150](/images/cpus/Intel/PODPMT60x150MMX-CPGA-R.jpg)
+
 #### Intel PODPMT66X166
 
-#### Intel PODPMT60X180
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80503 Upgrade |
+| Socket | 7 |
+| 主频 | 166 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 2.5 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 32 Kb (16/16) |
+| 晶体管 | 4,500,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SL24W  V1.1 |
+| 生产日期 | 24/1997 |
+
+![Intel PODPMT66X166](/images/cpus/Intel/PODPMT66x166MMX-CPGA-F.jpg)
+![Intel PODPMT66X166](/images/cpus/Intel/PODPMT66x166MMX-CPGA-R.jpg)
 
 #### Intel PODPMT60X180
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80503 Upgrade |
+| Socket | 7 |
+| 主频 | 180 MHz |
+| 外频 | 60 MHz |
+| 倍频 | x 3.0 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 32 Kb (16/16) |
+| 晶体管 | 4,500,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SL2FE  V2.0 |
+| 生产日期 | 30/1997 |
+
+![Intel PODPMT60X180](/images/cpus/Intel/PODPMT60x180MMX-SL2FE-CPGA-F.jpg)
+![Intel PODPMT60X180](/images/cpus/Intel/PODPMT60x180MMX-SL2FE-CPGA-R.jpg)
+
+#### Intel PODPMT60X180
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80503 Upgrade |
+| Socket | 7 |
+| 主频 | 180 MHz |
+| 外频 | 60 MHz |
+| 倍频 | x 3.0 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 32 Kb (16/16) |
+| 晶体管 | 4,500,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SL2FE  V2.1 |
+| 生产日期 | 03/1998 |
+
+![Intel PODPMT60X180](/images/cpus/Intel/PODPMT60x180MMX-CPGA-F.jpg)
+![Intel PODPMT60X180](/images/cpus/Intel/PODPMT60x180MMX-CPGA-R.jpg)
 
 #### Intel PODPMT66X200
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80503 Upgrade |
+| Socket | 7 |
+| 主频 | 200 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 3.0 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 32 Kb (16/16) |
+| 晶体管 | 4,500,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SL2RM  V2.1 |
+| 生产日期 | 05/1998 |
+
+![Intel PODPMT60X180](/images/cpus/Intel/PODPMT66x200MMX-CPGA-F.jpg)
+![Intel PODPMT60X180](/images/cpus/Intel/PODPMT66x200MMX-CPGA-R.jpg)
 
 {% include links.html %}
