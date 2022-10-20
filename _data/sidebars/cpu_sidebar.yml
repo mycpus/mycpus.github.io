@@ -40,10 +40,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Timeline
-      url: /pages/cpus/intel_CPU_Timeline.html
-      output: web, pdf
-
     - title: 3002
       url: /intel_3002.html
       output: web, pdf
@@ -199,6 +195,10 @@ entries:
 
     - title: Other
       url: /intel_Other.html
+      output: web, pdf
+
+    - title: Timeline
+      url: /pages/cpus/intel_CPU_Timeline.html
       output: web, pdf
 
 
