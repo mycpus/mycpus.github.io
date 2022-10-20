@@ -33,12 +33,12 @@ Itanium 算是满新的产品，但是因为取得并不是很容易。因为 It
 
 ### Intel Itanium 533Mhz 2048KB Engineering Sample (80541KZ5332M ES)
 
-![Intel RapidCAD](/images/cpus/Intel/Itanium_80541KZ5332M.jpg)
+![Intel Itanium](/images/cpus/Intel/Itanium_80541KZ5332M.jpg)
 
 ---------
 
 ### Intel Itanium 733Mhz 2048KB (80541KZ7332M) 
 
-![Intel RapidCAD](/images/cpus/Intel/Itanium_80541KZ7332M.jpg)
+![Intel Itanium](/images/cpus/Intel/Itanium_80541KZ7332M.jpg)
 
 {% include links.html %}
