@@ -40,6 +40,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: Timeline
+      url: /intel_CPU_Timeline.html
+      output: web, pdf
+
     - title: 3002
       url: /intel_3002.html
       output: web, pdf
