@@ -26,6 +26,7 @@ allowed-tags:
   - Celeron
   - Cyrix
   - Xeon
+  - OverDrive
   - RISC
   - VIA
   - TI
