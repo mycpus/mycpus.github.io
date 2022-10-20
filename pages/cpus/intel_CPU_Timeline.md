@@ -1,5 +1,6 @@
 ---
 last_updated: Oct 20, 2022
+sidebar: cpu_sidebar
 permalink: intel_CPU_Timeline.html
 ---
 
@@ -8,12 +9,6 @@ xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset="utf-8">
-<meta name="description" content="Intel CPU 时间轴，英特尔处理器发展时间节点。">
-<meta name=ProgId content=Excel.Sheet>
-<meta name=Generator content="Microsoft Excel 15">
-<title>Intel CPU Timeline | Intel处理器时间轴 | CPU在线博物馆</title>
-<link rel=File-List href="IntelTimeline-Dateien/filelist.xml">
 <style id="IntelTimeline_12172_Styles">
 <!--table
 	{mso-displayed-decimal-separator:"\,";
@@ -30524,137 +30519,6 @@ Informationen zwischen den DIV-Etiketten ersetzt.-->
   <td class=xl7912172></td>
   <td class=xl7912172></td>
  </tr>
- <![if supportMisalignedColumns]>
- <tr height=0 style='display:none'>
-  <td width=14 style='width:10pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
-  <td width=14 style='width:11pt'></td>
- </tr>
- <![endif]>
 </table>
 
 </div>
