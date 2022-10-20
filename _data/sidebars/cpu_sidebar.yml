@@ -88,6 +88,10 @@ entries:
       url: /intel_80386.html
       output: web, pdf
 
+    - title: RapidCAD*
+      url: /intel_RapidCAD.html
+      output: web, pdf
+
     - title: 80486
       url: /intel_80486.html
       output: web, pdf
