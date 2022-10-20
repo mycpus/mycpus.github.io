@@ -205,6 +205,10 @@ entries:
       url: /intel_80960.html
       output: web, pdf
 
+    - title: Itanium
+      url: /intel_Itanium.html
+      output: web, pdf
+
     - title: FPU
       url: /intel_FPU.html
       output: web, pdf
