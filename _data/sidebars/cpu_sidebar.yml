@@ -205,11 +205,11 @@ entries:
       url: /intel_80960.html
       output: web, pdf
 
-    - title: Itanium
+    - title: Itanium*
       url: /intel_Itanium.html
       output: web, pdf
 
-    - title: Itanium 2
+    - title: Itanium 2*
       url: /intel_Itanium2.html
       output: web, pdf
 
