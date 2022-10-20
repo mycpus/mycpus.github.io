@@ -41,7 +41,7 @@ entries:
     folderitems:
 
     - title: Timeline
-      url: /intel_CPU_Timeline.html
+      url: /pages/cpus/intel_CPU_Timeline.html
       output: web, pdf
 
     - title: 3002
