@@ -222,7 +222,7 @@ entries:
       output: web, pdf
 
     - title: Timeline
-      external_url: https://mycpus.github.io/pages/cpus/intel_CPU_Timeline.html
+      url: https://mycpus.github.io/pages/cpus/intel_CPU_Timeline.html
       output: web, pdf
 
 
