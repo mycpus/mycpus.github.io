@@ -214,7 +214,7 @@ entries:
       output: web, pdf
 
     - title: Timeline
-      url: '/pages/cpus/intel_CPU_Timeline.html'
+      external_url: https://mycpus.github.io/pages/cpus/intel_CPU_Timeline.html
       output: web, pdf
 
 
