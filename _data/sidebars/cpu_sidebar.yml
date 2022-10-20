@@ -221,9 +221,7 @@ entries:
       url: /intel_Other.html
       output: web, pdf
 
-    - title: Timeline
-      external_url: /pages/cpus/intel_CPU_Timeline.html
-      output: web, pdf
+
 
 
   - title: AMD
