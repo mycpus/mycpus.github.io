@@ -108,6 +108,10 @@ entries:
       url: /intel_PentiumMMX.html
       output: web, pdf
 
+    - title: Pentium OverDrive*
+      url: /intel_PentiumOverDrive.html
+      output: web, pdf
+
     - title: Pentium Pro
       url: /intel_PentiumPro.html
       output: web, pdf

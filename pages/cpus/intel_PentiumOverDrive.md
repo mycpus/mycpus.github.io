@@ -69,6 +69,24 @@ To perform properly, the Pentium OverDrive was dependent on a high amount of sec
 
 #### Intel PODP5V133 (120)
 
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80501 Upgrade |
+| Socket | 4 |
+| 主频 | 120 / 133 MHz |
+| 外频 | 60 / 66 MHz |
+| 倍频 | x 2.0 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 16 Kb (8/8) |
+| 晶体管 | 3,300,000 |
+| 技术 | Bi-CMOS 0.6 µm |
+| 电压 | 5 V |
+| 步进 | SU082  V1.0 |
+| 生产日期 | 07/1996 |
+
+![Intel PODP5V83](/images/cpus/Intel/PODP5V133-CPGA-F.jpg)
+![Intel PODP5V83](/images/cpus/Intel/PODP5V133-CPGA-R.jpg)
+
 ---------
 
 ### Pentium OverDrive for Socket 5/7 (3.3V)
