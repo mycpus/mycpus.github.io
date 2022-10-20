@@ -1,6 +1,6 @@
 ---
 title: Intel RapidCAD*
-tags: [Intel, RapidCAD]
+tags: [Intel, RapidCAD, OverDrive]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, RapidCAD
 last_updated: Oct 20, 2022
 summary: "英特尔 RapidCAD 处理器于 1992 年推出。这些处理器包括一套 RapidCad-1（在 386 插槽中）和 RapidCad-2（在协处理器插槽中），主要加速 CAD 和渲染领域的应用程序。"
