@@ -5,6 +5,16 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2022-10-20**
+
+- 新增 Intel CPU Timeline 页面。
+- 新增 Intel RapidCAD 介绍页面。
+- 新增 Intel Pentium OverDrive 介绍页面。
+- 新增 Intel Pentium II Xeon 介绍页面。
+- 新增 Intel Pentium II OverDrive 介绍页面。
+- 新增 Intel Itanium 介绍页面。
+- 新增 Intel Itanium 2 介绍页面。
+
 **2022-10-16**
 
 - 新增 Intel NT80386DX33 处理器。
