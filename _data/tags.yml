@@ -27,6 +27,7 @@ allowed-tags:
   - Cyrix
   - Xeon
   - OverDrive
+  - Itanium
   - RISC
   - VIA
   - TI
