@@ -124,6 +124,10 @@ entries:
       url: /intel_PentiumIICeleron.html
       output: web, pdf
 
+    - title: Pentium II OverDrive*
+      url: /intel_PentiumIIOverDrive.html
+      output: web, pdf
+
     - title: Pentium III
       url: /intel_PentiumIII.html
       output: web, pdf
