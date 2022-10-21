@@ -3,6 +3,7 @@ title:  "我为什么收藏 CPU？"
 categories: collection
 permalink: why_do_I_collect_cpu.html
 tags: [blog, collection]
+summary: "关于我为什么会开始收藏CPU的一些随想随笔。"
 ---
 
 ![](/images/blogs/Museum-5-Framed.jpg)
