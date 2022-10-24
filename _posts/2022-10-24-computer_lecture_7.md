@@ -3,7 +3,7 @@ title:  "CPU大讲堂（7）——中古时代后期CPU发展史(上)"
 categories: course
 permalink: computer_lecture_7.html
 tags: [course]
-summary: ""
+summary: "本节要谈的是俗称 586 世代的部分，从这里开始也是 x86 CPU 发展史真正要开始有趣的地方，一方面是 AMD 终于开始研制自家设计的 CPU 了，另一方面则是计算机信息科技产业的发展差不多就是在此时正式进入突飞猛进的阶段。"
 ---
 
 来到 CPU 发展史的第三回，本节馆长要谈的是俗称 586 世代的部分，馆长在划分上称其为「中古时代后期」，比起前面那些过于古老的「收藏品」，进入这个阶段以后，大家应该会觉得比较有亲切感、比较熟悉一些吧？实际上从这里开始也是 x86 CPU 发展史真正要开始有趣的地方，一方面是 AMD 终于开始研制自家设计的 CPU 了，另一方面则是计算机信息科技产业的发展差不多就是在此时正式进入突飞猛进的阶段。
@@ -360,6 +360,7 @@ K5 的设计其实以当时来说是相当先进的，比起与 Pentium 相似�
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_6.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
