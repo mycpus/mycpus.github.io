@@ -8,7 +8,7 @@ summary: "AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II
 
 # 中古时代后期－个人计算机开始普及的时代 (中)
 
-## 绝地反攻：AMD K6AMD_K6_logo
+## 绝地反攻：AMD K6
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/AMD_K6_logo.png">
@@ -117,13 +117,12 @@ Pentium II 长得与以往的处理器相差非常远，是做成有点像游戏
 
 如同前面说过的，改成卡匣设计之后 Intel 可以很容易的透过抽换快取来生产不同等级的 CPU，实际上这就是后来 Celeron、Pentium II、Pentium II Xeon 的由来与差别。
 
- - Celeron
-> 最便宜，可能没有 L2 快取 (前期)，或是快取大小比 Pentium II 小 (通常是减半)，使用 Slot 1 插槽。
- - Pentium II
-> 主流市场战线的武器，具有 L2 快取，但 L2 快取的速度只有 CPU 核心的一半，使用 Slot 1 插槽。
- - Pentium II Xeon
-> 面对服务器市场与旗舰市场的产品，具有全速的 L2 快取，使用较长的 Slot 2 插槽。
-这个时期里 Xeon 还不是独立的系列，只是 Pentium 品牌下的一种型号识别罢了。
+ - Celeron <br>
+    最便宜，可能没有 L2 快取 (前期)，或是快取大小比 Pentium II 小 (通常是减半)，使用 Slot 1 插槽。
+ - Pentium II <br>
+    主流市场战线的武器，具有 L2 快取，但 L2 快取的速度只有 CPU 核心的一半，使用 Slot 1 插槽。
+ - Pentium II Xeon <br>
+    面对服务器市场与旗舰市场的产品，具有全速的 L2 快取，使用较长的 Slot 2 插槽。这个时期里 Xeon 还不是独立的系列，只是 Pentium 品牌下的一种型号识别罢了。
 
 ### 第一代：Klamath (80522)
 
