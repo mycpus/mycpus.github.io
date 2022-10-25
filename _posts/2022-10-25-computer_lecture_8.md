@@ -3,7 +3,7 @@ title:  "CPU大讲堂（8）——中古时代后期CPU发展史(中)"
 categories: course
 permalink: computer_lecture_8.html
 tags: [course]
-summary: ""
+summary: "AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构瑞出了 Pentium II 在市场上大获成功。"
 ---
 
 # 中古时代后期－个人计算机开始普及的时代 (中)
@@ -352,6 +352,7 @@ Chomper Extended 核心与 Chomper 之间差距并不明显，主要是频率的
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_7.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 

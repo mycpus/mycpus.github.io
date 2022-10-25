@@ -361,6 +361,7 @@ K5 的设计其实以当时来说是相当先进的，比起与 Pentium 相似�
 <div align="center">
 <p>(未完待续)</p>
 <a href="computer_lecture_6.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_8.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
