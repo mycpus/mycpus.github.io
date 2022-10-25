@@ -3,7 +3,7 @@ title:  "CPU大讲堂（8）——中古时代后期CPU发展史(中)"
 categories: course
 permalink: computer_lecture_8.html
 tags: [course]
-summary: "AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构瑞出了 Pentium II 在市场上大获成功。"
+summary: "AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构推出了 Pentium II 在市场上大获成功。"
 ---
 
 # 中古时代后期－个人计算机开始普及的时代 (中)
