@@ -3,10 +3,10 @@ title:  "CPU大讲堂（9）——中古时代后期CPU发展史(下)"
 categories: course
 permalink: computer_lecture_9.html
 tags: [course]
-summary: ""
+summary: "本节将继续延续上一节的内容，要介绍的有 Intel 的 Pentium III 家族、AMD 的 K6-III 与 Athlon 家族三大系列。"
 ---
 
-本节将继续延续上一节的内容，预计要介绍的有 Intel 的 Pentium III 家族、AMD 的 K6-III 与 Athlon 家族三大系列 (嗯，我自己也知道，如果要把 Pentium 4 放在这篇字数绝对会破万 XD)。
+本节将继续延续上一节的内容，要介绍的有 Intel 的 Pentium III 家族、AMD 的 K6-III 与 Athlon 家族三大系列 (嗯，我自己也知道，如果要把 Pentium 4 放在这篇字数绝对会破万 XD)。
 
 由于篇幅有限，从本篇开始馆长基本上不会提行动版的部分，除非是非常具有代表性或自成一线的产品 (例如 Pentium M)。
 
@@ -476,6 +476,7 @@ Tualatin 是 Pentium III 的最后一次更新，一般被认为只是 Intel 用
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_8.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
