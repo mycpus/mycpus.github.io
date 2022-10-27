@@ -3,7 +3,7 @@ title:  "CPU大讲堂（10）——近代前期CPU发展史(上) Netburst 架构
 categories: course
 permalink: computer_lecture_10.html
 tags: [course]
-summary: ""
+summary: "从这一节开始将进入近代的 CPU 介绍，本篇谈的是 Intel 的 Netburst (P68) 架构。"
 ---
 
 在经过四节的中古时代 CPU 发展史之后，从现在开始站长将进入近代的 CPU 介绍，从这篇开始出现的处理器应该就是目前绝大多数人都听过的产品了，不过由于有几款处理器架构的发展历史特别曲折离奇，衍伸型特别繁多，加上站长希望能够使用「略古详今」的方式来解说历代的处理器架构，因此近代前期的部分站长打算采用一篇一架构的方式介绍，本篇谈的是 Intel 的 Netburst (P68) 架构，至于 AMD 的 K8 架构则会是下一篇的主题。
@@ -375,6 +375,7 @@ Pentium D 是 Intel 的第一款消费性双核心 x86 处理器，同样基于 
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_9.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
