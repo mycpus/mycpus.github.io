@@ -376,6 +376,7 @@ Pentium D 是 Intel 的第一款消费性双核心 x86 处理器，同样基于 
 <div align="center">
 <p>(未完待续)</p>
 <a href="computer_lecture_9.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_11.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 

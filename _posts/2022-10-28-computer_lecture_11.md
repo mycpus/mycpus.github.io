@@ -3,7 +3,7 @@ title:  "CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 �
 categories: course
 permalink: computer_lecture_11.html
 tags: [course]
-summary: ""
+summary: "上篇讲 Intel 的 Netburst 架构时代 (2000 ~ 2006)，本篇自然就是讲 Intel 永远的 (同时也是现在唯一的) x86 处理器对手 AMD 同时期的历史。"
 ---
 
 
@@ -212,6 +212,7 @@ AMD K8 架构进入双核心世代的时间也比 Intel 早，当 AMD 推出第�
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_10.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
