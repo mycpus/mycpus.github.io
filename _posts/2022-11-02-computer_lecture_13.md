@@ -1,5 +1,5 @@
 ---
-title:  "CPU大讲堂（13）——奈米近代中期CPU发展史(二) Intel Core 架构"
+title:  "CPU大讲堂（13）——纳米近代中期CPU发展史(二) Intel Core 架构"
 categories: course
 permalink: computer_lecture_13.html
 tags: [course]
@@ -29,7 +29,7 @@ summary: ""
     <img src="../images/blogs/computer_lecture/intelcore_lg.jpg" alt="intelcore_lg"/>
 </div>
 
-第一款基于 Core 架构的处理器是 Core 2 Duo，相较于前做 Yonah 而言比较明显的差异是 L2 快取大小的大幅提升与纳入早已出现在晚期 Netburst 架构产品中出现的 EM64T。
+第一款基于 Core 架构的处理器是 Core 2 Duo，相较于前做 Yonah 而言比较明显的差异是 L2 缓存大小的大幅提升与纳入早已出现在晚期 Netburst 架构产品中出现的 EM64T。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/architecture.jpg" alt="architecture"/>
@@ -78,7 +78,7 @@ Intel 在宣传 Core 架构时主要强调这五个新特性：
 
  - 宽带动态执行技术 (Wide Dynamic Execution)
  - 智能型内存存取技术 (Smart Memory Access)
- - 进阶智能型快取 (Advanced Smart Cache)
+ - 进阶智能型缓存 (Advanced Smart Cache)
  - 进阶数字媒体增强技术 (Advanced Digital Media Boost)
  - 智能型电源管理功能 (Intellignet Power Capability)
 
@@ -106,17 +106,17 @@ Intel 在宣传 Core 架构时主要强调这五个新特性：
 
 尽管宏融合支持的指令种类相当有限，能融合的情况下也有很多条件要求 (例如必须连续、一个频率周期内只能融合一组、被融合的第一条指令中必须至少用到一个缓存器等)，但由于实务上符合条件的情况在编译完成之后的程序中非常常见，因此对性能的提升是可见的 (而且不需要重新编译就能享受到提升)，之后历代的 Core 处理器也几乎都会对宏融合这项功能进行强化，足见这项功能的重要性。
 
-### 进阶智能型快取 (Advanced Smart Cache)
+### 进阶智能型缓存 (Advanced Smart Cache)
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/ASC.jpg" alt="ASC"/>
 </div>
 
-其实这项技术说穿了就是两个核心共享一个大的 L2 快取，从而降低 L2 快取的失误率 (miss rate)，因为以前各自使用专属 L2 快取的时候经常会发生 Core 1 需要的数据在 Core 2 的 L2 快取，或是反过来，而这种情况会导致 L2 快取失误，以致于需要向较慢的记忆体重新取得数据，而且出现在错误位置的数据反而变成占用该核心所属 L2 快取，连带也让另一个核心的 L2 快取失误率拉高。
+其实这项技术说穿了就是两个核心共享一个大的 L2 缓存，从而降低 L2 缓存的失误率 (miss rate)，因为以前各自使用专属 L2 缓存的时候经常会发生 Core 1 需要的数据在 Core 2 的 L2 缓存，或是反过来，而这种情况会导致 L2 缓存失误，以致于需要向较慢的记忆体重新取得数据，而且出现在错误位置的数据反而变成占用该核心所属 L2 缓存，连带也让另一个核心的 L2 缓存失误率拉高。
 
-而且很多时候其实两个核心的负载不会刚好平分，改成共享快取可以让处理器动态分配，给负载较高或需要较多快取的核心更多资源 (不论是快取大小或带宽)。
+而且很多时候其实两个核心的负载不会刚好平分，改成共享缓存可以让处理器动态分配，给负载较高或需要较多缓存的核心更多资源 (不论是缓存大小或带宽)。
 
-**要注意的是，今日 Intel CPU 的 Smart Cache 其实是指 L3 共享快取 (以 Skylake 为例，L2 是每个核心各自专属的)，但在 Core 2 的时代指的则是 L2。**
+**要注意的是，今日 Intel CPU 的 Smart Cache 其实是指 L3 共享缓存 (以 Skylake 为例，L2 是每个核心各自专属的)，但在 Core 2 的时代指的则是 L2。**
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/smart-cache.png" alt="smart-cache"/>
@@ -140,9 +140,9 @@ Intel 在宣传 Core 架构时主要强调这五个新特性：
     <img src="../images/blogs/computer_lecture/SMA.jpg" alt="SMA"/>
 </div>
 
-这部分比较难解释，主要是关于 Core 架构降低数据存取延迟对系统性能影响的努力，例如用上 8-Way 的 L1 Cache、16-Way 的超大 L2 快取等，并放弃了过去 Netburst 架构设计的追踪快取 (Trace Cache) 设计。
+这部分比较难解释，主要是关于 Core 架构降低数据存取延迟对系统性能影响的努力，例如用上 8-Way 的 L1 Cache、16-Way 的超大 L2 缓存等，并放弃了过去 Netburst 架构设计的追踪缓存 (Trace Cache) 设计。
 
-Core 架构中，每个核心有四组预取器 (Prefetcher)，其中一组负责预取指令，一组负责预取 L2 快取，两组负责内存预取，让处理器有能力「学习」最佳的数据存取方式以降低延迟。
+Core 架构中，每个核心有四组预取器 (Prefetcher)，其中一组负责预取指令，一组负责预取 L2 缓存，两组负责内存预取，让处理器有能力「学习」最佳的数据存取方式以降低延迟。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/smart-mem.png" alt="smart-mem"/>
@@ -174,7 +174,7 @@ Intel 在 2008 年依照 Tick-Tock 战略规划的预期，推出了称为 Penry
     <img src="../images/blogs/computer_lecture/eicm.png" alt="eicm"/>
 </div>
 
-主要比较明显的新特性是新加入的 SSE4.1 指令集、更快的前端总线 (FSB) 与更大的 L2 快取 (加大 50%)、速度更快的 Radix-16 除法器，除了这些之外，Intel 表示在虚拟化技术的性能上也有提升。
+主要比较明显的新特性是新加入的 SSE4.1 指令集、更快的前端总线 (FSB) 与更大的 L2 缓存 (加大 50%)、速度更快的 Radix-16 除法器，除了这些之外，Intel 表示在虚拟化技术的性能上也有提升。
 
 # 结语
 

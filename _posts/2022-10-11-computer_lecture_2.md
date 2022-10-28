@@ -58,7 +58,7 @@ TDP 的全名是 Thermal Design Power，意思是「热设计功耗」，是设�
 
 - **Technology**
 
-此字段显示的是 CPU 的制造工艺，几奈米制程之类的。
+此字段显示的是 CPU 的制造工艺，几纳米制程之类的。
 
 - **Core Voltage**
 

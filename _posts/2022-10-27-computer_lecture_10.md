@@ -26,9 +26,9 @@ Netburst 架构的开发代号为 P68，是 Intel 开发用于接替 P6 架构�
 
 在 Netburst 架构中，处理器内的算术逻辑单元 (ALU) 会以处理器主频的两倍频率运行，这个技术被命名为 Rapid Execution Engine，目的是缓解 Netburst 架构低落的 IPC (Instructions per cycle, 每周期可执行命令数) 带来的问题，但 REE 并没有办法在任何情况都能抵销 Netburst 架构低落的 IPC，有时候在执行某些指令时，甚至反而会因 REE 设计而拖慢运行效率。
 
-## 执行追踪快取 (Execution Trace Cache)
+## 执行追踪缓存 (Execution Trace Cache)
 
-在 Netburst 架构中，Intel 在 L1 快取新增了执行追踪快取这项功能，ETC 会将指令译码之后的 micro-OPs 依照其预测的执行路径暂存于快取中，而当处理器在执行其他指令时，如果 ETC 内已经有译码过的结果，就不必重复进行 Fetch 与 Decode 的操作，且当指令被 CPU 从快取中读取时，就直接可得到正确的执行顺序，从而提升效率。
+在 Netburst 架构中，Intel 在 L1 缓存新增了执行追踪缓存这项功能，ETC 会将指令译码之后的 micro-OPs 依照其预测的执行路径暂存于缓存中，而当处理器在执行其他指令时，如果 ETC 内已经有译码过的结果，就不必重复进行 Fetch 与 Decode 的操作，且当指令被 CPU 从缓存中读取时，就直接可得到正确的执行顺序，从而提升效率。
 
 ## 由失败走向成功，又从成功坠入失败：Pentium 4 家族
 
@@ -46,8 +46,8 @@ Netburst 家族的起头与代表自然是曾经叱咤风云将近 5 个年头�
  - 运行频率：1.3 GHz ~ 2.0 GHz
  - FSB 频率：100 MHz (QDR 四倍带宽)
  - TDP：48.9 W ~ 75.3 W
- - L1 快取大小：12 KB ETC + 8 KB 资料快取
- - L2 快取大小：256 KB (全速，on-die)
+ - L1 缓存大小：12 KB ETC + 8 KB 数据缓存
+ - L2 缓存大小：256 KB (全速，on-die)
  - 支持插槽：Socket 423 (80528) / Socket 478 (80531)
  - 电压需求：1.56 V ~ 1.70 V
  - 晶体管数：4200 万枚
@@ -89,7 +89,7 @@ Willamette 是第一代的 Pentium 4 核心，基本上是一款相当失败的�
     <p><b>▲ Socket 478 与 Socket 423 比较</b></p>
 </div>
 
-同时在 Willamette 上也可以发现 TDP 的数值开始往上飙升，最高已经来到了 75 瓦以上，而对应 Willamette 核心的 Celeron 低价产品则为 Willamette-128，主要差异为 L2 快取容量减半，与 Pentium 4 Willamette 的性能差异颇大，Willamette-128 在测试中的表现甚至不及上一代的 Celeron (Tualatin-256)。
+同时在 Willamette 上也可以发现 TDP 的数值开始往上飙升，最高已经来到了 75 瓦以上，而对应 Willamette 核心的 Celeron 低价产品则为 Willamette-128，主要差异为 L2 缓存容量减半，与 Pentium 4 Willamette 的性能差异颇大，Willamette-128 在测试中的表现甚至不及上一代的 Celeron (Tualatin-256)。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/XEON_LOGO_1.jpg">
@@ -97,7 +97,7 @@ Willamette 是第一代的 Pentium 4 核心，基本上是一款相当失败的�
     </a>
 </div>
 
-同时此时 Intel 也将 Xeon 产品线从 Pentium 品牌中独立出来，从此自成一个系列，与 Willamette 对应的 Xeon 产品代号为 Forster 与 Forster-MP，前者快取只有 256 KB，远不及于上一代 Cascades 的 2 MB，因此在市场上并未获得青睐。后者则比 Forster 再额外新增一个 2 MB 大小的 L3 快取与引入 Hyper-Threading 技术，但 Forster 与 Forster-MP 使用的是 Socket 603 而非 Socket 423。
+同时此时 Intel 也将 Xeon 产品线从 Pentium 品牌中独立出来，从此自成一个系列，与 Willamette 对应的 Xeon 产品代号为 Forster 与 Forster-MP，前者缓存只有 256 KB，远不及于上一代 Cascades 的 2 MB，因此在市场上并未获得青睐。后者则比 Forster 再额外新增一个 2 MB 大小的 L3 缓存与引入 Hyper-Threading 技术，但 Forster 与 Forster-MP 使用的是 Socket 603 而非 Socket 423。
 
 ### 第 2 代产品：Northwood (80534)
 
@@ -105,8 +105,8 @@ Willamette 是第一代的 Pentium 4 核心，基本上是一款相当失败的�
  - 运行频率：1.6 GHz ~ 3.4 GHz
  - FSB 频率：100, 133, 200 MHz (QDR 四倍带宽，400 ~ 800)
  - TDP：38 W ~ 89 W
- - L1 快取大小：12 KB ETC + 8 KB 资料快取
- - L2 快取大小：512 KB (全速，on-die)
+ - L1 缓存大小：12 KB ETC + 8 KB 数据缓存
+ - L2 缓存大小：512 KB (全速，on-die)
  - 支持插槽：Socket 478
  - 晶体管数：5500 万枚
  - 制造工艺：0.13 微米 (µm)
@@ -120,7 +120,7 @@ Willamette 是第一代的 Pentium 4 核心，基本上是一款相当失败的�
     <p><b>▲ Intel Pentium 4 (Northwood) Die shot</b></p>
 </div>
 
-Northwood 是 Pentium 4 家族中最成功的一代，也是 Pentium 4 红遍大街小巷的时期，大致上 Northwood 与 Willamette 后期产品的差异并不算太大，主要是制程上的提升 (0.18 微米升级至 0.13 微米) 与快取容量加倍，整体而言 Northwood 的生存年代颇长，衍身型也相当多，本次制程提升对 Pentium 4 来说效果十分显著，让频率的上涨空间增大了非常多也暂时缓解了温度的不断飙升。
+Northwood 是 Pentium 4 家族中最成功的一代，也是 Pentium 4 红遍大街小巷的时期，大致上 Northwood 与 Willamette 后期产品的差异并不算太大，主要是制程上的提升 (0.18 微米升级至 0.13 微米) 与缓存容量加倍，整体而言 Northwood 的生存年代颇长，衍身型也相当多，本次制程提升对 Pentium 4 来说效果十分显著，让频率的上涨空间增大了非常多也暂时缓解了温度的不断飙升。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/northwood_size.jpg">
@@ -146,7 +146,7 @@ Northwood 主要可依照 FSB 的速度来分为三期：初期使用与 Willame
     <p><b>▲ Intel Xeon (Prestonia)</b></p>
 </div> 
 
-Prestonia 后来则在 2003 年 03 月被 Gallatin 取代，Gallatin 的主要改进为新增了 1 MB ~ 2 MB 的 L3 快取，MP 版本则支持四处理器配置并将快取加大到 4 MB，全系列均采用 Socket 604。
+Prestonia 后来则在 2003 年 03 月被 Gallatin 取代，Gallatin 的主要改进为新增了 1 MB ~ 2 MB 的 L3 缓存，MP 版本则支持四处理器配置并将缓存加大到 4 MB，全系列均采用 Socket 604。
 
 Socket 604 主板可以向下兼容 Socket 603 的处理器，但 Socket 603 主板则不能使用 Socket 604 处理器。
 
@@ -157,7 +157,7 @@ Socket 604 主板可以向下兼容 Socket 603 的处理器，但 Socket 603 主
     <p><b>▲ Intel Celeron (Northwood-128)</b></p>
 </div>
 
-对应 Northwood 核心的 Celeron 则是 Northwood-128，基本上是快取缩小为 128 KB，并将 FSB 限定为 400 MHz (QDR，实际外频为 100 MHz) 的  Northwood。与同代的 Pentium 4 性能差距比起以往来说拉得更大 (主要是 Northwood 的性能变强，而 Northwood-128 却没有明显成长)。
+对应 Northwood 核心的 Celeron 则是 Northwood-128，基本上是缓存缩小为 128 KB，并将 FSB 限定为 400 MHz (QDR，实际外频为 100 MHz) 的  Northwood。与同代的 Pentium 4 性能差距比起以往来说拉得更大 (主要是 Northwood 的性能变强，而 Northwood-128 却没有明显成长)。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/P4EE.jpg">
@@ -173,19 +173,19 @@ Socket 604 主板可以向下兼容 Socket 603 的处理器，但 Socket 603 主
  - 运行频率：2.4 GHz ~ 3.8 GHz
  - FSB 频率：133, 200 MHz (QDR 四倍带宽，533 ~ 800)
  - TDP：89 W ~ 115 W
- - L1 快取大小：12 KB ETC + 16 KB 资料快取
- - L2 快取大小：1024 KB (全速，on-die)
+ - L1 缓存大小：12 KB ETC + 16 KB 数据缓存
+ - L2 缓存大小：1024 KB (全速，on-die)
  - 支持插槽：Socket 478 (80546) / LGA775 (80547)
  - 晶体管数：1 亿 2500 万枚 / 1 亿 6900 万枚 (Prescott-2M)
- - 制造工艺：90 奈米 (nm)
+ - 制造工艺：90 纳米 (nm)
  - 芯片本体面积：112 mm2 / 135 mm2
  - 指令集：x86-64 (部分型号) + MMX, SSE, SSE2, SSE3
 
 Prescott，或许更多人更熟悉其拥有的「喷火龙」这一称号，是 Netburst 王朝崩毁的开始，也是 Intel 当时对频率无量提升的幻想破灭之时。
 
-随着 Northwood 的频率提升，运行温度与 TDP 渐渐再次达到瓶颈，又因为 Intel 自己也相当清楚，当年 Northwood 的巨大成功很大程度上是来自于制程提升与快取的增加，于是当时 Intel 就认为只要继续提升制程与增加管线深度，就能再继续拉高频率，达到 10 GHz 的目标「并不遥远」(毕竟 Northwood 本质上几乎就是快取加大与制程提升的 Willamette，而 Northwood 最后的频率是 Willamette 的 1.7 倍)。
+随着 Northwood 的频率提升，运行温度与 TDP 渐渐再次达到瓶颈，又因为 Intel 自己也相当清楚，当年 Northwood 的巨大成功很大程度上是来自于制程提升与缓存的增加，于是当时 Intel 就认为只要继续提升制程与增加管线深度，就能再继续拉高频率，达到 10 GHz 的目标「并不遥远」(毕竟 Northwood 本质上几乎就是缓存加大与制程提升的 Willamette，而 Northwood 最后的频率是 Willamette 的 1.7 倍)。
 
-于是我们在 Prescott 核心上我们见识到了在处理器设计上实行「大舰巨炮主义」会是甚么情况。Prescott 对管线深度再次进行提升，直接将管线加到 31 阶，并将 L2 快取再次翻倍来到 1 MB (于是 Prescott 的晶体管数终于破亿了)，同时搭配制程进入 90 奈米工艺，Intel 期盼在 Northwood 上发生的效果再次出现于 Prescott 上，不过显然美好的事情并没有再次发生。
+于是我们在 Prescott 核心上我们见识到了在处理器设计上实行「大舰巨炮主义」会是甚么情况。Prescott 对管线深度再次进行提升，直接将管线加到 31 阶，并将 L2 缓存再次翻倍来到 1 MB (于是 Prescott 的晶体管数终于破亿了)，同时搭配制程进入 90 纳米工艺，Intel 期盼在 Northwood 上发生的效果再次出现于 Prescott 上，不过显然美好的事情并没有再次发生。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/die-shot-prescott.jpg">
@@ -230,7 +230,7 @@ Prescott，或许更多人更熟悉其拥有的「喷火龙」这一称号，是
     <p><b>▲ LGA775 封装的 Pentium 4 背面，不再有针脚，而是 775 个金属点。</b></p>
 </div>
 
-后来 Intel 又在 2005 年推出了 L2 快取增加到 2MB 的 Prescott-2M 核心，划分为 Pentium 4 600 系列，全系列标配 EM64T、EIST 与 NX bit，但本次加倍的快取并没有带来明显的性能提升，另有一款 3.73 GHz，FSB 266 MHz (1066 MT/s) 的产品被命名为 Pentium 4 Extreme Edition 以 999 美金的价格贩卖。
+后来 Intel 又在 2005 年推出了 L2 缓存增加到 2MB 的 Prescott-2M 核心，划分为 Pentium 4 600 系列，全系列标配 EM64T、EIST 与 NX bit，但本次加倍的缓存并没有带来明显的性能提升，另有一款 3.73 GHz，FSB 266 MHz (1066 MT/s) 的产品被命名为 Pentium 4 Extreme Edition 以 999 美金的价格贩卖。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/prescott2m.jpg">
@@ -239,7 +239,7 @@ Prescott，或许更多人更熟悉其拥有的「喷火龙」这一称号，是
     <p><b>▲ Intel Pentium 4 (Prescott-2M) Die shot</b></p>
 </div>
 
-而对应 Prescott 的 Xeon 版本则是 Nocona，推出于 2004 年 06 月 02 日，全系列支持 EM64T 并配备 1 MB L2 快取，但当时表现仍比 AMD 的 Opteron 还要差，后来在 2005 年 02 月 14 日 Intel 推出小幅改进的 Irwindale，对比 Nocona 而言主要的差异仅有快取增加到 2 MB 与自动降频节能技术。
+而对应 Prescott 的 Xeon 版本则是 Nocona，推出于 2004 年 06 月 02 日，全系列支持 EM64T 并配备 1 MB L2 缓存，但当时表现仍比 AMD 的 Opteron 还要差，后来在 2005 年 02 月 14 日 Intel 推出小幅改进的 Irwindale，对比 Nocona 而言主要的差异仅有缓存增加到 2 MB 与自动降频节能技术。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Intel_Xeon_3.0_GHz_Nocona.jpg">
@@ -248,17 +248,17 @@ Prescott，或许更多人更熟悉其拥有的「喷火龙」这一称号，是
     <p><b>▲ Intel Xeon (Nocona)</b></p>
 </div>
 
-至于 Xeon MP 则是有 Cranford 与 Potomac 两种，这两种核心基本上架构上相同，后者则是额外内嵌了 8 MB 的 L3 快取，定位较 Cranford 高。
+至于 Xeon MP 则是有 Cranford 与 Potomac 两种，这两种核心基本上架构上相同，后者则是额外内嵌了 8 MB 的 L3 缓存，定位较 Cranford 高。
 
-对应 Prescott 的 Celeron 核心是 Prescott-256，上市时以新的标志与名称出现，被命名为 Celeron D，由于快取家被提升到了 256 KB，外频也被拉高到 133 MHz，因此此代的 Celeron 性能是有提升的。
+对应 Prescott 的 Celeron 核心是 Prescott-256，上市时以新的标志与名称出现，被命名为 Celeron D，由于缓存家被提升到了 256 KB，外频也被拉高到 133 MHz，因此此代的 Celeron 性能是有提升的。
 
 ### 胎死腹中的 Tejas 与 Jayhawk
 
 原先在 Roadmap 上要接替 Prescott 的产品是 Tejas 这款核心，在 Prescott 开发完成之前就已经开始研发，但由于最后计划被终止因此并没有太多详情。
 
-就目前我们所知道的，Tejas 是比 Prescott 更加极端的设计，具有比 Prescott 更深的管线深度、更大的快取、更快的 FSB (1200 MT/s)，同时被 Intel 赋予 7 GHz 频率的期望，而随着「大舰巨炮主义」发挥到极致的同时，与 Prescott 相似的缺点也就显得更加鲜明，频率几乎没有办法向上提升，甚至有传言大幅提高的温度使 Tejas 的样品在实际测试时极为容易烧毁，几乎没办法使用。
+就目前我们所知道的，Tejas 是比 Prescott 更加极端的设计，具有比 Prescott 更深的管线深度、更大的缓存、更快的 FSB (1200 MT/s)，同时被 Intel 赋予 7 GHz 频率的期望，而随着「大舰巨炮主义」发挥到极致的同时，与 Prescott 相似的缺点也就显得更加鲜明，频率几乎没有办法向上提升，甚至有传言大幅提高的温度使 Tejas 的样品在实际测试时极为容易烧毁，几乎没办法使用。
 
-除此之外 Tejas 还据称包含了第二世代的 Hyper-Threading，原先的一对二设计改为一对四 (一个实体核心具有四个逻辑核心)，同时 L1 快取也配合有所增加。不过这项技术从来没有被证实过，也没有出现在其他 Intel x86 处理器上。
+除此之外 Tejas 还据称包含了第二世代的 Hyper-Threading，原先的一对二设计改为一对四 (一个实体核心具有四个逻辑核心)，同时 L1 缓存也配合有所增加。不过这项技术从来没有被证实过，也没有出现在其他 Intel x86 处理器上。
 
 LGA775 的别名又称为 Socket T，当初就是为了 Tejas 而设计的。而 Xeon 版本的 Tejas 代号则为 Jayhawk，对应的 LGA771 的别名自然就是 Socket J 了。
 
@@ -277,15 +277,15 @@ LGA775 的别名又称为 Socket T，当初就是为了 Tejas 而设计的。而
  - 运行频率：3.0 GHz ~ 3.6 GHz
  - FSB 频率：133, 200 MHz (QDR 四倍带宽，533 ~ 800)
  - TDP：86 W、65 W (D0 步进)
- - L1 快取大小：12 KB ETC + 16 KB 资料快取
- - L2 快取大小：2 MB (全速，on-die)
+ - L1 缓存大小：12 KB ETC + 16 KB 数据缓存
+ - L2 缓存大小：2 MB (全速，on-die)
  - 支持插槽：LGA775
  - 晶体管数：1 亿 8800 万枚
- - 制造工艺：65 奈米 (nm)
+ - 制造工艺：65 纳米 (nm)
  - 芯片本体面积：81 mm2
  - 指令集：x86-64 + MMX, SSE, SSE2, SSE3
 
-Cedar Mill 是 Pentium 4 的最后一次改版，某种程度上应该与 Pentium III 的 Tualatin 核心相似，是用于试验 65 奈米制程的产物。基于这款核心的产品并不多见，基本上与 Prescott-2M 相同，仅为 Prescott-2M 的制程改进版，耗电量与发热量略有改善，而 2006 下半年推出的 D0 步进则更进一步的压低 TDP 来到 65 W，但全系列的 Cedar Mill 核心都不支持 VT-d 技术。
+Cedar Mill 是 Pentium 4 的最后一次改版，某种程度上应该与 Pentium III 的 Tualatin 核心相似，是用于试验 65 纳米制程的产物。基于这款核心的产品并不多见，基本上与 Prescott-2M 相同，仅为 Prescott-2M 的制程改进版，耗电量与发热量略有改善，而 2006 下半年推出的 D0 步进则更进一步的压低 TDP 来到 65 W，但全系列的 Cedar Mill 核心都不支持 VT-d 技术。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/DIE_CedarMill.jpg">
@@ -294,7 +294,7 @@ Cedar Mill 是 Pentium 4 的最后一次改版，某种程度上应该与 Pentiu
     <p><b>▲ Intel Pentium 4 (Cedar Mill) Die shot</b></p>
 </div>
 
-此代比较受到关注的反而是其 Celeron 衍伸型 Cedar Mill-512，由于快取再次加倍因此性能上又比 Prescott-256 来得更好。
+此代比较受到关注的反而是其 Celeron 衍伸型 Cedar Mill-512，由于缓存再次加倍因此性能上又比 Prescott-256 来得更好。
 
 ## 近乎疯狂的尝试：Pentium D 家族
 
@@ -314,11 +314,11 @@ Pentium D 是 Intel 的第一款消费性双核心 x86 处理器，同样基于 
  - 运行频率：2.66 GHz ~ 3.2 GHz
  - FSB 频率：133, 200 MHz (QDR 四倍带宽，533 ~ 800)
  - TDP：95 W、130 W
- - L1 快取大小：12 KB ETC x2 + 16 KB 资料快取 x2
- - L2 快取大小：1 MB x 2 (全速，on-die)
+ - L1 缓存大小：12 KB ETC x2 + 16 KB 数据缓存 x2
+ - L2 缓存大小：1 MB x 2 (全速，on-die)
  - 支持插槽：LGA775
  - 晶体管数：2 亿 2800 万枚
- - 制造工艺：90 奈米 (nm)
+ - 制造工艺：90 纳米 (nm)
  - 芯片本体面积：206 mm2
  - 指令集：x86-64 + MMX, SSE, SSE2, SSE3
 
@@ -344,11 +344,11 @@ Pentium D 是 Intel 的第一款消费性双核心 x86 处理器，同样基于 
  - 运行频率：2.8 GHz ~ 3.73 GHz
  - FSB 频率：200, 266 MHz (QDR 四倍带宽，800 ~ 1066)
  - TDP：95 W、130 W
- - L1 快取大小：12 KB ETC x2 + 16 KB 资料快取 x2
- - L2 快取大小：2 MB x 2 (全速，on-die)
+ - L1 缓存大小：12 KB ETC x2 + 16 KB 数据缓存 x2
+ - L2 缓存大小：2 MB x 2 (全速，on-die)
  - 支持插槽：LGA775
  - 晶体管数：3 亿 6200 万枚
- - 制造工艺：65 奈米 (nm)
+ - 制造工艺：65 纳米 (nm)
  - 芯片本体面积：162 mm2
  - 指令集：x86-64 + MMX, SSE, SSE2, SSE3
 

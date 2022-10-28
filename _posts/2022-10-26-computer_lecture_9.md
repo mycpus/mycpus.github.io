@@ -30,7 +30,7 @@ summary: "本节将继续延续上一节的内容，要介绍的有 Intel 的 Pe
     <p><b>▲ AMD K6-III die shot</b></p>
 </div>
 
-整体而言其实 K6-III 的设计差异大概可以这样解释：「整合了 L2 快取的 K6-2」，虽然用说的很简单，但其实这做起来可困难了，对于生产技术落后于 Intel 的 AMD 来说，硬是要在 0.25 微米制程的 K6-III 中塞入 256 KB 的全速 L2 快取的结局就是生产成本的大幅拉高，良率狂跌与不断的延期 (其实本来预期是 1998 年底就要出了，这导致 K6-III 在市场上的生命周期被压得很短)，因此在 K6-III 上 AMD 赔了不少钱。
+整体而言其实 K6-III 的设计差异大概可以这样解释：「整合了 L2 缓存的 K6-2」，虽然用说的很简单，但其实这做起来可困难了，对于生产技术落后于 Intel 的 AMD 来说，硬是要在 0.25 微米制程的 K6-III 中塞入 256 KB 的全速 L2 缓存的结局就是生产成本的大幅拉高，良率狂跌与不断的延期 (其实本来预期是 1998 年底就要出了，这导致 K6-III 在市场上的生命周期被压得很短)，因此在 K6-III 上 AMD 赔了不少钱。
 
 ### 第一场频率战争
 
@@ -47,8 +47,8 @@ K6-III 曾经短暂推出过 500 MHz 的型号，不过很快就因为发现有�
  - 发布时间：1999 年 02 月 22 日
  - 运行频率：400 MHz、450 MHz
  - FSB 频率：66 / 100 MHz、100 MHz
- - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - L2 快取大小： 256 KB (全速 On-die)
+ - L1 缓存大小：64 KB (数据与指令缓存各 32 KB)
+ - L2 缓存大小： 256 KB (全速 On-die)
  - 支持插槽：Super Socket 7
  - 电压需求：2.2 V、2.4 V
  - 晶体管数：2140 万枚
@@ -73,8 +73,8 @@ K6-III 真的很少见，就算是在网络上其实馆长也有印象当年就�
  - 发布时间：1999 年 05 月 31 日
  - 运行频率：350 MHz ~ 475 MHz
  - FSB 频率：66 MHz ~ 100 MHz
- - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - L2 快取大小： 256 KB (全速 On-die)
+ - L1 缓存大小：64 KB (数据与指令缓存各 32 KB)
+ - L2 缓存大小： 256 KB (全速 On-die)
  - 支持插槽：Super Socket 7
  - 电压需求：2.0 V ~ 2.2 V
  - 晶体管数：2140 万枚
@@ -95,8 +95,8 @@ K6-III 真的很少见，就算是在网络上其实馆长也有印象当年就�
  - 发布时间：2000 年 04 月 18 日
  - 运行频率：450 MHz ~ 570 MHz
  - FSB 频率：95 MHz ~ 100 MHz
- - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - L2 快取大小： 128 KB (全速 On-die)
+ - L1 缓存大小：64 KB (数据与指令缓存各 32 KB)
+ - L2 缓存大小： 128 KB (全速 On-die)
  - 支持插槽：Super Socket 7
  - 电压需求：2.0 V
  - 晶体管数：2140 万枚
@@ -110,15 +110,15 @@ K6-III 真的很少见，就算是在网络上其实馆长也有印象当年就�
     <p><b>▲ AMD K6-2+</b></p>
 </div>
 
-随着时间过去，Intel 产能起来以后，供不应求的状况就解除了，此时 AMD 则将空出来的产线拿来生产制造工艺提升至 0.18 微米的 AMD K6-III，同时加入了 PowerNow! 节电技术 (为了更适合用于笔记本电脑)，并配合良率问题将 L2 快取大小减半之后命名为 K6-2+ 推出。
+随着时间过去，Intel 产能起来以后，供不应求的状况就解除了，此时 AMD 则将空出来的产线拿来生产制造工艺提升至 0.18 微米的 AMD K6-III，同时加入了 PowerNow! 节电技术 (为了更适合用于笔记本电脑)，并配合良率问题将 L2 缓存大小减半之后命名为 K6-2+ 推出。
 
 ### K6-III+
 
  - 发布时间：2000 年 04 月 18 日
  - 运行频率：400 MHz ~ 550 MHz
  - FSB 频率：95 MHz ~ 100 MHz
- - L1 快取大小：64 KB (数据与指令快取各 32 KB)
- - L2 快取大小： 256 KB (全速 On-die)
+ - L1 缓存大小：64 KB (数据与指令缓存各 32 KB)
+ - L2 缓存大小： 256 KB (全速 On-die)
  - 支持插槽：Super Socket 7
  - 电压需求：2.0 V (低电压版为 1.6 V ~ 1.8 V)
  - 晶体管数：2140 万枚
@@ -132,7 +132,7 @@ K6-III 真的很少见，就算是在网络上其实馆长也有印象当年就�
     <p><b>▲ AMD K6-III+</b></p>
 </div>
 
-K6-III+ 基本上与 K6-II+ 几乎完全相同，唯一的差异是 K6-III+ 的快取为未经缩减的 256 KB。
+K6-III+ 基本上与 K6-II+ 几乎完全相同，唯一的差异是 K6-III+ 的缓存为未经缩减的 256 KB。
 
 由于 AMD 当时将宣传完全砸在新的 Athlon 上，对 K6-III 家族采取冷处理的方针，因此除了爱好者与业界之外几乎很少人知道有 K6-III 这系列的存在，更别提后来制程升级后重出江湖的事情，虽然 K6-III+ 与 K6-2+ 在市场划分上都是给笔记本电脑使用，但也有一些 K6-2、K6-III 被拿到 DIY 与桌面计算机市场上贩卖，不过由于宣传很少导致知名度很低，许多人选择买上一代的 K6-2，而不太会去买价格其实差不多的 K6-2+。
 
@@ -184,8 +184,8 @@ Athlon 的浮点性能相比过去的 K6 架构而言有几乎可以称为是巨
  - 发布时间：1999 年 06 月 23 日
  - 运行频率：500 MHz ~ 700 MHz
  - FSB 频率：100 MHz (DDR 双倍带宽)
- - L1 快取大小：128 KB (数据与指令快取各 64 KB)
- - L2 快取大小： 512 KB (半速)
+ - L1 缓存大小：128 KB (数据与指令缓存各 64 KB)
+ - L2 缓存大小： 512 KB (半速)
  - 支持插槽：Slot A (卡匣外型)
  - 电压需求：1.6 V
  - 晶体管数：2200 万枚
@@ -199,7 +199,7 @@ Athlon 的浮点性能相比过去的 K6 架构而言有几乎可以称为是巨
     <p><b>▲ AMD Athlon (Argon) 上方视图</b></p>
 </div>
 
-第一代 Athlon 使用了与 Pentium II、Pentium III 初期产品相当类似的卡匣外型，但 Athlon 所使用的 Slot A 与 Intel 的 Slot 1 并不兼容，同时 Athlon 的 L1 快取大小可说是相当惊人 (即使是从今天的角度来看也是如此)，来到了 128 KB 之多。
+第一代 Athlon 使用了与 Pentium II、Pentium III 初期产品相当类似的卡匣外型，但 Athlon 所使用的 Slot A 与 Intel 的 Slot 1 并不兼容，同时 Athlon 的 L1 缓存大小可说是相当惊人 (即使是从今天的角度来看也是如此)，来到了 128 KB 之多。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/argon-front.jpg">
@@ -208,7 +208,7 @@ Athlon 的浮点性能相比过去的 K6 架构而言有几乎可以称为是巨
     <p><b>▲ AMD Athlon (Argon) 正面，拆除保护壳后</b></p>
 </div>
 
-而不同于 K6-2 架构中快取与内存共享总线的设计，尽管 Athlon 初期产品的 L2 快取仍未整合至核心中 (与 Pentium II 类似，快取芯片放在 CPU 电路板的两侧)，但却使用两条不同的总线，因此内存与快取都能享有更大的带宽而不需要彼此分享。
+而不同于 K6-2 架构中缓存与内存共享总线的设计，尽管 Athlon 初期产品的 L2 缓存仍未整合至核心中 (与 Pentium II 类似，缓存芯片放在 CPU 电路板的两侧)，但却使用两条不同的总线，因此内存与缓存都能享有更大的带宽而不需要彼此分享。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/AMD_Athlon_(Argon)_Die_shot.jpg">
@@ -222,8 +222,8 @@ Athlon 的浮点性能相比过去的 K6 架构而言有几乎可以称为是巨
  - 发布时间：1999 年 11 月 29 日
  - 运行频率：550 MHz ~ 1000 MHz
  - FSB 频率：100 MHz (DDR 双倍带宽)
- - L1 快取大小：128 KB (数据与指令快取各 64 KB)
- - L2 快取大小： 512 KB (根据频率不同，以频率的 50% ~ 33% 运行)
+ - L1 缓存大小：128 KB (数据与指令缓存各 64 KB)
+ - L2 缓存大小： 512 KB (根据频率不同，以频率的 50% ~ 33% 运行)
  - 支持插槽：Slot A (卡匣外型)
  - 电压需求：1.6 V ~ 1.8 V
  - 晶体管数：2200 万枚
@@ -244,8 +244,8 @@ Pluto 基本上就是 Argon 的制程提升版本，除了频率可以拉得更�
  - 发布时间：2000 年 06 月 05 日
  - 运行频率：600 MHz ~ 1400 MHz
  - FSB 频率：100 MHz ~ 133 MHz (DDR 双倍带宽)
- - L1 快取大小：128 KB (数据与指令快取各 64 KB)
- - L2 快取大小： 256 KB (全速，On-die)
+ - L1 缓存大小：128 KB (数据与指令缓存各 64 KB)
+ - L2 缓存大小： 256 KB (全速，On-die)
  - 支持插槽：Socket A ( 462 针脚 FPGA 封装)
  - 电压需求：1.7 V ~ 1.75 V
  - 晶体管数：2200 万枚
@@ -259,7 +259,7 @@ Pluto 基本上就是 Argon 的制程提升版本，除了频率可以拉得更�
     <p><b>▲ AMD Athlon (Thunderbird)</b></p>
 </div>
 
-Thunderbird 可说是 Athlon 的一次标志性的大改版，Thunderbird 舍弃 Slot A 设计，改采大家熟悉的 PGA 封装，同时将 L2 快取减半至 256 KB 但直接整合入 CPU 核心中，使得 L2 快取得以使用与 CPU 主频相同的速度执行，同时快取的访问机制也整个重新设计过，因此性能上又比 Pluto 高出一截，强劲的效能使得 Thunderbird 成为 AMD 有史以来最成功的处理器产品。
+Thunderbird 可说是 Athlon 的一次标志性的大改版，Thunderbird 舍弃 Slot A 设计，改采大家熟悉的 PGA 封装，同时将 L2 缓存减半至 256 KB 但直接整合入 CPU 核心中，使得 L2 缓存得以使用与 CPU 主频相同的速度执行，同时缓存的访问机制也整个重新设计过，因此性能上又比 Pluto 高出一截，强劲的效能使得 Thunderbird 成为 AMD 有史以来最成功的处理器产品。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/AMD_Duron.jpg">
@@ -268,7 +268,7 @@ Thunderbird 可说是 Athlon 的一次标志性的大改版，Thunderbird 舍弃
     <p><b>▲ AMD Duron (Spitfire)</b></p>
 </div>
 
-同时此时 AMD 也针对 Intel Celeron 主攻的低价市场，推出了 Duron 产品线，第一代的 Duron (代号为 Spitfire) 实际上就是 Thunderbird 的简化版，L2 快取大小减为 1/4 (也就是 64 KB)，频率则介于 600 MHz ~ 950 MHz。
+同时此时 AMD 也针对 Intel Celeron 主攻的低价市场，推出了 Duron 产品线，第一代的 Duron (代号为 Spitfire) 实际上就是 Thunderbird 的简化版，L2 缓存大小减为 1/4 (也就是 64 KB)，频率则介于 600 MHz ~ 950 MHz。
 
 ## 被 Athlon 甩到颜面无光：Intel Pentium III
 
@@ -288,8 +288,8 @@ Intel 在 1999 年 02 月 26 日释出了 Pentium III，做为 Pentium II 的后
  - 运行频率：450 MHz ~ 600 MHz
  - FSB 频率：100 MHz ~ 133 MHz
  - TDP：25.3 W ~ 34.5 W
- - L1 快取大小：32 KB (数据与指令快取各 16 KB)
- - L2 快取大小：512 KB (半速，off-die)
+ - L1 缓存大小：32 KB (数据与指令缓存各 16 KB)
+ - L2 缓存大小：512 KB (半速，off-die)
  - 支持插槽：Slot 1 (卡匣外型)
  - 电压需求：2.0 V (600 MHz 型号为 2.05 V)
  - 晶体管数：950 万枚
@@ -303,13 +303,13 @@ Intel 在 1999 年 02 月 26 日释出了 Pentium III，做为 Pentium II 的后
     <p><b>▲ Intel Pentium III (Katmai)</b></p>
 </div>
 
-Katmai 是以 Pentium II 的 Deschutes 核心为基础发展出来的，主要差异在于新增 SSE 指令集与针对 L1 快取控制器的强化，因此性能上比 Deschutes 来说是有所提升的 (但幅度不大)，但受制于 0.25 微米工艺，Katmai 的晶体管数量提升因此受到了不小限制，于是 Intel 在 Katmai 中设计 SSE 时使用了重复使用现有的 64-bit 来实现 SSE 的 128-bit 指令架构，这与 SSE 原始的设计概念有所矛盾，于是当时想针对 SSE 优化的软件面临了两难：到底要依照 Katmai 的折衷设计优化还是要为了未来使用完整 SSE 设计的处理器优化？
+Katmai 是以 Pentium II 的 Deschutes 核心为基础发展出来的，主要差异在于新增 SSE 指令集与针对 L1 缓存控制器的强化，因此性能上比 Deschutes 来说是有所提升的 (但幅度不大)，但受制于 0.25 微米工艺，Katmai 的晶体管数量提升因此受到了不小限制，于是 Intel 在 Katmai 中设计 SSE 时使用了重复使用现有的 64-bit 来实现 SSE 的 128-bit 指令架构，这与 SSE 原始的设计概念有所矛盾，于是当时想针对 SSE 优化的软件面临了两难：到底要依照 Katmai 的折衷设计优化还是要为了未来使用完整 SSE 设计的处理器优化？
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Intel_Pentium_III_Katmai.jpg">
         <img src="../images/blogs/computer_lecture/Intel_Pentium_III_Katmai-375x182.jpg" alt="Intel_Pentium_III_Katmai"/>
     </a>
-    <p><b>▲ Intel Pentium III (Katmai) 正面，中为 CPU 核心，右二为快取芯片。</b></p>
+    <p><b>▲ Intel Pentium III (Katmai) 正面，中为 CPU 核心，右二为缓存芯片。</b></p>
 </div>
 
 Katmai 产品线中型号标示有「B」后缀的型号表示 FSB 的频率为 133 MHz。
@@ -321,7 +321,7 @@ Katmai 产品线中型号标示有「B」后缀的型号表示 FSB 的频率为 
     <p><b>▲ Intel Pentium III Xeon (Tanner)</b></p>
 </div>
 
-而 Xeon 版本的 Katmai 则被命名为 Tanner，基本上关系类似于过去的 Pentium II 与 Pentium II Xeon，主要是快取加大与加速之后的版本，使用 Slot 2 规格，同时随着芯片组与主板的不同，至多可以同时安装四颗 Tanner。
+而 Xeon 版本的 Katmai 则被命名为 Tanner，基本上关系类似于过去的 Pentium II 与 Pentium II Xeon，主要是缓存加大与加速之后的版本，使用 Slot 2 规格，同时随着芯片组与主板的不同，至多可以同时安装四颗 Tanner。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Pentium_III-die.jpg">
@@ -336,8 +336,8 @@ Katmai 产品线中型号标示有「B」后缀的型号表示 FSB 的频率为 
  - 运行频率：500 MHz ~ 1133 MHz
  - FSB 频率：100 MHz ~ 133 MHz
  - TDP：13.2 W ~ 33.0 W
- - L1 快取大小：32 KB (数据与指令快取各 16 KB)
- - L2 快取大小：256 KB (全速，on-die)
+ - L1 缓存大小：32 KB (数据与指令缓存各 16 KB)
+ - L2 缓存大小：256 KB (全速，on-die)
  - 支持插槽：Socket 370 / Slot 1 (卡匣外型)
  - 电压需求：1.6 V ~ 1.75 V
  - 晶体管数：2800 万枚
@@ -360,13 +360,13 @@ Coppermine 核心是系列中第一个真正具备绝大多数 Pentium III 特�
     <p><b>▲ Intel Pentium III (Coppermine) Die shot</b></p>
 </div>
 
-Katmai 与 Pentium II 中受人诟病的管线延迟，在 Coppermine 大幅调整设计之后有了很大的改善 (同时管线深度也由 Pentium Pro 的 14 阶降至 10 阶)，极端状况下可以提高 30% 的性能，同时受益于制程的提升，Intel 在 Coppermine 时期也开始采用将全速的 256 KB L2 快取整合入处理器核心的做法，因此晶体管数大幅倍增到 2,800 万。
+Katmai 与 Pentium II 中受人诟病的管线延迟，在 Coppermine 大幅调整设计之后有了很大的改善 (同时管线深度也由 Pentium Pro 的 14 阶降至 10 阶)，极端状况下可以提高 30% 的性能，同时受益于制程的提升，Intel 在 Coppermine 时期也开始采用将全速的 256 KB L2 缓存整合入处理器核心的做法，因此晶体管数大幅倍增到 2,800 万。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/p3-733_big.jpg">
         <img src="../images/blogs/computer_lecture/p3-733_big-375x190.jpg" alt="p3-733_big"/>
     </a>
-    <p><b>▲ Slot 1 版本的 Coppermine，可以很明显发现快取芯片不见了</b></p>
+    <p><b>▲ Slot 1 版本的 Coppermine，可以很明显发现缓存芯片不见了</b></p>
 </div>
 
 同时 Coppermine 也是 Intel 第一个预设频率突破 1 GHz 的产品，在 2000 年更推出了 1.13 GHz 的版本，但初期有严重的产品不稳定问题因此在上市之后不久就召回，直到 2001 年才重新推出改良后的 D0 步进版本。
@@ -378,7 +378,7 @@ Katmai 与 Pentium II 中受人诟病的管线延迟，在 Coppermine 大幅调�
 
 由于部分型号与 Katmai 重迭，因此部分型号后面新增了「E」后缀以表示为 Coppermine 核心产品，而标示有「B」后缀的型号仍表示 FSB 的频率为 133 MHz，因此有部分型号被标注为「EB」。
 
-基于与 Celeron Mendocino 相同的理由，随着快取被整合入核心芯片当中，Intel 决定放弃 Slot 1 插槽，回归使用 Socket 370 封装 (但无法直接与 Celeron Mendocino 的主板混用，需要转接器)。
+基于与 Celeron Mendocino 相同的理由，随着缓存被整合入核心芯片当中，Intel 决定放弃 Slot 1 插槽，回归使用 Socket 370 封装 (但无法直接与 Celeron Mendocino 的主板混用，需要转接器)。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Celeron_Coppermine-128_600.jpg">
@@ -387,7 +387,7 @@ Katmai 与 Pentium II 中受人诟病的管线延迟，在 Coppermine 大幅调�
     <p><b>▲ Intel Celeron (Coppermine-128)</b></p>
 </div>
 
-至于 Celeron 版本的 Coppermine 则命名为 Coppermine-128，此系列经常被称为「Celeron II」或「Celeron 2」，实际上就是将 L2 快取大小减半之后的 Coppermine，而在 2001 年 800 MHz 版本的 Coppermine-128 上市之前，Coppermine-128 的 FSB 频率只有 66 MHz，但对效能的影响不大。
+至于 Celeron 版本的 Coppermine 则命名为 Coppermine-128，此系列经常被称为「Celeron II」或「Celeron 2」，实际上就是将 L2 缓存大小减半之后的 Coppermine，而在 2001 年 800 MHz 版本的 Coppermine-128 上市之前，Coppermine-128 的 FSB 频率只有 66 MHz，但对效能的影响不大。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Pentium_III_Xeon_Cascades_b.jpg">
@@ -396,7 +396,7 @@ Katmai 与 Pentium II 中受人诟病的管线延迟，在 Coppermine 大幅调�
     <p><b>▲ Intel Pentium III Xeon (Cascades)</b></p>
 </div>
 
-Xeon 版本的 Coppermine 则被命名为 Cascades，主要差异为快取大小 (最大可达 2 MB) 与沿用 Slot 2 插槽设计，其中 700 MHz 与 900 MHz 型号能支持四处理器配置，其余则是至多双处理器配置。
+Xeon 版本的 Coppermine 则被命名为 Cascades，主要差异为缓存大小 (最大可达 2 MB) 与沿用 Slot 2 插槽设计，其中 700 MHz 与 900 MHz 型号能支持四处理器配置，其余则是至多双处理器配置。
 
 ### 第 2.5 代：Coppermine-T (80533)
 
@@ -404,8 +404,8 @@ Xeon 版本的 Coppermine 则被命名为 Cascades，主要差异为快取大小
  - 运行频率：800 MHz ~ 1133 MHz
  - FSB 频率：133 MHz
  - TDP：29.0 W ~ 38.2 W
- - L1 快取大小：32 KB (数据与指令快取各 16 KB)
- - L2 快取大小：256 KB (全速，on-die)
+ - L1 缓存大小：32 KB (数据与指令缓存各 16 KB)
+ - L2 缓存大小：256 KB (全速，on-die)
  - 支持插槽：Socket 370 (FC-PGA2)
  - 电压需求：1.75 V
  - 晶体管数：2800 万枚
@@ -429,8 +429,8 @@ Coppermine-T 是 Coppermine 与 Tualatin 之间交界时期的过渡产品，基
  - 运行频率：1000 MHz ~ 1400 MHz
  - FSB 频率：133 MHz
  - TDP：29.1 W ~ 32.2 W
- - L1 快取大小：32 KB (数据与指令快取各 16 KB)
- - L2 快取大小：256 KB / 512 KB (全速，on-die)
+ - L1 缓存大小：32 KB (数据与指令缓存各 16 KB)
+ - L2 缓存大小：256 KB / 512 KB (全速，on-die)
  - 支持插槽：Socket 370 (FC-PGA2)
  - 电压需求：1.475 V ~ 1.5 V
  - 晶体管数：2800 万枚
@@ -450,10 +450,10 @@ Tualatin 是 Pentium III 的最后一次更新，一般被认为只是 Intel 用
     <a href="../images/blogs/computer_lecture/tualatin_die.jpg">
         <img src="../images/blogs/computer_lecture/tualatin_die-375x239.jpg" alt="tualatin_die"/>
     </a>
-    <p><b>▲ Intel Pentium III-S (Tualatin-512) Die shot，可以看到左半部 512 KB 的 L2 快取占去大量空间</b></p>
+    <p><b>▲ Intel Pentium III-S (Tualatin-512) Die shot，可以看到左半部 512 KB 的 L2 缓存占去大量空间</b></p>
 </div>
 
-其实 Tualatin 的频率还有相当大的发展空间，不过 Intel 担心会打到自家的 Pentium 4，因此并未发行高于 1.4 GHz 的 Tualatin，而同时间完成的 Tualatin-512 具有 512 KB 大小的 L2 快取，同样为了避免上打 Pentium 4，因此被额外赋予了同时可以支持 ECC 内存与双处理器配置的能力与相对高昂的价格，作为针对服务器市场的产品发布。销售时则被命名为 Pentium III-S。
+其实 Tualatin 的频率还有相当大的发展空间，不过 Intel 担心会打到自家的 Pentium 4，因此并未发行高于 1.4 GHz 的 Tualatin，而同时间完成的 Tualatin-512 具有 512 KB 大小的 L2 缓存，同样为了避免上打 Pentium 4，因此被额外赋予了同时可以支持 ECC 内存与双处理器配置的能力与相对高昂的价格，作为针对服务器市场的产品发布。销售时则被命名为 Pentium III-S。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Intel-Pentium-III-S.jpg">
@@ -462,7 +462,7 @@ Tualatin 是 Pentium III 的最后一次更新，一般被认为只是 Intel 用
     <p><b>▲ 外观差异其实不明显，但可以看到上面有 Pentium III-S 字样。</b></p>
 </div>
 
-对应 Tualatin 的 Celeron 核心代号则为 Tualatin-256，有些人会称其为「Celeron-S」或 Tualeron。特性上几乎与具备 256 KB L2 快取的 Tualatin 相同，但 L2 快取的部分采用延迟较大的版本已降低成本，不过这却为 Tualatin-256 带来了十分良好的超频潜能。
+对应 Tualatin 的 Celeron 核心代号则为 Tualatin-256，有些人会称其为「Celeron-S」或 Tualeron。特性上几乎与具备 256 KB L2 缓存的 Tualatin 相同，但 L2 缓存的部分采用延迟较大的版本已降低成本，不过这却为 Tualatin-256 带来了十分良好的超频潜能。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/Tualeron_1200.jpg">

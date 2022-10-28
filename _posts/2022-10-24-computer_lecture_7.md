@@ -33,7 +33,7 @@ Pentium 比起 486 来说进步其实蛮明显的，首先是引入了超纯量�
 
  - 发布时间：1993 年 03 月 22 日
  - 运行频率：60 MHz ~ 66 MHz
- - L1 快取大小：16 KB (数据与指令各 8 KB)
+ - L1 缓存大小：16 KB (数据与指令各 8 KB)
  - 支持插槽：Socket 4 ( 273 针脚 PGA 封装)
  - 电压需求：5 V
  - 晶体管数：310 万枚
@@ -51,7 +51,7 @@ Pentium 比起 486 来说进步其实蛮明显的，首先是引入了超纯量�
     <p><b>▲ Intel Pentium (P5) Die shot</b></p>
 </div>
 
-P5 架构是 Pentium 处理器的第一代产品，产品代码为 80500 (工程样品) 与 80501，有 60 MHz 与 66 MHz 两个版本，使用 5 V 供电，快取也增大到 16 KB，基于 0.8 微米 BiCMOS 制造工艺，包含了 310 万个晶体管 (是前代的将近三倍)，不过 P5 的低频率使其与 486 相比之下的效能优势并不明显，基于 5 V 的供电设计也带来较高的能源消耗。
+P5 架构是 Pentium 处理器的第一代产品，产品代码为 80500 (工程样品) 与 80501，有 60 MHz 与 66 MHz 两个版本，使用 5 V 供电，缓存也增大到 16 KB，基于 0.8 微米 BiCMOS 制造工艺，包含了 310 万个晶体管 (是前代的将近三倍)，不过 P5 的低频率使其与 486 相比之下的效能优势并不明显，基于 5 V 的供电设计也带来较高的能源消耗。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/intel-pentium.jpg"><img src="../images/blogs/computer_lecture/intel-pentium-375x379.jpg" alt="intel-pentium"/></a>
@@ -76,7 +76,7 @@ P5 架构是 Pentium 处理器的第一代产品，产品代码为 80500 (工程
  - 发布时间：1994 年 10 月 10 日
  - 运行频率：75 MHz ~ 120 MHz
  - FSB 频率：50 MHz ~ 60 MHz
- - L1 快取大小：16 KB (数据与指令各 8 KB)
+ - L1 缓存大小：16 KB (数据与指令各 8 KB)
  - 支持插槽：Socket 5 ( 273 针脚 PGA 封装) / Socket 7 ( 321 针脚 PGA 封装)
  - 电压需求：3.3 V
  - 晶体管数：320 万枚
@@ -120,7 +120,7 @@ P5 架构是 Pentium 处理器的第一代产品，产品代码为 80500 (工程
  - 发布时间：1995 年 06 月 10 日
  - 运行频率：133 MHz ~ 200 MHz
  - FSB 频率：60 MHz ~ 66 MHz
- - L1 快取大小：16 KB (数据与指令各 8 KB)
+ - L1 缓存大小：16 KB (数据与指令各 8 KB)
  - 支持插槽：Socket 7 ( 321 针脚 PGA 封装)
  - 电压需求：3.3 V
  - 晶体管数：330 万枚
@@ -149,7 +149,7 @@ P5 架构是 Pentium 处理器的第一代产品，产品代码为 80500 (工程
  - 发布时间：1997 年 01 月 08 日
  - 运行频率：120 MHz ~ 233 MHz
  - FSB 频率：60 MHz ~ 66 MHz
- - L1 快取大小：32 KB (数据与指令快取各 16 KB) 4-way
+ - L1 缓存大小：32 KB (数据与指令缓存各 16 KB) 4-way
  - 支持插槽：Socket 7 ( 321 针脚 PGA 封装)
  - 电压需求：3.3 V
  - 晶体管数：450 万枚
@@ -171,7 +171,7 @@ P55C (产品代码 80503) 是 Pentium 产品线的最后一次改版，同时也
     <p><b>▲ Intel Pentium MMX (P55C) Die shot</b></p>
 </div>
 
-为了弥补管线深度增加造成的分支预测失误率与减少分支预测失误时耗费的时间而强化相关功能并将 L1 快取的大小加倍、由 2-way 改为 4-way，同时芯片的 die size 也因此有明显上升 ( 91 -> 141 )。
+为了弥补管线深度增加造成的分支预测失误率与减少分支预测失误时耗费的时间而强化相关功能并将 L1 缓存的大小加倍、由 2-way 改为 4-way，同时芯片的 die size 也因此有明显上升 ( 91 -> 141 )。
 
 <div align="center">
     <a href="../images/blogs/Pentium-mmx2.jpg">
@@ -210,7 +210,7 @@ P55C (产品代码 80503) 是 Pentium 产品线的最后一次改版，同时也
  - 发布时间：1997 年 08 月
  - 运行频率：166 MHz ~ 300 MHz
  - FSB 频率：66 MHz
- - L1 快取大小：32 KB (数据与指令快取各 16 KB) 4-way
+ - L1 缓存大小：32 KB (数据与指令缓存各 16 KB) 4-way
  - 支持插槽：MMC-1 (280 针便携计算机专用处理器卡匣)
  - 电压需求：2.5 V
  - 晶体管数：450 万枚
@@ -233,8 +233,8 @@ Tillamook 这东西挺特别的，架构上大致与 P55C 相似，是只用于�
  - 运行频率：150 MHz ~ 200 MHz
  - FSB 频率：60 MHz ~ 66 MHz
  - TDP：31.7 W ~ 44 W
- - L1 快取大小：16 KB (数据与指令快取各 8 KB) 4-way
- - L2 快取大小：256 KB / 512 KB / 1 MB
+ - L1 缓存大小：16 KB (数据与指令缓存各 8 KB) 4-way
+ - L2 缓存大小：256 KB / 512 KB / 1 MB
  - 支持插槽：Socket 8 ( 387 针脚 PGA 封装)
  - 电压需求：3.1 V ~ 3.3 V
  - 晶体管数：550 万枚
@@ -253,16 +253,16 @@ Pentium Pro 是 Intel 的第六代 x86 处理器 (有些人会称他为 i686)，
     <a href="../images/blogs/Intel_Pentium_Pro.jpg">
         <img src="../images/blogs/computer_lecture/Intel_Pentium_Pro-375x281.jpg" alt="Intel_Pentium_Pro"/>
     </a>
-    <p><b>▲ 「长方形」的 Intel Pentium Pro，两颗芯片一颗是核心，另一颗是 L2 快取</b></p>
+    <p><b>▲ 「长方形」的 Intel Pentium Pro，两颗芯片一颗是核心，另一颗是 L2 缓存</b></p>
 </div>
 
-Pentium Pro 的改变有很多，其中最鲜明的大概是整合入处理器本体 (这时期 Intel 还没有能力将 L2 快取整合到核心里面，因此只是把核心跟快取两块芯片封装在一起而已) 内的 L2 快取首次出现，从此让对高速内存有庞大需求的乱序执行 (Out-of-order Execution，可以降低管线造成的延迟) 成为可能 (因为 L2 快取纳入 CPU 本身之后就能以与 CPU 相同的频率运行，而以往放在主板上的 L2 快取则只能以 FSB 的频率运行)，对性能提升打下了稳固的基础，而增加到 36-bit 的地址总线则允许 Pentium Pro 寻址高达 64 GB 的内存。
+Pentium Pro 的改变有很多，其中最鲜明的大概是整合入处理器本体 (这时期 Intel 还没有能力将 L2 缓存整合到核心里面，因此只是把核心跟缓存两块芯片封装在一起而已) 内的 L2 缓存首次出现，从此让对高速内存有庞大需求的乱序执行 (Out-of-order Execution，可以降低管线造成的延迟) 成为可能 (因为 L2 缓存纳入 CPU 本身之后就能以与 CPU 相同的频率运行，而以往放在主板上的 L2 缓存则只能以 FSB 的频率运行)，对性能提升打下了稳固的基础，而增加到 36-bit 的地址总线则允许 Pentium Pro 寻址高达 64 GB 的内存。
 
 <div align="center">
     <a href="../images/blogs/Pentium_Pro_Black.jpg">
         <img src="../images/blogs/computer_lecture/Pentium_Pro_Black-375x347.jpg" alt="Pentium_Pro_Black"/>
     </a>
-    <p><b>▲ 馆长觉得这颗快取 1 MB 的顶级版本超帅的，这是最早的「黑盒版」CPU 吧 XD</b></p>
+    <p><b>▲ 馆长觉得这颗缓存 1 MB 的顶级版本超帅的，这是最早的「黑盒版」CPU 吧 XD</b></p>
 </div>
 
 除此之外 Pentium Pro 还引入了一些 RISC 处理器的特性，例如将复杂 x86 指令拆解成 RISC 形式指令或将简单 x86 指令结合成 RISC 形式指令的译码器等 ( x86 处理器全部都是 CISC 复杂指令集处理器)。
@@ -289,7 +289,7 @@ Pentium Pro 的改变有很多，其中最鲜明的大概是整合入处理器�
     <a href="../images/blogs/PPRO_die_shot.jpg">
         <img src="../images/blogs/computer_lecture/PPRO_die_shot-375x379.jpg" alt="PPRO_die_shot"/>
     </a>
-    <p><b>▲ Intel Pentium Pro Die shot<br>(特别注意，L2 快取还没整合到核心上，所以还是看不到现代 CPU 里面大片同色的快取区域)</b></p>
+    <p><b>▲ Intel Pentium Pro Die shot<br>(特别注意，L2 缓存还没整合到核心上，所以还是看不到现代 CPU 里面大片同色的缓存区域)</b></p>
 </div>
 
 然后又加上 Pentium Pro 运行的温度超高 (这也让频率拉不上去)，价格又超贵，集各种卖不出去的因素于一身，因此没多久就从市场上消失了。
@@ -308,8 +308,8 @@ Pentium Pro 的改变有很多，其中最鲜明的大概是整合入处理器�
  - 发布时间：1996 年 03 月 27 日
  - 运行频率：75 MHz ~ 133 MHz
  - FSB 频率：50 MHz ~ 66 MHz
- - L1 快取大小：24 KB (数据快取 8 KB，指令快取 16 KB)
- - L2 快取大小：256 KB / 512 KB / 1 MB
+ - L1 缓存大小：24 KB (数据缓存 8 KB，指令缓存 16 KB)
+ - L2 缓存大小：256 KB / 512 KB / 1 MB
  - 支持插槽：Socket 5 ( 273 针脚 PGA 封装) / Socket 7 ( 321 针脚 PGA 封装)
  - 电压需求：3.525 V
  - 晶体管数：430 万枚

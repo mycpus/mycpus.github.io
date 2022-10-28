@@ -28,8 +28,8 @@ Athlon XP 其实在 CPU 发展史上并不特别，其实就只是 K7 架构第�
  - 发布时间：2001 年 10 月 09 日
  - 运行频率：1333 MHz ~ 1733 MHz
  - FSB 频率：133 MHz (DDR 双倍带宽)
- - L1 快取大小：128 KB (数据与指令快取各 64 KB)
- - L2 快取大小： 256 KB (全速，On-die)
+ - L1 缓存大小：128 KB (数据与指令缓存各 64 KB)
+ - L2 缓存大小： 256 KB (全速，On-die)
  - 支持插槽：Socket A ( 462 针脚 FPGA 封装)
  - 电压需求：1.5 V ~ 1.75 V
  - 晶体管数：3720 万枚
@@ -76,8 +76,8 @@ Palomino 比较鲜明的特色是作为 Athlon XP 家族的开端，AMD 从此�
  - 发布时间：2002 年 06 月 10 日
  - 运行频率：1400 MHz ~ 2250 MHz
  - FSB 频率：133 MHz、166 MHz (DDR 双倍带宽)
- - L1 快取大小：128 KB (数据与指令快取各 64 KB)
- - L2 快取大小： 256 KB (全速，On-die)
+ - L1 缓存大小：128 KB (数据与指令缓存各 64 KB)
+ - L2 缓存大小： 256 KB (全速，On-die)
  - 支持插槽：Socket A ( 462 针脚 FPGA 封装)
  - 电压需求：1.5 V ~ 1.65 V
  - 晶体管数：3720 万枚
@@ -115,21 +115,21 @@ Palomino 比较鲜明的特色是作为 Athlon XP 家族的开端，AMD 从此�
  - 发布时间：2003 年 02 月 10 日
  - 运行频率：1833 MHz ~ 2333 MHz
  - FSB 频率：166 MHz、200 MHz (DDR 双倍带宽)
- - L1 快取大小：128 KB (数据与指令快取各 64 KB)
- - L2 快取大小： 512 KB (全速，On-die)
+ - L1 缓存大小：128 KB (数据与指令缓存各 64 KB)
+ - L2 缓存大小： 512 KB (全速，On-die)
  - 支持插槽：Socket A ( 462 针脚 FPGA 封装)
  - 电压需求： 1.65 V
  - 晶体管数：5430 万枚
  - 制造工艺：0.13 微米 (µm)
  - 指令集：x86-32 + MMX, 3D Now! Professional, SSE
 
-Barton 基本上就是 L2 快取大小加倍的后期版本 Thoroughbred，由于 L2 快取的增加因此在 PR 值标示上也比 Thoroughbred 标得更高，Barton 由于其超频潜力，在 DIY 界中当时可说是一代传奇。
+Barton 基本上就是 L2 缓存大小加倍的后期版本 Thoroughbred，由于 L2 缓存的增加因此在 PR 值标示上也比 Thoroughbred 标得更高，Barton 由于其超频潜力，在 DIY 界中当时可说是一代传奇。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/cores.jpg" alt="cores"/>
 </div>
 
-在同年九月 AMD 又推出了将 Barton 多出来的 L2 快取屏蔽的核心版本，代号取 Thoroughbred 与 Barton 的融合，命名为 Thorton。
+在同年九月 AMD 又推出了将 Barton 多出来的 L2 缓存屏蔽的核心版本，代号取 Thoroughbred 与 Barton 的融合，命名为 Thorton。
 
 ## AMD K8 架构
 
@@ -173,7 +173,7 @@ AMD K8 架构进入双核心世代的时间也比 Intel 早，当 AMD 推出第�
 
 ### 前期产品：基于 130 纳米制造工艺
 
-第一个基于 K8 架构的 AMD 处理器代号为 SledgeHammer，发布于 2003 年 09 月 23 日，属于较高阶的 Athlon 64 FX 产品线，具备 1MB 的全速 L2 快取与 800 MHz 的 HyperTransport 总线，同时也纳入了 SSE2 的支持，只能搭配 Registered 内存使用，采用 Socket 940 脚位。
+第一个基于 K8 架构的 AMD 处理器代号为 SledgeHammer，发布于 2003 年 09 月 23 日，属于较高阶的 Athlon 64 FX 产品线，具备 1MB 的全速 L2 缓存与 800 MHz 的 HyperTransport 总线，同时也纳入了 SSE2 的支持，只能搭配 Registered 内存使用，采用 Socket 940 脚位。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/KL_AMD_Opteron_846_Sledgehammer.jpg">
@@ -181,7 +181,7 @@ AMD K8 架构进入双核心世代的时间也比 Intel 早，当 AMD 推出第�
     </a>
 </div>
 
-之后在同年的十二月，AMD 将 K8 架构拓展到一般级别平台上，推出了 ClawHammer 与 Newcastle 两款内核，主要加入了更快的 HyperTransport 总线 (1000 MHz)，同时不再要求必须搭配 Registered 内存，采用 Socket 939 脚位，至于 Newcastle 则是将 ClawHammer 内建的 L2 快取容量减半而来，但 Newcastele 除了一般的 Socket 939 之外，还提供了 Socket 754 的型号 (仅限 HyperTransport 800 MHz)。
+之后在同年的十二月，AMD 将 K8 架构拓展到一般级别平台上，推出了 ClawHammer 与 Newcastle 两款内核，主要加入了更快的 HyperTransport 总线 (1000 MHz)，同时不再要求必须搭配 Registered 内存，采用 Socket 939 脚位，至于 Newcastle 则是将 ClawHammer 内建的 L2 缓存容量减半而来，但 Newcastele 除了一般的 Socket 939 之外，还提供了 Socket 754 的型号 (仅限 HyperTransport 800 MHz)。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/AMD_Athlon64_FX.jpg" alt="AMD_Athlon64_FX"/>
@@ -191,7 +191,7 @@ AMD K8 架构进入双核心世代的时间也比 Intel 早，当 AMD 推出第�
 
 ### 中期产品：基于 90 纳米制造工艺
 
-之后在 2005 年 05 月，AMD 终于推出了旗下的双核心处理器产品线 Athlon 64 X2，代号分别为 Manchester 与 Toledo，均为 90 纳米制造工艺下的产品，同样使用 1000 MHz 的 HyperTransport 总线与 Socket 939 脚位，这两款核心主要的差异为 L2 快取大小的不同与加入 SSE3 指令集，后来此二种核心也有因其中一个运算核心无法正常运行而打下来作为 Athlon 64 单核心处理贩卖。
+之后在 2005 年 05 月，AMD 终于推出了旗下的双核心处理器产品线 Athlon 64 X2，代号分别为 Manchester 与 Toledo，均为 90 纳米制造工艺下的产品，同样使用 1000 MHz 的 HyperTransport 总线与 Socket 939 脚位，这两款核心主要的差异为 L2 缓存大小的不同与加入 SSE3 指令集，后来此二种核心也有因其中一个运算核心无法正常运行而打下来作为 Athlon 64 单核心处理贩卖。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/KL_AMD_Athlon_64_X2_Brisbane.jpg">
@@ -199,7 +199,7 @@ AMD K8 架构进入双核心世代的时间也比 Intel 早，当 AMD 推出第�
     </a>
 </div>
 
-之后的 Winchester、Venice、San Diego、Orleans 大致上都是相似的核心，主要差异可能仅有快取大小不同，因此就不再赘述。
+之后的 Winchester、Venice、San Diego、Orleans 大致上都是相似的核心，主要差异可能仅有缓存大小不同，因此就不再赘述。
 
 ### 后期产品：基于 65 纳米制造工艺
 
