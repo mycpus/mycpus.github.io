@@ -3,7 +3,7 @@ title:  "CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的�
 categories: course
 permalink: computer_lecture_12.html
 tags: [course]
-summary: "本节开始介绍 Intel Core 架构的前世今生，本篇先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。"
+summary: "本节开始介绍 Intel Core 架构的前世今生，先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。"
 ---
 
 
