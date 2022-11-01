@@ -3,7 +3,7 @@ title:  "CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的�
 categories: course
 permalink: computer_lecture_12.html
 tags: [course]
-summary: ""
+summary: "本节开始介绍 Intel Core 架构的前世今生，本篇先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。"
 ---
 
 
@@ -213,6 +213,7 @@ Yonah 同时也对应到第三代的 Centrino 平台，代号为 Napa，除了 Y
 
 <div align="center">
 <p>(未完待续)</p>
+<a href="computer_lecture_11.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
