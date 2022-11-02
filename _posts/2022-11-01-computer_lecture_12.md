@@ -214,6 +214,7 @@ Yonah 同时也对应到第三代的 Centrino 平台，代号为 Napa，除了 Y
 <div align="center">
 <p>(未完待续)</p>
 <a href="computer_lecture_11.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_13.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 

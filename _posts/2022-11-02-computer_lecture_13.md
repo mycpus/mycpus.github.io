@@ -1,9 +1,9 @@
 ---
-title:  "CPU大讲堂（13）——纳米近代中期CPU发展史(二) Intel Core 架构"
+title:  "CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构"
 categories: course
 permalink: computer_lecture_13.html
 tags: [course]
-summary: ""
+summary: "本节主要谈 Intel Core 架构的逆袭。"
 ---
 
 
@@ -182,7 +182,8 @@ Intel 在 2008 年依照 Tick-Tock 战略规划的预期，推出了称为 Penry
 
 
 <div align="center">
-<p>(结束)</p>
+<p>(未完待续)</p>
+<a href="computer_lecture_12.html" class="btn btn-primary">上一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
