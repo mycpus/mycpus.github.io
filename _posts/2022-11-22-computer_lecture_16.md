@@ -29,25 +29,25 @@ summary: ""
 
 ## 「运算模块」挑战传统的核心数概念
 
-在讨论 Bulldozer 家族的时候一直以来都有一个问题很难解释，那就是「这颗 AMD 处理器到底是几核心的？」，本来这个问题应该是很简单的，我们认知上就是完整的运算单元与专属核心的快取合并起来的单一模块就叫做「一个核心」(类似下图右者)，也就是传统的 SMT / CMP 设计。
+在讨论 Bulldozer 家族的时候一直以来都有一个问题很难解释，那就是「这颗 AMD 处理器到底是几核心的？」，本来这个问题应该是很简单的，我们认知上就是完整的运算单元与专属核心的缓存合并起来的单一模块就叫做「一个核心」(类似下图右者)，也就是传统的 SMT / CMP 设计。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/AMD-Bulldozer-a.jpg"><img src="../images/blogs/computer_lecture/AMD-Bulldozer-a-750x381.jpg" alt="AMD-Bulldozer-a"/></a>
 </div>
 
-但在 Bulldozer 上却不是这样，AMD 创造了一个名词「模块」来描述 Bulldozer 处理器上的运算单元，不同于以往我们认知的「一个运算核心由一组整数运算单元与一组浮点运算单元组成」，Bulldozer 核心 (上图左半边) 则是设计成每个模块有 2 组具有四条管线的整数运算单元 (各自独享 L1 数据快取) 与 1 组浮点运算单元，而这三组运算单元共同使用属于这个模块的 L1 指令快取与 L2 快取，使用相同的 Fetch、Decode，这样的设计又被称为 CMT (Clustered Multi-Threading)，于是争论就由此产生了，在面对浮点运算的时候，一个 Bulldozer 模块实际上只能发挥类似单一核心 + HTT 的效果，但在面对整数运算 (AMD 认为日常情况下有 80% 的时间处理器都在做整数运算) 的时候却几乎可以被视为两个核心，那一个 Bulldozer 模块到底要算是单核心还是双核心呢？
+但在 Bulldozer 上却不是这样，AMD 创造了一个名词「模块」来描述 Bulldozer 处理器上的运算单元，不同于以往我们认知的「一个运算核心由一组整数运算单元与一组浮点运算单元组成」，Bulldozer 核心 (上图左半边) 则是设计成每个模块有 2 组具有四条管线的整数运算单元 (各自独享 L1 数据缓存) 与 1 组浮点运算单元，而这三组运算单元共同使用属于这个模块的 L1 指令缓存与 L2 缓存，使用相同的 Fetch、Decode，这样的设计又被称为 CMT (Clustered Multi-Threading)，于是争论就由此产生了，在面对浮点运算的时候，一个 Bulldozer 模块实际上只能发挥类似单一核心 + HTT 的效果，但在面对整数运算 (AMD 认为日常情况下有 80% 的时间处理器都在做整数运算) 的时候却几乎可以被视为两个核心，那一个 Bulldozer 模块到底要算是单核心还是双核心呢？
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/ASM9963.jpg"><img src="../images/blogs/computer_lecture/ASM9963-750x422.jpg" alt="ASM9963"/></a>
 </div>
 
-AMD 官方的答案是，单一一个 Bulldozer 模块是双核心，只是这两个核心共享快取与一组浮点运算单元，之所以不直接使用 CMP 设计是因为多核心会造成晶体管数的大幅增加 (耗电)、芯片面积的大幅上升 (成本)，在宣传四模块 Bulldozer 处理器的时候，AMD 是宣称其为「八核心处理器」，不过也因为这样所以在美国惹上了标示不实的官司。
+AMD 官方的答案是，单一一个 Bulldozer 模块是双核心，只是这两个核心共享缓存与一组浮点运算单元，之所以不直接使用 CMP 设计是因为多核心会造成晶体管数的大幅增加 (耗电)、芯片面积的大幅上升 (成本)，在宣传四模块 Bulldozer 处理器的时候，AMD 是宣称其为「八核心处理器」，不过也因为这样所以在美国惹上了标示不实的官司。
 
 不过值得注意的是 CMT 设计并不是第一次出现在处理器发展史中，早在 1996 年 DEC 就曾经在旗下的处理器上使用过类似的设计概念。
 
 ## 模块化设计
 
-AMD 在 Bulldozer 中也效法 Intel Nehalem 导入了模块化设计，所以在设计服务器用、个人计算机用、笔记本电脑用的 Bulldozer 处理器时其实并不用耗费太多力气，同样大略可分为 Core 与 Uncore 两大部分，Core 就是前面提过的运算模块，Uncore 则包含共享的 L3 快取与内存控制器、HyperTransport 信道。
+AMD 在 Bulldozer 中也效法 Intel Nehalem 导入了模块化设计，所以在设计服务器用、个人计算机用、笔记本电脑用的 Bulldozer 处理器时其实并不用耗费太多力气，同样大略可分为 Core 与 Uncore 两大部分，Core 就是前面提过的运算模块，Uncore 则包含共享的 L3 缓存与内存控制器、HyperTransport 信道。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/ABR9963.jpg" alt="ABR9963"/>
@@ -126,13 +126,13 @@ Bulldozer 家族的系统架构基本上维持与 K10 时代相同，仍然维�
     <a href="../images/blogs/computer_lecture/PILEDRIVER.png"><img src="../images/blogs/computer_lecture/PILEDRIVER-750x384.png" alt="PILEDRIVER"/></a>
 </div>
 
-整体来说，推出于 2012 年的 Piledriver 主体架构与 Bulldozer 几乎是一样的，主要的差异在于 (下图中橘色部分) 在增加 IPC (Instructions per clock，每周期执行指令数) 与降低漏电流、拉高频率 (很有 Netburst 的既视感吧？同频单核心效能低落那就靠拉高频率来救回来)，分支预测有强化，并加入 Intel 主导的 FMA3 (三操作数融合加法)、AVX 进阶向量扩展指令集 与 AES-NI 加解密指令集的支持，把 L1 的 TLB (转译后备缓冲区) 大小加倍并加入硬件除法器，浮点数与整数的排程器 (Scheduler) 也有强化，L2 快取跟数据预取机制有优化等。
+整体来说，推出于 2012 年的 Piledriver 主体架构与 Bulldozer 几乎是一样的，主要的差异在于 (下图中橘色部分) 在增加 IPC (Instructions per clock，每周期执行指令数) 与降低漏电流、拉高频率 (很有 Netburst 的既视感吧？同频单核心效能低落那就靠拉高频率来救回来)，分支预测有强化，并加入 Intel 主导的 FMA3 (三操作数融合加法)、AVX 进阶向量扩展指令集 与 AES-NI 加解密指令集的支持，把 L1 的 TLB (转译后备缓冲区) 大小加倍并加入硬件除法器，浮点数与整数的排程器 (Scheduler) 也有强化，L2 缓存跟数据预取机制有优化等。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/APW9966.jpg" alt="APW9966"/>
 </div>
 
-至于制造工艺上则是延续过去 Bulldozer 使用的 32 奈米 HKMG SOI 制程，由格罗方德 (GlobalFoundries) 提供，回顾过去历史与近期，AMD 有很多次都是被 GlobalFoundries 拖住良率与上市时程，造成产品一再延期，GlobalFoundries 的前身其实就是 AMD 的制造部门，但在 2009 年独立，并且从 2011 年开始 AMD 已经不再持有任何 GlobalFoundries 的股权，但 AMD 与 GlobalFoundries 背后的大老板其实是同一人。
+至于制造工艺上则是延续过去 Bulldozer 使用的 32 纳米 HKMG SOI 制程，由格罗方德 (GlobalFoundries) 提供，回顾过去历史与近期，AMD 有很多次都是被 GlobalFoundries 拖住良率与上市时程，造成产品一再延期，GlobalFoundries 的前身其实就是 AMD 的制造部门，但在 2009 年独立，并且从 2011 年开始 AMD 已经不再持有任何 GlobalFoundries 的股权，但 AMD 与 GlobalFoundries 背后的大老板其实是同一人。
 
 而在 Piledriver 推出当时有传言表示 Piledriver 将会是最后一代面向主流效能级的 AMD x86 处理器，之后 AMD 只会在 APU 产品线推出新品，当时有很多人跳出来驳斥，不过在三年之后的现在证实这是正确的，接下来要介绍的 Steamroller 与 Excavator 都只有 APU 型号，FX 产品线直到 2016 年的今天仍然是 Piledriver。
 
@@ -154,7 +154,7 @@ Bulldozer 家族的系统架构基本上维持与 K10 时代相同，仍然维�
     <a href="../images/blogs/computer_lecture/SXW9852.png"><img src="../images/blogs/computer_lecture/SXW9852-750x425.png" alt="SXW9852"/></a>
 </div>
 
-Steamroller 的主要改进有两大方面，其中第一项是制造工艺上的改进，Steamroller 采用了格罗方得新开发的 28 奈米 HKMG SOI 制程，另一项则是架构上关于多线程之间「并行化」的强化，号称可以提升 14.5 % 的 IPC。
+Steamroller 的主要改进有两大方面，其中第一项是制造工艺上的改进，Steamroller 采用了格罗方得新开发的 28 纳米 HKMG SOI 制程，另一项则是架构上关于多线程之间「并行化」的强化，号称可以提升 14.5 % 的 IPC。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/EMM8869.jpg"><img src="../images/blogs/computer_lecture/EMM8869-750x428.jpg" alt="EMM8869"/></a>
@@ -176,7 +176,7 @@ Excavator 是第四代的 Bulldozer 架构改进版，同时也是目前已经�
     <img src="../images/blogs/computer_lecture/EXC8855-750x399.jpg" alt="EXC8855"/>
 </div>
 
-基本上改进的脉络与过去几次改版相当相似，不外乎就是加大快取 (本次扩充的是 L1 数据快取)、加强分支预测的命中率与降低延迟 (这次将 BTB 的大小又增加了 25%)，加入新的指令级 (AVX2) 支持，换取大约 4~15% 的 IPC 成长，不过如同我们过往对 AMD 的认识，连 AMD 自家的欢乐投影片都只写 4 ~ 15%，可能成长应该还是很有限吧。
+基本上改进的脉络与过去几次改版相当相似，不外乎就是加大缓存 (本次扩充的是 L1 数据缓存)、加强分支预测的命中率与降低延迟 (这次将 BTB 的大小又增加了 25%)，加入新的指令级 (AVX2) 支持，换取大约 4~15% 的 IPC 成长，不过如同我们过往对 AMD 的认识，连 AMD 自家的欢乐投影片都只写 4 ~ 15%，可能成长应该还是很有限吧。
 
 值得注意的是，后期的 Excavator 可以支持 DDR4 内存 (AM4 脚位)，而初期产品则仅能搭配 DDR3 使用 (FM2+ 脚位)。
 

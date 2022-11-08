@@ -70,15 +70,15 @@ Nehalem 这一世代还蛮有趣的，基本上除了将一些当年 Netburst �
 
 而 QPI 这东西基本上可以用于很多地方，目前已知曾经实作于 Intel CPU 中的就有多 CPU 之间的彼此互联、CPU 中 Core (运算核心) 与 Uncore (核心以外的周边电路) 之间的沟通、CPU 与北桥之间的连结等，值得注意的是 Nehalem 架构的高阶款 (例如 Core i7 Bloomfield、Xeon 系列中高阶款等) 也是目前为止唯一在消费性市场产品上有使用到连外 QPI 通道的世代，之后 QPI 基本上不再用于 CPU 与芯片组之间的连接，基本上都只使用 DMI 总线作为处理器与北桥芯片链接的管道。
 
-### 与 AMD K10 类似的快取结构
+### 与 AMD K10 类似的缓存结构
 
-以往 Core 架构是采双层快取，L1 为核心各自独立，L2 则为全体运算核心共享，称之为 Intel Smart Cache，而进入 Nehalem 世代之后新的快取阶层设计是三层，与 AMD K10 类似，L1 与 L2 都采核心各自独立，而 L3 则是全体核心共享快取，且与 AMD K10 有类似的大型化 L3 快取现象。
+以往 Core 架构是采双层缓存，L1 为核心各自独立，L2 则为全体运算核心共享，称之为 Intel Smart Cache，而进入 Nehalem 世代之后新的缓存阶层设计是三层，与 AMD K10 类似，L1 与 L2 都采核心各自独立，而 L3 则是全体核心共享缓存，且与 AMD K10 有类似的大型化 L3 缓存现象。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/ISC3052.png"><img src="../images/blogs/computer_lecture/ISC3052-750x565.png" alt="ISC3052"/></a>
 </div>
 
-Nehalem 世代的处理器每个核心都具有 32 KB 的 L1 指令快取、32 KB 的 L1 数据快取、256 KB 的 L2 快取 (延迟方面也因为 L2 快取被搬进核心里面而比 Core 2 架构来得更低很多)，至于 L3 快取至少 4 MB，最大则可以达到 30 MB。
+Nehalem 世代的处理器每个核心都具有 32 KB 的 L1 指令缓存、32 KB 的 L1 数据缓存、256 KB 的 L2 缓存 (延迟方面也因为 L2 缓存被搬进核心里面而比 Core 2 架构来得更低很多)，至于 L3 缓存至少 4 MB，最大则可以达到 30 MB。
 
 ## 模块化设计带来可扩展性，平台分流于此确立
 
@@ -86,19 +86,19 @@ Nehalem 世代的处理器每个核心都具有 32 KB 的 L1 指令快取、32 K
     <img src="../images/blogs/computer_lecture/SCR5022-750x563.png" alt="SCR5022"/>
 </div>
 
-还记得我在「计算机达人养成计划 2-13：近代中期 CPU 发展史 (二) Intel Core 架构」曾经提到过的「可扩展性」有两个层次吗？其中 Core 架构时期只做到第一层，也就是使用「复制」的方式来延展处理器的结构，例如将双核心的 Conroe 延展两份之后再经过少许修改就能造出四核心的 Kentsfield、把 Conroe 的 L2 快取折半就变成低阶版本的 Allendale，这让 Intel 的开发时程缩短很多，同时也让消费者更能预测各等级 Intel 处理器的表现大概会落在哪边。
+还记得我在「计算机达人养成计划 2-13：近代中期 CPU 发展史 (二) Intel Core 架构」曾经提到过的「可扩展性」有两个层次吗？其中 Core 架构时期只做到第一层，也就是使用「复制」的方式来延展处理器的结构，例如将双核心的 Conroe 延展两份之后再经过少许修改就能造出四核心的 Kentsfield、把 Conroe 的 L2 缓存折半就变成低阶版本的 Allendale，这让 Intel 的开发时程缩短很多，同时也让消费者更能预测各等级 Intel 处理器的表现大概会落在哪边。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/MOD5022.png"><img src="../images/blogs/computer_lecture/MOD5022-750x563.png" alt="MOD5022"/></a>
 </div>
 
-而进入 Nehalem 世代之后 Intel 在开发时采用的思维更加前进，使用「模块化」的方式来设计各个功能单位，在制成成品的时候就像堆积木一样可以瞬间造出好几个版本，Intel 在进行模块化的过程中将处理器区分成 Core 与 Uncore 两大部分，其中 Core 就是运算核心的部分 (除此之外还包含各自专属的 L1、L2 快取)，根据产品规划的需要可以直接铺出需要数量的运算核心，至于 Uncore 则是处理器电路上除去运算核心以外的部分，例如 IMC 内存控制器、QPI 链接通道、共享 L3 快取、HTT 电路等。
+而进入 Nehalem 世代之后 Intel 在开发时采用的思维更加前进，使用「模块化」的方式来设计各个功能单位，在制成成品的时候就像堆积木一样可以瞬间造出好几个版本，Intel 在进行模块化的过程中将处理器区分成 Core 与 Uncore 两大部分，其中 Core 就是运算核心的部分 (除此之外还包含各自专属的 L1、L2 缓存)，根据产品规划的需要可以直接铺出需要数量的运算核心，至于 Uncore 则是处理器电路上除去运算核心以外的部分，例如 IMC 内存控制器、QPI 链接通道、共享 L3 缓存、HTT 电路等。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/RSQ6663.png"><img src="../images/blogs/computer_lecture/RSQ6663-750x564.png" alt="RSQ6663"/></a>
 </div>
 
-把各项规格设计成功能模块之后，要推出支持不同数量内存信道、支持不同种类的内存、提供不同数量的运算核心、不同大小的快取、不同的 QPI 通道数都变得很容易，甚至要塞整合图形核心也简单许多，变成当架构完成之后基本上当年度的所有处理器开发就同步进入收尾阶段了 (而且因为这样从此再也没有原生核心与拼装核心的问题了，想要多少核心就能放多少个模块，不管几个都是原生核心)。
+把各项规格设计成功能模块之后，要推出支持不同数量内存信道、支持不同种类的内存、提供不同数量的运算核心、不同大小的缓存、不同的 QPI 通道数都变得很容易，甚至要塞整合图形核心也简单许多，变成当架构完成之后基本上当年度的所有处理器开发就同步进入收尾阶段了 (而且因为这样从此再也没有原生核心与拼装核心的问题了，想要多少核心就能放多少个模块，不管几个都是原生核心)。
 
 除此之外还有「平台划分」(**其实对消费者来说重点在于不同平台会使用不同脚位，主板就不能混用了**) 的概念也是从 Nehalem 开始确立的，消费性平台分为顶级玩家平台 (HEDT) 与一般及入门平台 (Mainstream)，前者即后来的 Core i7-900 系列，后者则涵盖 Core i7-800 系列与 Core i5 以降各系列的消费级处理器，之后 Xeon 家族也有类似的状态，入门系列使用与消费性一般平台相同的平台、中阶 (支持多处理器) 的系列则与 HEDT 共享平台，高阶则使用更强大、延展性更强的 EX 平台。
 
@@ -144,7 +144,7 @@ Intel 阵营这边的 SSE4 被拆成三大包，分别是 SSSE3、SSE4.1 与 Neh
 
 其实在初期 Intel 很犹豫要不要继续使用 Hyper-Threading Technology 这一命名 (可能是不希望大家回想起 Pentium 4 后期的样子吧)，所以比较前期的 Nehalem 官方投影片都是使用 SMT (Simultaneous Multi-Threading) 来称呼这项功能，但由于 Netburst 与 Nehalem 中使用的 HTT 其实只是 SMT 的其中一种，与 Itanium 上所使用的实作方法不同，因此最后还是回头使用 HTT 这一名称。
 
-受益于 Nehalem 更大的快取、更强大的分支预测能力，Nehalem 上的 HTT 技术带来的效果中，缺点比过去 Netburst 时期更不显著，但优点却变得更加明显。
+受益于 Nehalem 更大的缓存、更强大的分支预测能力，Nehalem 上的 HTT 技术带来的效果中，缺点比过去 Netburst 时期更不显著，但优点却变得更加明显。
 
 ## 电源管理强化
 
@@ -166,19 +166,19 @@ Intel 阵营这边的 SSE4 被拆成三大包，分别是 SSSE3、SSE4.1 与 Neh
     <a href="../images/blogs/computer_lecture/TBM4105.png"><img src="../images/blogs/computer_lecture/TBM4105-750x564.png" alt="TBM4105"/></a>
 </div>
 
-## 后继者：Westmere 架构 (32 奈米制造工艺)
+## 后继者：Westmere 架构 (32 纳米制造工艺)
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/SFE9988.jpg" alt="SFE9988"/>
 </div>
 
-在来年推出的 Westmere 架构基本上就是 Nehalem 的制程微缩版，将制造工艺由 45 奈米提升到 32 奈米，最大核心数提升到 10 个，除此之外架构本身的改进并不明显，主要是虚拟化技术 (纳入对实模式的支持与转换延迟降低) 与加密解密能力 (AES-NI 指令集，新增了 7 条与 AES 加解密有关的指令) 上的增强。
+在来年推出的 Westmere 架构基本上就是 Nehalem 的制程微缩版，将制造工艺由 45 纳米提升到 32 纳米，最大核心数提升到 10 个，除此之外架构本身的改进并不明显，主要是虚拟化技术 (纳入对实模式的支持与转换延迟降低) 与加密解密能力 (AES-NI 指令集，新增了 7 条与 AES 加解密有关的指令) 上的增强。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/westmere-launch-1.jpg" alt="westmere-launch-1"/>
 </div>
 
-除此之外，在主流与入门的消费性平台上，Intel 开始将内建显示芯片从芯片组移到处理器的位置，但在 Westmere 世代中，内建显示芯片仍然是独立的一枚芯片 (基于 45 奈米制造工艺)，只是跟处理器芯片本体放在同一块 PCB 上，称为「Multi-Chip Package」 (MCP) 封装，而处理器芯片与内建显示芯片则使用 QPI 进行连接。
+除此之外，在主流与入门的消费性平台上，Intel 开始将内建显示芯片从芯片组移到处理器的位置，但在 Westmere 世代中，内建显示芯片仍然是独立的一枚芯片 (基于 45 纳米制造工艺)，只是跟处理器芯片本体放在同一块 PCB 上，称为「Multi-Chip Package」 (MCP) 封装，而处理器芯片与内建显示芯片则使用 QPI 进行连接。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/IDF2009.png"><img src="../images/blogs/computer_lecture/IDF2009-750x546.png" alt="IDF2009"/></a>

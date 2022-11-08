@@ -57,7 +57,7 @@ Sandy Bridge 之后基本上处理器设计的基本结构就没有再发生任�
     <img src="../images/blogs/computer_lecture/lynnfield_die.jpg" alt="lynnfield_die"/>
 </div>
 
-新的排列方式我们可以看到两个趋势，首先是 L3 快取与核心正好是切齐的，这意味着 L3 快取的大小与带宽将与处理器核心数有关 (尽管 L3 快取是共享的)，此外也可以很明显的发现运算核心与快取以外的部分 (Uncore 电路) 有集中被收到旁边的趋势，这基本上是为了让延展性变得更好，让核心数量增加或减少的时候造成的空间浪费与重新配置需求降低 (所以双核心版本其实就只是宽度变窄，直接拿掉中间两组核心而已)。
+新的排列方式我们可以看到两个趋势，首先是 L3 缓存与核心正好是切齐的，这意味着 L3 缓存的大小与带宽将与处理器核心数有关 (尽管 L3 缓存是共享的)，此外也可以很明显的发现运算核心与缓存以外的部分 (Uncore 电路) 有集中被收到旁边的趋势，这基本上是为了让延展性变得更好，让核心数量增加或减少的时候造成的空间浪费与重新配置需求降低 (所以双核心版本其实就只是宽度变窄，直接拿掉中间两组核心而已)。
 
 <div align="center">
     <a href="../images/blogs/computer_lecture/AKA9855.png"><img src="../images/blogs/computer_lecture/AKA9855-750x564.png" alt="AKA9855"/></a>
@@ -71,7 +71,7 @@ Sandy Bridge 之后基本上处理器设计的基本结构就没有再发生任�
     <img src="../images/blogs/computer_lecture/UOP9966-750x564.png" alt="UOP9966"/>
 </div>
 
-以处理器结构来说，Sandy Bridge 的主要进化是出现在前端的指令译码、分支预测的部分，SNB 架构处理器的前端增加了一个用于储存已译码指令 (microOPs) 的快取 (L0 快取)，可以在许多情况下不需要将已译码的指令重跑一次译码流程，从而获得一些性能提升，并且可以在不需要的时候将译码电路暂时关闭以节省能源，再辅以重新设计过的分支预测电路，在前端部分的性能因此有了一定幅度的提升。
+以处理器结构来说，Sandy Bridge 的主要进化是出现在前端的指令译码、分支预测的部分，SNB 架构处理器的前端增加了一个用于储存已译码指令 (microOPs) 的缓存 (L0 缓存)，可以在许多情况下不需要将已译码的指令重跑一次译码流程，从而获得一些性能提升，并且可以在不需要的时候将译码电路暂时关闭以节省能源，再辅以重新设计过的分支预测电路，在前端部分的性能因此有了一定幅度的提升。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/BPU1011.jpg" alt="BPU1011"/>
@@ -87,25 +87,25 @@ Sandy Bridge 之后基本上处理器设计的基本结构就没有再发生任�
 
 ### 环状内部联机与 System Agent
 
-Sandy Bridge 本身最大的改变应该就属这项了，过去在 Nehalem / Westmere 架构时，Intel 是使用直接拉线将运算核心与 L3 快取连接在一起的方式实作，但这样的方式会造成增加核心数的时候有很大的麻烦，所以在 Sandy Bridge 中就使用一组环状的通道将各个核心的 L3 快取分块连结起来，每个核心都有一个资料节点，除此之外还有两个用于 I/O 与管控的节点 (N 核心处理器有 N+2 个节点)，这样的做法最早可以在 Nehalem-EX 上看到：
+Sandy Bridge 本身最大的改变应该就属这项了，过去在 Nehalem / Westmere 架构时，Intel 是使用直接拉线将运算核心与 L3 缓存连接在一起的方式实作，但这样的方式会造成增加核心数的时候有很大的麻烦，所以在 Sandy Bridge 中就使用一组环状的通道将各个核心的 L3 缓存分块连结起来，每个核心都有一个资料节点，除此之外还有两个用于 I/O 与管控的节点 (N 核心处理器有 N+2 个节点)，这样的做法最早可以在 Nehalem-EX 上看到：
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/11-0.png" alt="11-0"/>
 </div>
 
-在采用 Sandy Bridge 架构的处理器上，环形内部联机可以带来每条联机高达 96 GB/s 的传输速度，而且因为速度是随联机数增长的，因此也就代表内部链接的性能会随着核心数增加而提升，例如四核心的 L3 快取数据传输率可以高达 384 GB/s，双核心版本则为减半。
+在采用 Sandy Bridge 架构的处理器上，环形内部联机可以带来每条联机高达 96 GB/s 的传输速度，而且因为速度是随联机数增长的，因此也就代表内部链接的性能会随着核心数增加而提升，例如四核心的 L3 缓存数据传输率可以高达 384 GB/s，双核心版本则为减半。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/arch-07.png" alt="arch-07"/>
 </div>
 
-环状联机由 4 个环组成 (依序为数据环、请求环、通知环与监听环)，全部都以核心电压与频率运作，值得注意的是 Sandy Bridge 上的节点配置与 Nehalem-EX 有点不同，虽然节点数量仍然是 N+2，但在 I/O 等电路已整合为 System Agent (包含 PCI Express 控制器、内存控制器、DMI 总线接口、电源管理单元、显示引擎，参见下图) 之后，额外的 2 个节点中有 1 个将是内建显示，所以，是的没错，Sandy Bridge 的内建显示是会用到处理器的 LLC 快取的。
+环状联机由 4 个环组成 (依序为数据环、请求环、通知环与监听环)，全部都以核心电压与频率运作，值得注意的是 Sandy Bridge 上的节点配置与 Nehalem-EX 有点不同，虽然节点数量仍然是 N+2，但在 I/O 等电路已整合为 System Agent (包含 PCI Express 控制器、内存控制器、DMI 总线接口、电源管理单元、显示引擎，参见下图) 之后，额外的 2 个节点中有 1 个将是内建显示，所以，是的没错，Sandy Bridge 的内建显示是会用到处理器的 LLC 缓存的。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/SAE9966.png" alt="SAE9966"/>
 </div>
 
-System Agent 的部分运作频率与电压则会低于运算核心，整体而言 Sandy Bridge 的供电方式可分为「三大区域」，分别是 System Agent、运算核心与快取、内建显示，彼此间的供电与频率互不影响，其中 System Agent 的频率与电压是固定不可调整的，内建显示则使用独立的电源，因此可以直接被关闭而不影响其他部分。
+System Agent 的部分运作频率与电压则会低于运算核心，整体而言 Sandy Bridge 的供电方式可分为「三大区域」，分别是 System Agent、运算核心与缓存、内建显示，彼此间的供电与频率互不影响，其中 System Agent 的频率与电压是固定不可调整的，内建显示则使用独立的电源，因此可以直接被关闭而不影响其他部分。
 
 <div align="center">
     <img src="../images/blogs/computer_lecture/PMS8550.png" alt="PMS8550"/>
