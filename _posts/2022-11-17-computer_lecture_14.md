@@ -3,11 +3,11 @@ title:  "CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构"
 categories: course
 permalink: computer_lecture_14.html
 tags: [course]
-summary: ""
+summary: "本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。"
 ---
 
 
-本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10h 处理器家族。
+本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。
 
 ## K10？那 K9 去哪里了？
 

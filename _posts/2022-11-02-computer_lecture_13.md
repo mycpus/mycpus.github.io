@@ -184,6 +184,7 @@ Intel 在 2008 年依照 Tick-Tock 战略规划的预期，推出了称为 Penry
 <div align="center">
 <p>(未完待续)</p>
 <a href="computer_lecture_12.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_14.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
