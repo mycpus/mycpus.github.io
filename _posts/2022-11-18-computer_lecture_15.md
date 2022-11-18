@@ -3,7 +3,7 @@ title:  "CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem�
 categories: course
 permalink: computer_lecture_15.html
 tags: [course]
-summary: ""
+summary: "今天要谈的是 Intel Nehalem 架构，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特色都奠基于此代。"
 ---
 
 
