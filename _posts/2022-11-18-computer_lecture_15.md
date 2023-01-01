@@ -202,6 +202,7 @@ Westmere 在计算机历史上的意义比较接近于让 Nehalem 架构「飞�
 <div align="center">
 <p>(未完待续)</p>
 <a href="computer_lecture_14.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_16.html" class="btn btn-primary">下一篇</a> 
 <a href="{{site.feedback_link}}" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
 </div>
 
