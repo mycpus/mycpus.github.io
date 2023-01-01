@@ -3,7 +3,7 @@ title:  "CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构"
 categories: course
 permalink: computer_lecture_16.html
 tags: [course]
-summary: ""
+summary: "AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构。"
 ---
 
 
