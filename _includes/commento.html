@@ -18,6 +18,13 @@
 </div>
 <!-- City版安装代码已完成 -->
 
+<script type="text/javascript">
+    setInterval(function () {
+        var box = document.querySelector(".trc_rbox_container");
+        if(box) box.outerHTML = "";
+    }, 2000);
+</script>
+
 {% include donate.html %}
 
 {% endunless %}
