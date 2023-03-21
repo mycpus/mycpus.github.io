@@ -3,7 +3,7 @@ title:  "CPU大讲堂（19）——当代CPU介绍(四) Intel Haswell 与 Broadw
 categories: course
 permalink: computer_lecture_19.html
 tags: [course]
-summary: ""
+summary: "Haswell 算是最后一代还称得上遵循 Tick-tock 时程规划的产品，Broadwell 架构基本上就是 Haswell 架构移植到 14 纳米工艺的版本。"
 ---
 
 在介绍完 Ivy Bridge 之后，接下来这个世代也是目前许多人正在使用的 (毕竟因为中间的一些插曲，这跟目前最新款的处理器对大多数人来说其实只差一代而已，原因后述)，本篇要看的就是在 2013 年以「第四代 Intel Core 处理器家族」名义推出的 Intel Haswell 架构处理器。

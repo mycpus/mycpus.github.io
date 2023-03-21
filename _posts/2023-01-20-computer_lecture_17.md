@@ -3,7 +3,7 @@ title:  "CPU大讲堂（17）——当代CPU介绍(二) Intel Sandy Bridge 架�
 categories: course
 permalink: computer_lecture_17.html
 tags: [course]
-summary: ""
+summary: "从 Sandy Bridge 开始个人计算机处理器的发展有很明显趋于缓和的现象，接下来的 Ivy Bridge、Haswell、Broadwell、Skylake 其实都不会有太让人惊艳的提升或变革。"
 ---
 
 

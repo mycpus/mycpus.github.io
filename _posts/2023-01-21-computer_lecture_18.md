@@ -3,7 +3,7 @@ title:  "CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构"
 categories: course
 permalink: computer_lecture_18.html
 tags: [course]
-summary: ""
+summary: "Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上是 Sandy Bridge 的延续，改进内容不多也不明显。"
 ---
 
 其实我本来是打算把 Sandy Bridge 跟 Ivy Bridge 放在同一篇写的，毕竟 Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上会是 Sandy Bridge 的延续，所以改进内容并不会那么多与明显，不过考虑到上篇篇幅已经达到 4,200 字，加上 Sandy Bridge 跳 Ivy Bridge 的改进内容又比上次 Nehalem 跳 Westmere 来得多，所以还是独立开篇了。 XD
