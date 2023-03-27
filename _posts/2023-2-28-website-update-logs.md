@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-02-28**
+
+- 本站启用全新域名：[cpu.ihonux.com](https://cpu.ihonux.com) 。
+
 **2022-10-20**
 
 - 新增 Intel CPU Timeline 页面。
