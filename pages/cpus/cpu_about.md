@@ -19,7 +19,7 @@ comments: true
 
 感谢您访问我的CPU博物馆网站，希望您能喜欢并常来光顾。如果您对我的网站有任何意见或建议，请随时与我[联系](contact.html)。谢谢！
 
-<h3>Director of the CPU Museum</h3>
+<b>Director of the CPU Museum</b>
 
 My name is Honux, and I'm the curator of this museum, a technical fan, senior engineer, and programmer based in Zhengzhou City, Henan Province, China. For more details, see my [iHonux's Projects](https://fxrj.github.io) website.
 
