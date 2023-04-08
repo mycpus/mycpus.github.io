@@ -1,3 +1,4 @@
+<!--- CPU发展历程时间轴 --->
 <script type="text/javascript">
 	function addStyle(file){
 		$('head').append('<link href=' + file + ' rel="stylesheet" type="text/css">')
@@ -6,8 +7,6 @@
 	addStyle("css/simple_style.css");
 </script>
 
-<script src="js/jquery.timelinr-0.9.4.js" type="text/javascript"></script>
-<script type="text/javascript">$(function(){$().timelinr({autoPlay:'true',autoPlayDirection:'forward',startAt:1,autoPlayPause:6000 })	});</script>
 <div id="timeline">
 	<ul id="dates">
 		<li><a href="#1971">1971</a></li>
@@ -86,8 +85,10 @@
 		</li>
 	</ul>
 </div>
+<script src="js/jquery.timelinr-0.9.4.js" type="text/javascript"></script>
+<script type="text/javascript">$(function(){$().timelinr({autoPlay:'true',autoPlayDirection:'forward',startAt:1,autoPlayPause:6000 })	});</script>
 
-
+<!--- 幻灯片展示（用手机浏览时呈现） --->
 <script type="text/javascript" src="js/simple_swiper.js"></script>
 <div id="swiper-demo" class="simple-swiper-container">
 	<a id="sprev" class="btn btn-prev"></a>
