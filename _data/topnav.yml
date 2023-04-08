@@ -3,10 +3,10 @@
 topnav:
 - title: Topnav
   items:
-    - title: Projects
-      external_url: https://fxrj.github.io/
     - title: News
       url: /news
+    - title: Projects
+      external_url: https://fxrj.github.io/
 
 #Topnav dropdowns
 topnav_dropdowns:
