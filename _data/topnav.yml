@@ -6,7 +6,7 @@ topnav:
     - title: News
       url: /news
     - title: Projects
-      external_url: https://fxrj.github.io/
+      external_url: https://www.ihonux.com/
 
 #Topnav dropdowns
 topnav_dropdowns:
@@ -22,8 +22,8 @@ topnav_dropdowns:
           external_url: https://www.cpu-world.com/
         - title: CPU Galaxy
           external_url: https://www.cpu-galaxy.at/
-        - title: 网页里的电脑博物馆
-          external_url: https://www.compumuseum.com/
+        - title: 电脑博物馆
+          external_url: http://museum.ihonux.com:86/
         - title: MyNikko.com 微處理器博物館
           external_url: https://www.mynikko.com/CPU/
         - title: Zheng-Fu Xu 的 CPU 博物馆
