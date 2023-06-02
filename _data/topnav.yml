@@ -14,6 +14,8 @@ topnav_dropdowns:
   folders:
     - title: Links
       folderitems:
+        - title: 电脑博物馆
+          external_url: https://dnbwg.ihonux.com/
         - title: CPU-Galerie
           external_url: http://www.cpu-galerie.de/
         - title: cpu-collection.de
@@ -22,8 +24,6 @@ topnav_dropdowns:
           external_url: https://www.cpu-world.com/
         - title: CPU Galaxy
           external_url: https://www.cpu-galaxy.at/
-        - title: 电脑博物馆
-          external_url: http://museum.ihonux.com:86/
         - title: MyNikko.com 微處理器博物館
           external_url: https://www.mynikko.com/CPU/
         - title: Zheng-Fu Xu 的 CPU 博物馆
