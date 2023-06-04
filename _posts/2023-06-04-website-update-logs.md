@@ -5,6 +5,14 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-06-04**
+
+- 本站评论系统更换为 Twikoo 。
+
+**2023-06-02**
+
+- 本站在 vercel 建立镜像站点。
+
 **2023-02-28**
 
 - 本站启用全新域名：[cpu.ihonux.com](https://cpu.ihonux.com) 。
