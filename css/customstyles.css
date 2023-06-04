@@ -1201,3 +1201,12 @@ h4.panel-title {
         display:block !important;
     }
 }
+
+.twikoo {
+    position: relative;
+    margin-top: 50px;
+}
+
+.tk-input-image[type=file] {
+    display: none;
+}
