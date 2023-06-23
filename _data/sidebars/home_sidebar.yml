@@ -19,27 +19,27 @@ entries:
       output: web
 
       subfolders:
-      - title: Tags
+      - title: News Tags
         output: web
         subfolderitems:
 
-        - title: news
+        - title: News
           url: /tag_news.html
           output: web
 
-        - title: blog
+        - title: Blog
           url: /tag_blog.html
           output: web
 
-        - title: collection
+        - title: Collection
           url: /tag_collection.html
           output: web
 
-        - title: course
+        - title: Course
           url: /tag_course.html
           output: web
 
-        - title: history
+        - title: History
           url: /tag_history.html
           output: web
     
