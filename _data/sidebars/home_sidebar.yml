@@ -17,6 +17,31 @@ entries:
     - title: News Archive
       url: /news_archive.html
       output: web
+
+      subfolders:
+      - title: Tags
+        output: web
+        subfolderitems:
+
+        - title: news
+          url: /tag_news.html
+          output: web
+
+        - title: blog
+          url: /tag_blog.html
+          output: web
+
+        - title: collection
+          url: /tag_collection.html
+          output: web
+
+        - title: course
+          url: /tag_course.html
+          output: web
+
+        - title: history
+          url: /tag_history.html
+          output: web
     
 
 # Copyright 2021 Google LLC
