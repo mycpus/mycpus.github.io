@@ -197,6 +197,10 @@ entries:
           url: /intel_5Gen_Broadwell.html
           output: web, pdf
 
+        - title: 7 Gen. Kaby Lake
+          url: /intel_7Gen_KabyLake.html
+          output: web, pdf
+
     - title: "80860"
       url: /intel_80860.html
       output: web, pdf
