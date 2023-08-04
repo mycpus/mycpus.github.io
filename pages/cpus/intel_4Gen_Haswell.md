@@ -53,6 +53,32 @@ Haswell 架构是英特尔第四代 CPU 架构，当然，它和 IVB 一样，�
 
 ## 我的收藏
 
+### Intel Core i3-4160
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 1150 land FC-LGA |
+| 核心 | Haswell |
+| Socket | LGA 1150 |
+| 主频 | 3.5 GHz |
+| 二级缓存 | 2 x 256 KB |
+| 三级缓存 | 3 MB |
+| 核心 | 2 |
+| 线程 | 4 |
+| 制程 | 22 nm |
+| TDP | 54 W |
+| 核显 | HD 4400 |
+| 核显基本频率 | 350 MHz |
+| 核显最大动态频率 | 1150 MHz |
+| 内存控制器 | DDR3-1333/1600 |
+| 上市时间 | 2015 |
+| 生产日期 | 7/2015 |
+
+![Intel Core i3-4160 正面](/images/cpus/Intel/Intel_Core_i3-4160_1.jpg)
+![Intel Core i3-4160 反面](/images/cpus/Intel/Intel_Core_i3-4160_2.jpg)
+
+---------
+
 ### Intel Core i3-4170
 
 | 参数 | 数值 |
@@ -71,7 +97,7 @@ Haswell 架构是英特尔第四代 CPU 架构，当然，它和 IVB 一样，�
 | 核显基本频率 | 350 MHz |
 | 核显最大动态频率 | 1150 MHz |
 | 内存控制器 | DDR3-1333/1600 |
-| 上市时间 | 01.09.2013 |
+| 上市时间 | 2015 |
 | 生产日期 | 47/2015 |
 
 ![Intel Core i3-4170 正面](/images/cpus/Intel/Intel_Core_i3-4170_1.jpg)
