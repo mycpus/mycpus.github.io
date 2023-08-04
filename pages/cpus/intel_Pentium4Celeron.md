@@ -43,6 +43,30 @@ Intel 的 Celeron D系列是最后一个具有 NetBurst 架构的 Celeron 处理
 
 ---------
 
+### Intel Celeron 2.4GHz/128/400
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 478-pin FCPGA2 |
+| 核心 | Northwood-128 |
+| Socket | 478 |
+| 主频 | 2400 MHz |
+| 外频 | 100 MHz |
+| 总线频率 | 400 MHz |
+| 倍频 | x 24 |
+| 一级缓存 | 8 KB |
+| 二级缓存 | 128 KB |
+| 晶体管 | 55,000,000 |
+| 制造工艺 | 0.13 µm |
+| 电压 | 1.75 V |
+| 步进 | SL6VU |
+| 生产日期 | 09/2004 |
+
+![Intel Celeron 2.4GHz 正面](/images/cpus/Intel/Intel_Celeron_2.4GHz_1.jpg)
+![Intel Celeron 2.4GHz 反面](/images/cpus/Intel/Intel_Celeron_2.4GHz_2.jpg)
+
+---------
+
 ### Intel Celeron D 2.4GHz/256/533
 
 | 参数 | 数值 |
