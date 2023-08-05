@@ -5,6 +5,11 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-08-05**
+
+- 新增 Intel 处理器 4 颗。
+- 新增 AMD 处理器 1 颗。
+
 **2023-06-04**
 
 - 本站评论系统更换为 Twikoo 。
