@@ -75,4 +75,28 @@ Core 微架构通常针对相对较低的功耗进行了优化，这确保了移
 ![Intel Pentium Dual Core E5300 正面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5300_1.jpg)
 ![Intel Pentium Dual Core E5300 反面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E5300_2.jpg)
 
+---------
+
+### Intel Pentium Dual Core E6500
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 775land FCLGA8 |
+| 核心 | Wolfdale-3M |
+| Socket | 775 |
+| 主频 | 2933 MHz |
+| 外频 | 266 MHz |
+| 倍频 | x 11 |
+| 总线频率 | 1066 MHz |
+| Level1 Cache | 32+32 KB |
+| Level2 Cache | 2048 KB |
+| 晶体管 | 228,000,000 |
+| 制造工艺 | 45 nm |
+| 步进 | SLGUH |
+| 生产日期 | 06/2011 |
+
+![Intel Pentium Dual Core E6500 正面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E6500_1.jpg)
+![Intel Pentium Dual Core E6500 反面](/images/cpus/Intel/Intel_Pentium_Dual_Core_E6500_2.jpg)
+
+
 {% include links.html %}
