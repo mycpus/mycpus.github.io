@@ -21,7 +21,7 @@ To perform properly, the Pentium OverDrive was dependent on a high amount of sec
 
 ## 我的收藏
 
-#### Intel PODPMT66X200
+### Intel PODPMT66X200
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -37,6 +37,10 @@ To perform properly, the Pentium OverDrive was dependent on a high amount of sec
 | 电压 | 3.3 V |
 | 步进 | SL2RM  V2.1 |
 | 生产日期 | 17/1998 |
+
+```
+Pentium MMX OverDrive for Socket 5/7 (3.3V, MMX)
+```
 
 ![Intel PODPMT66x200MMX](/images/cpus/Intel/Intel_Pentium_OverDrive_PODPMT66x200MMX_1.jpg)
 ![Intel PODPMT66x200MMX](/images/cpus/Intel/Intel_Pentium_OverDrive_PODPMT66x200MMX_2.jpg)
