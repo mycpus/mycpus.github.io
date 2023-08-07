@@ -158,4 +158,32 @@ Beside performance improvements, the families incorporate enhanced power managem
 ![AMD A4-3300M 正面](/images/cpus/AMD/AMD_A4-3300M_1.jpg)
 ![AMD A4-3300M 反面](/images/cpus/AMD/AMD_A4-3300M_2.jpg)
 
+---------
+
+### AMD Opteron 6281
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 核心 | Bulldozer |
+| Socket | SocketG34 |
+| 主频 | 2.5 GHz |
+| 一级缓存 | 768 KB |
+| 二级缓存 | 16 MB |
+| 三级缓存 | 8 MB |
+| 核心 | 16 |
+| 线程 | 16 |
+| TDP | 130 W |
+| 支持内存 | DDR3-2000 |
+| 技术 | 32 nm |
+| 上市时间 | Q1/2019 |
+| 生产日期 | 12/2012 |
+
+```
+  OPN: OS6281YJTGGGU
+```
+
+![AMD Opteron 6281 正面](/images/cpus/AMD/AMD_Opteron_6281_1.jpg)
+![AMD Opteron 6281 反面](/images/cpus/AMD/AMD_Opteron_6281_2.jpg)
+
+
 {% include links.html %}

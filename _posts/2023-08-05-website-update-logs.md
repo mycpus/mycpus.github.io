@@ -5,6 +5,11 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-08-06**
+
+- 新增 Intel RapidCAD 处理器。
+- 新增 Intel Pentium OverDrive 处理器。
+
 **2023-08-05**
 
 - 新增 Intel 处理器 4 颗。
