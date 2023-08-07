@@ -88,7 +88,7 @@ entries:
       url: /intel_80386.html
       output: web, pdf
 
-    - title: RapidCAD*
+    - title: RapidCAD
       url: /intel_RapidCAD.html
       output: web, pdf
 
@@ -108,7 +108,7 @@ entries:
       url: /intel_PentiumMMX.html
       output: web, pdf
 
-    - title: Pentium OverDrive*
+    - title: Pentium OverDrive
       url: /intel_PentiumOverDrive.html
       output: web, pdf
 

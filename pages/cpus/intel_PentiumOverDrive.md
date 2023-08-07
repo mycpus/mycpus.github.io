@@ -1,5 +1,5 @@
 ---
-title: Intel Pentium OverDrive Processor*
+title: Intel Pentium OverDrive Processor
 tags: [Intel, Pentium, OverDrive]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
 last_updated: Oct 20, 2022
@@ -18,6 +18,30 @@ Intel Pentium OverDrive 中央处理器（CPU），又是一项英特尔造福�
 This Pentium OverDrives are Intel Pentium processors for 486 Socket 3 and Socket 2 motherboards, provided as a means to give a Pentium performance-level upgrade option for owners of 486 computer systems. It was however criticised for being more expensive and slower than competing CPU-upgrade options such as the AMD Am5x86 and Cyrix 5x86, and being too late to the market. Mainboard compatibility was also a problem, it turned out that many boards didn't support this new chip.
  
 To perform properly, the Pentium OverDrive was dependent on a high amount of secondary cache ram being present on the motherboard; without it the chip was only a trivial amount faster than a DX4.
+
+## 我的收藏
+
+#### Intel PODPMT66X200
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 80503 Upgrade |
+| Socket | 7 |
+| 主频 | 200 MHz |
+| 外频 | 66 MHz |
+| 倍频 | x 3.0 |
+| 总线宽度 | 64/32 Bit |
+| 一级缓存 | 32 Kb (16/16) |
+| 晶体管 | 4,500,000 |
+| 技术 | Bi-CMOS 0.35 µm |
+| 电压 | 3.3 V |
+| 步进 | SL2RM  V2.1 |
+| 生产日期 | 17/1998 |
+
+![Intel PODPMT66x200MMX](/images/cpus/Intel/Intel_Pentium_OverDrive_PODPMT66x200MMX_1.jpg)
+![Intel PODPMT66x200MMX](/images/cpus/Intel/Intel_Pentium_OverDrive_PODPMT66x200MMX_2.jpg)
+
+---------
 
 ## 产品展示
 

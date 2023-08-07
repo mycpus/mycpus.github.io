@@ -1,5 +1,5 @@
 ---
-title: Intel RapidCAD Processor*
+title: Intel RapidCAD Processor
 tags: [Intel, RapidCAD, OverDrive]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, RapidCAD
 last_updated: Oct 20, 2022
@@ -15,7 +15,7 @@ Intel RapidCAD 是英特尔有史以来第一款为旧款个人计算机所提�
 
 Intel RapidCAD 特殊的地方在于，它是由两颗芯片组成，缺一不可。这归咎于 486 DX 内建浮点运算器（FPU），而 386 则是将浮点运算器分开（就是387）。由于 RapidCAD-1 本身就含有浮点运算器（因为它就是 486 DX 阉割版），根本不需要 387，所以 RapidCAD-2 就是用来替代原来主板上的 387 芯片。RapidCAD-1 负责所有的运算，而 RapidCAD-2 则是负责假装浮点运算器，以防止旧有主板以为没有安装浮点运算功能（尤其在执行286/287的程序时）。市面上有时候把 RapidCAD-1 与 RapidCAD-2 分开卖，这是就是不了解 RapidCAD 运作方式的结果。
 
-## 型号展示
+## 我的收藏
 
 ### Intel RapidCAD-1
 
@@ -40,6 +40,11 @@ Intel RapidCAD 特殊的地方在于，它是由两颗芯片组成，缺一不�
 | 技术 | CHMOS |
 | 电压 | 5 Volt |
 | 产地 | USA |
+
+![Intel RapidCAD](/images/cpus/Intel/Intel_RapidCAD-1.jpg)
+![Intel RapidCAD](/images/cpus/Intel/Intel_RapidCAD-2.jpg)
+
+## 型号展示
 
 ![Intel RapidCAD](/images/cpus/Intel/Intel_RapidCAD-23.jpg)
 ![Intel RapidCAD](/images/cpus/Intel/Intel_RapidCAD-25.jpg)
