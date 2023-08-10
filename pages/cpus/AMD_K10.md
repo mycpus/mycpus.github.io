@@ -71,7 +71,7 @@ Beside performance improvements, the families incorporate enhanced power managem
 
 ## 我的收藏
 
-## AMD Phenom X3 8650
+### AMD Phenom X3 8650
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -100,7 +100,7 @@ Beside performance improvements, the families incorporate enhanced power managem
 
 ---------
 
-## AMD Phenom X4 9650
+### AMD Phenom X4 9650
 
 | 参数 | 数值 |
 | ------ | ------ |
