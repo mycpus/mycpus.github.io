@@ -2,7 +2,7 @@
 title: AMD K10 Processor
 tags: [AMD, K10]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples
-last_updated: Sep 3, 2022
+last_updated: Aug 10, 2023
 summary: "随着2007 年 11 月 AMD K10 微架构的推出，K8 时代的终结宣告了结束。"
 sidebar: cpu_sidebar
 permalink: AMD_K10.html
@@ -70,6 +70,64 @@ Beside performance improvements, the families incorporate enhanced power managem
 
 
 ## 我的收藏
+
+## AMD Phenom X3 8650
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 940-Pin LOµPGA |
+| 核心 | Toliman |
+| Revision | DR-B3 |
+| Socket | AM2+ (AM2) |
+| 主频 | 2300 MHz |
+| 系统时钟 | 1800 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 3 x 128 KB (64/64) |
+| 二级缓存 | 3 x 512 KB |
+| 三级缓存 | 2048 KB |
+| 核心 | 3 |
+| 线程 | 3 |
+| 晶体管 | 450,000,000 |
+| 技术 | 65 nm SOI |
+| 生产日期 | 23/2009 |
+
+```
+  OPN: HD8650WCJ3BGH
+```
+
+![AMD Phenom X3 8650 正面](/images/cpus/AMD/AMD_Phenom_X3_8650_1.jpg)
+![AMD Phenom X3 8650 反面](/images/cpus/AMD/AMD_Phenom_X3_8650_2.jpg)
+
+---------
+
+## AMD Phenom X4 9650
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 940-Pin LOµPGA |
+| 核心 | Agena |
+| Revision | DR-B3 |
+| Socket | AM2+ (AM2) |
+| 主频 | 2300 MHz |
+| 系统时钟 | 1800 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 4 x 128 KB (64/64) |
+| 二级缓存 | 4 x 512 KB |
+| 三级缓存 | 2048 KB |
+| 核心 | 4 |
+| 线程 | 4 |
+| 晶体管 | 450,000,000 |
+| 技术 | 65 nm SOI |
+| 生产日期 | 21/2008 |
+
+```
+  OPN: HD9650WCJ4BGH
+```
+
+![AMD Phenom X4 9650 正面](/images/cpus/AMD/AMD_Phenom_X4_9650_1.jpg)
+![AMD Phenom X4 9650 反面](/images/cpus/AMD/AMD_Phenom_X4_9650_2.jpg)
+
+---------
 
 ### AMD Mobile Athlon II P320
 
