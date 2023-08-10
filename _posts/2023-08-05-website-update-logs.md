@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-08-10**
+
+- 新增 AMD 处理器 3 颗。
+
 **2023-08-06**
 
 - 新增 Intel RapidCAD 处理器。

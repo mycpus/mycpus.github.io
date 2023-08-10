@@ -185,6 +185,31 @@ Beside performance improvements, the families incorporate enhanced power managem
 
 ---------
 
+### AMD Athlon II X3 460
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 938-Pin OµPGA |
+| 核心 | Rana |
+| Revision | BL-C3 |
+| Socket | AM3/AM2+ |
+| 主频 | 3400 MHz |
+| 系统时钟 | 2000 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 3 x 128 KB (64/64) |
+| 二级缓存 | 3 x 512 KB |
+| 核心 | 3 |
+| 线程 | 3 |
+| 晶体管 | 758,000,000 |
+| 技术 | 45 nm SOI |
+| 生产日期 |  |
+
+```
+  OPN: 
+```
+
+---------
+
 ### AMD Mobile A4-3300M
 
 | 参数 | 数值 |
