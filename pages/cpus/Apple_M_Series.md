@@ -6,6 +6,10 @@ permalink: Apple_M_Series.html
 summary: 苹果 M 系列处理器
 ---
 
+## 苹果 M 系列处理器参数大全
+
+<a href="/apple-chip/?type=M" target="_blank">打开</a>
+
 <script type="text/javascript">
     window.location = '/apple-chip/?type=M'
 </script>
