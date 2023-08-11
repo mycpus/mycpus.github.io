@@ -462,15 +462,15 @@ entries:
 
     folderitems:
     - title: A-Series
-      url: /pages//cpus//apple-chip//
+      url: /apple-chip/
       output: web, pdf
 
     - title: S-Series
-      url: /pages/cpus/apple-chip/?type=S
+      url: /apple-chip/?type=S
       output: web, pdf
 
     - title: M-Series
-      url: /pages/cpus/apple-chip/?type=M
+      url: /apple-chip/?type=M
       output: web, pdf
 
 
