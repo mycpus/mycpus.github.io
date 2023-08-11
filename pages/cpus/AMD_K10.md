@@ -202,11 +202,14 @@ Beside performance improvements, the families incorporate enhanced power managem
 | 线程 | 3 |
 | 晶体管 | 758,000,000 |
 | 技术 | 45 nm SOI |
-| 生产日期 |  |
+| 生产日期 | 48/2013 |
 
 ```
-  OPN: 
+  OPN: ADX460WFK32GM
 ```
+
+![AMD Athlon II X3 460 正面](/images/cpus/AMD/AMD_Athlon_II_X3_460_1.jpg)
+![AMD Athlon II X3 460 反面](/images/cpus/AMD/AMD_Athlon_II_X3_460_2.jpg)
 
 ---------
 
