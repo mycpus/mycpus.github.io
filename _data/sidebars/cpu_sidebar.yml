@@ -457,6 +457,23 @@ entries:
       output: web, pdf
 
 
+  - title: Apple*
+    output: web, pdf
+
+    folderitems:
+    - title: A-Series
+      url: /pages/cpus/apple-chip/
+      output: web, pdf
+
+    - title: S-Series
+      url: /pages/cpus/apple-chip/?type=S
+      output: web, pdf
+
+    - title: M-Series
+      url: /pages/cpus/apple-chip/?type=M
+      output: web, pdf
+
+
   - title: Zilog
     output: web, pdf
 

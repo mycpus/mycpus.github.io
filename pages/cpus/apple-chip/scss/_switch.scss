@@ -1,0 +1,25 @@
+.type-switch{
+  padding: 30px 20px;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  .switch{
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 55px;
+    height: 55px;
+    @include border-radius(10px);
+    &.active{
+      background-color: transparentize(black, 0.95);
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

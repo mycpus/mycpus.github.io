@@ -1,0 +1,52 @@
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  width: 360px;
+  padding: 60px 20px;
+  .title{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    img{
+      width: 110px;
+      height: 110px;
+      margin-bottom: 30px;
+    }
+    h1{
+      color: $text-title;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: normal;
+      //font-weight: bold;
+    }
+  }
+}
+
+.thumbs-up{
+  @include transform(translateY(2px));
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  img{
+    width: 30px;
+    display: block;
+  }
+  .count{
+    font-size: $fz-info-sup;
+    text-align: center;
+    color: $text-copyright;
+  }
+}
+
+.author{
+  text-align: center;
+  color: $text-copyright;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  font-size: $fz;
+}

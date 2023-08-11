@@ -1,0 +1,34 @@
+
+@font-face {
+  font-family: "DS Digital";
+  src: url("../font/DSDigital.ttf");
+}
+
+@font-face {
+  font-family: "PrestigeEliteStd";
+  src: url("../font/PrestigeEliteStd-Bd.otf");
+}
+
+@font-face {
+  font-family: "JetBrainsMonoPureNumber";
+  src: url("../font/JetBrainsMono-Regular.otf");
+}
+
+@font-face {
+  font-family: "VerdanaPureNumber";
+  src: url("../font/VerdanaPureNumber.ttf");
+}
+
+@font-face {
+  font-family: "LLPixel";
+  src: url("../font/LLPixel_only_Letter.ttf");
+}
+
+.number{
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  font-family: 'DS Digital', sans-serif !important;
+}
+
+.bold{
+  font-weight: bold;
+}
