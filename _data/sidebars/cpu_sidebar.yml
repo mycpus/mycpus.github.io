@@ -462,15 +462,15 @@ entries:
 
     folderitems:
     - title: A-Series
-      url: /apple-chip%2F
+      url: /Apple_A_Series.html
       output: web, pdf
 
     - title: S-Series
-      url: /apple-chip/?type=S
+      url: /Apple_S_Series.html
       output: web, pdf
 
     - title: M-Series
-      url: /apple-chip/?type=M
+      url: /Apple_M_Series.html
       output: web, pdf
 
 
