@@ -161,6 +161,10 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: Core Celeron
+          url: /intel_CoreCeleron.html
+          output: web, pdf
+
         - title: Core Pentium
           url: /intel_CorePentium.html
           output: web, pdf
