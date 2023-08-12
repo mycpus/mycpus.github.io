@@ -15,6 +15,27 @@ folder: cpus
 
 ## 我的收藏
 
+### Intel Celeron M 440
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 478-pin mFC-PGA |
+| 核心 | Yonah |
+| Socket | Socket M / mPGA478MT |
+| 主频 | 1867 MHz |
+| 外频 | 133 MHz |
+| 总线频率 | 533 MHz |
+| 倍频 | x 14 |
+| 一级缓存 | 64 KB (32/32) |
+| 二级缓存 | 1024 KB |
+| 晶体管 | 291,000,000 |
+| 制造工艺 | 65 nm |
+| 步进 |  |
+| 生产日期 |  |
+
+![Intel Celeron M 440 正面](/images/cpus/Intel/Intel_Celeron_M_440_1.jpg)
+![Intel Celeron M 440 反面](/images/cpus/Intel/Intel_Celeron_M_440_2.jpg)
+
 ### Intel Celeron M 530
 
 | 参数 | 数值 |
