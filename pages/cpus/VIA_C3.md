@@ -86,6 +86,31 @@ VIA initially planned to develop the Cyrix III as a successor to the Cyrix M II,
 
 ---------
 
+### VIA C3-866AMHz
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 370-Pin CPGA |
+| 核心 | Nehemiah C5XL |
+| Socket| 370 |
+| 主频 | 866 MHz |
+| 外频 | 133 MHz |
+| 倍频 | x 6.5 |
+| 数据总线 | 64 Bit |
+| 地址总线 | 32 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 64 KB |
+| 晶体管 | 15,400,000 |
+| 技术 | 0.13 µm |
+| 电压 | 1.4 Volt |
+| 生产日期 | 47/2002 |
+| 产地 | Taiwan, China |
+
+![VIA C3-866AMHz 正面](/images/cpus/VIA/VIA_C3-866AMHz_1.jpg)
+![VIA C3-866AMHz 反面](/images/cpus/VIA/VIA_C3-866AMHz_2.jpg)
+
+---------
+
 ### XP1000 Pro VIA C3-733/133AMHz
 
 | 参数 | 数值 |
