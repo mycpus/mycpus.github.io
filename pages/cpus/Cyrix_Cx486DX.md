@@ -21,6 +21,31 @@ The Cyrix Cx486DX was designed to be completely software-compatible with Intel's
 
 ## 我的收藏
 
+### Cyrix Cx486DX2-50
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 168-Pin CPGA |
+| Socket | 2/3 |
+| 主频 | 50 MHz |
+| 外频 | 25 MHz |
+| 倍频 | x 2 |
+| 数据宽度 | 32 Bit |
+| 一级缓存 | 8 KB write-back |
+| 晶体管 | 1,100,000 |
+| 技术 | CMOS |
+| 电压 | 5 V |
+| 生产日期 |  |
+
+```
+原厂散热器上带有 MS Windows 和 write-back 徽标
+```
+
+![Cyrix Cx486DX2-50 正面](/images/cpus/Cyrix/Cyrix_Cx486DX2-50_1.jpg)
+![Cyrix Cx486DX2-50 反面](/images/cpus/Cyrix/Cyrix_Cx486DX2-50_2.jpg)
+
+---------
+
 ### Cyrix Cx486DX2-66GP
 
 | 参数 | 数值 |
