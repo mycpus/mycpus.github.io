@@ -157,6 +157,34 @@ Beside performance improvements, the families incorporate enhanced power managem
 
 ---------
 
+### AMD Mobile Athlon II M340
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 638-Pin LOµPGA |
+| 核心 | Caspian |
+| 步进 | NAEIC AE |
+| Socket | S1g3 |
+| 主频 | 2200 MHz |
+| 系统时钟 | 1600 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 512 KB |
+| 核心 | 2 |
+| 线程 | 2 |
+| 晶体管 | 234,000,000 |
+| 技术 | 45 nm SOI |
+| 生产日期 | 52/2009 |
+
+```
+  OPN: AMM340DBO22GQ
+```
+
+![AMD Mobile Athlon II M340 正面](/images/cpus/AMD/AMD_Mobile_Athlon_II_M340_1.jpg)
+![AMD Mobile Athlon II M340 反面](/images/cpus/AMD/AMD_Mobile_Athlon_II_M340_2.jpg)
+
+---------
+
 ### AMD Athlon II X2 255
 
 | 参数 | 数值 |

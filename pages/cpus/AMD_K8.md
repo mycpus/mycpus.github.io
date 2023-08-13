@@ -128,6 +128,33 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 
 ---------
 
+### AMD Mobile Athlon 64 X2 TK-57
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 638-Pin LOµPGA |
+| 核心 | Tyler |
+| 修订 | BH-G2 |
+| 步进 | NAABG |
+| Socket | S1 (S1g1) |
+| 主频 | 1900 MHz |
+| 系统时钟 | 800 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 2 x 128 KB (64/64) |
+| 二级缓存 | 2 x 256 KB |
+| 晶体管 | 221,000,000 |
+| 技术 | 65 nm SOI |
+| 生产日期 | 13/2008 |
+
+```
+  OPN: AMDTK57HAX4DM
+```
+
+![AMD Mobile Athlon 64 X2 TK-57 正面](/images/cpus/AMD/AMD_Mobile_Athlon_64_X2_TK-57_1.jpg)
+![AMD Mobile Athlon 64 X2 TK-57 反面](/images/cpus/AMD/AMD_Mobile_Athlon_64_X2_TK-57_2.jpg)
+
+---------
+
 ### AMD Mobile Athlon X2 QL-62
 
 | 参数 | 数值 |
@@ -178,6 +205,7 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 
 ![AMD Turion 64 MK-36 正面](/images/cpus/AMD/AMD_Turion_64_MK-36_1.jpg)
 ![AMD Turion 64 MK-36 反面](/images/cpus/AMD/AMD_Turion_64_MK-36_2.jpg)
+![AMD Turion 64 MK-36 ](/images/cpus/AMD/AMD_Turion_64_MK-36_3.jpg)
 
 ---------
 
