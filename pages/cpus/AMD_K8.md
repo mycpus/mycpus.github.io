@@ -234,4 +234,31 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 ![AMD Turion X2 Ultra ZM-82 正面](/images/cpus/AMD/AMD_Turion_X2_Ultra_ZM-82_1.jpg)
 ![AMD Turion X2 Ultra ZM-82 反面](/images/cpus/AMD/AMD_Turion_X2_Ultra_ZM-82_2.jpg)
 
+---------
+
+### AMD Mobile Sempron 3600+
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 638-Pin LOµPGA |
+| 核心 | Sherman |
+| 修订 | G2 |
+| 步进 | CAAWG |
+| Socket | S1(S1g1) |
+| 主频 | 2000 MHz |
+| 系统时钟 | 800 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 256 KB |
+| 晶体管 |  |
+| 技术 | 65 nm SOI |
+| 生产日期 | 24/2008 |
+
+```
+  OPN: SMS3600HAX3DN
+```
+
+![AMD Mobile Sempron 3600+ 正面](/images/cpus/AMD/AMD_Mobile_Sempron_3600+_1.jpg)
+![AMD Mobile Sempron 3600+ 反面](/images/cpus/AMD/AMD_Mobile_Sempron_3600+_2.jpg)
+
 {% include links.html %}
