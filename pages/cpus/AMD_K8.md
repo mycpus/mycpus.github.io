@@ -236,6 +236,60 @@ The major new feature in K8 CPU family is 64-bit mode. In this mode the processo
 
 ---------
 
+### AMD Mobile Sempron 3400+
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 638-Pin LOµPGA |
+| 核心 | Keene |
+| 修订 | F2 |
+| 步进 | NEBAF |
+| Socket | S1(S1g1) |
+| 主频 | 1800 MHz |
+| 系统时钟 | 800 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 256 KB |
+| 晶体管 | 68,600,000 |
+| 技术 | 90 nm SOI |
+| 生产日期 | 46/2006 |
+
+```
+  OPN: SMS3400HAX3CM
+```
+
+![AMD Mobile Sempron 3400+ 正面](/images/cpus/AMD/AMD_Mobile_Sempron_3400+_1.jpg)
+![AMD Mobile Sempron 3400+ 反面](/images/cpus/AMD/AMD_Mobile_Sempron_3400+_2.jpg)
+
+---------
+
+### AMD Mobile Sempron 3500+
+
+| 参数 | 数值 |
+| ------ | ------ |
+| CPU 类型 | 638-Pin LOµPGA |
+| 核心 | Keene |
+| 修订 | F2 |
+| 步进 | NFBCF |
+| Socket | S1(S1g1) |
+| 主频 | 1800 MHz |
+| 系统时钟 | 800 MHz HT |
+| 总线宽度 | 64 Bit |
+| 一级缓存 | 128 KB (64/64) |
+| 二级缓存 | 512 KB |
+| 晶体管 | 68,600,000 |
+| 技术 | 90 nm SOI |
+| 生产日期 | 27/2007 |
+
+```
+  OPN: SMS3500HAX4CM
+```
+
+![AMD Mobile Sempron 3500+ 正面](/images/cpus/AMD/AMD_Mobile_Sempron_3500+_1.jpg)
+![AMD Mobile Sempron 3500+ 反面](/images/cpus/AMD/AMD_Mobile_Sempron_3500+_2.jpg)
+
+---------
+
 ### AMD Mobile Sempron 3600+
 
 | 参数 | 数值 |
