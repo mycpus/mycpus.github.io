@@ -84,6 +84,52 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 
 ---------
 
+### NVIDIA GeForce 9800 GTX+ 
+
+| 参数 | 数值 |
+| ------ | ------ |
+| GPU Name | G92B |
+| GPU Variant | G92-420-B1 |
+| Architecture | Tesla |
+| Foundry | TSMC |
+| Process Size | 55 nm |
+| Transistors | 754 million |
+| Density | 2.9M / mm² |
+| Die Size | 260 mm² |
+| Chip Package | FCBGA-1148 |
+| Memory Size | 512 MB |
+| Memory Type | GDDR3 |
+| Memory Bus | 256 bit |
+| Bandwidth | 70.40 GB/s |
+| Generation | GeForce 9 (9800) |
+| Bus Interface | PCIe 2.0 x16 |
+| GPU Clock | 738 MHz |
+| Shader Clock | 1836 MHz |
+| Memory Clock | 1100 MHz, 2.2 Gbps effective |
+| Shading Units | 128 |
+| TMUs | 64 |
+| ROPs | 16 |
+| SM Count | 16 |
+| L2 Cache | 64 KB |
+| Pixel Rate | 11.81 GPixel/s |
+| Texture Rate | 47.23 GTexel/s |
+| FP32 (float) | 470.0 GFLOPS |
+| DirectX | 11.1 (10_0) |
+| OpenGL | 3.3 |
+| OpenCL | 1.1 |
+| Vulkan | N/A |
+| CUDA | 1.1 |
+| Shader Model | 4.0 |
+| Release Date | Jan 16th, 2009 |
+
+```
+影驰 9800GTX+ 上将版
+738/2200 512M/256位 DDR3 PCI-E HDMI
+【在用】
+```
+
+---------
+
 ### NVIDIA GeForce G310
 
 | 参数 | 数值 |
@@ -103,5 +149,23 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 ![NVDIA GeForce G310 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_2.jpg)
 ![NVDIA GeForce G310 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_3.jpg)
 ![NVDIA GeForce G310 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_4.jpg)
+
+---------
+
+# NVIDIA GeForce GTX 750
+
+```
+【在用】
+```
+
+---------
+
+# NVIDIA GeForce GTX 1050
+
+```
+【在用】
+```
+
+---------
 
 {% include links.html %}
