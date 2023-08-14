@@ -461,6 +461,15 @@ entries:
       output: web, pdf
 
 
+  - title: Zilog
+    output: web, pdf
+
+    folderitems:
+    - title: Z80
+      url: /Zilog_Z80.html
+      output: web, pdf
+
+
   - title: Apple*
     output: web, pdf
 
@@ -475,15 +484,6 @@ entries:
 
     - title: M-Series
       url: /Apple_M_Series.html
-      output: web, pdf
-
-
-  - title: Zilog
-    output: web, pdf
-
-    folderitems:
-    - title: Z80
-      url: /Zilog_Z80.html
       output: web, pdf
 
 
