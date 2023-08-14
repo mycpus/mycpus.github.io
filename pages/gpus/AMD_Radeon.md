@@ -51,6 +51,7 @@ folder: gpus
 | Shader model | 6.4 |
 
 ```
+磐镭 RX560 4G
 【在用】
 ```
 
