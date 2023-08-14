@@ -39,5 +39,7 @@ allowed-tags:
   - Transmeta
   - Qualcomm
   - Zilog
+  - ATI
+  - NVIDIA
 
 # Copyright 2021 Google LLC
