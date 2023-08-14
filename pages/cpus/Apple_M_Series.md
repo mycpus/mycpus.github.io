@@ -8,7 +8,7 @@ summary: 苹果 M 系列处理器
 
 ## 苹果 M 系列处理器参数大全
 
-<a href="/apple-chip/?type=M" target="_blank">打开</a>
+正在<a href="/apple-chip/?type=M" target="_blank">打开</a>，请稍后……
 
 <script type="text/javascript">
     window.location = '/apple-chip/?type=M'

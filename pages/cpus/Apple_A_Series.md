@@ -8,7 +8,7 @@ summary: 苹果 A 系列处理器
 
 ## 苹果 A 系列处理器参数大全
 
-<a href="/apple-chip/" target="_blank">打开</a>
+正在<a href="/apple-chip/" target="_blank">打开</a>，请稍后……
 
 <script type="text/javascript">
     window.location = '/apple-chip/'
