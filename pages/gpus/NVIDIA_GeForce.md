@@ -71,7 +71,7 @@ folder: gpus
 | OpenCL | N/A |
 | Vulkan | N/A |
 | Shader model | 3.0 |
-| 上市时间 |  |
+| 上市时间 | 2005 |
 
 ![NVDIA GeForce 7800GT 正面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_1.jpg)
 ![NVDIA GeForce 7800GT 背面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_2.jpg)
@@ -92,6 +92,7 @@ folder: gpus
 | 内存频率 | 500/800 MHz |
 | 浮点运算能力 | 73 GFlops |
 | 总线接口 | PCIe 2.0 x16 |
+| 上市时间 | 2009 |
 
 ![NVDIA GeForce G310 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_1.jpg)
 ![NVDIA GeForce G310 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_2.jpg)

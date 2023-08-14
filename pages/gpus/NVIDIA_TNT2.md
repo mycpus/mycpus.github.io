@@ -16,7 +16,7 @@ folder: gpus
 | 参数 | 数值 |
 | ------ | ------ |
 | 核心架构 | Fahrenheit |
-| GPU代号 | NV5B |
+| GPU代号 | NV5 |
 | 生产工艺 | 250 nm |
 | TDP功耗 | 100W |
 | 内存类型 | SDR |
@@ -36,7 +36,7 @@ folder: gpus
 | OpenGL | 1.2 |
 | OpenCL | N/A |
 | Vulkan | N/A |
-| 上市时间 |  |
+| 上市时间 | 1999 |
 
 ![NVDIA TNT2 M64 正面](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_1.jpg)
 ![NVDIA TNT2 M64 背面](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_2.jpg)
