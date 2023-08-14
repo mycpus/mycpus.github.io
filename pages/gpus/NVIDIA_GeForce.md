@@ -152,7 +152,7 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 
 ---------
 
-# NVIDIA GeForce GTX 750
+### NVIDIA GeForce GTX 750
 
 ```
 【在用】
@@ -160,7 +160,7 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 
 ---------
 
-# NVIDIA GeForce GTX 1050
+### NVIDIA GeForce GTX 1050
 
 ```
 【在用】
