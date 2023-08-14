@@ -155,8 +155,8 @@ AX4850 512MD3-H
 ```
 
 ![ATI Radeon HD 4850 正面](/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_1.jpg)
-![ATI Radeon HD 4850 背面](/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_1.jpg)
-![ATI Radeon HD 4850 接口](/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_1.jpg)
+![ATI Radeon HD 4850 背面](/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_2.jpg)
+![ATI Radeon HD 4850 接口](/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_3.jpg)
 
 ---------
 
