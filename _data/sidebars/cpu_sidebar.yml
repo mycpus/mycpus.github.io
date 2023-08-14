@@ -491,8 +491,16 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: NVIDIA
-      url: /NVIDIA.html
+    - title: NVIDIA TNT2
+      url: /NVIDIA_TNT2.html
+      output: web, pdf
+
+    - title: NVIDIA GeForce
+      url: /NVIDIA_GeForce.html
+      output: web, pdf
+    
+    - title: NVIDIA Quadro
+      url: /NVIDIA_Quadro.html
       output: web, pdf
 
 # Copyright 2021 Google LLC

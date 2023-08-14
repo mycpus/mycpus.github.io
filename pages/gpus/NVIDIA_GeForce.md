@@ -5,7 +5,7 @@ keywords: CPU, cpu, processor, qualification, information, pictures, core, frequ
 last_updated: Oct 17, 2022
 summary: ""
 sidebar: cpu_sidebar
-permalink: NVIDIA.html
+permalink: NVIDIA_GeForce.html
 folder: gpus
 ---
 
@@ -41,5 +41,22 @@ folder: gpus
 
 ![NVIDIA GeForce Go6600 NPB 128M 侧面](/images/gpus/NVIDIA/GeForce_Go6600_NPB_128M_1.jpg)
 ![NVIDIA GeForce Go6600 NPB 128M 正面](/images/gpus/NVIDIA/GeForce_Go6600_NPB_128M_2.jpg)
+
+---------
+
+### NVDIA GeForce 7800GT
+
+![NVDIA GeForce 7800GT 正面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_1.jpg)
+![NVDIA GeForce 7800GT 背面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_2.jpg)
+![NVDIA GeForce 7800GT 接口](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_3.jpg)
+
+---------
+
+### NVIDIA GeForce G310
+
+![NVDIA GeForce G310 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_1.jpg)
+![NVDIA GeForce G310 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_2.jpg)
+![NVDIA GeForce G310 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_3.jpg)
+![NVDIA GeForce G310 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_4.jpg)
 
 {% include links.html %}
