@@ -21,7 +21,6 @@ folder: gpus
 | 芯片工艺 | 105 nm |
 | 晶体管数量 | 36 million |
 | 芯片面积 | 81mm² |
-| 发布日期 | 2002年9月 |
 | 产品系列 | Mobility 9000 |
 | 类型 | 移动 |
 | 总线接口 | AGP 4x |
@@ -42,6 +41,7 @@ folder: gpus
 | OpenGL | 1.4 |
 | OpenCL | N/A |
 | Vulkan | N/A |
+| 上市时间 | 2002年9月 |
 
 ```
 此款显卡为 PCI 接口。
@@ -55,16 +55,44 @@ folder: gpus
 
 ### ATI Radeon HD 3450
 
+这是一款采用了台积电 55nm工艺的GPU，采用ATI TeraScale架构，上市时间为2008年1月23日。具有 1.81亿个晶体管、40 个 渲染 核心和 512MB DDR2 显存，具备 64KB 二级缓存，理论算力48.00GFLOPS，总功耗为25W。
+
 | 参数 | 数值 |
 | ------ | ------ |
+| GPU型号 | RV620 |
+| 架构 | TeraScale |
 | 核心频率 | 600 MHz |
 | 流处理单元 | 40 个 |
 | 核心架构 | TeraScale |
-| 生产工艺 | 55 nm |
-| TDP功耗 | 25W |
-| 内存类型 | DDR2 |
-| 内存位宽 | 64 Bit |
-| 晶体管数量 | 181 million |
+| 架构 | TeraScale |
+| 芯片厂 | TSMC |
+| 芯片工艺 | 55 nm |
+| 晶体管数量 | 1亿 |
+| 芯片面积 | 67mm² |
+| 产品系列 | Radeon R600 |
+| 类型 | 桌面 |
+| 显存频率 | 400 MHz |
+| 显存容量 | 512MB |
+| 显存类型 | DDR2 |
+| 显存位宽 | 64bit |
+| 显存带宽 | 6.400 GB/s |
+| 流处理器数量 | 40 |
+| 纹理单元 | 4 |
+| 光栅单元 | 4 |
+| 二级缓存 | 64 KB |
+| 像素填充率 | 2.400 GPixel/s |
+| 纹理填充率 | 2.400 GTexel/s |
+| FP32性能 | 48.00 GFLOPS |
+| 功耗 | 25W |
+| 建议电源功率 | 200 W |
+| 输出接口 | 1x DVI, 1x S-Video |
+| 电源接口 | None |
+| DirectX | 10.1 (10_1) |
+| OpenGL | 3.3 |
+| OpenCL | N/A |
+| Vulkan | N/A |
+| Shader Model | 4.1 |
+| 上市时间 | 2008年1月 |
 
 ![ATI Radeon HD 3450 正面](/images/gpus/ATI/ATI_Radeon_HD_3450_(256M)_1.jpg)
 ![ATI Radeon HD 3450 背面](/images/gpus/ATI/ATI_Radeon_HD_3450_(256M)_2.jpg)
@@ -84,7 +112,6 @@ folder: gpus
 | 芯片工艺 | 55 nm |
 | 晶体管数量 | 9亿 |
 | 芯片面积 | 256mm² |
-| 发布日期 | 2008年6月 |
 | 产品系列 | Radeon R700 |
 | 类型 | 桌面 |
 | 总线接口 | PCIe 2.0 x16 |
@@ -111,6 +138,7 @@ folder: gpus
 | OpenCL | 1.1 |
 | Vulkan | N/A |
 | Shader Model | 4.1 |
+| 发布日期 | 2008年6月 |
 
 ```
 迪兰恒进 HD4850 星钻

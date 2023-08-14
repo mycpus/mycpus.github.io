@@ -73,6 +73,11 @@ folder: gpus
 | Shader model | 3.0 |
 | 上市时间 | 2005 |
 
+```
+XFX 讯景显卡
+GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
+```
+
 ![NVDIA GeForce 7800GT 正面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_1.jpg)
 ![NVDIA GeForce 7800GT 背面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_2.jpg)
 ![NVDIA GeForce 7800GT 接口](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_3.jpg)
