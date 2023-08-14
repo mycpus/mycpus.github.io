@@ -41,5 +41,6 @@ allowed-tags:
   - Zilog
   - ATI
   - NVIDIA
+  - GPU
 
 # Copyright 2021 Google LLC

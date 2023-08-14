@@ -1,6 +1,6 @@
 ---
-title: NVIDA TNT2
-tags: [GPU, NVIDA]
+title: NVIDIA TNT2
+tags: [GPU, NVIDIA]
 keywords: CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, GPU
 last_updated: Aug 14, 2023
 summary: ""
@@ -38,8 +38,8 @@ folder: gpus
 | Vulkan | N/A |
 | 上市时间 | 1999 |
 
-![NVDIA TNT2 M64 正面](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_1.jpg)
-![NVDIA TNT2 M64 背面](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_2.jpg)
-![NVDIA TNT2 M64 接口](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_3.jpg)
+![NVIDIA TNT2 M64 正面](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_1.jpg)
+![NVIDIA TNT2 M64 背面](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_2.jpg)
+![NVIDIA TNT2 M64 接口](/images/gpus/NVIDIA/NVIDIA_TNT2_M64_(32M_七彩虹)_3.jpg)
 
 {% include links.html %}
