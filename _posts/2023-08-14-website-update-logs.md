@@ -5,6 +5,12 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-08-14**
+
+- 新增 GPU (显卡) 藏品板块。
+- 新增 ATI 显卡 4 块。
+- 新增 NVIDIA 显卡 5 块。
+
 **2023-08-13**
 
 - 新增 Intel 处理器 4 颗。
