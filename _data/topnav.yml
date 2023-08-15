@@ -3,10 +3,12 @@
 topnav:
 - title: Topnav
   items:
+    - title: CPU
+      url: /
+    - title: GPU
+      url: /index_GPU.html
     - title: News
       url: /news.html
-    - title: Projects
-      external_url: https://www.ihonux.com/
 
 #Topnav dropdowns
 topnav_dropdowns:
@@ -14,6 +16,8 @@ topnav_dropdowns:
   folders:
     - title: Links
       folderitems:
+        - title: iHonux's Projects
+          external_url: https://www.ihonux.com/
         - title: 电脑博物馆
           external_url: https://dnbwg.ihonux.com/
         - title: CPU-Galerie
