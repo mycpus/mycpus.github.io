@@ -11,6 +11,9 @@ entries:
     - title: CPU
       url: /index.html
       output: web
+    - title: GPU
+      url: /index_GPU.html
+      output: web
     - title: News
       url: /news.html
       output: web
