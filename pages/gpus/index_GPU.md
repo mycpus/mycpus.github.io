@@ -7,7 +7,6 @@ topnav: topnav
 comments: false
 ---
 
-显卡收藏
-
+![显卡博物馆](/images/mygpus.jpg)
 
 {% include links.html %}
