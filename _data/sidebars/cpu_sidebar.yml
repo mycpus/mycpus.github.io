@@ -487,29 +487,4 @@ entries:
       output: web, pdf
 
 
-  - title: GPU
-    output: web, pdf
-
-    folderitems:
-    - title: ATI Radeon
-      url: /ATI_Radeon.html
-      output: web, pdf
-
-    - title: AMD Radeon
-      url: /AMD_Radeon.html
-      output: web, pdf
-
-    - title: NVIDIA TNT2
-      url: /NVIDIA_TNT2.html
-      output: web, pdf
-
-    - title: NVIDIA GeForce
-      url: /NVIDIA_GeForce.html
-      output: web, pdf
-    
-    - title: NVIDIA Quadro
-      url: /NVIDIA_Quadro.html
-      output: web, pdf
-
-
 # Copyright 2021 Google LLC

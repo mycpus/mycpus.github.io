@@ -6,19 +6,6 @@ entries:
   version: 
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
   - title: Overview
     output: web, pdf
     folderitems:
@@ -27,14 +14,6 @@ entries:
       url: /index_GPU.html
       output: web, pdf
       type: homepage
-
-    - title: About
-      url: /about.html
-      output: web, pdf
-
-    - title: Support
-      url: /support.html
-      output: web, pdf
 
 
   - title: ATI
