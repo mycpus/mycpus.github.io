@@ -84,6 +84,48 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 
 ---------
 
+### NVIDIA GeForce 9500GT
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 核心频率 | 550 MHz |
+| 流处理单元 | 32 个 |
+| 核心架构 | Tesla |
+| GPU代号 | G96 |
+| 生产工艺 | 65 nm |
+| TDP功耗 | 50W |
+| 内存频率 | 2 Gbps |
+| 内存类型 | GDDR3 |
+| 内存位宽 | 128 bit |
+| 最大显存 | 512 MB |
+| 晶体管数量 | 314 million |
+| 代工厂 | UMC |
+| 核心面积 | 144 mm² |
+| 二级缓存 | 32 KB |
+| 光栅单元 | 16 |
+| 纹理单元 | 8 |
+| SM count | 4 |
+| 建议电源 | 250 W |
+| 公版接口 | 2x DVI, 1x S-Video |
+| 总线接口 | PCIe 2.0 x16 |
+| 像素填充率 | 4.800 GPixel/s |
+| 纹理填充率 | 9.600 GTexel/s |
+| 显存带宽 | 32.00 GB/s |
+| FP32 | 96.00 GFLOPS |
+| DirectX | 11.1 (10_0) |
+| OpenGL | 3.3 |
+| OpenCL | 1.1 |
+| Vulkan | N/A |
+| CUDA | 1.1 |
+| Shader model | 4.0 |
+
+![NVIDIA GeForce 9500GT 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_1.jpg)
+![NVIDIA GeForce 9500GT 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_2.jpg)
+![NVIDIA GeForce 9500GT 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_3.jpg)
+![NVIDIA GeForce 9500GT 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_4.jpg)
+
+---------
+
 ### NVIDIA GeForce 9800 GTX+ 
 
 | 参数 | 数值 |
