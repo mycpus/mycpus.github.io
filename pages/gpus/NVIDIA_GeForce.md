@@ -284,7 +284,6 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 ![NVIDIA GeForce GTX 760 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_1.jpg)
 ![NVIDIA GeForce GTX 760 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_2.jpg)
 ![NVIDIA GeForce GTX 760 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_3.jpg)
-![NVIDIA GeForce GTX 760 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_4.jpg)
 
 ---------
 
