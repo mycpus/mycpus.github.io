@@ -154,9 +154,94 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 
 ### NVIDIA GeForce GTX 750
 
-```
-【在用】
-```
+| 参数 | 数值 |
+| ------ | ------ |
+| 核心频率 | 1020 MHz |
+| Turbo频率 | 1085 MHz |
+| 流处理单元 | 512 个 |
+| 核心架构 | Maxwell |
+| GPU代号 | GM107 |
+| 生产工艺 | 28 nm |
+| TDP功耗 | 55W |
+| 内存频率 | 5 Gbps |
+| 内存类型 | GDDR5 |
+| 内存位宽 | 128 bit |
+| 最大显存 | 1024 MB |
+| 晶片编号 | GM107-300-A2 |
+| 晶体管数量 | 1,870 million |
+| 代工厂 | TSMC |
+| 核心面积 | 148 mm² |
+| 一级缓存 | 64 KB (per SMM) |
+| 二级缓存 | 2 MB |
+| 光栅单元 | 32 |
+| 纹理单元 | 16 |
+| 建议电源 | 250 W |
+| 公版接口 | 2x DVI, 1x mini-HDMI |
+| 总线接口 | PCIe 3.0 x16 |
+| 像素填充率 | 17.36 GPixel/s |
+| 纹理填充率 | 34.72 GTexel/s |
+| 显存带宽 | 80.19 GB/s |
+| FP32 | 1,111 GFLOPS |
+| FP64 | 34.72 GFLOPS (1:32) |
+| DirectX | 12 (11_0) |
+| OpenGL | 4.6 |
+| OpenCL | 3.0 |
+| Vulkan | 1.1 |
+| CUDA | 5.0 |
+| Shader model | 5.1 |
+| 上市时间 | 2014年2月18日 |
+
+![NVDIA GeForce GTX 750 正面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_1.jpg)
+![NVDIA GeForce GTX 750 背面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_2.jpg)
+![NVDIA GeForce GTX 750 接口](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_3.jpg)
+![NVDIA GeForce GTX 750 上面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_4.jpg)
+
+---------
+
+### NVIDIA GeForce GTX 760
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 核心频率 | 980 MHz |
+| Turbo频率 | 1032 MHz |
+| 流处理单元 | 1152 个 |
+| 核心架构 | Kepler |
+| GPU代号 | GK104 |
+| 生产工艺 | 28 nm |
+| TDP功耗 | 170W |
+| 内存频率 | 6 Gbps |
+| 内存类型 | GDDR5 |
+| 内存位宽 | 256 bit |
+| 最大显存 | 2 GB |
+| 晶片编号 | GK104-225-A2 |
+| 晶体管数量 | 3,540 million |
+| 代工厂 | TSMC |
+| 核心面积 | 294 mm² |
+| 一级缓存 | 16 KB (per SMX) |
+| 二级缓存 | 512 KB |
+| 光栅单元 | 96 |
+| 纹理单元 | 32 |
+| 建议电源 | 450 W |
+| 公版供电 | 2x 6-pin |
+| 公版接口 | 2x DVI, 1x HDMI, 1x DisplayPort |
+| 总线接口 | PCIe 3.0 x16 |
+| 像素填充率 | 24.77 GPixel/s |
+| 纹理填充率 | 99.07 GTexel/s |
+| 显存带宽 | 192.3 GB/s |
+| FP32 | 2.378 TFLOPS |
+| FP64 | 99.07 GFLOPS (1:24) |
+| DirectX | 12 (11_0) |
+| OpenGL | 4.6 |
+| OpenCL | 3.0 |
+| Vulkan | 1.1 |
+| CUDA | 3.0 |
+| Shader model | 5.1 |
+| 上市时间 | 2013年6月25日 |
+
+![NVDIA GeForce GTX 760 正面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_1.jpg)
+![NVDIA GeForce GTX 760 背面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_2.jpg)
+![NVDIA GeForce GTX 760 接口](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_3.jpg)
+![NVDIA GeForce GTX 760 上面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_4.jpg)
 
 ---------
 

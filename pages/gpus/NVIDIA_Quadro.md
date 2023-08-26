@@ -69,7 +69,7 @@ Quadro FX540是一款入门级PCI-E产品，比AGP 8X绘图总线高出一倍的
 | 光栅单元 | 8 |
 | 纹理单元 | 8 |
 | 建议电源 | 200 W |
-| 公版接口 | 1x DVI1x VGA1x S-Video |
+| 公版接口 | 1x DVI, 1x VGA, 1x S-Video |
 | 总线接口 | PCIe 1.0 x16 |
 | 像素填充率 | 2.400 GPixel/s |
 | 纹理填充率 | 2.400 GTexel/s |
