@@ -118,6 +118,7 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 | Vulkan | N/A |
 | CUDA | 1.1 |
 | Shader model | 4.0 |
+| 上市时间 | 2008年7月29日 |
 
 ![NVIDIA GeForce 9500GT 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_1.jpg)
 ![NVIDIA GeForce 9500GT 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_2.jpg)
