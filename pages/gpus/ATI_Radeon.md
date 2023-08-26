@@ -53,6 +53,26 @@ folder: gpus
 
 ---------
 
+### ATI Radeon X1650 Pro
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 核心频率 | 600 MHz |
+| 核心架构 | RV530LE |
+| 生产工艺 | 80 nm |
+| TDP功耗 | 44W |
+| 显存频率 | 1400 MHz |
+| 显存类型 | GDDR3 |
+| 显存位宽 | 128 Bit |
+| 晶体管数量 | 330 million |
+| DirectX | 9.0c |
+
+![ATI Radeon X1650 Pro 正面](/images/gpus/ATI/ATI_Radeon_X_1650_Pro_(256M_DDR3_迪兰镭姬杀手)_1.jpg)
+![ATI Radeon X1650 Pro 背面](/images/gpus/ATI/ATI_Radeon_X_1650_Pro_(256M_DDR3_迪兰镭姬杀手)_2.jpg)
+![ATI Radeon X1650 Pro 接口](/images/gpus/ATI/ATI_Radeon_X_1650_Pro_(256M_DDR3_迪兰镭姬杀手)_3.jpg)
+
+---------
+
 ### ATI Radeon HD 3450
 
 这是一款采用了台积电 55nm工艺的GPU，采用ATI TeraScale架构，上市时间为2008年1月23日。具有 1.81亿个晶体管、40 个 渲染 核心和 512MB DDR2 显存，具备 64KB 二级缓存，理论算力48.00GFLOPS，总功耗为25W。
