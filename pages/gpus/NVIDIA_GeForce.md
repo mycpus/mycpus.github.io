@@ -44,7 +44,7 @@ folder: gpus
 
 ---------
 
-### NVDIA GeForce 7800GT
+### NVIDIA GeForce 7800GT
 
 | 参数 | 数值 |
 | ------ | ------ |
@@ -78,9 +78,9 @@ XFX 讯景显卡
 GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 ```
 
-![NVDIA GeForce 7800GT 正面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_1.jpg)
-![NVDIA GeForce 7800GT 背面](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_2.jpg)
-![NVDIA GeForce 7800GT 接口](/images/gpus/NVIDIA/NVDIA_GeForce_7800GT_(256M_XFX)_3.jpg)
+![NVIDIA GeForce 7800GT 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_7800GT_(256M_XFX)_1.jpg)
+![NVIDIA GeForce 7800GT 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_7800GT_(256M_XFX)_2.jpg)
+![NVIDIA GeForce 7800GT 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_7800GT_(256M_XFX)_3.jpg)
 
 ---------
 
@@ -145,10 +145,10 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 | 总线接口 | PCIe 2.0 x16 |
 | 上市时间 | 2009 |
 
-![NVDIA GeForce G310 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_1.jpg)
-![NVDIA GeForce G310 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_2.jpg)
-![NVDIA GeForce G310 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_3.jpg)
-![NVDIA GeForce G310 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_4.jpg)
+![NVIDIA GeForce G310 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_1.jpg)
+![NVIDIA GeForce G310 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_2.jpg)
+![NVIDIA GeForce G310 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_3.jpg)
+![NVIDIA GeForce G310 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_4.jpg)
 
 ---------
 
@@ -191,10 +191,10 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 | Shader model | 5.1 |
 | 上市时间 | 2014年2月18日 |
 
-![NVDIA GeForce GTX 750 正面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_1.jpg)
-![NVDIA GeForce GTX 750 背面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_2.jpg)
-![NVDIA GeForce GTX 750 接口](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_3.jpg)
-![NVDIA GeForce GTX 750 上面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_750_(1G_微星)_4.jpg)
+![NVIDIA GeForce GTX 750 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_1.jpg)
+![NVIDIA GeForce GTX 750 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_2.jpg)
+![NVIDIA GeForce GTX 750 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_3.jpg)
+![NVIDIA GeForce GTX 750 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_4.jpg)
 
 ---------
 
@@ -238,10 +238,10 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 | Shader model | 5.1 |
 | 上市时间 | 2013年6月25日 |
 
-![NVDIA GeForce GTX 760 正面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_1.jpg)
-![NVDIA GeForce GTX 760 背面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_2.jpg)
-![NVDIA GeForce GTX 760 接口](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_3.jpg)
-![NVDIA GeForce GTX 760 上面](/images/gpus/NVIDIA/NVDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_4.jpg)
+![NVIDIA GeForce GTX 760 正面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_1.jpg)
+![NVIDIA GeForce GTX 760 背面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_2.jpg)
+![NVIDIA GeForce GTX 760 接口](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_3.jpg)
+![NVIDIA GeForce GTX 760 上面](/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_4.jpg)
 
 ---------
 
