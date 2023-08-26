@@ -5,6 +5,11 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2023-08-26**
+
+- 新增 NVIDIA Quadro 显卡 1 块。
+- 新增 NVIDIA GeForce 显卡 3 块。
+
 **2023-08-14**
 
 - 新增 GPU (显卡) 藏品板块。
