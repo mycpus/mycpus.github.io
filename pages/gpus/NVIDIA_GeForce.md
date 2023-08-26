@@ -247,6 +247,45 @@ GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
 
 ### NVIDIA GeForce GTX 1050
 
+| 参数 | 数值 |
+| ------ | ------ |
+| 核心频率 | 1354 MHz |
+| Turbo频率 | 1455 MHz |
+| 流处理单元 | 640 个 |
+| 核心架构 | Pascal |
+| GPU代号 | GP107 |
+| 生产工艺 | 14 nm |
+| TDP功耗 | 75W |
+| 内存频率 | 7 Gbps |
+| 内存类型 | GDDR5 |
+| 内存位宽 | 128 bit |
+| 最大显存 | 4 GB |
+| 晶片编号 | GP107-300-A1 |
+| 晶体管数量 | 3,300 million |
+| 代工厂 | Samsung |
+| 核心面积 | 132 mm² |
+| 一级缓存 | 48 KB |
+| 二级缓存 | 1024 KB |
+| 光栅单元 | 40 |
+| 纹理单元 | 32 |
+| SM count | 5 |
+| 建议电源 | 250 W |
+| 公版接口 | 1x DVI, 1x HDMI, 1x DisplayPort |
+| 总线接口 | PCIe 3.0 x16 |
+| 像素填充率 | 46.56 GPixel/s |
+| 纹理填充率 | 58.20 GTexel/s |
+| 显存带宽 | 112.1 GB/s |
+| FP16 | 29.10 GFLOPS (1:64) |
+| FP32 | 1.862 TFLOPS |
+| FP64 | 58.20 GFLOPS (1:32) |
+| DirectX | 12 (12_1) |
+| OpenGL | 4.6 |
+| OpenCL | 3.0 |
+| Vulkan | 1.2 |
+| CUDA | 6.1 |
+| Shader model | 6.4 |
+| 上市时间 | 2016年10月 |
+
 ```
 【在用】
 ```
