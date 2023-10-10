@@ -18,9 +18,11 @@ topnav_dropdowns:
       folderitems:
         - title: iHonux's Projects
           external_url: https://www.ihonux.com/
+        - title: iHonux's Projects (镜像)
+          external_url: https://www.volisoft.top/
         - title: 电脑博物馆
           external_url: https://dnbwg.ihonux.com/
-        - title: 电脑博物馆(镜像)
+        - title: 电脑博物馆 (镜像)
           external_url: https://cm.ihonux.com/
         - title: CPU-Galerie
           external_url: http://www.cpu-galerie.de/
