@@ -20,6 +20,8 @@ topnav_dropdowns:
           external_url: https://www.ihonux.com/
         - title: 电脑博物馆
           external_url: https://dnbwg.ihonux.com/
+        - title: 电脑博物馆(镜像)
+          external_url: https://cm.ihonux.com/
         - title: CPU-Galerie
           external_url: http://www.cpu-galerie.de/
         - title: cpu-collection.de
