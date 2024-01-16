@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2024-01-16**
+
+- 本站启用全新域名：[cpu.retromuseum.org](https://cpu.retromuseum.org) 。
+
 **2023-08-26**
 
 - 新增 ATI 显卡 1 块。

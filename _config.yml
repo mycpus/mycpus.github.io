@@ -3,7 +3,7 @@ repository: tomjoht/documentation-theme-jekyll
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Honux's CPU Museum
+topnav_title: CPU Museum
 # this appears on the top navigation bar next to the home button
 
 site_title: 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum
