@@ -16,12 +16,8 @@ topnav_dropdowns:
   folders:
     - title: Links
       folderitems:
-        - title: iHonux's Projects
-          external_url: https://www.ihonux.com/
-        - title: iHonux's Projects (镜像)
-          external_url: https://www.volisoft.top/
         - title: 电脑博物馆
-          external_url: https://dnbwg.ihonux.com/
+          external_url: https://retromuseum.org/
         - title: 电脑博物馆 (镜像)
           external_url: https://cm.ihonux.com/
         - title: CPU-Galerie
@@ -36,5 +32,9 @@ topnav_dropdowns:
           external_url: https://www.mynikko.com/CPU/
         - title: Zheng-Fu Xu 的 CPU 博物馆
           external_url: https://www.xuzhengfu.com/Computers/CPUs/
+        - title: iHonux's Projects
+          external_url: https://www.ihonux.com/
+        - title: Volisoft
+          external_url: https://www.volisoft.top/
 
 # Copyright 2021 Google LLC
