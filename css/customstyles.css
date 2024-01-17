@@ -1210,3 +1210,7 @@ h4.panel-title {
 .tk-input-image[type=file] {
     display: none;
 }
+
+.tk-avatar .tk-avatar-img {
+    margin: 0px 0px 0px 0px;
+}
