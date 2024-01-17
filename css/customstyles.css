@@ -1214,3 +1214,7 @@ h4.panel-title {
 .tk-avatar .tk-avatar-img {
     margin: 0px 0px 0px 0px;
 }
+
+.tk-has-avatar .tk-avatar-img {
+    margin: -8px 0px 0px 0px;
+}
