@@ -487,4 +487,21 @@ entries:
       output: web, pdf
 
 
+  - title: 龙芯
+    output: web, pdf
+
+    folderitems:
+    - title: 龙芯1号
+      url: /Loongson_1.html
+      output: web, pdf
+
+    - title: 龙芯2号
+      url: /Loongson_2.html
+      output: web, pdf
+
+    - title: 龙芯3号
+      url: /Loongson_3.html
+      output: web, pdf
+
+
 # Copyright 2021 Google LLC

@@ -39,6 +39,7 @@ allowed-tags:
   - Transmeta
   - Qualcomm
   - Zilog
+  - Loongson
   - ATI
   - NVIDIA
   - GPU
