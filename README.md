@@ -1,10 +1,10 @@
 # 我的中央处理器博物馆 | Honux's CPU Museum
 
-欢迎来到我的中央处理器博物馆：[cpu.ihonux.com](https://cpu.ihonux.com) 。
+欢迎来到我的中央处理器博物馆：[cpu.retromuseum.org](https://cpu.retromuseum.org) 或[chip.retromuseum.org](https://chip.retromuseum.org) 。
 
 历史是透视现实、预测未来的一面镜子。理清 CPU 的历史渊源、发展脉络，可以更好地把握现实，面向未来。CPU 收藏作为科技收藏的一部分，即将由小众收藏进入大众视野。收藏不仅是追寻历史轨迹，发掘真相，还原时代，更需要有深度的思想，有温度的情怀。
 
-欢迎来到[我的中央处理器博物馆](https://mycpus.github.io)，这里的 CPU 全部都我多年收集的，照片也是自己对实物的拍照。
+欢迎来到我的中央处理器博物馆，这里的 CPU 全部都我多年收集的，照片也是自己对实物的拍照。
 
 当初为什么会想收集中央处理器（CPU）？因为偶然地有了一次拆解 CPU 的机会，我第一次被 CPU 的内部结构震惊了，这个复杂而精妙的小小集成电路芯片深深地吸引了我，从此我有了收集 CPU 的念头。目前我收藏的 CPU 有 14 种品牌，以 Intel、 AMD 和 Cyrix 三个品牌为主，大部分都是 x86 架构的古董 CPU，也有部分现代 CPU。
 

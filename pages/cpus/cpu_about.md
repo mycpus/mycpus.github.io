@@ -1,6 +1,6 @@
 ---
 title: About me
-keywords: CPU, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon
+keywords: CPU, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon, Loongson, Godson, 龙芯
 last_updated: Sep 1, 2022
 sidebar: cpu_sidebar
 permalink: about.html
@@ -9,7 +9,7 @@ topnav: topnav
 comments: true
 ---
 
-![mycpus.github.io](/images/mycpus.jpg "https://mycpus.github.io/")
+![cpu.retromuseum.org](/images/mycpus.jpg "https://cpu.retromuseum.org/")
 
 您是否对计算机的历史和发展感兴趣？您是否想了解不同品牌和型号的CPU的特点和性能？您是否想欣赏一些罕见和珍贵的CPU收藏品？如果您的答案是肯定的，那么欢迎您来到我的CPU博物馆网站，这里是一个展示和分享CPU知识和收藏的平台。
 
@@ -21,8 +21,8 @@ comments: true
 
 <b>Director of the CPU Museum</b>
 
-My name is Honux, and I'm the curator of this museum, a technical fan, senior engineer, and programmer based in Zhengzhou City, Henan Province, China. For more details, see my [iHonux's Projects](https://fxrj.github.io) website.
+My name is Honux, and I'm the curator of this museum, a technical fan, senior engineer, and programmer based in China. For more details, see [the website](https://about.retromuseum.org/).
 
-我叫 Honux，是这个博物馆的馆长，一位技术爱好者、高级工程师和程序员，居住在中国河南省郑州市。有关更多详细信息，请参阅 [iHonux's Projects](https://fxrj.github.io)。
+我叫 Honux，是这个博物馆的馆长，一位技术爱好者、高级工程师和程序员，居住在中国。有关更多详细信息，请参阅[此网站](https://about.retromuseum.org/)。
 
 {% include links.html %}
