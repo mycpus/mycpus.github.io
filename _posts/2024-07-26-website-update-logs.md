@@ -5,6 +5,10 @@ permalink: update.html
 tags: [news, blog]
 ---
 
+**2024-07-26**
+
+- 新增龙芯1~3代处理器藏品。
+
 **2024-01-16**
 
 - 本站启用全新域名：[cpu.RetroMuseum.org](https://cpu.retromuseum.org) 。

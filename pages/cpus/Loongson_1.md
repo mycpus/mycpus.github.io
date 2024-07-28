@@ -26,17 +26,63 @@ folder: cpus
 
 龙芯1A300第一款桥片。
 
+| 参数 | 数值 |
+| ------ | ------ |
+| 适用类型 | 云终端/工业控制/数据采集/网络设备 |
+| CPU系列 | 龙芯1号系列 |
+| 制作工艺 | 130纳米 |
+| CPU主频 | 0.3GHz |
+| 核心数量 | 单核心 |
+| 一级缓存 | 16KB |
+| 热设计功耗(TDP) | 1W |
+| 内存类型 | DDR2 |
+| 插槽类型 | BGA 448 |
+| 封装大小 | 23×23mm |
+| 峰值运算速度 | 0.6GFlops |
+| 微体系结构 | 双发射乱序执行GS232 |
+| I/O接口 | USB2.0/1.1*4、SATA2*2、GMAC*2、PCI、LPC、I2C*3、CAN*2、SPI*2、NAND、UART*4、PS2*2、RTC、PWM*4、GPIO*88 |
+
 ![Loongson-1 LS1A0300C](/images/cpus/Loongson/LS1A0300C.jpg)
 
 ### Loongson-1 LS1B0200CC
 
 龙芯1B首款嵌入式芯片。
 
+| 参数 | 数值 |
+| ------ | ------ |
+| 适用类型 | 云终端/数据采集/网络设备 |
+| CPU系列 | 龙芯1号系列 |
+| 制作工艺 | 130纳米 |
+| CPU主频 | 0.266GHz |
+| 核心数量 | 单核心 |
+| 一级缓存 | 8KB |
+| 热设计功耗(TDP) | 0.5W |
+| 内存类型 | DDR2 333MHz |
+| 插槽类型 | BGA 256 |
+| 封装大小 | 17×17mm |
+| 微体系结构 | 双发射乱序执行GS232 |
+| I/O接口 | USB2.0/1.1*1、GMAC*2、 I2C*3、CAN*2、SPI*2、NAND、UART*12、RTC、PWM*4、GPIO*62 |
+
 ![Loongson-1 LS1B0200CC](/images/cpus/Loongson/LS1B0200CC.jpg)
 
 ### Loongson-1 LS1C0300A
 
 LS1C0300A首款QFP封装芯片。
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 适用类型 | 工业控制/物联网 |
+| CPU系列 | 龙芯1号系列 |
+| 制作工艺 | 130纳米 |
+| CPU主频 | 0.3GHz |
+| 核心数量 | 单核心 |
+| 一级缓存 | 16KB |
+| 热设计功耗(TDP) | 0.5W |
+| 插槽类型 | QFP 176 |
+| 内核 | GS232 |
+| 微体系结构 | 双发射乱序执行GS232 |
+| 内存控制器 | 8/16位SDRAM |
+| I/O接口 | 8/16位SRAM、NAND、I2S/AC97、LCD、MAC、USB、OTG、SPI、I2C、UART、PWM、CAN、SDIO、ADC |
 
 ![Loongson-1 LS1C0300A](/images/cpus/Loongson/LS1C0300A.jpg)
 
@@ -49,6 +95,19 @@ LS1C0300B首款打印机芯片（突破50万）。
 ### Loongson-1 LS1C101
 
 LS1C101首款32位单片机，是在龙芯1C100基础上针对门锁应用而优化设计的单片机芯片。该芯片集成Flash、SPI、UART、I2C、RTC、TSENSOR、VPWN、ADC等功能模块，在满足低功耗要求的同时，可以大幅减少板级成本。
+
+| 参数 | 数值 |
+| ------ | ------ |
+| 适用类型 | 门锁 |
+| CPU系列 | 龙芯1号系列 |
+| 制作工艺 | 130纳米 |
+| CPU主频 | 0.008GHz |
+| 核心数量 | 单核心 |
+| 热设计功耗(TDP) | 5mAW |
+| 插槽类型 | QFP 64 |
+| 封装大小 | 12×12mm |
+| 内核 | GS132R |
+| 功能模块 | Flash、SPI、UART、I2C、RTC、TSENSOR、VPWN、ADC |
 
 ![Loongson-1 LS1C101](/images/cpus/Loongson/LS1C101.jpg)
 
