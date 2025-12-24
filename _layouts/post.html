@@ -25,6 +25,10 @@ layout: default
         <div class="summary">{{page.summary}}</div>
         {% endif %}
 
+        {% if page.toc == true %}
+        {% include toc.html %}
+        {% endif %}
+
         {{ content }}
     </div>
 
