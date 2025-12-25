@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="本节主要谈 Intel Core 架构的逆袭。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构</h1>
+        <p class="post-meta"><time datetime="2022-11-02T00:00:00+08:00" itemprop="datePublished">Nov 2, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">本节主要谈 Intel Core 架构的逆袭。</div>
+        
+
+        
+
+        <p>由于篇幅过长，因此馆长在完稿之后决定将 Intel Core 架构的前世今生分成两篇，这篇是下篇 (Intel Core 架构的逆袭)，主要谈 Core 架构本身。</p>
+
+<p>其实馆长等着要写这篇等很久了，2006 年应该是近代 CPU 发展史上最戏剧化的一年，同时也是奠定未来好几年 (至今仍是) 个人计算机世界基础的一年。</p>
+
+<p><strong>从 Intel Core 2 系列开始的 Intel CPU，在规格参数上高低落差很大 (因为共享架构之后型号与产品线差异来自于规格数字的直接调整)，因此从本篇开始馆长将不再放上先前几篇文章有的处理器参数介绍。</strong></p>
+
+<h1 id="intel-core-microarchitecture">Intel Core Microarchitecture</h1>
+
+<p>馆长要再次强调 2006 这个年份在个人计算机发展史上的重要意义，2006 年同时是 Intel 最惨的一年，却也是奠基后来从 Nehalem、Sandy Bridge、Ivy Bridge、Haswell、Broadwell、Skylake 甚至未来可见的所有 Intel x86 处理器架构基础的 Intel Core 架构诞生的一年，说是帝国复兴、绝地反攻其实一点也不为过。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/core2duo_logo.jpg" alt="core2duo_logo" />
+</div>
+
+<h2 id="架构回归统一局面">架构回归统一局面</h2>
+
+<p>由于相较于 Netburst 架构的失败而言，Pentium M 与 Yonah 架构可说是获得了巨大的成功，因此 2006 年下半推出的 Core 架构再次将行动平台与桌面、服务器平台的 x86 处理器架构统一，整体而言 Core 架构的特性仍然比较接近 Pentium M 与更早期的 P6 架构，因此一般而言我们会认为 Pentium M 就是 Core 架构的前身 (尽管 Intel 官方一再强调 Core 架构是从零打造起的，且融合了 Netburst 与 Pentium M 的架构，不过基本上只是为了给 Netburst 一个比较好的下台阶而已)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/intelcore_lg.jpg" alt="intelcore_lg" />
+</div>
+
+<p>第一款基于 Core 架构的处理器是 Core 2 Duo，相较于前做 Yonah 而言比较明显的差异是 L2 缓存大小的大幅提升与纳入早已出现在晚期 Netburst 架构产品中出现的 EM64T。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/architecture.jpg" alt="architecture" />
+</div>
+
+<p>Intel Core 架构主要有三大面向的特性，分别是低耗电、高性能与可扩展性，其中最容易说明且至今仍然适用的是可扩展性这项，因此馆长打算先说明。</p>
+
+<h2 id="可扩展的架构设计">可扩展的架构设计</h2>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/intel_xeon_Inside.gif" alt="intel_xeon_Inside" />
+</div>
+
+<p>可扩展性可分为两个层次，第一个层次是架构可以适用的范围有多广 (Platform Scalable)，以 Core 架构而言，服务器级别的 Woodcrest、个人计算机使用的 Conroe、笔记本电脑使用的 Merom 都是从同样的 Core 架构与同样的 65 纳米制造工艺分化出来的。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/woodcrest_die.jpg">
+        <img src="../images/blogs/computer_lecture/woodcrest_die-750x900.jpg" alt="woodcrest_die" />
+    </a>
+    <p><b>▲ Intel Xeon (基于 Core 架构，代号为 Woodcrest) 的 die shot</b></p>
+</div>
+
+<p>Intel 开发的时候是先设计出共同的「架构」之后才去分化出不同用途与级别的型号，有需要时 Intel 可以很容易地透过「复制」的方式延展处理器的结构，制造出四核心以上同架构处理器。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/scalable.jpg" alt="scalable" />
+</div>
+
+<p>第二个层次则是处理器内部结构的模块化设计 (Modular Design)，这个特性要等到再下一代的 Nehalem 架构才见得到，因此馆长留待届时再说明。</p>
+
+<h2 id="朝向高效率的设计观点">朝向高效率的设计观点</h2>
+
+<p>如同前面所说的，以往 Netburst 架构强调整体性能的提升，因此选择追求拉高频率，尽管因此造成分支预测命中率下降、IPC 性能低落等问题，但在频率的疯涨之下总体的性能仍然是提高的，因此在当时被认为是「好的发展方向」，处理器改良的目的在于极尽所能地提高性能，至于省电与发热量的降低则不是主要考虑。</p>
+
+<p>然而这样的设计方针在 Netburst 走到后期时已经被证实并不可行，因为散热装置无法无止尽的延伸下去来承受处理器发热量的不断增长，而且处理器发热量增长的幅度到了后期已经远远超出性能的增加幅度，在无止尽的拉高频率之后性能提升的幅度越来越少，甚至呈现负成长。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/intelcore_lg.jpg" alt="intelcore_lg" />
+</div>
+
+<p>因此从 Pentium M 开始，到 Core 架构与现今的 Intel 处理器都朝向提高「效率」的方向前进，强调的是每单位耗能 (瓦) 能带来的性能有多少，效率是能耗与性能的比值，因此除了提高性能很重要之外，降低能耗与发热量也是重点。</p>
+
+<h2 id="core-架构的新特性">Core 架构的新特性</h2>
+
+<p>Intel 在宣传 Core 架构时主要强调这五个新特性：</p>
+
+<ul>
+  <li>宽带动态执行技术 (Wide Dynamic Execution)</li>
+  <li>智能型内存存取技术 (Smart Memory Access)</li>
+  <li>进阶智能型缓存 (Advanced Smart Cache)</li>
+  <li>进阶数字媒体增强技术 (Advanced Digital Media Boost)</li>
+  <li>智能型电源管理功能 (Intellignet Power Capability)</li>
+</ul>
+
+<p>不过既然是宣传用的，其实这五大点没办法完整说明 Core 架构引入的新特性，所以馆长还是拆开来说明。</p>
+
+<h3 id="宽带动态执行技术-wide-dynamic-execution">宽带动态执行技术 (Wide Dynamic Execution)</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/wde.jpg" alt="wde" />
+</div>
+
+<p>宽带动态执行技术 (Wide Dynamic Execution) 其实包含了很多东西，例如接下来介绍的宏融合技术、比 Pentium M 略多一些的 14 级管线设计 (还是不到 Prescott 夸张的 31 级管线的一半呢)、每个 cycle 可以处理四个指令 (如果有使用到宏融合则可以是五个) 等，同时 Core 架构的 Simple Decoder 比以往多了一组，分支预测的带宽比 Banias 多了 25%，同时也是 Netburst 的五倍。</p>
+
+<h3 id="宏融合技术-macro-fusion">宏融合技术 (Macro-Fusion)</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/WMF.jpg" alt="WMF" />
+</div>
+
+<p>宏融合是 Intel Core 架构中很重要的一个特性，主要的意思是在指令译码的阶段将特定种类 (不是随便两条指令都可以融合) 的两条连续的 x86 指令合而为一，从而提升指令译码与执行的效率，在此代 Core 架构中只能融合 32 位指令，因此在 Core 2 系列上有时候可以观察到 32 位版本程序比 64 位版本还要快 (除了宏融合以外另一个原因是 EM64T 只能使用特定几个专属的缓存器)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/macrofusion.jpg" alt="macrofusion" />
+</div>
+
+<p>尽管宏融合支持的指令种类相当有限，能融合的情况下也有很多条件要求 (例如必须连续、一个频率周期内只能融合一组、被融合的第一条指令中必须至少用到一个缓存器等)，但由于实务上符合条件的情况在编译完成之后的程序中非常常见，因此对性能的提升是可见的 (而且不需要重新编译就能享受到提升)，之后历代的 Core 处理器也几乎都会对宏融合这项功能进行强化，足见这项功能的重要性。</p>
+
+<h3 id="进阶智能型缓存-advanced-smart-cache">进阶智能型缓存 (Advanced Smart Cache)</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/ASC.jpg" alt="ASC" />
+</div>
+
+<p>其实这项技术说穿了就是两个核心共享一个大的 L2 缓存，从而降低 L2 缓存的失误率 (miss rate)，因为以前各自使用专属 L2 缓存的时候经常会发生 Core 1 需要的数据在 Core 2 的 L2 缓存，或是反过来，而这种情况会导致 L2 缓存失误，以致于需要向较慢的记忆体重新取得数据，而且出现在错误位置的数据反而变成占用该核心所属 L2 缓存，连带也让另一个核心的 L2 缓存失误率拉高。</p>
+
+<p>而且很多时候其实两个核心的负载不会刚好平分，改成共享缓存可以让处理器动态分配，给负载较高或需要较多缓存的核心更多资源 (不论是缓存大小或带宽)。</p>
+
+<p><strong>要注意的是，今日 Intel CPU 的 Smart Cache 其实是指 L3 共享缓存 (以 Skylake 为例，L2 是每个核心各自专属的)，但在 Core 2 的时代指的则是 L2。</strong></p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/smart-cache.png" alt="smart-cache" />
+</div>
+
+<p>此外这项设计也给处理器核心之间一个互相沟通的管道，以往两个处理器核心之间是没有链接的，如此造成系统的前端总线负担变得非常重 (一次只能接受一个核心使用，再加上一次只能处理一个方向，因此常常会发生排队排到天荒地老的状况)，以 Core 2 需要 Core 1 所属 L2 Cache 中的资料为例，得从 Core 2 走 FSB 到主板北桥、内存绕一圈回到 Core 1 的 L2 Cache 才拿得到。</p>
+
+<p>至于在省电方面的帮助则是处理器现在可以关闭暂时没有用到的 L2 部分电路，或是关掉其中一个核心却维持整个 L2 的运作，不像以前是以核心为单位，一次关得全关，有更高的弹性来达到更省电的效果。</p>
+
+<h3 id="进阶数字媒体增强技术-advanced-digital-media-boost">进阶数字媒体增强技术 (Advanced Digital Media Boost)</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/ADMB.png" alt="ADMB" />
+</div>
+
+<p>以往受制于实际电路中只设计一组 64 位的 SSE 运算电路，一个 128-bit 的 SSE 指令会需要两个 cycle 才能完成，Core 架构中的乘法、加法、加载、储存指令都能一次处理 128-bit 长的指令，所以又称为 Single cycle SSE。</p>
+
+<h3 id="智能型内存存取技术-smart-memory-access">智能型内存存取技术 (Smart Memory Access)</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/SMA.jpg" alt="SMA" />
+</div>
+
+<p>这部分比较难解释，主要是关于 Core 架构降低数据存取延迟对系统性能影响的努力，例如用上 8-Way 的 L1 Cache、16-Way 的超大 L2 缓存等，并放弃了过去 Netburst 架构设计的追踪缓存 (Trace Cache) 设计。</p>
+
+<p>Core 架构中，每个核心有四组预取器 (Prefetcher)，其中一组负责预取指令，一组负责预取 L2 缓存，两组负责内存预取，让处理器有能力「学习」最佳的数据存取方式以降低延迟。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/smart-mem.png" alt="smart-mem" />
+</div>
+
+<p>另一项重要的功能称为 Memory Disambiguation，透过硬件上实作电路来达到预测后续的指令是否会用到相同的内存位置，从而避免不必要的指令等待，能够提升乱序执行的性能。</p>
+
+<h2 id="首次引入-tick-tock-战略规划">首次引入 Tick-Tock 战略规划</h2>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/tick-tock.jpg" alt="tick-tock" />
+</div>
+
+<p>众所皆知的 Tick-Tock 两年一轮战略规划也是从 2006 年开始的，可以看到后续的 Nehalem、Westmere 都是早在当时就已经确定的规划，至于最下面的 Gesher 后来则改名为 Sandy Bridge。</p>
+
+<h1 id="第二代-intel-core-microarchitecture-penryn">第二代 Intel Core Microarchitecture (Penryn)</h1>
+
+<p>Intel 在 2008 年依照 Tick-Tock 战略规划的预期，推出了称为 Penryn 的新版架构，Penryn 基本上可以认为是 Core 架构的制程升级版，导入新的 45 纳米制造工艺与 High-K 金属闸极技术。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/high-k2.png" alt="high-k2" />
+</div>
+
+<p>随着制程的不断缩小，漏电流对半导体制成品的影响越来越明显，有越来越高比例的能耗其实是被漏电流「浪费掉」的，因此必然需要做额外的努力来降低漏电流的产生，这就是 High-K 金属闸极技术的目的，同时号称能提高 20% 的晶体管切换速度，可以带来更高的 CPI 与频率。</p>
+
+<p>然而除了制程以外，Penryn 与 Core 在架构上还是有一些不同的，这些不同都是依据 Core 架构强调的五大特性进行更多的强化以求能榨出 Core 架构中潜藏的性能。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/eicm.png" alt="eicm" />
+</div>
+
+<p>主要比较明显的新特性是新加入的 SSE4.1 指令集、更快的前端总线 (FSB) 与更大的 L2 缓存 (加大 50%)、速度更快的 Radix-16 除法器，除了这些之外，Intel 表示在虚拟化技术的性能上也有提升。</p>
+
+<h1 id="结语">结语</h1>
+
+<p>我想 Intel 在 2006 年发生的事情可以说完美举例了「危机就是转机」、「有心栽花花不开，无心插柳柳成荫」这两句话吧，当年耗费如此多的功夫想发展「全新」的 Netburst 架构，觉得未来会非常顺利的一路向前发展，最后才发现其实当初认为没有办法再走下去而被弃置一旁的 P6 架构才是公司真正的未来，从 P6 架构改良而来的 Core 架构奠下的基础几乎让往后十年 (至今依然如此) 的 Intel 几乎立于不败之地。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_12.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_14.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

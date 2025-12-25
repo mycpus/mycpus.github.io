@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="英特尔处理器是性能优良的代名词，但是，英特尔也有一段不堪的往事。这件事还和一个神秘的常数，以及一个困扰人类2300多年的神秘数学猜想有关。">
+<meta name="keywords" content="history,  ">
+<title>这个神秘的数，让芯片巨头英特尔赔了5亿美金 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="这个神秘的数，让芯片巨头英特尔赔了5亿美金">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">这个神秘的数，让芯片巨头英特尔赔了5亿美金</h1>
+        <p class="post-meta"><time datetime="2022-09-10T00:00:00+08:00" itemprop="datePublished">Sep 10, 2022</time> /
+            
+            
+            
+            <a href="tag_history.html">history</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">英特尔处理器是性能优良的代名词，但是，英特尔也有一段不堪的往事。这件事还和一个神秘的常数，以及一个困扰人类2300多年的神秘数学猜想有关。</div>
+        
+
+        
+
+        <p>英特尔是世界上最大的芯片制造商之一，这个大家都知道，你的电脑用的很有可能就是英特尔的处理器。</p>
+
+<p><img src="/images/blogs/intel_logo.png" alt="intel" /></p>
+
+<p>英特尔处理器是性能优良的代名词，但是，英特尔也有一段不堪的往事。这件事还和一个神秘的常数，以及一个困扰人类2300多年的神秘数学猜想有关。</p>
+
+<p>1994年，英特尔推出了奔腾处理器，这是当时市面上最先进的处理器之一。但是好死不死，这个世界上最坚硬的盾，遇到了最锋利的矛——能逼疯计算机的数学家。</p>
+
+<p><img src="/images/blogs/intel_pentium_bug.jpg" alt="出了bug的奔腾处理器" /></p>
+
+<p>出了bug的奔腾处理器</p>
+
+<p>这不难理解，因为数学家需要处理数学问题。尤其是当他们不知道怎么证明一个猜想的时候，他们就会用暴力穷举的方法。</p>
+
+<p>在这个过程中，计算机就会被逼到绝境。每次一有先进计算机出现，数学家们就会摩拳擦掌，饿虎扑食一般把先进计算机团团围住。加拿大西蒙弗雷泽大学（Simon Fraser University）的数学家 Peter Borwein 曾经对《科学》表示，通过让计算机不断进行简单重复的计算，计算机的计算能力“就会到达崩溃的边缘”，开始出错。</p>
+
+<p>这次，奔腾也没有逃脱数学家的魔爪。把奔腾逼到崩溃DAN疼的，是一个叫做布朗常数（Brun’s constant）的神秘常数。</p>
+
+<p>布朗常数和质数有关，而且表达式很简单——</p>
+
+<p><img src="/images/blogs/Brun_001.png" alt="" /></p>
+
+<p>可是布朗常数是干哈用的呢？这里面的数字又是啥呢？</p>
+
+<p>这就要和把数学家们逼疯的著名猜想——孪生素数猜想讲起了。</p>
+
+<p>欧几里得在《几何原本》里已经证明存在无穷多的质数。数学家们也知道，如果从1开始一直数下去的话，一开始质数出现的频率比较高，后来就变得比较珍稀了。</p>
+
+<p>比如，两位数里有23%是质数，但是十位数里只有4%是质数，而百位数里，质数只占1%不到。</p>
+
+<p>不过，质数还有一个奇特的现象，那就是虽然质数的分布变得越来越稀疏，但是两个连续质数之间的距离却似乎不会增长，比如3和5差2，41和43也差2，101和103也差2，10007和10009也差2。</p>
+
+<p>这样相差2的一对连续质数就被叫做孪生素数，也叫孪生质数。</p>
+
+<p><img src="/images/blogs/prime_number_100.jpg" alt="100以内的质数和孪生质数" /></p>
+
+<p>100以内的质数（黄底）和孪生质数（红色）</p>
+
+<p>2300年前，欧几里得就开始大胆脑补了，会不会孪生质数有无穷多对呢？一定是这样的嗯。然后大家为了纪念欧几里得的脑洞，就把它叫做孪生素数猜想。</p>
+
+<p>这个猜想也变成了一座让数学家闻风丧胆的数学金杯。</p>
+
+<p>比如，在1912年的国际数学家大会（ICM）上，德国数学家 Edmund Landau 就举出了当时数学界觉得不可能解决的4个猜想，其中之一就是孪生素数猜想。这4个问题后来就被叫做兰道问题。</p>
+
+<p>100多年后的今天，这4个兰道问题还是猜想。</p>
+
+<p><img src="/images/blogs/Viggo_Brun.jpg" alt="挪威数学家 Viggo Brun" /></p>
+
+<p>挪威数学家 Viggo Brun</p>
+
+<p>不过在1919年，毛发浓郁的挪威数学家 Viggo Brun 有了个大突破。Brun 证明，就算有无穷多对孪生质数，它们的倒数的和，也就是会收敛于一个有限的值。</p>
+
+<p><img src="/images/blogs/Brun_002.png" alt="" /></p>
+
+<p>就好像 1/2 + 1/4 … 最后等于 1 一样。</p>
+
+<p><img src="/images/blogs/Brun_constant_1.png" alt="" /></p>
+
+<p>这个常数，就被叫做布朗常数。</p>
+
+<p><img src="/images/blogs/Brun_constant_2.png" alt="" /></p>
+
+<p>布朗常数收敛于一个有限值</p>
+
+<p>其实，布朗常数对于数学家们来说是一个精神打击。因为如果 Brun 证明孪生素数的倒数和不收敛，是发散的，这就等于宣布，孪生素数有无穷多对，那么孪生素数猜想就得到了证明，欧几里得挖的坑就可以填上了。</p>
+
+<p>而存在布朗常数，等于说孪生素数问题还是没有得到证明，只不过现在大家知道孪生素数的分布确实很稀疏，但我们还是不知道孪生素数是不是有无穷多对。</p>
+
+<p>另外，虽然 Brun 能证明布朗常数存在，但并不能计算出它的每一位，就像我们还无法计算派的小数点后的每一位数字一样。不过和派不一样，我们直到现在也不知道布朗常数是不是无理数。如果能多算出几位它小数点后的数字，我们或许就能了解它到底是什么品种的妖怪了，因此许许多多的数学家开始计算布朗常数。</p>
+
+<p>随着计算机的出现，数学家们想到了用暴力硬算的方法解决这个问题。</p>
+
+<p>1974年，为美国海军干活的两个数学家 Daniel Shanks 和 John Wrench Jr 报告了用计算机暴力算出来的布朗常数，他们让悲催的计算机穷举了2百万个质数。</p>
+
+<p>2年后，澳大利亚国立大学的数学家 Richard Brent 更加暴力，他让计算机穷举了224 376 048对孪生质数，利用这些质数，他算到布朗常数的小数点后第8位，得到1.90216054。</p>
+
+<p>顺说一句，2011年谷歌竞拍加拿大北电网路（Nortel Networks）的无线专利技术的时候，出的价就是1,902,160,540美金。数学家们看到 Brent 这种勇士，好长一段时间都不说话了，因此布朗常数的故事就风平浪静了一大会儿。接着到了90年代，英特尔就萌萌哒推出了最强处理器。</p>
+
+<p>美国弗吉尼亚州的林奇堡学院（Lynchburg College）的数学家托马斯· 小火车好好地（Thomas Nicely）看到英特尔处理器很心动啊，他早就想算一把布朗常数了，毕竟当时也没有矿币可以挖。</p>
+
+<p>他打算磨死计算机，让它算到万亿。</p>
+
+<p>因为知道数学家都是计算机杀手，为了确保计算机不会崩溃搞事情，他还用了双保险——用2种方法计算。</p>
+
+<p>这俩方法的差异差不多等同于，算1/3+1/7的时候，用0.33+0.14=0.47这个方法，或者1/3 + 1/7 = 10/21 = 0.48这个方法。照理来说算出来的结果差距应该不大。</p>
+
+<p>但是呢，Nicely 用这两个方法得到的结果一比之后，却发现差距比欧几里得的脑洞还大。</p>
+
+<p>用排除法一波debug以后，Nicely 发现问题的关键在于2个质数，那就是824 633 702 441和824 63 702 443，它们的倒数的小数点后的第10位被算错了。</p>
+
+<p>但是，Nicely 不确定这个问题是计算机硬件的问题，还是软件的问题，总之不是他的问题。于是他让英特尔古早处理器486又算了一次，结果486倒是算对了。</p>
+
+<p>4个月后，Nicely 又用其他两台装有奔腾的计算机做了一次计算，这个问题又出现了。</p>
+
+<p>很明显，这是英特尔奔腾的硬件有毛病。Nicely 估计，这个处理器大概会把10亿个倒数里的1个算错。因为要算布朗常数，计算机就要计算数十亿的倒数，因此出错在所难免。</p>
+
+<p>Nicely 很快联系了英特尔，要求一起写数论作业看看是怎么回事，不过英特尔不是很热情，他们要小明出去。</p>
+
+<p>Nicely 觉得很无语，于是就在11月把这件事的前因后果写了邮件，群发给了小伙伴们。</p>
+
+<p>这件事很快就被美国有线电视新闻网（CNN）等媒体报道。奔腾算倒数时会偶发智障的事件被公开后，英特尔就不得不召回旧的处理器并为用户更换新的。</p>
+
+<p>后来英特尔承认，其实他们在生产奔腾的时候就知道这个问题了，但是计算了一波后他们发现，90亿用户里，只有1个会受到影响，因此一开始没有召回。就是“我是错了，但是我还是比别人先知道我错了”的意思。</p>
+
+<p>当时英特尔已经卖掉了一百多万台装有奔腾处理器的计算机，所以1995年1月17日，英特尔宣布，因为这次召回事件，他们损失了4.75亿美金（相当于现在的8.23亿美金，58亿人民币，58个小目标）。</p>
+
+<p>这个问题，史称奔腾浮点除错误（Pentium FDIV bug），被写入了维基词条，是英特尔最想让大家遗忘的黑历史之一。</p>
+
+<p>那么，为什么奔腾奔腾会算错呢？问题出在它做除法的时候。</p>
+
+<p>原来，英特尔做了一个查找表，也即是类似于三角函数表这样的方便计算的表格，这样不用每次都亲自算一遍，查一下表格可能会更方便。但是这个查找表漏了5个数据，导致做除法的时候有一定的几率犯错。</p>
+
+<p>瑞士洛桑联邦理工学院加密算法实验室的教授 Arjen Lenstra 还给英特尔补了一刀：“我们数学家早就知道数论对计算很有用啦。在卖处理器之前好好算一下数论的东西嘛真是的。”</p>
+
+<p>对了，后来在2002年，不隶属于任何已知大学或组织的法国浪人数学家 Pascal Sebah 又更新了布朗常数——1.902160583104。</p>
+
+<p>而在2013年，孪生素数猜想也有了一个大突破——华人数学家张益唐在58岁时发表关于孪生素数猜想的重要论文，证明了相差小于7000万的素数对有无穷多对。</p>
+
+<p><img src="/images/blogs/zhangyitang.jpg" alt="张益唐" /></p>
+
+<p>张益唐</p>
+
+<p>如何证明我比计算机厉害？</p>
+
+<p>( _)</p>
+
+<p>数学老师教出数学家，数学家能逼疯计算机，我能逼疯数学老师，所以我比计算机厉害，Q.E.D.</p>
+
+<p>( _)&gt;■-■</p>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

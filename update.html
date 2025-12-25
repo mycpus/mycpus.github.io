@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="newsblog,  ">
+<title>网站更新日志 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="网站更新日志">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">网站更新日志</h1>
+        <p class="post-meta"><time datetime="2024-07-26T00:00:00+08:00" itemprop="datePublished">Jul 26, 2024</time> /
+            
+            
+            
+            <a href="tag_news.html">news</a>, 
+            
+            
+            
+            <a href="tag_blog.html">blog</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+
+        
+
+        <p><strong>2024-07-26</strong></p>
+
+<ul>
+  <li>新增龙芯1~3代处理器藏品。</li>
+</ul>
+
+<p><strong>2024-01-16</strong></p>
+
+<ul>
+  <li>本站启用全新域名：<a href="https://cpu.retromuseum.org">cpu.RetroMuseum.org</a> 。</li>
+</ul>
+
+<p><strong>2023-08-26</strong></p>
+
+<ul>
+  <li>新增 ATI 显卡 1 块。</li>
+  <li>新增 NVIDIA Quadro 显卡 1 块。</li>
+  <li>新增 NVIDIA GeForce 显卡 3 块。</li>
+</ul>
+
+<p><strong>2023-08-14</strong></p>
+
+<ul>
+  <li>新增 GPU (显卡) 藏品板块。</li>
+  <li>新增 ATI 显卡 4 块。</li>
+  <li>新增 NVIDIA 显卡 5 块。</li>
+</ul>
+
+<p><strong>2023-08-13</strong></p>
+
+<ul>
+  <li>新增 Intel 处理器 4 颗。</li>
+  <li>新增 AMD 处理器 12 颗。</li>
+  <li>新增 Cyrix 处理器 1 颗。</li>
+  <li>新增 VIA 处理器 1 颗。</li>
+</ul>
+
+<p><strong>2023-08-11</strong></p>
+
+<ul>
+  <li>新增苹果 A 系列处理器介绍页面。</li>
+  <li>新增苹果 S 系列处理器介绍页面。</li>
+  <li>新增苹果 M 系列处理器介绍页面。</li>
+</ul>
+
+<p><strong>2023-08-10</strong></p>
+
+<ul>
+  <li>新增 AMD 处理器 3 颗。</li>
+</ul>
+
+<p><strong>2023-08-06</strong></p>
+
+<ul>
+  <li>新增 Intel RapidCAD 处理器。</li>
+  <li>新增 Intel Pentium OverDrive 处理器。</li>
+</ul>
+
+<p><strong>2023-08-05</strong></p>
+
+<ul>
+  <li>新增 Intel 处理器 4 颗。</li>
+  <li>新增 AMD 处理器 1 颗。</li>
+</ul>
+
+<p><strong>2023-06-04</strong></p>
+
+<ul>
+  <li>本站评论系统更换为 Twikoo 。</li>
+  <li>本站统计系统更换为 Awkee 。</li>
+</ul>
+
+<p><strong>2023-06-02</strong></p>
+
+<ul>
+  <li>本站在 vercel 建立镜像站点。</li>
+</ul>
+
+<p><strong>2023-02-28</strong></p>
+
+<ul>
+  <li>本站启用全新域名：<a href="https://cpu.ihonux.com">cpu.ihonux.com</a> 。</li>
+</ul>
+
+<p><strong>2022-10-20</strong></p>
+
+<ul>
+  <li>新增 Intel CPU Timeline 页面。</li>
+  <li>新增 Intel RapidCAD 介绍页面。</li>
+  <li>新增 Intel Pentium OverDrive 介绍页面。</li>
+  <li>新增 Intel Pentium II Xeon 介绍页面。</li>
+  <li>新增 Intel Pentium II OverDrive 介绍页面。</li>
+  <li>新增 Intel Itanium 介绍页面。</li>
+  <li>新增 Intel Itanium 2 介绍页面。</li>
+</ul>
+
+<p><strong>2022-10-16</strong></p>
+
+<ul>
+  <li>新增 Intel NT80386DX33 处理器。</li>
+  <li>新增 IBM 9314 03H9515 ESD 芯片。</li>
+  <li>新增 NVIDIA GeForce Go6600 NPB 128M 图形处理器。</li>
+</ul>
+
+<p><strong>2022-10-14</strong></p>
+
+<ul>
+  <li>新增 IBM Power 6 处理器。</li>
+</ul>
+
+<p><strong>2022-10-12</strong></p>
+
+<ul>
+  <li>新增 Intel 芯片 2 颗，AMD 处理器 2 颗，VIA 处理器 1 颗，Geode 处理器 1 颗。</li>
+</ul>
+
+<p><strong>2022-10-05</strong></p>
+
+<ul>
+  <li>优减本站页面。</li>
+  <li>将本站添加到 Google Search Console 中。</li>
+  <li>添加 Google Analytics 追踪功能。</li>
+  <li>将本站添加到360搜索。</li>
+</ul>
+
+<p><strong>2022-10-01</strong></p>
+
+<ul>
+  <li>新增 Intel CPU 藏品 2 颗。</li>
+  <li>将本站添加到 Microsoft Bing Webmaster Tools 中。</li>
+  <li>添加 Microsoft Clarity 追踪功能。</li>
+</ul>
+
+<p><strong>2022-09-28</strong></p>
+
+<ul>
+  <li>新增 Intel CPU 藏品 3 颗。</li>
+</ul>
+
+<p><strong>2022-09-24</strong></p>
+
+<ul>
+  <li>修改首页，电脑端增加 Intel CPU 发展时间轴展示。</li>
+  <li>新增 Intel Core 2 QUAD Q8200、Intel Core i3-3240、Intel MD8085AH/B 藏品各一颗。</li>
+  <li>新增 Intel Celeron 333、366、400 藏品各一颗。</li>
+</ul>
+
+<p><strong>2022-09-21</strong></p>
+
+<ul>
+  <li>新增 Cyrix Cx486 DX2 66 带绿色散热片一颗。</li>
+  <li>新增 IBM 6x86MX PR166 和 PR233 各一颗。</li>
+  <li>新增 不带 Pentium III 字样的 Pentium III 933 一颗。</li>
+  <li>新增 Pentium III Celeron 850 和 900 各一颗。</li>
+  <li>新增 水泥奔腾 100MHz 两颗，编号不同。</li>
+  <li>新增 Pentium MMX FV80503200 一颗。</li>
+  <li>新增 Pentium III Xeon 700MHz 两颗，L2 不同。</li>
+  <li>新增 TI486DX2-G80-GA 一颗。</li>
+  <li>增加网页统计功能，由 histats.com 提供。</li>
+</ul>
+
+<p><strong>2022-09-20</strong></p>
+
+<ul>
+  <li>新增 Intel Celeron 266 和 300A 各一颗。</li>
+  <li>增加打赏功能，支持微信和支付宝。</li>
+</ul>
+
+<p><strong>2022-09-18</strong></p>
+
+<ul>
+  <li>新增 Intel 4001、4002、4003 各一颗，凑齐 4004 家族。</li>
+  <li>新增 Intel D3002 一颗。</li>
+  <li>新增 Intel D80287、D80287-8 各一颗。</li>
+  <li>新增 Zilog Z80 Z8400PS 两颗。</li>
+</ul>
+
+<p><strong>2022-09-15</strong></p>
+
+<ul>
+  <li>新增 Intel 4040 CPU 藏品一颗。</li>
+  <li>新增 Intel 8008 CPU 藏品一颗。</li>
+  <li>新增 Intel P8080A CPU 藏品一颗。</li>
+</ul>
+
+<p><strong>2022-09-11</strong></p>
+
+<ul>
+  <li>增加 26 个 CPU 藏品，品牌有 Intel、AMD、Siemens、IBM。进一步完善 AMD CPU 体系。</li>
+  <li>完善 CPU 藏品的 tag 标注，体现不同品牌之间的横向联系。</li>
+</ul>
+
+<p><strong>2022-09-08</strong></p>
+
+<ul>
+  <li>添加 LiveRe （来力必）的评论系统。</li>
+</ul>
+
+<p><strong>2022-09-07</strong></p>
+
+<ul>
+  <li>完成全部文字介绍的二次校对。</li>
+</ul>
+
+<p><strong>2022-09-05</strong></p>
+
+<ul>
+  <li>完成 Texas Instruments CPU 藏品资料的整理工作。</li>
+  <li>完成 STMicroelectronics N.V. CPU 藏品资料的整理工作。</li>
+  <li>完成 Geode CPU 藏品资料的整理工作。</li>
+  <li>完成 IBM CPU 藏品资料的整理工作。</li>
+  <li>完成 IDT CPU 藏品资料的整理工作。</li>
+  <li>完成 Motorola CPU 藏品资料的整理工作。</li>
+  <li>完成 Transmeta CPU 藏品资料的整理工作。</li>
+  <li>完成 Qualcomm CPU 藏品资料的整理工作。</li>
+  <li>当前藏品资料整理工作基本完成。</li>
+</ul>
+
+<p><strong>2022-09-04</strong></p>
+
+<ul>
+  <li>完成 VIA CPU 藏品资料的整理工作。</li>
+</ul>
+
+<p><strong>2022-09-03</strong></p>
+
+<ul>
+  <li>完成 AMD CPU 藏品资料的整理工作。</li>
+  <li>完成 Cyrix CPU 藏品资料的整理工作。</li>
+  <li>对部分文字进行润色修改。</li>
+</ul>
+
+<p><strong>2022-09-01</strong></p>
+
+<ul>
+  <li>完成 Intel CPU 藏品资料的整理工作。</li>
+  <li>完成网站主体结构建设。</li>
+</ul>
+
+<p><strong>2022-08-28</strong></p>
+
+<ul>
+  <li>申请 Github 账号，建立 mycpus.github.io 网站。</li>
+  <li>开始整理 Intel CPU 藏品资料。</li>
+</ul>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

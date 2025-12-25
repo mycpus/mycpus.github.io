@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CPU技术应该是人类发展史上最顶尖的发明了，它让人类文明乘上了快速列车！CPU的大厦也是从简单的4004一步一步发展到如今的程度，每一步的变化都是有历史原因的，是有迹可循的。">
+<meta name="keywords" content="history,  ">
+<title>Intel CPU 发展史 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Intel CPU 发展史">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Intel CPU 发展史</h1>
+        <p class="post-meta"><time datetime="2022-09-11T00:00:00+08:00" itemprop="datePublished">Sep 11, 2022</time> /
+            
+            
+            
+            <a href="tag_history.html">history</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">CPU技术应该是人类发展史上最顶尖的发明了，它让人类文明乘上了快速列车！CPU的大厦也是从简单的4004一步一步发展到如今的程度，每一步的变化都是有历史原因的，是有迹可循的。</div>
+        
+
+        
+
+        <h1 id="8086-时代">8086 时代</h1>
+
+<h2 id="1971-4004">1971 4004</h2>
+
+<blockquote>
+  <p>1971年11月15日,世界上第一块个人微型处理器4004诞生</p>
+</blockquote>
+
+<p><img src="/images/blogs/4004-1.png" alt="4004" /></p>
+
+<p>1971年11月15日，Intel公司的工程师霍夫发明了世界上第一个商用微处理器—4004，从此这一天被当作具有全球IT界里程碑意义的日子而被永远的载入了史册。这款4位微处理器虽然只有45条指令，每秒也只能执行5万条指令，运行速度只有108KHz，甚至比不上1946年世界第一台计算机ENIAC。但它的集成度却要高很多，集成晶体管2300只，一块4004的重量还不到一盅司。这一突破性的发明最先应用于Busicom计算器，为无生命体和个人计算机的智能嵌入铺平了道路。</p>
+
+<p><img src="/images/blogs/4004-2.png" alt="4004" /></p>
+
+<h2 id="1972-8008">1972 8008</h2>
+
+<blockquote>
+  <p>1972年：8008微处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/8008-1.png" alt="8008" /></p>
+
+<p>让英特尔意外的是推出4004芯片后，业内的反应相当平淡。一些分析家称这款芯片虽然有些意思，但4004的处理能力实在有限，还不足以引起人们的兴趣。然而，当一年后英特尔推出其8008微处理器时，业内的目光都几乎集中到了英特尔身上。8008频率为200KHz，晶体管的总数已经达到了3500个，能处理8比特的数据。更为重要的是，英特尔还首次获得了处理器的指令技术。</p>
+
+<p>8008它的性能是4004的两倍，拥有3500晶体管数量，速度为200KHz，并且于1974年被一款名为Mark-8的设备采用，Mark-8是第一批家用计算机之一，此时台式机基本上形成了一个最初雏形。</p>
+
+<p><img src="/images/blogs/8008-2.png" alt="8008" /></p>
+
+<h2 id="1974-8080">1974 8080</h2>
+
+<blockquote>
+  <p>1974年：8080微处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/8080-1.png" alt="8080" /></p>
+
+<p>在微处理器发展初期，具有革新意义的芯片非Intel8080莫属了。英特尔公司于1974年推出了这款划时代的处理器，立即引起了业界的轰动。由于采用了复杂的指令集以及40管脚封装，8080的处理能力大为提高，其功能是8008的10倍，每秒能执行29万条指令，集成晶体管数目6000，运行速度2MHz。</p>
+
+<p>8080有幸成为了第一款个人计算机Altair的大脑。据说Altair这个名称是源自《星际旅行》电视节目中一个星际飞行计划(Starship Enterprise)的目的地名称。计算机爱好者花费395美元即可购得Altair套件。数月内，Altair的销售量达到数万台，造成了电脑销售历史上第一次缺货现象。这足以看出来8080对于电脑发展是具有划时代意义的。</p>
+
+<p><img src="/images/blogs/8080-2.png" alt="8080" /></p>
+
+<h2 id="1978-8086-8088">1978 8086-8088</h2>
+
+<blockquote>
+  <p>1978年：8086-8088微处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/8086-1.png" alt="8086" /></p>
+
+<p>1978年，英特尔推出了首枚16位微处理器8086，同时生产出与之配合的数学协处理器8087，这两种芯片使用相同的指令集，以后英特尔生产的处理器，均对其兼容。趁着市场销售正好的时机，以及市场需求的提升，Intel在同一年推出了性能更出色的8088处理器。三款处理器都拥有29000只晶体管，速度可分为5MHz、8MHz、10MHz，内部数据总线(处理器内部传输数据的总线)、外部数据总线(处理器外部传输数据的总线)均为16位，地址总线为20位，可寻址1MB内存。首次在商业市场给消费者提供了更自由选择。</p>
+
+<p><img src="/images/blogs/8086-2.png" alt="8086" /></p>
+
+<p>同时Intel成功将8088销售给IBM全新的个人计算机部门，1981年，IBM推出的首批个人电脑机选用了英特尔8088芯片，使得8088成为了IBM全新热销产品IBM PC的大脑。8088的大获成功使英特尔顺利跻身财富500强之列，《财富》杂志将该公司评为“七十大商业奇迹之一(Business Triumphs of the Seventies)”。事后，英特尔高度评价了与IBM这笔交易的重要性。</p>
+
+<p><img src="/images/blogs/8086-3.png" alt="8086" /></p>
+
+<h2 id="1982-80286">1982 80286</h2>
+
+<blockquote>
+  <p>1982年：80286微处理器英特尔的最后一块16位处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/80286-1.png" alt="80286" /></p>
+
+<p>80286(也称286)是处理器进入全新技术的标准产品，具备16位字长，集成了14.3万只晶体管，具有6MHz、8MHz、10MHz、12.5MHz四个主频的产品。</p>
+
+<p><img src="/images/blogs/80286-2.png" alt="80286" /></p>
+
+<p>286是Intel第一款具有完全兼容性的处理器，即可以运行所有针对其前代处理器编写的软件，这一软件兼容性也成为了Intel处理器家族一个恒久不变的特点。该产品发布后的6年内，全世界基于286处理器的个人计算机便达到了大约1500万台。</p>
+
+<p><img src="/images/blogs/80286-3.png" alt="80286" /></p>
+
+<h2 id="1985-80386">1985 80386</h2>
+
+<blockquote>
+  <p>1985年：80386英特尔的第一代32位处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/80386-1.png" alt="80386" /></p>
+
+<p>此后，英特尔的微处理器开始进入到了32位时代。为适应企业的全球化发展，1985年秋，英特尔再度发力，并且以一种特殊的形式在伦敦、慕尼黑、巴黎、旧金山和东京同时推出了Intel 80386处理器。</p>
+
+<p>这是英特尔第一款32位处理器，集成了27万5千只晶体管，超过了4004芯片的一百倍，每秒可以处理500万条指令。同时也是第一款具有“多任务”功能的处理器，所谓“多任务”，即可同时处理多个程序的指令，这对微软的操作系统发展有着重要的影响。</p>
+
+<p><img src="/images/blogs/80386-2.png" alt="80386" /></p>
+
+<h2 id="1989-80486">1989 80486</h2>
+
+<blockquote>
+  <p>1989年：Intel 80486英特尔最后一款以数字为编号的处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/80486-1.png" alt="80486" /></p>
+
+<p>1989年，英特尔发布了Intel80486处理器。486处理器是英特尔非常成功的商业项目。很多厂商也看清了英特尔处理器的发展规律，因此很快就随着英特尔的营销战而转型成功。80486处理器集成了125万个晶体管，时钟频率由25MHz逐步提升到33MHz、40MHz、50MHz及后来的100Mhz。</p>
+
+<p><img src="/images/blogs/80486-2.png" alt="80486" /></p>
+
+<p>486处理器的应用意味着用户从此摆脱了命令形式的计算机，进入“选中并点击(point-and-click)”的计算时代。史密森学会美国历史国家博物馆的技术历史学家David K. Allison回忆道：“当时我拥有了彩色计算机，并且以很快的速度进行桌面排版工作。”英特尔486处理器首次采用内建的数学协处理器，将负载的数学运算功能从中央处理器中分离出来，从而显著加快了计算速度。</p>
+
+<p><img src="/images/blogs/80486-3.png" alt="80486" /></p>
+
+<p>386和486推向市场后，均大获成功，英特尔在芯片领域的霸主地位日益凸现。此后，英特尔开始告别微处理器数字编号时代，进入到了Pentium时代。</p>
+
+<h1 id="pentium奔腾时代">Pentium(奔腾)时代</h1>
+
+<h2 id="p5微架构">P5微架构</h2>
+
+<h3 id="1994-intel-pentium中央处理器芯片80586">1994 Intel Pentium中央处理器芯片(80586)</h3>
+
+<blockquote>
+  <p>1994年3月10日：Intel Pentium中央处理器芯片(80586)</p>
+</blockquote>
+
+<p><img src="/images/blogs/Pentium-1.png" alt="Pentium" /></p>
+
+<p>1993年，英特尔发布了Pentium(俗称586)中央处理器芯片(CPU)。本来按照惯常的命名规律是80586，但是因为实际上“586”这样的数字不能注册成为商标使用，因此任何竞争对手都可以用586来扰乱消费市场。事实上在486发展末期，就已经有公司将486等级的产品标识成586来销售了。因此英特尔决定使用自创的品牌来作为新产品的商标—Pentium</p>
+
+<p><img src="/images/blogs/Pentium-2.png" alt="Pentium" /></p>
+
+<h3 id="1997-intel-pentium-mmx中央处理器">1997 Intel Pentium MMX中央处理器</h3>
+
+<blockquote>
+  <p>1997年1月: Intel Pentium MMX中央处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/PentiumMMX-1.png" alt="Pentium MMX" /></p>
+
+<p>1997年1月，Intel公司推出了Pentium MMX芯片，它在X86指令集的基础上加入了57条多媒体指令。这些指令专门用来处理视频、音频和图象数据，使CPU在多媒体操作上具有更强大的处理能力，Pentium MMX还使用了许多新技术。单指令多数据流SIMD技术能够用一个指令并行处理多个数据，缩短了CPU在处理视频、音频、图形和动画时用于运算的时间；流水线从5级增加到6级，一级高速缓存扩充为16K，一个用于数据高速缓存，另一个用于指令高速缓存，因而速度大大加快；Pentium MMX还吸收了其他CPU的优秀处理技术，如分支预测技术和返回堆栈技术。</p>
+
+<h2 id="p6微架构">P6微架构</h2>
+
+<h3 id="1995年-pentium-pro处理器">1995年 Pentium Pro处理器</h3>
+
+<p><img src="/images/blogs/PentiumPro-1.png" alt="Pentium Pro" /></p>
+
+<h3 id="1997-1998-pentiumii处理器">1997-1998 PentiumII处理器</h3>
+
+<blockquote>
+  <p>1997-1998年：PentiumII处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/PentiumII-1.png" alt="Pentium II" /></p>
+
+<p><img src="/images/blogs/PentiumII-2.png" alt="Pentium II" /></p>
+
+<h3 id="1998-pentium-ii-celeron赛扬处理器">1998 Pentium II Celeron(赛扬)处理器</h3>
+
+<blockquote>
+  <p>1998：Pentium II Celeron处理器</p>
+</blockquote>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_433MHz_2.jpg" alt="Pentium II Celeron" /></p>
+
+<h3 id="intel-pentium-iii处理器">Intel Pentium III处理器</h3>
+
+<blockquote>
+  <p>1999年：Intel Pentium III处理器</p>
+</blockquote>
+
+<p><img src="/images/cpus/Intel/Intel_Pentium_III_866MHz_1.jpg" alt="Pentium III" /></p>
+
+<p><img src="/images/blogs/PentiumIII-2.png" alt="Pentium III" /></p>
+
+<h2 id="netburst微架构">Netburst微架构</h2>
+
+<h3 id="2000-intel-pentium-4处理器">2000 Intel Pentium 4处理器</h3>
+
+<blockquote>
+  <p>2000年：Intel Pentium 4处理器</p>
+</blockquote>
+
+<p><img src="/images/cpus/Intel/Intel_Pentium_4_1.5GHz_1.jpg" alt="Pentium 4" /></p>
+
+<p><img src="/images/blogs/Pentium4-2.png" alt="Pentium 4" /></p>
+
+<p><img src="/images/blogs/Pentium4-3.png" alt="Pentium 4" /></p>
+
+<h2 id="pentium-m微架构">Pentium M微架构</h2>
+
+<h3 id="2003-pentium-m处理器">2003 Pentium M处理器</h3>
+
+<blockquote>
+  <p>2003：Pentium M处理器</p>
+</blockquote>
+
+<p><img src="/images/blogs/PentiumM-1.png" alt="Pentium M" /></p>
+
+<h2 id="core微架构">Core微架构</h2>
+
+<p>… … … …</p>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

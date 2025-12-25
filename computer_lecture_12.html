@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="本节开始介绍 Intel Core 架构的前世今生，先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的前世 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的前世">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的前世</h1>
+        <p class="post-meta"><time datetime="2022-11-01T00:00:00+08:00" itemprop="datePublished">Nov 1, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">本节开始介绍 Intel Core 架构的前世今生，先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。</div>
+        
+
+        
+
+        <p>由于篇幅过长，因此馆长在完稿之后决定将 Intel Core 架构的前世今生分成两篇，这篇是上篇，主要谈 Core 架构再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。</p>
+
+<h2 id="intel-pentium-m">Intel Pentium M</h2>
+
+<p>要谈 2006 年之后的 x86 CPU 发展，就不得不谈 Pentium M 这款特别的处理器，以往 Intel 与 AMD 并没有特别重视笔记本电脑上的 CPU 设计，为了节省研发成本，通常笔记本电脑上使用的行动版处理器就只是同架构桌面计算机 CPU 降频、降压之后的版本 (LV 版本，Low Voltage)，因此在过去好多篇的 CPU 历史中馆长并没有特别着墨于行动版处理器上。</p>
+
+<h3 id="pentium-4-m-的失败">Pentium 4-M 的失败</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Pentium4mlogo.jpg" alt="Pentium4mlogo" />
+</div>
+
+<p>原先在 Pentium 4 这一世代中，Intel 也是循往例推出了同样以 Netburst 架构为基础的 Mobile Pentium 4 (Pentium 4-M)，但是很快大家就发现问题了，那就是追求频率最大化优先于 IPC 的 Netburst 并不适合用于对于温度与耗电量有相当大限制的行动运算环境中，将 Pentium 4 降压、降频之后的表现非常不理想，温度比 Pentium III-M 高很多，性能上却没有甚么长进，也没办法用于轻薄笔电之中 (本应对应 Pentium III-M 中的 ULV 版本，到了 Pentium 4-M 时代抑或是性能过差或是根本做不出来)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/L_Pentium4-M-chips-top.jpg" alt="L_Pentium4-M - chips top" />
+</div>
+
+<p>而后来由于 Pentium 4-M 近乎凄惨的性能 (而且还很贵)，有许多笔记本电脑厂商在旗下的高阶笔电型号 (今天你所见到众多电竞游戏系列的前身) 上干脆直接选用桌面计算机版本的 Pentium 4，造就了不少介于桌面计算机与笔记本电脑之间的四不像出来，至于其他产品线其实 Pentium 4-M 也没能完全取代前代的 Pentium III-M。</p>
+
+<p><strong>Mobile Intel Pentium 4-M (Northwood) 80532</strong></p>
+
+<ul>
+  <li>发布时间：2002 年 04 月 23 日</li>
+  <li>运行频率：1400 MHz ~ 3200 MHz</li>
+  <li>FSB 频率：400 MT/s、533 MT/s</li>
+  <li>L2 缓存大小： 512 KB (全速，On-die)</li>
+  <li>支持插槽：Socket 478 ( 478 针脚 FPGA 封装)</li>
+  <li>电压需求：1.2 V ~ 1.55 V</li>
+  <li>晶体管数：5500 万枚</li>
+  <li>制造工艺：0.13 微米 (µm)</li>
+  <li>功能：x86-32 + MMX, SSE, SSE2, IST, 部分型号支持 HT</li>
+</ul>
+
+<p><strong>Mobile Intel Pentium 4-M (Prescott) 80546</strong></p>
+
+<ul>
+  <li>发布时间：2004 年 06 月 01 日</li>
+  <li>运行频率：2800 MHz ~ 3466 MHz</li>
+  <li>FSB 频率：533 MT/s</li>
+  <li>L2 缓存大小： 1 MB (全速，On-die)</li>
+  <li>支持插槽：Socket 478 ( 478 针脚 FPGA 封装)</li>
+  <li>电压需求：1.25 V ~ 1.4 V</li>
+  <li>晶体管数：1 亿 2500 万枚</li>
+  <li>制造工艺：90 纳米 (nm)</li>
+  <li>功能：x86-32 + MMX, SSE, SSE2, IST, HT</li>
+</ul>
+
+<h3 id="救援投手-pentium-m">救援投手 Pentium M</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Pentium_M.jpg" alt="Pentium_M" />
+</div>
+
+<p>由于 Intel Pentium 4-M 的失败，Intel 旗下的以色列海法团队 (这团队之后大家还会看到很多次，其辉煌的历史纪录甚至有些人认为只要是海法团队负责的那一代 Intel CPU 就特别有选购的价值) 便开始进行开发后继产品的计划。</p>
+
+<p>以色列海法团队在馆长个人眼中是一个「很敢做对的事」的团队，尽管 Intel 公司当时的主流是 Netbrust 架构，Pentium III 以前使用的 P6 架构早已被认为是「历史产物」，但海法团队认为 Netburst 根本就不适合用于对散热与电压有很大限制的笔记本电脑中，在 Intel Pentium 4-M 的后继产品中选择了海法团队相对而言更熟悉 (海法团队曾经负责同样以 P6 架构为基础的 Timna 处理器，后被取消) 的 P6 架构做为发展的基础，如此「以退为进」的做法，最后得到的产物就是 Pentium M。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/pentiumm.jpg" alt="pentiumm" />
+</div>
+
+<p>「将 Netburst 与 P6 加起来除以二」或许可以贴切的描述 Pentium M 的基础架构，第一代 Pentium M 架构在 Intel 规划上称之为 Banias Micro Architecture (在绝大多数 Intel 文件中不会提到此架构与 P6 老架构之间的关联，因为那很像开倒车跟自打脸 XD)，并不单纯只是 Pentium III 架构的复辟，其实 Banias 中融入了不少 Netburst 架构的特色，像是 SSE2 指令集、对分支预测进行强化都是可以在 Netburst 架构上见到的发展方向。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/banias_cpu.jpg">
+        <img src="../images/blogs/computer_lecture/banias_cpu-750x747.jpg" alt="Intel Pentium M (Banias)" />
+    </a>
+    <p><b>▲ Intel Pentium M (Banias)</b></p>
+</div>
+
+<p><strong>Intel Pentium M (Banias) 80535</strong></p>
+
+<ul>
+  <li>发布时间：2003 年 03 月 12 日</li>
+  <li>运行频率 (标准电压)：1300 MHz ~ 1800 MHz</li>
+  <li>运行频率 (低电压)：1100 MHz ~ 1300 MHz</li>
+  <li>运行频率 (超低电压)：900 MHz ~ 1100 MHz</li>
+  <li>FSB 频率：400 MT/s</li>
+  <li>L1 缓存大小：32 KB 指令缓存、32 KB 数据缓存</li>
+  <li>L2 缓存大小：1 MB (全速，On-die)</li>
+  <li>支持插槽：Socket 479 ( 478 针脚 FPGA / BGA 封装)</li>
+  <li>电压需求 (标准电压)：0.956 V ~ 1.484 V</li>
+  <li>电压需求 (低电压)：0.956 V ~ 1.180 V</li>
+  <li>电压需求 (超低电压)：0.844 V ~ 1.004 V</li>
+  <li>晶体管数：7700 万枚</li>
+  <li>制造工艺：130 纳米 (nm)</li>
+  <li>功能：x86-32 + MMX, SSE, SSE2, EIST</li>
+</ul>
+
+<h3 id="好一个营销手法intel-centrino-行动运算技术">好一个营销手法：Intel Centrino 行动运算技术</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Intel_Inside_Centrino.gif" alt="Intel_Inside_Centrino" />
+</div>
+
+<p>不过 Pentium M 虽然解决了 Intel 在行动版处理器上的问题，却在营销上带来了另一个问题，由于 Netburst 架构已经对消费者灌输了「高频率就是高性能」的观念，但基于改良版 P6 架构的 Pentium M 在频率上几乎都不及 Pentium 4-M，却有着较好的性能，这时候 Intel 若要说服消费者选择新的 Pentium M 岂不是自打脸了吗？其实按照 Intel 官方的说法，Intel 是从此时开始「不再一味追求性能的提升，而是更加强调效能的提升，效能只得是能耗与性能的比值」。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/21-centrino.jpg" alt="21-centrino" />
+</div>
+
+<p>于是为了避免被质疑自打脸，Intel 决定在宣传上淡化 Pentium M 的角色，在宣传上发展了 Centrino 行动运算技术这一套标语政策，再辅以铺天盖地的广告宣传 (当时在台湾连 FM 电台都听得到)，让消费者的焦点从处理器上转移到是否具备 Centrino 标章上。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Carmel.png" alt="Carmel" />
+</div>
+
+<p>说了这么多，到底 Centrino 到底是什么呢？其实 Centrino 就是 Pentium M 处理器 + Intel 芯片组 + Intel 无线网络卡三位一体的组合搭配，用 Centrino 当宣传让消费者到店里指名购买基于 Centrino 技术的笔记本电脑，不仅可以拉抬 Pentium M 的销售，还连带让自家的无线网络卡销量暴冲，这样的营销策略够聪明吧？所以其实有不少人不认识 Pentium M，却知道 Centrino 这品牌。</p>
+
+<ul>
+  <li>第一代 Centrino (Carmel 平台)
+    <ul>
+      <li>Intel Pentium M (Banias) 130nm</li>
+      <li>Intel 855M 芯片组</li>
+      <li>Intel PRO/Wireless 2100BG 无线网络卡</li>
+    </ul>
+  </li>
+  <li>第二代 Centrino (Sonoma 平台)
+    <ul>
+      <li>Intel Pentium M (Dothan) 90nm</li>
+      <li>Intel 915M 芯片组</li>
+      <li>Intel PRO/Wireless 2915ABG 无线网络卡</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="不再使用频率来命名处理器等级">不再使用频率来命名处理器等级</h3>
+
+<p>当今的 Intel 在命名处理器的时候不再使用频率来区分，而是以特殊的处理器编号来命名，例如 i7-5960X，这样的作法其实是从 Pentium M 的第二代产品 Dothan 开始的，同样是为了避免消费者质疑为什么新款处理器的频率比以前还要低而做的做法，从此 Intel 对消费者的「教育」方式转为数字越大的就越高级。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Pentiummn.png" alt="Pentiummn" />
+</div>
+
+<p>Dothan 基本上就是 Banias 的制程升级版本，从 130 纳米制造工艺升级为 90 纳米制造工艺，FSB 则从 400 MT/s 提升到 533 MT/s 并加入执行禁止位 (NX bit) 技术。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Pentium_M_Dothan.jpg">
+        <img src="../images/blogs/computer_lecture/Pentium_M_Dothan.jpg" alt="Pentium_M_Dothan" />
+    </a>
+    <p><b>▲ Intel Pentium M (Dothan)</b></p>
+</div>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/dothan-die-shot.jpg">
+        <img src="../images/blogs/computer_lecture/dothan-die-shot.jpg" alt="dothan-die-shot" />
+    </a>
+    <p><b>▲ Dothan 的 die shot</b></p>
+</div>
+
+<p><strong>Intel Pentium M 700 系列 (Dothan) 80536</strong></p>
+
+<ul>
+  <li>发布时间：2004 年 06 月 23 日</li>
+  <li>运行频率 (标准电压)：1400 MHz ~ 2277 MHz</li>
+  <li>运行频率 (低电压)：1400 MHz ~ 1600 MHz</li>
+  <li>运行频率 (超低电压)：1000 MHz ~ 1300 MHz</li>
+  <li>FSB 频率：400 MT/s、533 MT/s</li>
+  <li>L1 缓存大小：32 KB 指令缓存、32 KB 数据缓存</li>
+  <li>L2 缓存大小：2 MB (全速，On-die)</li>
+  <li>支持插槽：Socket 479 ( 478 针脚 FPGA / BGA 封装)</li>
+  <li>电压需求 (标准电压)：0.988 V ~ 1.404 V</li>
+  <li>电压需求 (低电压)：0.988 V ~ 1.116 V</li>
+  <li>电压需求 (超低电压)：0.812 V ~ 0.956 V</li>
+  <li>晶体管数：1 亿 4000 万枚</li>
+  <li>制造工艺：90 纳米 (nm)</li>
+  <li>功能：x86-32 + MMX, SSE, SSE2, EIST, NX</li>
+</ul>
+
+<h3 id="netburst-殒落intel-首次被-amd-打到趴在地上">Netburst 殒落，Intel 首次被 AMD 打到趴在地上</h3>
+
+<p>很快的 Netburst 终于面临穷途末路，在发展 Prescott 的过程中 Intel 就隐隐约约发现频率是不可能永无止尽的提升下去的，后来的 Tejas 计划也就这么胎死腹中，这段期间应该是 Intel 历史上最灰头土脸的一段，除了 Intel 确定 Prescott 的频率将在 3.8 GHz 止步外，当年度几乎所有 Intel 的主要产品改版通通延期，时任 Intel CEO 的 Craig Barrett 甚至为了 4 GHz 处理器计划的取消与失信于客户而下跪道歉。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/1014089_169360.jpg" alt="1014089_169360" />
+</div>
+
+<p>同时这也是 Intel 第一次被 AMD 打趴在地上，AMD 的 K8 架构获得了巨大的成功，相较之下 Intel 可说是节节败退，IA-64 失败，x86 架构的 64 位延伸被 AMD 发展成功、第一颗原生双核心的位置也被 AMD 抢下，Intel 同时期只端出了被戏称为胶水双核心的 Pentium D。</p>
+
+<p>之后 Intel 在 2005 年宣布将在 2006 年推出 Core 架构取代 Netburst。</p>
+
+<h3 id="pentium-m-架构的双核心版本yonah">Pentium M 架构的双核心版本：Yonah</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/300px-Yonah_logo.jpg" alt="300px-Yonah_logo" />
+</div>
+
+<p>不过 Intel 总不能就这样趴在地上不起来了，Intel 后来在 2006 年 01 月将行动版处理器产品线提升到双核心，也就是开发代号为 Yonah 的 Intel Core 产品线，双核心版本称为 Intel Core Duo，单核心版本则称为 Intel Core Solo，Yonah 是原生双核心设计，单核心版本的 Core Solo 为屏蔽掉一个核心的 Core Duo。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/yonah-die-shot-750x554.jpg" alt="yonah-die-shot" />
+</div>
+
+<p>Yonah 整体来说仍是基于 Pentium M 架构进行改良后的产物，新增了 SSE3 指令集，此代产品没有整合 EM64T，因此仍是纯 32 位 x86 处理器，但此时 Intel 内部正在刮起一场风暴，同时也正在酝酿之后的帝国复兴计划。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/napa.jpg" alt="napa" />
+</div>
+
+<p>Yonah 同时也对应到第三代的 Centrino 平台，代号为 Napa，除了 Yonah 处理器之外还包含了 Intel Pro/Wireless 3945ABG 与 945M 芯片组。</p>
+
+<p><strong>Intel Core (Yonah) 80538/80539</strong></p>
+
+<ul>
+  <li>发布时间：2006 年 01 月 06 日</li>
+  <li>运行频率 (标准电压单核心)：1400 MHz ~ 2277 MHz</li>
+  <li>运行频率 (低电压单核心)：1400 MHz ~ 1600 MHz</li>
+  <li>运行频率 (标准电压双核心)：1600 MHz ~ 2333 MHz</li>
+  <li>运行频率 (低电压双核心)：1500 MHz ~ 1833 MHz</li>
+  <li>运行频率 (超低电压双核心)：1200 MHz ~ 1073 MHz</li>
+  <li>FSB 频率：533 MT/s、667 MT/s</li>
+  <li>L1 缓存大小：2 x 32 KB 指令缓存、2 x 32 KB 数据缓存</li>
+  <li>L2 缓存大小：2 MB (全速，On-die，8-way)</li>
+  <li>支持插槽：Socket M ( 478 针脚 FPGA / BGA 封装)</li>
+  <li>晶体管数：1 亿 5100 万枚</li>
+  <li>制造工艺：65 纳米 (nm)</li>
+  <li>功能：x86-32 + MMX, SSE, SSE2, EIST, NX, 型号非 50 结尾者支持 VT-x</li>
+</ul>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_11.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_13.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

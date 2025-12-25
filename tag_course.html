@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Course | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Course">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="active"><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Course</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">course</button></p>
+<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
+    <tbody>
+    
+  
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_19.html">CPU大讲堂（19）——当代CPU介绍(四) Intel Haswell 与 Broadwell 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> Haswell 算是最后一代还称得上遵循 Tick-tock 时程规划的产品，Broadwell 架构基本上就是 Haswell 架构移植到 14 纳米工艺的版本。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_18.html">CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上是 Sandy Bridge 的延续，改进内容不多也不明显。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_17.html">CPU大讲堂（17）——当代CPU介绍(二) Intel Sandy Bridge 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 从 Sandy Bridge 开始个人计算机处理器的发展有很明显趋于缓和的现象，接下来的 Ivy Bridge、Haswell、Broadwell、Skylake 其实都不会有太让人惊艳的提升或变革。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_16.html">CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_15.html">CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 今天要谈的是 Intel Nehalem 架构，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_14.html">CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_13.html">CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本节主要谈 Intel Core 架构的逆袭。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_12.html">CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的前世</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本节开始介绍 Intel Core 架构的前世今生，先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_11.html">CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 上篇讲 Intel 的 Netburst 架构时代 (2000 ~ 2006)，本篇自然就是讲 Intel 永远的 (同时也是现在唯一的) x86 处理器对手 AMD 同时期的历史。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_10.html">CPU大讲堂（10）——近代前期CPU发展史(上) Netburst 架构</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 从这一节开始将进入近代的 CPU 介绍，本篇谈的是 Intel 的 Netburst (P68) 架构。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_9.html">CPU大讲堂（9）——中古时代后期CPU发展史(下)</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本节将继续延续上一节的内容，要介绍的有 Intel 的 Pentium III 家族、AMD 的 K6-III 与 Athlon 家族三大系列。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_8.html">CPU大讲堂（8）——中古时代后期CPU发展史(中)</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构推出了 Pentium II 在市场上大获成功。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_7.html">CPU大讲堂（7）——中古时代后期CPU发展史(上)</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本节要谈的是俗称 586 世代的部分，从这里开始也是 x86 CPU 发展史真正要开始有趣的地方，一方面是 AMD 终于开始研制自家设计的 CPU 了，另一方面则是计算机信息科技产业的发展差不多就是在此时正式进入突飞猛进的阶段。 </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_6.html">CPU大讲堂（6）——中古前期CPU发展史</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 延续上一节的主题，本节馆长要谈的是「中古时期前半」的个人计算机 CPU 发展史，从这里开始就进入 x86 指令集架构的时代了，后来你所能见到的个人计算机 CPU 几乎都奠基于此。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_5.html">CPU大讲堂（5）——上古CPU发展史</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 在前面的 CPU 概论结束之后，我们接下来要进入的是一段「历史课程」，本篇介绍 CPU 的上古时代，包含 Intel 的 4004、8008、8080、8085 等进入 x86 架构以前的处理器。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_4.html">CPU大讲堂（4）——HT、XD？带你认识这些技术名称</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 延续上一篇的主题，这节将会继续谈处理器的「技术特性」——超线程技术、处理器省电调控技术、数据执行防止技术和虚拟化技术。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_3.html">CPU大讲堂（3）——鸟瞰历代处理器指令集</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 近年的 CPU 除了前一节谈过的基本参数之外，通常还有很多「技术特性」加持，这些技术能提供某些额外的功能或是提升运算性能，因此要了解 CPU 的规格，对这些技术的简单了解是不可或缺的！一般而言，处理器的技术特性有指令集与专属技术两大类，本节将先探讨指令集的部分。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_2.html">CPU大讲堂（2）——带你看懂CPU规格</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 处理器的规格其实比绝大多数人想象复杂，本篇主要是教大家如何「使用工具来判读自己计算机目前使用的 CPU 的规格」。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="computer_lecture_1.html">CPU大讲堂（1）——浅谈CPU</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 中央处理器是计算机核心三大组件之一，本期主要介绍处理器的架构及其发展。 </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="lithography_has_become_a_choke_technology_for_chip_manufacturing.html">光刻如何一步一步变成了芯片制造的卡脖子技术？</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 芯片制造用到的技术很多，光刻是芯片制造的灵魂技术，但是开始的时候，光刻并不是所有技术中最厉害的。现在大众认识到了芯片的重要性，讨论芯片产业的卡脖子问题时，提到最多的是光刻和光刻机。那么，光刻是如何一步一步变成了芯片制造的卡脖子技术？本文试图一探究竟。 </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="a_few_little_secrets_about_cpu.html">几个关于CPU你所不知道的小秘密</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 每一代处理器上市前，厂商自己都会经过复杂多样的温度测算，他们会采用什么令人意想不到的方法呢？第十代英特尔处理器有2核、4核、6核、8核、10核这5种类型，英特尔难道会傻乎乎地开5条线分别生产这5种核心类型的产品吗？如果想在旧主板上使用新的CPU，聪明的厂商会采用什么方法呢？本文将为您揭秘这些小秘密。 </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+   </tbody>
+</table>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="苹果 A 系列处理器">
+<meta name="keywords" content=" ">
+<title>苹果 A 系列处理器 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="苹果 A 系列处理器">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">CPU收藏目录 </li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About" href="about.html">About</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Support" href="support.html">Support</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Intel" href="#">Intel</a>
+      <ul>
+          
+          
+          
+          <li><a title="3002" href="intel_3002.html">3002</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="4004" href="intel_4004.html">4004</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="4040" href="intel_4040.html">4040</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8008" href="intel_8008.html">8008</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8080" href="intel_8080.html">8080</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8085" href="intel_8085.html">8085</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8086" href="intel_8086.html">8086</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8088" href="intel_8088.html">8088</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80186" href="intel_80186.html">80186</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80188" href="intel_80188.html">80188</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80286" href="intel_80286.html">80286</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80386" href="intel_80386.html">80386</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="RapidCAD" href="intel_RapidCAD.html">RapidCAD</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80486" href="intel_80486.html">80486</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80486 OverDrive" href="intel_80486OverDrive.html">80486 OverDrive</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium" href="intel_Pentium.html">Pentium</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium MMX" href="intel_PentiumMMX.html">Pentium MMX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium OverDrive" href="intel_PentiumOverDrive.html">Pentium OverDrive</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium Pro" href="intel_PentiumPro.html">Pentium Pro</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II" href="intel_PentiumII.html">Pentium II</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II Celeron" href="intel_PentiumIICeleron.html">Pentium II Celeron</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II Xeon*" href="intel_PentiumIIXeon.html">Pentium II Xeon*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II OverDrive*" href="intel_PentiumIIOverDrive.html">Pentium II OverDrive*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium III" href="intel_PentiumIII.html">Pentium III</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium III Celeron" href="intel_PentiumIIICeleron.html">Pentium III Celeron</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium III Xeon" href="intel_PentiumIIIXeon.html">Pentium III Xeon</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium 4" href="intel_Pentium4.html">Pentium 4</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium 4 Celeron" href="intel_Pentium4Celeron.html">Pentium 4 Celeron</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium 4 Xeon" href="intel_Pentium4Xeon.html">Pentium 4 Xeon</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="Core" href="#">Core</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Core Celeron" href="intel_CoreCeleron.html">Core Celeron</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Core Pentium" href="intel_CorePentium.html">Core Pentium</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Core 2" href="intel_Core2.html">Core 2</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Core Xeon" href="intel_CoreXeon.html">Core Xeon</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="1 Gen. Nehalem" href="intel_1Gen_Nehalem.html">1 Gen. Nehalem</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="1 Gen. Westmere" href="intel_1Gen_Westmere.html">1 Gen. Westmere</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="2 Gen. Sandy Bridge" href="intel_2Gen_SandyBridge.html">2 Gen. Sandy Bridge</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="3 Gen. Ivy Bridge" href="intel_3Gen_IvyBridge.html">3 Gen. Ivy Bridge</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="4 Gen. Haswell" href="intel_4Gen_Haswell.html">4 Gen. Haswell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="5 Gen. Broadwell" href="intel_5Gen_Broadwell.html">5 Gen. Broadwell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="7 Gen. Kaby Lake" href="intel_7Gen_KabyLake.html">7 Gen. Kaby Lake</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80860" href="intel_80860.html">80860</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80960" href="intel_80960.html">80960</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Itanium*" href="intel_Itanium.html">Itanium*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Itanium 2*" href="intel_Itanium2.html">Itanium 2*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FPU" href="intel_FPU.html">FPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Other" href="intel_Other.html">Other</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Timeline" href="intel_CPU_Timeline.html">Timeline</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AMD" href="#">AMD</a>
+      <ul>
+          
+          
+          
+          <li><a title="8080" href="AMD_8080.html">8080</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8085" href="AMD_8085.html">8085</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8086" href="AMD_8086.html">8086</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8088" href="AMD_8088.html">8088</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80186" href="AMD_80186.html">80186</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80188" href="AMD_80188.html">80188</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80286" href="AMD_80286.html">80286</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80386" href="AMD_80386.html">80386</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80486" href="AMD_80486.html">80486</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="5x86" href="AMD_5x86.html">5x86</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K5" href="AMD_K5.html">K5</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K6" href="AMD_K6.html">K6</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K7" href="AMD_K7.html">K7</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K8" href="AMD_K8.html">K8</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K10" href="AMD_K10.html">K10</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="RISC" href="AMD_RISC.html">RISC</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FPU" href="AMD_FPU.html">FPU</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Cyrix" href="#">Cyrix</a>
+      <ul>
+          
+          
+          
+          <li><a title="Cx486 DLC" href="Cyrix_Cx486DLC.html">Cx486 DLC</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cx486 DX" href="Cyrix_Cx486DX.html">Cx486 DX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="5x86" href="Cyrix_5x86.html">5x86</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="6x86" href="Cyrix_6x86.html">6x86</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="6x86MX" href="Cyrix_6x86MX.html">6x86MX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="M II" href="Cyrix_MII.html">M II</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MediaGX" href="Cyrix_MediaGX.html">MediaGX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FPU" href="Cyrix_FPU.html">FPU</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="VIA" href="#">VIA</a>
+      <ul>
+          
+          
+          
+          <li><a title="Cyrix III" href="VIA_CyrixIII.html">Cyrix III</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C3" href="VIA_C3.html">C3</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C3 1GigaPro" href="VIA_C3_1GigaPro.html">C3 1GigaPro</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Texas Instruments" href="#">Texas Instruments</a>
+      <ul>
+          
+          
+          
+          <li><a title="386" href="TI_386.html">386</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="486" href="TI_486.html">486</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="STMicroelectronics N.V." href="#">STMicroelectronics N.V.</a>
+      <ul>
+          
+          
+          
+          <li><a title="486" href="ST_486.html">486</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Geode" href="#">Geode</a>
+      <ul>
+          
+          
+          
+          <li><a title="GXm" href="Geode_GXm.html">GXm</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GX1" href="Geode_GX1.html">GX1</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="IBM" href="#">IBM</a>
+      <ul>
+          
+          
+          
+          <li><a title="486" href="IBM_486.html">486</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="6x86MX" href="IBM_6x86MX.html">6x86MX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Power" href="IBM_Power.html">Power</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Other" href="IBM_Other.html">Other</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="IDT" href="#">IDT</a>
+      <ul>
+          
+          
+          
+          <li><a title="WinChip" href="IDT_WinChip.html">WinChip</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Motorola" href="#">Motorola</a>
+      <ul>
+          
+          
+          
+          <li><a title="PowerPC" href="Motorola_PowerPC.html">PowerPC</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Transmeta" href="#">Transmeta</a>
+      <ul>
+          
+          
+          
+          <li><a title="Crusoe" href="Transmeta_Crusoe.html">Crusoe</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Siemens" href="#">Siemens</a>
+      <ul>
+          
+          
+          
+          <li><a title="80186" href="Siemens_80186.html">80186</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Qualcomm" href="#">Qualcomm</a>
+      <ul>
+          
+          
+          
+          <li><a title="MSM8928" href="Qualcomm_MSM8928.html">MSM8928</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Zilog" href="#">Zilog</a>
+      <ul>
+          
+          
+          
+          <li><a title="Z80" href="Zilog_Z80.html">Z80</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Apple*" href="#">Apple*</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a title="A-Series" href="Apple_A_Series.html">A-Series</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S-Series" href="Apple_S_Series.html">S-Series</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="M-Series" href="Apple_M_Series.html">M-Series</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="龙芯" href="#">龙芯</a>
+      <ul>
+          
+          
+          
+          <li><a title="龙芯1号" href="Loongson_1.html">龙芯1号</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="龙芯2号" href="Loongson_2.html">龙芯2号</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="龙芯3号" href="Loongson_3.html">龙芯3号</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">苹果 A 系列处理器</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">苹果 A 系列处理器</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <h2 id="苹果-a-系列处理器参数大全">苹果 A 系列处理器参数大全</h2>
+
+<p>正在<a href="/apple-chip/" target="_blank">打开</a>，请稍后……</p>
+
+<script type="text/javascript">
+    window.location = '/apple-chip/'
+</script>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+<span>Page last updated:</span> Aug 11, 2023<br/> Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

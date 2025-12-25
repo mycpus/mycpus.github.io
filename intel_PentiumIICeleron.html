@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="第一代 Intel Celeron 处理器于 1998 年 4 月推出。">
+<meta name="keywords" content="IntelPentiumCeleron,  CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples">
+<title>Intel Pentium II Celeron Processor | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Intel Pentium II Celeron Processor">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">CPU收藏目录 </li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index.html">Get started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="About" href="about.html">About</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Support" href="support.html">Support</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Intel" href="#">Intel</a>
+      <ul>
+          
+          
+          
+          <li><a title="3002" href="intel_3002.html">3002</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="4004" href="intel_4004.html">4004</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="4040" href="intel_4040.html">4040</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8008" href="intel_8008.html">8008</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8080" href="intel_8080.html">8080</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8085" href="intel_8085.html">8085</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8086" href="intel_8086.html">8086</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8088" href="intel_8088.html">8088</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80186" href="intel_80186.html">80186</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80188" href="intel_80188.html">80188</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80286" href="intel_80286.html">80286</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80386" href="intel_80386.html">80386</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="RapidCAD" href="intel_RapidCAD.html">RapidCAD</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80486" href="intel_80486.html">80486</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80486 OverDrive" href="intel_80486OverDrive.html">80486 OverDrive</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium" href="intel_Pentium.html">Pentium</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium MMX" href="intel_PentiumMMX.html">Pentium MMX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium OverDrive" href="intel_PentiumOverDrive.html">Pentium OverDrive</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium Pro" href="intel_PentiumPro.html">Pentium Pro</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II" href="intel_PentiumII.html">Pentium II</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Pentium II Celeron" href="intel_PentiumIICeleron.html">Pentium II Celeron</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II Xeon*" href="intel_PentiumIIXeon.html">Pentium II Xeon*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium II OverDrive*" href="intel_PentiumIIOverDrive.html">Pentium II OverDrive*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium III" href="intel_PentiumIII.html">Pentium III</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium III Celeron" href="intel_PentiumIIICeleron.html">Pentium III Celeron</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium III Xeon" href="intel_PentiumIIIXeon.html">Pentium III Xeon</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium 4" href="intel_Pentium4.html">Pentium 4</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium 4 Celeron" href="intel_Pentium4Celeron.html">Pentium 4 Celeron</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pentium 4 Xeon" href="intel_Pentium4Xeon.html">Pentium 4 Xeon</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="Core" href="#">Core</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Core Celeron" href="intel_CoreCeleron.html">Core Celeron</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Core Pentium" href="intel_CorePentium.html">Core Pentium</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Core 2" href="intel_Core2.html">Core 2</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Core Xeon" href="intel_CoreXeon.html">Core Xeon</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="1 Gen. Nehalem" href="intel_1Gen_Nehalem.html">1 Gen. Nehalem</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="1 Gen. Westmere" href="intel_1Gen_Westmere.html">1 Gen. Westmere</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="2 Gen. Sandy Bridge" href="intel_2Gen_SandyBridge.html">2 Gen. Sandy Bridge</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="3 Gen. Ivy Bridge" href="intel_3Gen_IvyBridge.html">3 Gen. Ivy Bridge</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="4 Gen. Haswell" href="intel_4Gen_Haswell.html">4 Gen. Haswell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="5 Gen. Broadwell" href="intel_5Gen_Broadwell.html">5 Gen. Broadwell</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="7 Gen. Kaby Lake" href="intel_7Gen_KabyLake.html">7 Gen. Kaby Lake</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80860" href="intel_80860.html">80860</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80960" href="intel_80960.html">80960</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Itanium*" href="intel_Itanium.html">Itanium*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Itanium 2*" href="intel_Itanium2.html">Itanium 2*</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FPU" href="intel_FPU.html">FPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Other" href="intel_Other.html">Other</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Timeline" href="intel_CPU_Timeline.html">Timeline</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AMD" href="#">AMD</a>
+      <ul>
+          
+          
+          
+          <li><a title="8080" href="AMD_8080.html">8080</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8085" href="AMD_8085.html">8085</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8086" href="AMD_8086.html">8086</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="8088" href="AMD_8088.html">8088</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80186" href="AMD_80186.html">80186</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80188" href="AMD_80188.html">80188</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80286" href="AMD_80286.html">80286</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80386" href="AMD_80386.html">80386</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="80486" href="AMD_80486.html">80486</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="5x86" href="AMD_5x86.html">5x86</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K5" href="AMD_K5.html">K5</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K6" href="AMD_K6.html">K6</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K7" href="AMD_K7.html">K7</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K8" href="AMD_K8.html">K8</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="K10" href="AMD_K10.html">K10</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="RISC" href="AMD_RISC.html">RISC</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FPU" href="AMD_FPU.html">FPU</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Cyrix" href="#">Cyrix</a>
+      <ul>
+          
+          
+          
+          <li><a title="Cx486 DLC" href="Cyrix_Cx486DLC.html">Cx486 DLC</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cx486 DX" href="Cyrix_Cx486DX.html">Cx486 DX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="5x86" href="Cyrix_5x86.html">5x86</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="6x86" href="Cyrix_6x86.html">6x86</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="6x86MX" href="Cyrix_6x86MX.html">6x86MX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="M II" href="Cyrix_MII.html">M II</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MediaGX" href="Cyrix_MediaGX.html">MediaGX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FPU" href="Cyrix_FPU.html">FPU</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="VIA" href="#">VIA</a>
+      <ul>
+          
+          
+          
+          <li><a title="Cyrix III" href="VIA_CyrixIII.html">Cyrix III</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C3" href="VIA_C3.html">C3</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="C3 1GigaPro" href="VIA_C3_1GigaPro.html">C3 1GigaPro</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Texas Instruments" href="#">Texas Instruments</a>
+      <ul>
+          
+          
+          
+          <li><a title="386" href="TI_386.html">386</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="486" href="TI_486.html">486</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="STMicroelectronics N.V." href="#">STMicroelectronics N.V.</a>
+      <ul>
+          
+          
+          
+          <li><a title="486" href="ST_486.html">486</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Geode" href="#">Geode</a>
+      <ul>
+          
+          
+          
+          <li><a title="GXm" href="Geode_GXm.html">GXm</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GX1" href="Geode_GX1.html">GX1</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="IBM" href="#">IBM</a>
+      <ul>
+          
+          
+          
+          <li><a title="486" href="IBM_486.html">486</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="6x86MX" href="IBM_6x86MX.html">6x86MX</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Power" href="IBM_Power.html">Power</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Other" href="IBM_Other.html">Other</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="IDT" href="#">IDT</a>
+      <ul>
+          
+          
+          
+          <li><a title="WinChip" href="IDT_WinChip.html">WinChip</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Motorola" href="#">Motorola</a>
+      <ul>
+          
+          
+          
+          <li><a title="PowerPC" href="Motorola_PowerPC.html">PowerPC</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Transmeta" href="#">Transmeta</a>
+      <ul>
+          
+          
+          
+          <li><a title="Crusoe" href="Transmeta_Crusoe.html">Crusoe</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Siemens" href="#">Siemens</a>
+      <ul>
+          
+          
+          
+          <li><a title="80186" href="Siemens_80186.html">80186</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Qualcomm" href="#">Qualcomm</a>
+      <ul>
+          
+          
+          
+          <li><a title="MSM8928" href="Qualcomm_MSM8928.html">MSM8928</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Zilog" href="#">Zilog</a>
+      <ul>
+          
+          
+          
+          <li><a title="Z80" href="Zilog_Z80.html">Z80</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Apple*" href="#">Apple*</a>
+      <ul>
+          
+          
+          
+          <li><a title="A-Series" href="Apple_A_Series.html">A-Series</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="S-Series" href="Apple_S_Series.html">S-Series</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="M-Series" href="Apple_M_Series.html">M-Series</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="龙芯" href="#">龙芯</a>
+      <ul>
+          
+          
+          
+          <li><a title="龙芯1号" href="Loongson_1.html">龙芯1号</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="龙芯2号" href="Loongson_2.html">龙芯2号</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="龙芯3号" href="Loongson_3.html">龙芯3号</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Intel Pentium II Celeron Processor</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">第一代 Intel Celeron 处理器于 1998 年 4 月推出。</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <h2 id="关于-intel-pentium-ii-celeron">关于 Intel Pentium II Celeron</h2>
+
+<p>第一代 Intel Celeron 处理器于 1998 年 4 月推出。这些是 Pentium II 的“低预算”版本，因此属于性能和价格较低的部分。由于性能较低，英特尔赛扬主要安装在所谓的办公 PC 中。</p>
+
+<p>第一个具有 Covington 内核的 Celeron 尤其处于不利地位，因为英特尔将它们投放市场时没有任何用于数据缓冲的 L2 缓存。这种不足甚至意味着赛扬不仅比具有相同时钟速度的 Pentium II 慢得多，而且在大多数应用领域中甚至不如第一代时钟频率仅为 200 MHz 的 Pentium MMX 。</p>
+
+<p>在赛扬上市几个月后，英特尔为其配备了 128 KB 的二级缓存。由于与 Pentium II 相比，此高速缓存以全速访问，而不仅仅是处理器时钟的一半，这意味着第二代 Celeron 采用 Mendocino Core 在某些应用领域甚至比具有相同时钟的 Pentium II 更快。</p>
+
+<p>虽然第一代赛扬仍然采用 SEPP（单边处理器封装）设计用于 Slot 1，但第二代完全采用 FCPGA（倒装芯片引脚网格阵列）设计用于 Socket 370。自 2000 年 3 月起上市的具有 Coppermine-128 内核的处理器直接来自 Intel Pentium III，但与之相比，其 L2 缓存只有一半大。</p>
+
+<p>另一个重要的创新是 x86 微架构的 SSE 指令集扩展，这是当时 Intel 新开发的。这一扩展于 1999 年初与新的 Pentium III 一起出现，并且也在第二代赛扬中实施。这 70 个额外的 Streaming SIMD Extensions 专门加速浮点数据类型和多媒体内容的应用程序。</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The Celeron family is a line of budget x86 processors based on Pentium P6 designs. It is marketed by Intel as a second line to complement their more expensive but higher-performance Pentium CPUs. The first Celeron was introduced in April 1998 and based on the Pentium II. Later versions are based on the Pentium III and Pentium 4 designs.</p>
+
+<p>The Celeron product concept was introduced by Intel in response to the company’s loss of low-end market share, in particular to Cyrix’s 6x86 and AMD’s K6, but also to other competers such as the IDT Winchip. Intel’s venerable Pentium MMX was no longer performance competitive and although a faster Pentium MMX would be cheap to make and technically straightforward, Intel preferred to move away from the industry standard Socket 7 platform (for which competitors made drop-in replacement CPUs) and produced a budget part that was pin-compatible with their high-end Pentium II product (Slot 1). For both technical and legal reasons, competitors had difficulty making Slot 1 parts.</p>
+
+<h2 id="我的收藏">我的收藏</h2>
+
+<h3 id="intel-celeron-266mhz">Intel Celeron 266MHz</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU 类型</td>
+      <td>242-pin S.E.P.P.PLGA</td>
+    </tr>
+    <tr>
+      <td>核心</td>
+      <td>Covington</td>
+    </tr>
+    <tr>
+      <td>Socket</td>
+      <td>Slot 1</td>
+    </tr>
+    <tr>
+      <td>主频</td>
+      <td>266 MHz</td>
+    </tr>
+    <tr>
+      <td>外频</td>
+      <td>66 MHz</td>
+    </tr>
+    <tr>
+      <td>倍频</td>
+      <td>x 4</td>
+    </tr>
+    <tr>
+      <td>外部总线宽度</td>
+      <td>64 Bit</td>
+    </tr>
+    <tr>
+      <td>地址总线宽度</td>
+      <td>36 Bit</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16+16 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>0 KB</td>
+    </tr>
+    <tr>
+      <td>晶体管</td>
+      <td>7,500,000</td>
+    </tr>
+    <tr>
+      <td>制造工艺</td>
+      <td>0.25 µm</td>
+    </tr>
+    <tr>
+      <td>步进</td>
+      <td>SL2SY</td>
+    </tr>
+    <tr>
+      <td>生产日期</td>
+      <td>10/1998</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>第一款 Celeron（代号 Covington）本质上是一个 266MHz Pentium II，完全没有任何二级缓存。虽然时钟频率为 266 或 300MHz（大大高于旧的 Pentium MMX），但无缓存的 Celeron 比它们设计替换的部件慢很多。首次发布时销量很大，主要是因为英特尔的名字，但赛扬很快在商业媒体和计算机专业人士中名声不佳。许多人不友好但准确地称它为 Slugeron、Celery 或 Decceleron。最初的市场兴趣因性能不佳而迅速消退，而且销量处于非常低的水平，英特尔感到有义务尽快开发出速度更快的替代产品。
+</code></pre></div></div>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_266MHz_1.jpg" alt="Intel Celeron 266MHz 正面" />
+<img src="/images/cpus/Intel/Intel_Celeron_266MHz_2.jpg" alt="Intel Celeron 266MHz 反面" /></p>
+
+<h3 id="intel-celeron-300a-mhz">Intel Celeron 300A MHz</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU 类型</td>
+      <td>242-pin S.E.P.P.PLGA</td>
+    </tr>
+    <tr>
+      <td>核心</td>
+      <td>Mendocino</td>
+    </tr>
+    <tr>
+      <td>Socket</td>
+      <td>Slot 1</td>
+    </tr>
+    <tr>
+      <td>主频</td>
+      <td>300 MHz</td>
+    </tr>
+    <tr>
+      <td>外频</td>
+      <td>66 MHz</td>
+    </tr>
+    <tr>
+      <td>倍频</td>
+      <td>x 4.5</td>
+    </tr>
+    <tr>
+      <td>外部总线宽度</td>
+      <td>64 Bit</td>
+    </tr>
+    <tr>
+      <td>地址总线宽度</td>
+      <td>36 Bit</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16+16 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>128 KB</td>
+    </tr>
+    <tr>
+      <td>晶体管</td>
+      <td>19,000,000</td>
+    </tr>
+    <tr>
+      <td>制造工艺</td>
+      <td>0.25 µm</td>
+    </tr>
+    <tr>
+      <td>步进</td>
+      <td>SL32A</td>
+    </tr>
+    <tr>
+      <td>生产日期</td>
+      <td>39/1998</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>英特尔深知原赛扬名声不佳，决心不再犯同样的错误，结果新的 Mendocino 核心赛扬从一开始就表现出色。事实上，大多数行业分析师认为第一款基于 Mendocino 的 Celeron 过于成功 - 性能足够高，不仅可以与竞争对手的部件进行激烈竞争，而且还可以吸引买家远离英特尔的高利润旗舰 Pentium II。
+
+新赛扬性能的关键是缓存。旧型号根本没有二级缓存，而新型号包括 128KB 的二级缓存作为芯片本身的一部分。Mendocino Celeron 在单个芯片上总共有 1920 万个晶体管（包括缓存），制造起来既困难又昂贵，但英特尔完美地执行了一个雄心勃勃的项目。 第一个 Mendocino 内核 Celeron 的时钟频率为当时适中的 300MHz，但在相同时钟速度下几乎是旧的无缓存 Celeron 的两倍。为了与旧型号区分开来，英特尔将其称为 300A。尽管其他 Mendocino Celeron（例如，下面的 Celeron 333MHz）没有附加 A，但有些人将所有 Mendocino 处理器称为 Celeron-A，而不管速度如何。
+</code></pre></div></div>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_300AMHz_1.jpg" alt="Intel Celeron 300A MHz 正面" />
+<img src="/images/cpus/Intel/Intel_Celeron_300AMHz_2.jpg" alt="Intel Celeron 300A MHz 反面" /></p>
+
+<hr />
+
+<h3 id="intel-celeron-333-mhz">Intel Celeron 333 MHz</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU 类型</td>
+      <td>242-pin S.E.P.P.PLGA</td>
+    </tr>
+    <tr>
+      <td>核心</td>
+      <td>Mendocino</td>
+    </tr>
+    <tr>
+      <td>Socket</td>
+      <td>Slot 1</td>
+    </tr>
+    <tr>
+      <td>主频</td>
+      <td>333 MHz</td>
+    </tr>
+    <tr>
+      <td>外频</td>
+      <td>66 MHz</td>
+    </tr>
+    <tr>
+      <td>倍频</td>
+      <td>x 5</td>
+    </tr>
+    <tr>
+      <td>外部总线宽度</td>
+      <td>64 Bit</td>
+    </tr>
+    <tr>
+      <td>地址总线宽度</td>
+      <td>36 Bit</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16+16 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>128 KB</td>
+    </tr>
+    <tr>
+      <td>晶体管</td>
+      <td>19,000,000</td>
+    </tr>
+    <tr>
+      <td>制造工艺</td>
+      <td>0.25 µm</td>
+    </tr>
+    <tr>
+      <td>步进</td>
+      <td>SL2WN</td>
+    </tr>
+    <tr>
+      <td>生产日期</td>
+      <td>46/1998</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_333MHz_1.jpg" alt="Intel Celeron 333 MHz 正面" />
+<img src="/images/cpus/Intel/Intel_Celeron_333MHz_2.jpg" alt="Intel Celeron 333 MHz 反面" /></p>
+
+<hr />
+
+<h3 id="intel-celeron-366-mhz">Intel Celeron 366 MHz</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU 类型</td>
+      <td>242-pin S.E.P.P.PLGA</td>
+    </tr>
+    <tr>
+      <td>核心</td>
+      <td>Mendocino</td>
+    </tr>
+    <tr>
+      <td>Socket</td>
+      <td>Slot 1</td>
+    </tr>
+    <tr>
+      <td>主频</td>
+      <td>366 MHz</td>
+    </tr>
+    <tr>
+      <td>外频</td>
+      <td>66 MHz</td>
+    </tr>
+    <tr>
+      <td>倍频</td>
+      <td>x 5.5</td>
+    </tr>
+    <tr>
+      <td>外部总线宽度</td>
+      <td>64 Bit</td>
+    </tr>
+    <tr>
+      <td>地址总线宽度</td>
+      <td>36 Bit</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16+16 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>128 KB</td>
+    </tr>
+    <tr>
+      <td>晶体管</td>
+      <td>19,000,000</td>
+    </tr>
+    <tr>
+      <td>制造工艺</td>
+      <td>0.25 µm</td>
+    </tr>
+    <tr>
+      <td>步进</td>
+      <td>SL376</td>
+    </tr>
+    <tr>
+      <td>生产日期</td>
+      <td>21/1999</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_366MHz_1.jpg" alt="Intel Celeron 366 MHz 正面" />
+<img src="/images/cpus/Intel/Intel_Celeron_366MHz_2.jpg" alt="Intel Celeron 366 MHz 反面" /></p>
+
+<hr />
+
+<h3 id="intel-celeron-400-mhz">Intel Celeron 400 MHz</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU 类型</td>
+      <td>242-pin S.E.P.P.PLGA</td>
+    </tr>
+    <tr>
+      <td>核心</td>
+      <td>Mendocino</td>
+    </tr>
+    <tr>
+      <td>Socket</td>
+      <td>Slot 1</td>
+    </tr>
+    <tr>
+      <td>主频</td>
+      <td>400 MHz</td>
+    </tr>
+    <tr>
+      <td>外频</td>
+      <td>66 MHz</td>
+    </tr>
+    <tr>
+      <td>倍频</td>
+      <td>x 6</td>
+    </tr>
+    <tr>
+      <td>外部总线宽度</td>
+      <td>64 Bit</td>
+    </tr>
+    <tr>
+      <td>地址总线宽度</td>
+      <td>36 Bit</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16+16 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>128 KB</td>
+    </tr>
+    <tr>
+      <td>晶体管</td>
+      <td>19,000,000</td>
+    </tr>
+    <tr>
+      <td>制造工艺</td>
+      <td>0.25 µm</td>
+    </tr>
+    <tr>
+      <td>步进</td>
+      <td>SL39Z</td>
+    </tr>
+    <tr>
+      <td>生产日期</td>
+      <td>08/1999</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_400MHz_1.jpg" alt="Intel Celeron 400 MHz 正面" />
+<img src="/images/cpus/Intel/Intel_Celeron_400MHz_2.jpg" alt="Intel Celeron 400 MHz 反面" /></p>
+
+<hr />
+
+<h3 id="intel-celeron-433-mhz">Intel Celeron 433 MHz</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU 类型</td>
+      <td>370-pin PPGA</td>
+    </tr>
+    <tr>
+      <td>核心</td>
+      <td>Mendocino</td>
+    </tr>
+    <tr>
+      <td>Socket</td>
+      <td>370</td>
+    </tr>
+    <tr>
+      <td>主频</td>
+      <td>433 MHz</td>
+    </tr>
+    <tr>
+      <td>外频</td>
+      <td>66 MHz</td>
+    </tr>
+    <tr>
+      <td>倍频</td>
+      <td>x 6.5</td>
+    </tr>
+    <tr>
+      <td>外部总线宽度</td>
+      <td>64 Bit</td>
+    </tr>
+    <tr>
+      <td>地址总线宽度</td>
+      <td>36 Bit</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16+16 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>128 KB</td>
+    </tr>
+    <tr>
+      <td>晶体管</td>
+      <td>19,000,000</td>
+    </tr>
+    <tr>
+      <td>制造工艺</td>
+      <td>0.25 µm</td>
+    </tr>
+    <tr>
+      <td>步进</td>
+      <td>SL3BA</td>
+    </tr>
+    <tr>
+      <td>生产日期</td>
+      <td>44/1999</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mendocino Celeron 还推出了新包装。当 Mendocinos 首次亮相时，它们采用 Slot 1 和 Socket 370 PPGA 封装。Slot 1 的设计是为了容纳 Pentium II 的片外高速缓存，并且在主板上存在安装问题。然而，由于所有赛扬都是单芯片设计，因此没有理由保留 L2 高速缓存存储的插槽封装，英特尔停止了 Slot 1 变体：从 466 MHz 部分开始，仅提供 PPGA Socket 370 形式。（第三方制造商以几美元的价格提供主板插槽到插槽适配器（昵称 Slockets），例如，可以将 Celeron 500 安装到 Slot 1 主板上。）
+</code></pre></div></div>
+
+<p><img src="/images/cpus/Intel/Intel_Celeron_433MHz_1.jpg" alt="Intel Celeron 433MHz 正面" />
+<img src="/images/cpus/Intel/Intel_Celeron_433MHz_2.jpg" alt="Intel Celeron 433MHz 反面" /></p>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_Intel.html" class="btn btn-default navbar-btn cursorNorm" role="button">Intel</a>
+        
+        
+        
+        <a href="tag_Pentium.html" class="btn btn-default navbar-btn cursorNorm" role="button">Pentium</a>
+        
+        
+        
+        <a href="tag_Celeron.html" class="btn btn-default navbar-btn cursorNorm" role="button">Celeron</a>
+        
+        
+        
+    </div>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+<span>Page last updated:</span> Sep 2, 2022<br/> Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

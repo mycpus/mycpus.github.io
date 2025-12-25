@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构</h1>
+        <p class="post-meta"><time datetime="2022-11-17T00:00:00+08:00" itemprop="datePublished">Nov 17, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。</div>
+        
+
+        
+
+        <p>本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。</p>
+
+<h2 id="k10那-k9-去哪里了">K10？那 K9 去哪里了？</h2>
+
+<p>这应该是当时很多人都有的疑惑吧，毕竟 AMD 一路走来正好是 K5、K6、K6-2、K7、K8，大家也就很理所当然地认为 K8 的下一代应该是 K9 了，确实一开始 AMD 的原生双核心 64 位 x86 架构处理器一开始是以 K9 为开发代号进行，原定在 2006 年前后发布，同时也在初期的电路架构完工之后出现在官方的投影片上过，不过最终 K9 的开发计划被取消，有说法表示原因是因为 K9 的英文谐音 canine 有狗类的意涵，因此被舍弃。</p>
+
+<p>后来 K9 架构宣布过的许多特色在后来的 K10 架构 (曾短暂被命名为 K8L 架构) 上出现，同时也预示了接下来十年内 AMD 由盛转衰与 Intel 的重返王位 (其实说起来蛮讽刺的，几乎可以说 K10 跟后来的推土机是 AMD 版的 Netburst，AMD 也曾经传过要让 K9 冲上 10GHz 的消息)。</p>
+
+<h3 id="k9-架构主要特色">K9 架构主要特色</h3>
+
+<p>AMD 曾经在财务分析师日 (Analyst Day) 上宣布「下一代的 AMD 处理器架构」(当时还是 K9) 会有这些特色：</p>
+
+<ul>
+  <li>为大规模并行运作需求而设计的线程架构</li>
+  <li>芯片级别的多线程 (多核心设计)</li>
+  <li>更高的扩展能力 (多 CPU 架构)</li>
+  <li>10 GHz 的运作频率</li>
+  <li>大幅提升超纯量与乱序执行的性能</li>
+  <li>大型高速缓存</li>
+  <li>强化的分支与内存预测</li>
+  <li>虚拟化、安全性功能</li>
+  <li>动态与静态电源管理能力</li>
+  <li>媒体或向量演算指令扩充</li>
+  <li>某种程度上来说其实还蛮像 Intel 当年对 Netburst 做得美梦的，不知道当时的 AMD 是不是挖角了 Intel 的高层？</li>
+</ul>
+
+<h2 id="品牌策略异动">品牌策略异动</h2>
+
+<p>从 K10 开始 AMD 在 Athlon 品牌上面新增了更高阶的 Phenom 产品线作为消费性市场的旗舰产品，这个做法跟 Intel 把 Core 做为比 Pentium 高阶的产品线发布相当类似，也因此从 K10 开始，以 Athlon 64 X2 为名推出的处理器实际上仅为中低阶定位。</p>
+
+<h2 id="k10-架构特色">K10 架构特色</h2>
+
+<p>AMD 在 K10 架构处理器在前期引入了基于硅锗绝缘 (SGOL) 技术的 65 纳米 SOI (Silicon On Insulator, 将硅晶体管结构覆盖在绝缘体层上的设计) 制造工艺，SOI 制造工艺由 IBM 发明，主要获得 AMD、Motorola、德州仪器、威胜 VIA 与 NEC 等公司的采用 (说起来这几家公司好像刚好最近几年状况都不是太好……)，Intel 则并未采用这样的技术。</p>
+
+<p>后期 (2008 年) 则引入了同样由 IBM 发展的 45 纳米 Ultra-LKMG SOI 制造工艺，并对架构进行了额外的优化，提升效能幅度相当明显因此有些媒体会将后期产品另外命名为 K10.5。</p>
+
+<p>除此之外 K10 世代的 AMD 处理器主要使用原生四核心设计，不同于 Intel Core 使用的原生双核心、拼装式四核心设计，但也因此带来了电路复杂度过高的问题。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/890FXAUD7_3.jpg" alt="890FXAUD7_3" />
+</div>
+
+<p>从 K8 开始采用的 HyperTransport 点对点总线架构也升级至 3.0 版本，以与 2.0 及 1.0 版本维持兼容的基础下将数据吞吐量增加到 5.2 GT/s，前期 K10 产品仅支持 DDR2 内存，后期产品则同时对 DDR2 与 DDR3 内存提供支持能力 (同时整合两种内存控制器)，且不论是消费性产品线或是服务器级产品都能支持 ECC 内存，其中企业级产品还额外新增了对 Fully Buffered 内存的支持。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/am2-am3.jpg" alt="am2-am3" />
+</div>
+
+<p>至于插槽的部分在 AMD 阵营可说是错综复杂，K10 架构前期采用 Socket AM2+ 插槽 (图左)，与前代 K8 处理器架构晚期产品使用的 Socket AM2 维持双向的兼容性，而 2009 年后的晚期产品则升级到 Socket AM3 插槽 (图右) 以提供 DDR3 内存的支持能力 (要注意的是 AM3 的兼容性仅有单向，即 AM3 处理器可以安装在 AM2+ 的主板上搭配 DDR2 内存使用，但 AM3 主板是不能安装 AM2 或 AM2+ 处理器的)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Shanghai-cache-diagram-686x429.jpg" alt="Shanghai-cache-diagram-686x429" />
+</div>
+
+<p>缓存方面的设计则分为三层，L1 容量每个核心都足足有 128 KB (其中 64 KB 为数据缓存，64 KB 为指令缓存)，当执行 Prefetch (预取) 的时候数据可以直接被拉进 L1，而未必得一路从 L3 进入 L2，再从 L2 进到 L1，至于 L2 则每核心有 512 KB 至 1 MB 的大小，L3 则仅在中高阶产品在线出现，由各核心共享，最大可以来到 12 MB。</p>
+
+<p>值得注意的是 K10 架构中的 L3 缓存运作频率是以 HyperTransport 的频率为准，因此「并不是以处理器全速运作」，测试上可以得知 K10 架构的 L3 缓存只比内存快一些，主要优于内存的部分是延迟方面。</p>
+
+<h2 id="真的-flex-memory">真的 Flex Memory</h2>
+
+<p>相较于 Intel 的设计，AMD 在 K10 架构中实作双通道的方式是直接在处理器里面做两组 64 位宽度的内存控制器，因此除了一般的 Ganged Mode 之外，当两组内存信道的内存时序或容量不同调时，两组内存控制器是可以拆开来工作的，也就是从原本的 128 位模式转为 64 位 + 64 位模式 (Unganged Mode)，仍然是双信道，因此弹性会比 Intel 的 Flex Memory 技术来得大上许多 (实际上 Unganged Mode 的性能也比传统设计来得好 (因为通道变细之后单一周期下数据塞满整条宽度的机率增加，也就是带宽利用率变高了，这项技术被命名为 AMD Memory Optimizer Technology)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/480_051.jpg" alt="480_051" />
+</div>
+
+<h2 id="指令集扩充与-sse4-之乱">指令集扩充与 SSE4 之乱</h2>
+
+<p>如同先前在「计算机达人养成计划 2-3：鸟瞰历代处理器指令集」介绍过的，在这个时期 AMD 开始跟 Intel 玩「抢名字」这种很无聊的小把戏，故意抢先把 SSE4 这名字占了起来，在 AMD K10 当中新增了「4 条指令」，但实际上最后根本没人支持，大家都跑去使用 Intel 的 SSE4.1 与 SSE4.2 了，所以最后 AMD 也不得不放弃 SSE4A 这东西。</p>
+
+<p>比起 SSE4A 这种为抢名子而特别创造的东西来说，K10 真正的指令集强化在于被称为 SSE128 的技术，SSE128 将原本只有 64bit 的命令执行能力扩充到与 Intel 同级的 128bit，前后端相关的输入输出通道也都配合增加一倍的带宽，因此不用像以前那样遇到 128bit 指令时得拆成两个指令做，这在多媒体性能上是会有所提升的。</p>
+
+<h2 id="运算核心本身则没有太大改变">运算核心本身则没有太大改变</h2>
+
+<p>或许是受制于研发成本或时程上的因素吧，虽然围绕着运算核心的部分几乎都得到相当大幅度的改变了，但运算核心本身则几乎就单纯是 K8 架构的沿用，单一周期能译码的指令数仅有 3 个，乱序执行能力方面最高仅能占存 72 个指令 (相对而言 Core 2 则是 96 个)，执行单元的数量也不及 Core 2。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Barcelona-arch.png" alt="Barcelona-arch" />
+</div>
+
+<h2 id="性能不如人意规格漂亮也难以力往狂澜">性能不如人意，规格漂亮也难以力往狂澜</h2>
+
+<p>这大概是 K10 标志着 AMD 由盛转衰最主要的原因吧？受制于原生四核心设计过于庞杂的电路与制程，再加上 AMD 在 K10 上市之前在各种公开场合上宣传 K10 的性能提升程度相当明显导致人们对其有相当高的期待，最终上市之后 K10 架构处理器前期产品的性能可说是让人相当失望，没有因为「原生四核心设计」而压过对手 Intel 的拼装四核心设计也就算了，甚至在许多测试项目上还不及 Intel 的竞争产品。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/X3.jpg" alt="X3" />
+</div>
+
+<p>不过后来凭着压低价格推出「三核心处理器」Phenom X3 系列来迎战 Intel 的双核心产品线 (基本上三核心在测试中还是打得赢双核心的)，因此在低价市场仍然可以占有一席之地，某种程度上来说这个时期的 AMD 有渐渐退缩回到早期称霸低阶市场但在高阶市场只能彻底被击垮状态的趋势。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMX8451-750x433.png" alt="AMX8451" />
+</div>
+
+<p>至于股价表现方面嘛，当时的 AMD 市值一度跌到比当年并购 ATi 的聘金还低的程度，各大媒体争相洗脸 AMD 当时的 CEO (有报导标题直接写：AMD 是时候放弃了吧。(或是该把 CEO 炒了？) 这样的标题)。</p>
+
+<h2 id="bugbug-与-bug">Bug、Bug 与 Bug</h2>
+
+<p>时至今日，人们对 K10 架构处理器最深刻的记忆大概只剩下当时 AMD 连续出了好几个包吧？其中最有名的应该是 TLB (转译后备缓冲区) Bug，TLB 通常位于 CPU 缓存与运算核心之间或是 CPU 缓存与内存之间，用于改进内存虚拟位置与实体位置间转译的性能，而且在 AMD 架构下扮演了相当重要的角色。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/TLBBIOS.jpg" alt="TLBBIOS" />
+</div>
+
+<p>不幸的是第一批 K10 架构产品的 TLB 有很大的问题，而且是发生在硬件电路设计上，没办法透过 BIOS 做简单修正，后来 AMD 针对这批处理器的做法是直接让 BIOS 把处理器的一部分 TLB 功能停用掉，这连带导致 K10 本已不如人意的性能更加雪上加霜，处理器有 bug 的消息广为人知之后也很大程度的影响销售，这个问题也导致 AMD 没办法快速将 K10 的运作频率提升到效能需求水平以上。</p>
+
+<p>直到 2008 年中，AMD 才成功修复了 TLB bug，并将修复后的产品型号增加 50 以做出区隔，而除了 TLB bug 以外还有 Cold bug (没听过 CPU 会怕冷的吧？) 等问题，不过影响层面并不那么广因此就比较还好一些。</p>
+
+<h2 id="apu-与-hsa">APU 与 HSA</h2>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMD_A-series_logo.jpg" alt="AMD_A-series_logo" />
+</div>
+
+<p>APU (Accelerated Processing Unit，加速处理器) 是 AMD 在 2011 年提出的单芯片系统 (SoC) 方案，将 CPU 核心、内存控制器、显示核心、PCI-E 控制器、北桥、UVD 单元等功能全部整合到单一晶面上，是 AMD Fusion 计划 (公布于 2006 年) 的成果，而第一代的 HSA (异质系统架构) 中的桌面与标准笔记本电脑版本 Liano 中包含的处理器核心就是基于 K10 架构的产物。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_13.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_15.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

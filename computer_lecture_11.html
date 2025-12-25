@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="上篇讲 Intel 的 Netburst 架构时代 (2000 ~ 2006)，本篇自然就是讲 Intel 永远的 (同时也是现在唯一的) x86 处理器对手 AMD 同时期的历史。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 架构 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 架构">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 架构</h1>
+        <p class="post-meta"><time datetime="2022-10-28T00:00:00+08:00" itemprop="datePublished">Oct 28, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">上篇讲 Intel 的 Netburst 架构时代 (2000 ~ 2006)，本篇自然就是讲 Intel 永远的 (同时也是现在唯一的) x86 处理器对手 AMD 同时期的历史。</div>
+        
+
+        
+
+        <p>上篇讲 Intel 的 Netburst 架构时代 (2000 ~ 2006)，本篇自然就是讲 Intel 永远的 (同时也是现在唯一的) x86 处理器对手 AMD 同时期的历史啰。</p>
+
+<h2 id="amd-k75-架构athlon-xpmp">AMD K7.5 架构：Athlon XP/MP</h2>
+<p>Athlon XP 其实在 CPU 发展史上并不特别，其实就只是 K7 架构第三代之后的产品，因为搭上 2001 年 Windows XP 上市的热潮因此 AMD 特别将其 K7 架构处理器的新改版命名为 Athlon XP。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMD_Athlon_XP_Logo.jpg" alt="AMD_Athlon_XP_Logo" />
+</div>
+
+<h3 id="k7-架构第-3-代产品palomino">K7 架构第 3 代产品：Palomino</h3>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Athlon_XP_PALOMINO.jpg">
+        <img src="../images/blogs/computer_lecture/Athlon_XP_PALOMINO-375x376.jpg" alt="Athlon_XP_PALOMINO" />
+    </a>
+    <p><b>▲ AMD Athlon XP 2100+ (Palomino)</b></p>
+</div>
+
+<ul>
+  <li>发布时间：2001 年 10 月 09 日</li>
+  <li>运行频率：1333 MHz ~ 1733 MHz</li>
+  <li>FSB 频率：133 MHz (DDR 双倍带宽)</li>
+  <li>L1 缓存大小：128 KB (数据与指令缓存各 64 KB)</li>
+  <li>L2 缓存大小： 256 KB (全速，On-die)</li>
+  <li>支持插槽：Socket A ( 462 针脚 FPGA 封装)</li>
+  <li>电压需求：1.5 V ~ 1.75 V</li>
+  <li>晶体管数：3720 万枚</li>
+  <li>制造工艺：0.18 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX, 3D Now! Professional, SSE</li>
+</ul>
+
+<p>从 Palomino 开始 Athlon 产品线被一分为三：</p>
+
+<ul>
+  <li>Athlon XP</li>
+</ul>
+
+<p>面向一般桌面计算机用途，XP 则具有 eXtended Performance 与 Windows XP 两个涵义，是三大产品线中最晚推出者。</p>
+
+<ul>
+  <li>Athlon MP</li>
+</ul>
+
+<p>面向服务器与多处理器工作站用途，可以支持同时安装多个处理器 (MP 是 Multi Processor 的意思)。</p>
+
+<ul>
+  <li>Mobile Athlon 4</li>
+</ul>
+
+<p>面向笔记本电脑用途 (这命名摆明是故意要冲 Mobile Pentium 4 而来 XD)
+Palomino 比较鲜明的特色是作为 Athlon XP 家族的开端，AMD 从此恢复采用以 PR 值来命名 CPU 阶级的方式 ( 1500+ 意指能与 Pentium 4 1.5 GHz 披敌，此代产品由 1500+ 起跳，最高至 2100+)，除此之外还完整纳入了原先只见于 Intel Pentium III 处理器的 SSE 指令集，原有的 3D Now! 指令集也再次获得升级 (3D Now! Professional)，并对核心架构进行了一定程度的改进，增加并强化 TLB (Translation Lookaside Buffer) 缓存器与加入了新设计的硬件预取 (Prefetch) 机制。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Athlon_MP_PALOMINO.jpg">
+        <img src="../images/blogs/computer_lecture/Athlon_MP_PALOMINO-375x375.jpg" alt="Athlon_MP_PALOMINO" />
+    </a>
+    <p><b>▲ AMD Athlon MP 1500+ (Palomino)</b></p>
+</div>
+
+<p>除此之外 Athlon MP 与 Mobile Athlon 4 两大产品线的成军也标志着 AMD 正式大举进军原先只属于 Intel 天下的服务器市场与行动运算市场 (以往也有以这些市场为目标的产品，但都只是附属于一般桌面计算机用途系列之下)。</p>
+
+<p>关于 Palomino 站长还记得有两件蛮有趣的事情，其一是 Palomino 是 AMD 首次在旗下的处理器产品中纳入热量管理机制 (Thermal Protection)，号称能够保证处理器在散热器失效时不会烧毁，然后 Tom’s Hardware 就把 Palomino 抓来做实验拍影片了，结局是非常不给面子的整个 die 融化冒烟 XD (相对之下 Pentium III 在过热时的反应是直接当机，Pentium 4 则是降频变慢，但把散热器装回去之后重开机都能维持正常使用)。</p>
+
+<p>其二则是铅笔超频大法，Socket A 封装的 Athlon 家族处理器的特色之一就是正面有许多金属触点，当时被发现只需要使用铅笔或其他导电材料将特定的触点连接导通，就能改变 Athlon XP 的运行频率。</p>
+
+<h3 id="k7-架构第-4-代产品thoroughbred">K7 架构第 4 代产品：Thoroughbred</h3>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/KL_AMD_Athlon_XP_Thoroughbred.jpg">
+        <img src="../images/blogs/computer_lecture/KL_AMD_Athlon_XP_Thoroughbred-375x375.jpg" alt="KL_AMD_Athlon_XP_Thoroughbred" />
+    </a>
+    <p><b>▲ AMD Athlon XP 2400+ (Thoroughbred)</b></p>
+</div>
+
+<ul>
+  <li>发布时间：2002 年 06 月 10 日</li>
+  <li>运行频率：1400 MHz ~ 2250 MHz</li>
+  <li>FSB 频率：133 MHz、166 MHz (DDR 双倍带宽)</li>
+  <li>L1 缓存大小：128 KB (数据与指令缓存各 64 KB)</li>
+  <li>L2 缓存大小： 256 KB (全速，On-die)</li>
+  <li>支持插槽：Socket A ( 462 针脚 FPGA 封装)</li>
+  <li>电压需求：1.5 V ~ 1.65 V</li>
+  <li>晶体管数：3720 万枚</li>
+  <li>制造工艺：0.13 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX, 3D Now! Professional, SSE</li>
+</ul>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/AMD_Athlon_XP_Thoroughbred_die.jpg">
+        <img src="../images/blogs/computer_lecture/AMD_Athlon_XP_Thoroughbred_die-750x493.jpg" alt="AMD_Athlon_XP_Thoroughbred_die" />
+    </a>
+    <p><b>▲ AMD Athlon XP (Thoroughbred) Die shot</b></p>
+</div>
+
+<p>在 Palomino 推出将近一年之后 AMD 推出了制程升级版本，命名为 Thoroughbred，使用 130 纳米制造工艺，依照推出现后可分为两个版本，第一版基本上只是 Palomino 的制程微缩版本，没有甚么明显的改变。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/EVA2011-375x206.jpg" alt="EVA2011" />
+</div>
+
+<p>不过在第一版推出之后，很快大家便发现 Thoroughbred 的温度与频率表现并没有如同预期般得益于制程升级而有明显提升，因此前期版本的 Thoroughbred 频率并没有办法提高太多，之后的后期版本 Thoroughbred 则从材质与设计下手进行升级 (例如将原有的八层结构新增一层金属结构改为九层以解决一些电子效应上的瓶颈之类的，要知道同时期的 Pentium 4 只用了六层，Prescott 也只用了七层，九层结构算是超级复杂的设计了)，以求将频率与 FSB 频率继续提高。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Sempron-logo.png" alt="Sempron-logo" />
+</div>
+
+<p>除此之外从此代开始 AMD 推出了 Sempron 产品线来取代原有的 Duron 系列，用于与 Intel 的 Celeron 系列抗衡。</p>
+
+<h3 id="k7-架构第-5-代产品barton">K7 架构第 5 代产品：Barton</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/barton.jpg" alt="barton" />
+    <p><b>▲ AMD Athlon XP 3000+ (Barton)</b></p>
+</div>
+
+<ul>
+  <li>发布时间：2003 年 02 月 10 日</li>
+  <li>运行频率：1833 MHz ~ 2333 MHz</li>
+  <li>FSB 频率：166 MHz、200 MHz (DDR 双倍带宽)</li>
+  <li>L1 缓存大小：128 KB (数据与指令缓存各 64 KB)</li>
+  <li>L2 缓存大小： 512 KB (全速，On-die)</li>
+  <li>支持插槽：Socket A ( 462 针脚 FPGA 封装)</li>
+  <li>电压需求： 1.65 V</li>
+  <li>晶体管数：5430 万枚</li>
+  <li>制造工艺：0.13 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX, 3D Now! Professional, SSE</li>
+</ul>
+
+<p>Barton 基本上就是 L2 缓存大小加倍的后期版本 Thoroughbred，由于 L2 缓存的增加因此在 PR 值标示上也比 Thoroughbred 标得更高，Barton 由于其超频潜力，在 DIY 界中当时可说是一代传奇。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/cores.jpg" alt="cores" />
+</div>
+
+<p>在同年九月 AMD 又推出了将 Barton 多出来的 L2 缓存屏蔽的核心版本，代号取 Thoroughbred 与 Barton 的融合，命名为 Thorton。</p>
+
+<h2 id="amd-k8-架构">AMD K8 架构</h2>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMD64_Logo.png" alt="AMD64_Logo" />
+</div>
+
+<p>K7 时代晚期 AMD 几乎陷于劣势，但处理器的世界真的是三十年河东，三十年河西，在 K8 架构上你可以看到很多后来被大量运用于 Intel 处理器上的技术与做法被 AMD 先做出来，可说是在技术上 AMD 领先 Intel 最多的时期。</p>
+
+<h3 id="amd64-架构">AMD64 架构</h3>
+<p>实际上现今你我所使用的 64 位系统就是 AMD64 架构，如同过去文章所谈过的，Intel 原先所打的算盘是发展全新的 IA-64 架构来取代现有的 x86，成为真正的 64 位系统，但造成的兼容性问题与导入成本高昂最终使得 IA-64 架构完全无法在服务器领域以外的地方有所斩获，而 AMD 选择的方式则是与 Intel 大相径庭，AMD 决定继续延伸 x86 的架构，将 x86 的架构拓展到 64 位系统，增强现有的 x86 处理器的内存寻址能力并维持与过去 x86 处理器的兼容性。</p>
+
+<p>而在 AMD64 获得市场上的成功之后，Intel 也在自家的处理器纳入了几乎相同的技术，并命名为 EM64T。</p>
+
+<h3 id="整合内存控制器">整合内存控制器</h3>
+
+<p>在以往的计算机基础架构中，核心芯片是由中央处理器、北桥与南桥三颗芯片组成，而后二者也因此得到「芯片组」的名称，而在 AMD K8 架构中，AMD 为了提高内存带宽吞吐量，将内存控制器从北桥芯片中移出，直接整合到处理器中。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/chipset_diagram.png" alt="chipset_diagram" />
+    <p><b>▲ 传统的个人计算机架构，以 Intel X48 为例</b></p>
+</div>
+
+<p>在内存控制器被整合到处理器中之后，内存直接与处理器连接，可以不用经过北桥芯片，在主板上的物理距离瞬间减少到 1/3 左右，对带宽与传输的稳定性来说都是有益处的，也因此时至今日基本上你所能买到的 x86 处理器都已经整合了内存控制器。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/sis755fx_chipset_chart.gif" alt="sis755fx_chipset_chart" />
+    <p><b>▲ AMD K8 的系统架构图</b></p>
+</div>
+
+<p>同时为了应付更高的带宽需求，从 K8 架构开始，AMD 使用 HyperTransport 来连接北桥芯片与处理器，取代了过去惯用的 EV6 DDR 总线。</p>
+
+<h3 id="多核心设计">多核心设计</h3>
+
+<p>AMD K8 架构进入双核心世代的时间也比 Intel 早，当 AMD 推出第一代 Athlon 64 X2 的时候，Intel 内部还正被 Tejas 计划搞得焦头烂额，高频率的泡沫正在破裂。最后在 Athlon 64 X2 发布的时间点附近，Intel 只端出了直接硬着头皮将两颗 Prescott 兜在一块的 Pentium D 应战，当时「真双核」与「胶水双核」的争论可是甚嚣尘上呢。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/pd.jpg" alt="pd" />
+    <p><b>▲ 被戏称是胶水双核心的 Pentium D</b></p>
+</div>
+
+<h3 id="前期产品基于-130-纳米制造工艺">前期产品：基于 130 纳米制造工艺</h3>
+
+<p>第一个基于 K8 架构的 AMD 处理器代号为 SledgeHammer，发布于 2003 年 09 月 23 日，属于较高阶的 Athlon 64 FX 产品线，具备 1MB 的全速 L2 缓存与 800 MHz 的 HyperTransport 总线，同时也纳入了 SSE2 的支持，只能搭配 Registered 内存使用，采用 Socket 940 脚位。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/KL_AMD_Opteron_846_Sledgehammer.jpg">
+        <img src="../images/blogs/computer_lecture/KL_AMD_Opteron_846_Sledgehammer-750x755.jpg" alt="KL_AMD_Opteron_846_Sledgehammer" />
+    </a>
+</div>
+
+<p>之后在同年的十二月，AMD 将 K8 架构拓展到一般级别平台上，推出了 ClawHammer 与 Newcastle 两款内核，主要加入了更快的 HyperTransport 总线 (1000 MHz)，同时不再要求必须搭配 Registered 内存，采用 Socket 939 脚位，至于 Newcastle 则是将 ClawHammer 内建的 L2 缓存容量减半而来，但 Newcastele 除了一般的 Socket 939 之外，还提供了 Socket 754 的型号 (仅限 HyperTransport 800 MHz)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMD_Athlon64_FX.jpg" alt="AMD_Athlon64_FX" />
+</div>
+
+<p>之后 ClawHammer 则是在 2004 年 06 月被推展到 Athlon 64 FX 高阶产品在线。</p>
+
+<h3 id="中期产品基于-90-纳米制造工艺">中期产品：基于 90 纳米制造工艺</h3>
+
+<p>之后在 2005 年 05 月，AMD 终于推出了旗下的双核心处理器产品线 Athlon 64 X2，代号分别为 Manchester 与 Toledo，均为 90 纳米制造工艺下的产品，同样使用 1000 MHz 的 HyperTransport 总线与 Socket 939 脚位，这两款核心主要的差异为 L2 缓存大小的不同与加入 SSE3 指令集，后来此二种核心也有因其中一个运算核心无法正常运行而打下来作为 Athlon 64 单核心处理贩卖。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/KL_AMD_Athlon_64_X2_Brisbane.jpg">
+        <img src="../images/blogs/computer_lecture/KL_AMD_Athlon_64_X2_Brisbane-750x746.jpg" alt="KL_AMD_Athlon_64_X2_Brisbane" />
+    </a>
+</div>
+
+<p>之后的 Winchester、Venice、San Diego、Orleans 大致上都是相似的核心，主要差异可能仅有缓存大小不同，因此就不再赘述。</p>
+
+<h3 id="后期产品基于-65-纳米制造工艺">后期产品：基于 65 纳米制造工艺</h3>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMD_Athlon64.png" alt="AMD_Athlon64" />
+</div>
+
+<p>在进入 65 纳米制造工艺之后，AMD 将旗下绝大多数 CPU 产品线换上新的 Logo，但由于没有太多突出的新特性，因此在此就不再赘述了。 (例如 Brisbane 等)</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_10.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_12.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

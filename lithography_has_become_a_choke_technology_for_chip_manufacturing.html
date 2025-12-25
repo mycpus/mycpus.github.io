@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="芯片制造用到的技术很多，光刻是芯片制造的灵魂技术，但是开始的时候，光刻并不是所有技术中最厉害的。现在大众认识到了芯片的重要性，讨论芯片产业的卡脖子问题时，提到最多的是光刻和光刻机。那么，光刻是如何一步一步变成了芯片制造的卡脖子技术？本文试图一探究竟。">
+<meta name="keywords" content="historycourse,  ">
+<title>光刻如何一步一步变成了芯片制造的卡脖子技术？ | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="光刻如何一步一步变成了芯片制造的卡脖子技术？">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">光刻如何一步一步变成了芯片制造的卡脖子技术？</h1>
+        <p class="post-meta"><time datetime="2022-10-05T00:00:00+08:00" itemprop="datePublished">Oct 5, 2022</time> /
+            
+            
+            
+            <a href="tag_history.html">history</a>, 
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">芯片制造用到的技术很多，光刻是芯片制造的灵魂技术，但是开始的时候，光刻并不是所有技术中最厉害的。现在大众认识到了芯片的重要性，讨论芯片产业的卡脖子问题时，提到最多的是光刻和光刻机。那么，光刻是如何一步一步变成了芯片制造的卡脖子技术？本文试图一探究竟。</div>
+        
+
+        
+
+        <p>光刻技术是利用光学和化学反应的原理，以及利用化学和物理的刻蚀方法，把电路图形制作到半导体基片、或者下一层介质材料之上，经过有序的多次光刻工序叠加，最终把立体的电路结构制作在半导体基片上，形成完整功能的芯片。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig01.jpg" />
+    <p><b>图1.光刻工艺过程的示意图</b></p>
+</div>
+
+<p>图1是光刻工艺过程的示意图。假设要在硅(Si)基片上光刻一个二氧化硅(SiO2)的T形图案，大致要经过6个工序。在光刻之前，首先在Si基片上生长一层SiO2层，然后从光刻胶的涂胶开始，经历涂胶、曝光、显影、除胶、刻蚀、除胶等步骤。从图上可以看到，第4步以及之前的过程为下一步刻蚀SiO2层上要去除的区域划定了范围。第5步是实际的加工过程——刻蚀，第6步是收尾过程，目的是清除SiO2的T形图案上不需要的光刻胶。因此说，光刻有两个阶段，一是划定范围，二是针对划定范围进行实际加工。</p>
+
+<p>上述的光刻工艺过程与传统照相的曝光和洗相过程很类似，理解起来并不困难。但是照相是一个过渡性的光学和化学反应过程，并且过渡性的层次越多，照片影像就越细腻越好。而光刻是一个突变性的光学和化学反应过程，要求突变尽可能快，图形边界越清晰越好。为了追求边界越清晰、线条越细致的目标，光刻技术走过了漫长的技术创新之路。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig02.jpg" />
+    <p><b>图2.多次光刻工序“堆叠”形成立体的电路结构</b></p>
+</div>
+
+<p>图2是多次光刻工序“堆叠”形成立体的电路结构的示意图。图2(a)是一个晶体管的版图。版图按照制造工艺被拆分为至少5层掩膜版，如图2(b)所示。芯片制造过程中要为每一层掩膜版安排一次光刻工序，经过5次光刻工序后，立体的晶体管就“堆叠”而成了,如图2(c)所示。</p>
+
+<p>通俗地讲，芯片制造就是在半导体基片上，用光刻在一层材料上“雕刻”形成特定图形，一层一层的光刻实际上是纵向“堆叠”这些图形，组成立体的晶体管、电路元件和连线等，最终形成具有完整电路功能的芯片。</p>
+
+<h2 id="一为什么说光刻技术是灵魂技术">一、为什么说光刻技术是灵魂技术？</h2>
+
+<p>光刻技术是芯片制造中的灵魂技术，如果没有它的存在，芯片技术就不可能存在并快速发展。光刻之所以是灵魂技术，因为光刻要为其它芯片加工技术划定加工范围，光刻就像枪炮的瞄准装置一样重要。其它加工技术不论多么复杂、多么高难度，也只有在光刻存在的前提下才能发挥作用。例如，要依赖光刻确定晶体管的多晶硅栅(Poly Gate)和金属连线(Metal)的图形、位置和走向等；要依靠光刻为扩散区(Diffusion)、注入阱(Implant Well)、上下层过孔(Via、Contact)打开加工窗口等。所以，没有光刻技术其它加工技术就无从谈起。</p>
+
+<p>从芯片的设计数据传导到芯片制造的过程来看，传导路径非常清晰，那就是芯片设计版图 -&gt; 掩膜版 -&gt; 光刻 -&gt; 加工。一颗芯片的设计版图要按照制造工艺分解为一套多张(层)的掩膜版，每张掩膜版对应着一次光刻和加工过程。所以，光刻是芯片制造的灵魂技术。</p>
+
+<p>进入二十一世纪，随着半导体技术的发展，光刻的精度不断提高，已由微米级、亚微米级、深亚微米级,细化到目前的纳米级，光刻用的光源也从常规光源发展到应用电子束、X射线、微离子束、激光等新技术，光刻成为最精密的微细加工技术，也是芯片制造最为关键的技术。如果光刻的核心设备、材料等被个别国家垄断和管控的话，光刻技术就成了“卡”其他国家芯片产业“脖子”的关键核心技术。</p>
+
+<h2 id="二芯片制造中还要用到哪些技术">二、芯片制造中还要用到哪些技术？</h2>
+
+<p>芯片制造除了用到光刻技术，还有很多其它技术，例如刻蚀、氧化、扩散、淀积、离子注入等。1.刻蚀是用化学或物理方法有选择地从半导体材料表面去除不需要的材料的过程，光刻和刻蚀结合起来，就可以在半导体材料上正确地复制掩模版上的图形；2.氧化是在指定区域生成一层氧化膜；3.扩散是对指定区域定量掺入其它元素原子，改变该区域的电性能；4.淀积是在指定区域沉积一层氧化硅、碳化硅、多晶硅等半导体材料薄层；5.离子注入是向指定区域定量注入杂质的原子或粒子，使该区域的电性能发生变化。与扩散相比，离子注入没有外溢效应，离子注入深度和注入量比较好控制。</p>
+
+<p>在芯片技术发展早期，光刻并不是所有技术中最厉害的。受制于原始简陋的掩膜版制作和制造工艺，芯片工艺采用毫米级、微米级，因而芯片上集成的晶体管等电路元件的数量也极其有限。所以，光刻采用人工(或计算机辅助)刻红膜、微缩照相制版、传统光源曝光等简单方式还是可行的。但是刻蚀、氧化、扩散、淀积、离子注入等技术相关的设备、材料、控制等技术问题反而更难把握，当时这些技术成为芯片制造中最受关注和大力创新的方向。</p>
+
+<h2 id="三芯片技术经历了哪些发展阶段">三、芯片技术经历了哪些发展阶段</h2>
+
+<p>芯片制造技术伴随光刻技术一路走来，大致经历了非常原始的“石器”时代，走过了用计算机辅助的半自动化时代，随后进入了EDA全自动化时代。我国芯片技术与国外大致同时起步，由于众所周知的原因，我们的发展阶段基本落后于国外约10年的时间。改革开放以来，我们加快了学习和赶超的步伐，目前，我国光刻技术的应用水平基本与国外保持同步，但核心技术和设备基本依赖于国外。</p>
+
+<p>1.芯片的“石器”时代(国外1958～1975年前后，国内1958～1985年前后)。之所以称为芯片行业的“石器”时代，是因为芯片设计工具和制作光刻掩膜版的方法十分原始。这个时期，芯片设计时用到了普通坐标纸，如图3(a)所示，版图由手工绘制；制作掩膜版时用到红膜(Rubylith)，如图3(b)所示。红膜是透明基片上附有极薄红膜，红膜遮光性强，如果切开红膜某个图形的边界(不切断基片)，图形外的红膜就可以从透明基片上揭掉，图形外的区域就变成透明，红膜保留的地方作为遮光部分,可制成过渡掩膜版。它再经过微缩照相制版，最终制成工作掩膜版。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig03.jpg" />
+    <p><b>图3.早期用坐标纸画芯片版图、人工刻制和检查过渡掩膜版(红膜)</b></p>
+</div>
+
+<p>当时人们设计芯片时，首先要在坐标纸上画出芯片版图，版图上不同的图层采用不同线条或阴影线来表示，这个过程称为设计版图或者画版图。然后，再把坐标纸上的版图按1:1的比例分层复制到不同张的红膜上去，然后手工刻掉红膜上不需要的部分，只保留版图上的图形，这个过程称为刻红膜。多层红膜构成了芯片的一套过渡掩膜版。</p>
+
+<p>由于过渡掩膜版的尺寸较大，要经过多次微缩照相，最后把过渡掩膜版上的图形缩小并复制到工作掩膜版上去。工作掩膜版是用非常平整的石英玻璃板上镀一层铬膜制造而成。红膜上的图形与铬膜上的图形完全相同，比例不同。有铬膜的地方不透光，没有铬膜的地方透明。工作掩膜版是制造芯片时在光刻工艺中用到的掩膜版。</p>
+
+<p>在芯片制造的“石器”时代，芯片版图靠手工绘制，红膜上的图案靠人工刻出，不可能设计和制造出规模很大的芯片，这种小规模(SSI)芯片上集成的晶体管数大约在几十～几百只之间。1971年Intel推出全球首个4位中央处理器(CPU)芯片4004。它集成了2250只晶体管，采用10μm工艺，这已经是当时规模很大的芯片了。4004芯片内部照片如图4所示。该芯片的掩膜版是否是用人工刻红膜的方式制作，笔者无法确定。如果是用人工方式刻红膜，那么它的工作量是十分巨大的，但也是可行的。想想当年我国研制两单一星时，满屋子的人打算盘计算原子弹爆炸数据的情景，这都不算事儿！</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig04.jpg" />
+    <p><b>图4. Intel4004处理器芯片的内部照片(资料来源：sisite.tw)</b></p>
+</div>
+
+<p>2.计算机辅助的时代(国外1975～1990年前后，国内1985～1995年前后)：这个时期人们设计芯片时，既可以用坐标纸画版图，也可以在电脑上设计版图，坐标纸上的版图要通过数字化仪(Digitizer)输入到计算机中，计算机中的版图可以在电脑屏幕上检查或修改(例如L-EDIT软件等)，或者进行晶体管等电路器件的模拟(例如SPICE软件等)。最后电脑控制绘图仪绘制版图以供检查或存档，或者通过刻图机刻红膜，最后经过微缩照相，把过渡掩膜版转换成工作掩膜版。</p>
+
+<p>图5(a)是Tanner Research公司版图编辑软件(L-EDIT)的用户工作界面，版图中不同的掩膜层用不同的颜色或填充图案表示。图5(b)是设计人员利用L-EDIT在电脑上绘制和检查芯片版图的场景。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig05.jpg" />
+    <p><b>图5.利用L-EDIT软件在电脑上设计版图</b></p>
+</div>
+
+<p>1974年，Intel推出了8位CPU芯片8080，它采用6μm工艺制造，其上集成了6000多个晶体管。图6(a)是8080处理器芯片的内部照片。图6(b)是Intel三位创始人与8080CPU的一张掩膜版(红膜)合影留念。图6(c)是8080 CPU的封装外观图。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig06.jpg" />
+    <p><b>图6. Intel三位创始人在8080CPU的一张掩膜版(红膜)后面合影（从左到右是安迪.格罗夫、罗伯特.诺伊斯、戈登.摩尔，资料来源：sisite.tw）</b></p>
+</div>
+
+<p>3.设计自动化时代(国外1990年～今天，国内1995年～今天)：这个时期，人们普遍采用电子设计自动化(EDA)软件，在电脑上完成芯片逻辑设计、模拟仿真和版图设计等，设计数据送到制造厂，通过自动化设备完成芯片掩膜版的制作，最后整套掩膜版将用于芯片制造中的各道光刻工序。</p>
+
+<p>这个时期，多家EDA公司通过不断整合、兼并和重组，大浪淘沙，形成了目前国外EDA软件厂商的三巨头，出现了Synopsys、Cadence和MentorGraphics三家独霸世界EDA软件市场的局面。他们先后于1990年～1995年进入中国市场，加快了中国芯片设计产业的发展。这个时期的芯片制造工艺沿着摩尔定律快速迭代和升级，工艺特征线宽由0.35μm缩小到今天的5nm。这些进展的两大关键支撑条件一是EDA软件，二是光刻机。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig07.jpg" />
+    <p><b>图7.自动化生产线上用的光刻掩膜版</b></p>
+</div>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig08.jpg" />
+    <p><b>图8.全流程EDA软件设计芯片的图例</b></p>
+</div>
+
+<p>现在的芯片设计过程，从芯片的功能设计，到电路结构设计，再到芯片版图的物理实现，全部借助于EDA软件来完成，其中还包括复杂而精确的设计检查、模拟仿真等，可以保证容纳了上百亿只晶体管的芯片设计万无一失。</p>
+
+<p>现代光刻技术中，掩膜版制作实现了由EDA软件输出数据-&gt;掩膜版制作的自动化，光刻过程实现了由光刻机、刻蚀机实现的自动化。目前ASML EUV光刻机已实现了7nm、5nm工艺，正在研制的新一代EUV光刻机可实现1nm工艺。因此，今天的芯片技术处在一个全自动化的设计和制造的时代。</p>
+
+<p>四、摩尔定律使光刻技术成为王者</p>
+
+<p>在芯片技术的三个发展阶段中，光刻技术的原理是简单明了的，始终保持不变，变化的是光刻线条更细，光刻精度更高。人们对芯片更小、更快和更好的需求，是推动光刻技术创新发展的唯一动力，而发展规律则是摩尔定律。</p>
+
+<p>摩尔定律预示着每两年不到的时间里，芯片集成度就要翻倍，在保证芯片面积不变的情况下，制造工艺的特征线宽就要减半或缩小。必然要求光刻精度不到两年时间要提高一倍，对光刻技术和设备都提出了严苛的要求。</p>
+
+<div align="center">
+    <img src="../images/blogs/lithography_has_become_a_choke_technology_for_chip_manufacturing_fig09.jpg" />
+    <p><b>图9.芯片制造工艺节点图谱(资料来源：m.sohu.com)</b></p>
+</div>
+
+<p>从图9芯片制造工艺节点图谱，大致可以看到光刻机及光刻技术逐年进步的影子，也可以感受到正是摩尔定律把光刻技术一步一步推到越来越重要的地位。进入14nm工艺节点以后，光刻机技术难度陡然上升，ASML EUV光刻机的售价达到1.2亿美元，光刻机设备成本占到所有制造设备成本的35%，光刻工序占到所有制造工时的40%左右。光刻技术成为芯片制造中真正的王者，因而成为芯片制造中最容易被“卡脖子”的技术。</p>
+
+<p>结语：芯片产业沿着摩尔定律的规律一路走来，制造工艺特征线宽跨越当前的7nm、5nm、3nm的节点后，光刻技术将面临着物理极限的挑战，光刻技术成为了芯片产业中的技术王者。由于光刻技术和设备主要被外国公司垄断，光刻成为我国芯片产业的卡脖子技术。如何解决这个卡脖子问题，需要国家大力扶持和科技人员的艰苦努力。同时，还必不可少地需要较长时间的技术积累。</p>
+
+<h2 id="参考资料">参考资料：</h2>
+
+<ol>
+  <li>
+    <p>Intel公司介绍，美国免费词典和百科全书网站：https://encyclopedia2.thefreedictionary.com/Intel。</p>
+  </li>
+  <li>
+    <p>光通信女人,关于193nm 光刻光源的经久不衰的原因，微信公众号【光通信女人】，2017.01.04</p>
+  </li>
+  <li>
+    <p>Thomas Grimsley，Rubylith，维基百科网：https://wiki.rit.edu/display/smfl/Rubylith，2017.12.19</p>
+  </li>
+  <li>
+    <p>chuguoliang6661，CPU的那些事1—那些传说中震惊世界的神U们（Intel篇）（上），bilibili专栏，https://www.bilibili.com/read/cv2024236，2019.2.8</p>
+  </li>
+  <li>
+    <p>中金公司研究部，解析全球晶圆代工龙头的崛起之路，微信公众号【中金点睛】，2019.10.15</p>
+  </li>
+  <li>
+    <p>兰亭序12138，日本半导体行业发展简史随想(一）～(五)，bilibili专栏，https://www.bilibili.com/read/cv4738200，2020.2.19</p>
+  </li>
+  <li>
+    <p>EEWORLD订阅号，芯片的雕刻刀！投入占比超光刻机，揭秘走在国产替代前列的刻蚀设备，搜狐网：https://www.sohu.com/a/384411544_774177，2020.03.31</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>转载：https://www.eet-china.com/mp/a67903.html</p>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

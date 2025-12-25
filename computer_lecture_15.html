@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="今天要谈的是 Intel Nehalem 架构，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特...">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构</h1>
+        <p class="post-meta"><time datetime="2022-11-18T00:00:00+08:00" itemprop="datePublished">Nov 18, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">今天要谈的是 Intel Nehalem 架构，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特色都奠基于此代。</div>
+        
+
+        
+
+        <p>接下来今天要谈的是 Intel Nehalem 架构，或许 Nehalem 这个名字并不是那么为人所知，但如果说他是第一代 Core i7 处理器的话相信大家就认识他了，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特色都奠基于此代。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/intel_core_i7.jpg" alt="intel_core_i7" />
+</div>
+
+<p>题外话，Nehalem 是当年 Pentium 4 的主导研发团队－奥瑞冈州研发中心设计的，奥瑞冈州研发中心在当年 Netburst 失败，被本来属于旁支的以色列海法团队打到趴在地上之后已经忍很久了。</p>
+
+<h2 id="第二个-tick-tock-循环">第二个 Tick-tock 循环</h2>
+
+<p>从 2006 年 Core 架构开始确立的两年一循环，单数年大改架构，双数年微缩制程的 Tick-tock 规律，在 2008 年正式迎来了第一个架构大改，也就是本篇要谈的 Nehalem，Nehalem 这个代号对 Intel 来说有很大的意义，因为它曾经被用于指称 Netburst 架构当年预想的理想结局－「10 GHz 版 Pentium 4」，当然最后这个计划如同你我所知道的，根本还没成形就胎死腹中，而同样的代号在几年后再次成为 Intel 核心产品的开发代号，想必背后是有相当的意涵存在的。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/tick-tock-2008.jpg" alt="tick-tock-2008" />
+</div>
+
+<h2 id="学走-amd-的精髓">学走 AMD 的精髓</h2>
+<p>Nehalem 这一世代还蛮有趣的，基本上除了将一些当年 Netburst 拥有的技术特性移植到 Core 架构上之外，还有很大一部分是「模仿 AMD 的做法」，不过 Intel 抄归抄但最后效果却很好，AMD 架构的缺点则几乎都没有出现在 Intel Nehalem 上。</p>
+
+<h3 id="整合内存控制器-imc系统架构大翻新">整合内存控制器 (IMC)，系统架构大翻新</h3>
+
+<p>以往的 Intel 系统架构大致上是长这样的 (以 X48 + Core 2 处理器为例)，其实传统的计算机架构也都是如此，中央由处理器、北桥芯片、南桥芯片组成，北桥负责带宽需求比较高的内存与显示适配器，带宽需求比较没那么高的接口设备则由南桥芯片负责 (详细的说明之后的章节会有)：</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/x48_block_diagram.jpg" alt="x48_block_diagram" />
+</div>
+
+<p>至于下面这张图则是 Nehalem 的系统基本架构图 (搭配的芯片组是 X58 与 ICH10)，从中你可以很明显的发现，<strong>DDR3 内存除了从双信道改为三信道 (服务器级系统可以到四信道，消费性市场中低阶型号则维持双通道) 之外，最明显的差异就是改成跟处理器直接连接了，就像 AMD 的 K8 与 K10 架构那样，是的没错，Nehalem 学 AMD 把内存控制器整合到 CPU 里面了 (Integrated Memory Controller, IMC)。</strong></p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/X58.png" alt="X58" />
+</div>
+
+<p>将内存控制器整合到处理器的好处自然是明显的，如同过去的章节也说过，在电路板上的实体距离其实对于传输速率是有很大影响的，因此内存插槽才会必定设计在处理器或北桥芯片旁边，高速缓存也从主板移到处理器芯片旁，后来更直接整合到处理器里面，这些改变的目的就是为了尽可能缩短之间的距离以加快传输效率。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMR9998.jpg" alt="AMR9998" />
+</div>
+
+<p>不过也因为内存控制器被整合到 CPU 里面，所以 CPU 本体的针脚数突然增加不少 XD，脚位直接从原本的 775 暴涨到破千等级 (左起依序为 LGA1366、LGA1156、LGA775)。</p>
+
+<h3 id="intel-quickpath-interconnect-qpi">Intel QuickPath Interconnect (QPI)</h3>
+
+<p>基本上这东西与 AMD 早在 K8 就开始用于处理器与北桥之间的 HyperTransport 总线，同样是点对点、多用途的芯片互连架构，以 Intel 官方的说法是「跟 AMD 不约而同」的结果 (Intel 官方宣称在 2004 年就已经开始研究发展 QPI，而 Nehalem 是第一款实作 QPI 的产品)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/MCH-750x308.png" alt="MCH" />
+</div>
+
+<p>以往多 CPU 系统的设计都是如上图这样的作法，所有 CPU 都与北桥 (MCH) 链接，内存也直接链接到北桥上，但这样衍伸出来的问题是当处理器的性能越来越强大、数量越来越多的时候，MCH 的处理能力就会成为多处理器系统上很严重的性能瓶颈，而一开始厂商想到的方式是让 MCH 的通道数增加，但确有造成 MCH 成本提高、能够增加的数量有限的问题，所以采用直接连结的 QPI 或 HyperTransport 被发展来取代 FSB 可以说是必然的结果。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/QPI8055.png"><img src="../images/blogs/computer_lecture/QPI8055-750x329.png" alt="QPI8055" /></a>
+</div>
+
+<p>至于上图右侧则是四颗使用 QPI 链接彼此与北桥芯片的 Nehalem-EX 架构图，可以看出当组成四颗 CPU 的系统时，每颗 CPU 会需要具备 4 条 QPI 通道 (3 条用于互联，1 条用于连络北桥)，至于比较常见的双 CPU 配置 (上图左侧) 则需要 2 条 QPI 通道 (1 条用于互联，1 条用于连络北桥)。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/QPI6679.png"><img src="../images/blogs/computer_lecture/QPI6679-750x566.png" alt="QPI6679" /></a>
+</div>
+
+<p>而 QPI 这东西基本上可以用于很多地方，目前已知曾经实作于 Intel CPU 中的就有多 CPU 之间的彼此互联、CPU 中 Core (运算核心) 与 Uncore (核心以外的周边电路) 之间的沟通、CPU 与北桥之间的连结等，值得注意的是 Nehalem 架构的高阶款 (例如 Core i7 Bloomfield、Xeon 系列中高阶款等) 也是目前为止唯一在消费性市场产品上有使用到连外 QPI 通道的世代，之后 QPI 基本上不再用于 CPU 与芯片组之间的连接，基本上都只使用 DMI 总线作为处理器与北桥芯片链接的管道。</p>
+
+<h3 id="与-amd-k10-类似的缓存结构">与 AMD K10 类似的缓存结构</h3>
+
+<p>以往 Core 架构是采双层缓存，L1 为核心各自独立，L2 则为全体运算核心共享，称之为 Intel Smart Cache，而进入 Nehalem 世代之后新的缓存阶层设计是三层，与 AMD K10 类似，L1 与 L2 都采核心各自独立，而 L3 则是全体核心共享缓存，且与 AMD K10 有类似的大型化 L3 缓存现象。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/ISC3052.png"><img src="../images/blogs/computer_lecture/ISC3052-750x565.png" alt="ISC3052" /></a>
+</div>
+
+<p>Nehalem 世代的处理器每个核心都具有 32 KB 的 L1 指令缓存、32 KB 的 L1 数据缓存、256 KB 的 L2 缓存 (延迟方面也因为 L2 缓存被搬进核心里面而比 Core 2 架构来得更低很多)，至于 L3 缓存至少 4 MB，最大则可以达到 30 MB。</p>
+
+<h2 id="模块化设计带来可扩展性平台分流于此确立">模块化设计带来可扩展性，平台分流于此确立</h2>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/SCR5022-750x563.png" alt="SCR5022" />
+</div>
+
+<p>还记得我在「计算机达人养成计划 2-13：近代中期 CPU 发展史 (二) Intel Core 架构」曾经提到过的「可扩展性」有两个层次吗？其中 Core 架构时期只做到第一层，也就是使用「复制」的方式来延展处理器的结构，例如将双核心的 Conroe 延展两份之后再经过少许修改就能造出四核心的 Kentsfield、把 Conroe 的 L2 缓存折半就变成低阶版本的 Allendale，这让 Intel 的开发时程缩短很多，同时也让消费者更能预测各等级 Intel 处理器的表现大概会落在哪边。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/MOD5022.png"><img src="../images/blogs/computer_lecture/MOD5022-750x563.png" alt="MOD5022" /></a>
+</div>
+
+<p>而进入 Nehalem 世代之后 Intel 在开发时采用的思维更加前进，使用「模块化」的方式来设计各个功能单位，在制成成品的时候就像堆积木一样可以瞬间造出好几个版本，Intel 在进行模块化的过程中将处理器区分成 Core 与 Uncore 两大部分，其中 Core 就是运算核心的部分 (除此之外还包含各自专属的 L1、L2 缓存)，根据产品规划的需要可以直接铺出需要数量的运算核心，至于 Uncore 则是处理器电路上除去运算核心以外的部分，例如 IMC 内存控制器、QPI 链接通道、共享 L3 缓存、HTT 电路等。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/RSQ6663.png"><img src="../images/blogs/computer_lecture/RSQ6663-750x564.png" alt="RSQ6663" /></a>
+</div>
+
+<p>把各项规格设计成功能模块之后，要推出支持不同数量内存信道、支持不同种类的内存、提供不同数量的运算核心、不同大小的缓存、不同的 QPI 通道数都变得很容易，甚至要塞整合图形核心也简单许多，变成当架构完成之后基本上当年度的所有处理器开发就同步进入收尾阶段了 (而且因为这样从此再也没有原生核心与拼装核心的问题了，想要多少核心就能放多少个模块，不管几个都是原生核心)。</p>
+
+<p>除此之外还有「平台划分」(<strong>其实对消费者来说重点在于不同平台会使用不同脚位，主板就不能混用了</strong>) 的概念也是从 Nehalem 开始确立的，消费性平台分为顶级玩家平台 (HEDT) 与一般及入门平台 (Mainstream)，前者即后来的 Core i7-900 系列，后者则涵盖 Core i7-800 系列与 Core i5 以降各系列的消费级处理器，之后 Xeon 家族也有类似的状态，入门系列使用与消费性一般平台相同的平台、中阶 (支持多处理器) 的系列则与 HEDT 共享平台，高阶则使用更强大、延展性更强的 EX 平台。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>服务器平台－顶级</td>
+      <td>X</td>
+      <td>Nehalem (Beckton)</td>
+      <td>Westmere-EX</td>
+      <td>Westmere-EX</td>
+    </tr>
+    <tr>
+      <td>服务器平台－可延展</td>
+      <td>Nehalem (Bloomfield)</td>
+      <td>Westmere</td>
+      <td>Westmere-EP</td>
+      <td>Sandy Bridge-EP</td>
+    </tr>
+    <tr>
+      <td>消费性平台－旗舰</td>
+      <td>Nehalem (Bloomfield)</td>
+      <td>Westmere</td>
+      <td>Westmere</td>
+      <td>Sandy Bridge-E</td>
+    </tr>
+    <tr>
+      <td>服务器平台－入门</td>
+      <td>Nehalem (Lynnfield)</td>
+      <td>Westmere</td>
+      <td>Sandy Bridge</td>
+      <td>Ivy Bridge</td>
+    </tr>
+    <tr>
+      <td>消费性平台－主流与入门</td>
+      <td>Nehalem (Lynnfield)</td>
+      <td>Westmere</td>
+      <td>Sandy Bridge</td>
+      <td>Ivy Bridge</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>之后则随着 Intel 控制推出时程，逐渐演化成表上可以发现的现象，逐渐区分成高中低三大类平台，EP / E 平台会比无印来得慢上一代，EX 则又会比 EP / E 慢上一代。</p>
+
+<h2 id="运算核心的强化">运算核心的强化</h2>
+
+<p>不同于 AMD K10 在运算核心的部分大幅沿用上代 K8 架构的设计，Nehalem 除了核心外部有许多重大变革之外，运算核心本身也获得了不少强化。</p>
+
+<h3 id="sse4-指令集补完">SSE4 指令集补完</h3>
+
+<p>Intel 阵营这边的 SSE4 被拆成三大包，分别是 SSSE3、SSE4.1 与 Nehalem 新增的 SSE4.2，实际上 SSE4.2 只包含七条新的指令，并不算是很重大的变革。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/SSE5822.png"><img src="../images/blogs/computer_lecture/SSE5822-750x566.png" alt="SSE5822" /></a>
+</div>
+
+<h3 id="宏融合与分支预测能力强化">宏融合与分支预测能力强化</h3>
+
+<p>还记得在介绍 Core 架构时我们提过的宏融合吗？Core 架构在 64 位模式下是不能进行宏融合的，然而到了 Nehalem 架构，Intel 终于补上对 64 位模式宏融合的支持，因此从 Nehalem 开始就不太会有 64 位表现比 32 位差的情形了，除此之外也新增了几种可以融合的指令。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/MFS9998.png"><img src="../images/blogs/computer_lecture/MFS9998-750x563.png" alt="MFS9998" /></a>
+</div>
+
+<p>除了宏融合之外，在 Nehalem 架构中分支预测方面的能力也获得了明显的强化，从原本的单层预测机制改为二层，纳入新的次级分支目标缓冲区 (Branch Target Buffer, BTB) 以提升数据库等以往没有办法良好适应分区预测机制的程序的执行效率。</p>
+
+<h3 id="超线程技术回归-hyper-threading">超线程技术回归 Hyper-Threading</h3>
+
+<p>曾经被使用在 Netburst 架构中后期产品的 Hyper-Threading Technology (HTT)，在进入 Core 架构时期被舍弃 (可能是因为 Core 架构诞生在很有时间压力且兵荒马乱的时期吧)，但进入更为成熟的 Nehalem 技术之后，这项功能被加回来了。(不过也有可能是海法团队单纯不想放或不敢放就是了，毕竟 HTT 当初就奥瑞冈州团队搞出来的东西 XD)</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/HTT6005.png"><img src="../images/blogs/computer_lecture/HTT6005-750x563.png" alt="HTT6005" /></a>
+</div>
+
+<p>其实在初期 Intel 很犹豫要不要继续使用 Hyper-Threading Technology 这一命名 (可能是不希望大家回想起 Pentium 4 后期的样子吧)，所以比较前期的 Nehalem 官方投影片都是使用 SMT (Simultaneous Multi-Threading) 来称呼这项功能，但由于 Netburst 与 Nehalem 中使用的 HTT 其实只是 SMT 的其中一种，与 Itanium 上所使用的实作方法不同，因此最后还是回头使用 HTT 这一名称。</p>
+
+<p>受益于 Nehalem 更大的缓存、更强大的分支预测能力，Nehalem 上的 HTT 技术带来的效果中，缺点比过去 Netburst 时期更不显著，但优点却变得更加明显。</p>
+
+<h2 id="电源管理强化">电源管理强化</h2>
+
+<p>从 Core 架构开始，计算机的发展就逐渐从一味追求性能上的具体提升，转而追求性能/能耗比例，也就是「效率」的最大化，在 Nehalem 的电源管理功能中主要有两项不同，第一项是 C-State 中的 C6 有些改变。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/CSR9966.png"><img src="../images/blogs/computer_lecture/CSR9966-750x563.png" alt="CSR9966" /></a>
+</div>
+
+<p>为了将处理器闲置时的耗能 (idle power) 降到最低，Nehalem 架构整合了称为 Power Gate 的电源开关机制，概念上有点像在 VCC (处理器供电) 到各个 Core 之间的电路各加上一个总开关，可以在「指定核心闲置的时候」将该核心的耗电量降到趋近于 0，因此 Nehalem 是有能力在没有用到的时候将特定运算核心完全关闭的。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/PGG8533.png"><img src="../images/blogs/computer_lecture/PGG8533-750x563.png" alt="PGG8533" /></a>
+</div>
+
+<p>另一项电源管理上的重大变革则是 Turbo Boost 技术，这个技术在今日的 Intel 处理器中几乎都有，因此大家应该很耳熟能详了，可以把他想象为 Enhanced Intel SpeedStep Technology (EIST) 的「逆向操作」，根据处理器的使用情形来「动态调整」CPU 核心的频率，特别是在遇到「未完善对多核心或多线程优化」的程序时，可以将用不到的处理器频率降低，集中电力供应将使用率较高的核心「自动超频」到更高的频率。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/TBM4105.png"><img src="../images/blogs/computer_lecture/TBM4105-750x564.png" alt="TBM4105" /></a>
+</div>
+
+<h2 id="后继者westmere-架构-32-纳米制造工艺">后继者：Westmere 架构 (32 纳米制造工艺)</h2>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/SFE9988.jpg" alt="SFE9988" />
+</div>
+
+<p>在来年推出的 Westmere 架构基本上就是 Nehalem 的制程微缩版，将制造工艺由 45 纳米提升到 32 纳米，最大核心数提升到 10 个，除此之外架构本身的改进并不明显，主要是虚拟化技术 (纳入对实模式的支持与转换延迟降低) 与加密解密能力 (AES-NI 指令集，新增了 7 条与 AES 加解密有关的指令) 上的增强。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/westmere-launch-1.jpg" alt="westmere-launch-1" />
+</div>
+
+<p>除此之外，在主流与入门的消费性平台上，Intel 开始将内建显示芯片从芯片组移到处理器的位置，但在 Westmere 世代中，内建显示芯片仍然是独立的一枚芯片 (基于 45 纳米制造工艺)，只是跟处理器芯片本体放在同一块 PCB 上，称为「Multi-Chip Package」 (MCP) 封装，而处理器芯片与内建显示芯片则使用 QPI 进行连接。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IDF2009.png"><img src="../images/blogs/computer_lecture/IDF2009-750x546.png" alt="IDF2009" /></a>
+</div>
+
+<p>Westmere 在计算机历史上的意义比较接近于让 Nehalem 架构「飞入寻常百姓家」的角色，本身并没有带来太大的变革，但制程微缩带来的成本下降，加上生产 Nehalem 累积的经验，有效的将 Nehalem 架构推向中阶甚至入门市场，因此 Intel 并没有大规模将所有 HEDT 平台 (Core i7-900 系列) 的产品提升到 Westmere 架构 (仅有代号为 Gulftown 的六核心极致版处理器是 Westmere)。</p>
+
+<p>值得注意的是中阶与入门市场使用的 Nehalem / Westmere 架构处理器的系统结构与 HEDT 平台以上等级的有很明显的不同：</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Q57X.png" alt="Q57X" />
+</div>
+
+<p>在高阶平台的 X58 等芯片结构中，芯片组仍然是由南北桥两颗芯片所组成 (X58 与 ICH10)，而 X58 北桥芯片实质上已经只剩下 PCI Express 控制器的功能，并且使用 QPI 与处理器连结，而北桥与南桥之间则是使用 DMI 做连结。</p>
+
+<p>而在中阶与入门平台的 5 Series Chipset 中，芯片组已经不再是芯片组，由于 PCI Express 控制器也被移入处理器中，因此实质上北桥已经没有存在意义，剩下的这颗芯片其实是「南桥」，被称为 PCH (Platform Controller Hub)，同时也因为南桥的带宽需求没有那么大，因此从此以后芯片组与处理器之间就不再使用 QPI 做连结了，而是使用特性上相当类似 PCI Express 的 DMI 接口。</p>
+
+<p>简单来说，在中阶与入门平台的 5 Series Chipset 中你所看到的这条 DMI，其实是原先用来连接北桥与南桥的那条，并不是以前 CPU 与北桥之间链接的高速通道。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_14.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_16.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

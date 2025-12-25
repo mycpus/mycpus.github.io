@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="处理器的规格其实比绝大多数人想象复杂，本篇主要是教大家如何「使用工具来判读自己计算机目前使用的 CPU 的规格」。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（2）——带你看懂CPU规格 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（2）——带你看懂CPU规格">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（2）——带你看懂CPU规格</h1>
+        <p class="post-meta"><time datetime="2022-10-11T00:00:00+08:00" itemprop="datePublished">Oct 11, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">处理器的规格其实比绝大多数人想象复杂，本篇主要是教大家如何「使用工具来判读自己计算机目前使用的 CPU 的规格」。</div>
+        
+
+        
+
+        <p>处理器的规格其实比绝大多数人想象复杂，有很多人其实从来没有弄清楚这些规格所代表的意义是什么过 (甚至是在 3C 卖场帮人组装计算机的员工，绝大多数对这方面也没有甚么概念)，但其实「魔鬼藏在细节里」，其实处理器规格绝对不只是核心数多寡、频率高低而已，对规格有更深入的了解一方面可以买到更符合自己需求的产品，另一方面也能避免当了冤大头还不知情的悲剧发生，本篇主要是教大家如何「使用工具来判读自己计算机目前使用的 CPU 的规格」，之后的文章则将依序介绍指令集、各家处理器厂商技术、Intel 与 AMD 旗下处理器产品的型号与规格、Intel 与 AMD 旗下处理器的近代编年史。</p>
+
+<h2 id="处理器规格查询工具">处理器规格查询工具</h2>
+
+<p>目前最常见的「免费」 CPU 规格查询工具大概就是 CPU-Z 了 (当然要更详细的资料可以使用 AIDA64，不过 AIDA64 是要付钱买授权的软件)，因此馆长在这篇文章会以 CPU-Z 显示的信息为基础进行说明。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig10.png" />
+    <p><b>▲ CPU-Z 界面</b></p>
+</div>
+
+<p><strong>下载 CPU-Z</strong></p>
+
+<ul>
+  <li>档案内容：CPU-Z</li>
+  <li>档案语系：英文 (美国)、中文 (简体)</li>
+  <li>下载载点：<a href="http://www.cpuid.com/softwares/cpu-z.html" target="_blank">官方网站下载页面</a></li>
+  <li>下载说明：
+    <ul>
+      <li>进入官方网站后请在左下角的四个紫色方块中选择你想下载的版本 (由上而下依序为英文安装版、英文免安装版、简体中文安装版、简体中文免安装版)</li>
+      <li>馆长建议选择「英文免安装版」</li>
+      <li>选择好之后点选「DOWNLOAD NOW」就会开始下载了</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="处理器规格导览">处理器规格导览</h2>
+
+<p>以馆长目前使用的 CPU 为例 (Intel Core i7 4930K)，执行 CPU-Z 显示的结果是这样的 (每台计算机使用不同 CPU，秀出来的画面会不同，但字段都一样)：</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig10.png" />
+    <p><b></b></p>
+</div>
+
+<h3 id="主要规格部分">主要规格部分</h3>
+
+<ul>
+  <li><strong>Name</strong></li>
+</ul>
+
+<p>处理器名称，一般来说这是这块 CPU 在市场上销售时所用的名字，是基于中间「Instructions」上面那六个字段判断出来的值，如果你使用的是工程样品 (ES) CPU 的话，通常这字段也会正确显示出你的处理器最终上市时是以什么型号销售的 (如果显示不出来表示你使用的工程样品 CPU 版本是比较初期的型号，连产品划分都还没做)。</p>
+
+<ul>
+  <li><strong>Code Name</strong></li>
+</ul>
+
+<p>这里显示的是此款 CPU 在厂商开发时所使用的代号名称，一般来说近年搭配 Intel 处理器、芯片组的计算机我们会使用这个字段内的数据来判读所属的代别，基本上 Code Name 相同的处理器之间大概有点类似「兄妹关系」，本质上共通点会很多，因为 CPU 厂商实际上生产时是生产少数几种「样板」，在完工之后才根据测试的结果来进行产品分类、将有缺陷的部分屏蔽与标上最后销售时用的型号，例如内建显示有问题但内存控制器 ECC 功能完好的 Skylake-S 4C 芯片，最后就可能成为 Xeon E3 v5，若反过来，内建显示完好而 ECC 有缺陷的话，就有可能变成 Core i7。</p>
+
+<ul>
+  <li><strong>Max TDP</strong></li>
+</ul>
+
+<p>TDP 的全名是 Thermal Design Power，意思是「热设计功耗」，是设计处理器散热方案 (不论是风冷的风扇或是水冷的水冷头) 时所考虑的重要因素之一，原始的意义上是「散热器至少必须能够导掉这么高的热功率，才能确保处理器能在全速下稳定运行」，一般来说在同样的架构底下 (Code Name 相同)，核心数越多、TDP 越高、允许超频的空间越大连带会使得 TDP 有所提升，目前一般人能买到的 Intel CPU 大致上封顶在 135 W 附近，主流型号则大约落在 50 ~ 75 W，笔记本电脑的 CPU 则会落在 45 W 附近，省电版的 CPU 则往往落在 20 W 以下，平板计算机与无风扇装置则通常只有个位数瓦，不过这项数值仅供参考，实际上散热方面会受影响的因素还有很多，各家厂商对 TDP 的定义也不尽相同，基本上只有在同厂牌底下才比较有比较意义。</p>
+
+<ul>
+  <li><strong>Package</strong></li>
+</ul>
+
+<p>此项是 CPU 本体的封装方式与插槽，这个部分馆长在之后详细介绍各款 CPU 会提到并附上图片。</p>
+
+<ul>
+  <li><strong>Technology</strong></li>
+</ul>
+
+<p>此字段显示的是 CPU 的制造工艺，几纳米制程之类的。</p>
+
+<ul>
+  <li><strong>Core Voltage</strong></li>
+</ul>
+
+<p>此字段显示的是 CPU 目前的运行电压，不过不知道为何馆长的计算机测出来数值总是相当离奇的低，可能跟主板的监控芯片种类有关 (使用 AIDA64 看会得到正确数值)，这部分仅供参考。</p>
+
+<ul>
+  <li><strong>Specification</strong></li>
+</ul>
+
+<p>此字段显示的是 CPU 内部刻录的型号名称，你可以透过这行字来判读这颗 CPU 的真伪、是否为工程样品等等。</p>
+
+<p>一般来说零售版本或 OEM 版本 (总之是正式版) 的 CPU 会出现类似 Intel (R) 系列名称与型号 CPU @ X.XX GHz 或是 AMD 系列名称与型号 XX-Core Processor 的字样，而不会有「(ES)」的注记。
+如果你在这栏里面看到 (ES) 注记，就表示你现在使用的 CPU 其实是开发中或试产阶段的工程样品或者是发给媒体测试的样品，对 Intel CPU 而言，若你看到的是正常的型号，就表示这颗样品 CPU 是比较接近市售版本的 (可能是开发过程尾声的产品，俗称「正显」，价格通常介于早期样品与正式版产品之间；若是出现「Genuine Intel (R) CPU @ X.XX GHz (ES)」则表示此颗 CPU 是早期样品，可能会有不稳定的状态或是一些大小问题发生，通常价格最为低廉，而 AMD 的工程样品则通常是标为 AMD Eng.Sample 处理器型号 (ES)，早期样品则会只写出 AMD Engineering Sample 而不会有型号。</p>
+
+<ul>
+  <li><strong>Family, Model, Ext.Family, Ext.Model</strong></li>
+</ul>
+
+<p>这部分其实也是 CPU 的内部型号，目前而言能看懂这字段的人应该不多，其实也没必要刻意去了解，基本上查询工具也是透过这些信息来判读其他不少字段的数据的。</p>
+
+<ul>
+  <li><strong>Stepping, Revision</strong></li>
+</ul>
+
+<p>这两栏显示的是 CPU 的修订版次，其实 CPU 也是会有 bug 的，但不严重的 bug 通常可以透过 BIOS / EFI 内的 microcode (微码) 解决，因此厂商不会急着更新修正后的版本，你也不太需要担心买到有 bug 需要退回去改正的处理器，但厂商每隔一段时间还是可能会开始改生产修复之后的版本的，此时修订版号 (又称为「步进」) 就会改变，当然这也是判断工程样品属于早期或晚期的依据之一。</p>
+
+<ul>
+  <li><strong>Instruction</strong></li>
+</ul>
+
+<p>这部分是显示这颗处理器所支持的指令集，这部分跟处理器的各种「独家技术」馆长会在下一篇介绍。</p>
+
+<h3 id="高速缓存规格部分-cache">高速缓存规格部分 (Cache)</h3>
+
+<p>其实 CPU 里面也有内存，如同你所知道的，内存的存在是为了提供比硬盘还要快很多的缓冲区，用来放置暂存或即将用到的数据，而且内存的单位 GB 成本比硬盘高出很多倍，其实 CPU 内的高速缓存也是同样的道理，CPU 内的高速缓存比主存储器又要快上很多倍，但成本则是高出更多倍，因此 CPU 内的高速缓存容量实际上是以 KB、MB 计算的。</p>
+
+<p>目前的 CPU 通常高速缓存还分成三层，与内存相同，越后层的速度越慢、成本也越低，但容量也越大，从小到大依序命名为 L1 Cache、L2 Cache、L3 Cache，以 Intel 近几代的产品而言，同一架构底下的所有型号不论高低阶，L1 与 L2 配置都会是相同的 (因为设置在各核心内，所以是根据核心数目而定，有几个核心就给几倍)，一般来说 L1 不会超过 128 KB，L2 则不一定，因此我们在看近几代 Intel 处理器型号时出现的「X M Cache」、「Intel Smart Cache」 实际上就是传统上我们所说的 L3 Cache，是由所有核心共享的，不过 AMD 的处理器就不是这样了，之后有机会馆长会再谈。</p>
+
+<p>基本上这项规格没甚么好谈的，越大越好就对了！</p>
+
+<h3 id="运行频率部分-clock">运行频率部分 (Clock)</h3>
+
+<p>这部分比较复杂，由于目前的主流是 Intel CPU，因此馆长在这里只先谈 Intel 近几代 CPU 的算法：</p>
+
+<p><strong>Core Speed</strong> 就是大家传统认知上的「频率」，实际上的意思是指 CPU 每秒可以运行几个 cycle (运算流程循环)，单位通常为 MHz (每秒几百万 cycle)、GHz (每秒几十亿次 cycle)，由于 Pentium 4 时期拉高频率的营销手法太成功，有很多人都以为 Core Speed 越高一定越好，实际上并不是这样！</p>
+
+<p>实际上 CPU 的运行频率只有在「结构相同」的情况下才有比较意义，因为每种不同的 CPU 其实在每个 cycle 内可以做的事情多寡并不一样！资工系大学部课程的计算器组织就会说明这件事情，造成不同 CPU 之间频率比较没有意义的因素其实很多，最直观的则是 IPC 的不同会对频率的相对意义带来很大的改变。 (IPC 是 Instruction per cycle，每一循环 CPU 可以执行多少指令)</p>
+
+<p>除了 IPC 之外还有电路设计与指令集等等的差异，都会使处理器在执行特定运算时有不同的表现，差异甚至可以达到数倍之多，早就超越频率的影响力，因此频率其实在现今而言不是非常重要的比较因素了，当然在同样系列、同样结构的 CPU 之间，频率越高性能也会随之越高，价格当然也是。</p>
+
+<p>馆长在这里举个实例：Intel Pentium 4 到末期的 Prescott 核心最高可以有 3.80 GHz 的频率，但实际上跑起来甚至不如 Core 2 Duo 的某些型号，要知道 Core 2 Duo 绝大多数产品频率可都在 2.5 GHz 以下，最高也只到 3.33 GHz。</p>
+
+<p><strong>Multiplier</strong> 是「倍频」，与之相对的还有 Bus Speed 则是「外频」，这两个数字相乘就会得到 Core Speed (频率)，这两个数字各自有其不同的意义：</p>
+
+<ul>
+  <li><strong>Bus Speed</strong> (外频)</li>
+</ul>
+
+<p>实际上是计算机里面其他零组件「拿来做为比较基准」的频率，因此实际上调整外频是会连带牵动到内存、显示适配器等组件的总线频率的，早期由于市售版 CPU 都是「锁频版」，也就是不能调整倍频，因此我们超频时其实是去调整外频来达到目的，但因为会牵动到其他零组件，所以超外频其实是比较困难、幅度比较受限的 (因为只要有一个零组件吃不消，就开不了机了)。</p>
+
+<ul>
+  <li><strong>Multiplier</strong> (倍频)</li>
+</ul>
+
+<p>则如同其名，其实就是倍数的意思，存在意义基本上就是要与 Bus Speed 相乘之后成为 CPU 的频率，目前如果你选择 K 结尾、X 结尾的 Intel 不锁频版 CPU 或是黑盒版的 AMD CPU，超频时就可以透过调整倍频来达到目的，相对而言是比较容易的。</p>
+
+<p>如果觉得说明有点难懂，馆长举这个例子或许会比较容易理解：</p>
+
+<p>馆长的 CPU 外频预设是 100 MHz，如果馆长使用的内存是 DDR3 1600 (也就是实际频率是 800 MHz)，外频与内存频率的比值就是 1:8，而此时若馆长将 CPU 的外频调整为 133 MHz，其他设定不动的话，实际上内存的频率会随之被拉高到 1064 MHz (也就是 DDR3 2128)。</p>
+
+<p>不过厂商自然也有想到这个问题 (其实也是内存频率不一的必然)，因此内存控制器是能支持不同的外频与内存频率的比值的 (又称为「除频比」)，例如如果馆长的主板有支持除频比调整的话，将 1:8 改为 1:6 其实就能够将内存维持在 DDR3 1600 的运行频率，但 CPU 的频率则会提升 33 (外频增幅) x 39 (倍频) Mhz (实际上当然不可能调到 33 这么多啦)。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_1.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_3.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

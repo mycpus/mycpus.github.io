@@ -1,24 +1,1051 @@
----
-layout: none
-search: exclude
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-  {% unless post.search == "exclude" %}
+  
+  
   <url>
-    <loc>{{site.url}}{{post.url}}</loc>
+    <loc>http://localhost:4000/evolution_of_amd_via_zhaoxin_microarchitectures.html</loc>
   </url>
-  {% endunless %}
-  {% endfor %}
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/evolution_of_intel_cpu_microarchitectures.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/evolution_of_amd_cpu_microarchitectures.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/update.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/whose_cpu_is_the_most_beautiful.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_19.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_18.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_17.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_16.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_15.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_14.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_13.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_12.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_11.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_10.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_9.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_8.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_7.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/why_do_I_collect_cpu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_6.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_5.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_4.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_3.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/computer_lecture_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/exploring_the_folk_pc_collection_museum.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/talking_about_cpu_collection_3.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/talking_about_cpu_collection_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/talking_about_cpu_collection_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/lithography_has_become_a_choke_technology_for_chip_manufacturing.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/tracing_miracle_from_electron_tube_to_transistor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_7.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_6.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/understanding_of_cpu_collection.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_5.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_4.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_3.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_chip_technology_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/a_few_little_secrets_about_cpu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/the_first_computer_of_honux.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/footprint_of_the_times_zilog_z80_cpu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_RapidCAD_the_ancestor_of_OverDrive.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/famous_cracking_in_cpu_history.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_8008_an_abandoned_chip_opens_up_a_dynasty.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_cyrix_cpu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/the_rise_and_decline_of_intel_strongest_competitor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/history_of_intel_cpu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pentium_FDIV_bug.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/what_is_487.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/x86_architecture_and_licensing.html</loc>
+  </url>
+  
+  
 
 
-  {% for page in site.html_pages %}
-  {% unless page.search == "exclude" %}
+  
+  
+  
+  
   <url>
-    <loc>{{site.url}}{{ page.url}}</loc>
+    <loc>http://localhost:4000/AMD_5x86.html</loc>
   </url>
-  {% endunless %}
-  {% endfor %}
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_80186.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_80188.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_80286.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_80386.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_80486.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_8080.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_8085.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_8086.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_8088.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_FPU.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_K10.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_K5.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_K6.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_K7.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_K8.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_RISC.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/AMD_Radeon.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ATI_Radeon.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Apple_A_Series.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Apple_M_Series.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Apple_S_Series.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_5x86.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_6x86.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_6x86MX.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_Cx486DLC.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_Cx486DX.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_FPU.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_MII.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Cyrix_MediaGX.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Geode_GX1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Geode_GXm.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/IBM_486.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/IBM_6x86MX.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/IBM_Other.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/IBM_Power.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/IDT_WinChip.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Loongson_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Loongson_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Loongson_3.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Motorola_PowerPC.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/NVIDIA_GeForce.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/NVIDIA_Quadro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/NVIDIA_TNT2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Qualcomm_MSM8928.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/ST_486.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Siemens_80186.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/TI_386.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/TI_486.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Transmeta_Crusoe.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/VIA_C3.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/VIA_C3_1GigaPro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/VIA_CyrixIII.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/Zilog_Z80.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/contact.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/about.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/support.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index_GPU.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_1Gen_Nehalem.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_1Gen_Westmere.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_2Gen_SandyBridge.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_3002.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_3Gen_IvyBridge.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_4004.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_4040.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_4Gen_Haswell.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_5Gen_Broadwell.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_7Gen_KabyLake.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_8008.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80186.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80188.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80286.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80386.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80486.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80486OverDrive.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_8080.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_8085.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_8086.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80860.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_8088.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_80960.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_CPU_Timeline.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Core2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_CoreCeleron.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_CorePentium.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_CoreXeon.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_FPU.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Itanium.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Itanium2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Other.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Pentium.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Pentium4.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Pentium4Celeron.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_Pentium4Xeon.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumII.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumIICeleron.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumIII.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumIIICeleron.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumIIIXeon.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumIIOverDrive.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumIIXeon.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumMMX.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumOverDrive.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_PentiumPro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/intel_RapidCAD.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/news.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/news_archive.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </urlset>

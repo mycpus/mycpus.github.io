@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第三期介绍芯片技术不断成熟，沿摩尔定律快速发展。">
+<meta name="keywords" content="history,  ">
+<title>图说芯片技术60多年的发展史（三） | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="图说芯片技术60多年的发展史（三）">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">图说芯片技术60多年的发展史（三）</h1>
+        <p class="post-meta"><time datetime="2022-09-29T00:00:00+08:00" itemprop="datePublished">Sep 29, 2022</time> /
+            
+            
+            
+            <a href="tag_history.html">history</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第三期介绍芯片技术不断成熟，沿摩尔定律快速发展。</div>
+        
+
+        
+
+        <h3 id="6芯片技术不断成熟沿摩尔定律快速发展">6.芯片技术不断成熟，沿摩尔定律快速发展</h3>
+
+<p>1962年，美国无线电公司(RCA)的史蒂文.霍夫施泰因(Steven Hofstein) 弗雷德里克.海曼(Frederic Heiman)研制出了可批量生产的金属氧化物半导体场效应晶体管MOSFET，并采用实验性的16个MOS晶体管集成到一个芯片上，这是全球真正意义上的第一个MOS集成电路。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig18.jpg" />
+    <p><b>图18.霍夫施泰因和全球首款MOS集成电路</b></p>
+</div>
+
+<p>1963年，仙童公司的弗兰克.万拉斯(Frank M.Wanlass)和华人萨支唐(C.T.Sah)首次提出CMOS电路技术。他们把N-MOS和P-MOS连接成互补结构，两种极性的MOSFET一关一开，几乎没有静态电流，适合于逻辑电路。1963年6月，万拉斯为CMOS申请了专利，但是几天之后，他就离开了仙童公司。首款CMOS电路芯片是由RCA公司研制。CMOS电路技术为大规模集成电路发展奠定了坚实基础。今天，95%以上的集成电路芯片都是基于CMOS工艺制造。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig19.jpg" />
+    <p><b>图19.CMOS反相器电路符号及器件模型</b></p>
+</div>
+
+<p>同年，仙童公司26岁的电路设计天才罗伯特.维德拉(Robert Widlar)设计了第一颗集成运算放大器电路μA702。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig20.jpg" />
+    <p><b>图20.仙童公司μA702运算放大器芯片图</b></p>
+</div>
+
+<p>1964年，Intel公司创始人之一的戈登.摩尔（Gordon Moore）提出著名的摩尔定律(Moore’s Law)，预测芯片技术的未来发展趋势是，当价格不变时，芯片上可容纳的元器件的数目，约每隔18-24个月便会增加一倍，性能也将提升一倍。后来50多年芯片技术的发展证明了摩尔定律基本上还是准确的。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig21.jpg" />
+    <p><b>图21.摩尔，芯片技术沿摩尔定律发展趋势图</b></p>
+</div>
+
+<p>1966年，美国RCA公司研制出CMOS集成电路和第一块50门的门阵列芯片。</p>
+
+<p>1967年，美国应用材料公司（AppliedMaterials）成立，现已成为全球最大的半导体设备制造公司。2020财年全年营收172亿美元，研发投入达22亿美元，全球拥有24000名员工，拥有14300个专利。业务涵盖半导体、显示器、太阳能、柔性镀膜、自动化软件等。下图是应用材料公司半导体业务部分的综述。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig22.jpg" />
+    <p><b>图22.美国应用材料公司的半导体业务<br />(来源：应用材料公司官网)</b></p>
+</div>
+
+<p>1967年，贝尔实验室江大原(DawonKahng)和施敏博士(Simon Sze)共同发明了非挥发存储器。这是一种浮栅MOSFET，它是可擦除可编程只读存储器(EPROM)、电可擦除可编程只读存储器(EEPROM)、闪存(Flash)的基础。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig23.jpg" />
+    <p><b>图23.普通MOSFET与浮栅MOSFET示意图</b></p>
+</div>
+
+<p>1968年，IBM公司的罗伯特.登纳德(Robert H.Dennard)发明单晶体管动态随机存取存储器(DRAM)。发明名称是“一个关于晶体管动态RAM单元的发明”。单晶体管DRAM是一个划时代的发明，它后来成为了计算机内存的标准。Dennard于1997年入选了国家发明家名人堂；2009年获得IEEE荣誉勋章，这是电子电气领域的最高荣誉。</p>
+
+<div align="center">
+    <img src="../images/blogs/history_of_chip_technology_fig24.jpg" />
+    <p><b>图24.登纳德与单晶体管DRAM示意图</b></p>
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>后记：1947～1968年的20多年是全球芯片技术和电子工业的起步期，这个时期内创新人才辈出，深远影响的发明层出不穷。晶体管、集成电路、以光刻为核心的硅平面加工技术、CMOS电路、非挥发存储器、单管DRAM电路等发明为芯片技术快速发展打下了基础，为芯片技术沿着摩尔定律前行铺平了道路。但是，人类在走上这条康庄大道之前，从半导体的认识和发现到晶体管的发明，在崎岖的道路上已摸索了114年的时间，其中包括痴迷电子管的40多年时间。科技进步不可能一撮而就，它是一个逐步认识、发现和成熟的过程。
+</code></pre></div></div>
+
+<h3 id="参考资料">参考资料：</h3>
+
+<ol>
+  <li>
+    <p>The Story Behind the Invention of FieldEffect Transistors，网站www.circuitstoday.com:http://www.circuitstoday.com/the-story-behind-the-invention-of-field-effect-transistors</p>
+  </li>
+  <li>
+    <p>心仪，MOSFET的发明人－－马丁•阿塔拉（Martin M. “John” Atalla）博士，电子工程世界论坛：http://bbs.eeworld.com.cn/thread-96577-1-1.html，2010.2.24</p>
+  </li>
+  <li>
+    <p>刘亮，PC发展史① 一颗晶体管引发的数字革命，中关村在线：https://power.zol.com.cn/519/5191311_all.html#p5191311，2015.5.14</p>
+  </li>
+  <li>
+    <p>华强旗舰微信公众号，电子元器件发展史，360个人图书馆：http://www.360doc.com/content/17/0405/22/30123241_643177613.shtml，2017.4.5</p>
+  </li>
+  <li>
+    <p>吉林大学，半导体器件物理精品教学第二章，豆丁网：https://www.docin.com/p-2116387652.html，2018.6.28</p>
+  </li>
+  <li>
+    <p>1967年至今，闪存的发展史，存储在线：http://www.dostor.com/p/58538.html，2019.8.9</p>
+  </li>
+  <li>
+    <p>Long_龙1993，掺杂——扩散和离子注入，360个人图书馆：http://www.360doc.com/content/20/0212/13/68538116_891471588.shtml，2020.2.12</p>
+  </li>
+  <li>
+    <p>科技真相，芯片战争-61：一次意外事故造就氧化层掩膜技术,知乎：https://zhuanlan.zhihu.com/p/359789998，2020.3.22</p>
+  </li>
+  <li>
+    <p>头像被屏蔽，晶体管的分类与特征，电子发烧友论坛：https://bbs.elecfans.com/jishu_1948567_1_1.html，2020.6.9</p>
+  </li>
+  <li>
+    <p>脑极体，芯片破壁者（一）：从电子管到晶体管“奇迹”寻踪，凤凰网：https://tech.ifeng.com/c/7xrkgT2K4dg，2020.7.5</p>
+  </li>
+  <li>
+    <p>TMT研究-爱好者，芯片战争-64：从台面工艺到平面工艺，突破量产化瓶颈，雪球网：https://xueqiu.com/9231373161/156639463，2020.8.14</p>
+  </li>
+  <li>
+    <p>亚化，一图读懂半导体集成电路发展史，腾讯网：https://xw.qq.com/amphtml/20200917A0FZSG00，2020.9.17</p>
+  </li>
+  <li>
+    <p>Long_龙1993，为什么芯片上的晶体管越做越小，360个人图书馆：http://www.360doc.com/content/20/1009/21/68538116_939647723.shtml，2020.10.9</p>
+  </li>
+  <li>
+    <p>康师兄，电子时代的起点，美篇：https://www.meipian.cn/3cw3o1d9，2021.1.10</p>
+  </li>
+  <li>
+    <p>图解芯片技术，集成电路发展史上的十大里程碑事件!电子发烧友：http://www.elecfans.com/d/1490110.html，2021.2.1</p>
+  </li>
+  <li>
+    <p>传感器专家网，光刻机技术到底是谁发明的？腾讯网：https://new.qq.com/rain/a/20210309A0BB0500，2021.3.9</p>
+  </li>
+</ol>
+
+<div align="center">
+<p>(上篇完，请看中篇)</p>
+<a href="history_of_chip_technology_2.html" class="btn btn-primary">上一期</a> 
+<a href="history_of_chip_technology_4.html" class="btn btn-primary">下一期</a>
+</div>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

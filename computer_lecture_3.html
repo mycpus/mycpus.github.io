@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="近年的 CPU 除了前一节谈过的基本参数之外，通常还有很多「技术特性」加持，这些技术能提供某些额外的功能或是提升运算性能，因此要了解 CPU 的规格，对这些技术的简单了解是不可或缺的！一般而言，处理器的技术特性有指令集与专属技术两大类，本节将先探讨指令集的部分。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（3）——鸟瞰历代处理器指令集 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（3）——鸟瞰历代处理器指令集">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（3）——鸟瞰历代处理器指令集</h1>
+        <p class="post-meta"><time datetime="2022-10-12T00:00:00+08:00" itemprop="datePublished">Oct 12, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">近年的 CPU 除了前一节谈过的基本参数之外，通常还有很多「技术特性」加持，这些技术能提供某些额外的功能或是提升运算性能，因此要了解 CPU 的规格，对这些技术的简单了解是不可或缺的！一般而言，处理器的技术特性有指令集与专属技术两大类，本节将先探讨指令集的部分。</div>
+        
+
+        
+
+        <p>近年的 CPU 除了前一节谈过的基本参数之外，通常还有很多「技术特性」加持，这些技术能提供某些额外的功能或是提升运算性能，因此要了解 CPU 的规格，对这些技术的简单了解是不可或缺的！一般而言，处理器的技术特性有指令集与专属技术两大类，本节将先探讨指令集的部分。</p>
+
+<p>不过由于指令集实际上是很复杂的东西，需要有计算机专业必修课程的概念才能比较深入理解，因此本篇将比较偏向于介绍知名指令集的年代、历史与其作用，目的在于下次看到时能让你不致于完全不知道这些名词代表什么。</p>
+
+<h2 id="处理器指令集简介">处理器指令集简介</h2>
+
+<p>首先介绍什么是「指令集」，其实指令集就是一款处理器所能支持执行的所有指令的总集合，就称之为指令集，英文用词为 Instructions。</p>
+
+<p>其实我们先前所讨论过的「x86 架构」就是一群指令集的结合，除了一般用于基本运算的指令之外，为了提高运算性能，CPU 厂商也会在 CPU 中将经常会使用到的功能设计成额外的指令，以节省执行这些功能时所花费的时间，这样的做法就是「Make common case fast」，让经常用到的功能跑得比较快，在整体性能提升上会有比较明显的效果。</p>
+
+<p>而本节当中所要讨论的指令集实际上都是 x86 架构指令集的「延伸」，但在用词上我们同样习惯称呼这些「扩充套件」为指令集。</p>
+
+<p>目前而言绝大多数的处理器指令集都是为了多媒体而加强。由于指令集的部分要深入了解需要有计算器组织与汇编语言的概念，因此馆长在这篇不会详谈。</p>
+
+<h3 id="mmx">MMX</h3>
+<p>起用年代：1996 年至今，首款产品为 Intel Pentium Processor with MMX Technology</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig11.jpg" alt="Intel Pentium MMX" />
+    <p><b>▲ Intel Pentium MMX</b></p>
+</div>
+
+<p>MMX (Matrix Math eXtensions 矩阵数学扩充) 可以说是 x86 架构中多媒体指令集的始祖，具有 57 条指令，主要功能为强化多媒体数据的处理能力，所以亦有译为 Multi Media eXtensions 者，基本上从 1997 年以后你所能看到的 CPU 大概都具备 MMX 支持，同时 MMX 也是后来的 SSE 家族与 AMD 专属的 3D Now! 指令集家族的基础，以向量宽度而言，MMX 只支持到 64-bit。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig12.jpg" alt="Intel Pentium 120 SX994" />
+    <p><b>▲ 第一款支持 MMX 技术的处理器 (Pentium)</b></p>
+</div>
+
+<p>不过距今年代已远，基本上现在已经看不到纯粹使用 MMX 优化的程序了。</p>
+
+<h3 id="3d-now">3D Now!</h3>
+
+<p>起用年代：1998 年至 2011 年，首款产品为 AMD K6-2 Processor (AMD 于 2010 年宣布将抛弃 3D Now! 指令集)</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig13.jpg" alt="amd_k6-2" />
+    <p><b></b></p>
+</div>
+
+<p>3D Now! 指令集是由 AMD 基于 MMX 指令集设计的 SIMD 多媒体指令集，支持单精度的向量运算，总共有 21 条指令，发布的时间点正好是 3D 计算机图形刚开始发展的时候，要说这套指令集陪伴 AMD 一路成长，可是一点也不为过。首次出现于 AMD 的 K6-2 系列处理器，当时有许多游戏厂商与微软的 DirectX 7 为 3D Now! 指令集进行优化，因此优于 Intel 的游戏性能带来了一时的声名大噪，Intel 的所有处理器都不支持 3D Now! 指令集。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig14.jpg" alt="amd_k6-2-533afx" />
+    <p><b>▲ AMD K6-2 处理器</b></p>
+</div>
+
+<p>之后 AMD 在 1999 年推出 AMD Athlon 时则是在原有的 3D Now! 指令集中再新增 5 条指令，增强 DSP 方面的性能，称之为「Enhanced 3D Now!」。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig15.jpg" alt="athlon_fx" />
+    <p><b>▲ AMD Athlon 家族处理器</b></p>
+</div>
+
+<h3 id="sse">SSE</h3>
+
+<p>起用年代：1999 年至今，首款产品为 Intel Pentium !!!</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig16.jpg" alt="Pentium_3_logo" />
+    <p><b></b></p>
+</div>
+
+<p>SSE 指令集可说是近代个人计算机处理器数一数二重要的多媒体指令集，全名为 Streaming SIMD Extensions，是 Intel 针对 AMD 3D Now! 指令集进行的反击，基础仍旧来自于 MMX，SSE 提供了 70 条的新指令，由于 3D Now! 能做到的，SSE 几乎都做得到，甚至能够做得更好，因此 Intel 瞬间将 AMD 暂时的优势地位翻转了回来。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig17.jpg" alt="KL_Intel_Pentium_III_Coppermine" />
+    <p><b>▲ 首次支持 SSE 指令集的 Intel Pentium !!! 处理器</b></p>
+</div>
+
+<p>SIMD 的意思是「Single Instruction, Multiple Data」，也就是单一指令能处理多个数据操作的意思，此外 SSE 支持的向量长度比 MMX 多出一倍，来到了 128-bit。</p>
+
+<p>之后 AMD 则是在 2001 年推出的 Athlon XP 系列中加入了对 SSE 的完整支持 。</p>
+
+<h3 id="sse2">SSE2</h3>
+
+<p>起用年代：2001 年至今，首款产品为 Intel Pentium 4 (Willamette)</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig18.jpg" alt="KL_Intel_Pentium_4_Wilamette" />
+    <p><b>▲ 第一代 Intel Pentium 4 (Willamette) 首次支持 SSE2</b></p>
+</div>
+
+<p>SSE2 是 SSE 的延伸，新增了 144 条指令，同时具有完全取代 MMX 的能力，AMD 则在 2003 年推出 AMD64 系列处理器时纳入 SSE2 的支持。</p>
+
+<h3 id="sse3">SSE3</h3>
+
+<p>起用年代：2004 年至今，首款产品为 Intel Pentium 4 (Prescott)</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig19.jpg" alt="Intel_CPU_Pentium_4_640_Prescott_top" />
+    <p><b>▲ 第三代 Intel Pentium 4 (Prescott) 加入对 SSE3 的支持</b></p>
+</div>
+
+<p>SSE3 是 Intel 为 Pentium 4 后期的核心 (代号 Prescott) 新增的 SSE 系列指令，因此又被称为 PNI (Prescott New Instructions)，SSE3 新增了 13 条新指令，其中有 2 条新指令是针对 Hyper-Threading 技术而设计的，而 AMD 则在 2005 年之后开始将 SSE3 用于自家产品上 (但不包含 2 条 Hyper-Threading 优化指令)</p>
+
+<h3 id="ssse3">SSSE3</h3>
+
+<p>起用年代：2006 年至今，首款产品为 Intel Core 2 (Conroe)</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig20.jpg" alt="Core2_logo" />
+    <p><b></b></p>
+</div>
+
+<p>SSSE3 (Supplemental Streaming SIMD Extensions 3) 是 SSE3 的补充，新增了 16 组 (每组有两种，分别用于 64bit 与 128bit 的缓存器中) 指令，<strong>AMD 则是要从 2011 年的推土机架构 (Bulldozer) 才开始支持</strong>。</p>
+
+<h3 id="sse4-家族">SSE4 家族</h3>
+
+<p>起用年代：2008 年至今，首款产品为 Intel Core 2 (Penryn)</p>
+
+<p>SSE4 的历史相对于上面几项来说复杂了不少，首先看 Intel 的部分，实际上 Intel 将 SSE4 分为 SSE4.1 与 SSE4.2 两个，其中 SSE 4.1 有 47 条新增指令，从 Intel Core 2 (Penryn) 开始就能看到，SSE 4.2 则包含 7 条指令，直到 2007 年的 Nehalem 才纳入。</p>
+
+<p>AMD 的话当时则是在 2007 年的 Barcelona 核心也新增了命名为 SSE4a 的指令集，只包含两条指令，实际上与 Intel 的 SSE4 没有什么关联，只是命名上故意想造成混淆而已。</p>
+
+<h3 id="胎死腹中的-sse5">胎死腹中的 SSE5</h3>
+
+<p>2007 年八月 AMD 干了一件很幼稚的事情，如同前面所说我们知道 SSE 系列的各个指令集其实都是 Intel 制定的，没想到在 SSE4 产品都还没出的时间点，AMD 就突然发布新闻稿与规格书，表示他们将在 2008 ~ 2009 推出支持 SSE5 的 CPU，此举当然让 Intel 不开心了，于是 Intel 就直接宣布「我们将不会支持 SSE5」，由于指令集实际上是编译程序优化的工具之一，若使用这种指令集的人很少，就不太容易让人有动力去开发能够针对这种指令集优化的编译程序，造成的直接结果就是这指令集会变得一点用处也没有，所以当时消息一出真的让许多人跌破眼镜。</p>
+
+<p>最后的结局嘛，SSE5 终究从来没有在正式产品上出现过，AMD 最后也妥协改使用 Intel 后来提出的新指令集的方式重新设计 SSE5，并放弃 SSE5 的名称，也就是后来的 AVX，而部分没有出现在后来 AVX 的功能，则是被 AMD 拆分为 FMA4、XOP、CVT16 三个功能。</p>
+
+<h3 id="intel-aes-ni">Intel AES-NI</h3>
+
+<p>起用年代：2008 年至今，首款产品为第一代 Intel Core Processor Family (部分型号)</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig21.jpg" alt="Nehalem_logo" />
+    <p><b></b></p>
+</div>
+
+<p>AES-NI 的全名是 Advanced Encryption Standard New Instructions (进阶加密标准新指令)，是少数与多媒体比较没有关系的指令集，主要是针对信任计算 (Trusted Computing) 与加密、解密性能提升而设计的指令集，新增了 7 条指令，AMD 则从推土机架构开始跟进。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig22.jpg" alt="intel_core-i7-920" />
+    <p><b>▲ 第一代 Core i7 处理器 (Nehalem) 引入了 AES-NI</b></p>
+</div>
+
+<h3 id="avx">AVX</h3>
+
+<p>起用年代：2011 年至今，首款产品为 Intel Sandy Bridge 架构处理器与 AMD 推土机 (Bulldozer) 架构处理器</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig23.png" alt="Intel_sandy-bridge-logo" />
+    <p><b></b></p>
+</div>
+
+<p>AVX 的全名是 Advanced Vector Extensions (高级向量扩展指令集)，某种程度上概念来自 AMD 当年胎死腹中的 SSE5，因此其实可以看做是 SSE 家族的后续，简单来说是将原有的缓存器 (XMM Registers) 的长度全部增加一倍，由 SSE 的 128 bit 提升为 256 bit (YMM Registers)，因此能够提高处理器在处理特定向量与浮点数运算时的效率，主要带来的提升也是在多媒体方面，例如影片编码等等浮点运算量大的时候。在极端情况下可以提高到两倍 (当然实际情况不可能这么强大)。</p>
+
+<p>另一方面 AVX 透过支持三运算符指令 ( 3-Operand Instructions)，因此可以减少在编码过程中需要复制数据到缓存器的次数，提高了执行向量运算时的效率。</p>
+
+<p>值得注意的是，AVX 指令集需要操作系统的额外支持，Windows 系统至少需要 Windows 7 Service Pack 1 (需要安装额外的更新) 或是 Windows 8 以上。</p>
+
+<h3 id="fma3fma4">FMA3、FMA4</h3>
+
+<p>起用年代：2011 年至今，首款产品为 AMD Bulldozer 架构处理器。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig24.jpg" alt="AMD-FX" />
+    <p><b></b></p>
+</div>
+
+<p>FMA3 与 FMA4 实际上原先是 SSE5 的一部分，是 AMD 的 SSE5 作战失败之后被拆出来的功能，因此你只会在 AMD 的处理器上看到 FMA3 与 FMA4。</p>
+
+<p>而对到 Intel 的处理器来看，AVX 基本上是包含 FMA3 的，也就是前面说过的三运算符指令 ( 3-Operand Instructions)，这部分由于馆长没有深入去看原始规格，所以大概只能这样描述，毕竟其实本来就是两大厂之间商业互斗的结果。</p>
+
+<p>至于 FMA4，顾名思义其实就是对四运算符指令的支持。</p>
+
+<h3 id="avx2">AVX2</h3>
+
+<p>起用年代：2013 年至今，首款产品为 Intel Haswell 架构处理器。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig25.png" alt="haswell-logo" />
+    <p><b>▲ 第四代 Core 家族 (Haswell) 处理器引入 AVX2 支持</b></p>
+</div>
+
+<p>AVX2 顾名思义是 AVX 的升级版本，透过增加两个 FMA (Fused Multiply-Add，熔合乘法累积单元) 来达到强化浮点运算能力的效果，每个 FMA 可以支持 8 个单精度或 4 个双精度浮点数。</p>
+
+<p>此外，AVX2 也将 AVX 中未被扩充的整数向量运算指令扩充到与浮点数相同的 256-bit，因此在极端状态下，「理论上」AVX2 可以达到以往将近两倍的整数运算性能。</p>
+
+<h3 id="intel-tsx-ni">Intel TSX-NI</h3>
+
+<p>起用年代：2013 年至今，首款产品为 Intel Haswell 架构处理器。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture_fig26.jpg" alt="intel-core-i7-4790k-devils-canyon-die" />
+    <p><b></b></p>
+</div>
+
+<p>说起来这个指令集有点难解释，全名叫做 Transactional Synchronization Extensions，翻作事务性同步扩展指令集。</p>
+
+<p>官方的说法是主要用来提升多线程 (Multi-threading) 下的性能，原理上大致是从硬件层着手去改良在多线程或多核心状况下会遇到的锁定 (lock) 问题的处理方针，不过需要软件的支持，因此这主要是比较针对软件工程师的技术，一般人大概是感受不到什么差别。</p>
+
+<p>不过说到 TSX-NI，比较广为人知的可能反而是这则新闻：在 Haswell 与部分 Broadwell 架构核心的处理器上，TSX-NI 指令有重大缺陷，会导致系统发生预期以外的行为。</p>
+
+<p>当时 Intel 的做法很简单，直接将 TSX-NI 从 BIOS 端关掉就没事了，嗯，所以目前能用到 TSX-NI 指令的人，大概是少数中的少数吧，Skylake 的部分应该是没有这问题的，不过接下来的 HEDT 高阶平台是 Broadwell-E，中阶以上服务器是 Broadwell-EP 跟 Broadwell-EX 呢……</p>
+
+<h3 id="avx-512">AVX-512</h3>
+
+<p>起用年代：2017 年 (预计)，首款产品预定为 Skylake-EP (中高阶服务器用 Skylake)。</p>
+
+<p>AVX-512 实际上是一个非常乱的指令集，分成许多组别，在不同用途的处理器上可能会提供不一样的组别 (目前已知有 F、CDI、ERI、PFI、BW、DQ、VL 等组合)，其中只有 AVX-512F 是一定有的 (F 是 Foundation 的意思)。</p>
+
+<p>目前来说大概就认知到 AVX-512 会将向量的处理能力再次翻倍来到 512-bit 就可以了，其他规格会不会变其实还很难说，而且短期内一般人应该是碰不到有支持 AVX-512 的处理器的。</p>
+
+<p>呼，终于介绍完常见的指令集了，其实这长度应该已经能分成上、下两篇的，不过因为指令集坦白说不是什么很有趣的东西，因此馆长后来想想，还是干脆一次出完早点把这个主题结束吧 XD</p>
+
+<p>下次的主题应该会比较贴近大家现在已有的认识吧？例如 Hyper-Threading (HT) 等等技术的简单介绍。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_2.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_4.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

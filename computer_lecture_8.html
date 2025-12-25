@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构推出了 Pentium II 在市场上大获成功。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（8）——中古时代后期CPU发展史(中) | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（8）——中古时代后期CPU发展史(中)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（8）——中古时代后期CPU发展史(中)</h1>
+        <p class="post-meta"><time datetime="2022-10-25T00:00:00+08:00" itemprop="datePublished">Oct 25, 2022</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构推出了 Pentium II 在市场上大获成功。</div>
+        
+
+        
+
+        <h1 id="中古时代后期个人计算机开始普及的时代-中">中古时代后期－个人计算机开始普及的时代 (中)</h1>
+
+<h2 id="绝地反攻amd-k6">绝地反攻：AMD K6</h2>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/AMD_K6_logo.png">
+        <img src="../images/blogs/computer_lecture/AMD_K6_logo.png" alt="AMD_K6_logo" />
+    </a>
+    <p><b></b></p>
+</div>
+
+<p>AMD 在经过 K5 的出师不利之后，学到了一些教训，那就是作为较弱势的厂商，产品太晚出气势就输人了，而且若晚出又比不上别人已经有的产品，那就只有惨败或廉售的可能，于是 AMD K6 最后赶在 Pentium II 之前，于 1997 年 04 月上市。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/NX586.jpg">
+        <img src="../images/blogs/computer_lecture/NX586-375x375.jpg" alt="NX586" />
+    </a>
+    <p><b>▲ 比起 K5，K6 可能还比较接近这颗 Nx586 一点。</b></p>
+</div>
+
+<p>AMD K6 的设计是来自于一家叫做 NexGen 的公司，当时正在设计一款名为 Nx686 的处理器，而后来 AMD 将这间公司收购之后就发展成为后来的 K6，因此 K6 与 K5 之间的亲缘关系其实很薄弱。</p>
+
+<h3 id="急起直追-intel">急起直追 Intel</h3>
+
+<p>AMD K6 加入了 MMX 指令集，在性能方面基本上是足以接近 Pentium MMX 的，甚至在某些情况下可以追上同频的 Pentium II，虽然性能仍然不及 Intel (浮点运算性能大概只有同频 Pentium 的一半，不过我们的日常用途主要以整数运算为主，这方面 K6 就没有输了)，但相对而言低廉许多的售价，加上与 Pentium 完全兼容的脚位 (同属 Socket 7) 让 AMD 成功开始在市场上攻城略地 (虽然离要追上 Intel 还早得很，但至少已经开始追了)，同时也加速个人计算机售价的下跌与普及。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/amd-k6-die-shot.jpg">
+        <img src="../images/blogs/computer_lecture/amd-k6-die-shot-375x260.jpg" alt="amd-k6-die-shot" />
+    </a>
+    <p><b>▲ AMD K6 Die shot</b></p>
+</div>
+
+<p>不过 AMD K6 本身并没有整合 L2 Cache，而是使用 Pentium 时代的老方法，将 L2 Cache 放在主板上。</p>
+
+<h3 id="前期产品k6-model-6">前期产品：K6 (Model 6)</h3>
+
+<ul>
+  <li>发布时间：1997 年 04 月 02 日</li>
+  <li>运行频率：166 MHz ~ 233 MHz</li>
+  <li>FSB 频率：66 MHz</li>
+  <li>L1 缓存大小：64 KB (数据与指令缓存各 32 KB)</li>
+  <li>支持插槽：Socket 7</li>
+  <li>电压需求：2.9 V ~ 3.3 V</li>
+  <li>晶体管数：880 万枚</li>
+  <li>制造工艺：0.35 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX</li>
+</ul>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/K6-model6.jpg">
+        <img src="../images/blogs/computer_lecture/K6-model6-375x375.jpg" alt="K6-model6" />
+    </a>
+    <p><b>▲ AMD K6 (Model 6)</b></p>
+</div>
+
+<h3 id="后期产品k6-little-foot-model-7">后期产品：K6 “Little Foot” (Model 7)</h3>
+
+<ul>
+  <li>发布时间：1998 年 01 月 06 日</li>
+  <li>运行频率：200 MHz ~ 300 MHz</li>
+  <li>FSB 频率：66 MHz</li>
+  <li>L1 缓存大小：64 KB (数据与指令缓存各 32 KB)</li>
+  <li>支持插槽：Socket 7</li>
+  <li>电压需求：2.2 V</li>
+  <li>晶体管数：880 万枚</li>
+  <li>制造工艺：0.25 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX</li>
+</ul>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/K6-model7.jpg">
+        <img src="../images/blogs/computer_lecture/K6-model7-375x376.jpg" alt="K6-model7" />
+    </a>
+    <p><b>▲ AMD K6 (Model 7)</b></p>
+</div>
+
+<p>Little Foot 基本上就是第一代 K6 (Model 6) 的制程改进版，受益于制程改进所以可以有更高的频率，只需要更低的电压，或许是出于防伪的目的？Model 7 的 K6 除了使用印刷方式打上频率之外，正面的铁壳左下角也会蚀刻出频率与序号的二维条形码。</p>
+
+<p>不过由于电压下降与倍频的增加，部分的 Socket 7 主板上没办法使用 Model 7 版本之 K6 的。</p>
+
+<h2 id="p6-架构大放异彩intel-pentium-ii">P6 架构大放异彩：Intel Pentium II</h2>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Intel_Pentium_II.png">
+        <img src="../images/blogs/computer_lecture/Intel_Pentium_II-375x495.png" alt="Intel_Pentium_II" />
+    </a>
+    <p><b></b></p>
+</div>
+
+<p>Pentium II 在 1997 年 05 月 07 日推出，与 Pentium Pro 一样是基于 P6 微架构的产物，因此其实它是 Pentium Pro 的改良版，与初代 Pentium 之间的亲缘关系反而不大 (从内部型号中 Pentium II 与 Pentium Pro 同属 Family 6 就可以印证这点)，同时也是从 Pentium II 开始，由于核心架构不常改变，因此我们改为使用核心的开发代号来区分不同时期。</p>
+
+<p>Pentium II 基本上就是针对当年 Pentium Pro 的弱点进行补强，例如强化了在处理 16-bit 程序时的性能、纳入 MMX 指令集等，由于 16-bit 处理能力有了长足的改善，因此 Pentium II 在 Windows 9x 上的表现明显比 Pentium Pro 要好得多，又比 Pentium Pro 便宜，因此在市场获得了巨大的成功。</p>
+
+<h3 id="特殊的卡匣外型">特殊的卡匣外型</h3>
+
+<p>Pentium II 长得与以往的处理器相差非常远，是做成有点像游戏卡匣的外型，单面包覆塑料卡匣外壳 (不过有部分型号是没有外壳的) 中包裹着一块电路板，L2 缓存与处理核心就放置在这张电路板上，另一面则以散热片或风扇接触核心本身以进行散热，主板上的插槽也因此由 Socket 转型为长条状的 Slot。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Pentium_II.jpg">
+        <img src="../images/blogs/computer_lecture/Pentium_II-375x290.jpg" alt="Pentium_II" />
+    </a>
+    <p><b>▲ 以现在来说长这样的 CPU 或许很奇怪，但它确实是</b></p>
+</div>
+
+<p>采用这种封装的目的是为了将 L2 缓存从 CPU 本体抽出来 (成本与技术能力上的考虑，这跟追求良率提升也有关系)，但又能维持与 CPU 够近的距离以维持一定的速度，这点与减半速度的 L2 缓存是 Pentium II 能比 Pentium Pro 便宜的主因，同时也让 Intel 可以很容易的透过抽换电路板上的缓存芯片来生产不同等级的 CPU。</p>
+
+<p>还有最后一个理由：Slot 1 是有专利的，所以任何厂商都不能生产支持 Slot 1 的处理器，本来是 Intel 想甩掉竞争对手的策略，不过没想到最后反而让其他厂商在 Socket 7 的世界苟延残喘活了下来 (当时计算机很贵，一般人可禁不起主板跟处理器都要换的支出)。</p>
+
+<h3 id="xeon-与-celeron-的初登板">Xeon 与 Celeron 的初登板</h3>
+
+<p>当年 Pentium Pro 由于价格过高加上 16 位处理能力不佳，因此最后被 Intel 用于针对高价市场、服务器专业市场发售，而中阶与消费性市场则由 Pentium MMX 担纲，后来 Intel 发布 Pentium II 时，便决定用 Pentium II 统一这两条产品线，并打算往下扎根，生产更便宜的处理器以扩大市场。</p>
+
+<p>如同前面说过的，改成卡匣设计之后 Intel 可以很容易的透过抽换缓存来生产不同等级的 CPU，实际上这就是后来 Celeron、Pentium II、Pentium II Xeon 的由来与差别。</p>
+
+<ul>
+  <li>Celeron <br />
+ 最便宜，可能没有 L2 缓存 (前期)，或是缓存大小比 Pentium II 小 (通常是减半)，使用 Slot 1 插槽。</li>
+  <li>Pentium II <br />
+ 主流市场战线的武器，具有 L2 缓存，但 L2 缓存的速度只有 CPU 核心的一半，使用 Slot 1 插槽。</li>
+  <li>Pentium II Xeon <br />
+ 面对服务器市场与旗舰市场的产品，具有全速的 L2 缓存，使用较长的 Slot 2 插槽。这个时期里 Xeon 还不是独立的系列，只是 Pentium 品牌下的一种型号识别罢了。</li>
+</ul>
+
+<h3 id="第一代klamath-80522">第一代：Klamath (80522)</h3>
+
+<ul>
+  <li>发布时间：1997 年 05 月 07 日</li>
+  <li>运行频率：233 MHz ~ 300 MHz</li>
+  <li>FSB 频率：66 MHz</li>
+  <li>TDP：34.8 W ~ 43 W</li>
+  <li>L1 缓存大小：32 KB (数据与指令缓存各 16 KB)</li>
+  <li>L2 缓存大小：512 KB</li>
+  <li>支持插槽：Slot 1 (卡匣外型)</li>
+  <li>电压需求：2.8 V</li>
+  <li>晶体管数：750 万枚</li>
+  <li>制造工艺：0.35 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX</li>
+</ul>
+
+<p>Klamath 是第一代的 Pentium II，全系列的 FSB 都是 66 MHz，当时推出了 233、266 与 300 三个型号，如同前面说过的，Klamath 的 L2 缓存是与 CPU 在同一块电路板上，但并未封装在一起也没有整合入核心，设计上是以处理器主频的一半运行。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/klamath-front.jpg">
+        <img src="../images/blogs/computer_lecture/klamath-front-375x173.jpg" alt="klamath-front" />
+    </a>
+    <p><b>▲ Intel Pentium II (Klamath) 正面</b></p>
+</div>
+
+<p>当年 Klamath 的起跳售价为 636 美金，最高级的 Pentium II 300 甚至要价惊人的 1,981 美金，虽然比起 Pentium Pro 曾经出现的 2,675 美金来说便宜不少，但其实对一般人来说，仍旧是很难接近的东西。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/klamath-back-375x173.jpg" alt="klamath-back" />
+    <p><b>▲ Intel Pentium II (Klamath) 背面</b></p>
+</div>
+
+<p>后来在 1997 年 07 月 14 日 Intel 对 OEM 厂商推出了将 L2 缓存升级为具备 ECC 能力的对应 Klamath 型号，Klamath 具有支持多处理器的能力，至多可以同时安装 2 个 Pentium II。</p>
+
+<h3 id="第二代deschutes-80523">第二代：Deschutes (80523)</h3>
+
+<ul>
+  <li>发布时间：1998 年 01 月 26 日</li>
+  <li>运行频率：266 MHz ~ 450 MHz</li>
+  <li>FSB 频率：66 MHz ~ 100 MHz</li>
+  <li>TDP：16.8 W ~ 27.1 W</li>
+  <li>L1 缓存大小：32 KB (数据与指令缓存各 16 KB)</li>
+  <li>L2 缓存大小：512 KB</li>
+  <li>支持插槽：Slot 1 (卡匣外型)</li>
+  <li>电压需求：2.0 V</li>
+  <li>晶体管数：750 万枚</li>
+  <li>制造工艺：0.25 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX</li>
+</ul>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/deschutes.jpg">
+        <img src="../images/blogs/computer_lecture/deschutes-375x194.jpg" alt="deschutes" />
+    </a>
+    <p><b>▲ Intel Pentium II (Deschutes) 正面 (右边两块就是缓存芯片)</b></p>
+</div>
+
+<p>1998 年推出的 Deschutes 是 Pentium II 的第二代产品，相较于 Klamath 来说，Deschutes 在各方面都显得更加成熟，受益于制程进入 0.25 微米，Deschutes 的 TDP 与使用的电压都明显较 Klamath 下降很多，同时频率的成长也大有斩获，来到了 450 MHz。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/deschutes2-375x181.jpg" alt="deschutes2" />
+    <p><b>▲ Intel Pentium II (Deschutes) 背面</b></p>
+</div>
+
+<p>其中除了运行频率为 333 MHz 以下的 Deschutes 使用的 FSB 为 66 MHz 外，其余都已提升至 100 MHz，然而 Deschutes 最特别的地方其实不在其本身的特性有多少改变，而是 Intel 就是在这个时候开始创建 Xeon 与 Celeron 这两条产品线的，而且当时的产品都是直接衍伸自 Deschutes。</p>
+
+<h3 id="intel-celeron-based-on-deschutes">Intel Celeron (based on Deschutes)</h3>
+
+<p>当时的 Celeron 就已经是独立的一条产品线，目的是要抢攻较低价的市场 (以当时来说其实这样的作法对于让个人计算机普及化也有相当的帮助)。</p>
+
+<p>第一款 Celeron 的开发代号为 Covington，发布于 1998 年 04 月，只有 266 MHz 与 300 MHz 两个型号，最明显的特性是没有 L2 缓存 (其实就是直接拿掉 L2 缓存的 Deschutes)，因此性能上相当让人失望，价格又不是真的低廉很多，所以在市场上造成的回响有限 (国外评论认为初期的好销量都来自于 Intel 的名声，之后马上就消失了)，引起了不小的抱怨声浪，但值得注意的是，少了 L2 缓存的 Covington 反而具有良好的超频能力。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Celeron_Covington.jpg">
+        <img src="../images/blogs/computer_lecture/Celeron_Covington-375x346.jpg" alt="Celeron_Covington" />
+    </a>
+    <p><b>▲ 少了缓存的 Celeron (Covington)，两侧显得相当空旷</b></p>
+</div>
+
+<p>由于缺乏 L2 缓存的 Covington 性能真的太差，连带反而救了 AMD 与 Cyrix 等厂商 (AMD 的 K6-2 从价格与性能上都可以把 Covington 压着打)，Intel 在 1998 年 08 月推出了改版的 Celeron，代号为 Mendocino，运行频率从 300 MHz 起跳 (300 MHz 型号为了与 Covington 作出区分所以称为 Celeron 300-A)，最高到 533 MHz，不过这次 Intel 似乎又「矫枉过正」了，Mendocino 内建了 128 KB「全速」的缓存，而且 Mendocino 还是第一款将 L2 缓存整合到核心中 (on-die) 的零售处理器，这让 Mendocino 的性能大为增强，而且超频潜力依旧庞大。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Mendocino.jpg">
+        <img src="../images/blogs/computer_lecture/Mendocino-375x348.jpg" alt="Mendocino" />
+    </a>
+    <p><b>▲ 看似空旷依旧，不过其实 L2 缓存已经塞进中间变大的芯片里了。</b></p>
+</div>
+
+<p>尽管 Mendocino 的 FSB 只有 66 MHz，但对性能的影响并不大，因此基于 Mendocino 的 Celeron 在市场上获得了巨大的成功，除了把 Cyrix 弄倒以外，还压制了 AMD 的 K6-2，甚至是影响到了自家中高阶产品线 Pentium II 的销售。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/Intel_Celeron_Mendocino_S370b.jpg" alt="Intel_Celeron_Mendocino_S370b" />
+    <p><b>▲ Socket 370 版本的 Intel Celeron (Mendocino)</b></p>
+</div>
+
+<p>后来由于 Mendocino 没有外置的 L2 缓存芯片，因此后来 Intel 又发展了 Socket 370 规格的版本，取代为了外置 L2 芯片而设计的 Slot 1，至于笔记本电脑的部分，则是在 1999 年推出了称为 Tocino 的核心，与 Mendocino 相当接近，值得注意的是有一款低电压版本出现，电压为 1.5 V，TDP 仅 7.9 W (频率为 267 MHz)。</p>
+
+<h3 id="intel-pentium-ii-xeon">Intel Pentium II Xeon</h3>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Pentium_II_Xeon.jpg">
+        <img src="../images/blogs/computer_lecture/Pentium_II_Xeon-375x390.jpg" alt="Pentium_II_Xeon" />
+    </a>
+    <p><b>▲ 巨无霸级别的 Pentium II Xeon</b></p>
+</div>
+
+<p>相对于 Celeron 而言，Xeon 版本的 Pentium II 就没那么特别了，当时 Xeon 也还不是一个独立的系列，而是附属于 Pentium 品牌之下。发布于 1998 年 06 月的 Pentium II Xeon (代号为 Drake) 同样是基于 Deschutes 的设计，只是将外置的 L2 缓存芯片由降半速改为全速的芯片，容量则有所增加，有 512 KB、1 MB、2 MB 三种大小，至于运行频率则从 400 MHz 起跳，最高同样是到 450 MHz。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Pentium_II_Xeon_pcb.jpg">
+        <img src="../images/blogs/computer_lecture/Pentium_II_Xeon_pcb-375x274.jpg" alt="Pentium_II_Xeon_pcb" />
+    </a>
+    <p><b>▲ 巨无霸级别的 Pentium II Xeon</b></p>
+</div>
+
+<p>值得注意的是 Pentium II Xeon 使用的插槽与其他 Pentium II 不同，是使用较长的 Slot 2 (具有 330 触点)，高度也比 Slot 1 处理器来得高许多，且 Pentium II Xeon 具有多处理器 (SMP) 的能力，至多可以同时安装四颗 Pentium II Xeon。</p>
+
+<h3 id="intel-pentium-ii-overdrive">Intel Pentium II OverDrive</h3>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Intel-Pentium-II-Overdrive-333-SL2KE-v1.1-3.jpg">
+        <img src="../images/blogs/computer_lecture/Intel-Pentium-II-Overdrive-333-SL2KE-v1.1-3-375x281.jpg" alt="Intel Pentium II Overdrive 333 SL2KE v1.1 3" />
+    </a>
+    <p><b></b></p>
+</div>
+
+<p>Pentium II OverDrive 推出于 1998 年，同样基于 Deschutes 核心的 Pentium II，使用与 Pentium Pro 相同的脚位 (Socket 8)，是提供给原 Pentium Pro 用户升级使用的 Pentium II OverDrive，至多可以支持双处理器，因此原本使用 4 处理器 Pentium Pro 的用户在升级之后只能舍弃掉两个 Socket。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/p2odtop.jpg" alt="p2odtop" />
+    <p><b>▲ 把散热模块拿掉之后的样子，左边是 CPU 核心，右边是 L2 缓存。</b></p>
+</div>
+
+<p>Pentium II OverDrive 具有 512 KB 「全速」的 L2 高速缓存 (但仍然为外置)，FSB 则为 60 至 66 MHz，不过 Pentium II OverDrive 的 CPUID 是与 Klamath 相同，但 Intel 有在官方文件中特别提及，Pentium II OverDrive 使用的核心是 Deschutes 级别的。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/PODII.jpg">
+        <img src="../images/blogs/computer_lecture/PODII-375x281.jpg" alt="PODII" />
+    </a>
+    <p><b>▲ Intel Pentium II OverDrive (背面)</b></p>
+</div>
+
+<h3 id="mobile-intel-pentium-ii">Mobile Intel Pentium II</h3>
+
+<p>Pentium II 同样有推出行动版本，主要分为 Tonga 与 Dixon 两代，其中 Tonga 基本上也是 Deschutes 的衍伸型 (编号仍然是 80523)，发布于 1998 年 04 月 02 日。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Pentium_II_Mobile_Tonga_b.jpg">
+        <img src="../images/blogs/computer_lecture/Pentium_II_Mobile_Tonga_b-375x375.jpg" alt="Pentium_II_Mobile_Tonga_b" />
+    </a>
+    <p><b>▲ Mobile Intel Pentium II (Tonga) 长得真的很特别</b></p>
+</div>
+
+<p>Tonga 的 L2 缓存仍然是放置于处理器核心外，以处理器主频的一半速度运行，大小则为 512 KB，频率从 233 MHz 起跳至 300 MHz，FSB 则是 66 MHz，当时使用的电压略低于 Deschutes，是较为接近现今处理器使用的 1.6 V ~ 1.7 V。</p>
+
+<p>之后在 1999 年 01 月 25 日，Intel 推出了最后一款 Pentium II 核心，也就是行动版本的 Dixon 核心，基于 0.25 微米或 0.18 微米制造工艺，运行电压最低可以来到 1.55 V，频率则介于 266 MHz 至 400 MHz。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/Pentium_II_Mobile_Dixon_b.jpg">
+        <img src="../images/blogs/computer_lecture/Pentium_II_Mobile_Dixon_b-375x373.jpg" alt="Pentium_II_Mobile_Dixon_b" />
+    </a>
+    <p><b>▲ Mobile Intel Pentium II (Dixon) 可以发现缓存芯片不见了</b></p>
+</div>
+
+<p>Dixon 核心当时为了与 Tonga 作出区隔，因此型号命名上都加上了「PE」的字尾，意思是 Performance Enhanced，主要与 Tonga 的差异在于缓存的部分，Dixon 的缓存与 Mendocino 一样改采整合到核心中的作法 (因此晶体管多达 2740 万个)，但大小则减为 256 KB。</p>
+
+<h2 id="amd-k6-2-又名-k6-3d-mmx">AMD K6-2 (又名 K6 3D MMX)</h2>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/AMD-K6-2.png">
+        <img src="../images/blogs/computer_lecture/AMD-K6-2-375x410.png" alt="AMD-K6-2" />
+    </a>
+    <p><b></b></p>
+</div>
+
+<p>在 K6 Model 7 推出之后不久，1998 年 05 月 28 日，AMD 就推出了基于第二世代 K6 架构的 K6-2 系列处理器以迎战始终相当昂贵的 Intel Pentium II。</p>
+
+<p>K6-2 最大的特点是新增了 3D Now! 指令集，是全世界第一款引入单指令多数据式的浮点运算 (SIMD) 功能的处理器，大幅提升了 K6-2 的 3D 处理能力，而 Intel 则是要等到 Pentium III 上提供的 SSE 指令集才具有这个特性，不过 K6-2 仍然没有与处理器本体整合的 L2 缓存，同时透过 Super Socket 7 对现有  Socket 7 平台的强化，让 K6-2 的 FSB 得以提升到 100 MHz，却又不至于影响主板生产成本太多。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/K6-2_die_shot.jpg">
+        <img src="../images/blogs/computer_lecture/K6-2_die_shot-375x209.jpg" alt="K6-2_die_shot" />
+    </a>
+    <p><b>▲ AMD K6-2 die shot</b></p>
+</div>
+
+<p>低廉的价格加上与 Pentium II 相当接近的性能，让 K6-2 与 Celeron 两款入门市场处理器大为流行，整体而言，K6-2 获得了巨大的成功 (相对于过去的产品而言)，K6-2 为 AMD 累积了一定的资本，让 AMD 得以继续存活并发展下一代的 K7 架构，不过 K6-2 的荣光并没有持续太久，超频潜力优异的 Celeron 始终居于不败，再加上 K6-2 缺乏整合的 L2 缓存，导致市占率提升终于还是面临了瓶颈。</p>
+
+<h3 id="前期产品chomper-26050">前期产品：Chomper (26050)</h3>
+
+<ul>
+  <li>发布时间：1998 年 05 月 28 日</li>
+  <li>运行频率：233 MHz ~ 350 MHz</li>
+  <li>FSB 频率：66 MHz ~ 100 MHz</li>
+  <li>L1 缓存大小：64 KB (数据与指令缓存各 32 KB)</li>
+  <li>支持插槽：Super Socket 7</li>
+  <li>电压需求：2.2 V</li>
+  <li>晶体管数：930 万枚</li>
+  <li>制造工艺：0.25 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX, 3D Now!</li>
+</ul>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/AMD_K6-2_Chomper.jpg">
+        <img src="../images/blogs/computer_lecture/AMD_K6-2_Chomper-375x374.jpg" alt="AMD_K6-2_Chomper" />
+    </a>
+    <p><b>▲ AMD K6-2 (Chomper)</b></p>
+</div>
+
+<h3 id="后期产品chomper-extended-cxt-26351">后期产品：Chomper Extended (CXT, 26351)</h3>
+
+<ul>
+  <li>发布时间：1998 年 12 月 16 日</li>
+  <li>运行频率：266 MHz ~ 550 MHz</li>
+  <li>FSB 频率：66 MHz ~ 100 MHz</li>
+  <li>L1 缓存大小：64 KB (数据与指令缓存各 32 KB)</li>
+  <li>支持插槽：Super Socket 7</li>
+  <li>电压需求：2.0 V ~ 2.2 V</li>
+  <li>晶体管数：930 万枚</li>
+  <li>制造工艺：0.25 微米 (µm)</li>
+  <li>指令集：x86-32 + MMX, 3D Now!</li>
+</ul>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/AMD_K6-2_Chomper-XT.jpg">
+        <img src="../images/blogs/computer_lecture/AMD_K6-2_Chomper-XT-375x374.jpg" alt="AMD_K6-2_Chomper-XT" />
+    </a>
+    <p><b>▲ AMD K6-2 (Chomper Extended)</b></p>
+</div>
+
+<p>Chomper Extended 核心与 Chomper 之间差距并不明显，主要是频率的拉高与部分线路的优化，让内存与 CPU 之间的沟通速度有所提升而已，其余不论是制程或是指令集与设计几乎都没有差异。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_7.html" class="btn btn-primary">上一篇</a> 
+<a href="computer_lecture_9.html" class="btn btn-primary">下一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

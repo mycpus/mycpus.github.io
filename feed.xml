@@ -1,32 +1,3106 @@
----
-search: exclude
-layout: none
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>{{ site.title | xml_escape }}</title>
-        <description>{{ site.description | xml_escape }}</description>
-        <link>{{ site.url }}/</link>
-        <atom:link href="{{ "/feed.xml" | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in site.posts limit:10 %}
+        <title>documentation-theme-jekyll</title>
+        <description>Honux&apos;s CPU Museum - 在线CPU博物馆 微处理器博物馆 古董CPU收藏 中央处理器</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 24 Dec 2025 20:13:42 +0800</pubDate>
+        <lastBuildDate>Wed, 24 Dec 2025 20:13:42 +0800</lastBuildDate>
+        <generator>Jekyll v3.10.0</generator>
+        
         <item>
-            <title>{{ post.title | xml_escape }}</title>
-            <description>{{ post.content | xml_escape }}</description>
-            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-            <link>{{ post.url | prepend: site.url }}</link>
-            <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-            {% for tag in post.tags %}
-            <category>{{ tag | xml_escape }}</category>
-            {% endfor %}
-            {% for tag in page.tags %}
-            <category>{{ cat | xml_escape }}</category>
-            {% endfor %}
+            <title>VIA/Zhaoxin CPU 微架构的演进</title>
+            <description>&lt;h3 id=&quot;804861993年推出&quot;&gt;80486，1993年推出&lt;/h3&gt;
+
+&lt;p&gt;Intel的80486是所有486和586的祖宗。&lt;/p&gt;
+
+&lt;p&gt;与其前身一样，80486与所有以前的x86处理器（80386、80286、80186等）保持了完全向后 的目标代码可比性。为了提高性能，英特尔引入了新的片上缓存层（之前存在各种外部扩展）。 8 KB、4 路组关联、回写策略高速缓存对于数据和指令都是一致的。这提供了对最近使用的数据和指令的更快访问。总线接口还进行了各种增强，包括需要单个时钟周期而不是多个时钟周期的更快通信。&lt;/p&gt;
+
+&lt;p&gt;而在使用单独封装的数学协处理器（即80387、80287等）之前，80486 将单元移至芯片上，完全消除了外部通信延迟。此外，更先进的数学算法被用来实现新的FPU，从而产生更快的浮点计算。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1992年，Cyrix推出了其第一代CPU， 486SLC和486DLC，旨在与英特尔的486SX和486DX竞争。它们还与386SX和386DX管脚兼容，这意味着它们可以作为老化的386主板的直接升级，制造商也用它们来销售廉价笔记本电脑。32位芯片，有1KB的L1缓存，性能都略低于英特尔486 CPU。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;80486是Intel80486系列微处理器的微架构，是80386的后继产品。 89 年 4 月推出的 80486 最初采用1 µm 工艺（后来为800 nm）制造。对于 Cyrix这种微架构用于其Cy486系列。&lt;/p&gt;
+
+&lt;h3 id=&quot;cy5x861995年推出&quot;&gt;Cy5x86，1995年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cyrix 于 1995 年 8 月推出了 5x86 处理器，是一款插槽为 3.3V 486 socket 的处理器，运行速度可达 80、100、120 或 133 MHz，性能与 Pentium 75 MHz 相当。填补了市场上其他处理器未能覆盖的功能空缺。&lt;/li&gt;
+  &lt;li&gt;Cyrix 在 1995 年晚些时候发布了其最著名的芯片 Cyrix 6x86 (M1)，继续了 Cyrix 更快地替代 Intel 设计插槽的传统。它拥有5x86 核心特性：超流水线微架构，但不是超标量微架构，16 KB 一级写回缓存，集成浮点单元，分支预测以及能够并行执行浮点指令和整数指令。而 6x86 的推出也使得 Cyrix 在市场中有了更广泛的影响力，尽管它的处境并不容易。&lt;/li&gt;
+  &lt;li&gt;6x86 处理器延续了 Cyrix 的传统，更快地替代英特尔设计的插槽。6x86 是该系列中的明星产品，据称其性能比英特尔“同等产品”有所提升。 6x86 处理器被命名为 P166+，表明其性能优于 Pentium 166 MHz 处理器。但 6x86 的浮点协处理器并不像 Intel Pentium 中的那样快。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;后来的6x86L是经过修改的6x86，功耗更低，6x86MX（M2）增加了MMX指令和更大的L1缓存。CyrixMII基于 6x86MX 设计，只不过是个换皮，旨在帮助该芯片从营销上更好地与Pentium II竞争。&lt;/li&gt;
+  &lt;li&gt;1997年，Cyrix发布了核心代号为Ｍ2的「6x86MX」，最大的区别是内置了MMX指令集。&lt;/li&gt;
+  &lt;li&gt;Cyrix 于 1996 年推出了 MediaGX CPU，集成了 PC 的所有主要组件，包括声音和视频，运行速度为 120 或 133 MHz。MediaGX 使得 Cyrix 在低端市场取得了成功，例如 Compaq 的 Presario 2100 和 2200 电脑。&lt;/li&gt;
+  &lt;li&gt;Cyrix Media GXi 是 Cyrix 于 1997 年发布的版本，用于移动计算市场，集成图形和音频控制器，适用于小型笔记本电脑。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;winchip1997年推出&quot;&gt;WinChip，1997年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;WinChip系列是基于Socket 7的低功耗x86处理器，由Centaur Technology设计，由IDT销售。&lt;/li&gt;
+  &lt;li&gt;它的设计与其他处理器有很大不同，利用RISC处理器市场经验创建了类似于80486的高能效处理器。&lt;/li&gt;
+  &lt;li&gt;WinChip比竞争对手（如AMD K5/K6）简单得多，因为它具有单宽度流水线和顺序执行微架构。&lt;/li&gt;
+  &lt;li&gt;它适用于很少进行浮点计算的流行应用程序，包括当时的操作系统和企业软件。&lt;/li&gt;
+  &lt;li&gt;WinChip被设计为直接替代更复杂昂贵的竞争对手处理器，利用Intel的Socket 7系统平台。&lt;/li&gt;
+  &lt;li&gt;WinChip 2(C6+)是C6的更新版，保留了简单顺序执行管道，但添加了双MMX/3DNow！处理单元。C6+ 添加动态分支预测（4096 个单位元分支历史表）&lt;/li&gt;
+  &lt;li&gt;WinChip 2A增加了小数乘法器，采用100 MHz前端总线以提高内存和L2缓存性能。&lt;/li&gt;
+  &lt;li&gt;它的性能类似于当代AMD和Cyrix 486处理器。&lt;/li&gt;
+  &lt;li&gt;WinChip 2B是修订版，芯片尺寸缩小至0.25μm，但出货量有限。&lt;/li&gt;
+  &lt;li&gt;第三种型号WinChip 3原计划具有双倍L1缓存，但未上市。&lt;/li&gt;
+  &lt;li&gt;IDT声称C6与Pentium MMX在整数性能方面相当，但浮点和MMX单元性能不及Pentium MMX。&lt;/li&gt;
+  &lt;li&gt;WinChip C6针对低端市场，类似于AMD K6和IBM/Cyrix 6x86MX的低时钟版本。&lt;/li&gt;
+  &lt;li&gt;IDT计划将C6时钟速度提高到400 MHz，并在笔记本电脑中使用低功耗。&lt;/li&gt;
+  &lt;li&gt;C6的架构不如竞争对手复杂，使用大型L1缓存和经典微处理器设计。&lt;/li&gt;
+  &lt;li&gt;WinChip C6的制造成本较低，但市场份额有限。&lt;/li&gt;
+  &lt;li&gt;WinChip C6与Intel Pentium和Pentium MMX、Cyrix 6x86以及AMD K5/K6竞争，性能仅适用于少数使用浮点数学的应用程序。&lt;/li&gt;
+  &lt;li&gt;浮点性能低于Pentium和K6，甚至比Cyrix 6x86慢。&lt;/li&gt;
+  &lt;li&gt;1999年，IDT的Centaur Technology部门被出售给VIA，标志着WinChip的终结。&lt;/li&gt;
+  &lt;li&gt;Winchip C6采用0.35微米4层金属CMOS技术，支持MMX，具有64 Kib L1高速缓存。&lt;/li&gt;
+  &lt;li&gt;WinChip 3 的 128 Kib L1 高速缓存使用 64 KB 2 路组关联代码高速缓存和 64 KB 4 路组关联数据高速缓存。支持MMX和3D Now。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cayenne-2000-年推出&quot;&gt;Cayenne ，2000 年推出&lt;/h3&gt;
+
+&lt;p&gt;Cyrix 开发的 Cayenne 微架构是 6x86MX/MII 处理器的演进版，具有双路 FPU、支持 3DNow 指令和64KB L1 和 256 KB、8-way L2 缓存。它使用在VIA Cyrix III /Joshua（后来更名为 C3）中，具有2200 万个晶体管。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_04.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_05.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_06.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;jalapeno-2000-年推出&quot;&gt;Jalapeno ，2000 年推出&lt;/h3&gt;
+
+&lt;p&gt;Cyrix废弃的2宽乱序核心设计，可能对后续VIA的乱序核心设计起到了一定影响。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_07.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;samuel2000-年推出&quot;&gt;Samuel，2000 年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;VIA采用了Centaur Technology设计的1100万晶体管Samuel核心，相比Joshua核心在功耗、尺寸和性能方面有所改进。&lt;/li&gt;
+  &lt;li&gt;Samuel核心是WinChip处理器的演变，专为更高时钟速度设计，拥有更多L1缓存但没有L2，并采用更小制造技术。&lt;/li&gt;
+  &lt;li&gt;该版本的Cyrix III虽然性能仍低于竞争对手，但非常节能，仅包含Cyrix创建的晶体管数量的一半。&lt;/li&gt;
+  &lt;li&gt;Samuel2在Samuel核心的基础上增加了64KB二级缓存，并将制程缩小至 0.15 微米，使得性能提升，使得核心尺寸减小40%，尽管性能仍落后于竞争对手。&lt;/li&gt;
+  &lt;li&gt;Cyrix III还包含MMX和3Dnow！优化，具有与流行AMD K7处理器有相同的12 级流水线。&lt;/li&gt;
+  &lt;li&gt;Samuel2采用更小制造技术，具有大型一级代码和数据缓存，但没有二级缓存，且设计更为简单。&lt;/li&gt;
+  &lt;li&gt;Samuel2的总线速度与原始Samuel内核相同，采用100和133 MHz总线速度运行，落后于AMD Duron的100 MHz DDR总线速度。&lt;/li&gt;
+  &lt;li&gt;VIA C3（原VIA Cyrix III）基于Samuel2核心发布，采用0.15微米技术制造，具有较低功耗和价格。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_08.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“Ezra”（C5C）和“Ezra-T”（C5N）只是“Samuel 2”内核的新版本，对“Ezra-T”的总线协议进行了一些小的修改，以匹配与英特尔奔腾III“Tualatin”的兼容性核心。威盛多年来一直在 x86 CPU 市场上保持着最低的功耗。然而，由于设计缺乏改进，性能落后。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_09.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nehemiah2001-年推出&quot;&gt;Nehemiah，2001 年推出&lt;/h3&gt;
+
+&lt;p&gt;Nehemiah 核心&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Nehemiah”（C5XL）是一次重大的核心修订。解决了旧核心的许多设计缺陷，包括半速 FPU。流水线级数从 12 增加到 16，以允许继续提高时钟速度。此外，它它还移除了 3DNow! 指令，改为支持 SSE 指令、AES 加密和随机数生成器、还实现了 cmov 指令，使其成为 686 级处理器。Linux 内核将此核心称为 C3-2。。但它仍然基于老旧的 Socket 370，以只有 133 MHz 的单数据速率前端总线运行。&lt;/li&gt;
+  &lt;li&gt;嵌入式系统市场更倾向于低功耗、低成本的 CPU 设计，因此威盛开始更积极地针对这一细分市场，因为 C3 符合这些特点相当好。Centaur Technology 专注于增加嵌入式市场吸引力的功能。&lt;/li&gt;
+  &lt;li&gt;“Nehemiah+”（C5P）（步进 8）修订带来了一些进步，包括高性能的 AES 加密引擎，以及一个尺寸显著小的球栅格阵列芯片封装。同时，威盛将 FSB 提升至 200 MHz，并推出了新的芯片组，如 CN400 来支持它。新的 200 MHz FSB 芯片仅在 BGA 封装中提供，因为它们与现有的 Socket 370 主板不兼容。&lt;/li&gt;
+  &lt;li&gt;由于内存性能是许多基准测试的限制因素，VIA 处理器实现了大型主缓存、大型TLB和主动预取等增强功能。虽然这些功能并非威盛所独有，但内存访问优化是他们没有放弃功能以节省芯片空间的一个领域。&lt;/li&gt;
+  &lt;li&gt;该流水线旨在为 x86 指令的大量使​​用的寄存器-内存和内存-寄存器形式提供单时钟执行。与其他 x86 处理器相比，一些常用指令需要更少的频率。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;esther2005-年推出&quot;&gt;Esther，2005 年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Esther（C5J/C7）是VIA C3系列的Nehemiah+（C5P）核心的下一个演进步骤。&lt;/li&gt;
+  &lt;li&gt;平均功耗低于1瓦特。&lt;/li&gt;
+  &lt;li&gt;2 GHz操作频率和20瓦特的TDP。&lt;/li&gt;
+  &lt;li&gt;L2缓存从64k增加到128k，关联性从C3的16路组关联增加到C7的32路组关联。&lt;/li&gt;
+  &lt;li&gt;VIA表示C7总线在物理上基于Pentium-M 479引脚封装，但使用专有的VIA V4总线进行电气信号传输，避免了法律侵权。&lt;/li&gt;
+  &lt;li&gt;“双涡轮”技术，包括双PLL，一个设置在高时钟速度，另一个设置在较低时钟速度。这使得处理器的时钟频率可以在单个处理器周期内调整。&lt;/li&gt;
+  &lt;li&gt;支持SSE2和SSE3扩展指令。&lt;/li&gt;
+  &lt;li&gt;在PAE模式下的NX位，防止缓冲区溢出软件漏洞被病毒或攻击者利用。&lt;/li&gt;
+  &lt;li&gt;硬件支持SHA-1和SHA-256哈希、RSA 加密。&lt;/li&gt;
+  &lt;li&gt;加密硬件基于“Montgomery乘法器”，支持最多32K的公钥加密密钥尺寸。&lt;/li&gt;
+  &lt;li&gt;C3系列芯片设计理念的核心是，即使是相对简单的有序标量核心，如果有高效的“前端”支持，即预取、缓存和分支预测机制，也可以提供合理的性能，抵抗复杂的超标量无序核心。&lt;/li&gt;
+  &lt;li&gt;对于C7，设计团队专注于进一步精简芯片的（前端），即缓存大小、关联性和吞吐量以及预取系统。&lt;/li&gt;
+  &lt;li&gt;C7成功地缩小了与AMD / Intel芯片性能之间的差距，因为时钟速度不受热量约束。&lt;/li&gt;
+  &lt;li&gt;凭借其超低功耗，威盛 C5J Esther 内核面向智能数字设备，将 x86 架构的应用范围进一步扩展到消费电子、嵌入式和移动领域，超出当前处理器性能和热限制所允许的范围。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;isaiah2008-年推出&quot;&gt;Isaiah，2008 年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2009年11月3日，VIA推出了Nano 3000系列。&lt;/li&gt;
+  &lt;li&gt;2011年11月11日，VIA发布了首款双核pico-itx主板的VIA Nano X2 Dual-Core Processor。&lt;/li&gt;
+  &lt;li&gt;2014年起，兆芯处理器基于VIA Nano系列。&lt;/li&gt;
+  &lt;li&gt;代号“CN”由Centaur Technology在美国使用，代号为圣经名字的台湾代号由VIA使用。&lt;/li&gt;
+  &lt;li&gt;预计VIA Isaiah在整数性能上将是上一代VIA Esther的两倍，浮点性能将是四倍。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;VIA Isaiah的架构概述&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;x86-64指令集&lt;/li&gt;
+  &lt;li&gt;时钟速度从1 GHz到2 GHz&lt;/li&gt;
+  &lt;li&gt;533 MHz或800 MHz的总线速度（Nano x2为1066 MHz）&lt;/li&gt;
+  &lt;li&gt;每个核心64 KB数据和64 KB指令的L1缓存和1 MB L2缓存。&lt;/li&gt;
+  &lt;li&gt;65 nm制造工艺（Nano x2为40 nm）&lt;/li&gt;
+  &lt;li&gt;超标量乱序指令执行&lt;/li&gt;
+  &lt;li&gt;支持MMX、SSE、SSE2、SSE3、SSSE3和SSE4指令集&lt;/li&gt;
+  &lt;li&gt;支持Intel兼容实现的x86虚拟化（在步进3之前禁用）&lt;/li&gt;
+  &lt;li&gt;支持ECC内存&lt;/li&gt;
+  &lt;li&gt;与VIA C7和VIA Eden兼容&lt;/li&gt;
+  &lt;li&gt;乱序和超标量设计：比VIA C7处理器更好。&lt;/li&gt;
+  &lt;li&gt;指令融合：将多个指令合并为单个指令，提高性能，减少功耗。&lt;/li&gt;
+  &lt;li&gt;改进的分支预测：使用两个管线阶段中的八个预测器。&lt;/li&gt;
+  &lt;li&gt;CPU缓存设计：独占缓存设计意味着L1缓存的内容不会在L2缓存中重复，提供更大的总缓存。&lt;/li&gt;
+  &lt;li&gt;数据预取：包括数据预取的新机制，包括在加载L2缓存之前加载特殊的64行缓存和直接加载到L1缓存。&lt;/li&gt;
+  &lt;li&gt;每四个周期获取x86指令，而不是英特尔的三到五个周期。&lt;/li&gt;
+  &lt;li&gt;多种数据预取机制，将预取数据直接加载到L1或L2缓存中，或者加载到特殊的小型预取缓存中&lt;/li&gt;
+  &lt;li&gt;拥有两拍的解码阶段，每周期可接收三条x86指令。&lt;/li&gt;
+  &lt;li&gt;解码阶段可执行宏融合和微操作融合。&lt;/li&gt;
+  &lt;li&gt;宏融合功能，可以将 x86 指令的某些组合合并为单个微操作（内部指令）。&lt;/li&gt;
+  &lt;li&gt;微融合功能可以将两个或多个微操作合并为一个微操作。&lt;/li&gt;
+  &lt;li&gt;每个时钟向执行单元发出三个微操作&lt;/li&gt;
+  &lt;li&gt;存储器访问：将较小的存储合并到较大的加载数据中。&lt;/li&gt;
+  &lt;li&gt;执行单元：提供七个执行单元，每个时钟可执行七个微操作。&lt;/li&gt;
+  &lt;li&gt;两个整数单元（ALU1和ALU2）&lt;/li&gt;
+  &lt;li&gt;ALU1具有完整功能，而ALU2缺少一些低使用率指令，因此更适合任务，如地址计算。&lt;/li&gt;
+  &lt;li&gt;两个存储单元，一个用于地址存储，一个用于数据存储。一个加载单元。&lt;/li&gt;
+  &lt;li&gt;两个媒体单元（MEDIA-A和MEDIA-B），具有128位宽的数据通路，支持4个单精度或2个双精度操作。&lt;/li&gt;
+  &lt;li&gt;MEDIA-A执行浮点“加”指令（单精度和双精度2时钟延迟），整数SIMD，加密，除法和平方根。&lt;/li&gt;
+  &lt;li&gt;MEDIA-B执行浮点“乘”指令（单精度2时钟延迟，双精度3时钟延迟）。&lt;/li&gt;
+  &lt;li&gt;由于引入了两个媒体单元的并行性，媒体计算每个时钟可以提供四个“加”和四个“乘”指令。&lt;/li&gt;
+  &lt;li&gt;迄今为止x86处理器具有最低时钟延迟的FP加法的新实现。&lt;/li&gt;
+  &lt;li&gt;几乎所有整数SIMD指令都在一个时钟周期内执行。&lt;/li&gt;
+  &lt;li&gt;电源管理：除了需要极低功耗外，还包括许多新功能。&lt;/li&gt;
+  &lt;li&gt;包括一个新的C6电源状态（刷新缓存，保存内部状态，并关闭核心电压）。&lt;/li&gt;
+  &lt;li&gt;自适应P-State控制：在性能和电压状态之间进行转换，无需停止执行。&lt;/li&gt;
+  &lt;li&gt;自适应超频：如果处理器核心温度低，则自动超频。&lt;/li&gt;
+  &lt;li&gt;自适应热极限：调整处理器以保持用户预定义的温度。&lt;/li&gt;
+  &lt;li&gt;支持AES加密，安全哈希算法SHA-1和SHA-256以及随机数生成。&lt;/li&gt;
+  &lt;li&gt;分支预测有八个预测器，用于推测执行和分支目标确定。&lt;/li&gt;
+  &lt;li&gt;解码后指令进入uop队列，再进ROB和保留站进行寄存器重命名。&lt;/li&gt;
+  &lt;li&gt;ROB+RS，每周期最多发出七条指令到七个执行单元。&lt;/li&gt;
+  &lt;li&gt;FP/矢量单元有强大的浮点能力，特点是对浮点加法速度快。&lt;/li&gt;
+  &lt;li&gt;不支持内存消歧和存储合并。&lt;/li&gt;
+  &lt;li&gt;缓存层次结构大，64K L1指令和数据缓存，1MB L2缓存，有数据预取缓存。&lt;/li&gt;
+  &lt;li&gt;分支预测器设计复杂，使用4096条目的4路BTB。&lt;/li&gt;
+  &lt;li&gt;ROB有65个条目，有加载和存储队列，所有调度器总共有76个条目。&lt;/li&gt;
+  &lt;li&gt;浮点寄存器文件有46个整数和48个SIMD/FP寄存器，加载/存储单元布局正常。&lt;/li&gt;
+  &lt;li&gt;分支预测器性能同时期更好，但BTB巨大并带来高延迟。&lt;/li&gt;
+  &lt;li&gt;Isaiah的BTB相对Bobcat大很多，但速度略慢，有非常复杂的分支预测器和竞争预测方法，模式识别能力更强。&lt;/li&gt;
+  &lt;li&gt;Isaiah中的执行单元非常强大，而且执行延迟非常低。然而，也存在一些弱点：
+    &lt;ul&gt;
+      &lt;li&gt;未对齐的内存访问代价非常高昂。&lt;/li&gt;
+      &lt;li&gt;存储转发仅在相对简单的情况下起作用。&lt;/li&gt;
+      &lt;li&gt;数据高速缓存访问仅限于每个时钟周期一次读取或一次写入。只有极少数情况下它才能同时读写。&lt;/li&gt;
+      &lt;li&gt;分支密度限制。每 16 字节代码仅限两次跳转或分支。当超过此限制时，性能会下降。&lt;/li&gt;
+      &lt;li&gt;分支吞吐量。 Nano 每三个时钟周期只能进行一次分支或跳转。&lt;/li&gt;
+      &lt;li&gt;当大多数指令进入 I1 和 I2 执行端口时，会出现次优排队。&lt;/li&gt;
+      &lt;li&gt;在不同执行单元或子单元之间移动数据会产生许多额外的延迟。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nano 2000 和 Nano 3000 系列之间的主要区别在于执行单元。 Nano 3000 对于大多数整数指令有两个执行单元。它有一个新的整数乘法单元，具有 2 个时钟延迟。除法得到改进，SIMD 指令也有一些小的改进。未对齐的内存访问和存储转发有所改善，但仍然比更大的处理器效率低。&lt;/li&gt;
+  &lt;li&gt;Isaiah架构与其他CPU的比较：
+    &lt;ul&gt;
+      &lt;li&gt;拥有大型分布式调度程序和强大的执行引擎。&lt;/li&gt;
+      &lt;li&gt;FP/SIMD端口延迟低，性能接近Intel Core 2。&lt;/li&gt;
+      &lt;li&gt;缓存结构与竞争对手有差异，L1D延迟短。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Isaiah架构是VIA与AMD、Intel竞争的雄心勃勃尝试。&lt;/li&gt;
+  &lt;li&gt;Isaiah具有强大的执行引擎和分支预测器，但功耗相对高。虽然功耗较高，但Nano的性能仍有竞争力，尤其在多媒体应用方面。&lt;/li&gt;
+  &lt;li&gt;Isaiah架构代表了Centaur工程团队的能力和决心，但成功的关键在于架构的预测重要工作负载和资源分配。&lt;/li&gt;
+  &lt;li&gt;与竞争对手相比，Nano具有一些优势和劣势，但对于特定应用场景仍具有价值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;isaiah22015-年推出&quot;&gt;Isaiah2，2015 年推出&lt;/h3&gt;
+
+&lt;p&gt;Isaiah2也称为CNR架构，28nm制程&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Isaiah2 在原始 Isaiah 微架构上有所改进：&lt;/li&gt;
+  &lt;li&gt;改进物理设计，实现更高的时钟速率&lt;/li&gt;
+  &lt;li&gt;更大的L2缓存，1MB-&amp;gt;2MB/Core&lt;/li&gt;
+  &lt;li&gt;支持AVX2指令集，但需要3个执行端口才能完成，因此实际运行AVX2指令延迟很高&lt;/li&gt;
+  &lt;li&gt;原生四核设计&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;zhangjiang2016-年推出&quot;&gt;Zhangjiang，2016 年推出&lt;/h3&gt;
+
+&lt;p&gt;zhangjiang也称为ZX-C+，28nm制程，是Isaiah2的轻微修改版本&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;兆芯在CNR的基础上加入了中文哈希算法SM3、SM4进入Padlock加密模块,被称为 zxsm。&lt;/li&gt;
+  &lt;li&gt;并且在物理设计上搞了两个die 共8核的胶水八核服务器KH-10000系列试验品&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;wudaokoulujiazui2018年推出&quot;&gt;Wudaokou/Lujiazui，2018年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;由于设计能力和时间不足，兆芯更关注能耗比和芯片面积。&lt;/li&gt;
+  &lt;li&gt;五道口内存控制器支持双通道DDR4，速率最高2400 MT/s。&lt;/li&gt;
+  &lt;li&gt;陆家嘴制程升级至16nm，CPU频率提升，内存控制器支持128GB，速率3200 MT/s。&lt;/li&gt;
+  &lt;li&gt;五道口架构是个全新设计，集成8个x86核心，支持多达三个显示器，GPU支持DirectX 11.1和4K分辨率，使 - 用点对点高速互连总线。&lt;/li&gt;
+  &lt;li&gt;分支预测优化：修改算法、增加循环预测器和指令队列，动态关闭前端取指和译码单元，优化预测错误带来的冲刷流水线惩罚。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;缓存层次结构改进，内存控制器、调度器和分支预测单元优化，内核设计、分支预测和调度算法改进，针 - 对长延迟负载和分支进行重排。流水线深度优化对性能提升有显著影响。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;陆家嘴与以赛亚架构对比：改进内核设计、分支预测和调度算法，内存控制器、分支预测和执行效率提升，ROB大小和调度器优化。&lt;/li&gt;
+  &lt;li&gt;缓存层次结构优化与内核设计，分支预测、调度器和ROB的性能改进，内存控制器和高速互联总线的升级。&lt;/li&gt;
+  &lt;li&gt;兆芯2016年申请的分支预测技术专利涉及算法修改和循环预测器增加，性能提升最高可达10%，节约内核功耗最高可达10%。&lt;/li&gt;
+  &lt;li&gt;陆家嘴比以赛亚能预测更多分支数目，但总体预测深度差不多，支持长的重复分支语句。&lt;/li&gt;
+  &lt;li&gt;重命名宽度和ROB优化：兆芯缩小重命名宽度，从3到2。以及减小ROB大小，从65到48，可能为了节省芯片面积，虽然兆芯一些优化减轻ROB减小带来的乱序重排能力的损失。但这仍然影响了运行向量指令的重排能力，导致运行AVX2性能提升幅度下降。&lt;/li&gt;
+  &lt;li&gt;因为设计经验不足或面积考虑，五道口的乱序执行中的寄存器放弃了前代架构中的现代化整数与浮点分离的PRF设计，转为古老的整数与浮点不分离的RRF设计。&lt;/li&gt;
+  &lt;li&gt;五道口具有 18 级流水线和 15 个周期的分支预测错误惩罚，相比以赛亚架构的22 级流水线，和20个周期的分支预测错误惩罚，减少了5个周期的错误惩罚，通过减小分支预测错误惩罚，显著改善了性能。&lt;/li&gt;
+  &lt;li&gt;评价：IPC提升10~25%，性能提升140%，内存带宽提升120%，分支预测和调度算法优化对提升频率和性能影响显著，但设计能力偏弱，导致竞争力不足。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_11.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cns-2020年推出&quot;&gt;CNS ,2020年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CNS的前端出自国内兆芯团队设计。&lt;/li&gt;
+  &lt;li&gt;CNS采用分支预测和指令缓存耦接的取指架构。分支预测单元提供取指请求，然后指令缓存取指，在解码后送入一个24条目的微指令队列，并传给译码单元，最终形成后端的指令供给。&lt;/li&gt;
+  &lt;li&gt;CNS的TAGE预测器虽然可以识别很长的循环的分支走向，但准确率不如Haswell高，并且循环越长，识别的延迟越高，这限制了它提升频率的上限。在缓存了超过4096条目的指令但小于32KB时，分支指令延迟变成8个周期。&lt;/li&gt;
+  &lt;li&gt;对于单个间接分支，CNS可以存 256 个分支，每个分支最多有 4 个目标。大部分情况下可以跟踪大约24个目标，最多可以达到128个。大约有1024个总的间接目标被跟踪。&lt;/li&gt;
+  &lt;li&gt;在不到 16 个分支的情况下，CNS 可以维持每周期两个取分支。
+解码器类似Intel的设计，解码器有3个简单解码器和1个复杂解码器。对于较长的复杂指令，CNS和Haswell需要6个周期才能执行。&lt;/li&gt;
+  &lt;li&gt;CNS重命名器可以进行zero-idiom操作，将某个寄存器清零，例如XOR EAX, EAX。重命名器可以分配一个全新的目标寄存器，然后立即将其清零。&lt;/li&gt;
+  &lt;li&gt;CNS似乎没有移动消除能力。寄存器移动指令的寄存器依赖链将以每个周期执行一个。&lt;/li&gt;
+  &lt;li&gt;CNS具有一个类似Haswell的联合式（unified）的64条目的大型调度器&lt;/li&gt;
+  &lt;li&gt;CNS 有两个 AGU 端口，每个AGU端口都能够处理加载或存储，额外有一个数据存储端口。 Haswell 具有三个 AGU，允许它在同一周期内执行两次加载和一次存储。永丰和CNS一样，只有两个加载地址单元(load AGU)。&lt;/li&gt;
+  &lt;li&gt;CNS 的所有加载完全包含在先前存储中的情况都会以 7 个周期的延迟进行处理。&lt;/li&gt;
+  &lt;li&gt;CNS 拥有72条目的加载队列 + 46条目的存储队列，与以赛亚和陆家嘴不同，它可以在未知地址的存储之前推测性地执行加载，进行推测性内存消歧。&lt;/li&gt;
+  &lt;li&gt;CNS CPU有4个整数单元，其中2个具有乘法器、位操作单元。整数单元每个周期最多可以处理2条分支指令，重负载下每个周期只处理1条分支指令。&lt;/li&gt;
+  &lt;li&gt;CNS有3个FP/AVX单元，两个包括浮点乘累加（MAC）单元；第三个FP/AVX单元处理FP除法和加密（AES）加速。所有这三个单元都可以处理AVX整数指令。&lt;/li&gt;
+  &lt;li&gt;CNS流水线需要20个阶段完成大部分整数操作，对于命中数据缓存的加载，需要22个阶段。它为缓存访问分配了5个阶段，&lt;/li&gt;
+  &lt;li&gt;Centaur的CHA处理器（CNS是核心）的缓存与Haswell相当，三缓具有8个2MB的切片，通过2×512bit的环形总线连接，该环形总线实际是由两个四核环组成的双环结构，在访问共享2×4=8MB时，具有比访问16MB更高的带宽，实际8个核心总共约100字节/周期的带宽，比Haswell的约80字节/周期要好一些，但Haswell的2×256bit的环形总线频率更高，也更节能。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_12.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;yongfeng2022年推出&quot;&gt;Yongfeng，2022年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;永丰与CNS在前端设计上高度相似，出自兆芯团队设计。&lt;/li&gt;
+  &lt;li&gt;永丰采用分支预测和指令缓存耦接的取指架构，分支延迟仍然和CNS一样为3个周期&lt;/li&gt;
+  &lt;li&gt;改进了取指延迟，减少一个周期的气泡，提供了较高的频率。&lt;/li&gt;
+  &lt;li&gt;TAGE预测器性能：永丰采用改进型TAGE预测器，准确率可能接近Haswell水平。&lt;/li&gt;
+  &lt;li&gt;永丰和世纪大道能对预取到的16字节指令中最多两条分支指令进行预测，每周期只采取一条。&lt;/li&gt;
+  &lt;li&gt;CISC解码：永丰的解码器类似Intel设计，具有3个简单解码器和1个复杂解码器。&lt;/li&gt;
+  &lt;li&gt;永丰没有设计微指令缓存，可能是出于安全性考虑，避免与幽灵、熔断漏洞相关的攻击。&lt;/li&gt;
+  &lt;li&gt;重命名，永丰的重命名器可以进行zero-idiom操作，相比CNS架构还可以进行寄存器移动消除。&lt;/li&gt;
+  &lt;li&gt;永丰的调度器可能是类似于Zen的设计，兆芯通过参考Zen的乱序调度，改进并延续了陆家嘴/以赛亚的小型分离式调度器设计，向量寄存器的位宽是128bit与CNS的256bit差别很大，并且每个调度器将微指令发往独属于自己的那个执行端口&lt;/li&gt;
+  &lt;li&gt;整数与分支：永丰有4个整数单元，每个单元几乎一样，每个周期只能处理1条分支指令。&lt;/li&gt;
+  &lt;li&gt;浮点与向量：永丰有4个128bit位宽的FP/AVX单元，向量整数单元和浮点单元的延迟和吞吐量不如CNS。&lt;/li&gt;
+  &lt;li&gt;永丰拥有64条目的加载队列 + 48条目的存储队列，与CNS一样，也可以在未知地址的存储之前推测性地执行加载，进行推测性内存消歧。&lt;/li&gt;
+  &lt;li&gt;永丰的所有加载完全包含在先前存储中的情况都会以 6-7 个周期的延迟进行处理，与Zen类似。&lt;/li&gt;
+  &lt;li&gt;永丰对乘法做了比较多的优化，部分指令的延迟优于Zen。&lt;/li&gt;
+  &lt;li&gt;永丰的地址生成性能大致与Zen类似。&lt;/li&gt;
+  &lt;li&gt;永丰的L2的数据预取带宽与Zen类似，为32 Bytes/Cycle，只有CNS的一半。L1数据预取带宽与是Zen的2倍，L1\L2指令预取带宽与是Zen的一半。&lt;/li&gt;
+  &lt;li&gt;永丰可能具有18~20级流水线，和Zen1一样有18个周期的分支预测失败惩罚，它为缓存访问分配了4个阶段。&lt;/li&gt;
+  &lt;li&gt;采用交叉开关互联，具有较高互联延迟和更低的互联带宽&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_via_zhaoxin_microarchitectures_13.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;出处：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/693666904&quot;&gt;https://zhuanlan.zhihu.com/p/693666904&lt;/a&gt;&lt;/p&gt;
+
+</description>
+            <pubDate>Mon, 22 Dec 2025 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/evolution_of_amd_via_zhaoxin_microarchitectures.html</link>
+            <guid isPermaLink="true">http://localhost:4000/evolution_of_amd_via_zhaoxin_microarchitectures.html</guid>
+            
+            <category>history</category>
+            
+            
         </item>
-        {% endfor %}
+        
+        <item>
+            <title>Intel CPU 微架构的演进</title>
+            <description>&lt;h3 id=&quot;804861989-年-推出&quot;&gt;80486，1989 年 推出&lt;/h3&gt;
+
+&lt;p&gt;所有486和586的祖宗。&lt;/p&gt;
+
+&lt;p&gt;与其前身一样，80486与所有以前的x86处理器（80386、80286、80186等）保持了完全向后 的目标代码可比性。为了提高性能，英特尔引入了新的片上缓存层（之前存在各种外部扩展）。 8 KB、4 路组关联、回写策略高速缓存对于数据和指令都是一致的。这提供了对最近使用的数据和指令的更快访问。总线接口还进行了各种增强，包括需要单个时钟周期而不是多个时钟周期的更快通信。&lt;/p&gt;
+
+&lt;p&gt;而在使用单独封装的数学协处理器（即80387、80287等）之前，80486 将单元移至芯片上，完全消除了外部通信延迟。此外，更先进的数学算法被用来实现新的FPU，从而产生更快的浮点计算。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;80486是Intel80486系列微处理器的微架构，是80386的后继产品。 89 年 4 月推出的 80486 最初采用1 µm 工艺（后来为800 nm）制造。对于 AMD，这种微架构用于其Am486和Am5x86系列。该架构于 1993 年被 Intel 的P5和1994 年的K5取代。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;p51993年推出&quot;&gt;P5，1993年推出&lt;/h3&gt;
+
+&lt;p&gt;P5 Pentium 是超标量处理器，可以同时执行两条指令，但不能乱序处理。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;P5 中的分支预测机制与其他处理器不同，因此遵循一些文档建议可能导致代码效率低下。&lt;/li&gt;
+  &lt;li&gt;P5 的分支目标缓冲区 (BTB) 最多可保存 256 个跳转指令信息，组织为 4 路组关联高速缓存。&lt;/li&gt;
+  &lt;li&gt;BTB 使用伪随机替换算法，新条目不一定取代最近最少使用的条目。&lt;/li&gt;
+  &lt;li&gt;每个条目有一个饱和计数器，状态图显示了预测器状态。&lt;/li&gt;
+  &lt;li&gt;缺陷导致失败分支的错误预测次数是成功分支的三倍。&lt;/li&gt;
+  &lt;li&gt;BTB 机制计算指令对而不是单个指令，需要了解指令如何配对以分析存储位置。&lt;/li&gt;
+  &lt;li&gt;控制传输指令的 BTB 条目附加到前一个指令对的地址。&lt;/li&gt;
+  &lt;li&gt;连续跳转可能导致刷新管道和错误预测损失。&lt;/li&gt;
+  &lt;li&gt;P5 和 PMMX 上的静态预测存在失败情况，不会获得 BTB 条目。&lt;/li&gt;
+  &lt;li&gt;P5 和 P5MMX 有两条 U/V 管道用于执行指令，可同时执行两条指令提高速度。&lt;/li&gt;
+  &lt;li&gt;前缀指令只能在 U 管道中执行，条件邻近跳转除外。&lt;/li&gt;
+  &lt;li&gt;重新排序指令以使其配对是有利的，但有些指令不能配对或只能在特定管道中配对。如果第二条指令遭遇 AGI 停顿，那么两条指令不会同时执行。&lt;/li&gt;
+  &lt;li&gt;完美搭配条件包括寄存器的读写情况，MMX 指令的配对规则，以及指令的长度和地址访问情况。&lt;/li&gt;
+  &lt;li&gt;一条可配对整数指令从内存中读取数据，进行一些计算，并将结果存储在寄存器或标志中，需要 2 个时钟周期。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_03.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_04.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;p61995-年推出&quot;&gt;P6，1995 年推出&lt;/h3&gt;
+
+&lt;p&gt;P6是P5的后继者， 最开始发布在Pentium Pro 上，广泛使用在Pentium Pro、II 和 III 中。 P6 于 1995 年推出，一直持续到 2000 年，采用350 nm和250 nm工艺制造。 P6于 2000 年底 被NetBurst淘汰。&lt;/p&gt;
+
+&lt;p&gt;1995 年的 Pentium Pro 是第一款具有乱序执行功能的英特尔处理器。微架构设计相当成功。这种设计经过多代的进一步发展，形成了我们今天拥有的处理器——稍微绕道了不太成功的 Pentium 4 或 Netburst 架构。&lt;/p&gt;
+
+&lt;p&gt;P6大概有14~15个分支预测错误惩罚周期，经常受到寄存器读取停顿影响。所有基于 P6 微架构及其后继产品、Pentium M、Core 和 Nehalem 微架构的 Intel 处理器都有每个时钟周期从寄存器文件读取两到三次的限制。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;指令长度解码：
+    &lt;ul&gt;
+      &lt;li&gt;P6 微架构的指令长度解码器能确定每个时钟周期的三个指令长度，并反馈给指令获取单元以生成新的 IFETCH 块。&lt;/li&gt;
+      &lt;li&gt;它支持并行解码所有 16 个可能的起始地址。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;指令解码器和解码组：
+    &lt;ul&gt;
+      &lt;li&gt;指令解码器将指令转换为微指令，三个解码器 D0、D1 和 D2 并行工作，每个时钟周期最多解码三个指令。&lt;/li&gt;
+      &lt;li&gt;D0 每个周期最多生成 4 µops，D1 和 D2 只处理简单指令，每条指令最多生成 1 µop，长度不超过 8 字节。&lt;/li&gt;
+      &lt;li&gt;IFETCH 块中第一条指令总是指向 D0，接下来的两条可能指向 D1 和 D2。&lt;/li&gt;
+      &lt;li&gt;如果某指令无法由 D1 或 D2 处理，则需等 D0 为空，后续指令也会延迟。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;寄存器读停顿：
+    &lt;ul&gt;
+      &lt;li&gt;通过性能监视器编号 0A2H 可检测寄存器读停顿，无法区分其他类型的资源停顿。&lt;/li&gt;
+      &lt;li&gt;避免停顿的方法包括按规则排序指令、延迟读取寄存器等策略。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;乱序执行和退出：
+    &lt;ul&gt;
+      &lt;li&gt;重排序缓冲区可容纳 40 µops 和 40 个临时寄存器，退休站每个时钟周期处理三个微指令。&lt;/li&gt;
+      &lt;li&gt;指令乱序执行、内存写入不能乱序执行。&lt;/li&gt;
+      &lt;li&gt;避免内存写入读取可能的误执行需要确保执行单元有其他任务可执行。&lt;/li&gt;
+      &lt;li&gt;预测执行下的 µop 在预测正确前无法退出。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;部分标志停顿后读取：
+    &lt;ul&gt;
+      &lt;li&gt;部分标志停顿在读取标志位的指令上发生，例如 LAHF、PUSHF、INC、DEC 等。&lt;/li&gt;
+      &lt;li&gt;移位或旋转后读取标志位可能引起停顿，但某些情况下不会发生。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;存储转发停顿：
+    &lt;ul&gt;
+      &lt;li&gt;存储转发停顿类似于部分寄存器停顿，发生在混合数据大小的同一内存地址上&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_06.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_07.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;netburst2000年推出&quot;&gt;NetBurst，2000年推出&lt;/h3&gt;
+
+&lt;p&gt;NetBurst（也称为P68）是P6的后继者，它是大名鼎鼎的Pentium 4的微架构，桌面端64位单核x86微处理器。 NetBurst于 2006 年初 被Core微架构取代。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Willamette 核心
+    &lt;ul&gt;
+      &lt;li&gt;180 nm&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Northwood 核心
+    &lt;ul&gt;
+      &lt;li&gt;130 nm&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Prescott 核心
+    &lt;ul&gt;
+      &lt;li&gt;90 nm&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cedar Mill 核心
+    &lt;ul&gt;
+      &lt;li&gt;65nm&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;从2000年~2006年，打磨了整整4代。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Netburst 架构是当时庞大的核心。与其前身 Pentium III 相比，Pentium 4 拥有更多执行资源和更大的乱序结构。与竞争对手 AMD 的 Athlon 64 以及它的后继者 Merom 相比，它也是一个大型核心。&lt;/li&gt;
+  &lt;li&gt;与基于英特尔 P6 架构的 Pentium III 相比，Netburst 处于完全不同的规模上。虽然两者都有三倍宽的流水线，但 Netburst 上的每个关键乱序结构都大得多。&lt;/li&gt;
+  &lt;li&gt;分支预测对于任何 CPU 都非常重要，尤其适用于高频长流水线的 Netburst 。它需要非常好的分支预测准确性来利用其庞大（当时而言）的重排序能力。&lt;/li&gt;
+  &lt;li&gt;Netburst 使用了一个具有 16 位全局历史缓冲区的两级自适应预测器，其分支预测能力在当时非常先进。Netburst 可以跟踪超过 1024 个分支并处理它们。
+N - etburst 的零气泡BTB被塞满后，分支处理速度急剧下降。可能使用了其 4096 条目 BTB，并且该处理路径非常缓慢。&lt;/li&gt;
+  &lt;li&gt;Merom 和 Westmere 是 Netburst 的后继者，它们无法在小分支占用空间时达到相同的速度。&lt;/li&gt;
+  &lt;li&gt;Netburst 的指令缓存策略有其优势，跳过指令解码具有明显的延迟、带宽和功耗优势。&lt;/li&gt;
+  &lt;li&gt;Netburst 的重命名和分配阶段是 3 宽的。它能够识别零化惯用语和消除假依赖关系。&lt;/li&gt;
+  &lt;li&gt;Netburst 的乱序结构非常庞大，在 Nehalem 推出之前无法匹配。但是，这种架构导致了一些问题，例如处理缓存丢失和取消伪指令的能力。&lt;/li&gt;
+  &lt;li&gt;Netburst 的存储转发和加载/存储单元机制相对原始。存储转发仅对地址完全匹配的情况成功。&lt;/li&gt;
+  &lt;li&gt;Netburst 的 L1 数据缓存和 L2 缓存带宽相对较低，尤其是对于更大的工作集。与 AMD 相比，Netburst 的 L1D 读取带宽较低，但是其高时钟频率弥补了一部分延迟。&lt;/li&gt;
+  &lt;li&gt;Netburst 对于非对齐的内存访问成本较高，导致性能下降。写入带宽较低是因为它使用了写入直通 L1D 缓存。&lt;/li&gt;
+  &lt;li&gt;Intel 在 Netburst 中引入了大量新的微架构技术，但风险较高，最终未能实现预期的性能和IPC提升。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_08.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_09.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pentium-m2003-年推出&quot;&gt;Pentium M，2003 年推出&lt;/h3&gt;
+
+&lt;p&gt;Pentium M是改进的Intel P6 微体系结构&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pentium M是一种移动端32位单核x86微处理器系列，于2003年3月推出。&lt;/li&gt;
+  &lt;li&gt;与面向桌面的Pentium 4低功耗版本不同，它是Pentium III Tualatin设计的大幅修改版本。&lt;/li&gt;
+  &lt;li&gt;优化了电源效率，延长了笔记本电脑电池寿命，平均功耗低且发热量也低。&lt;/li&gt;
+  &lt;li&gt;时钟速度低于Pentium 4，但性能相似，主要针对电池寿命和功耗进行优化。&lt;/li&gt;
+  &lt;li&gt;PM与P6流水线几乎相同，但更长，并且分支预测机制更复杂，可能需要三级。&lt;/li&gt;
+  &lt;li&gt;指令获取改进，不受边界或高速缓存行边界影响，新的堆栈引擎在指令解码附近实现。&lt;/li&gt;
+  &lt;li&gt;µop融合机制未必需要额外阶段，ROB读取到写回仅有3个时钟。&lt;/li&gt;
+  &lt;li&gt;PM流水线可能比P6多3或4级，包括用于分支预测、指令获取和堆栈引擎的额外级。&lt;/li&gt;
+  &lt;li&gt;µop融合、堆栈引擎和复杂的分支预测都是改进，降低功耗，加快执行速度。&lt;/li&gt;
+  &lt;li&gt;支持SSE2，拥有专用寄存器堆栈管理。&lt;/li&gt;
+  &lt;li&gt;简化分支预测表，添加全局历史、间接预测和循环预测。&lt;/li&gt;
+  &lt;li&gt;PM中指令取得方式与PPro、P2和P3相同，但预测跳转的效率更高。&lt;/li&gt;
+  &lt;li&gt;解码工作方式相同，PM有三个并行解码器：D0、D1和D2。&lt;/li&gt;
+  &lt;li&gt;未融合的微指令从保留站提交到连接到所有执行单元的五个执行端口。&lt;/li&gt;
+  &lt;li&gt;PM有4x16字节循环缓冲区存储预解码指令，在取指令成为瓶颈的小循环中有优势。&lt;/li&gt;
+  &lt;li&gt;存储器写操作在PM上融合，但读取-修改操作需两微指令。&lt;/li&gt;
+  &lt;li&gt;PM的ROB重新设计，每条目最多3输入相关性，µop融合有多个优点。&lt;/li&gt;
+  &lt;li&gt;PM的最大输出为每周期6微指令，避免指令派遣单元需根据4-1-1模式调度指令。&lt;/li&gt;
+  &lt;li&gt;执行单元的最大吞吐量为每个时钟周期5个未融合微操作，每个端口一个。&lt;/li&gt;
+  &lt;li&gt;端口0和1都有一个整数ALU，可以同时处理最常见的整数指令。&lt;/li&gt;
+  &lt;li&gt;PM可以同时进行浮点加法和整数加法，但不能同时进行浮点乘法和整数乘法。&lt;/li&gt;
+  &lt;li&gt;整数加法等简单指令具有一个时钟周期的延迟，乘法单元采用流水线方式。&lt;/li&gt;
+  &lt;li&gt;128位XMM操作被分成两个64位µop，除非输出仅为64位。&lt;/li&gt;
+  &lt;li&gt;PM的执行单元均匀分布在端口0和1之间，许多指令可以发送到这两个端口中的任何一个。&lt;/li&gt;
+  &lt;li&gt;毫无疑问，PM的实现机制旨在提高性能，但存在一些弊端，如代码执行时间较长等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_10.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_11.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;yonah-2006-年推出&quot;&gt;Yonah ，2006 年推出&lt;/h3&gt;
+
+&lt;p&gt;Yonah是改进型 Pentium M ，该微架构介于 先前的Pentium M 和后续 Core 微架构之间&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;65nm&lt;/li&gt;
+  &lt;li&gt;支持SSE3&lt;/li&gt;
+  &lt;li&gt;单核和双核技术，具有 2 MB 共享二级缓存&lt;/li&gt;
+  &lt;li&gt;提高 FSB 速度，FSB 运行速度为 533 MT/s 或 667 MT/s&lt;/li&gt;
+  &lt;li&gt;12 级流水线&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Yonah 和 Core2 中的分支预测机制是相同的，误预测损失约为 12~13 个时钟周期.&lt;/p&gt;
+
+&lt;p&gt;Yonah有更多机会进行 XMM 指令的 µop 融合。 128 位 XMM 指令由 64 位执行单元中的两个或多个 64 位微指令处理&lt;/p&gt;
+
+&lt;p&gt;Yonah和 Pentium M 中的误预测损失约为 13 个时钟周期，Core2 中的误预测损失约为 15 个时钟周期，与流水线的长度相对应。无法预测远跳、远调用和远返回。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_12.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;core-2006-年推出&quot;&gt;Core ，2006 年推出&lt;/h3&gt;
+
+&lt;p&gt;Intel Core微架构，首代核心为65nm的Merom）是Intel于2006年中期推出的多核处理器微架构。它是对Yonah 的一次重大演变，Yonah 是P6 微架构系列的上一代迭代，该系列始于 1995 年的Pentium Pro。它支持X86-64，取代了NetBurst微架构，后者由于为高时钟速率设计的超长流水线而遭受高频低能的嘲笑。&lt;/p&gt;
+
+&lt;p&gt;第二代核心为Penryn，45 nm 缩小的 Core 微架构，具有更大的缓存、更高的FSB和时钟速度、支持SSE4.1指令、支持 XOP 和 F/SAVE 和 F/STORE 指令、增强的寄存器别名表和更大的整数寄存器文件。&lt;/p&gt;
+
+&lt;p&gt;Core微架构是一个重大的架构升级，它部分基于Intel 以色列团队设计的Pentium M处理器系列。Core 中的误预测损失约为 14~15 个时钟周期，不到Prescott的一半。 Penryn 的后继者Nehalem的分支误预测惩罚比 Core/Penryn 高两个周期。分支预测机制比以前的处理器更先进。条件跳转由结合两级预测器和循环计数器的混合预测器处理。此外，还有一种预测间接跳转和间接调用的机制&lt;/p&gt;
+
+&lt;p&gt;与P6、Pentium M和NetBurst微架构的 3 个 IPC 功能相比，在理想情况下可以维持最多 4 个指令/周期(IPC) 执行速率。&lt;/p&gt;
+
+&lt;p&gt;新架构采用双核设计，具有共享二级缓存，旨在实现最高每瓦性能和改进的可扩展性。&lt;/p&gt;
+
+&lt;p&gt;该设计中包含的一项新技术是Macro-Ops Fusion，它将两条x86指令融合成一个微指令。例如，像比较和条件跳转这样的通用代码序列将成为单个微操作。然而，该技术不适用于 64 位模式。&lt;/p&gt;
+
+&lt;p&gt;它可以推测性地在具有未知地址的先前存储之前执行加载。&lt;/p&gt;
+
+&lt;p&gt;其他新技术包括所有 128 位 SSE 指令的 1 个周期吞吐量（之前为 2 个周期）和新的节能设计。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Penryn是Merom的45纳米缩小版，代表了Intel P6架构的巨大进化。相较于P6系列中的Core Solo和Pentium M前辈，Penryn更宽更深更先进。Merom还为P6增加了64位执行，而Penryn继续沿用。尽管有这些巨大进步，Penryn仍保留了一些明显的P6特征，比如大型的联合式调度器和ROB+RRF的乱序执行方案。&lt;/li&gt;
+  &lt;li&gt;在许多方面，Penryn看起来比Netburst更小、不那么复杂。但与Netburst不同，Merom和Penryn在通用指令上执行得非常出色。它们拥有大型、低延迟的缓存。各种复杂情况下的惩罚大多是合理的，不像Netburst那样。&lt;/li&gt;
+  &lt;li&gt;Netburst的错误预测惩罚甚至比Intel发布的流水线长度暗示的还要高，因为在错误预测分支后无法取消错误获取的指令，只能强制执行。分支预测器不仅需要准确，还需要快速。为了快速提供分支目标，Penryn拥有2048个条目的BTB。&lt;/li&gt;
+  &lt;li&gt;Penryn还可以处理多达四个被采用的分支而没有流水线气泡。从某种意义上说，这与Netburst相比是一个退步，因为Netburst可以处理超过1024个分支且延迟只有1个周期。然而，Penryn在一级BTB失效后表现更好。2048个条目的BTB只有一个惩罚周期。&lt;/li&gt;
+  &lt;li&gt;Penryn因此对于2000年代后期的高性能CPU来说有一个不错的分支预测器。预测准确性比现代桌面CPU要差。但即使是一个一般的分支预测器也能有很大作用，而Penryn的分支预测器仍然足够准确地预测绝大多数的分支。&lt;/li&gt;
+  &lt;li&gt;前端：指令获取与之前的P6 CPU一样，Penryn使用传统的32 KB L1指令缓存。与Pentium M相比，解码器现在是4个宽度而不是3个宽度。有趣的是，Intel最初希望将P6扩展为4个宽度，但意识到以更高时钟速度的3个宽度核心可以获得更好的整体性能。&lt;/li&gt;
+  &lt;li&gt;与Netburst的跟踪缓存相比，Penryn的L1指令缓存更容易受到指令获取带宽瓶颈的影响。但只要指令长度保持相对较短，Penryn应该会看到更高的前端带宽。传统的指令缓存还可以更好地利用x86的指令密度，并有效地利用缓存容量。&lt;/li&gt;
+  &lt;li&gt;尽管Penryn有一个宽的传统解码器，但核心在从L2运行代码方面仍然相当慢。在L1i失效后，核心无法超过1个IPC，即使是4字节的指令也是如此。K10的行为类似，尽管AMD受益于更大的指令缓存，因此不太可能遭受L2代码获取的惩罚。随着代码占用越来越大，这两种架构交换性能排位。&lt;/li&gt;
+  &lt;li&gt;如果代码完全溢出缓存，与K10相比，Dunnington会受到影响。客户端Penryn并不那么糟糕，并在从DRAM获取指令时实现与K10的粗略相等。Penryn的重命名器在识别到清零习惯用法时可以打破依赖关系，但无法完全消除它们。&lt;/li&gt;
+  &lt;li&gt;即使一条指令保证清零一个寄存器，它仍然需要通过ALU管道。K10的重命名器类似，所以与K10一样，Penryn可能会受到这种惩罚。Penryn可以消除一些习惯用法，并通过实现大型ROB和统一调度器来提高效率。&lt;/li&gt;
+  &lt;li&gt;分支整流器不仅需要准确，还需要快速。Penryn使用统一的分支整流器，能够在单个周期处理多达四个分支。这对于分支密集型代码非常重要。K10使用统一的分支整流器，能够处理多达两个分支。Penryn因此对分支语句造成瓶颈主导的代码更有效。&lt;/li&gt;
+  &lt;li&gt;Penryn的ROB可以保存128个微操作。这意味着即使有大量的分支代码，Penryn也可以保持高IPC。这对于类似Netburst的长乱序流水线至关重要。&lt;/li&gt;
+  &lt;li&gt;Penryn的L3缓存延迟约为37 ns，比AMD的L3缓存延迟高得多。&lt;/li&gt;
+  &lt;li&gt;L3带宽也不足。使用8 MB的测试大小，单个核心只能从L3获取8.2 GB/s。在簇中使用两个核心，得到9.49 GB/s。如果我们开始加载套接字中的所有核心，L3基本上就消失了。这是因为L3包含了上一级缓存的内容。如果Penryn的三个簇分别缓存不同的数据，则只有3 MB的L3容量是有用的。&lt;/li&gt;
+  &lt;li&gt;对于IO连接，MCH具有28条PCIe 1.0通道，另外有四条专用通道连接到南桥。&lt;/li&gt;
+  &lt;li&gt;Penryn展示了对于高性能CPU来说，低延迟和低惩罚的缓存层次结构比花哨的架构特性更为重要。当然，先进的分支预测器和依赖预测器有所帮助。大型乱序执行缓冲区也有所帮助。但它们不能作为解决严重架构缺陷的良好应对机制，就像我们在Netburst中看到的那样。Merom因此成为Intel高端产品的一种架构重置。随着Nehalem和Sandy Bridge的推出，Intel逐渐将Netburst的先进特性与P6系列相结合，打造出了AMD数年内无法匹敌的产品。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_13.jpg&quot; alt=&quot;Penryn&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_14.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nehalem2008-年推出&quot;&gt;Nehalem，2008 年推出&lt;/h3&gt;
+
+&lt;p&gt;首代酷睿系列的微架构&lt;/p&gt;
+
+&lt;p&gt;Westmere： 32 nm的Nehalem 微架构，具有多项新功能&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;L2/L3 高速缓存上的高速缓存行块从 NetBurst &amp;amp; Merom/Penryn 中的 128 字节减少到这一代中每行 64 字节（与 Yonah 和 Pentium M 大小相同）。&lt;/li&gt;
+  &lt;li&gt;重新引入超线程。&lt;/li&gt;
+  &lt;li&gt;英特尔睿频加速1.0。&lt;/li&gt;
+  &lt;li&gt;某些型号具有智能缓存的2–24 MiB L3 缓存。&lt;/li&gt;
+  &lt;li&gt;指令获取单元(IFU) 包含二级分支预测器，具有二级分支目标缓冲区(BTB) 和返回堆栈缓冲区(RSB)。 Nehalem 还支持英特尔处理器之前使用的所有预测器类型，例如间接预测器和循环检测器&lt;/li&gt;
+  &lt;li&gt;sTLB（二级统一转换后备缓冲区）（即指令和数据）仅包含小页面的 512 个条目，并且再次是 4 路关联。&lt;/li&gt;
+  &lt;li&gt;每个核心 3 个整数 ALU、2 个矢量 ALU 和 2 个 AGU&lt;/li&gt;
+  &lt;li&gt;本机（单个芯片上的所有处理器内核）四核、六核和八核处理器&lt;/li&gt;
+  &lt;li&gt;每个内核 64 KB L1 缓存（32 KB L1 数据和 32 KB L1 指令），每个内核 256 KB L2 缓存。&lt;/li&gt;
+  &lt;li&gt;将PCI Express和DMI集成到中端型号的处理器中，取代北桥。&lt;/li&gt;
+  &lt;li&gt;集成内存控制器支持两个或三个DDR3 SDRAM内存通道或四个FB-DIMM2通道。&lt;/li&gt;
+  &lt;li&gt;第二代英特尔虚拟化技术，引入了扩展页表支持、虚拟处理器标识符 (VPID) 和不可屏蔽中断窗口退出。&lt;/li&gt;
+  &lt;li&gt;SSE4.2和POPCNT说明。&lt;/li&gt;
+  &lt;li&gt;宏指令融合现在可以在 64 位模式下运行。&lt;/li&gt;
+  &lt;li&gt;20 至 24 个流水线级。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_15.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_16.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bonnell2008年推出&quot;&gt;Bonnell，2008年推出&lt;/h3&gt;
+
+&lt;p&gt;Bonnell是英特尔45 nm超低电压微处理器的微架构，于 2008 年首次为其当时的新Atom系列推出。 Bonnell以美国低功耗处理器设计团队扎堆的奥斯汀的最高点——MountBonnell命名，是英特尔首款兼容x86-64的低功耗微架构，旨在瞄准超低功耗市场，与VIA竞争。&lt;/p&gt;
+
+&lt;p&gt;Bonnell（当时的 Silverthorne 项目）是由英特尔于 2004 年在奥斯汀德克萨斯开发中心创建的当时新的低功耗设计团队以及新的芯片组 (Poulsbo) 设计团队设计的。设计团队由埃莉诺拉·约利 (Elinora Yoeli) 领导。 Yoeli 之前在她的祖国工作过，而 Bonnell 由美国设计，与海法以色列设计中心从事的任何英特尔项目都没有关系。此前，Yoeli 曾领导以色列团队开发PentiumM。&lt;/p&gt;
+
+&lt;p&gt;Bonnell 的架构与其他英特尔设计几乎没有共同之处，当然它可能参考了古老的P5微架构。为了实现严格的超低功耗目标，Bonnell 采用了非常精简的设计，放弃了英特尔高性能架构所使用的许多高性能技术，例如激进的推测执行、乱序执行和 µop 转换。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_17.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_18.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sandy-bridge2011年推出&quot;&gt;Sandy Bridge，2011年推出&lt;/h3&gt;
+
+&lt;p&gt;使用的32 nm。 Sandy Bridge 微体系结构是Nehalem和Westmere 微体系结构的后继者。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;英特尔睿频加速2.0&lt;/li&gt;
+  &lt;li&gt;每个核心32KB数据＋32KB指令L1缓存和256 KBL2缓存&lt;/li&gt;
+  &lt;li&gt;共享L3缓存，其中包括处理器显卡(LGA 1155)&lt;/li&gt;
+  &lt;li&gt;64字节缓存线大小&lt;/li&gt;
+  &lt;li&gt;新的uOP缓存，最多1536项&lt;/li&gt;
+  &lt;li&gt;每个核心改进了3个整数ALU、2个向量ALU和2个AGU&lt;/li&gt;
+  &lt;li&gt;每个内存通道的每个CPU周期两次加载/存储操作&lt;/li&gt;
+  &lt;li&gt;解码微操作缓存和放大、优化的分支预测器&lt;/li&gt;
+  &lt;li&gt;Sandy Bridge 保留了Nehalem 中的四个分支预测器:分支目标缓冲区(BTB)、间接分支目标数组、循环检测器和重命名的返回堆栈缓冲区(RSB)。Sandy Bridge有一个BTB，其分支目标数量是Nehalem中L1和L2 BTB的两倍。&lt;/li&gt;
+  &lt;li&gt;改进了AVX、AES加密(AES指令集）和SHA-1哈希的性能&lt;/li&gt;
+  &lt;li&gt;内核、图形、缓存和系统代理域之间的256位/周期环形总线互连&lt;/li&gt;
+  &lt;li&gt;高级向量扩展(AVX)256位指令集，具有更宽的向量、新的可扩展语法和丰富的功能&lt;/li&gt;
+  &lt;li&gt;多达8个物理核心，或通过超线程实现16个逻辑核心(6核心/12线程)&lt;/li&gt;
+  &lt;li&gt;将GMCH(集成图形和内存控制器）和处理器集成到处理器封装内的单个芯片中。相比之下，Sandy Bridge 的前身Clarkdale在处理器封装内有两个独立的芯片(一个用于GMCH，一个用于处理器)。这种更紧密的集成进一步减少了内存延迟。&lt;/li&gt;
+  &lt;li&gt;14至19级指令流水线，取决于微指令缓存命中或未命中&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_19.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_20.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;saltwell-2011-年底推出&quot;&gt;Saltwell， 2011 年底推出&lt;/h3&gt;
+
+&lt;p&gt;32 nm超低功耗微架构，Saltwell 的流水线与Bonnell 的流水线几乎相同，均为 16 级流水线，并有 13 级未命中惩罚。它仍然是一个双发射超标量架构，按顺序执行。由于功率和面积限制，重新排序逻辑仍然被省略。它拥有更大的指令获取，将分支预测历史表的大小加倍。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_21.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ivy-bridge2011年推出&quot;&gt;Ivy Bridge，2011年推出&lt;/h3&gt;
+
+&lt;p&gt;Ivy Bridge 采用22 nm。这是英特尔第一代FinFET。Ivy Bridge引入了一些新指令。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_22.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_23.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;haswell2013年推出&quot;&gt;Haswell，2013年推出&lt;/h3&gt;
+
+&lt;p&gt;Haswell于2013年推出，它采用22nm是Ivy Bridge的继任者。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;前端处理1到15字节的可变长度x86指令，主要目标是正确获取并解码下一组指令。&lt;/li&gt;
+  &lt;li&gt;拥有一个全新升级的分支预测器，可能是改进型TAGE分支预测器&lt;/li&gt;
+  &lt;li&gt;Haswell的L1i$仍然是32KB，8路组关联由两个线程动态共享，指令高速缓存保持为16B/周期。&lt;/li&gt;
+  &lt;li&gt;TLB仍然是128条目、4路4KB页面模式和8条目、完全关联2MB页面模式。&lt;/li&gt;
+  &lt;li&gt;指令队列有40个条目，每个线程20个，Haswell继续改进分支失误。&lt;/li&gt;
+  &lt;li&gt;Haswell具有与Ivy Bridge相同的µOps缓存，每组可产生高达4µOps/周期。&lt;/li&gt;
+  &lt;li&gt;高速缓存支持微编码指令，缓存由两个线程共享。&lt;/li&gt;
+  &lt;li&gt;解码器有3个简单解码器和1个复杂解码器，总能发出3个单一融合µOps和额外的1-4个融合µOps。&lt;/li&gt;
+  &lt;li&gt;ROB已增加到192个条目，每个条目对应一个µOp，ROB固定分割在两个线程之间。&lt;/li&gt;
+  &lt;li&gt;Haswell继续对所有µOps使用统一的调度程序，其中包含60个条目，µOps可能会因资源不可用而暂停。&lt;/li&gt;
+  &lt;li&gt;Haswell通过两个端口扩展了调度器，使总数达到8µOps/周期，各个端口也进行了重新平衡。&lt;/li&gt;
+  &lt;li&gt;新的端口6添加了另一个整数ALU设计，和第二个分支单元以降低端口0的拥塞。&lt;/li&gt;
+  &lt;li&gt;添加的第二个端口（端口7）添加了一个新的AGU，端口0的ALU/Mul/shifter扩展到256位。&lt;/li&gt;
+  &lt;li&gt;Haswell的性能峰值可以是Sandy Bridge的两倍以上，调度器通过调度端口以FIFO顺序调度最多8个就绪µOps/周期。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_24.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_25.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_26.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_27.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;silvermont--2013-年推出&quot;&gt;Silvermont ， 2013 年推出&lt;/h3&gt;
+
+&lt;p&gt;Silvermont(SLM) 基于22nm。 Silvermont 于 2013 年推出，是Saltwell的后继者。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Silvermont 引入了许多重大变化。&lt;/li&gt;
+  &lt;li&gt;与 Saltwell 一样，该流水线仍然采用双发射设计；但它的流水线缩短了 2 级，分支误预测损失降低了 3 个周期。&lt;/li&gt;
+  &lt;li&gt;Silvermont 是第一个引入乱序执行(OoOE) 的微架构。&lt;/li&gt;
+  &lt;li&gt;Silvermont 流水线解码并发出 2 条指令并调度 5 个操作/周期。&lt;/li&gt;
+  &lt;li&gt;指令获取，就像之前的微架构一样，构成了流水线的前三个阶段。然而，随着乱序执行的引入，Silvermont 更积极的获取和分支预测意味着停滞的指令不会像 Saltwell 那样阻塞整个流水线。&lt;/li&gt;
+  &lt;li&gt;在前几代微架构中，通用软件代码中大约有 5% 的指令被分成微操作。在 Silvermont，这一比例降至仅 1-2%。这种减少会直接转化为性能，因为它消除了 3-4 个额外周期的开销。&lt;/li&gt;
+  &lt;li&gt;Silvermont 有第二个分支预测器，可以根据先前未知的信息（例如来自内存或寄存器的目标地址）做出更准确的预测，并覆盖通用预测器。尽管如此，分支误预测惩罚的代价也减少了 3 个阶段（从 Saltwell 的 13 个周期减少到 10 个周期）。&lt;/li&gt;
+  &lt;li&gt;Silvermont 有两个分支预测：一个控制指令提取，第二个可以在收集附加信息后在解码阶段覆盖第一个分支预测。第二个预测器控制推测指令的发出。对于第一个预测器，Silvermont 使用分支目标缓冲区来确定下一个获取地址，其中还包括用于调用和返回处理的 4 条目返回堆栈缓冲区。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_28.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_29.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;broadwell-2015-年推出&quot;&gt;Broadwell ，2015 年推出&lt;/h3&gt;
+
+&lt;p&gt;Broadwell(BDW) 。 Broadwell 于 2015 年初推出，是Haswell的14nm工艺缩小版。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FP 乘法指令减少了延迟（从 5 个周期减少到 3 个周期）&lt;/li&gt;
+  &lt;li&gt;影响 AVX、SSE 和 FP 指令&lt;/li&gt;
+  &lt;li&gt;CLMUL指令现在是单个µOP，改善了延迟和吞吐量&lt;/li&gt;
+  &lt;li&gt;二级TLB（STLB）&lt;/li&gt;
+  &lt;li&gt;TLB表已扩大（从 1024 个增加到1,536 个条目）&lt;/li&gt;
+  &lt;li&gt;1GB页面模式（16个条目，4路组关联）&lt;/li&gt;
+  &lt;li&gt;更大的调度程序（从 60 个增加到，64 个条目）&lt;/li&gt;
+  &lt;li&gt;更大的指令队列（每线程从 20 个增加到， 25 个条目）&lt;/li&gt;
+  &lt;li&gt;更快的存储到加载转发&lt;/li&gt;
+  &lt;li&gt;改进了分支和返回的地址预测&lt;/li&gt;
+  &lt;li&gt;改进的密码学加速指令&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_30.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_31.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;airmont--2015-年推出&quot;&gt;Airmont ， 2015 年推出&lt;/h3&gt;
+
+&lt;p&gt;Airmont基于14 nm。 Airmont 于 2015 年推出，是Silvermont的缩小版。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DTLB 表大小加倍（128 个条目 -&amp;gt; 256 个条目）&lt;/li&gt;
+  &lt;li&gt;L2 延迟增加&lt;/li&gt;
+  &lt;li&gt;重新排序缓冲区增加（从 32 个条目增加到 48 个）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_32.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;skylake--2015-年推出&quot;&gt;Skylake ， 2015 年推出&lt;/h3&gt;
+
+&lt;p&gt;Skylake基于14 nm。Skylake 接替了短命的Broadwell，后者经历了严重的延误。 该微架构由英特尔位于以色列海法的研发中心开发。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;更宽的分配路径（从Broadwell的 4 路增加到 5 路）&lt;/li&gt;
+  &lt;li&gt;微指令缓冲区/循环队列的每个线程的容量增大 2.28 倍（64 /线程，原 56 /核）&lt;/li&gt;
+  &lt;li&gt;为每个活动线程的调度队列进行分区&lt;/li&gt;
+  &lt;li&gt;改进的分支预测单元，准确率小幅度提升&lt;/li&gt;
+  &lt;li&gt;减少直接跳跃目标的错误惩罚&lt;/li&gt;
+  &lt;li&gt;µOP 缓存指令窗口现在为 64 字节（原 32 字节）&lt;/li&gt;
+  &lt;li&gt;1.5 倍带宽（从 4 增加6 µOP/周期）&lt;/li&gt;
+  &lt;li&gt;更大的重新排序缓冲区（224 个条目，高于 192 个）&lt;/li&gt;
+  &lt;li&gt;更大的调度程序（97 个条目，高于 64 个）&lt;/li&gt;
+  &lt;li&gt;更大的整数寄存器文件（从 168 个增加到180 个条目）&lt;/li&gt;
+  &lt;li&gt;更大的退休宽度（4 µOPs/周期/线程，从 4 µOPs/周期/核心）&lt;/li&gt;
+  &lt;li&gt;更大的存储缓冲区（从 42 个增加到56 个条目）&lt;/li&gt;
+  &lt;li&gt;L2$从 8 路组关联更改为 4 路组关联&lt;/li&gt;
+  &lt;li&gt;页面拆分加载损失减少 20 倍&lt;/li&gt;
+  &lt;li&gt;更大的回写缓冲区&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;服务器版本支持AVX512。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Skylake代表了Haswell的演进。Haswell已经是一个非常强大的架构，在其生命周期内没有遇到严重的竞争。Haswell核心具有良好的平衡性，几乎没有弱点，并且具有非常强大的向量执行能力。Skylake在这个基础上进行了改进，使其稍微更好一些。&lt;/li&gt;
+  &lt;li&gt;Haswell的比较：
+    &lt;ul&gt;
+      &lt;li&gt;前端：分支预测器
+        &lt;ul&gt;
+          &lt;li&gt;CPU的分支预测器负责准确快速地生成指令获取地址。分支预测器对性能影响很大，工程师通常会在每一代中进行微调。Skylake的分支预测器行为很像Haswell的。这并不一定是坏事，因为在2010年代中期，Haswell已经拥有了最好的分支预测器。&lt;/li&gt;
+          &lt;li&gt;Skylake的分支预测器行为很像Haswell的。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;前端：指令获取
+        &lt;ul&gt;
+          &lt;li&gt;一旦分支预测器生成了获取地址，前端就必须获取指令并为重命名器提供解码后的微操作。Skylake的指令获取和解码设置比Haswell更宽更深。L1i缓存和解码器之间的指令字节缓冲区从Haswell的每个线程20个条目增加到Skylake的25个条目。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;解码器的改进
+        &lt;ul&gt;
+          &lt;li&gt;Skylake还改进了解码器，每周期可以发出5个微操作。然而，解码单元每周期只能处理4条指令，因此只有在一个指令解码成两个或更多微操作时，才能从解码器获得5个微操作。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;执行单元的增加
+        &lt;ul&gt;
+          &lt;li&gt;Skylake的端口布局类似于Haswell。有四个整数执行端口，两个通用AGU端口和一个仅存储AGU端口。其中三个整数执行端口（编号0、1和5）还处理浮点和向量执行。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;后端：乱序资源
+        &lt;ul&gt;
+          &lt;li&gt;为了避免长延迟指令导致卡住，CPU使用乱序执行来继续搜索独立指令以保持执行单元忙碌。更深的缓冲区允许CPU在管线阻塞之前更进一步。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;缓存和内存访问
+        &lt;ul&gt;
+          &lt;li&gt;Skylake的内存层次结构几乎与Haswell的相同，至少在客户端实现上是这样。每个核心都有32 KB的L1数据缓存和适中大小的256 KB L2缓存来降低对L3的延迟。L3通过环形总线分布在环上，每个核心一个切片，并允许带宽随着核心数增加而扩展。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;性能提升
+        &lt;ul&gt;
+          &lt;li&gt;性能提升并非完全归因于IPC提高。Skylake通过将电源管理、内存层次结构和存储子系统进行了微调，使之更适合更高的时钟速度和更高的SMT线程数量。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_33.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_34.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_35.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;goldmont--2016-年推出&quot;&gt;Goldmont ， 2016 年推出&lt;/h3&gt;
+
+&lt;p&gt;Goldmont 基于14 nm。 与 Airmont 相比，Goldmont 是一个 3 发射核心，提高了很多常用指令的吞吐量并减少延迟。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_36.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_37.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;goldmont-plus-2017-年推出&quot;&gt;Goldmont Plus， 2017 年推出&lt;/h3&gt;
+
+&lt;p&gt;Goldmont Plus基于14 nm。 与 Goldmont相比，也是一个 3 发射核心，&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;前端&lt;/li&gt;
+  &lt;li&gt;增强的分支预测&lt;/li&gt;
+  &lt;li&gt;后端&lt;/li&gt;
+  &lt;li&gt;4路分配（原3路）&lt;/li&gt;
+  &lt;li&gt;4路退休（原3路）&lt;/li&gt;
+  &lt;li&gt;较大的发射队列&lt;/li&gt;
+  &lt;li&gt;更大的ROB&lt;/li&gt;
+  &lt;li&gt;POPF延迟从约80个周期减少到约40个周期&lt;/li&gt;
+  &lt;li&gt;向量除法和平方根更快&lt;/li&gt;
+  &lt;li&gt;AES操作：延迟从6个周期减少到4个周期，吞吐量增加到1个操作/周期&lt;/li&gt;
+  &lt;li&gt;SHL、SHR、SAR、ROL和ROR在CL中带有计数器：延迟从2减少到1&lt;/li&gt;
+  &lt;li&gt;更宽的整数执行单元&lt;/li&gt;
+  &lt;li&gt;新的专用JEU端口&lt;/li&gt;
+  &lt;li&gt;支持更快的分支重定向&lt;/li&gt;
+  &lt;li&gt;Radix-1024浮点除法器，用于快速标量/压缩单精度、双精度和扩展精度浮点除法&lt;/li&gt;
+  &lt;li&gt;改进了AES指令延迟和吞吐量&lt;/li&gt;
+  &lt;li&gt;64 KiB二级预解码缓存（16 KiB起）&lt;/li&gt;
+  &lt;li&gt;更大的负载缓冲区&lt;/li&gt;
+  &lt;li&gt;更大的存储缓冲区&lt;/li&gt;
+  &lt;li&gt;改进了存储到加载转发延迟从寄存器存储数据&lt;/li&gt;
+  &lt;li&gt;新的STLB由指令和数据共享&lt;/li&gt;
+  &lt;li&gt;分页缓存增强功能（PxE/ePxE缓存）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_38.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_39.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;sunnycove2019年推出&quot;&gt;SunnyCove，2019年推出&lt;/h3&gt;
+
+&lt;p&gt;10nm制程，类似Haswell的改进幅度，包含非常多的升级，是intel后续大核架构的起点。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;与前一代相比，Sunny Cove有很大不同之处。&lt;/li&gt;
+  &lt;li&gt;Sunny Cove是一款高性能核心，具有非常深的乱序执行能力。&lt;/li&gt;
+  &lt;li&gt;与从Haswell到Skylake的变化不同，Intel在几乎每个管道部分都对Sunny Cove进行了更改。&lt;/li&gt;
+  &lt;li&gt;与其窄点相比，Sunny Cove为5宽，这是Intel十年来首次增加核心宽度，重命名器宽度从Skylake的4增加到了Sunny Cove的5。&lt;/li&gt;
+  &lt;li&gt;Skylake是一个更小的核心，仍然具有高性能，高时钟目标和非常好的ILP提取能力。&lt;/li&gt;
+  &lt;li&gt;与Zen 2相比，Sunny Cove可以跟踪大约同样长的模式，但在处理大量分支时表现较差。&lt;/li&gt;
+  &lt;li&gt;Sunny Cove的分支目标跟踪比Skylake大，同时保持在2个周期的延迟。&lt;/li&gt;
+  &lt;li&gt;Sunny Cove的重命名IPC比Skylake和Zen 2都要高。&lt;/li&gt;
+  &lt;li&gt;Sunny Cove的乱序执行引擎更为强大，特别是在ROB、寄存器文件和调度器等关键结构上。&lt;/li&gt;
+  &lt;li&gt;Intel的大型联合式调度器一直是P6系列的一大特点。从Sandy Bridge开始，它是少数几个仍然可以追溯到P6的地方之一。&lt;/li&gt;
+  &lt;li&gt;Sunny Cove延续了这一趋势，并使用了更分布式的调度器。这使得总调度器条目数量增加了65%。&lt;/li&gt;
+  &lt;li&gt;Sunny Cove的前端也有显著变化。自Sandy Bridge以来，Intel首次增加了微操作缓存容量，从1.5K条目增加到2.3K条目。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;WillowCove和CypressCove的一些小改动就不写了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_40.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_41.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_42.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tremont2019年推出&quot;&gt;Tremont，2019年推出&lt;/h3&gt;
+
+&lt;p&gt;Tremont是Goldmont Plus的重大升级，它是一个性能与能耗兼顾的面向未来的设计。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;重新设计的前端
+    &lt;ul&gt;
+      &lt;li&gt;新的双对称解码集群
+        &lt;ul&gt;
+          &lt;li&gt;乱序解码&lt;/li&gt;
+          &lt;li&gt;6 宽解码
+            &lt;ul&gt;
+              &lt;li&gt;每个簇 3 路解码&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;更智能的预取器&lt;/li&gt;
+      &lt;li&gt;改进的分支预测器
+        &lt;ul&gt;
+          &lt;li&gt;大核性能水平&lt;/li&gt;
+          &lt;li&gt;更大的ROB&lt;/li&gt;
+          &lt;li&gt;更宽发射端口（10 宽）&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;执行引擎
+    &lt;ul&gt;
+      &lt;li&gt;2 个存储数据端口（从 1 个增加）&lt;/li&gt;
+      &lt;li&gt;Tremont的乱序解码使得分支预测变得更加重要。幸运的是，Intel在选择“酷睿级高性能分支预测”时并非在开玩笑。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;模式识别
+    &lt;ul&gt;
+      &lt;li&gt;Tremont的模式识别能力与Skylake相似。虽然Tremont在预测延迟方面略有增加，但整体表现良好。&lt;/li&gt;
+      &lt;li&gt;与Zen 1和Zen 2不同，Intel的L1预测器已经非常出色。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;分支目标跟踪
+    &lt;ul&gt;
+      &lt;li&gt;Tremont使用一个4096条目的分支目标缓冲区（BTB）来确定分支的去向。&lt;/li&gt;
+      &lt;li&gt;在真实世界的分支预测性能方面，Tremont表现良好，与Golden Cove相比略有类似。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;性能影响
+    &lt;ul&gt;
+      &lt;li&gt;Tremont具有非常先进的性能监控功能，这可能暗示着intel会将该系列性能进一步拉高的想法。&lt;/li&gt;
+      &lt;li&gt;Intel的Tremont架构代表了Intel的Atom策略的变化，旨在涵盖低功耗、日常使用案例，并提高性能。&lt;/li&gt;
+      &lt;li&gt;虽然分支预测器已经跟踪分支的去向，但如果分支之间距离过远，解码器将会像一个3宽度解码器，而不是6宽度解码器。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rename/Allocate
+    &lt;ul&gt;
+      &lt;li&gt;Tremont的Rename和Allocate阶段作为前端和乱序后端之间的桥梁，但其Rename能力略弱于Skylake。&lt;/li&gt;
+      &lt;li&gt;Tremont的Rename器可以识别独立的MOV指令，但不能消除它们，这意味着它们仍然需要ALU端口。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scheduler and Execution
+    &lt;ul&gt;
+      &lt;li&gt;Tremont使用分布式整数调度队列，拥有45个整数调度器条目，其中一部分用于处理分支指令。&lt;/li&gt;
+      &lt;li&gt;与Zen 2相比，Tremont的调度器能力较低，但其灵活性略差。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cache and Memory Access
+    &lt;ul&gt;
+      &lt;li&gt;Tremont的内存层次结构与Gracemont相似，但因专注于低功耗而较弱。&lt;/li&gt;
+      &lt;li&gt;L1D和L2缓存的延迟相同，但Tremont的L2较小，且L3的实际延迟较高。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;总结
+    &lt;ul&gt;
+      &lt;li&gt;Tremont的优势包括高吞吐量、高分支预测准确性和低功耗。&lt;/li&gt;
+      &lt;li&gt;缺点包括小型整数调度器、缺乏AVX支持和较弱的内存子系统。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;golden-cove2021年推出&quot;&gt;Golden Cove，2021年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;从SunnyCove的 1+4 个简单解码器中置换1个复杂解码器，添加 1 个简单解码器，取消了复杂解码器设计，因为它不再实用，复杂指令现在可以通过MSROM中的宏指令融合独立处理，现在总共有 6 个简单解码器。&lt;/li&gt;
+  &lt;li&gt;尽管差距不是很大，但Intel显然对Golden Cove的分支预测算法进行了调整。&lt;/li&gt;
+  &lt;li&gt;与Zen 2相比，Golden Cove在一个分支的情况下大致相当（排除Zen 2的巨大L2 TAGE预测器覆盖惩罚）。&lt;/li&gt;
+  &lt;li&gt;Intel为Golden Cove配备了一个巨大的BTB。Golden Cove的预测器表现非常出色，大部分情况下位于Zen3和Zen4之间，但对于很长的分支识别能力不如Zen3。&lt;/li&gt;
+  &lt;li&gt;它的重命名能力在所有6宽核心中最强。&lt;/li&gt;
+  &lt;li&gt;Golden Cove的重新排序缓冲区比Sunny Cove大了惊人的45%。&lt;/li&gt;
+  &lt;li&gt;Golden Cove的整数寄存器文件看起来并没有比Sunny Cove大。&lt;/li&gt;
+  &lt;li&gt;Golden Cove在纯整数负载中可能会在使用其引人注目的512个条目ROB之前耗尽整数寄存器而受到限制。&lt;/li&gt;
+  &lt;li&gt;Golden Cove的浮点单元位于三个端口后，这是对之前Intel架构的改进。&lt;/li&gt;
+  &lt;li&gt;Golden Cove可以通过两个周期延迟进行浮点加法。&lt;/li&gt;
+  &lt;li&gt;Golden Cove的矢量整数乘法器的延迟为10个周期。&lt;/li&gt;
+  &lt;li&gt;Golden Cove可以每周期进行两次512位加载。在每个内存控制器上，Golden Cove是一个带宽怪物。但 - Golden Cove在L3方面只保持了带宽优势，延迟控制较弱。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;RaptorCove这种小改动就不列举了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_43.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_44.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;gracemont2021年推出&quot;&gt;Gracemont，2021年推出&lt;/h3&gt;
+
+&lt;p&gt;添加了一个OD-ILD（按需指令长度解码器），提高了分支预测和解码吞吐量。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gracemont是一种5宽度的乱序架构，其根源可以追溯到2013年的Silvermont。&lt;/li&gt;
+  &lt;li&gt;英特尔的顺序Atom内核也可以被视为遥远的亲戚。&lt;/li&gt;
+  &lt;li&gt;Gracemont是英特尔Atom系列的新成员，它也是对以前的Atom系列架构的巨大改进之一，与早期的Atom完全不同，基本上是一个高性能核心。&lt;/li&gt;
+  &lt;li&gt;它可能比Golden Cove小，但仍具有乱序执行和大的重新排序窗口。&lt;/li&gt;
+  &lt;li&gt;Gracemont的分支目标跟踪（BTB）可能看起来比Golden Cove的小，但与Sunny Cove和Zen 3相当。&lt;/li&gt;
+  &lt;li&gt;与Zen 3类似，Gracemont可以进行零泡预测，最多可达1024个分支，但L2 BTB增加了两个周期的延迟。&lt;/li&gt;
+  &lt;li&gt;Gracemont具有类似于Zen 2的移动消除能力，这非常强大，并且超过了英特尔旧的同级别大核心，skylake。&lt;/li&gt;
+  &lt;li&gt;除了显而易见的权衡之外，它没有任何严重的弱点。&lt;/li&gt;
+  &lt;li&gt;Gracemont的L3访问延迟高，带宽低，但这些牺牲都经过深思熟虑，不太可能影响常见的整数负载。&lt;/li&gt;
+  &lt;li&gt;它是一个宽核心，具有深度的重新排序容量和与几年前桌面核心相近的时钟速度。&lt;/li&gt;
+  &lt;li&gt;Gracemont的执行吞吐量和容量看起来更像是高性能桌面核心，而不是旧的Atom。&lt;/li&gt;
+  &lt;li&gt;Gracemont在能效、密度和效率方面有着很大的优势，可以说是英特尔在超大规模服务器市场的入场券。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2023年的Crestmont的改进是分支预测，其它部分似乎没有变化&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_45.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_46.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_47.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;redwood-cove-2023年推出&quot;&gt;Redwood Cove ，2023年推出&lt;/h3&gt;
+
+&lt;p&gt;L1 ICache的容量翻倍，其余其它部分似乎没有变化。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_intel_cpu_microarchitectures_48.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;出处：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/571333092&quot;&gt;https://zhuanlan.zhihu.com/p/571333092&lt;/a&gt;&lt;/p&gt;
+
+</description>
+            <pubDate>Sun, 21 Dec 2025 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/evolution_of_intel_cpu_microarchitectures.html</link>
+            <guid isPermaLink="true">http://localhost:4000/evolution_of_intel_cpu_microarchitectures.html</guid>
+            
+            <category>history</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>AMD CPU 微架构的演进</title>
+            <description>&lt;h3 id=&quot;804861993年推出&quot;&gt;80486，1993年推出&lt;/h3&gt;
+
+&lt;p&gt;Intel的80486是所有486和586的祖宗。&lt;/p&gt;
+
+&lt;p&gt;与其前身一样，80486与所有以前的x86处理器（80386、80286、80186等）保持了完全向后 的目标代码可比性。为了提高性能，英特尔引入了新的片上缓存层（之前存在各种外部扩展）。 8 KB、4 路组关联、回写策略高速缓存对于数据和指令都是一致的。这提供了对最近使用的数据和指令的更快访问。总线接口还进行了各种增强，包括需要单个时钟周期而不是多个时钟周期的更快通信。&lt;/p&gt;
+
+&lt;p&gt;而在使用单独封装的数学协处理器（即80387、80287等）之前，80486 将单元移至芯片上，完全消除了外部通信延迟。此外，更先进的数学算法被用来实现新的FPU，从而产生更快的浮点计算。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Am486是AMD在1990年代生产的80486级计算机处理器家族。&lt;/li&gt;
+  &lt;li&gt;英特尔比AMD早将近四年进入市场，但AMD定价其40 MHz的486处理器与英特尔33 MHz的芯片价格相当或低于，提供了约20%更好的性能。&lt;/li&gt;
+  &lt;li&gt;尽管竞争对手的486芯片（如Cyrix）的基准性能低于相当的英特尔芯片，AMD的486芯片在按时钟计算的基础上与英特尔的性能相匹配。&lt;/li&gt;
+  &lt;li&gt;虽然Am386主要被小型计算机制造商使用，但Am486DX、DX2和SX2芯片在较大的计算机制造商中获得了认可，尤其是宏碁和康柏在1994年时间范围内。&lt;/li&gt;
+  &lt;li&gt;AMD的高时钟频率的486芯片比许多早期的奔腾芯片提供了优越的整数性能，尤其是60和66 MHz的初次推出产品。而相当的英特尔80486DX4芯片价格高且需要轻微的插座修改，AMD的定价低。英特尔的DX4芯片最初的缓存是AMD芯片的两倍，给了它们稍微的性能优势，但AMD的DX4-100通常比英特尔的DX2-66便宜。
+Orko改进的Am486系列支持新功能，如扩展的省电模式和8 KiB的写回L1缓存，后续版本甚至升级到了16 KiB的写回L1缓存。&lt;/li&gt;
+  &lt;li&gt;133 MHz的AMD Am5x86是高时钟频率的改进型Am486。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;80486是Intel80486系列微处理器的微架构，是80386的后继产品。 89 年 4 月推出的 80486 最初采用1 µm 工艺（后来为800 nm）制造。对于 AMD，这种微架构用于其Am486和Am5x86系列。该架构于 1993 年被 Intel 的P5和1994 年的K5取代。&lt;/p&gt;
+
+&lt;h3 id=&quot;k51996年推出&quot;&gt;K5，1996年推出&lt;/h3&gt;
+
+&lt;p&gt;K5 微架构于 1996 年初推出，是 AMD 首款从头开始内部设计的x86微架构，无需获得英特尔架构的许可或进行逆向工程。AMD的K5是第一款完全由公司内部开发的x86处理器。于1996年3月推出，主要竞争对手是英特尔的奔腾微处理器。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;K5是一个雄心勃勃的设计，更接近P6而不是P5。&lt;/li&gt;
+  &lt;li&gt;但最终产品在性能上更接近奔腾，尽管IPC与奔腾相比更高。&lt;/li&gt;
+  &lt;li&gt;K5基于一个内部高度并行的RISC处理器架构，带有一个四宽的x86解码前端。&lt;/li&gt;
+  &lt;li&gt;K5提供了良好的x86兼容性，公司内部开发的测试套件对后来的项目非常有价值。&lt;/li&gt;
+  &lt;li&gt;所有型号都有430万个晶体管，五个整数单元、一个浮点单元可以乱序处理指令。&lt;/li&gt;
+  &lt;li&gt;分支目标缓冲区是奔腾的四倍大小，寄存器重命名有助于克服寄存器依赖。&lt;/li&gt;
+  &lt;li&gt;芯片对指令的猜测执行减少了流水线停顿。它有16 KB的四路组相联指令缓存和8 KB的数据缓存。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;浮点除法和平方根微码会经过硬件校验。浮点指令是硬件实现的，并对所有操作数得到真实的数学结果。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;K5项目代表了AMD早期从英特尔夺取技术领导地位的机会。&lt;/li&gt;
+  &lt;li&gt;尽管芯片解决了正确的设计概念，但实际的工程实现存在问题。&lt;/li&gt;
+  &lt;li&gt;低时钟速率部分是由于AMD当时作为“尖端”制造公司的限制，部分是由于设计本身，在当时的工艺技术中有许多逻辑层级，阻碍了提频。&lt;/li&gt;
+  &lt;li&gt;此外，虽然K5的浮点性能被认为优于Cyrix 6x86，但它比奔腾慢，尽管提供更可靠的浮点计算结果。&lt;/li&gt;
+  &lt;li&gt;由于上市较晚且未达到性能预期，K5从未像早期的Am486和后来的AMD K6那样获得大型计算机制造商的认可。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;k61998-年推出&quot;&gt;K6，1998 年推出&lt;/h3&gt;
+
+&lt;p&gt;AMD于1998年推出了K6微处理器。这款微处理器的主要优势是它设计成可适配已有的Pentium品牌CPU的桌面设计。它被市场定位为能够与英特尔Pentium II相媲美但价格显著更低的产品。K6对PC市场产生了巨大影响，并给英特尔带来了严峻的竞争。&lt;/p&gt;
+
+&lt;p&gt;AMD K6基于NexGen设计的Nx686微处理器，后者在被AMD收购时正在设计。尽管名称暗示其设计是从K5发展而来的，但实际上它是由NexGen团队创建的完全不同的设计，其中包括首席处理器架构师Greg Favor，并在AMD收购后进行了调整。K6处理器包括反馈动态指令重排序机制、MMX指令和浮点单元（FPU）。它还与英特尔的Pentium兼容，可以在广泛使用的“Socket 7”基础的主板上使用。与之前的AMD K5、Nx586和Nx686一样，K6将x86指令即时转换为动态缓冲的微操作序列。&lt;/p&gt;
+
+&lt;p&gt;K6最初于1997年4月推出，速度为166和200 MHz。同年晚些时候推出了233 MHz版本。
+在 1998 年，AMD 发布了 K6-2，这是一款使用更快总线 (100 MHz) 并改进了 SIMD 性能的处理器。它还比 K6 多了一个 MMX 单元，以及用于浮点计算的新指令集 3DNow!（MMX 仅处理整数）。 K6-2（400 及以上）取得了巨大成功，因为它对于 Pentium MMX 平台的所有者来说是一个很好的升级解决方案 - 通过在具有 66 MHz 总线的主板上使用 2X 倍频器，处理器实际上以 6X 运行（ 400 MHz），从而以较低的升级成本显着提高速度。&lt;/p&gt;
+
+&lt;p&gt;最后，在1999年，AMD发布了K6的第三个版本，K6-III。与 K6-2 版本的主要区别在于片上 256 KB 缓存。 K6-III 速度非常快，但生产成本也非常高，很快就被 Athlon (K7) 取代。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;特点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;七个专门用于并行指令的执行单元。&lt;/li&gt;
+  &lt;li&gt;x86解码器将x86汇编翻译为RISC86指令。&lt;/li&gt;
+  &lt;li&gt;IEEE 1149.1边界扫描。&lt;/li&gt;
+  &lt;li&gt;预测执行优化。&lt;/li&gt;
+  &lt;li&gt;乱序执行。&lt;/li&gt;
+  &lt;li&gt;寄存器重命名。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;k71999年推出&quot;&gt;K7，1999年推出&lt;/h3&gt;
+
+&lt;p&gt;jim keller参与开发的知名项目，拥有同时期x86处理器最高的IPC，能耗比吊打netbrust，K7最初采用AMD的180纳米工艺制造。到2002年末，AMD转向130纳米工艺。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;架构&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;K7是AMD的一种相对新的设计，标志着与老化的Socket 7和Super Socket 7的分离。新架构引入了许多重大变化，包括全新的专有Socket A。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;与K6 / K6-III的关键变化&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;系统总线
+    &lt;ul&gt;
+      &lt;li&gt;K7采用DigitalAlpha EV6系统总线接口。&lt;/li&gt;
+      &lt;li&gt;AMD从Digital公司获得了该技术的许可，使他们能够独立开发自己的芯片组和主板，无需向Intel支付Slot 1 GTL+总线的许可费用。这导致AMD的主板与Intel的主板不兼容。&lt;/li&gt;
+      &lt;li&gt;EV6采用双数据率（DDR），使总线速度的有效数据传输率翻倍。
+        &lt;ul&gt;
+          &lt;li&gt;100 MHz总线= 200 MT/s&lt;/li&gt;
+          &lt;li&gt;133 MHz总线= 266 MT/s&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;处理器特性
+    &lt;ul&gt;
+      &lt;li&gt;K7有三个并行的x86指令译码器，用于将X86指令翻译成定长的微指令，每个微指令可执行1到2个操作。它还有乱序整数管道和乱序多媒体管道。&lt;/li&gt;
+      &lt;li&gt;K7拥有128KB的L1 Cache，其中64KB用作数据缓存，64KB用作指令缓存。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;缓存
+    &lt;ul&gt;
+      &lt;li&gt;L1 Cache的大小对处理器性能至关重要，K7通过L2 Cache的大小和速度以及使用DDR SDRAM作为L2 Cache来提供出色的性能。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_04.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;k82003-年推出&quot;&gt;K8，2003 年推出&lt;/h3&gt;
+
+&lt;p&gt;AMD K8 Hammer也代号为SledgeHammer，作为AMD K7 Athlon微架构的后继产品。 K8 是x86指令集架构的AMD64 64 位扩展的第一个实现&lt;/p&gt;
+
+&lt;p&gt;K8 核心与 K7 非常相似。最根本的变化是 AMD64 指令和片上内存控制器的集成。内存控制器极大地减少了内存延迟，并且在很大程度上实现了从 K7 到 K8 的大部分性能提升。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;K8相对于Netburst具有更低的分支错误预测影响，整体表现较为保守。&lt;/li&gt;
+  &lt;li&gt;AMD没有将分支预测器作为首要任务，K8的分支预测能力明显落后于Netburst。&lt;/li&gt;
+  &lt;li&gt;K7和K8使用两级预测器，通过全局历史进行预测，但K8的分支预测相对简单。&lt;/li&gt;
+  &lt;li&gt;K8通过增加历史表大小减少别名几率，具有一定的分支预测准确性。&lt;/li&gt;
+  &lt;li&gt;K8的分支处理加速，具有单层BTB，BTB实现了最大容量。&lt;/li&gt;
+  &lt;li&gt;K8的BTB与L1指令缓存相结合，提供分支预测信息，但在缓存和内存子系统方面与Netburst存在显著差异。&lt;/li&gt;
+  &lt;li&gt;K8的整数执行资源过度复制，具有较低的重新排序容量和基本的微架构特性。&lt;/li&gt;
+  &lt;li&gt;K8的浮点和矢量执行比Netburst更好，浮点和矢量执行资源过剩。&lt;/li&gt;
+  &lt;li&gt;K8的内存执行具有存储转发检查，内存访问延迟较低，可以处理大容量缓存。&lt;/li&gt;
+  &lt;li&gt;K8与Netburst的DRAM访问延迟差异大，K8的新集成内存控制器降低了延迟并提高了带宽。&lt;/li&gt;
+  &lt;li&gt;K8的整体设计保守，性能表现良好，但分支预测能力明显落后于Netburst。&lt;/li&gt;
+  &lt;li&gt;K8具有一定的分支预测准确性，但Netburst的预测能力更强，整数执行资源重复。&lt;/li&gt;
+  &lt;li&gt;K8的分支预测相对简单，可以取消错误路径获取的指令。&lt;/li&gt;
+  &lt;li&gt;K8的浮点和矢量执行相对Netburst更好，内存执行资源较为简单，但延迟较低。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;k102007-年推出&quot;&gt;K10，2007 年推出&lt;/h3&gt;
+
+&lt;p&gt;K10引入共享三级缓存，同时每个核心拥有自己的一级缓存和二级缓存。如果处理器请求的数据存在于一级缓存中，则直接载入；如果在任何一个二级缓存中，则直接或者通过交叉开关载入一级缓存，并将二级缓存中的原数据标记为无效，这也是AMD的独特设计；如果在三级缓存中，则数据载入后仍然存在，其他核心还能继续访问，从而实现共享。&lt;/p&gt;
+
+&lt;p&gt;K10的整合内存控制器(IMC)将有一些新特性，其将可以通过64-bit通道访问内存，使用ECC错误校验的话则是72-bit，这样可以令读取和写入数据同步进行，提高多核CPU在无序访问中的效率。而在CPU的超频性能方面，K10将采用分离式能耗设计IMC也可以根据各个处理器核心独立自定频率和电压，这将令到玩家在超频时可以忽略内存的频率。而在多核心CPU的通信设计方面，K10依然采用内部的交叉开关，全部在处理器之内完成，效率更高。&lt;/p&gt;
+
+&lt;p&gt;而在CPU最重要的功耗能耗设计方面，K10采用了一系列的新节能设计，K10架构下，各个处理器可以运行在独立的频率，AMD称之为“P-States”，空闲的核心可以降低频率甚至完全关闭，负载的则全速运行。K10还将配备新的热传感器，以便改善过热保护。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;指令集的新增和扩展
+    &lt;ul&gt;
+      &lt;li&gt;新的位操作指令 ABM：领先零计数 (LZCNT) 和种群计数 (POPCNT)&lt;/li&gt;
+      &lt;li&gt;新的 SSE 指令命名为 SSE4a：合并掩码移位指令 (EXTRQ/INSERTQ) 和标量流式存储指令 (MOVNTSD/MOVNTSS)。这些指令在 Intel 的 SSE4 中找不到。&lt;/li&gt;
+      &lt;li&gt;支持未对齐的 SSE 加载操作指令（以前需要 16 字节对齐）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;执行管线增强
+    &lt;ul&gt;
+      &lt;li&gt;128 位宽的 SSE 单元&lt;/li&gt;
+      &lt;li&gt;更宽的 L1 数据缓存接口，允许每周期进行两次 128 位的加载（而不是 K8 每周期两次 64 位的加载）&lt;/li&gt;
+      &lt;li&gt;更低的整数除法延迟&lt;/li&gt;
+      &lt;li&gt;512 个间接分支预测器和更大的返回栈（与 K8 相比大小增加了一倍）和分支目标缓冲区&lt;/li&gt;
+      &lt;li&gt;侧带栈优化器，专门用于执行寄存器栈指针的增减&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;新技术整合到 CPU 芯片中：
+    &lt;ul&gt;
+      &lt;li&gt;四个处理器核心 (四核)&lt;/li&gt;
+      &lt;li&gt;为 CPU 核心和内存控制器/北桥分割电源面板，以实现更有效的电源管理，最初由 AMD 称为动态独立核心参与 (Dynamic Independent Core Engagement，D.I.C.E.)，现在被称为增强版 PowerNow!（也被称为独立动态核心技术），允许核心和北桥（集成内存控制器）独立地增减功耗。&lt;/li&gt;
+      &lt;li&gt;在非负载状态下关闭部分电路，称为“CoolCore”技术。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;内存子系统的改进：
+    &lt;ul&gt;
+      &lt;li&gt;访问延迟的改进：
+        &lt;ul&gt;
+          &lt;li&gt;支持将加载重新排序到其他加载和存储操作之前&lt;/li&gt;
+          &lt;li&gt;更积极的指令预取，每次预取 32 字节，而不是 K8 的 16 字节&lt;/li&gt;
+          &lt;li&gt;用于缓冲读取的 DRAM 预取器&lt;/li&gt;
+          &lt;li&gt;缓冲式突发写回到 RAM，以减少争用&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;内存层次结构的变化：
+        &lt;ul&gt;
+          &lt;li&gt;直接预取到 L1 缓存，而不是 K8 系列的 L2 缓存&lt;/li&gt;
+          &lt;li&gt;32 路组相联的 L3 作为至少 2 MB 的受害者缓存，共享在单个芯片上的处理器核心之间（每个核心具有 512 K 的独立专用 L2 缓存），采用了一种支持共享的替换策略。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;可扩展的 L3 缓存设计，计划在 45 纳米工艺节点上达到 6 MB，芯片的代号为 Shanghai。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;地址空间管理的变化：
+    &lt;ul&gt;
+      &lt;li&gt;两个 64 位独立的内存控制器，每个都有自己的物理地址空间；这在高度多线程环境中出现随机内存访问时，可以更好地利用可用带宽。这种方法与先前的“交错”设计相反，先前的设计将两个 64 位数据通道限制在单一共享地址空间。&lt;/li&gt;
+      &lt;li&gt;更大的标记式查找缓冲区；支持 1 GB 页面条目和一个新的 128 条目的 2 MB 页面 TLB。&lt;/li&gt;
+      &lt;li&gt;48 位内存寻址，允许 256 TB 的内存子系统。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;系统互连的改进：
+    &lt;ul&gt;
+      &lt;li&gt;HyperTransport 重试支持&lt;/li&gt;
+      &lt;li&gt;支持 HyperTransport 3.0，使用 HyperTransport Link unganging 创建每个插槽 8 个点对点链接。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;平台级别的改进：
+    &lt;ul&gt;
+      &lt;li&gt;五个 p 状态，允许自动时钟频率调节&lt;/li&gt;
+      &lt;li&gt;增加时钟门控&lt;/li&gt;
+      &lt;li&gt;通过 HTX 插槽和空闲的 CPU 插槽，通过 HyperTransport 官方支持协处理器：Torrenza 计划。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_06.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bulldozer2011-年推出&quot;&gt;Bulldozer，2011 年推出&lt;/h3&gt;
+
+&lt;p&gt;大名鼎鼎的推土机架构，Bulldozer Family 15h&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;每个技术爱好者对“AMD FX”或“推土机”这个名字有各种联想。一些人在超频方面有积极体验，但大多数人知道它运行缓慢、热、耗电。也有人知道由于其拉垮的表现，它几乎使AMD破产。&lt;/li&gt;
+  &lt;li&gt;在单核性能上，比前身 Greyhound 慢，多核性能仅类似（Phenom II X6 1100T vs FX-8150），却多了两个“核心”。&lt;/li&gt;
+  &lt;li&gt;最大负载下的功耗也更高，与英特尔的SandyBridge相比，结果值得怀疑。&lt;/li&gt;
+  &lt;li&gt;AMD在规划或设计阶段未设想过构建“狗屎产品”。在Bulldozer开发过程中，AMD最初希望它像K10一样，但具有共享的前端和FPU。&lt;/li&gt;
+  &lt;li&gt;目标过于雄心勃勃，为了提高32纳米工艺下的频率，因此选择了把架构规模削减，模块化堆积起来。&lt;/li&gt;
+  &lt;li&gt;Bulldozer采用“集群多线程”（CMT），在处理器的某些部分之间共享两个线程和一些独立部分。&lt;/li&gt;
+  &lt;li&gt;CMT和SMT都致力于高效利用执行单元，但在竞争执行管线时，会导致一个或多个线程性能下降。&lt;/li&gt;
+  &lt;li&gt;CMT在整数和浮点代码上运行一对线程时效果最佳，但单线程下整数执行单元闲置较多。&lt;/li&gt;
+  &lt;li&gt;CMT和典型的SMT处理器在L2缓存的有效共享使用上类似。&lt;/li&gt;
+  &lt;li&gt;一个模块由两个“常规”的x86乱序处理核耦合而成，共享早期流水线阶段、FPUs和L2缓存等资源。&lt;/li&gt;
+  &lt;li&gt;每个模块拥有独立的硬件资源，包括16 KB的L1d缓存、2 MB的L2缓存、Write Coalescing Cache、两个专用整数核心等。&lt;/li&gt;
+  &lt;li&gt;Bulldozer的流水线深度为20周期，比K10核心的12周期更长，使得其时钟频率更高，但也增加了延迟和分支错误预测的惩罚。&lt;/li&gt;
+  &lt;li&gt;Bulldozer整数核心的宽度为四（2 ALU，2 AGU），略小于K10核心的六（3 ALU，3 AGU）。&lt;/li&gt;
+  &lt;li&gt;指令集扩展支持Intel的AVX指令集，以及AMD提出的未来128位指令集（XOP、FMA4和F16C）等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_07.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bobcat2011-年推出&quot;&gt;Bobcat，2011 年推出&lt;/h3&gt;
+
+&lt;p&gt;AMD Bobcat Family 14h 是 AMD 为其 AMD APUs 创建的微架构，面向低功耗/低成本市场。
+该核心针对低功耗市场，如上网本/台式机、超轻薄笔记本电脑、消费电子和嵌入式市场。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;架构具体特点：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;64 位核心&lt;/li&gt;
+  &lt;li&gt;乱序执行&lt;/li&gt;
+  &lt;li&gt;高级分支预测器&lt;/li&gt;
+  &lt;li&gt;双 x86 指令解码器&lt;/li&gt;
+  &lt;li&gt;带两个 ALU 的 64 位整数单元&lt;/li&gt;
+  &lt;li&gt;带两个 64 位管道的浮点单元&lt;/li&gt;
+  &lt;li&gt;单通道 64 位内存控制器&lt;/li&gt;
+  &lt;li&gt;32 KiB 指令 + 32 KiB 数据 L1 缓存&lt;/li&gt;
+  &lt;li&gt;512 KiB - 1 MiB L2 缓存&lt;/li&gt;
+  &lt;li&gt;MMX, SSE, SSE2, SSE3, SSSE3, SSE4A, ABM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_08.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;piledriver2012-年推出&quot;&gt;Piledriver，2012 年推出&lt;/h3&gt;
+
+&lt;p&gt;AMD Piledriver Family 15h 是由 AMD 开发的微架构，作为 Bulldozer 的第二代继任者。
+用于 AMD 加速处理单元（前身为 Fusion）、AMD FX 和 Opteron 系列处理器。
+与 Bulldozer 相比，Piledriver 的变化是渐进的。
+Piledriver 使用相同的“模块化”设计。
+它的主要改进是分支预测和 FPU/整数调度，以及转换为硬边缘触发器以改善功耗。
+这导致时钟速度提高了 8-10%，性能增加了约 15%，功耗特性相似。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;设计：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Piledriver 在原始 Bulldozer 微架构上有所改进：
+    &lt;ul&gt;
+      &lt;li&gt;集群化多线程&lt;/li&gt;
+      &lt;li&gt;更高的时钟速率&lt;/li&gt;
+      &lt;li&gt;每时钟周期的指令 (IPC) 改进&lt;/li&gt;
+      &lt;li&gt;更低的功耗和温度&lt;/li&gt;
+      &lt;li&gt;Turbo Core 3.0&lt;/li&gt;
+      &lt;li&gt;更快的集成内存控制器 (IMC)&lt;/li&gt;
+      &lt;li&gt;固定硬件除法器&lt;/li&gt;
+      &lt;li&gt;改进的分支预测和预取&lt;/li&gt;
+      &lt;li&gt;感知器分支预测器&lt;/li&gt;
+      &lt;li&gt;改进的浮点和整数调度&lt;/li&gt;
+      &lt;li&gt;支持高级向量扩展 (AVX) 1.1、FMA3、BMI1 和 TBM&lt;/li&gt;
+      &lt;li&gt;更大的 L1 翻译后看缓冲区 (TLB) 和 L2 效率改进&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jaguar2013年推出&quot;&gt;Jaguar，2013年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AMD Jaguar Family 16h 是由 AMD 设计的低功耗微架构，用于 2013 年继承 Bobcat Family 微架构之后的 APU，并在 2014 年被 AMD 的 Puma 架构继承。&lt;/li&gt;
+  &lt;li&gt;它是两路超标量，能够进行乱序执行。&lt;/li&gt;
+  &lt;li&gt;它被用于 AMD 的半定制业务部门作为定制处理器的设计，并被 AMD 用于四个产品系列：Kabini 针对笔记本电脑和迷你电脑、Temash 针对平板电脑、Kyoto 针对微型服务器，以及面向嵌入式应用的 G 系列。&lt;/li&gt;
+  &lt;li&gt;PlayStation 4 和 Xbox One 使用基于 Jaguar 微架构的芯片，比 AMD 在其自己的 Jaguar APU 中销售的 GPU 更强大。&lt;/li&gt;
+  &lt;li&gt;Jaguar 处理器的结构：每个核心有 32 KiB 指令 + 32 KiB 数据 L1 缓存，L1 缓存包含奇偶校验错误检测；16路、1–2 MiB 的 L2 缓存，由两个或四个核心共享，L2 缓存通过使用纠错码来保护免受错误影响；乱序执行和推测执行；集成内存控制器；两路整数执行；两路 128 位宽的浮点和打包整数执行；整数硬件除法器；消费级处理器支持一通道内最高频率为 1600 MHz 的两个 DDR3L DIMM；服务器处理器支持带 ECC 的一通道内最高频率为 1600 MHz 的两个 DDR3 DIMM；作为 SoC（不仅是 APU），它集成了 Fusion 控制器中枢；&lt;/li&gt;
+  &lt;li&gt;Jaguar 不支持模块化多线程（CMT），意味着执行资源不共享。&lt;/li&gt;
+  &lt;li&gt;Jaguar 核心支持以下指令集和指令：MMX、SSE、SSE2、SSE3、SSSE3、SSE4a、SSE4.1、SSE4.2、AVX、F16C、CLMUL、AES、BMI1、MOVBE（大端序移动指令）、XSAVE/XSAVEOPT、ABM（POPCNT/LZCNT）和 AMD-V。&lt;/li&gt;
+  &lt;li&gt;与 Bobcat 相比的改进：时钟频率增加超过 10%；每时钟周期指令数（IPC）提高超过 15%；添加对 SSE4.1、SSE4.2、AES、CLMUL、MOVBE、AVX、F16C、BMI1 的支持；最多四个 CPU 核心；L2 缓存在核心之间共享；FPU 数据路径宽度增加至 128 位；添加硬件整数除法器；增强的缓存预取器；负载-存储单元带宽加倍；C6 和 CC6 低功耗状态，具有更低的进入和退出延迟；每个核心更小，面积为 3.1 mm2。&lt;/li&gt;
+  &lt;li&gt;Jaguar 是一个 64 位、乱序微处理器，每个周期解码和发出 2 条指令，并分派 6 个操作。四个 Jaguar 核心组成一个集群，共享一个 L2 缓存。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_09.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;puma-family-16h于2014年发布&quot;&gt;Puma Family 16h于2014年发布&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Puma核心采用与Jaguar相同的微架构，并继承了以下设计：&lt;/li&gt;
+  &lt;li&gt;乱序执行和投机执行，最多4个CPU核心&lt;/li&gt;
+  &lt;li&gt;双路整数执行&lt;/li&gt;
+  &lt;li&gt;双路128位宽浮点和打包整数执行&lt;/li&gt;
+  &lt;li&gt;整数硬件除法器&lt;/li&gt;
+  &lt;li&gt;Puma不支持集群多线程（CMT），即没有“模块”&lt;/li&gt;
+  &lt;li&gt;Puma不支持异构系统架构或零拷贝&lt;/li&gt;
+  &lt;li&gt;每个核心32 KiB指令+32 KiB数据L1缓存&lt;/li&gt;
+  &lt;li&gt;由两个或四个核心共享的1-2 MiBL2缓存&lt;/li&gt;
+  &lt;li&gt;集成单通道内存控制器，支持64位DDR3L&lt;/li&gt;
+  &lt;li&gt;每个核心占据3.1 mm2的面积&lt;/li&gt;
+  &lt;li&gt;指令集支持&lt;/li&gt;
+  &lt;li&gt;类似Jaguar，Puma核心支持以下指令集和指令：MMX、SSE、SSE2、SSE3、SSSE3、SSE4a、SSE4.1、SSE4.2、AVX、F16C、CLMUL、AES、BMI1、MOVBE（大端指令移动）、XSAVE/XSAVEOPT、ABM（POPCNT/LZCNT）和AMD-V。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;改进&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在1.2V时，CPU核心泄漏减少了19%&lt;/li&gt;
+  &lt;li&gt;GPU泄漏减少38%&lt;/li&gt;
+  &lt;li&gt;内存控制器功耗减少500 mW&lt;/li&gt;
+  &lt;li&gt;显示接口功耗减少200 mW&lt;/li&gt;
+  &lt;li&gt;根据机箱温度智能提升增压&lt;/li&gt;
+  &lt;li&gt;根据应用程序需求选择性增压（智能增压）&lt;/li&gt;
+  &lt;li&gt;通过集成的Cortex-A5处理器支持ARM TrustZone&lt;/li&gt;
+  &lt;li&gt;支持DDR3L-1866内存&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;steamroller2014年推出&quot;&gt;Steamroller，2014年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;作为 Bulldozer 的第三代继任者。Steamroller的重点是实现更大规模的并行性。&lt;/li&gt;
+  &lt;li&gt;改进的核心在于模块内每个核心都有独立的指令解码器，每个线程的最大宽度分派量增加了25％，指令调度器更好，改进的感知分支预测器，更大更智能的高速缓存，最多减少30％的指令缓存缺失，分支错误率减少20％，动态可调整大小的L2高速缓存，微操作队列，更多内部寄存器资源和改进的内存控制器。&lt;/li&gt;
+  &lt;li&gt;AMD估计这些改进将使每个周期的指令（IPC）比第一代Bulldozer核心提高30％，同时保持Piledriver的高时钟速率并降低功耗。&lt;/li&gt;
+  &lt;li&gt;最终结果是与Piledriver相比，单线程IPC提高了9％，多线程IPC提高了18％。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;excavator2015年推出&quot;&gt;Excavator，2015年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;作为 Bulldozer 的第四代继任者&lt;/li&gt;
+  &lt;li&gt;Excavator 添加了对AVX2、BMI2和RDRAND等新指令的硬件支持。Excavator 采用通常用于GPU 的高密度库进行设计，以减少电能消耗和芯片尺寸，从而将能源使用效率提高 30% 。与 AMD 之前的核心 Steamroller 相比，Excavator 可以多处理多达 15% 的指令。&lt;/li&gt;
+  &lt;li&gt;AMD Puma Family 16h是AMD为其APU推出的低功耗微架构。它是第二代版本，继承了Jaguar的地位，面向相同市场，并属于同一AMD架构Family 16h。&lt;/li&gt;
+  &lt;li&gt;Beema系列处理器面向低功耗笔记本电脑，而Mullins则面向平板电脑领域。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;zen2017年推出&quot;&gt;Zen，2017年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zen(family 17h)是一种全新的设计，AMD继续保持他们的过去的传统设计理念，这体现在诸如分离式调度器、分离式FP和int&amp;amp;memory执行单元等设计选择中。从宏观角度看，Zen与其前身共享许多相似之处，但引入了新元素和重大变化。&lt;/li&gt;
+  &lt;li&gt;每个核心由一个前端（顺序区域）组成，负责获取指令、解码、生成µOP和融合µOP，并将它们发送到执行引擎（乱序部分）。&lt;/li&gt;
+  &lt;li&gt;指令可以从L1I$获取，也可以来自µOP缓存（后续获取），完全消除了解码阶段。&lt;/li&gt;
+  &lt;li&gt;Zen将4条指令/周期解码为µOP队列。µOP队列将单独的µOP分派到整数端和FP端（在可能的情况下同时分派到两者）。&lt;/li&gt;
+  &lt;li&gt;Zen最大的变化是回归传统核心分区设计 - 每个核心都是独立核心，拥有自己的浮点/SIMD单元和L2缓存，之前这些单元是两个核心共享的。&lt;/li&gt;
+  &lt;li&gt;与英特尔的许多最近微架构（如Skylake和Kaby Lake）使用联合式调度器不同，AMD继续使用分离式调度器设计。&lt;/li&gt;
+  &lt;li&gt;µOP在µOP队列处解耦，并通过两个不同的管线发送到整数端或FP端。这两个部分完全独立，每个部分都有单独的调度器、队列和执行单元。&lt;/li&gt;
+  &lt;li&gt;Zen支持所有现代x86扩展，包括AVX/AVX2、BMI1/BMI2和AES。Zen还支持SHA，这是一种安全哈希实现指令，目前仅在英特尔的超低功耗微架构（例如Goldmont）中找到，但在他们的主流处理器中没有。&lt;/li&gt;
+  &lt;li&gt;从内存子系统的角度看，数据通过L1D$进入执行单元，通过加载和存储队列（两者的容量几乎翻了一番）和两个地址生成单元（AGUs）以每周期2次加载和1次存储的速率。&lt;/li&gt;
+  &lt;li&gt;每个核心还有一个512 KiB的L2缓存。L2以每周期32B的速率将数据馈送到一级数据和一级指令缓存（每个周期32B可以在两个方向（双向总线）中发送）。&lt;/li&gt;
+  &lt;li&gt;L2连接到L3缓存，后者跨所有核心共享。与L1到L2的传输一样，L2每个周期也以32B的速率将数据传输到L3，反之亦然。&lt;/li&gt;
+  &lt;li&gt;前端：Zen核心的前端处理顺序操作，如指令获取和解码。指令获取由两个路径组成：传统的解码路径，指令来自指令缓存，以及µOP缓存，由分支预测（BP）单元确定。&lt;/li&gt;
+  &lt;li&gt;分支预测单元解耦，可以在接收到所需操作（如重定向）后立即开始工作，超前于传统的指令获取。&lt;/li&gt;
+  &lt;li&gt;Zen将指令TLB移动到BP（比在以前的架构中早得多的阶段）。这样做是为了通过允许更积极的预取，使物理地址在更早的阶段检索到。&lt;/li&gt;
+  &lt;li&gt;解码是x86的最大弱点，解码器是整个微架构中最昂贵和最复杂的方面之一。指令的长度可从一个字节到十五个字节不等，确定指令边界本身就是一个复杂的任务。&lt;/li&gt;
+  &lt;li&gt;解码是通过4个Zen解码器完成的。解码阶段允许每个周期解码四个x86指令，这些指令随后发送到µOP队列。&lt;/li&gt;
+  &lt;li&gt;由于需要执行x86，有些指令实际上包含多个操作。其中一些操作在OoOE设计中无法有效实现，因此必须转换为更简单的操作。&lt;/li&gt;
+  &lt;li&gt;在Zen，复杂的x86指令被分解为更简单的固定长度操作，称为宏操作或MOPs。这些MOPs可以进一步分解为更简单的固定长度操作，称为微操作（µOPs）。&lt;/li&gt;
+  &lt;li&gt;µOPs缓存不是一个跟踪缓存，而更像是英特尔在Sandy Bridge微架构中使用的缓存。µOPs缓存是一个独立的单元，不是L1I$的一部分，也不一定是L1I缓存的子集。当一个存储在µOPs缓存中的指令被从L1中驱逐时，就会发生这种情况。在获取阶段，必须从两个路径进行探测。&lt;/li&gt;
+  &lt;li&gt;解码阶段允许每个周期解码四个x86指令，这些指令随后发送到µOP队列。以前，在Bulldozer/Jaguar设计中，AMD有两条路径：FastPath Single生成单个MOP，FastPath Double生成两个MOP，然后发送到调度器。Zen有着更加密集的MOPs，几乎所有指令都是FastPath Single。&lt;/li&gt;
+  &lt;li&gt;Dispatch能够将6个µOP发送到整数EX，最多4个µOP发送到浮点FP EX。 Zen可以同时向两者分派（即每周期最多10个µOP），但由于退休控制单元（RCU）最多只能处理6个MOPs/周期，实际发送的µOPs数量可能较低。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;第三条路径可能会抵达的是微代码序列器（MS）ROM。发出超过两个MOP的指令将被重定向到微码ROM。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;优化：在这个阶段利用了许多优化机会，如堆栈引擎、µOP融合等。&lt;/li&gt;
+  &lt;li&gt;堆栈引擎：在解码阶段，Zen将堆栈引擎Memfile（SEM）整合到设计中。SEM坐落在队列和调度之间，监控MOP流量。SEM可以立即进行存储到加载的转发，以匹配后续指令的堆栈指针，实现零延迟指令。
+µOP-Fusion：在这个阶段，Zen执行额外的优化，如微操作融合或分支融合 - 将比较和分支操作组合成单一µOP。&lt;/li&gt;
+  &lt;li&gt;执行引擎：Zen的执行引擎（后端）分为两个主要部分：整数和内存操作以及浮点操作。整数和FP部分都可以访问192个条目的退休队列，并且每个周期可以退休8个指令。&lt;/li&gt;
+  &lt;li&gt;整数执行可以每周期接收最多6个µOPs，Zen具有168个条目的物理64位整数寄存器文件。&lt;/li&gt;
+  &lt;li&gt;浮点侧可以每周期接收最多4个µOPs，Zen具有160个条目的物理128位浮点寄存器文件。&lt;/li&gt;
+  &lt;li&gt;存取指令是从两个AGUs进行的，它们可以同时操作。 Zen具有44个条目的加载队列和44个条目的存储队列。&lt;/li&gt;
+  &lt;li&gt;内存子系统：Zen的内存子系统允许每周期进行两次加载（每次16B）和一次存储（16B）。 Zen的L1 TLB是64条目，L2 TLB是1536条目，不支持1 GiB页面。Zen包含64 KiB 4路组相联的L1指令缓存和32 KiB 8路组相联的L1数据缓存。&lt;/li&gt;
+  &lt;li&gt;浮点指令有较高的延迟，可能会在Dispatch处积压。非调度队列（NSQ）试图减少这种情况，通过排队更多的FP指令，使Dispatch在整数侧继续进行。除此之外，NSQ还可以提前开始处理FP指令的内存组件，以便它们在通过调度队列后准备就绪。 FP调度程序具有四个管道（比Excavator多一个），其上的执行单元可操作128位浮点。&lt;/li&gt;
+  &lt;li&gt;FP可以执行所有矢量操作。简单的整数矢量操作（如移位、加法）都可以在一个周期内完成，这是AMD以前架构的一半延迟。基本浮点数学的延迟为三个周期，包括乘法（双精度多一个周期）。浮点数具有一个单独的管道用于128位加载操作。&lt;/li&gt;
+  &lt;li&gt;Zen还支持SHA和AES，其中AES单元位于浮点调度程序的管道0和1上。Loads和Stores通过两个AGUs进行，Zen具有44个条目的加载队列和44个条目的存储队列。&lt;/li&gt;
+  &lt;li&gt;内存子系统允许每周期进行两次加载（每次16B）和一次存储（16B）。 Zen的L1 TLB是64条目，L2 TLB是1536条目，不支持1 GiB页面。Zen包含64 KiB 4路组相联的L1指令缓存和32 KiB 8路组相联的L1数据缓存。 L2缓存是512 KiB 8路组相联的缓存，包含在核心内，不与其他核心共享。 L2缓存每个周期可以读取和写入32B/cycle到8MB L3缓存（每个周期32B双向总线）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Zen+于2018年推出是，Zen的小幅度修改，改了预取并让桌面Zen+，基于 Zen 的 APU上的对于所有访问模式都有 12 个周期的 L2 延迟，原来是17个周期的 L2 延迟。&lt;/p&gt;
+
+&lt;h3 id=&quot;zen22019年推出&quot;&gt;Zen2，2019年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;前端
+    &lt;ul&gt;
+      &lt;li&gt;前端吞吐量得到了提高，以满足支持 256 位操作的后端需求。&lt;/li&gt;
+      &lt;li&gt;AMD 对分支预测单元进行了改进，包括对预取器和指令缓存的优化。&lt;/li&gt;
+      &lt;li&gt;分支预测单元的作用是指导指令获取，避免流水线停滞或执行错误路径。&lt;/li&gt;
+      &lt;li&gt;Zen 2 的分支预测单元容量翻倍，引入了 TAGE 预测器，并减少了误预测率。&lt;/li&gt;
+      &lt;li&gt;指令获取和解码单元每周期读取 32 字节，支持 20 个字节宽度的指令字节队列。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;整数执行单元
+    &lt;ul&gt;
+      &lt;li&gt;包括专用重命名单元、五个调度器、180 个条目的物理寄存器文件、四个 ALU 和三个 AGU 管道，以及 224 个条目的退休队列。&lt;/li&gt;
+      &lt;li&gt;ALU 调度器队列深度增加到 16 个条目，支持移动消除，减少资源占用。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;浮点单元
+    &lt;ul&gt;
+      &lt;li&gt;包括专用重命名单元、一个 4 发射的乱序调度器、160 条目的物理寄存器文件和四个执行管道。&lt;/li&gt;
+      &lt;li&gt;物理寄存器、执行单元和数据路径的宽度扩展至 256 位。&lt;/li&gt;
+      &lt;li&gt;支持超前执行和存储器数据预测优化。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;载入-存储单元
+    &lt;ul&gt;
+      &lt;li&gt;处理内存读取和写入，数据路径和缓冲区宽度从 128 位提高到 256 位。&lt;/li&gt;
+      &lt;li&gt;支持内存类型范围寄存器（MTRR）和页面属性表（PAT）扩展。&lt;/li&gt;
+      &lt;li&gt;每个核心有 512 KiB 的 L2 缓存，支持 ECC 保护。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;多预测模式和优化
+    &lt;ul&gt;
+      &lt;li&gt;支持分支融合，将 CMP 或 TEST 指令与条件分支组合成一个宏操作。&lt;/li&gt;
+      &lt;li&gt;采用硬件页表漫步等高级缓存技术优化性能。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;操作缓存（OC）
+    &lt;ul&gt;
+      &lt;li&gt;512 条目、8 路组相联、奇偶校验保护的缓存，提高指令解码和吞吐量。&lt;/li&gt;
+      &lt;li&gt;可每周期发送 8 个宏操作到微操作队列，取代传统的指令获取和解码流水线。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;微操作队列和重定向
+    &lt;ul&gt;
+      &lt;li&gt;未公开深度的微操作队列，支持指令解码和调度的分离。&lt;/li&gt;
+      &lt;li&gt;支持分支结果重定向指令获取和精炼预测。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;栈引擎和内存依赖预测
+    &lt;ul&gt;
+      &lt;li&gt;栈引擎优化指令依赖，支持内存依赖预测，提高执行效率。&lt;/li&gt;
+      &lt;li&gt;支持对存储器的非瞬时写入优化，减少总线利用率。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;页表技术和TLB
+    &lt;ul&gt;
+      &lt;li&gt;支持硬件页表漫步和页表项（PTE）合并，提高内存地址转换效率。&lt;/li&gt;
+      &lt;li&gt;有 64 条目的 L1 数据 TLB 和 2048 条目的 L2 数据 TLB，支持快速地址转换。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;性能提升和效率优化
+    &lt;ul&gt;
+      &lt;li&gt;提高指令分派带宽和退休带宽，优化执行引擎和数据路径。&lt;/li&gt;
+      &lt;li&gt;支持浮点运算器的异步执行，提高执行效率和时钟频率。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CCX
+    &lt;ul&gt;
+      &lt;li&gt;2倍大的L3缓存切片（从8 MiB增加到16 MiB）&lt;/li&gt;
+      &lt;li&gt;增加的L3延迟（约40个周期，从约35个周期增加）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;安全性
+    &lt;ul&gt;
+      &lt;li&gt;增强的Spectre技术&lt;/li&gt;
+      &lt;li&gt;支持的密钥/虚拟机数量增加&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I/O
+    &lt;ul&gt;
+      &lt;li&gt;PCIe 4.0（从3.0）&lt;/li&gt;
+      &lt;li&gt;Infinity Fabric 2
+        &lt;ul&gt;
+          &lt;li&gt;每个链路的传输速率增加2.3倍（从约10.6 GT/s增加到25 GT/s）&lt;/li&gt;
+          &lt;li&gt;MemClk与FClk解耦，支持2:1比例以及1:1比例&lt;/li&gt;
+          &lt;li&gt;支持DDR4-3200，从DDR4-2933增加&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_11.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;zen32020年推出&quot;&gt;Zen3，2020年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CCD
+    &lt;ul&gt;
+      &lt;li&gt;统一的8核心CCX（每个CCD来自2个4核心CCX）&lt;/li&gt;
+      &lt;li&gt;32 MiB L3$均等分配给CCD中的所有核心。&lt;/li&gt;
+      &lt;li&gt;L3延迟增加（约46个周期，从约40个周期增加）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;前端
+    &lt;ul&gt;
+      &lt;li&gt;增加的分支预测带宽
+“零气泡”分支预测&lt;/li&gt;
+      &lt;li&gt;L1 BTB从512个条目增加到1024个条目&lt;/li&gt;
+      &lt;li&gt;改进的预取&lt;/li&gt;
+      &lt;li&gt;改进的µop缓存&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;后端
+    &lt;ul&gt;
+      &lt;li&gt;浮点数单元：
+        &lt;ul&gt;
+          &lt;li&gt;FMA延迟从5个周期减少到4个周期。&lt;/li&gt;
+          &lt;li&gt;添加第五和第六个专用执行端口用于浮点存储和FP-to-int传输，不再共享第二个FADD端口。&lt;/li&gt;
+          &lt;li&gt;将调度器分成每个FMA/FADD/传输端口组一个调度器。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;256b VAES和VPCLMULDQ支持加倍AES和AES-GCM的加密吞吐量。&lt;/li&gt;
+      &lt;li&gt;与之前的微码模拟相比，BMI2 PDEP/PEXT位分散/收集操作的硬件实现。&lt;/li&gt;
+      &lt;li&gt;整数单元：
+        &lt;ul&gt;
+          &lt;li&gt;整数物理寄存器文件从180增加到192个条目&lt;/li&gt;
+          &lt;li&gt;发射宽度增加从7（现有的4个ALU和3个AGU）到10，其中包括1个新的专用分支执行端口和2个分离的存储数据路径。&lt;/li&gt;
+          &lt;li&gt;调度器在ALU + AGU/分支端口对之间共享，而不是每个端口专用。&lt;/li&gt;
+          &lt;li&gt;在更广泛的指令流上增加端口之间的指令冗余以减少瓶颈。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;8/16/32/64位有符号整数除法/取模延迟从17/22/30/46个周期减少到10/12/14/20个周期。（对于一些旧/新情况的一些无符号操作速度快约1个周期。）吞吐量成比例提高。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;加载/存储：
+    &lt;ul&gt;
+      &lt;li&gt;如果不是256b，则加载吞吐量从2增加到3。&lt;/li&gt;
+      &lt;li&gt;如果不是256b，则存储吞吐量从1增加到2。&lt;/li&gt;
+      &lt;li&gt;存储队列从48增加到64个条目。&lt;/li&gt;
+      &lt;li&gt;页表步进器从2增加到6，用于TLB缺失处理。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_12.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;zen42022年推出&quot;&gt;Zen4，2022年推出&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zen 4看起来与Zen 3相似，但在整个流水线中有各种升级&lt;/li&gt;
+  &lt;li&gt;Zen 4的分支目标追踪能力比Golden Cove更好&lt;/li&gt;
+  &lt;li&gt;Zen 4比Golden Cove在处理间接分支时表现更好&lt;/li&gt;
+  &lt;li&gt;Zen 4在分支跟踪方面比Zen 3明显更优秀&lt;/li&gt;
+  &lt;li&gt;Zen 4的分支重命名能力提升，具有更大的优势&lt;/li&gt;
+  &lt;li&gt;Zen 4增加了微操作缓存的大小,4k-&amp;gt;6.75k&lt;/li&gt;
+  &lt;li&gt;Zen 4的重命名器能够更好地管理后端资源，拥有更高的重命名IPC&lt;/li&gt;
+  &lt;li&gt;Zen 4的ROB容量有所增加&lt;/li&gt;
+  &lt;li&gt;Zen 4的调度器和执行管道布局与Zen 3相同&lt;/li&gt;
+  &lt;li&gt;Zen 4引入了AVX-512指令集扩展，可在合适的应用中获得明显的性能优势&lt;/li&gt;
+  &lt;li&gt;Zen 4的AVX-512实现在性能和面积之间取得了平衡&lt;/li&gt;
+  &lt;li&gt;Zen 4的前端和执行引擎改进显著&lt;/li&gt;
+  &lt;li&gt;Zen 4的后端重命名能力提升，更好地吸收缓存和执行延迟&lt;/li&gt;
+  &lt;li&gt;Zen 4在整数方面表现强劲&lt;/li&gt;
+  &lt;li&gt;Zen 4在加载和存储带宽方面略显落后&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/evolution_of_amd_cpu_microarchitectures_13.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;出处：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/517694124&quot;&gt;https://zhuanlan.zhihu.com/p/517694124&lt;/a&gt;&lt;/p&gt;
+
+</description>
+            <pubDate>Sat, 20 Dec 2025 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/evolution_of_amd_cpu_microarchitectures.html</link>
+            <guid isPermaLink="true">http://localhost:4000/evolution_of_amd_cpu_microarchitectures.html</guid>
+            
+            <category>history</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>网站更新日志</title>
+            <description>&lt;p&gt;&lt;strong&gt;2024-07-26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增龙芯1~3代处理器藏品。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2024-01-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本站启用全新域名：&lt;a href=&quot;https://cpu.retromuseum.org&quot;&gt;cpu.RetroMuseum.org&lt;/a&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 ATI 显卡 1 块。&lt;/li&gt;
+  &lt;li&gt;新增 NVIDIA Quadro 显卡 1 块。&lt;/li&gt;
+  &lt;li&gt;新增 NVIDIA GeForce 显卡 3 块。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-14&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 GPU (显卡) 藏品板块。&lt;/li&gt;
+  &lt;li&gt;新增 ATI 显卡 4 块。&lt;/li&gt;
+  &lt;li&gt;新增 NVIDIA 显卡 5 块。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-13&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel 处理器 4 颗。&lt;/li&gt;
+  &lt;li&gt;新增 AMD 处理器 12 颗。&lt;/li&gt;
+  &lt;li&gt;新增 Cyrix 处理器 1 颗。&lt;/li&gt;
+  &lt;li&gt;新增 VIA 处理器 1 颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-11&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增苹果 A 系列处理器介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增苹果 S 系列处理器介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增苹果 M 系列处理器介绍页面。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-10&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 AMD 处理器 3 颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-06&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel RapidCAD 处理器。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Pentium OverDrive 处理器。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-08-05&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel 处理器 4 颗。&lt;/li&gt;
+  &lt;li&gt;新增 AMD 处理器 1 颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-06-04&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本站评论系统更换为 Twikoo 。&lt;/li&gt;
+  &lt;li&gt;本站统计系统更换为 Awkee 。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-06-02&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本站在 vercel 建立镜像站点。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2023-02-28&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;本站启用全新域名：&lt;a href=&quot;https://cpu.ihonux.com&quot;&gt;cpu.ihonux.com&lt;/a&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-10-20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel CPU Timeline 页面。&lt;/li&gt;
+  &lt;li&gt;新增 Intel RapidCAD 介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Pentium OverDrive 介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Pentium II Xeon 介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Pentium II OverDrive 介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Itanium 介绍页面。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Itanium 2 介绍页面。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-10-16&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel NT80386DX33 处理器。&lt;/li&gt;
+  &lt;li&gt;新增 IBM 9314 03H9515 ESD 芯片。&lt;/li&gt;
+  &lt;li&gt;新增 NVIDIA GeForce Go6600 NPB 128M 图形处理器。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-10-14&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 IBM Power 6 处理器。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-10-12&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel 芯片 2 颗，AMD 处理器 2 颗，VIA 处理器 1 颗，Geode 处理器 1 颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-10-05&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;优减本站页面。&lt;/li&gt;
+  &lt;li&gt;将本站添加到 Google Search Console 中。&lt;/li&gt;
+  &lt;li&gt;添加 Google Analytics 追踪功能。&lt;/li&gt;
+  &lt;li&gt;将本站添加到360搜索。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-10-01&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel CPU 藏品 2 颗。&lt;/li&gt;
+  &lt;li&gt;将本站添加到 Microsoft Bing Webmaster Tools 中。&lt;/li&gt;
+  &lt;li&gt;添加 Microsoft Clarity 追踪功能。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-28&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel CPU 藏品 3 颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-24&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;修改首页，电脑端增加 Intel CPU 发展时间轴展示。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Core 2 QUAD Q8200、Intel Core i3-3240、Intel MD8085AH/B 藏品各一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Intel Celeron 333、366、400 藏品各一颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Cyrix Cx486 DX2 66 带绿色散热片一颗。&lt;/li&gt;
+  &lt;li&gt;新增 IBM 6x86MX PR166 和 PR233 各一颗。&lt;/li&gt;
+  &lt;li&gt;新增 不带 Pentium III 字样的 Pentium III 933 一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Pentium III Celeron 850 和 900 各一颗。&lt;/li&gt;
+  &lt;li&gt;新增 水泥奔腾 100MHz 两颗，编号不同。&lt;/li&gt;
+  &lt;li&gt;新增 Pentium MMX FV80503200 一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Pentium III Xeon 700MHz 两颗，L2 不同。&lt;/li&gt;
+  &lt;li&gt;新增 TI486DX2-G80-GA 一颗。&lt;/li&gt;
+  &lt;li&gt;增加网页统计功能，由 histats.com 提供。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-20&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel Celeron 266 和 300A 各一颗。&lt;/li&gt;
+  &lt;li&gt;增加打赏功能，支持微信和支付宝。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-18&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel 4001、4002、4003 各一颗，凑齐 4004 家族。&lt;/li&gt;
+  &lt;li&gt;新增 Intel D3002 一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Intel D80287、D80287-8 各一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Zilog Z80 Z8400PS 两颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-15&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;新增 Intel 4040 CPU 藏品一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Intel 8008 CPU 藏品一颗。&lt;/li&gt;
+  &lt;li&gt;新增 Intel P8080A CPU 藏品一颗。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-11&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;增加 26 个 CPU 藏品，品牌有 Intel、AMD、Siemens、IBM。进一步完善 AMD CPU 体系。&lt;/li&gt;
+  &lt;li&gt;完善 CPU 藏品的 tag 标注，体现不同品牌之间的横向联系。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-08&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;添加 LiveRe （来力必）的评论系统。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-07&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完成全部文字介绍的二次校对。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-05&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完成 Texas Instruments CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 STMicroelectronics N.V. CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 Geode CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 IBM CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 IDT CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 Motorola CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 Transmeta CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 Qualcomm CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;当前藏品资料整理工作基本完成。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-04&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完成 VIA CPU 藏品资料的整理工作。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-03&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完成 AMD CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成 Cyrix CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;对部分文字进行润色修改。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-09-01&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;完成 Intel CPU 藏品资料的整理工作。&lt;/li&gt;
+  &lt;li&gt;完成网站主体结构建设。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2022-08-28&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;申请 Github 账号，建立 mycpus.github.io 网站。&lt;/li&gt;
+  &lt;li&gt;开始整理 Intel CPU 藏品资料。&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+            <pubDate>Fri, 26 Jul 2024 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/update.html</link>
+            <guid isPermaLink="true">http://localhost:4000/update.html</guid>
+            
+            <category>news</category>
+            
+            <category>blog</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>不比性能比颜值，谁家生产的CPU最漂亮？</title>
+            <description>&lt;h2 id=&quot;1-平民玩家&quot;&gt;1 平民玩家&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-低等级用户&quot;&gt;1.1 低等级用户&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;外观土里土气，&lt;/p&gt;
+
+&lt;p&gt;毫无美感可言，&lt;/p&gt;
+
+&lt;p&gt;四四方方基板，&lt;/p&gt;
+
+&lt;p&gt;外加顶盖一块，&lt;/p&gt;
+
+&lt;p&gt;就是它的一切。&lt;/p&gt;
+
+&lt;h3 id=&quot;12-高等级用户&quot;&gt;1.2 高等级用户&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;基板加大、顶盖加厚、核心增多、性能增强，但它依然——其貌不扬。&lt;/p&gt;
+
+&lt;h2 id=&quot;2-普通人民币玩家&quot;&gt;2 普通人民币玩家&lt;/h2&gt;
+
+&lt;h3 id=&quot;21-炫彩皮肤&quot;&gt;2.1 炫彩皮肤&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig04.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;享有“炫彩皮肤”的处理器并不多见，上图是IDT公司生产的Winchip处理器，这颗是极其罕见的Engineering Sample（工程测试样品），IDT也只有测试样品才会有彩色的涂装。该处理器的竞争对手是英特尔奔腾&amp;amp;奔腾II处理器。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图是德州仪器生产的486DX4-100处理器，德州仪器的486处理器有不少型号都是彩色涂装，即使486字样灰白，但微软Windows的标志一定要搞成RGB，这或许也是三十年前，吸引消费者购买的重要手段吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;22-炫金皮肤&quot;&gt;2.2 炫金皮肤&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig06.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig07.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;拥有“金顶（金色顶盖）”甚至“金底”的处理器并不在少数，上世纪有大量的586、5X86、6X86、AMD K5、VIA C3等处理器都同时具备这两款“皮肤”。时至今日，大部分处理器都已经被回收“炼金”，其中含金量较高的型号是英特尔的奔腾PRO（Pentium PRO），单个含金量在百元以上，所以当前奔腾PRO的市场价格也非常统一，都在200元上下。卖家的口径也很一致：“再低？再低我还不如拿去炼金。”&lt;/p&gt;
+
+&lt;p&gt;目前CPU的顶盖都是纯铜材质，拿个锉刀磨一磨就会露出纯铜的本色。你把CPU开盖后会发现，CPU的重量基本都集中在顶盖上（尤其是英特尔），基板（包含核心、电容）轻如鸿毛。&lt;/p&gt;
+
+&lt;h3 id=&quot;23-土土的真四核处理器&quot;&gt;2.3 土土的“真四核”处理器&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig08.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：神奇的英特尔Soma神经拟态处理器（开盖），该处理器采用LGA1156（同酷睿i第一代）接口，底部没有电容，内部拥有4个核心。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig09.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：IBM的Power 4处理器&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig10.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：LSI的MCM计算模块（这其实是一个巴掌大的4核图形处理器）。&lt;/p&gt;
+
+&lt;h2 id=&quot;3-土豪玩家&quot;&gt;3 土豪玩家&lt;/h2&gt;
+
+&lt;h3 id=&quot;31-低调的土豪&quot;&gt;3.1 低调的土豪&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig11.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这是IBM的PowerPC-MCM处理器，型号是603e，频率为100MHz，现在淘宝上、闲鱼上都可以买到它（100多块钱），甚至都是全新的。这颗处理器就是典型的不开盖白瞎艺术品。（IBM的CPU基本都是不开盖白瞎）&lt;/p&gt;
+
+&lt;p&gt;芯片MCM封装技术具有统一的释义：是指多块半导体裸芯片组装在一块布线基板上的一种封装。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig12.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig13.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig14.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;开完盖你会看到下面有成双成对的彩色核心。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig15.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：AMD的Zen2架构线程撕裂者处理器&lt;/p&gt;
+
+&lt;h3 id=&quot;32-高调的土豪&quot;&gt;3.2 高调的土豪&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig16.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：IBM的Power 5多芯处理器（2004年）。像这样一个MCM多芯片处理器包含四个Power 5核心、4个三级缓存芯片（每个芯片36MB）。该处理器支持超线程技术，每个核心包含1核心2线程。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig17.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：IBM的Z9多芯处理器（2003年）。像这样一个MCM多芯片处理器包含8个PU物理计算核心（外围）、4个系统数据缓存芯片（每个芯片40MB/中心）。两个MSC内存控制芯片（外围），一个SC缓存控制芯片（外围）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig18.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：IBM的Z900服务器拆机芯片，尺寸为13cm*13cm。具体性状不详。&lt;/p&gt;
+
+&lt;h3 id=&quot;33-终极boss&quot;&gt;3.3 终极BOSS&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig19.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig20.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：IBM的这颗处理器拥有36个核心芯片，底部则是大量的金色针脚。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig21.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blogs/whose_cpu_is_the_most_beautiful_fig22.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图：IBM的这颗处理器拥有95个核心芯片，在它面前，其他CPU都是渣渣。&lt;/p&gt;
+
+&lt;p&gt;（本文后5张图来自CPU-Galaxy）&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+</description>
+            <pubDate>Mon, 23 Jan 2023 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/whose_cpu_is_the_most_beautiful.html</link>
+            <guid isPermaLink="true">http://localhost:4000/whose_cpu_is_the_most_beautiful.html</guid>
+            
+            <category>collection</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>CPU大讲堂（19）——当代CPU介绍(四) Intel Haswell 与 Broadwell 架构</title>
+            <description>&lt;p&gt;在介绍完 Ivy Bridge 之后，接下来这个世代也是目前许多人正在使用的 (毕竟因为中间的一些插曲，这跟目前最新款的处理器对大多数人来说其实只差一代而已，原因后述)，本篇要看的就是在 2013 年以「第四代 Intel Core 处理器家族」名义推出的 Intel Haswell 架构处理器。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/AMT9866.png&quot; alt=&quot;AMT9866&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;intel-haswell-架构&quot;&gt;Intel Haswell 架构&lt;/h2&gt;
+
+&lt;p&gt;2013 年在 Intel 奉行的 Tick-tock 时程上又轮到「Tock」的一年，也就是架构更新的一代，一般而言我们可以预期在「Tock 的一年」会出现比较大的变革，而「Tick 的一年」通常只会在制程上做文章，不过或许是制程提升越来越困难了吧？所以这样的规律其实从 Ivy Bridge 开始就乱了 (Ivy Bridge 对架构的改动程度其实跟 Haswell 差不了多少)，同时 Haswell 也是最后一代还称得上遵循 Tick-tock 时程规划的产品，之后基本上两年一轮已经变成不可能的理想。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW3501.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW3501-750x563.png&quot; alt=&quot;HSW3501&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;虽然说时序轮到 Tock 的主题会是架构更新，但其实 Intel 往往在 Tock 也会对制程做一些改进，虽然不会改变纳米尺度，但会作一些可以提升良率或效率的改进，例如这次 Intel 就强调 Haswell 内部的金属连接层有 11 层 (IVB 只有九层)，可以提高性能，降低芯片的面积 (当然也就降低成本)、3D 立体三闸极晶体管也在此代更臻于成熟，此外，Haswell 世代的研发领导又再次从以色列海法团队转回奥瑞冈州团队。&lt;/p&gt;
+
+&lt;h3 id=&quot;性能改进困难转往节能发展&quot;&gt;性能改进困难，转往节能发展&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/ADM8899.jpg&quot; alt=&quot;ADM8899&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从 Haswell 开始就可以很明显发现 Intel 对处理器运算核心本身的改进越来越少了 (或者说花了很多力气做的改进但实际上性能提升可能只有个位数个百分点)，由于性能提升越来越困难，接下来几代的 Intel 处理器架构有转往强化节能发展的趋势 (其实就是 Core 架构当年揭示的「由一味追求性能提升，转为追求效能比的提升」，虽然某种程度上只是性能已经很难拉上去的借口啦，不过确实结果论而言是这样)，因此节能是 Haswell 架构的一大重点 (其实从下面这张图放在架构介绍中很前面的地方就可以略知一二了)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW3502.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW3502-750x564.png&quot; alt=&quot;HSW3502&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Haswell 在节能方面的设计思维是「尽可能扩大作业模式的范围」，也就是闲置时的耗电量要被压得更低 (连带的，在不需要的时候性能输出也更低)、满载时的性能要拉得更高 (连带的在满载运作时允许比以前耗用更多电力)，并且各模式之间切换的速度要更快，没有用到的电路应该尽可能被关闭或是提供低耗电模式。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/HSW3503-750x562.png&quot; alt=&quot;HSW3503&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除此之外还有一项特性是与 IVB、SNB 不同的，Haswell 处理器的环状总线、L3 缓存的运作频率是与处理器核心脱钩的 (为了避免内建显示要存取高速缓存时得顺便把处理器核心的频率拉上来，造成额外的耗电，所以 Haswell 处理器片上一共分成三个区域，各自拥有自己的运作频率，分别是缓存与内部联机、运算核心与内建显示)，并且在电源受限的时候，电源管理单元会进行动态分配。&lt;/p&gt;
+
+&lt;h3 id=&quot;核心架构上的改进-真的不多&quot;&gt;核心架构上的改进 (真的不多)&lt;/h3&gt;
+
+&lt;p&gt;Intel 在谈及 Haswell 核心架构改进时，显得比过去 IVB、SNB 都还要笼统许多，架构的部分与 Ivy Bridge 基本上是相同的，但再次针对分支预测进行提升，并优化了前端的性能 (更大的乱序执行结构、指令读取带宽，除此之外指令发射端口也从六个增加到八个)，L2 缓存的 TLB 也有增大，但是运算管线的「结构」就几乎没有任何改变了 (当然强化也是有啦，毕竟加了一个「很大组」的新指令集呢)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW3504.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW3504-750x563.png&quot; alt=&quot;HSW3504&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除此之外 Haswell 的各类缓冲区基本上大小都有成长 (说起来在 SNB 时代 Intel 是没有特别提这个的，或许是 HSW 真的没有太多新特色吧？)&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW3505.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW3505-750x564.png&quot; alt=&quot;HSW3505&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;avx2-指令集&quot;&gt;AVX2 指令集&lt;/h3&gt;
+
+&lt;p&gt;AVX2 指令集算是 Haswell 架构最主要的新特色之一，发布之前也曾经被称为 HSW-NI (Haswell New Instruction Set)，透过新增 60 条 256-bit 浮点 SIMD 指令与增加两组 FMA3 融合乘加单元 (Fused Multiply-Add，负责状似 ±(a×b)±c 的计算操作，值得注意的是不同于 AMD 主推的 FMA4 采用四运算符，Intel 阵营的 FMA3 是三运算符的) 来让每频率周期处理器核心可以处理的 FLOPs (浮点数操作) 提高到两倍 (SNB 时期是 16 个单精度、8 个双精度，HSW 直接拉高到 32 个单精度、16 个双精度)，并且将 AVX 拓展到整数向量上，能够支持 256-bit 的整数 SIMD (以往只支持到 128-bit)，适用范围变得更广。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW3602.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW3602-750x564.png&quot; alt=&quot;HSW3602&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;下图显示的就是 Haswell 的运算单元架构图，可以看到新增的两个指令发射端口 (Port 6 用于分摊原本 Port 1 与 Port 2 的工作、Port 7 用于分摊原本 Port 2 与 Port 3 储存位置的任务) 以及新增的两组融合乘加单元。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW3506.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW3506-750x565.png&quot; alt=&quot;HSW3506&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;悲剧的-tsx-ni-指令集&quot;&gt;悲剧的 TSX-NI 指令集&lt;/h3&gt;
+
+&lt;p&gt;TSX-NI 指令集几乎可以说从头到尾就是个悲剧，首先因为名字太难翻译所以很少人记得 (事务性同步扩展指令集)、做的事情很难解释 (只能说他跟解决多线程、多核心之间的锁定、同步问题有关，透过硬件层面对这个问题进行改善，让软件工程师能够更容易解决或是降低这个问题带来的影响)、一般人没有感觉 (因为主要是跟软件工程师比较有关) 所以根本没多少人认识它。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/TSX6333.jpg&quot; alt=&quot;TSX6333&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;没人认识与记得已经很悲剧了，但更悲剧的是这个指令集在 Haswell 架构处理器当中是有缺陷的，甚至 Broadwell 也无法幸免，Intel 官方透过更新微码禁用 TSX-NI 指令集来解决，结果最后有一部分人记得这东西的原因居然反而是因为 Intel 在 Haswell 中做坏了，够悲剧吧。 XD&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/TSX6334.png&quot; alt=&quot;TSX6334&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其实我个人的感觉是 Intel 官方并不是真心想推这个指令集，因为这指令集需要依赖软件支持的成分很大，但在 Haswell 的 K 版不锁频处理器与高端 HEDT 市场的 Haswell-E 都是全线不支持的，面向服务器的 Haswell-EP 也有一堆型号不支持，后来 Intel 也很少再提起这个指令集，当能使用的人数少，它成为软件工程师采用方案的机率就很低，因为通常而言开发软件当然是希望越多人能够使用越好。&lt;/p&gt;
+
+&lt;h3 id=&quot;缓存架构不变但性能改良&quot;&gt;缓存架构不变，但性能改良&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/OTE6333.jpg&quot; alt=&quot;OTE6333&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Haswell 的缓存阶层设计依然延续 SNB、IVB 那一套，但 Haswell 的缓存性能有很明显的增长，L1 数据缓存与 L2 缓存带宽纷纷加倍，使用 AIDA64 的高速缓存测试就可以很明显感受到数字上的增长，缓存速度提高当然对降低延迟与提高性能有很大的帮助，特别是在 AVX2 指令集纳入之后，为了处理变宽两倍的向量单元，对缓存带宽的需求也就更高了。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/CBA6333.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/CBA6333-750x560.jpg&quot; alt=&quot;CBA6333&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;供电设计大改变fivr-设计&quot;&gt;供电设计大改变，FIVR 设计&lt;/h3&gt;
+
+&lt;p&gt;FIVR 的全名是 Fully Integrated Voltage Regulator，中文是整合式调压模块，顾名思义是用来调整电压用的，以往调压是主板上的电路负责的 (电源供应器输出的电压只有 5V、3.3V、12V 几种而已，到主板上会需要降压处理才能用于供给处理器上的不同部分)，传统设计的 IMVP (Intel Mobile Voltage Positioning) 架构 (下图左) 需要从主板上拉出 Core VR、图形 VR、PLL VR、I/O VR、System Agent VR、内存 VR 等六组不同的电压供给给处理器，也因为这样所以当时主板有段时间打过所谓的「相位大战」，各家高阶主板疯狂堆相位，有 16 相甚至 32 相者出现。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/EVS6399.jpg&quot; alt=&quot;EVS6399&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而 Haswell 的 FIVR 设计顾名思义就是把「调压」这件事情纳入处理器本身了，所以主板只需要供给处理器单一一种电压 (VccIn) 就可以，这样的做法有利有弊，而且各自都很鲜明，有利的地方是处理器直接控管电压调整，可以很大程度避免劣质主板或调压电路发生损坏的情形，而且由于距离与中间经过的关卡变少的缘故，效率「理论上」也得以提升，主板的电路也可以更加简化，处理器本身也可以「更全面的」主控供电状况，这对提高能耗效率是有帮助的，&lt;/p&gt;
+
+&lt;p&gt;但缺点也很显而易见，因为调压模块本来就是很会发热的东西，把这东西整合到本来散热问题就已经很大的处理器中带来的直接影响当然就是发热量的增加与散热上的困难，这样一来一往抵销后带来的节能效果还在不在其实很难讲，甚至有可能效率会比传统设计还要更糟，除此之外由于相位是主板厂商用来区分高低阶产品的重要项目之一，但采用 FIVR 设计之后主板设计太多相数的供电就变成完全只是浪费而已 (相数其实不是越高越好，太少会造成不稳定，但太多则会造成额外的耗能与零件的浪费并占去大量面积)。&lt;/p&gt;
+
+&lt;h3 id=&quot;电路布局没有甚么改变&quot;&gt;电路布局没有甚么改变&lt;/h3&gt;
+
+&lt;p&gt;从 Sandy Bridge 开始使用的电路排列方式到 Haswell 世代也依旧延续，但虽然排列没有变化，还是可以从中看到内建显示占据处理器芯片的比例越来越大这个趋势，也确实 Haswell 上面性能突破最多的地方并不是处理器本身，而是强化的内建显示，然后较大的内建显示单元正好把 IVB/SNB 上太大的 dead area 给用掉了一半。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW6325.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW6325-750x468.jpg&quot; alt=&quot;HSW6325&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;脚位又换了依然使用-tim&quot;&gt;脚位又换了、依然使用 TIM&lt;/h3&gt;
+
+&lt;p&gt;既然 Haswell 是 Tick-tock 中的 Tock，脚位当然照例是与前代 IVB/SNB 不兼容的，Haswell 使用的是 LGA1150 (Socket H3) 插槽，并且需要搭配新的芯片组使用。&lt;/p&gt;
+
+&lt;p&gt;除此之外 Ivy Bridge 受到大家诟病的 TIM 散热介质 (树脂) 在 Haswell 中依然得到沿用，并没有因为被骂而改回使用无助焊剂焊接，因此 Haswell 时代开盖风潮依旧，但高阶的 Haswell-E/EP 则仍然使用无助焊剂焊接技术，因此 Intel 选用 TIM 是为了节省成本的意图很明显了。&lt;/p&gt;
+
+&lt;h2 id=&quot;权宜之计haswell-refresh&quot;&gt;权宜之计：Haswell Refresh&lt;/h2&gt;
+
+&lt;p&gt;由于 Haswell 架构的下一世代，Broadwell 在制程改进时遇到很大的困难因此不断延迟，所以 Intel 就在 2014 年五月推出了代号为 Haswell Refresh 的更新版本。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/HRD2003.jpg&quot; alt=&quot;HRD2003&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Haswell Refresh 的型号命名方式与 Haswell 很接近，Core 家族的话是型号末码 +20，Xeon E3 系列的话则是型号数字部分末码 +1，从型号改变如此之小想必不难猜测其实没甚么改变吧？其实唯一的改变就是频率微幅上升而已。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HJS6455.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HJS6455-750x422.png&quot; alt=&quot;HJS6455&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;基本上 Haswell Refresh 的出现与其意义完全就是市场策略而已，为了延续已经上市超过一年的 Haswell 的热度与动能，所以特别「重走一次发布流程」想带起话题，除此之外还特别把 K 版不锁频的 Haswell Refresh 处理器起了个 Devil’s Canyon 的代号跟搞了一个 Pentium 20 周年限定版 (G3258)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/DVC6633.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/DVC6633-750x422.png&quot; alt=&quot;DVC6633&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Intel 官方是宣称 Devil’s Canyon 的两颗处理器的背面电容器有重新安排过，供电上效率与稳定度都会比较好，而且 IHS 里面的 TIM 导热材料也与其他型号不同 (但 TIM 仍然是 TIM 啊 XD)。&lt;/p&gt;
+
+&lt;h2 id=&quot;haswell-ep-与-haswell-e-架构&quot;&gt;Haswell-EP 与 Haswell-E 架构&lt;/h2&gt;
+
+&lt;p&gt;一如过去几代的作法，Haswell 架构家族依然有后续的完整版 Haswell-EN/EP/E，同时也如同 Ivy Bridge 家族般推出了最高级的老大哥 Haswell-EX，但由于一般人是不太有机会碰到 Haswell-EX 与 Haswell-EN 的，所以本篇也就不打算谈了。&lt;/p&gt;
+
+&lt;h3 id=&quot;haswell-ep面向中高阶服务器市场&quot;&gt;Haswell-EP：面向中高阶服务器市场&lt;/h3&gt;
+
+&lt;p&gt;Haswell-EP 在 Haswell 推出后的来年，也就是 2014 年才以 Intel Xeon E5 v3 家族的名义推出，最鲜明的特色主要有四个，依序是大增的核心数 (最多可以高达 18 核心)、大增的 L3 缓存 (最大可以来到 45 MB，与前代一样是跟处理器核心切齐的结果，所以核心数大涨缓存也就跟着大增了)、采用四信道 DDR4 内存 (根据型号不同支持的速度也不同，最高到 2133 MT/s)、更快的 QPI 联机 (根据型号不同，最高从前代的 8.0 GT/s 提高到 9.6 GT/s)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/DXW9633.jpg&quot; alt=&quot;DXW9633&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而 Haswell-EP 也跟前代一样分成三种 Layout，但核心数量都大幅增加了，高配置 (HCC) 是 14 ~ 18 核心 (有两套四组环型总线与两组内存控制器)，中配置 (MCC) 是 10 ~ 12 核心 (有两套三组环型总线与两组内存控制器)，低配置 (LCC) 则是 4~8 核心 (仅有一套两组环型总线跟一组内存控制器)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSW6333.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSW6333-750x421.png&quot; alt=&quot;HSW6333&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过呢 Haswell-EP 最主要的升级同样不是出现在处理器本身，而其实是在于芯片组的部分，因为 C600 / X79 芯片组前后已经撑了将近三年了，在 Ivy Bridge E/EP 推出时，Haswell 也正好同步推出，当时就发生了高阶 HEDT 平台与中高阶服务器的扩充性竟然不如主流与入门平台的尴尬情况 (当时 C600/X79 原生只有两组 SATA 6Gbps，也不支持 USB 3.0)，而到了 Haswell-EP 搭配的 C610 / X99 芯片组才终于补上相关的扩充能力。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/LGA2011.jpg&quot; alt=&quot;LGA2011&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;此外，Haswell-E/EP 跟 Haswell 一样，脚位也跟前代的 Ivy Bridge-E/EP 不同了，虽然仍然是 LGA2011，但底下的触点分布跟定义都完全不同了，新的脚位称为 LGA2011-3 (Socket R3)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/LGA2022.jpg&quot; alt=&quot;LGA2022&quot; /&gt;
+    &lt;p&gt;&lt;b&gt;(上图取自 Tom’s Hardware)&lt;/b&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;haswell-e面向高阶计算机玩家-hedt-平台&quot;&gt;Haswell-E：面向高阶计算机玩家 HEDT 平台&lt;/h3&gt;
+
+&lt;p&gt;依循前面订下的惯例，所以 Haswell-E 是以第五代 Core i7 处理器的名义推出，推出时间在 2014 年的九月初，但由于 Broadwell 难产，所以搞到最后第五代 Core 处理器家族反而是 HEDT 平台先出了 (第四代的 HEDT Ivy Bridge-E 推出于 2013 年九月，Haswell 则推出于 2013 年六月，至于 Broadwell 呢？2015 年的事情了)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSE3401.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSE3401-750x422.jpg&quot; alt=&quot;HSE3401&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不知道是不是因为 Haswell 架构的性能提升不是很明显的关系，在介绍 Haswell 家族架构的时候 Intel 常常把自家的老产品拿出来鞭尸 XD，这张是把 Intel 旗下第一个挂 Extreme Edition (极致版) 的产品 P4EE 开始一路到现在的 Core i7 Extreme 做对比，号称这十年内性能足足提升了 40 倍之多。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSE6852.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSE6852-750x421.jpg&quot; alt=&quot;HSE6852&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Haswell-E 的标志意义其实在于这是 Intel 第一次将八核心处理器带入个人计算机市场，同时 HEDT 平台也不再有四核心的型号了，让 HEDT 平台与主流平台的性能差距拉开许多，不过呢，最低阶的 5820K 只有 28 条 PCI Express 3.0 通道，似乎是为了跟 5930K 拉开所以故意让 5820K 的性价比降低而做的设定 (不过结果好像反而造成 5930K 不好卖的反效果？因为如果不玩多显示适配器的话其实 PCI Express 通道 28 条也够用了，为了 0.1 GHz 花 1.75 倍价钱怎么想也不值得)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSE8453.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSE8453-750x422.jpg&quot; alt=&quot;HSE8453&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从 Die Map 上也可以很明显看出 Haswell-E 其实就是 LCC 配置的 Haswell-EP。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HSE6633.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HSE6633-750x421.jpg&quot; alt=&quot;HSE6633&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;制程改进版intel-broadwell-架构&quot;&gt;制程改进版：Intel Broadwell 架构&lt;/h2&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/CEW5366.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/CEW5366-750x421.png&quot; alt=&quot;CEW5366&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Broadwell 架构基本上就是 Haswell 架构移植到 14 纳米工艺的版本，如同介绍 Ivy Bridge 时提过的，制程改进随着尺度越缩越小，难度也越来越提高，虽然 Ivy Bridge 的时候有很多新的制程技术，看似好像突破了许多困难，但实际上在 Broadwell 架构的时候 Intel 还是踢到铁板了。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/BDW6332.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/BDW6332-750x433.png&quot; alt=&quot;BDW6332&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;由于推出的时候 (2015 年六月) 距离 Skylake 的发布只差一、两个月，因此 Broadwell 上市的型号很少 (且在台湾只有少数店家有进，官方规画只有五种)，以台湾而言能买到的 LGA1150 封装盒装版本只有 i7-5775C 跟 i5-5765C 两款而已，值得注意的是这两款居然配了 Iris Pro 内建显示，可说是前无古人，目前也未有来者。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/BDW3211.jpg&quot; alt=&quot;BDW3211&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从 Die map 上可以发现 Broadwell-C 的内建显示单元的大小实在太夸张了，比处理器本体还大了 XD。&lt;/p&gt;
+
+&lt;h3 id=&quot;第二代-3d-立体三闸极晶体管&quot;&gt;第二代 3D 立体三闸极晶体管&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/ASM6399.jpg&quot; alt=&quot;ASM6399&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;14 纳米制程中所使用的晶体管也获得了升级，直观上的差异是「鱼鳍」的高度变高、密度也变得更密了，这样的改变能够提升性能与降低漏电流。&lt;/p&gt;
+
+&lt;h3 id=&quot;各类性能都有微幅提升&quot;&gt;各类性能都有「微幅」提升&lt;/h3&gt;
+
+&lt;p&gt;实际上 Broadwell 以 Haswell 作为基础，在蛮多方面都有性能上的提升 (像是分支预测也又升级了一番)，不过因为 Skylake 在不到两个月后就推出了，自然也就没甚么人关注，甚至在官方的 IDF 大会上其实也直接跳过 Broadwell 就介绍 Skylake 了，怎么说呢，毕竟有更快的东西，第二名就不会有人在意了吧？&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;(结束？)&lt;/p&gt;
+&lt;a href=&quot;computer_lecture_18.html&quot; class=&quot;btn btn-primary&quot;&gt;上一篇&lt;/a&gt; 
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+</description>
+            <pubDate>Sun, 22 Jan 2023 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/computer_lecture_19.html</link>
+            <guid isPermaLink="true">http://localhost:4000/computer_lecture_19.html</guid>
+            
+            <category>course</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构</title>
+            <description>&lt;p&gt;其实我本来是打算把 Sandy Bridge 跟 Ivy Bridge 放在同一篇写的，毕竟 Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上会是 Sandy Bridge 的延续，所以改进内容并不会那么多与明显，不过考虑到上篇篇幅已经达到 4,200 字，加上 Sandy Bridge 跳 Ivy Bridge 的改进内容又比上次 Nehalem 跳 Westmere 来得多，所以还是独立开篇了。 XD&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/IVB3012.jpg&quot; alt=&quot;IVB3012&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;intel-ivy-bridge-架构&quot;&gt;Intel Ivy Bridge 架构&lt;/h2&gt;
+
+&lt;p&gt;时序来到 2012 年，依照 Intel 奉行多年的 Tick-tock 二年一轮发展计划，又是轮到 Tick，也就是制程改进的一年，因此以第三代 Intel Core 处理器家族、Intel Xeon E3 v2 家族名义推出的 Ivy Bridge 架构处理器带来的主要特色无庸置疑，就是 22 纳米制造工艺首次投入 Intel x86 处理器使用，然而随着制程越来越接近硅原子的物理极限，制程提升已经不像以前那么简单，因此这次的 22 纳米制造工艺是有很多特色的。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/IVB3401.png&quot; alt=&quot;IVB3401&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;自-2003-年以来制程上的最大进展&quot;&gt;自 2003 年以来制程上的最大进展&lt;/h3&gt;
+
+&lt;p&gt;大致上 Intel 近十年内的制程演化有三个技术是扮演最关键角色的，依序是在 2003 年导入 90 纳米制造工艺时引入的硅锗异质接面与应变硅技术 (首次用于 Intel Pentium 4 Prescott)、2007 年导入 45 纳米制造工艺时引入的 High-K 金属闸极技术 (首次用于 Intel Core Penryn)，接下来就是在 Ivy Bridge 世代 22 纳米制造工艺上引入的 3D 立体三闸极晶体管技术了。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/TSE8522.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/TSE8522-750x423.png&quot; alt=&quot;TSE8522&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;下图左侧显示的就是 Sandy Bridge 或更早以前时期的晶体管，右图则是从 Ivy Bridge 开始采用的 3D 立体三闸极晶体管，我想从图上应该就可以很明白名称中的「3D 立体」是怎么回事了，主要的差异其实就是硅基底 (Silicon Substrate) 延伸穿出金属氧化物 (Oxide) 的那根有点像鱼鳍的东西 (其实跟最近很夯的 FinFET 有点像，FinFET 的名称由来有一说也是因为中间那根长得很像鱼鳍的关系)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/AST8542.jpg&quot; alt=&quot;AST8542&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;然后有一点蛮有趣的，中间的「鱼鳍」数量是可以根据产品的需求改变的，Intel 官方的投影片有些是画三根有些则只有一根。 XD&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/TDS8541.jpg&quot; alt=&quot;TDS8541&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;解释完 3D 是怎么回事之后接下来大家会好奇的大概就是听起来很好很强大的「三闸极」是怎么回事了吧？这边用英文原文的 Tri-Gate 会比较好理解，所谓的 Gate (闸极) 呢就是上面两张图中标黄色的位置，同时也是 Intel Tri-Gate 跟最近很红的 FinFET 在结构上比较不同的地方 (FinFET 是双闸极)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/DSE1321.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/DSE1321-750x392.jpg&quot; alt=&quot;DSE1321&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;所谓的三闸极其实就是突起的「鱼鳍」与周围接触的三个面都可以作为闸极使用的意思 (如果将鱼鳍的宽度做成宽高相等的话，就会有三个完全相同面积的闸极可用)，与左边的传统晶体管只有单一闸极就形成了对比。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/FSR6633.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/FSR6633-750x422.png&quot; alt=&quot;FSR6633&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从上面这张图中我们可以得知，其实 3D 立体三闸极晶体管在 Intel 公司内部已经研究了很长的一段时间，从发明到实际广泛应用于量产产品 (Ivy Bridge) 前后距离将近十年，由此可见 3D 立体三闸极晶体管是一项非常重要，且必须的技术，否则 Intel 不会耗费这么大的力气与如此多的资源来研发这项技术，由于这个系列文章的主题并不是物理，所以我不打算深入 (而且我也不会) 讨论其他制程的内容与做法，关于技术的说明就到此为止，接下来就回来谈这项技术的必要性与影响吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;3d-tri-gate-晶体管的好处与必要性&quot;&gt;3D Tri-Gate 晶体管的好处与必要性？&lt;/h3&gt;
+
+&lt;p&gt;说了那么多，到底为什么必须要发展 3D Tri-Gate 晶体管呢？其实是为了提升制程所必须，因为在制造工艺不断提升下，今日的芯片制造工艺已经来到 30nm 以下，随着越来越逼近现有材料的物理极限，提升制程的困难度也越来越高 (好比要从零分进步到 60 分很容易，但从 80 分进步到 90 分却很难)，所以新的材料与做法是继续提升制程的过程中不可或缺的。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/ANM8544.jpg&quot; alt=&quot;ANM8544&quot; /&gt;
+    &lt;p&gt;&lt;b&gt;(左为传统晶体管，右为 22nm 3D Tri-Gate 晶体管)&lt;/b&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一般来说晶体管的性能可分为三个指标，第一是切换速度 (半导体通路与断路间的切换速度，因为直接影响到处理器的最高频率，所以越快越好)，第二则是导电流 (当半导体处于通路状态时当然是导电流越高，越顺越好，导电流越大处理器就越省电)，第三则是断路时产生的漏电流 (越少越好，漏电流是芯片废热的主要来源之一，同时也是处理器闲置时的主要能耗来源)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/TGS6633.jpg&quot; alt=&quot;TGS6633&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;传统晶体管在微观尺度下有很多效应会导致其漏电流的增加，而且随着制造工艺的提升，尺度越来越小、单位面积的晶体管数量越来越多也连带使得漏电流效应变得更加明显，到了 30nm 以下制程，通道形成与漏电流、短通道效应的问题已经大到不可忽视，若是无法解决的话未来制程提升几乎就是不可能的难题。&lt;/p&gt;
+
+&lt;p&gt;而 Tri-Gate 设计就是为了解决一部分的通道形成问题，透过增加闸极的接触面积来减少形成通道造成漏电流的状况，再辅以 High-K 材料解决扩大闸极带来的新问题，从而使更小的制程成为可能，而且 Tri-Gate 由于是型态上的改变，因此晶圆厂几乎不需要改变材料，所以成本大概只会提高 3% 到 5% (远远低于制程提升带来的成本节省，光是面积下降一片晶圆可以多切出的芯片带来的成本降低就很多了，所以很有吸引力)，而上面这个影片就是 Intel 官方在介绍 3D 晶体管的好处，还蛮有趣的。&lt;/p&gt;
+
+&lt;h3 id=&quot;回到-ivy-bridge-本身&quot;&gt;回到 Ivy Bridge 本身……&lt;/h3&gt;
+
+&lt;p&gt;谈了那么多制程改进的部分，我想现在该回到 Ivy Bridge 处理器架构本身了，因为 Ivy Bridge 的时序是制程改进的一年，因此系统架构上不会有任何改变 (其实从名字都是 Bridge 也看得出来 XD)，同时脚位也会继续沿用 LGA1155。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2001.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2001-750x565.png&quot; alt=&quot;IVB2001&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;新特色的部分呢，最明显的当然是前面花掉大半篇幅的制程改进，除此之外还有内建显示的强化 (从 Sandy Bridge 开始其实每代 Intel 架构的内建显示进化幅度都比处理器本身还要高……)，核心部分也有一些改良 (IPC 性能微幅提升)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2002.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2002-750x563.png&quot; alt=&quot;IVB2002&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;至于新加入的东西也是有的，主要是关于超频能力、安全性与省电三个方面以及对 DDR3L 内存跟 PCI Express 3.0 信道的支持。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2003.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2003-750x563.png&quot; alt=&quot;IVB2003&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;账面上的-超频能力提升&quot;&gt;(账面上的) 超频能力提升&lt;/h3&gt;
+
+&lt;p&gt;Ivy Bridge 关于超频能力方面带来了四点提升，分别是内存频率可以拉高到 DDR3 2800 (SNB 只支持到 DDR3 2133)，倍频上限拉高到 63 (SNB 只支持到 57，不过这不是问题因为平常根本达不到)、超频设定可以不必重新启动才生效、外频 (其实就除频比啦) 增加了 133 MHz 这一级 (SNB 只有 100 MHz 一种)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2006.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2006-750x565.png&quot; alt=&quot;IVB2006&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过呢，这些都只是账面规格的提升而已，实际上 Ivy Bridge 的超频能力并没有甚么大提升，甚至在超频使用的时候温度表现比 Sandy Bridge 来得差，这违反常理 (毕竟制程升级嘛，通常应该是预期温度下降与超频性变好的) 的现象基本上是由两个因素造成的。&lt;/p&gt;
+
+&lt;p&gt;其一是因为新制程带来芯片面积的大幅缩小，Ivy Bridge 的核心与 System Agent 面积几乎只有前代的 60% 上下，也因为这样所以单位面积的热量明显提高了许多，与 IHS (Integrated Heat Spreader) 的散热面积却变小了，散热效率也因此有所下降，不过后来的实验证实这不是主因。&lt;/p&gt;
+
+&lt;p&gt;其二则是 IHS 与处理器芯片本体之间的介质改变了，以往 Intel 是使用无助焊剂焊接 (fluxless solder) 的方式来将 IHS 与处理器芯片本体链接，而在 Ivy Bridge 中，或许是出于节省成本的考虑，改用普通的散热树脂 (Thermal Interface Materials, TIM) 取代，这对导热性能带来了很大的影响，所以「开盖」风潮其实从 Ivy Bridge 开始大行其道的。&lt;/p&gt;
+
+&lt;h3 id=&quot;针对安全性强化&quot;&gt;针对安全性强化&lt;/h3&gt;
+
+&lt;p&gt;Ivy Bridge 关于安全性方面的强化主要有两点，其中第一项是内建的硬件数字随机数生成器 (DRNG) 与因应其而设计的 RDRAND 指令，Intel 官方宣称这样的实作方式可以提供更高等级且更高效率的安全防护，不过同时却也在网络上引爆了正反论战，有些人认为将随机数生成器内建到处理器电路上时，可能会反而让有心人士得以透过扰乱甚至修改电路的方式来使「随机数变得不那么随机」，从而降低加密数据的安全性 (因为破解变简单了，但使用者却不知情)，某种程度上让人联想到当年 Pentium III 在处理器内建入专属序号时引发的争议。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2004.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2004-750x563.png&quot; alt=&quot;IVB2004&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;另一项新的安全功能则是监督模式执行保护 (SMEP)，主要是用于防范越权攻击 (EoP)，避免不受信任的程序透过内存漏洞来尝试越权执行指令。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2005.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2005-750x565.png&quot; alt=&quot;IVB2005&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;节能方面的改进&quot;&gt;节能方面的改进&lt;/h3&gt;
+
+&lt;p&gt;从 Core 架构开始，节能就是 Intel 改进处理器架构时花很多力气考虑的议题，也是几乎每代新架构都会触及的地方，Ivy Bridge 与节能相关的改进其实还蛮多的，例如内存 I/O 在深层睡眠的时候可以被完全关闭、可调式 TDP、使 S3 模式更加节能的优化、System Agent 在低电压版处理器上可以使用更低的电压运作、运作时可以选择「比较而言效率最佳的核心」来执行指令等。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVB2007.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVB2007-750x563.png&quot; alt=&quot;IVB2007&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过呢其实我个人觉得 Ivy Bridge 绝大多数节能还是来自于新制程的帮助，毕竟 TDP 在制程升级之后的降幅其实还蛮大的 (桌面计算机四核心标准版从 95W 大降至 77W)。&lt;/p&gt;
+
+&lt;h2 id=&quot;其他-ivy-bridge-家族成员&quot;&gt;其他 Ivy Bridge 家族成员&lt;/h2&gt;
+
+&lt;p&gt;如同 Sandy Bridge 那样，其实没有任何标注的 Ivy Bridge 只是整个 IVB 家族中的小弟而已，晚一年推出的还有 IVB-E、IVB-EN、IVB-EP、IVB-EX 四个大哥呢，而且在 Ivy Bridge 世代中其实就性能上，IVB-EP 与 IVB-EX 的发展是比较明显的 (因为核心数爆升)。&lt;/p&gt;
+
+&lt;p&gt;由于一般人不太会接触到 Ivy Bridge-EN 与 Ivy Bridge-EX，所以本篇就不介绍了。&lt;/p&gt;
+
+&lt;h3 id=&quot;ivy-bridge-ep面向中高阶服务器市场&quot;&gt;Ivy Bridge-EP：面向中高阶服务器市场&lt;/h3&gt;
+
+&lt;p&gt;Ivy Bridge-EP 在 Ivy Bridge 推出后的来年以 Intel Xeon E5 v2 家族的名义发布，是 Ivy Bridge 架构真实意义上的完整版本，与前代 Sandy Bridge-EP 共享相同的脚位与芯片组、主板。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/MEM6633.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/MEM6633-750x423.png&quot; alt=&quot;MEM6633&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ivy Bridge-EP 有三种不同的 die 配置，分别是包含 6 个核心的 LCC、10 个核心的 MCC、12 个核心的 HCC (SNB-EP 最多只到八个核心)，其中 LCC 与 MCC 的配置大致相仿，但 HCC 就不同了，面相高性能计算 (HPC) 市场的 HCC 配置，包含了两组内存控制器，同时内部的环状总线也被分成两个环 (合计三套，比其他配置还要多出一套)，对降低延迟有帮助。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVP2011.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVP2011-750x480.png&quot; alt=&quot;IVP2011&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;值得注意的是六核心型号有一部分是 LCC，另一部分是 MCC，所以 Xeon E5 v2 系列有少数型号的 L3 高速缓存是跟核心数量对不起来的 (但由于追求尽可能利用硅晶圆上的面积，因此要求对齐的关系，其实缓存容量的上限还是跟实体产品上有多少组核心电路的构造成正相关)。&lt;/p&gt;
+
+&lt;h3 id=&quot;ivy-bridge-e面向高阶游戏玩家-hedt-市场&quot;&gt;Ivy Bridge-E：面向高阶游戏玩家 HEDT 市场&lt;/h3&gt;
+
+&lt;p&gt;Ivy Bridge-E 与上代产品一样，基本上可以被视为 Ivy Bridge-EP 的特殊高频率型号，划分上属于第四代 Intel Core i7 处理器 (不过这代很尴尬，因为搭配的 X79 年事已高，所以呈现了低阶入门平台有支持 USB 3.0 与用不完的 SATA 6Gbps，超贵的 Ivy Bridge-E 却面临只有 USB 2.0 支持与原生 SATA 6Gbps 埠只有两个的窘境)&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IVE2011.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IVE2011-750x548.jpg&quot; alt=&quot;IVE2011&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ivy Bridge-E 本质上与 Ivy Bridge-EP 几乎是一样的东西，继续沿用从 Sandy Bridge-E/EP 开始使用的 LGA2011 脚位，并且依然维持低阶四核心、高阶六核心的配置，并没有如当时大家预期的让八核心处理器「飞入寻常百姓家」。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/ISW9633.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/ISW9633-750x561.png&quot; alt=&quot;ISW9633&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;比较值得注意的是，从上面这张 die shot 中可以看出，Ivy Bridge-E 的芯片本身就是由六个处理核心组成的 (其实就是 Ivy Bridge-EP 的 LCC 配置版本)，因此不像 Sandy Bridge-E 那样是由八核心处理器屏蔽两个核心而来，对降低成本与省电都有帮助 (当然主因是降低成本)，反而入门款的 4820K 则是由六核心屏蔽成四核心的型号。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;(未完待续)&lt;/p&gt;
+&lt;a href=&quot;computer_lecture_17.html&quot; class=&quot;btn btn-primary&quot;&gt;上一篇&lt;/a&gt; 
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+</description>
+            <pubDate>Sat, 21 Jan 2023 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/computer_lecture_18.html</link>
+            <guid isPermaLink="true">http://localhost:4000/computer_lecture_18.html</guid>
+            
+            <category>course</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>CPU大讲堂（17）——当代CPU介绍(二) Intel Sandy Bridge 架构</title>
+            <description>&lt;p&gt;以目前的现状来说，本篇介绍的 Sandy Bridge 与下篇将讨论的 Ivy Bridge 应该是在现役计算机中普及率最高的两个世代吧？在经过 Nehalem 翻天覆地的大改革之后，从 Sandy Bridge 开始个人计算机处理器的发展有很明显趋于缓和的现象，接下来的 Ivy Bridge、Haswell、Broadwell、Skylake 其实都不会有太让人惊艳的提升或变革，但 Intel 在这几个世代中可说是一帆风顺、节节高升 (毕竟对手 AMD 的推土机就跟扶不起的阿斗一样啊)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/core-i3-i5-i7-old-new-logos.png&quot; alt=&quot;core-i3-i5-i7-old-new-logos&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;上为 Westmere 时期的 Logo，下为 SNB 与 IVB 时期的 Logo。&lt;/p&gt;
+
+&lt;h2 id=&quot;回到以色列海法的回合&quot;&gt;回到以色列海法的回合&lt;/h2&gt;
+
+&lt;p&gt;Sandy Bridge (SNB) 架构其实原本的代号是 Gesher，如果你还记得先前曾经出现在 Core 架构介绍的这张 Roadmap 的话，上面就显示 Westmere 的下一世代是 Gesher，在希伯来语中就是桥梁的意思，同时也是当地的地名，后来改为 Sandy Bridge 据说是为了避免让人联想到以色列当地的政党 (已于 2007 年解散)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/tick-tock.jpg&quot; alt=&quot;tick-tock&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从代号名称选自以色列地名来看就可以很明显发现这一世代的开发主导又从奥瑞冈州转回以色列海法，所以当初在开发过程中其实引发了不少人的期待。&lt;/p&gt;
+
+&lt;h2 id=&quot;sandy-bridge-微架构&quot;&gt;Sandy Bridge 微架构&lt;/h2&gt;
+
+&lt;p&gt;如同在 Nehalem 架构介绍中提过的，从 Nehalem 开始 Intel 正式确立了将旗下 x86 处理器平台分成高中低三大平台，分别是代表顶级服务器，以延展性著称的 Expandable (EX)、用于中高阶服务器，主打高性能的 Efficient Performance (EP) 或面向 HEDT 玩家市场的 Extreme (E)、用于一般消费型平台或入门级服务器的主流平台，且从主流平台开始每上一级就落后一代。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/RMM8452.png&quot; alt=&quot;RMM8452&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sandy Bridge 也不例外，所以在 2011 年我们迎来了以「第二代 Intel Core 处理器家族」与「Intel Xeon E3 家族」名义发布的 Sandy Bridge 架构处理器，在来年才得以见到「完整版」的 Sandy Bridge-E / Sandy Bridge-EP。&lt;/p&gt;
+
+&lt;h2 id=&quot;说大不大说小不小的改进&quot;&gt;说大不大，说小不小的改进&lt;/h2&gt;
+
+&lt;p&gt;如果以最后的性能成绩来评判的话，其实 Sandy Bridge 带来的改进并没有很明显 (远远不及 Netburst 到 Core 或 Core 到 Nehalem 那样)，但在架构上却有很多改变，其中有不少设计变更都持续被沿用至今日的 Broadwell 与 Skylake 上，并且在可预见的未来中会继续使用。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/ASE2211.jpg&quot; alt=&quot;ASE2211&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;现代-intel-处理器的基本结构确立&quot;&gt;现代 Intel 处理器的基本结构确立&lt;/h3&gt;
+
+&lt;p&gt;Sandy Bridge 之后基本上处理器设计的基本结构就没有再发生任何变化了，大致上是延续 Nehalem 市代 Clarkdale 的作法，将 PCI Express 控制器、内存控制器放到处理器内，因此北桥已无存在的意义，所以系统基本架构只剩下两颗芯片，南桥改称 Platform Controller Hub (PCH) 并继续称为芯片组。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/SNB_DIESHOT.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/SNB_DIESHOT-750x378.jpg&quot; alt=&quot;SNB_DIESHOT&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但从 die shot 上可以很明显的看到，从 Sandy Bridge 开始整合显示核心也被放到处理器芯片中了，不同于 Clarkdale 还使用双芯片的 MCP 封装方式，这样的做法直到今日的 Skylake 仍然获得沿用，除此之外还有一项很大的不同，那就是模块的排列方式改变了，与下图的 Clarkdale die shot 对比就能很明显的看出不同。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/lynnfield_die.jpg&quot; alt=&quot;lynnfield_die&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;新的排列方式我们可以看到两个趋势，首先是 L3 缓存与核心正好是切齐的，这意味着 L3 缓存的大小与带宽将与处理器核心数有关 (尽管 L3 缓存是共享的)，此外也可以很明显的发现运算核心与缓存以外的部分 (Uncore 电路) 有集中被收到旁边的趋势，这基本上是为了让延展性变得更好，让核心数量增加或减少的时候造成的空间浪费与重新配置需求降低 (所以双核心版本其实就只是宽度变窄，直接拿掉中间两组核心而已)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/AKA9855.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/AKA9855-750x564.png&quot; alt=&quot;AKA9855&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;将新旧两代的系统架构图排在一起就可以很明显看出其不同，在 Clarkdale 的时代处理器核心与内建显示核心两颗芯片 (MCP 封装) 之间是用 QPI 沟通的，进入 Sandy Bridge 之后就改为直接整合到单一芯片中。&lt;/p&gt;
+
+&lt;h3 id=&quot;前端电路再次进化&quot;&gt;前端电路再次进化&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/UOP9966-750x564.png&quot; alt=&quot;UOP9966&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;以处理器结构来说，Sandy Bridge 的主要进化是出现在前端的指令译码、分支预测的部分，SNB 架构处理器的前端增加了一个用于储存已译码指令 (microOPs) 的缓存 (L0 缓存)，可以在许多情况下不需要将已译码的指令重跑一次译码流程，从而获得一些性能提升，并且可以在不需要的时候将译码电路暂时关闭以节省能源，再辅以重新设计过的分支预测电路，在前端部分的性能因此有了一定幅度的提升。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/BPU1011.jpg&quot; alt=&quot;BPU1011&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;具体的改进内容由于牵涉计算器组织的专业知识与需要相当大的篇幅，因此本篇暂时不谈，Intel 官方宣称新设计的分支预测电路可以提供两倍多的追踪目标、可以存放更多的历史数据以利进行更准确的分支预测。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/sandybridge-uarch.png&quot; alt=&quot;sandybridge-uarch&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;至于后端的改变就不是那么明显了，主要大概就是新增了 AVX 指令集，将对操作数的支持拉高到 256-bit 吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;环状内部联机与-system-agent&quot;&gt;环状内部联机与 System Agent&lt;/h3&gt;
+
+&lt;p&gt;Sandy Bridge 本身最大的改变应该就属这项了，过去在 Nehalem / Westmere 架构时，Intel 是使用直接拉线将运算核心与 L3 缓存连接在一起的方式实作，但这样的方式会造成增加核心数的时候有很大的麻烦，所以在 Sandy Bridge 中就使用一组环状的通道将各个核心的 L3 缓存分块连结起来，每个核心都有一个资料节点，除此之外还有两个用于 I/O 与管控的节点 (N 核心处理器有 N+2 个节点)，这样的做法最早可以在 Nehalem-EX 上看到：&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/11-0.png&quot; alt=&quot;11-0&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在采用 Sandy Bridge 架构的处理器上，环形内部联机可以带来每条联机高达 96 GB/s 的传输速度，而且因为速度是随联机数增长的，因此也就代表内部链接的性能会随着核心数增加而提升，例如四核心的 L3 缓存数据传输率可以高达 384 GB/s，双核心版本则为减半。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/arch-07.png&quot; alt=&quot;arch-07&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;环状联机由 4 个环组成 (依序为数据环、请求环、通知环与监听环)，全部都以核心电压与频率运作，值得注意的是 Sandy Bridge 上的节点配置与 Nehalem-EX 有点不同，虽然节点数量仍然是 N+2，但在 I/O 等电路已整合为 System Agent (包含 PCI Express 控制器、内存控制器、DMI 总线接口、电源管理单元、显示引擎，参见下图) 之后，额外的 2 个节点中有 1 个将是内建显示，所以，是的没错，Sandy Bridge 的内建显示是会用到处理器的 LLC 缓存的。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/SAE9966.png&quot; alt=&quot;SAE9966&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;System Agent 的部分运作频率与电压则会低于运算核心，整体而言 Sandy Bridge 的供电方式可分为「三大区域」，分别是 System Agent、运算核心与缓存、内建显示，彼此间的供电与频率互不影响，其中 System Agent 的频率与电压是固定不可调整的，内建显示则使用独立的电源，因此可以直接被关闭而不影响其他部分。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/PMS8550.png&quot; alt=&quot;PMS8550&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;sandy-bridge-其他改进&quot;&gt;Sandy Bridge 其他改进&lt;/h3&gt;
+
+&lt;p&gt;除了前面提过的之外还有这些改进出现在 Sandy Bridge 架构 (由于篇幅有限故不详述)：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;更强大的内建显示 (接近前代的两倍，不过仍然很弱)。&lt;/li&gt;
+  &lt;li&gt;新增第一代的 Quick Sync Video 技术，不过画质并不理想。&lt;/li&gt;
+  &lt;li&gt;Turbo Boost 技术升级到 2.0 版本。&lt;/li&gt;
+  &lt;li&gt;脚位更换为 LGA1155 (Socket H2)，与 Nehalem / Westmere 主流平台使用的 LGA1156 (Socket H) 无法兼容，LGA1156 的产品寿命前后只有短短一年 (高阶 Nehalem、Nehalem-EP、Westmere-EP 则是使用 LGA1366，Nehalem-EX 使用 LGA1567)。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;完全体sandy-bridge-e--sandy-bridge-ep&quot;&gt;完全体：Sandy Bridge-E / Sandy Bridge-EP&lt;/h2&gt;
+
+&lt;p&gt;从 Nehalem 开始 Intel 就确立了这种高阶平台比中低阶平台落后一代的节奏，所以实际上 Sandy Bridge 架构真正完全发挥是来年才推出的 Sandy Bridge-EP (服务器市场) 与 Sandy Bridge-E (高阶 HEDT 玩家市场)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/E5v1.jpg&quot; alt=&quot;E5v1&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;基本上 Sandy Bridge-E 与 Sandy Bridge-EP 是一样的东西，硬要说的话也可以说 Sandy Bridge-E 是从 Sandy Bridge-EP 直系分化而来，主要差异在于 SNB-E 会比较强调高频率、不锁倍频，但 SNB-EP 则会优先选择提升运算核心的数量，频率通常较低，原则上完全不能超频，最后前者以 Core i7 3800/3900 系列的名义推出，后者则是成为新设的 Xeon E5 家族。&lt;/p&gt;
+
+&lt;h2 id=&quot;最多可以高达-8-核心4-信道内存pci-e-信道翻倍&quot;&gt;最多可以高达 8 核心、4 信道内存、PCI-E 信道翻倍&lt;/h2&gt;
+
+&lt;p&gt;Sandy Bridge-EP/E 据传两种 Layout，其中高配置 (HCC) 设计上是八个核心 (但 Sandy Bridge-E 最高仅有六核心的型号，似乎是八核心没办法撑到那么高频率，所以 Sandy Bridge-E 家族有两个核心是被屏蔽的)，至于低配置 (LCC) 则据闻是四核心配置，但无相关照片出现 (Core i7-3820 应该是用 LCC)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/3960X.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/3960X-750x563.jpg&quot; alt=&quot;3960X&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从 die shot 上就可以发现，Sandy Bridge-E/EP 的内存控制器与 System Agent 面积大很多，实际上是用于额外两组内存信道 (SNB-E/EP 支持四信道 DDR3 内存) 与数量超越两倍的 PCI Express 通道 (高达 40 条，SNB 架构只有 16 条)，同时也可以发现 SNB-E/SNB-EP 是不包含内建显示核心的。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/SNB-E.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/SNB-E-750x539.png&quot; alt=&quot;SNB-E&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从上图中我们就可以很容易见识到改成环状总线对 CPU 模块化的帮助，四核心版本的 SNB-EP 就是直接把中间虚线框起来的部分拿掉的结果。&lt;/p&gt;
+
+&lt;p&gt;而既然功能性上 SNB 与 SNB-E/EP 数值差这么多，理所当然的脚位也不通 (基本上只要内存控制器不一样，大概都得换脚位)，Sandy Bridge-E/EP 使用的是 LGA2011，与 Sandy Bridge 使用的 LGA1155 相去甚远，大小差异可以看下图。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/SNB1942.jpg&quot; alt=&quot;SNB1942&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;部分型号可支持多处理器配置ecc-内存&quot;&gt;部分型号可支持多处理器配置、ECC 内存&lt;/h3&gt;
+
+&lt;p&gt;虽然都是一样的 Layout 分化出来的，但是根据系列所属定位的不同而有些功能上的差异，还有要注意的是脚位分很多种，所以芯片组、主板的搭配需要特别留意。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Sandy Bridge 分化&lt;/th&gt;
+      &lt;th&gt;多处理器配置&lt;/th&gt;
+      &lt;th&gt;ECC 内存&lt;/th&gt;
+      &lt;th&gt;PCI-E 信道数&lt;/th&gt;
+      &lt;th&gt;核心数&lt;/th&gt;
+      &lt;th&gt;脚位&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;E3-1200 系列&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;支持&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;至多 4&lt;/td&gt;
+      &lt;td&gt;LGA1155&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Core 家族&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;不支持&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;至多 4&lt;/td&gt;
+      &lt;td&gt;LGA1155&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;i7-3000 系列 (E)&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;不支持&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+      &lt;td&gt;至多 6&lt;/td&gt;
+      &lt;td&gt;LGA2011&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;E5-4600 系列 (EP)&lt;/td&gt;
+      &lt;td&gt;至多 4&lt;/td&gt;
+      &lt;td&gt;支持&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+      &lt;td&gt;至多 8&lt;/td&gt;
+      &lt;td&gt;LGA2011&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;E5-2600 系列 (EP)&lt;/td&gt;
+      &lt;td&gt;至多 2&lt;/td&gt;
+      &lt;td&gt;支持&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+      &lt;td&gt;至多 8&lt;/td&gt;
+      &lt;td&gt;LGA2011&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;E5-2400 系列 (EN)&lt;/td&gt;
+      &lt;td&gt;至多 2&lt;/td&gt;
+      &lt;td&gt;支持&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+      &lt;td&gt;至多 8&lt;/td&gt;
+      &lt;td&gt;LGA1356&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;E5-1600 系列 (EP)&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;支持&lt;/td&gt;
+      &lt;td&gt;40&lt;/td&gt;
+      &lt;td&gt;至多 8&lt;/td&gt;
+      &lt;td&gt;LGA2011&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;虽然上表中有出现 Sandy Bridge-EN 这东西，不过由于只用于 E5-2400 服务器系列，销量也不是太好，所以我就不特别介绍了，但值得一提的是，Sandy Bridge-EX 最后被跳过了，所以 EX 平台是直接从 Westmere-EX (E7) 跳到 Ivy Bridge-EX (E7 v2)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;(未完待续)&lt;/p&gt;
+&lt;a href=&quot;computer_lecture_16.html&quot; class=&quot;btn btn-primary&quot;&gt;上一篇&lt;/a&gt; 
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+</description>
+            <pubDate>Fri, 20 Jan 2023 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/computer_lecture_17.html</link>
+            <guid isPermaLink="true">http://localhost:4000/computer_lecture_17.html</guid>
+            
+            <category>course</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构</title>
+            <description>&lt;p&gt;好的，终于来到现阶段最后一篇 AMD 阵营的 CPU 发展史了，AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构 (照惯例本系列文章目前不谈 Atom 与 Bobcat 等用于低功耗系统或客制化芯片的旁支架构)，而 Bulldozer 架构前后有 Bulldozer (推土机)、Piledriver (打桩机)、Streamroller (压路机)、Excavator (挖土机) 四个世代，但由于系出同门，彼此之间差异也不是很明显，并且同属 15h 家族因此将在本篇中一并介绍完毕。&lt;/p&gt;
+
+&lt;h2 id=&quot;amd-bulldozer&quot;&gt;AMD Bulldozer&lt;/h2&gt;
+
+&lt;p&gt;最早 Bulldozer 架构的设计概念可以追溯到 2003 年就已经有初步的雏形，但当时的 AMD 最后选择发展 K8 架构，因此最终该雏形的研发计划被搁置，但在 K10 完成之后则被重启，成为接替 K10 架构地位的新世代架构设计，初代产品号称性能上能胜过自家上代的 Phenom II X6 1100T (六核心) 与 Core i7-950 (4C8T) 超过 50% 以上 (well, 时至今日看起来像笑话就是了)。&lt;/p&gt;
+
+&lt;p&gt;开发过程中历经无数次的跳票，最后在 2011 年 09 月 19 日发布首款产品，因此主要对手从 Westmere 变成了 2011 年 01 月就已经发布的 Sandy Bridge 与紧接着在 2012 年 02 月推出的 Ivy Bridge。&lt;/p&gt;
+
+&lt;h2 id=&quot;组成多线程的第三种方法&quot;&gt;组成多线程的第三种方法……&lt;/h2&gt;
+
+&lt;p&gt;通常来说处理器的多线程设计可以有两种做法，分别称为 SMT 与 CMP，前者的全名是 Simultaneous Multi-Threading，指得是不实质增加处理核心，透过增加一组前置单元电路的做法来让单一处理核心被视为「两个逻辑核心」，可以透过提高单一运算核心的利用率来提高性能 (因为绝大多数时候我们不会 100% 利用处理器的性能)，最成功的案例就是 Intel 的 Hyper-Threading Technology，概念上有点类似在高速公路上加盖第二个交流道。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/CSX9633.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/CSX9633-750x420.png&quot; alt=&quot;CSX9633&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;后者的全名则是 Chip Multi-Processor，其实就是当今成为显学的多核心处理器，透过直接增加核心的方式来提高性能，概念上类似直接给高速公路增加一线道，在 Intel 世界来说，从 Nehalem 开始就是同时并用 CMP 与 SMT 的作法。&lt;/p&gt;
+
+&lt;p&gt;至于 AMD Bulldozer 的作法则是从 SMT 与 CMP 两种做法中截长补短的结果，号称能够同时享受 SMT 与 CMP 的优点，并且不像 CMP 需要那么大的芯片面积与那么多的晶体管数，也不像 SMT 在高负载状况下可能效能不增反减。&lt;/p&gt;
+
+&lt;h2 id=&quot;运算模块挑战传统的核心数概念&quot;&gt;「运算模块」挑战传统的核心数概念&lt;/h2&gt;
+
+&lt;p&gt;在讨论 Bulldozer 家族的时候一直以来都有一个问题很难解释，那就是「这颗 AMD 处理器到底是几核心的？」，本来这个问题应该是很简单的，我们认知上就是完整的运算单元与专属核心的缓存合并起来的单一模块就叫做「一个核心」(类似下图右者)，也就是传统的 SMT / CMP 设计。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/AMD-Bulldozer-a.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/AMD-Bulldozer-a-750x381.jpg&quot; alt=&quot;AMD-Bulldozer-a&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但在 Bulldozer 上却不是这样，AMD 创造了一个名词「模块」来描述 Bulldozer 处理器上的运算单元，不同于以往我们认知的「一个运算核心由一组整数运算单元与一组浮点运算单元组成」，Bulldozer 核心 (上图左半边) 则是设计成每个模块有 2 组具有四条管线的整数运算单元 (各自独享 L1 数据缓存) 与 1 组浮点运算单元，而这三组运算单元共同使用属于这个模块的 L1 指令缓存与 L2 缓存，使用相同的 Fetch、Decode，这样的设计又被称为 CMT (Clustered Multi-Threading)，于是争论就由此产生了，在面对浮点运算的时候，一个 Bulldozer 模块实际上只能发挥类似单一核心 + HTT 的效果，但在面对整数运算 (AMD 认为日常情况下有 80% 的时间处理器都在做整数运算) 的时候却几乎可以被视为两个核心，那一个 Bulldozer 模块到底要算是单核心还是双核心呢？&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/ASM9963.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/ASM9963-750x422.jpg&quot; alt=&quot;ASM9963&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;AMD 官方的答案是，单一一个 Bulldozer 模块是双核心，只是这两个核心共享缓存与一组浮点运算单元，之所以不直接使用 CMP 设计是因为多核心会造成晶体管数的大幅增加 (耗电)、芯片面积的大幅上升 (成本)，在宣传四模块 Bulldozer 处理器的时候，AMD 是宣称其为「八核心处理器」，不过也因为这样所以在美国惹上了标示不实的官司。&lt;/p&gt;
+
+&lt;p&gt;不过值得注意的是 CMT 设计并不是第一次出现在处理器发展史中，早在 1996 年 DEC 就曾经在旗下的处理器上使用过类似的设计概念。&lt;/p&gt;
+
+&lt;h2 id=&quot;模块化设计&quot;&gt;模块化设计&lt;/h2&gt;
+
+&lt;p&gt;AMD 在 Bulldozer 中也效法 Intel Nehalem 导入了模块化设计，所以在设计服务器用、个人计算机用、笔记本电脑用的 Bulldozer 处理器时其实并不用耗费太多力气，同样大略可分为 Core 与 Uncore 两大部分，Core 就是前面提过的运算模块，Uncore 则包含共享的 L3 缓存与内存控制器、HyperTransport 信道。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/ABR9963.jpg&quot; alt=&quot;ABR9963&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过说是这么说啦，但 Bulldozer 的弹性其实远低于 Intel 的 Nehalem，基本上最多只能塞四组运算模块而已，最高可达 16 核心 (8 模块) 的改良版 Bulldozer － Piledriver 就得做成两个 Die 的 MCM 封装了。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/CPX9966.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/CPX9966-750x420.png&quot; alt=&quot;CPX9966&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;指令集大乱斗结束&quot;&gt;指令集大乱斗结束&lt;/h2&gt;
+
+&lt;p&gt;Bulldozer 同时也标志着 AMD 与 Intel 之间的指令集大乱斗正式结束，并且由 Intel 取得胜利，AMD Bulldozer 中内建了同期绝大多数 Intel 处理器具备的指令集 (新增 SSE4.1、SSE4.2、AES-NI 与 AVX)，并且取消在 K10 架构中只为了抢占 SSE4 这名号的 SSE4.A 指令集。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/TSR6655.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/TSR6655-750x567.png&quot; alt=&quot;TSR6655&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除此之外 Bulldozer 还额外加入了 FMA4 (四操作数融合加法)、XOP 两种 AMD 专属的指令集，主要与向量矩阵有关，但却不支持 Intel 后来内建于处理器中的 FMA3 (三操作数融合加法，要等到 Piledriver 才支持)，很遗憾的是这些指令其实不怎么实用，在 Zen 中也将被拿掉。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/FMA8966.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/FMA8966-750x564.png&quot; alt=&quot;FMA8966&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;系统架构大致上不变&quot;&gt;系统架构大致上不变&lt;/h2&gt;
+
+&lt;p&gt;Bulldozer 家族的系统架构基本上维持与 K10 时代相同，仍然维持南北桥两颗芯片的组成，内存控制器整合在处理器内，但 PCI Express 通道控制器仍然位于北桥芯片中，北桥与处理器之间也依旧使用 HyperTransport 连结但升级至 3.1 版本 (频率由 2.6 GHz 提升到 3.2 GHz，带宽可以从 5.2 GT/s 提高到 6.4 GT/s)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/990fx-block.png&quot; alt=&quot;990fx-block&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;turbocore&quot;&gt;TurboCore&lt;/h2&gt;
+
+&lt;p&gt;这功能基本上可以当成 AMD 版本的 Intel Turbo Boost，运作方式与原理几乎都如出一辙，判定升频档位的依据是采用负载率而非温度，且与 Intel 的 Turbo Boost 一样具有能在关闭部分核心的时候，将运作中核心的频率拉高到更高档位的能力。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/AMD-Turbo-CORE-clock-600x450.png&quot; alt=&quot;AMD-Turbo-CORE-clock&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;近乎悲剧的性能表现&quot;&gt;近乎悲剧的性能表现&lt;/h2&gt;
+
+&lt;p&gt;还记得本篇一开始我曾经提到 AMD 曾经宣称第一代 Bulldozer 在性能上能胜过自家上代的 Phenom II X6 1100T (六核心) 与 Core i7-950 (4C8T) 超过 50% 以上吗？&lt;/p&gt;
+
+&lt;p&gt;当年 AMD 在 Cebit 2011 大会的议程上也这么写道：「The U.S.-based CPU and chip maker AMD will present at CeBIT 2011 processors, which performance exceeds the current top models of the Phenom-II series by 50%」。&lt;/p&gt;
+
+&lt;p&gt;姑且不论在 Sandy Bridge 已经推出之后却只敢拿上一代的 Nehalem / Westmere 比较这件事情，其实 Bulldozer 最后成品的表现，尤其是单核同频率的性能，别说是要追上 Intel Nehalem 了，甚至连自家上代 K10 架构的尾声 Phenom II 都不如，在这个世代中 AMD 也正式被大家冠上「投影片制造业」的称号，毕竟写得一手好投影片最后产品却是如此不堪一击，确实挺难堪的。&lt;/p&gt;
+
+&lt;p&gt;至于当时 AMD 为 Bulldozer 的表现开脱的说法则是「Windows 7 没有办法发挥 CMT 新架构的实力，因为 CMT 架构实在太先进了」，不过后来即使微软为 Bulldozer 特别制作了两个修正程序 (KB2646060、KB2645594)，虽然可以针对 Bulldozer 改善 Windows 7 对线程的分配方式与 CPU 进入 C6 深层省电模式的频率，但也只能在某些项目带来不到 15% (且在某些情况下甚至会倒退) 的性能增长，表现仍然远不及竞争对手，在后来的 Windows 8 上面也没有甚么长进。&lt;/p&gt;
+
+&lt;h2 id=&quot;amd-高层承认-bulldozer-是个巨大的失败&quot;&gt;AMD 高层承认 Bulldozer 是个巨大的失败&lt;/h2&gt;
+
+&lt;p&gt;关于 Bulldozer 的成败其实已经差不多可以盖棺论定了，时任 AMD 服务器芯片事业群资深副总裁的 Andrew Feldman (同时也是原 SeaMicro 的 CEO，AMD 把 SeaMicro 买下来想发展微型服务器，结果彻底失败就算了，砸了这笔聘金之后差点连财务状况都毁了) 曾公开表示「推土机架构无疑是个巨大且难以止血的失败 (unmitigated failure)，我们是知道的」、「Bulldozer 的失败连带也让 AMD 在服务器市场错失许多机会」、「Bulldozer 的失败让 CEO 丢了工作、绝大多数的管理阶层丢了工作、研发技术副总裁也丢了工作，现在 AMD 有几乎全新的团队，我们都非常清楚这样的失败是绝对不被允许的。」&lt;/p&gt;
+
+&lt;p&gt;在 Bulldozer 失败之后 AMD 曾经试图半放弃 x86 处理器，全力发展代号称为 K12 的 ARM 服务器用处理器力图在低功耗服务器市场上有所斩获，不过很快的他们也发现 ARM 市场或许比他们想象得还要险恶很多，于是重心又转回 x86 处理器的 Zen，至于后来的故事，相信我们很快就会知道了。&lt;/p&gt;
+
+&lt;h2 id=&quot;bulldozer-后续改进版本&quot;&gt;Bulldozer 后续改进版本&lt;/h2&gt;
+
+&lt;p&gt;从 Bulldozer 开始 AMD 便采用「一年一改版」的方式推出 Bulldozer 的改进版本，并且早在 Bulldozer 发布当时就已经确立四个世代的代号，但由于结果论而言，最终 Bulldozer 架构获得了相当大的失败，因此 AMD 也已经确认 Bulldozer 架构将在四个世代出完之后宣告结束，下一世代的处理器将回归传统的 SMT / CMP 设计。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/zambezi-slide-10.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/zambezi-slide-10-750x422.jpg&quot; alt=&quot;zambezi-slide-10&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过失败的 Bulldozer 自然后续改进版本也不会像 AMD 预设的那么顺利就是了，最后 2013 ~ 2014 年的 AMD 实际上是这样的：&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/RMM8055.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/RMM8055-750x382.jpg&quot; alt=&quot;RMM8055&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;第二代-bulldozerpiledriver&quot;&gt;第二代 Bulldozer：Piledriver&lt;/h3&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/PILEDRIVER.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/PILEDRIVER-750x384.png&quot; alt=&quot;PILEDRIVER&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;整体来说，推出于 2012 年的 Piledriver 主体架构与 Bulldozer 几乎是一样的，主要的差异在于 (下图中橘色部分) 在增加 IPC (Instructions per clock，每周期执行指令数) 与降低漏电流、拉高频率 (很有 Netburst 的既视感吧？同频单核心效能低落那就靠拉高频率来救回来)，分支预测有强化，并加入 Intel 主导的 FMA3 (三操作数融合加法)、AVX 进阶向量扩展指令集 与 AES-NI 加解密指令集的支持，把 L1 的 TLB (转译后备缓冲区) 大小加倍并加入硬件除法器，浮点数与整数的排程器 (Scheduler) 也有强化，L2 缓存跟数据预取机制有优化等。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/APW9966.jpg&quot; alt=&quot;APW9966&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;至于制造工艺上则是延续过去 Bulldozer 使用的 32 纳米 HKMG SOI 制程，由格罗方德 (GlobalFoundries) 提供，回顾过去历史与近期，AMD 有很多次都是被 GlobalFoundries 拖住良率与上市时程，造成产品一再延期，GlobalFoundries 的前身其实就是 AMD 的制造部门，但在 2009 年独立，并且从 2011 年开始 AMD 已经不再持有任何 GlobalFoundries 的股权，但 AMD 与 GlobalFoundries 背后的大老板其实是同一人。&lt;/p&gt;
+
+&lt;p&gt;而在 Piledriver 推出当时有传言表示 Piledriver 将会是最后一代面向主流效能级的 AMD x86 处理器，之后 AMD 只会在 APU 产品线推出新品，当时有很多人跳出来驳斥，不过在三年之后的现在证实这是正确的，接下来要介绍的 Steamroller 与 Excavator 都只有 APU 型号，FX 产品线直到 2016 年的今天仍然是 Piledriver。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/FX-9590-3.png&quot; alt=&quot;FX-9590-3&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;目前消费性市场中最高阶的 Piledriver 是 FX-9590，预设频率足足有 4.7 GHz，开了 Turbo Core 之后甚至可以来到 5.0 GHz，工作电压也是近五年来所看到的 x86 处理器中最高者，来到了 1.91 V，TDP 更是高达 220 W，由于功耗过高甚至还要特挑支持的主板，嗯？要说 Piledriver 是 AMD 的 Netburst 或许也不为过了吧。&lt;/p&gt;
+
+&lt;p&gt;不过呢，这样等级的频率，实测性能只落在 Intel Xeon E3-1231v3 与 Core i7-4790K 之间，刚上市的时候开价新台币 28,000 元 (现价约 8,000 元) ，价格、性能、耗电量全输，只能说这东西基本上只是出来给大家看笑话的而已吧？&lt;/p&gt;
+
+&lt;p&gt;不过说不定哪天 FX-9590 会以最耗电或最高频率之姿成为收藏家的目标，搞不好会涨价也说不定 XD&lt;/p&gt;
+
+&lt;h3 id=&quot;第三代-bulldozersteamroller&quot;&gt;第三代 Bulldozer：Steamroller&lt;/h3&gt;
+
+&lt;p&gt;原本排定要在 2013 年取代 Piledriver 的第三代改进版推土机架构 Steamroller，因为许多原因最后被延迟到 2014 年初，而且自始至终都指出现在 APU 产品在线。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/SXW9852.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/SXW9852-750x425.png&quot; alt=&quot;SXW9852&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Steamroller 的主要改进有两大方面，其中第一项是制造工艺上的改进，Steamroller 采用了格罗方得新开发的 28 纳米 HKMG SOI 制程，另一项则是架构上关于多线程之间「并行化」的强化，号称可以提升 14.5 % 的 IPC。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/EMM8869.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/EMM8869-750x428.jpg&quot; alt=&quot;EMM8869&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;从下图的架构比较中可以看到，最明显的变化大概要属前端的指令获取与译码的部分，从 Steamroller 开始指令译码器改为两组，意味着单一模块内的两个整数运算核心不必再共享指令译码器了，这可以有效解决以往 Bulldozer 指令处理在译码阶段时塞车的问题，除此之外 Steamroller 还引入了早已在 Intel 阵营行之有年的 radix-8 除法器 (不过 Intel 早在 Core 的时代就又升级到 radix-16 除法器了)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/CMP8852.jpg&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/CMP8852-750x359.jpg&quot; alt=&quot;CMP8852&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过要注意的是，即使 Steamroller 已经再次针对同频单核心运算性能进行提升，仍然只有大约是 Phenom II K10 架构的九成。&lt;/p&gt;
+
+&lt;h3 id=&quot;第四代-bulldozerexcavator&quot;&gt;第四代 Bulldozer：Excavator&lt;/h3&gt;
+
+&lt;p&gt;Excavator 是第四代的 Bulldozer 架构改进版，同时也是目前已经规划的最后一款 Bulldozer 衍伸架构，由于仅在极少型号出现，加上大家比较关注未来将要扮演协助 AMD 绝地重生角色的 Zen，因此相关的数据并不是那么多，而且 Excavator 推出的型号很少，大半又以行动版为主，能见度又更低了，现在根本找不太到搭配 AMD 处理器的笔记本电脑。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/EXC8855-750x399.jpg&quot; alt=&quot;EXC8855&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;基本上改进的脉络与过去几次改版相当相似，不外乎就是加大缓存 (本次扩充的是 L1 数据缓存)、加强分支预测的命中率与降低延迟 (这次将 BTB 的大小又增加了 25%)，加入新的指令级 (AVX2) 支持，换取大约 4~15% 的 IPC 成长，不过如同我们过往对 AMD 的认识，连 AMD 自家的欢乐投影片都只写 4 ~ 15%，可能成长应该还是很有限吧。&lt;/p&gt;
+
+&lt;p&gt;值得注意的是，后期的 Excavator 可以支持 DDR4 内存 (AM4 脚位)，而初期产品则仅能搭配 DDR3 使用 (FM2+ 脚位)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;(未完待续)&lt;/p&gt;
+&lt;a href=&quot;computer_lecture_15.html&quot; class=&quot;btn btn-primary&quot;&gt;上一篇&lt;/a&gt; 
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+</description>
+            <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/computer_lecture_16.html</link>
+            <guid isPermaLink="true">http://localhost:4000/computer_lecture_16.html</guid>
+            
+            <category>course</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构</title>
+            <description>&lt;p&gt;接下来今天要谈的是 Intel Nehalem 架构，或许 Nehalem 这个名字并不是那么为人所知，但如果说他是第一代 Core i7 处理器的话相信大家就认识他了，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特色都奠基于此代。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/intel_core_i7.jpg&quot; alt=&quot;intel_core_i7&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;题外话，Nehalem 是当年 Pentium 4 的主导研发团队－奥瑞冈州研发中心设计的，奥瑞冈州研发中心在当年 Netburst 失败，被本来属于旁支的以色列海法团队打到趴在地上之后已经忍很久了。&lt;/p&gt;
+
+&lt;h2 id=&quot;第二个-tick-tock-循环&quot;&gt;第二个 Tick-tock 循环&lt;/h2&gt;
+
+&lt;p&gt;从 2006 年 Core 架构开始确立的两年一循环，单数年大改架构，双数年微缩制程的 Tick-tock 规律，在 2008 年正式迎来了第一个架构大改，也就是本篇要谈的 Nehalem，Nehalem 这个代号对 Intel 来说有很大的意义，因为它曾经被用于指称 Netburst 架构当年预想的理想结局－「10 GHz 版 Pentium 4」，当然最后这个计划如同你我所知道的，根本还没成形就胎死腹中，而同样的代号在几年后再次成为 Intel 核心产品的开发代号，想必背后是有相当的意涵存在的。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/tick-tock-2008.jpg&quot; alt=&quot;tick-tock-2008&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;学走-amd-的精髓&quot;&gt;学走 AMD 的精髓&lt;/h2&gt;
+&lt;p&gt;Nehalem 这一世代还蛮有趣的，基本上除了将一些当年 Netburst 拥有的技术特性移植到 Core 架构上之外，还有很大一部分是「模仿 AMD 的做法」，不过 Intel 抄归抄但最后效果却很好，AMD 架构的缺点则几乎都没有出现在 Intel Nehalem 上。&lt;/p&gt;
+
+&lt;h3 id=&quot;整合内存控制器-imc系统架构大翻新&quot;&gt;整合内存控制器 (IMC)，系统架构大翻新&lt;/h3&gt;
+
+&lt;p&gt;以往的 Intel 系统架构大致上是长这样的 (以 X48 + Core 2 处理器为例)，其实传统的计算机架构也都是如此，中央由处理器、北桥芯片、南桥芯片组成，北桥负责带宽需求比较高的内存与显示适配器，带宽需求比较没那么高的接口设备则由南桥芯片负责 (详细的说明之后的章节会有)：&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/x48_block_diagram.jpg&quot; alt=&quot;x48_block_diagram&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;至于下面这张图则是 Nehalem 的系统基本架构图 (搭配的芯片组是 X58 与 ICH10)，从中你可以很明显的发现，&lt;strong&gt;DDR3 内存除了从双信道改为三信道 (服务器级系统可以到四信道，消费性市场中低阶型号则维持双通道) 之外，最明显的差异就是改成跟处理器直接连接了，就像 AMD 的 K8 与 K10 架构那样，是的没错，Nehalem 学 AMD 把内存控制器整合到 CPU 里面了 (Integrated Memory Controller, IMC)。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/X58.png&quot; alt=&quot;X58&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;将内存控制器整合到处理器的好处自然是明显的，如同过去的章节也说过，在电路板上的实体距离其实对于传输速率是有很大影响的，因此内存插槽才会必定设计在处理器或北桥芯片旁边，高速缓存也从主板移到处理器芯片旁，后来更直接整合到处理器里面，这些改变的目的就是为了尽可能缩短之间的距离以加快传输效率。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/AMR9998.jpg&quot; alt=&quot;AMR9998&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不过也因为内存控制器被整合到 CPU 里面，所以 CPU 本体的针脚数突然增加不少 XD，脚位直接从原本的 775 暴涨到破千等级 (左起依序为 LGA1366、LGA1156、LGA775)。&lt;/p&gt;
+
+&lt;h3 id=&quot;intel-quickpath-interconnect-qpi&quot;&gt;Intel QuickPath Interconnect (QPI)&lt;/h3&gt;
+
+&lt;p&gt;基本上这东西与 AMD 早在 K8 就开始用于处理器与北桥之间的 HyperTransport 总线，同样是点对点、多用途的芯片互连架构，以 Intel 官方的说法是「跟 AMD 不约而同」的结果 (Intel 官方宣称在 2004 年就已经开始研究发展 QPI，而 Nehalem 是第一款实作 QPI 的产品)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/MCH-750x308.png&quot; alt=&quot;MCH&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;以往多 CPU 系统的设计都是如上图这样的作法，所有 CPU 都与北桥 (MCH) 链接，内存也直接链接到北桥上，但这样衍伸出来的问题是当处理器的性能越来越强大、数量越来越多的时候，MCH 的处理能力就会成为多处理器系统上很严重的性能瓶颈，而一开始厂商想到的方式是让 MCH 的通道数增加，但确有造成 MCH 成本提高、能够增加的数量有限的问题，所以采用直接连结的 QPI 或 HyperTransport 被发展来取代 FSB 可以说是必然的结果。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/QPI8055.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/QPI8055-750x329.png&quot; alt=&quot;QPI8055&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;至于上图右侧则是四颗使用 QPI 链接彼此与北桥芯片的 Nehalem-EX 架构图，可以看出当组成四颗 CPU 的系统时，每颗 CPU 会需要具备 4 条 QPI 通道 (3 条用于互联，1 条用于连络北桥)，至于比较常见的双 CPU 配置 (上图左侧) 则需要 2 条 QPI 通道 (1 条用于互联，1 条用于连络北桥)。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/QPI6679.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/QPI6679-750x566.png&quot; alt=&quot;QPI6679&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而 QPI 这东西基本上可以用于很多地方，目前已知曾经实作于 Intel CPU 中的就有多 CPU 之间的彼此互联、CPU 中 Core (运算核心) 与 Uncore (核心以外的周边电路) 之间的沟通、CPU 与北桥之间的连结等，值得注意的是 Nehalem 架构的高阶款 (例如 Core i7 Bloomfield、Xeon 系列中高阶款等) 也是目前为止唯一在消费性市场产品上有使用到连外 QPI 通道的世代，之后 QPI 基本上不再用于 CPU 与芯片组之间的连接，基本上都只使用 DMI 总线作为处理器与北桥芯片链接的管道。&lt;/p&gt;
+
+&lt;h3 id=&quot;与-amd-k10-类似的缓存结构&quot;&gt;与 AMD K10 类似的缓存结构&lt;/h3&gt;
+
+&lt;p&gt;以往 Core 架构是采双层缓存，L1 为核心各自独立，L2 则为全体运算核心共享，称之为 Intel Smart Cache，而进入 Nehalem 世代之后新的缓存阶层设计是三层，与 AMD K10 类似，L1 与 L2 都采核心各自独立，而 L3 则是全体核心共享缓存，且与 AMD K10 有类似的大型化 L3 缓存现象。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/ISC3052.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/ISC3052-750x565.png&quot; alt=&quot;ISC3052&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Nehalem 世代的处理器每个核心都具有 32 KB 的 L1 指令缓存、32 KB 的 L1 数据缓存、256 KB 的 L2 缓存 (延迟方面也因为 L2 缓存被搬进核心里面而比 Core 2 架构来得更低很多)，至于 L3 缓存至少 4 MB，最大则可以达到 30 MB。&lt;/p&gt;
+
+&lt;h2 id=&quot;模块化设计带来可扩展性平台分流于此确立&quot;&gt;模块化设计带来可扩展性，平台分流于此确立&lt;/h2&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/SCR5022-750x563.png&quot; alt=&quot;SCR5022&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;还记得我在「计算机达人养成计划 2-13：近代中期 CPU 发展史 (二) Intel Core 架构」曾经提到过的「可扩展性」有两个层次吗？其中 Core 架构时期只做到第一层，也就是使用「复制」的方式来延展处理器的结构，例如将双核心的 Conroe 延展两份之后再经过少许修改就能造出四核心的 Kentsfield、把 Conroe 的 L2 缓存折半就变成低阶版本的 Allendale，这让 Intel 的开发时程缩短很多，同时也让消费者更能预测各等级 Intel 处理器的表现大概会落在哪边。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/MOD5022.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/MOD5022-750x563.png&quot; alt=&quot;MOD5022&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而进入 Nehalem 世代之后 Intel 在开发时采用的思维更加前进，使用「模块化」的方式来设计各个功能单位，在制成成品的时候就像堆积木一样可以瞬间造出好几个版本，Intel 在进行模块化的过程中将处理器区分成 Core 与 Uncore 两大部分，其中 Core 就是运算核心的部分 (除此之外还包含各自专属的 L1、L2 缓存)，根据产品规划的需要可以直接铺出需要数量的运算核心，至于 Uncore 则是处理器电路上除去运算核心以外的部分，例如 IMC 内存控制器、QPI 链接通道、共享 L3 缓存、HTT 电路等。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/RSQ6663.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/RSQ6663-750x564.png&quot; alt=&quot;RSQ6663&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;把各项规格设计成功能模块之后，要推出支持不同数量内存信道、支持不同种类的内存、提供不同数量的运算核心、不同大小的缓存、不同的 QPI 通道数都变得很容易，甚至要塞整合图形核心也简单许多，变成当架构完成之后基本上当年度的所有处理器开发就同步进入收尾阶段了 (而且因为这样从此再也没有原生核心与拼装核心的问题了，想要多少核心就能放多少个模块，不管几个都是原生核心)。&lt;/p&gt;
+
+&lt;p&gt;除此之外还有「平台划分」(&lt;strong&gt;其实对消费者来说重点在于不同平台会使用不同脚位，主板就不能混用了&lt;/strong&gt;) 的概念也是从 Nehalem 开始确立的，消费性平台分为顶级玩家平台 (HEDT) 与一般及入门平台 (Mainstream)，前者即后来的 Core i7-900 系列，后者则涵盖 Core i7-800 系列与 Core i5 以降各系列的消费级处理器，之后 Xeon 家族也有类似的状态，入门系列使用与消费性一般平台相同的平台、中阶 (支持多处理器) 的系列则与 HEDT 共享平台，高阶则使用更强大、延展性更强的 EX 平台。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;2009&lt;/th&gt;
+      &lt;th&gt;2010&lt;/th&gt;
+      &lt;th&gt;2011&lt;/th&gt;
+      &lt;th&gt;2012&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;服务器平台－顶级&lt;/td&gt;
+      &lt;td&gt;X&lt;/td&gt;
+      &lt;td&gt;Nehalem (Beckton)&lt;/td&gt;
+      &lt;td&gt;Westmere-EX&lt;/td&gt;
+      &lt;td&gt;Westmere-EX&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;服务器平台－可延展&lt;/td&gt;
+      &lt;td&gt;Nehalem (Bloomfield)&lt;/td&gt;
+      &lt;td&gt;Westmere&lt;/td&gt;
+      &lt;td&gt;Westmere-EP&lt;/td&gt;
+      &lt;td&gt;Sandy Bridge-EP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;消费性平台－旗舰&lt;/td&gt;
+      &lt;td&gt;Nehalem (Bloomfield)&lt;/td&gt;
+      &lt;td&gt;Westmere&lt;/td&gt;
+      &lt;td&gt;Westmere&lt;/td&gt;
+      &lt;td&gt;Sandy Bridge-E&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;服务器平台－入门&lt;/td&gt;
+      &lt;td&gt;Nehalem (Lynnfield)&lt;/td&gt;
+      &lt;td&gt;Westmere&lt;/td&gt;
+      &lt;td&gt;Sandy Bridge&lt;/td&gt;
+      &lt;td&gt;Ivy Bridge&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;消费性平台－主流与入门&lt;/td&gt;
+      &lt;td&gt;Nehalem (Lynnfield)&lt;/td&gt;
+      &lt;td&gt;Westmere&lt;/td&gt;
+      &lt;td&gt;Sandy Bridge&lt;/td&gt;
+      &lt;td&gt;Ivy Bridge&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;之后则随着 Intel 控制推出时程，逐渐演化成表上可以发现的现象，逐渐区分成高中低三大类平台，EP / E 平台会比无印来得慢上一代，EX 则又会比 EP / E 慢上一代。&lt;/p&gt;
+
+&lt;h2 id=&quot;运算核心的强化&quot;&gt;运算核心的强化&lt;/h2&gt;
+
+&lt;p&gt;不同于 AMD K10 在运算核心的部分大幅沿用上代 K8 架构的设计，Nehalem 除了核心外部有许多重大变革之外，运算核心本身也获得了不少强化。&lt;/p&gt;
+
+&lt;h3 id=&quot;sse4-指令集补完&quot;&gt;SSE4 指令集补完&lt;/h3&gt;
+
+&lt;p&gt;Intel 阵营这边的 SSE4 被拆成三大包，分别是 SSSE3、SSE4.1 与 Nehalem 新增的 SSE4.2，实际上 SSE4.2 只包含七条新的指令，并不算是很重大的变革。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/SSE5822.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/SSE5822-750x566.png&quot; alt=&quot;SSE5822&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;宏融合与分支预测能力强化&quot;&gt;宏融合与分支预测能力强化&lt;/h3&gt;
+
+&lt;p&gt;还记得在介绍 Core 架构时我们提过的宏融合吗？Core 架构在 64 位模式下是不能进行宏融合的，然而到了 Nehalem 架构，Intel 终于补上对 64 位模式宏融合的支持，因此从 Nehalem 开始就不太会有 64 位表现比 32 位差的情形了，除此之外也新增了几种可以融合的指令。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/MFS9998.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/MFS9998-750x563.png&quot; alt=&quot;MFS9998&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除了宏融合之外，在 Nehalem 架构中分支预测方面的能力也获得了明显的强化，从原本的单层预测机制改为二层，纳入新的次级分支目标缓冲区 (Branch Target Buffer, BTB) 以提升数据库等以往没有办法良好适应分区预测机制的程序的执行效率。&lt;/p&gt;
+
+&lt;h3 id=&quot;超线程技术回归-hyper-threading&quot;&gt;超线程技术回归 Hyper-Threading&lt;/h3&gt;
+
+&lt;p&gt;曾经被使用在 Netburst 架构中后期产品的 Hyper-Threading Technology (HTT)，在进入 Core 架构时期被舍弃 (可能是因为 Core 架构诞生在很有时间压力且兵荒马乱的时期吧)，但进入更为成熟的 Nehalem 技术之后，这项功能被加回来了。(不过也有可能是海法团队单纯不想放或不敢放就是了，毕竟 HTT 当初就奥瑞冈州团队搞出来的东西 XD)&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/HTT6005.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/HTT6005-750x563.png&quot; alt=&quot;HTT6005&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其实在初期 Intel 很犹豫要不要继续使用 Hyper-Threading Technology 这一命名 (可能是不希望大家回想起 Pentium 4 后期的样子吧)，所以比较前期的 Nehalem 官方投影片都是使用 SMT (Simultaneous Multi-Threading) 来称呼这项功能，但由于 Netburst 与 Nehalem 中使用的 HTT 其实只是 SMT 的其中一种，与 Itanium 上所使用的实作方法不同，因此最后还是回头使用 HTT 这一名称。&lt;/p&gt;
+
+&lt;p&gt;受益于 Nehalem 更大的缓存、更强大的分支预测能力，Nehalem 上的 HTT 技术带来的效果中，缺点比过去 Netburst 时期更不显著，但优点却变得更加明显。&lt;/p&gt;
+
+&lt;h2 id=&quot;电源管理强化&quot;&gt;电源管理强化&lt;/h2&gt;
+
+&lt;p&gt;从 Core 架构开始，计算机的发展就逐渐从一味追求性能上的具体提升，转而追求性能/能耗比例，也就是「效率」的最大化，在 Nehalem 的电源管理功能中主要有两项不同，第一项是 C-State 中的 C6 有些改变。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/CSR9966.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/CSR9966-750x563.png&quot; alt=&quot;CSR9966&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;为了将处理器闲置时的耗能 (idle power) 降到最低，Nehalem 架构整合了称为 Power Gate 的电源开关机制，概念上有点像在 VCC (处理器供电) 到各个 Core 之间的电路各加上一个总开关，可以在「指定核心闲置的时候」将该核心的耗电量降到趋近于 0，因此 Nehalem 是有能力在没有用到的时候将特定运算核心完全关闭的。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/PGG8533.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/PGG8533-750x563.png&quot; alt=&quot;PGG8533&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;另一项电源管理上的重大变革则是 Turbo Boost 技术，这个技术在今日的 Intel 处理器中几乎都有，因此大家应该很耳熟能详了，可以把他想象为 Enhanced Intel SpeedStep Technology (EIST) 的「逆向操作」，根据处理器的使用情形来「动态调整」CPU 核心的频率，特别是在遇到「未完善对多核心或多线程优化」的程序时，可以将用不到的处理器频率降低，集中电力供应将使用率较高的核心「自动超频」到更高的频率。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/TBM4105.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/TBM4105-750x564.png&quot; alt=&quot;TBM4105&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;后继者westmere-架构-32-纳米制造工艺&quot;&gt;后继者：Westmere 架构 (32 纳米制造工艺)&lt;/h2&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/SFE9988.jpg&quot; alt=&quot;SFE9988&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在来年推出的 Westmere 架构基本上就是 Nehalem 的制程微缩版，将制造工艺由 45 纳米提升到 32 纳米，最大核心数提升到 10 个，除此之外架构本身的改进并不明显，主要是虚拟化技术 (纳入对实模式的支持与转换延迟降低) 与加密解密能力 (AES-NI 指令集，新增了 7 条与 AES 加解密有关的指令) 上的增强。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/westmere-launch-1.jpg&quot; alt=&quot;westmere-launch-1&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除此之外，在主流与入门的消费性平台上，Intel 开始将内建显示芯片从芯片组移到处理器的位置，但在 Westmere 世代中，内建显示芯片仍然是独立的一枚芯片 (基于 45 纳米制造工艺)，只是跟处理器芯片本体放在同一块 PCB 上，称为「Multi-Chip Package」 (MCP) 封装，而处理器芯片与内建显示芯片则使用 QPI 进行连接。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;a href=&quot;../images/blogs/computer_lecture/IDF2009.png&quot;&gt;&lt;img src=&quot;../images/blogs/computer_lecture/IDF2009-750x546.png&quot; alt=&quot;IDF2009&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Westmere 在计算机历史上的意义比较接近于让 Nehalem 架构「飞入寻常百姓家」的角色，本身并没有带来太大的变革，但制程微缩带来的成本下降，加上生产 Nehalem 累积的经验，有效的将 Nehalem 架构推向中阶甚至入门市场，因此 Intel 并没有大规模将所有 HEDT 平台 (Core i7-900 系列) 的产品提升到 Westmere 架构 (仅有代号为 Gulftown 的六核心极致版处理器是 Westmere)。&lt;/p&gt;
+
+&lt;p&gt;值得注意的是中阶与入门市场使用的 Nehalem / Westmere 架构处理器的系统结构与 HEDT 平台以上等级的有很明显的不同：&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;../images/blogs/computer_lecture/Q57X.png&quot; alt=&quot;Q57X&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在高阶平台的 X58 等芯片结构中，芯片组仍然是由南北桥两颗芯片所组成 (X58 与 ICH10)，而 X58 北桥芯片实质上已经只剩下 PCI Express 控制器的功能，并且使用 QPI 与处理器连结，而北桥与南桥之间则是使用 DMI 做连结。&lt;/p&gt;
+
+&lt;p&gt;而在中阶与入门平台的 5 Series Chipset 中，芯片组已经不再是芯片组，由于 PCI Express 控制器也被移入处理器中，因此实质上北桥已经没有存在意义，剩下的这颗芯片其实是「南桥」，被称为 PCH (Platform Controller Hub)，同时也因为南桥的带宽需求没有那么大，因此从此以后芯片组与处理器之间就不再使用 QPI 做连结了，而是使用特性上相当类似 PCI Express 的 DMI 接口。&lt;/p&gt;
+
+&lt;p&gt;简单来说，在中阶与入门平台的 5 Series Chipset 中你所看到的这条 DMI，其实是原先用来连接北桥与南桥的那条，并不是以前 CPU 与北桥之间链接的高速通道。&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;p&gt;(未完待续)&lt;/p&gt;
+&lt;a href=&quot;computer_lecture_14.html&quot; class=&quot;btn btn-primary&quot;&gt;上一篇&lt;/a&gt; 
+&lt;a href=&quot;computer_lecture_16.html&quot; class=&quot;btn btn-primary&quot;&gt;下一篇&lt;/a&gt; 
+&lt;a href=&quot;contact.html&quot; class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fa fa-comment-o&quot;&gt;&lt;/i&gt; 匿名提问&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+</description>
+            <pubDate>Fri, 18 Nov 2022 00:00:00 +0800</pubDate>
+            <link>http://localhost:4000/computer_lecture_15.html</link>
+            <guid isPermaLink="true">http://localhost:4000/computer_lecture_15.html</guid>
+            
+            <category>course</category>
+            
+            
+        </item>
+        
     </channel>
 </rss>

@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="GPUATI,  CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU">
+<title>ATI Radeon | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="ATI Radeon">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">显卡收藏目录 </li>
+  
+  
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index_GPU.html">Get started</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="ATI" href="#">ATI</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a title="ATI Radeon" href="ATI_Radeon.html">ATI Radeon</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AMD" href="#">AMD</a>
+      <ul>
+          
+          
+          
+          <li><a title="AMD Radeon" href="AMD_Radeon.html">AMD Radeon</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="NVIDIA" href="#">NVIDIA</a>
+      <ul>
+          
+          
+          
+          <li><a title="NVIDIA TNT2" href="NVIDIA_TNT2.html">NVIDIA TNT2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="NVIDIA GeForce" href="NVIDIA_GeForce.html">NVIDIA GeForce</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="NVIDIA Quadro" href="NVIDIA_Quadro.html">NVIDIA Quadro</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">ATI Radeon</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary"></div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <h2 id="我的收藏">我的收藏</h2>
+
+<h3 id="ati-mobility-radeon-9000">ATI Mobility Radeon 9000</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPU型号</td>
+      <td>M9</td>
+    </tr>
+    <tr>
+      <td>架构</td>
+      <td>Rage 7</td>
+    </tr>
+    <tr>
+      <td>芯片厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>芯片工艺</td>
+      <td>105 nm</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>36 million</td>
+    </tr>
+    <tr>
+      <td>芯片面积</td>
+      <td>81mm²</td>
+    </tr>
+    <tr>
+      <td>产品系列</td>
+      <td>Mobility 9000</td>
+    </tr>
+    <tr>
+      <td>类型</td>
+      <td>移动</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>AGP 4x</td>
+    </tr>
+    <tr>
+      <td>显存频率</td>
+      <td>200/400 MHz</td>
+    </tr>
+    <tr>
+      <td>显存容量</td>
+      <td>64MB</td>
+    </tr>
+    <tr>
+      <td>显存类型</td>
+      <td>DDR</td>
+    </tr>
+    <tr>
+      <td>显存位宽</td>
+      <td>16bit</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>3.2 GB/s</td>
+    </tr>
+    <tr>
+      <td>GPU 频率</td>
+      <td>240 MHz</td>
+    </tr>
+    <tr>
+      <td>Pixel Shaders</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Vertex Shaders</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>960.0 MPixel/s</td>
+    </tr>
+    <tr>
+      <td>顶点填充率</td>
+      <td>60.00 MVertices/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>960.0 MTexel/s</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2002年9月</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>此款显卡为 PCI 接口。
+</code></pre></div></div>
+
+<p><img src="/images/gpus/ATI/ATI_Mobility_Radeon_9000_(64M)_1.jpg" alt="ATI Mobility Radeon 9000 正面" />
+<img src="/images/gpus/ATI/ATI_Mobility_Radeon_9000_(64M)_2.jpg" alt="ATI Mobility Radeon 9000 背面" />
+<img src="/images/gpus/ATI/ATI_Mobility_Radeon_9000_(64M)_3.jpg" alt="ATI Mobility Radeon 9000 接口" /></p>
+
+<hr />
+
+<h3 id="ati-radeon-x1650-pro">ATI Radeon X1650 Pro</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心频率</td>
+      <td>600 MHz</td>
+    </tr>
+    <tr>
+      <td>核心架构</td>
+      <td>RV530LE</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>80 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>44W</td>
+    </tr>
+    <tr>
+      <td>显存频率</td>
+      <td>1400 MHz</td>
+    </tr>
+    <tr>
+      <td>显存类型</td>
+      <td>GDDR3</td>
+    </tr>
+    <tr>
+      <td>显存位宽</td>
+      <td>128 Bit</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>330 million</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>9.0c</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/ATI/ATI_Radeon_X_1650_Pro_(256M_DDR3_迪兰镭姬杀手)_1.jpg" alt="ATI Radeon X1650 Pro 正面" />
+<img src="/images/gpus/ATI/ATI_Radeon_X_1650_Pro_(256M_DDR3_迪兰镭姬杀手)_2.jpg" alt="ATI Radeon X1650 Pro 背面" />
+<img src="/images/gpus/ATI/ATI_Radeon_X_1650_Pro_(256M_DDR3_迪兰镭姬杀手)_3.jpg" alt="ATI Radeon X1650 Pro 接口" /></p>
+
+<hr />
+
+<h3 id="ati-radeon-hd-3450">ATI Radeon HD 3450</h3>
+
+<p>这是一款采用了台积电 55nm工艺的GPU，采用ATI TeraScale架构，上市时间为2008年1月23日。具有 1.81亿个晶体管、40 个 渲染 核心和 512MB DDR2 显存，具备 64KB 二级缓存，理论算力48.00GFLOPS，总功耗为25W。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPU型号</td>
+      <td>RV620</td>
+    </tr>
+    <tr>
+      <td>架构</td>
+      <td>TeraScale</td>
+    </tr>
+    <tr>
+      <td>核心频率</td>
+      <td>600 MHz</td>
+    </tr>
+    <tr>
+      <td>流处理单元</td>
+      <td>40 个</td>
+    </tr>
+    <tr>
+      <td>核心架构</td>
+      <td>TeraScale</td>
+    </tr>
+    <tr>
+      <td>架构</td>
+      <td>TeraScale</td>
+    </tr>
+    <tr>
+      <td>芯片厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>芯片工艺</td>
+      <td>55 nm</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>1亿</td>
+    </tr>
+    <tr>
+      <td>芯片面积</td>
+      <td>67mm²</td>
+    </tr>
+    <tr>
+      <td>产品系列</td>
+      <td>Radeon R600</td>
+    </tr>
+    <tr>
+      <td>类型</td>
+      <td>桌面</td>
+    </tr>
+    <tr>
+      <td>显存频率</td>
+      <td>400 MHz</td>
+    </tr>
+    <tr>
+      <td>显存容量</td>
+      <td>512MB</td>
+    </tr>
+    <tr>
+      <td>显存类型</td>
+      <td>DDR2</td>
+    </tr>
+    <tr>
+      <td>显存位宽</td>
+      <td>64bit</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>6.400 GB/s</td>
+    </tr>
+    <tr>
+      <td>流处理器数量</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>64 KB</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>2.400 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>2.400 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>FP32性能</td>
+      <td>48.00 GFLOPS</td>
+    </tr>
+    <tr>
+      <td>功耗</td>
+      <td>25W</td>
+    </tr>
+    <tr>
+      <td>建议电源功率</td>
+      <td>200 W</td>
+    </tr>
+    <tr>
+      <td>输出接口</td>
+      <td>1x DVI, 1x S-Video</td>
+    </tr>
+    <tr>
+      <td>电源接口</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>10.1 (10_1)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Shader Model</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2008年1月</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/ATI/ATI_Radeon_HD_3450_(256M)_1.jpg" alt="ATI Radeon HD 3450 正面" />
+<img src="/images/gpus/ATI/ATI_Radeon_HD_3450_(256M)_2.jpg" alt="ATI Radeon HD 3450 背面" />
+<img src="/images/gpus/ATI/ATI_Radeon_HD_3450_(256M)_3.jpg" alt="ATI Radeon HD 3450 接口" /></p>
+
+<hr />
+
+<h3 id="ati-radeon-hd-4850">ATI Radeon HD 4850</h3>
+
+<p>这是一款采用了台积电 55nm工艺的GPU，采用ATI TeraScale架构，上市时间为2008年6月25日。具有 9.56亿个晶体管、800 个 渲染 核心和 512MB GDDR3 显存，具备 256KB 二级缓存，理论算力1000GFLOPS，总功耗为110W。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPU型号</td>
+      <td>RV770</td>
+    </tr>
+    <tr>
+      <td>架构</td>
+      <td>TeraScale</td>
+    </tr>
+    <tr>
+      <td>芯片厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>芯片工艺</td>
+      <td>55 nm</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>9亿</td>
+    </tr>
+    <tr>
+      <td>芯片面积</td>
+      <td>256mm²</td>
+    </tr>
+    <tr>
+      <td>产品系列</td>
+      <td>Radeon R700</td>
+    </tr>
+    <tr>
+      <td>类型</td>
+      <td>桌面</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 2.0 x16</td>
+    </tr>
+    <tr>
+      <td>显存频率</td>
+      <td>993 MHz</td>
+    </tr>
+    <tr>
+      <td>显存容量</td>
+      <td>512MB</td>
+    </tr>
+    <tr>
+      <td>显存类型</td>
+      <td>GDDR3</td>
+    </tr>
+    <tr>
+      <td>显存位宽</td>
+      <td>256bit</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>63.55 GB/s</td>
+    </tr>
+    <tr>
+      <td>流处理器数量</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16 KB (per CU)</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>256 KB</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>10.00 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>25.00 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>FP32性能</td>
+      <td>1000 GFLOPS</td>
+    </tr>
+    <tr>
+      <td>FP64性能</td>
+      <td>200.0 GFLOPS</td>
+    </tr>
+    <tr>
+      <td>功耗</td>
+      <td>110W</td>
+    </tr>
+    <tr>
+      <td>建议电源功率</td>
+      <td>300 W</td>
+    </tr>
+    <tr>
+      <td>输出接口</td>
+      <td>2x DVI, 1x S-Video</td>
+    </tr>
+    <tr>
+      <td>电源接口</td>
+      <td>1x 6-pin</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>10.1 (10_1)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Shader Model</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>发布日期</td>
+      <td>2008年6月</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>迪兰恒进 HD4850 星钻
+R77CC-PE3A 256bit/512MB 635/1986MHz
+AX4850 512MD3-H
+</code></pre></div></div>
+
+<p><img src="/images/gpus/ATI/ATI_Radeon_HD_4850_(AX4850_512MD3-H)_1.jpg" alt="ATI Radeon HD 4850 正面" />
+<img src="/images/gpus/ATI/ATI_Radeon_HD_4850_(AX4850_512MD3-H)_2.jpg" alt="ATI Radeon HD 4850 背面" />
+<img src="/images/gpus/ATI/ATI_Radeon_HD_4850_(AX4850_512MD3-H)_3.jpg" alt="ATI Radeon HD 4850 接口" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>镭风4850-GD3 冰封骑士3F 512M R10
+</code></pre></div></div>
+
+<p><img src="/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_1.jpg" alt="ATI Radeon HD 4850 正面" />
+<img src="/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_2.jpg" alt="ATI Radeon HD 4850 背面" />
+<img src="/images/gpus/ATI/ATI_Radeon_HD_4850_(镭风4850-GD3冰封骑士3F_512M_R10)_3.jpg" alt="ATI Radeon HD 4850 接口" /></p>
+
+<hr />
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_GPU.html" class="btn btn-default navbar-btn cursorNorm" role="button">GPU</a>
+        
+        
+        
+        <a href="tag_ATI.html" class="btn btn-default navbar-btn cursorNorm" role="button">ATI</a>
+        
+        
+        
+    </div>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+<span>Page last updated:</span> Aug 14, 2023<br/> Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

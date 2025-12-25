@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上是 Sandy Bridge 的延续，改进内容不多也不明显。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构</h1>
+        <p class="post-meta"><time datetime="2023-01-21T00:00:00+08:00" itemprop="datePublished">Jan 21, 2023</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上是 Sandy Bridge 的延续，改进内容不多也不明显。</div>
+        
+
+        
+
+        <p>其实我本来是打算把 Sandy Bridge 跟 Ivy Bridge 放在同一篇写的，毕竟 Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上会是 Sandy Bridge 的延续，所以改进内容并不会那么多与明显，不过考虑到上篇篇幅已经达到 4,200 字，加上 Sandy Bridge 跳 Ivy Bridge 的改进内容又比上次 Nehalem 跳 Westmere 来得多，所以还是独立开篇了。 XD</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/IVB3012.jpg" alt="IVB3012" />
+</div>
+
+<h2 id="intel-ivy-bridge-架构">Intel Ivy Bridge 架构</h2>
+
+<p>时序来到 2012 年，依照 Intel 奉行多年的 Tick-tock 二年一轮发展计划，又是轮到 Tick，也就是制程改进的一年，因此以第三代 Intel Core 处理器家族、Intel Xeon E3 v2 家族名义推出的 Ivy Bridge 架构处理器带来的主要特色无庸置疑，就是 22 纳米制造工艺首次投入 Intel x86 处理器使用，然而随着制程越来越接近硅原子的物理极限，制程提升已经不像以前那么简单，因此这次的 22 纳米制造工艺是有很多特色的。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/IVB3401.png" alt="IVB3401" />
+</div>
+
+<h3 id="自-2003-年以来制程上的最大进展">自 2003 年以来制程上的最大进展</h3>
+
+<p>大致上 Intel 近十年内的制程演化有三个技术是扮演最关键角色的，依序是在 2003 年导入 90 纳米制造工艺时引入的硅锗异质接面与应变硅技术 (首次用于 Intel Pentium 4 Prescott)、2007 年导入 45 纳米制造工艺时引入的 High-K 金属闸极技术 (首次用于 Intel Core Penryn)，接下来就是在 Ivy Bridge 世代 22 纳米制造工艺上引入的 3D 立体三闸极晶体管技术了。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/TSE8522.png"><img src="../images/blogs/computer_lecture/TSE8522-750x423.png" alt="TSE8522" /></a>
+</div>
+
+<p>下图左侧显示的就是 Sandy Bridge 或更早以前时期的晶体管，右图则是从 Ivy Bridge 开始采用的 3D 立体三闸极晶体管，我想从图上应该就可以很明白名称中的「3D 立体」是怎么回事了，主要的差异其实就是硅基底 (Silicon Substrate) 延伸穿出金属氧化物 (Oxide) 的那根有点像鱼鳍的东西 (其实跟最近很夯的 FinFET 有点像，FinFET 的名称由来有一说也是因为中间那根长得很像鱼鳍的关系)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AST8542.jpg" alt="AST8542" />
+</div>
+
+<p>然后有一点蛮有趣的，中间的「鱼鳍」数量是可以根据产品的需求改变的，Intel 官方的投影片有些是画三根有些则只有一根。 XD</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/TDS8541.jpg" alt="TDS8541" />
+</div>
+
+<p>解释完 3D 是怎么回事之后接下来大家会好奇的大概就是听起来很好很强大的「三闸极」是怎么回事了吧？这边用英文原文的 Tri-Gate 会比较好理解，所谓的 Gate (闸极) 呢就是上面两张图中标黄色的位置，同时也是 Intel Tri-Gate 跟最近很红的 FinFET 在结构上比较不同的地方 (FinFET 是双闸极)。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/DSE1321.jpg"><img src="../images/blogs/computer_lecture/DSE1321-750x392.jpg" alt="DSE1321" /></a>
+</div>
+
+<p>所谓的三闸极其实就是突起的「鱼鳍」与周围接触的三个面都可以作为闸极使用的意思 (如果将鱼鳍的宽度做成宽高相等的话，就会有三个完全相同面积的闸极可用)，与左边的传统晶体管只有单一闸极就形成了对比。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/FSR6633.png"><img src="../images/blogs/computer_lecture/FSR6633-750x422.png" alt="FSR6633" /></a>
+</div>
+
+<p>从上面这张图中我们可以得知，其实 3D 立体三闸极晶体管在 Intel 公司内部已经研究了很长的一段时间，从发明到实际广泛应用于量产产品 (Ivy Bridge) 前后距离将近十年，由此可见 3D 立体三闸极晶体管是一项非常重要，且必须的技术，否则 Intel 不会耗费这么大的力气与如此多的资源来研发这项技术，由于这个系列文章的主题并不是物理，所以我不打算深入 (而且我也不会) 讨论其他制程的内容与做法，关于技术的说明就到此为止，接下来就回来谈这项技术的必要性与影响吧。</p>
+
+<h3 id="3d-tri-gate-晶体管的好处与必要性">3D Tri-Gate 晶体管的好处与必要性？</h3>
+
+<p>说了那么多，到底为什么必须要发展 3D Tri-Gate 晶体管呢？其实是为了提升制程所必须，因为在制造工艺不断提升下，今日的芯片制造工艺已经来到 30nm 以下，随着越来越逼近现有材料的物理极限，提升制程的困难度也越来越高 (好比要从零分进步到 60 分很容易，但从 80 分进步到 90 分却很难)，所以新的材料与做法是继续提升制程的过程中不可或缺的。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/ANM8544.jpg" alt="ANM8544" />
+    <p><b>(左为传统晶体管，右为 22nm 3D Tri-Gate 晶体管)</b></p>
+</div>
+
+<p>一般来说晶体管的性能可分为三个指标，第一是切换速度 (半导体通路与断路间的切换速度，因为直接影响到处理器的最高频率，所以越快越好)，第二则是导电流 (当半导体处于通路状态时当然是导电流越高，越顺越好，导电流越大处理器就越省电)，第三则是断路时产生的漏电流 (越少越好，漏电流是芯片废热的主要来源之一，同时也是处理器闲置时的主要能耗来源)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/TGS6633.jpg" alt="TGS6633" />
+</div>
+
+<p>传统晶体管在微观尺度下有很多效应会导致其漏电流的增加，而且随着制造工艺的提升，尺度越来越小、单位面积的晶体管数量越来越多也连带使得漏电流效应变得更加明显，到了 30nm 以下制程，通道形成与漏电流、短通道效应的问题已经大到不可忽视，若是无法解决的话未来制程提升几乎就是不可能的难题。</p>
+
+<p>而 Tri-Gate 设计就是为了解决一部分的通道形成问题，透过增加闸极的接触面积来减少形成通道造成漏电流的状况，再辅以 High-K 材料解决扩大闸极带来的新问题，从而使更小的制程成为可能，而且 Tri-Gate 由于是型态上的改变，因此晶圆厂几乎不需要改变材料，所以成本大概只会提高 3% 到 5% (远远低于制程提升带来的成本节省，光是面积下降一片晶圆可以多切出的芯片带来的成本降低就很多了，所以很有吸引力)，而上面这个影片就是 Intel 官方在介绍 3D 晶体管的好处，还蛮有趣的。</p>
+
+<h3 id="回到-ivy-bridge-本身">回到 Ivy Bridge 本身……</h3>
+
+<p>谈了那么多制程改进的部分，我想现在该回到 Ivy Bridge 处理器架构本身了，因为 Ivy Bridge 的时序是制程改进的一年，因此系统架构上不会有任何改变 (其实从名字都是 Bridge 也看得出来 XD)，同时脚位也会继续沿用 LGA1155。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2001.png"><img src="../images/blogs/computer_lecture/IVB2001-750x565.png" alt="IVB2001" /></a>
+</div>
+
+<p>新特色的部分呢，最明显的当然是前面花掉大半篇幅的制程改进，除此之外还有内建显示的强化 (从 Sandy Bridge 开始其实每代 Intel 架构的内建显示进化幅度都比处理器本身还要高……)，核心部分也有一些改良 (IPC 性能微幅提升)。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2002.png"><img src="../images/blogs/computer_lecture/IVB2002-750x563.png" alt="IVB2002" /></a>
+</div>
+
+<p>至于新加入的东西也是有的，主要是关于超频能力、安全性与省电三个方面以及对 DDR3L 内存跟 PCI Express 3.0 信道的支持。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2003.png"><img src="../images/blogs/computer_lecture/IVB2003-750x563.png" alt="IVB2003" /></a>
+</div>
+
+<h3 id="账面上的-超频能力提升">(账面上的) 超频能力提升</h3>
+
+<p>Ivy Bridge 关于超频能力方面带来了四点提升，分别是内存频率可以拉高到 DDR3 2800 (SNB 只支持到 DDR3 2133)，倍频上限拉高到 63 (SNB 只支持到 57，不过这不是问题因为平常根本达不到)、超频设定可以不必重新启动才生效、外频 (其实就除频比啦) 增加了 133 MHz 这一级 (SNB 只有 100 MHz 一种)。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2006.png"><img src="../images/blogs/computer_lecture/IVB2006-750x565.png" alt="IVB2006" /></a>
+</div>
+
+<p>不过呢，这些都只是账面规格的提升而已，实际上 Ivy Bridge 的超频能力并没有甚么大提升，甚至在超频使用的时候温度表现比 Sandy Bridge 来得差，这违反常理 (毕竟制程升级嘛，通常应该是预期温度下降与超频性变好的) 的现象基本上是由两个因素造成的。</p>
+
+<p>其一是因为新制程带来芯片面积的大幅缩小，Ivy Bridge 的核心与 System Agent 面积几乎只有前代的 60% 上下，也因为这样所以单位面积的热量明显提高了许多，与 IHS (Integrated Heat Spreader) 的散热面积却变小了，散热效率也因此有所下降，不过后来的实验证实这不是主因。</p>
+
+<p>其二则是 IHS 与处理器芯片本体之间的介质改变了，以往 Intel 是使用无助焊剂焊接 (fluxless solder) 的方式来将 IHS 与处理器芯片本体链接，而在 Ivy Bridge 中，或许是出于节省成本的考虑，改用普通的散热树脂 (Thermal Interface Materials, TIM) 取代，这对导热性能带来了很大的影响，所以「开盖」风潮其实从 Ivy Bridge 开始大行其道的。</p>
+
+<h3 id="针对安全性强化">针对安全性强化</h3>
+
+<p>Ivy Bridge 关于安全性方面的强化主要有两点，其中第一项是内建的硬件数字随机数生成器 (DRNG) 与因应其而设计的 RDRAND 指令，Intel 官方宣称这样的实作方式可以提供更高等级且更高效率的安全防护，不过同时却也在网络上引爆了正反论战，有些人认为将随机数生成器内建到处理器电路上时，可能会反而让有心人士得以透过扰乱甚至修改电路的方式来使「随机数变得不那么随机」，从而降低加密数据的安全性 (因为破解变简单了，但使用者却不知情)，某种程度上让人联想到当年 Pentium III 在处理器内建入专属序号时引发的争议。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2004.png"><img src="../images/blogs/computer_lecture/IVB2004-750x563.png" alt="IVB2004" /></a>
+</div>
+
+<p>另一项新的安全功能则是监督模式执行保护 (SMEP)，主要是用于防范越权攻击 (EoP)，避免不受信任的程序透过内存漏洞来尝试越权执行指令。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2005.png"><img src="../images/blogs/computer_lecture/IVB2005-750x565.png" alt="IVB2005" /></a>
+</div>
+
+<h3 id="节能方面的改进">节能方面的改进</h3>
+
+<p>从 Core 架构开始，节能就是 Intel 改进处理器架构时花很多力气考虑的议题，也是几乎每代新架构都会触及的地方，Ivy Bridge 与节能相关的改进其实还蛮多的，例如内存 I/O 在深层睡眠的时候可以被完全关闭、可调式 TDP、使 S3 模式更加节能的优化、System Agent 在低电压版处理器上可以使用更低的电压运作、运作时可以选择「比较而言效率最佳的核心」来执行指令等。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVB2007.png"><img src="../images/blogs/computer_lecture/IVB2007-750x563.png" alt="IVB2007" /></a>
+</div>
+
+<p>不过呢其实我个人觉得 Ivy Bridge 绝大多数节能还是来自于新制程的帮助，毕竟 TDP 在制程升级之后的降幅其实还蛮大的 (桌面计算机四核心标准版从 95W 大降至 77W)。</p>
+
+<h2 id="其他-ivy-bridge-家族成员">其他 Ivy Bridge 家族成员</h2>
+
+<p>如同 Sandy Bridge 那样，其实没有任何标注的 Ivy Bridge 只是整个 IVB 家族中的小弟而已，晚一年推出的还有 IVB-E、IVB-EN、IVB-EP、IVB-EX 四个大哥呢，而且在 Ivy Bridge 世代中其实就性能上，IVB-EP 与 IVB-EX 的发展是比较明显的 (因为核心数爆升)。</p>
+
+<p>由于一般人不太会接触到 Ivy Bridge-EN 与 Ivy Bridge-EX，所以本篇就不介绍了。</p>
+
+<h3 id="ivy-bridge-ep面向中高阶服务器市场">Ivy Bridge-EP：面向中高阶服务器市场</h3>
+
+<p>Ivy Bridge-EP 在 Ivy Bridge 推出后的来年以 Intel Xeon E5 v2 家族的名义发布，是 Ivy Bridge 架构真实意义上的完整版本，与前代 Sandy Bridge-EP 共享相同的脚位与芯片组、主板。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/MEM6633.png"><img src="../images/blogs/computer_lecture/MEM6633-750x423.png" alt="MEM6633" /></a>
+</div>
+
+<p>Ivy Bridge-EP 有三种不同的 die 配置，分别是包含 6 个核心的 LCC、10 个核心的 MCC、12 个核心的 HCC (SNB-EP 最多只到八个核心)，其中 LCC 与 MCC 的配置大致相仿，但 HCC 就不同了，面相高性能计算 (HPC) 市场的 HCC 配置，包含了两组内存控制器，同时内部的环状总线也被分成两个环 (合计三套，比其他配置还要多出一套)，对降低延迟有帮助。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVP2011.png"><img src="../images/blogs/computer_lecture/IVP2011-750x480.png" alt="IVP2011" /></a>
+</div>
+
+<p>值得注意的是六核心型号有一部分是 LCC，另一部分是 MCC，所以 Xeon E5 v2 系列有少数型号的 L3 高速缓存是跟核心数量对不起来的 (但由于追求尽可能利用硅晶圆上的面积，因此要求对齐的关系，其实缓存容量的上限还是跟实体产品上有多少组核心电路的构造成正相关)。</p>
+
+<h3 id="ivy-bridge-e面向高阶游戏玩家-hedt-市场">Ivy Bridge-E：面向高阶游戏玩家 HEDT 市场</h3>
+
+<p>Ivy Bridge-E 与上代产品一样，基本上可以被视为 Ivy Bridge-EP 的特殊高频率型号，划分上属于第四代 Intel Core i7 处理器 (不过这代很尴尬，因为搭配的 X79 年事已高，所以呈现了低阶入门平台有支持 USB 3.0 与用不完的 SATA 6Gbps，超贵的 Ivy Bridge-E 却面临只有 USB 2.0 支持与原生 SATA 6Gbps 埠只有两个的窘境)</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/IVE2011.jpg"><img src="../images/blogs/computer_lecture/IVE2011-750x548.jpg" alt="IVE2011" /></a>
+</div>
+
+<p>Ivy Bridge-E 本质上与 Ivy Bridge-EP 几乎是一样的东西，继续沿用从 Sandy Bridge-E/EP 开始使用的 LGA2011 脚位，并且依然维持低阶四核心、高阶六核心的配置，并没有如当时大家预期的让八核心处理器「飞入寻常百姓家」。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/ISW9633.png"><img src="../images/blogs/computer_lecture/ISW9633-750x561.png" alt="ISW9633" /></a>
+</div>
+
+<p>比较值得注意的是，从上面这张 die shot 中可以看出，Ivy Bridge-E 的芯片本身就是由六个处理核心组成的 (其实就是 Ivy Bridge-EP 的 LCC 配置版本)，因此不像 Sandy Bridge-E 那样是由八核心处理器屏蔽两个核心而来，对降低成本与省电都有帮助 (当然主因是降低成本)，反而入门款的 4820K 则是由六核心屏蔽成四核心的型号。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_17.html" class="btn btn-primary">上一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

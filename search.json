@@ -1,32 +1,1489 @@
----
-title: search
-layout: none
-search: exclude
----
 
-{% assign pages = site.html_pages | where_exp: "page", "page.search != 'exclude'"  %}
 [
-{% for page in pages %}
-{
-"title": "{{ page.title | escape }}",
-"tags": "{{ page.tags }}",
-"keywords": "{{page.keywords}}",
-"url": "{{ page.url | remove: "/"}}",
-"summary": "{{page.summary | strip }}"
-}
-{% unless forloop.last and site.posts.size < 1 %},{% endunless %}
-{% endfor %}
-
-{% for post in site.posts %}
 
 {
-"title": "{{ post.title | escape }}",
-"tags": "{{ post.tags }}",
-"keywords": "{{post.keywords}}",
-"url": "{{ post.url | remove: "/" }}",
-"summary": "{{post.summary | strip }}"
+"title": "AMD 5x86 P75 (Enhanced 486 DX5) Processor",
+"tags": "AMD5x86",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_5x86.html",
+"summary": "AMD 5x86 处理器于 1995 年 11 月 6 日推出。"
 }
-{% unless forloop.last %},{% endunless %}
-{% endfor %}
+,
+
+{
+"title": "AMD 80186 Processor",
+"tags": "AMD80186",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_80186.html",
+"summary": "80186 和 80C186 处理器是 8086 处理器的演变，主要应用领域是嵌入式控制市场。"
+}
+,
+
+{
+"title": "AMD 80188 Processor",
+"tags": "AMD80188",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_80188.html",
+"summary": "80188 和 80C188 处理器是 8088 处理器的演进，主要应用领域是嵌入式控制市场。"
+}
+,
+
+{
+"title": "AMD 80286 Processor",
+"tags": "AMD80286",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_80286.html",
+"summary": "AMD 80286 微处理器于 1984 年推出。"
+}
+,
+
+{
+"title": "AMD 80386 Processor",
+"tags": "AMD80386",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_80386.html",
+"summary": "AMD 80386 处理器于 1991 年推出。"
+}
+,
+
+{
+"title": "AMD 80486 Processor",
+"tags": "AMD80486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_80486.html",
+"summary": "AMD 80486 32 位处理器于 1993 年 5 月推出，即英特尔 486 上市四年后。"
+}
+,
+
+{
+"title": "AMD 8080 Processor",
+"tags": "AMD8080",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_8080.html",
+"summary": "AMD 8080 处理器于 1975 年推出。"
+}
+,
+
+{
+"title": "AMD 8085 Processor",
+"tags": "AMD8085",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_8085.html",
+"summary": "AMD 8085 NMOS 处理器于 1976 年推出。它从一开始就是在英特尔许可下生产的。"
+}
+,
+
+{
+"title": "AMD 8086 Processor",
+"tags": "AMD8086",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_8086.html",
+"summary": "AMD 的第一代 80x86 处理器于 1979 年推出。"
+}
+,
+
+{
+"title": "AMD 8088 Processor",
+"tags": "AMD8088",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_8088.html",
+"summary": "到 1979 年，AMD 的 8088 已在商店出售。"
+}
+,
+
+{
+"title": "AMD FPU",
+"tags": "AMDFPU80287",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_FPU.html",
+"summary": "1981 年，AMD 287 FPU，使用 Intel 80287 核心，是迄今为止 AMD 公司唯一生产过的 FPU 产品。"
+}
+,
+
+{
+"title": "AMD K10 Processor",
+"tags": "AMDK10",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_K10.html",
+"summary": "随着2007 年 11 月 AMD K10 微架构的推出，K8 时代的终结宣告了结束。"
+}
+,
+
+{
+"title": "AMD K5 Processor",
+"tags": "AMDK5",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_K5.html",
+"summary": "AMD 的第一个内部开发产品 K5 处理器于 1996 年 3 月 27 日上市。"
+}
+,
+
+{
+"title": "AMD K6 Processor",
+"tags": "AMDK6",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_K6.html",
+"summary": "AMD K6 于 1997 年 4 月推出，是为了与 Intel Pentium MMX 和 Pentium II 竞争。"
+}
+,
+
+{
+"title": "AMD K7 Processor",
+"tags": "AMDK7",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_K7.html",
+"summary": "第一款采用 K7 微架构的 Athlon 处理器于 1999 年 6 月开始销售。"
+}
+,
+
+{
+"title": "AMD K8 Processor",
+"tags": "AMDK8",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_K8.html",
+"summary": "随着2003 年 9 月 K8 微架构的推出，AMD 进入了 64 位时代。"
+}
+,
+
+{
+"title": "AMD RISC Processor",
+"tags": "AMDRISC",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "AMD_RISC.html",
+"summary": "AMD Am29000 32 位 RISC 微处理器设计用于微型计算机，但主要用作嵌入式处理器。"
+}
+,
+
+{
+"title": "AMD Radeon",
+"tags": "GPUAMD",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU",
+"url": "AMD_Radeon.html",
+"summary": ""
+}
+,
+
+{
+"title": "ATI Radeon",
+"tags": "GPUATI",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU",
+"url": "ATI_Radeon.html",
+"summary": ""
+}
+,
+
+{
+"title": "苹果 A 系列处理器",
+"tags": "",
+"keywords": "",
+"url": "Apple_A_Series.html",
+"summary": "苹果 A 系列处理器"
+}
+,
+
+{
+"title": "苹果 M 系列处理器",
+"tags": "",
+"keywords": "",
+"url": "Apple_M_Series.html",
+"summary": "苹果 M 系列处理器"
+}
+,
+
+{
+"title": "苹果 S 系列处理器",
+"tags": "",
+"keywords": "",
+"url": "Apple_S_Series.html",
+"summary": "苹果 S 系列处理器"
+}
+,
+
+{
+"title": "Cyrix 5x86 Processor",
+"tags": "Cyrix5x86",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_5x86.html",
+"summary": "Cyrix 5x86 处理器于 1995 年底上市，利用高效的第五代（奔腾级）架构特性显着提高性能，同时最大限度地减少晶体管数量。"
+}
+,
+
+{
+"title": "Cyrix 6x86 Processor",
+"tags": "Cyrix6x86",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_6x86.html",
+"summary": "Cyrix 6x86 处理器属于第五代 x86 处理器，于 1996 年 2 月上市，与 Intel Pentium 引脚兼容。"
+}
+,
+
+{
+"title": "Cyrix 6x86MX Processor",
+"tags": "Cyrix6x86MX",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_6x86MX.html",
+"summary": "Cyrix 6x86MX 处理器属于第五代 x86 处理器，于 1997 年 5 月 30 日推出，与 Intel Pentium MMX 引脚兼容，因此可以在当时常见的 Socket 7 主板上运行。"
+}
+,
+
+{
+"title": "Cyrix Cx486DLC Processor",
+"tags": "Cyrix8038680486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_Cx486DLC.html",
+"summary": "486DLC CPU 是为了升级 386DX 而设计的，与 Intel i386DX 引脚兼容。"
+}
+,
+
+{
+"title": "Cyrix Cx486DX Processor",
+"tags": "Cyrix80486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_Cx486DX.html",
+"summary": "Cyrix Cx486DX 旨在与 Intel 的 i486DX 处理器完全软件兼容。"
+}
+,
+
+{
+"title": "Cyrix FPU",
+"tags": "CyrixFPU80387",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_FPU.html",
+"summary": "CX-83D87 于 1989 年推出。它是最快的 387 兼容协处理器，性能比 Intel 387DX 高 50%，还提供所有协处理器中最精确的超越函数。"
+}
+,
+
+{
+"title": "Cyrix M II Processor",
+"tags": "CyrixM II",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_MII.html",
+"summary": "在 1997 年 Cyrix 被 National Semiconductor 收购后，他们终止了与 IBM 的代工协议。National 制造了自己的芯片，并将 6x86MX 重新命名为 M II。"
+}
+,
+
+{
+"title": "Cyrix Media GX Processor",
+"tags": "CyrixMedia GX",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Cyrix_MediaGX.html",
+"summary": "1996 年，Cyrix 发布了 MediaGX CPU，它将 PC 的所有主要分立组件（包括内存控制器、图形、声音和 PCI 控制器）集成到单个芯片上。"
+}
+,
+
+{
+"title": "Geode GX1 Processor",
+"tags": "GeodeGX1",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Geode_GX1.html",
+"summary": "Geode GX1 处理器（支持 MMX 的低功耗集成 x86 解决方案）于 2000 年 4 月 12 日上市。"
+}
+,
+
+{
+"title": "Geode GXm Processor",
+"tags": "GeodeGXm",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Geode_GXm.html",
+"summary": "Geode GXM 处理器（支持 MMX 的集成 x86 解决方案）于 1999 年推出。"
+}
+,
+
+{
+"title": "IBM 486 Processor",
+"tags": "IBM80486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "IBM_486.html",
+"summary": "IBM 486 处理器于 1993 年推出。"
+}
+,
+
+{
+"title": "IBM 6x86MX Processor",
+"tags": "IBM6x86MX",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "IBM_6x86MX.html",
+"summary": "IBM 6x86MX 处理器属于第五代 x86 处理器，于 1997 年 5 月 30 日推出。"
+}
+,
+
+{
+"title": "IBM Processor",
+"tags": "IBM",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "IBM_Other.html",
+"summary": ""
+}
+,
+
+{
+"title": "IBM Power Processor",
+"tags": "IBM",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "IBM_Power.html",
+"summary": ""
+}
+,
+
+{
+"title": "IDT WinChip Processor",
+"tags": "IDTWinChip",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "IDT_WinChip.html",
+"summary": "由 Centaur Technology 开发的 IDT WinChip C6 处理器于 1997 年 10 月 13 日推出。"
+}
+,
+
+{
+"title": "龙芯1号",
+"tags": "Loongson",
+"keywords": "Loongson, Godson, CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Loongson_1.html",
+"summary": "2002年8月10日诞生的“龙芯一号”是我国首枚拥有自主知识产权的通用高性能微处理芯片。龙芯1号系列为32位低功耗、低成本处理器，主要面向低端嵌入式和专用应用领域。"
+}
+,
+
+{
+"title": "龙芯2号",
+"tags": "Loongson",
+"keywords": "Loongson, Godson, CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Loongson_2.html",
+"summary": "龙芯2号系列为64位低功耗单核或双核系列处理器，主要面向工控和终端等领域。"
+}
+,
+
+{
+"title": "龙芯3号",
+"tags": "Loongson",
+"keywords": "Loongson, Godson, CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Loongson_3.html",
+"summary": "龙芯3号系列为64位多核系列处理器, 主要面向桌面和服务器等领域。"
+}
+,
+
+{
+"title": "Motorola PowerPC Processor",
+"tags": "MotorolaPowerPC",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Motorola_PowerPC.html",
+"summary": "PowerPC 是 1991 年 Apple - IBM - Motorola 联盟 (AIM) 创建的 RISC 微处理器架构。"
+}
+,
+
+{
+"title": "NVIDIA GeForce",
+"tags": "GPUNVIDIA",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU",
+"url": "NVIDIA_GeForce.html",
+"summary": ""
+}
+,
+
+{
+"title": "NVIDIA Quadro",
+"tags": "GPUNVIDIA",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU",
+"url": "NVIDIA_Quadro.html",
+"summary": ""
+}
+,
+
+{
+"title": "NVIDIA TNT2",
+"tags": "GPUNVIDIA",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU",
+"url": "NVIDIA_TNT2.html",
+"summary": ""
+}
+,
+
+{
+"title": "Qualcomm MSM8928 Processor",
+"tags": "QualcommMSM8928",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Qualcomm_MSM8928.html",
+"summary": "高通 MSM8928 处理器属于骁龙 400 系列移动处理器，集成四核 CPU（主频最高达 1.6 GHz）。"
+}
+,
+
+{
+"title": "Texas Instruments 486 Processor",
+"tags": "TI80486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "ST_486.html",
+"summary": "(It's) STMicroelectronics 486 处理器于 1993 年 9 月上市。"
+}
+,
+
+{
+"title": "Siemens 80186 Processor",
+"tags": "Siemens80186",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Siemens_80186.html",
+"summary": "西门子公司生产的基于 80x86 微处理器的 80186 “嵌入式控制” CPU 于 1982 年上市。"
+}
+,
+
+{
+"title": "Texas Instruments 386 Processor",
+"tags": "TI80386",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "TI_386.html",
+"summary": "德州仪器 386 处理器于 1992 年中期推出，采用 386 引脚，实现了 486 指令集。"
+}
+,
+
+{
+"title": "Texas Instruments 486 Processor",
+"tags": "TI80486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "TI_486.html",
+"summary": "德州仪器 486 处理器于 1994 年推出。TI486 使用 Socket 3 作为主板接口。"
+}
+,
+
+{
+"title": "Transmeta Crusoe Processor",
+"tags": "TransmetaCrusoe",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Transmeta_Crusoe.html",
+"summary": "Crusoe 是一款具有强大实力，应用于笔记本电脑和 Internet 设备的新处理器，采用硬件引擎核心和软件核心的合成结构。"
+}
+,
+
+{
+"title": "VIA C3 Processor",
+"tags": "VIAC3",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "VIA_C3.html",
+"summary": "威盛 C3 处理器于 2001 年 3 月 25 日推出，用在带有 Socket 370 插槽的主板上。"
+}
+,
+
+{
+"title": "VIA C3 1Giga Pro Processor",
+"tags": "VIAC3 1Giga Pro",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "VIA_C3_1GigaPro.html",
+"summary": "威盛 C3 1Giga Pro 处理器于 2001 年推出，用在带有 Socket 370 插槽的主板上。"
+}
+,
+
+{
+"title": "VIA Cyrix III Processor",
+"tags": "VIACyrix III",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "VIA_CyrixIII.html",
+"summary": "威盛 Cyrix III 处理器于 2000 年 6 月 6 日推出，用在带有 Socket 370 插槽的主板上。"
+}
+,
+
+{
+"title": "Zilog Z80",
+"tags": "ZilogZ80",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "Zilog_Z80.html",
+"summary": "Zilog 是一家 8 位 CPU 的制造商，以 Z80 系列而闻名。"
+}
+,
+
+{
+"title": "Feedback",
+"tags": "",
+"keywords": "CPU, 中央处理器, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon",
+"url": "contact.html",
+"summary": ""
+}
+,
+
+{
+"title": "About me",
+"tags": "",
+"keywords": "CPU, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon, Loongson, Godson, 龙芯",
+"url": "about.html",
+"summary": ""
+}
+,
+
+{
+"title": "Support",
+"tags": "",
+"keywords": "CPU, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon, Loongson, Godson, 龙芯",
+"url": "support.html",
+"summary": ""
+}
+,
+
+{
+"title": "CPU博物馆",
+"tags": "",
+"keywords": "CPU, 中央处理器, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon, Loongson, Godson, 龙芯",
+"url": "index.html",
+"summary": ""
+}
+,
+
+{
+"title": "我的显卡博物馆",
+"tags": "",
+"keywords": "CPU, 中央处理器, 博物馆, 处理器, 微处理器, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, core, xeon, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU",
+"url": "index_GPU.html",
+"summary": ""
+}
+,
+
+{
+"title": "Intel Nehalem Core i Processor",
+"tags": "IntelCoreNehalem",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_1Gen_Nehalem.html",
+"summary": "采用 Nehalem 微架构的英特尔微处理器 —— 第一代桌面、移动、嵌入式和服务器处理器。"
+}
+,
+
+{
+"title": "Intel Westmere Core i Processor",
+"tags": "IntelCoreWestmere",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_1Gen_Westmere.html",
+"summary": "Intel Westmere 微架构是 32nm 版本的 Intel Nehalem 微架构。"
+}
+,
+
+{
+"title": "Intel Sandy Bridge Core i Processor",
+"tags": "IntelCoreSandy Bridge",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_2Gen_SandyBridge.html",
+"summary": "采用 Sandy Bridge 微架构的英特尔微处理器 —— 第 2 代台式机、移动式、嵌入式和服务器处理器。"
+}
+,
+
+{
+"title": "Intel 3002",
+"tags": "Intel3002",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_3002.html",
+"summary": "Intel 3002 算是微处理器的雏形，严格来说 Intel 3002 也不算是中央处理器芯片（CPU），因为它没有内建指令，只是一个 2-bit slicer 处理器。"
+}
+,
+
+{
+"title": "Intel Ivy Bridge Core i Processor",
+"tags": "IntelCoreIvy Bridge",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_3Gen_IvyBridge.html",
+"summary": "采用 Ivy Bridge 微架构的英特尔微处理器 —— 第 3 代台式机、移动式、嵌入式和服务器处理器。"
+}
+,
+
+{
+"title": "Intel 4004 Processor",
+"tags": "Intel4004",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_4004.html",
+"summary": "英特尔的 4004 处理器是第一款商用单芯片微处理器，于 1971 年 11 月 15 日推出。"
+}
+,
+
+{
+"title": "Intel 4040 Processor",
+"tags": "Intel4040",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_4040.html",
+"summary": "Intel 4040 为 4004 的增强版中央处理器芯片，虽然他们的速度一样，不过 4040 拥有双倍的内存寻址、增加堆栈空间、多了八个四位缓存器（registers）。"
+}
+,
+
+{
+"title": "Intel Haswell Core i Processor",
+"tags": "IntelCoreHaswellPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_4Gen_Haswell.html",
+"summary": "英特尔微处理器采用 Haswell 微架构 —— 第 4 代台式机、移动式、嵌入式和服务器处理器。"
+}
+,
+
+{
+"title": "Intel Broadwell Core i Processor",
+"tags": "IntelCoreBroadwellXeon",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_5Gen_Broadwell.html",
+"summary": "采用 Broadwell 微架构的英特尔微处理器，第 5 代台式机、移动式、嵌入式和 Xeon 处理器。"
+}
+,
+
+{
+"title": "Intel Broadwell Core i Processor",
+"tags": "IntelCoreBroadwellXeon",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_7Gen_KabyLake.html",
+"summary": "采用 Kaby Lake 微架构的英特尔微处理器，第 7 代台式机、移动式、嵌入式和 Xeon 处理器。"
+}
+,
+
+{
+"title": "Intel 8008 Processor",
+"tags": "Intel8008",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_8008.html",
+"summary": "Intel 8008 为世界上第一款八位中央处理器芯片（CPU）。8008 共推出两种速度：0.5 MHz 以及 0.8 MHz，虽然比 4004 的工作频率慢，不过因为是八位处理器（比起4004的四位），整体效能要比 4004 好上许多。8008 可以支持到 16KB 的内存。"
+}
+,
+
+{
+"title": "Intel 80186 Processor",
+"tags": "Intel80186",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80186.html",
+"summary": "80186 和 80C186 处理器是 8086 处理器的演变。然而，这种类型的处理器很少用于个人电脑，因为集成到芯片中的附加功能和能力在经典个人电脑中没有任何优势。80186和80C186处理器的主要应用领域是嵌入式控制市场。它们在那里控制调制解调器、打印机、复印机、传真机等，但它们也用于录像机、微波炉和空调。原因是芯片上集成了时钟发生器、可编程中断控制器、DMA 通道、16 位定时器和等待状态发生器等附加功能。值得注意的是，这种处理器类型自 1982 年上市以来就已经面市，用于控制设备和系统。"
+}
+,
+
+{
+"title": "Intel 80188 Processor",
+"tags": "Intel80188",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80188.html",
+"summary": "80188 和 80C188 处理器是 8088 处理器的演进。然而，这种类型的处理器很少用于个人电脑，因为集成到芯片中的附加功能和能力在经典个人电脑中没有任何优势。80188 和 80C188 处理器的主要应用领域是嵌入式控制市场。它们在那里控制调制解调器、打印机、复印机、传真机等，但它们也用于录像机、微波炉和空调。原因是芯片上集成了时钟发生器、可编程中断控制器、DMA 通道、16 位定时器和等待状态发生器等附加功能。值得注意的是，这种处理器类型自 1982 年上市以来就已经面市，用于控制设备和系统。"
+}
+,
+
+{
+"title": "Intel 80286 Processor",
+"tags": "Intel80286",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80286.html",
+"summary": "英特尔的第二代 80x86 处理器 i286 于 1982 年 2 月 1 日上市，作为 8086 的直接后继产品，最初主要用于商用计算机。80 年代中期，在 286 系统的价格下降到可以承受的水平后，它们也进入了国内系统。80286 微处理器最重要的创新是保护模式。在“保护”模式下，处理器最多可以寻址 16 MB 内存，并且还可以保护内存和其他系统资源。一项极其重要的功能，对于未来的多任务处理至关重要。但是，对于 286 系统，仍然存在一些限制，例如可以选择直接从保护模式切换回实模式。与后来的 386 系统可以在运行期间来回切换相反，286 系统必须重新启动。"
+}
+,
+
+{
+"title": "Intel 80386 Processor",
+"tags": "Intel80386",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80386.html",
+"summary": "英特尔的 80386DX 处理器是 80286 处理器的直接继承者。386 的生产期为 1985 年 10 月至 2007 年 9 月。借助 386，英特尔终于转向了 32 位微架构，今天仍然可以在最新的 64 位处理器中找到这种架构。DX 处理器上市 3 年后，即 1988 年 6 月，i386SX 处理器开始销售。然而，具有 SX CPU 的计算机系统只有 16 Bit 的外部数据总线和 24 Bit 的地址总线，因此比具有相同时钟速度的 DX 系统要慢得多。另一方面，可以使用 SX 处理器构建用于办公区域的相对便宜的 PC。386处理器也由 AMD、Chips & Technologies、Cyrix、IBM 和德州仪器制造。"
+}
+,
+
+{
+"title": "Intel 80486 Processor",
+"tags": "Intel80486",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80486.html",
+"summary": "1989 年是英特尔 80486 处理器的市场推出。最初的时钟频率低于 20MHz 和 25MHz，比最快的 386DX 慢，它带来了未来时钟速度所需的微架构。 486 最重要的创新是 CPU 集成了 Level1 缓存，最初大小为 8 KB。此高速缓存使特定的重复指令能够直接在 CPU 中缓冲。从那时起，主板上明显较慢的 RAM 不再需要访问缓存中存储的命令。第二个重要的创新是集成在 DX版CPU 中的协处理器，以加速特殊的数学计算和复杂的图形表示。"
+}
+,
+
+{
+"title": "Intel 80486 OverDrive Processor",
+"tags": "Intel80486OverDrive",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80486OverDrive.html",
+"summary": "英特尔的 OVER Drive 处理器于 1992 年推出。这些使用特殊的过渡插槽作为主板接口，替换处理器使用 Socket 1、Socket 2 或 Socket 3。"
+}
+,
+
+{
+"title": "Intel 8080 Processor",
+"tags": "Intel8080",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_8080.html",
+"summary": "英特尔 8080 处理器于 1974 年 4 月 1 日推出，是 8008 微处理器的直接后代。"
+}
+,
+
+{
+"title": "Intel 8085 Processor",
+"tags": "Intel8085",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_8085.html",
+"summary": "英特尔 8085 处理器于 1976 年 3 月 1 日推出。与其直接前身 8080 一样，是一个 8 位微处理器。"
+}
+,
+
+{
+"title": "Intel 8086 Processor",
+"tags": "Intel8086",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_8086.html",
+"summary": "英特尔第一代 80x86 处理器于 1978 年 6 月 8 日上市。8086 是 80x86 系列的始祖，其架构至今仍在无数代处理器中使用。8086 是一个完整的 16 位微处理器，因为内部和外部总线均为 16 位宽。"
+}
+,
+
+{
+"title": "Intel 80860 RISC Processor",
+"tags": "Intel80860RISC",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80860.html",
+"summary": ""
+}
+,
+
+{
+"title": "Intel 8088 Processor",
+"tags": "Intel8088",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_8088.html",
+"summary": "8088 不是一个成熟的 16 位微处理器，因为与 8086 相比，外部数据总线只有 8 位宽。8086 的设计以及 8088 的设计基于 Intel 的 8085 处理器，并且经过精心设计，使得 8085 中已经使用的指令集可以自动转换为有效的 8086 源代码。与 8086 一样，8088 也缺少必要的组件，例如中断和 DMA 控制器，这些组件是使用特殊芯片外部集成在主板上的。它也不支持浮点计算，但这个缺点可以通过可选的协处理器来弥补。英特尔的 8088 生产并畅销到 1990 年代，CMOS 和消耗优化的 CHMOS 版本的时钟速度为 5 到 10 MHz。"
+}
+,
+
+{
+"title": "Intel 80960 RISC Processor",
+"tags": "Intel80960RISC",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_80960.html",
+"summary": "Intel i960 或 80960 推出于 1988年 4 月 5 日，类似 RISC 的 32 位架构，主要地使用在嵌入式系统。"
+}
+,
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "intel_CPU_Timeline.html",
+"summary": ""
+}
+,
+
+{
+"title": "Intel Core 2 Processor",
+"tags": "IntelCoreCore 2",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_Core2.html",
+"summary": "Intel Core 2 系列是纯 64 位微处理器系列。它们基于 2006 年 1 月推出的 Core 微架构，属于第一代 Core 处理器。2006年7月开始销售。"
+}
+,
+
+{
+"title": "Intel Core Celeron Processor",
+"tags": "IntelCoreCeleron",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_CoreCeleron.html",
+"summary": "与Core Pentium 处理器一样，Core Celeron处理器也基于 2006 年 1 月推出的 Core 微架构。Celeron 可用作台式机和移动处理器，并且始终设计为 64 位处理器。"
+}
+,
+
+{
+"title": "Intel Core Pentium Processor",
+"tags": "IntelCorePentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_CorePentium.html",
+"summary": "Intel Core Pentium 处理器基于2006 年 1 月推出的 Core 微架构。Core Pentium 既可用作台式机处理器，也可用作移动处理器，并且始终设计为 64 位处理器。"
+}
+,
+
+{
+"title": "Intel Core Xeon Processor",
+"tags": "IntelCoreXeon",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_CoreXeon.html",
+"summary": "基于英特尔酷睿微架构的英特尔至强系列属于用于服务器和工作站的 64 位微处理器系列。它们于 2006 年 6 月上市。"
+}
+,
+
+{
+"title": "Intel FPU",
+"tags": "IntelFPU80878028780387",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_FPU.html",
+"summary": "协处理器包含对数、算术、指数和三角函数的支持。它们将 80x86 指令集增加了多达 80 条助记符指令。"
+}
+,
+
+{
+"title": "Intel Itanium Processor*",
+"tags": "IntelItanium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, RapidCAD, Itanium",
+"url": "intel_Itanium.html",
+"summary": ""
+}
+,
+
+{
+"title": "Intel Itanium 2 Processor*",
+"tags": "IntelItanium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, RapidCAD, Itanium",
+"url": "intel_Itanium2.html",
+"summary": ""
+}
+,
+
+{
+"title": "Intel Processor",
+"tags": "Intel",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_Other.html",
+"summary": ""
+}
+,
+
+{
+"title": "Intel Pentium Processor",
+"tags": "IntelPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_Pentium.html",
+"summary": "第一批具有 60 MHz 和 66 MHz的 Pentium P5 处理器于 1993 年 3 月推出。成为了非常成功的 i486 继承者。"
+}
+,
+
+{
+"title": "Intel Pentium 4 Processor",
+"tags": "IntelPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_Pentium4.html",
+"summary": "Pentium 4（简称奔4或P4）是英特尔公司于 2000 年 11 月发布的第 7 代 x86 微处理器。并且是继 1995 年出品的 Pentium Pro 之后的第一款重新设计的处理器，这一新的架构称做NetBurst。首款产品代码为 Willamette，拥有 1.4GHz 左右的内核时钟，并使用 Socket 423 脚位架构，首款处理器于 2000 年 11 月发布。不同于 Pentium II、Pentium III 和各种 Celeron 处理器，因为是全新设计的产品，所以与 Pentium Pro 的关联很小。值得注意的是，Pentium 4 有着非常快速到 400 MHz 的前端总线，之后更有提升到 533 MHz、800 MHz。它其实是一个为 100 MHz 的四条并列总线(100MHz x4 并列)，因此理论上它可以传送比一般总线多四倍的容量，所以号称有 400 MHz 的速度。AMD Athlon 的前端总线则有 266 MHz 的速度(133 MHz 双倍并列总线)。"
+}
+,
+
+{
+"title": "Intel Pentium 4 Celeron Processor",
+"tags": "IntelPentiumCeleron",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_Pentium4Celeron.html",
+"summary": "采用 NetBurst 微架构的 Intel Celeron 是 Pentium 4 的直系后代，但二级缓存只有 Pentium 4 的一半。"
+}
+,
+
+{
+"title": "Intel Pentium 4 Xeon Processor",
+"tags": "IntelPentiumXeon",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_Pentium4Xeon.html",
+"summary": "英特尔于 2001 年 5 月推出基于 NetBurst 微架构的至强处理器，专门用于服务器和工作站。"
+}
+,
+
+{
+"title": "Intel Pentium II Processor",
+"tags": "IntelPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumII.html",
+"summary": "Intel Pentium II 处理器于 1997 年 5 月 7 日推出。第一款具有 Klamath 内核的Pentium II 拥有 750 万个晶体管、512 KB L2 高速缓存，并使用 0.35 微米生产工艺制造。Pentium II 内核基于 Pentium Pro 内核，但经过优化以显着加快运行 16 位代码的速度。它还支持 Pentium MMX 引入的 MMX 指令集扩展。采用 Deschutes 内核的第二代 Pentium II 处理器采用 0.25 微米生产工艺制造。基于新的工艺，从 PII 350 开始实现了 100 MHz 的 FSB，而不是之前习惯的 66 MHz。"
+}
+,
+
+{
+"title": "Intel Pentium II Celeron Processor",
+"tags": "IntelPentiumCeleron",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumIICeleron.html",
+"summary": "第一代 Intel Celeron 处理器于 1998 年 4 月推出。"
+}
+,
+
+{
+"title": "Intel Pentium III Processor",
+"tags": "IntelPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumIII.html",
+"summary": "Pentium III 是 Pentium II 的加强版，新增七十条新指令(SIMD，SSE)，与 Pentium II 一样有 Mobile、Xeon 以及 Cerelon 等不同的版本。特别的是，Pentium III 光是桌面型就拥有 Katmai Slot 1 、Coppermine Slot 1 以及 Coppermine Socket 370 等三种不同的系列。到后期，英特尔放弃插卡式接口而又回归到插槽接口（Socket 370）。"
+}
+,
+
+{
+"title": "Intel Pentium III Celeron Processor",
+"tags": "IntelPentiumCeleron",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumIIICeleron.html",
+"summary": "第二代赛扬，基于 Pentium III。 Celeron 系列是基于 Pentium P6 设计的 x86 处理器系列。它由英特尔作为第二线销售，以补充其更昂贵但性能更高的 Pentium CPU。"
+}
+,
+
+{
+"title": "Intel Pentium III Xeon Processor",
+"tags": "IntelPentiumXeon",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, xeon",
+"url": "intel_PentiumIIIXeon.html",
+"summary": "Intel Pentium III Xeon 处理器于 1999 年 3 月 17 日推出，专为高端工作站和服务器而开发，是 Intel Pentium II Xeon 的直接继承者。"
+}
+,
+
+{
+"title": "Intel Pentium II OverDrive Processor*",
+"tags": "IntelPentiumOverDrive",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumIIOverDrive.html",
+"summary": "Intel Pentium II Over Drive 处理器于 1998 年 8 月 24 日推出，主板接口为 Socket 8。"
+}
+,
+
+{
+"title": "Intel Pentium II Xeon Processor*",
+"tags": "IntelPentiumXeon",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, xeon",
+"url": "intel_PentiumIIXeon.html",
+"summary": "采用 P6 微架构的 Intel Pentium II Xeon 处理器于 1998 年 6 月 29 日上市，主板接口为 Socket 2，专为高端工作站和服务器而开发。"
+}
+,
+
+{
+"title": "Intel Pentium MMX Processor",
+"tags": "IntelPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumMMX.html",
+"summary": "Intel Pentium MMX（Multi-Media eXtension）处理器于 1997 年 1 月 8 日面向市场发布。桌面版的主频从 166 MHz 到 233 MHz，移动版的主频从 133 MHz 到 300 MHz。"
+}
+,
+
+{
+"title": "Intel Pentium OverDrive Processor",
+"tags": "IntelPentiumOverDrive",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumOverDrive.html",
+"summary": "用于 i486 和 Pentium 系统的 Intel Pentium OverDrive 处理器于 1995 年推出。"
+}
+,
+
+{
+"title": "Intel Pentium Pro Processor",
+"tags": "IntelPentium",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples",
+"url": "intel_PentiumPro.html",
+"summary": "Intel Pentium Pro 处理器于 1995 年 11 月 1 日推出。这些用于带有 Socket 8 的主板，与 Pentium Pro 的新 387 针布局相匹配。服务器和工作站是 Pentium Pro 处理器的理想应用领域，因为它们的架构意味着它们可以访问相对较大的 L2 缓存并为每个系统提供多达 4 个处理器的支持。但是，它只能在安装了 32 位操作系统（如 Windows NT 或 OS/2）的计算机上发挥其全部潜力。在这种情况下，Pentium Pro 的性能明显高于具有相同时钟速度的 Pentium I 处理器。它不太适合 1995 年广泛使用的 16 位操作系统和程序。"
+}
+,
+
+{
+"title": "Intel RapidCAD Processor",
+"tags": "IntelRapidCADOverDrive",
+"keywords": "CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, RapidCAD",
+"url": "intel_RapidCAD.html",
+"summary": "英特尔 RapidCAD 处理器于 1992 年推出。这些处理器包括一套 RapidCad-1（在 386 插槽中）和 RapidCad-2（在协处理器插槽中），主要加速 CAD 和渲染领域的应用程序。"
+}
+,
+
+{
+"title": "News",
+"tags": "",
+"keywords": "news, blog, updates, cpu, history, course",
+"url": "news.html",
+"summary": ""
+}
+,
+
+{
+"title": "News",
+"tags": "",
+"keywords": "news, blog, updates, release notes, announcements",
+"url": "news_archive.html",
+"summary": ""
+}
+,
+
+
+
+
+{
+"title": "VIA/Zhaoxin CPU 微架构的演进",
+"tags": "history",
+"keywords": "",
+"url": "evolution_of_amd_via_zhaoxin_microarchitectures.html",
+"summary": "本文梳理了VIA/Zhaoxin x86处理器的发展历程，从早期Cyrix 5x86/6x86系列开始，历经WinChip、Cayenne、Samuel等低功耗顺序核心，到2008年推出首个乱序架构Isaiah（VIA Nano），性能大幅提升。随后兆芯接手，迭代出五道口/陆家嘴、CNS及永丰等架构，逐步改进分支预测、缓存与执行单元，旨在提升能效与IPC，但在设计能力和性能上仍与主流产品存在差距。"
+}
+,
+
+
+{
+"title": "Intel CPU 微架构的演进",
+"tags": "history",
+"keywords": "",
+"url": "evolution_of_intel_cpu_microarchitectures.html",
+"summary": "本文系统梳理了英特尔x86微架构的发展历程。从1989年的80486起步，历经P5、P6、NetBurst等关键阶段，逐步引入超标量、乱序执行等先进技术。随后演进至注重能效的Core系列与低功耗Atom系列（Bonnell, Silvermont等）。2010年后，高性能的酷睿（Sandy Bridge至Golden Cove）与高能效的Atom（Tremont, Gracemont）两条路线并行发展，最终形成目前“大小核”混合架构的格局，共同推动处理器在性能、功耗与面积上的持续优化。"
+}
+,
+
+
+{
+"title": "AMD CPU 微架构的演进",
+"tags": "history",
+"keywords": "",
+"url": "evolution_of_amd_cpu_microarchitectures.html",
+"summary": "AMD CPU微架构历经多代演进，从早期基于Intel 80486设计的Am486，到首个自主研发的K5，再到引入3DNow!指令集的K6。1999年的K7（Athlon）性能领先，2003年的K8则率先实现x86 64位扩展。2007年的K10引入共享三级缓存和功耗管理。2011年的推土机架构采用模块化设计但能效不佳，同期低功耗Bobcat面向移动市场。2017年的Zen架构回归高性能设计，此后Zen 2、Zen 3、Zen 4持续提升IPC、支持AVX-512并优化能效与多核性能。"
+}
+,
+
+
+{
+"title": "网站更新日志",
+"tags": "newsblog",
+"keywords": "",
+"url": "update.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "不比性能比颜值，谁家生产的CPU最漂亮？",
+"tags": "collection",
+"keywords": "",
+"url": "whose_cpu_is_the_most_beautiful.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "CPU大讲堂（19）——当代CPU介绍(四) Intel Haswell 与 Broadwell 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_19.html",
+"summary": "Haswell 算是最后一代还称得上遵循 Tick-tock 时程规划的产品，Broadwell 架构基本上就是 Haswell 架构移植到 14 纳米工艺的版本。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_18.html",
+"summary": "Ivy Bridge 本质上是 Sandy Bridge 的制程改进版，架构主体原则上是 Sandy Bridge 的延续，改进内容不多也不明显。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（17）——当代CPU介绍(二) Intel Sandy Bridge 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_17.html",
+"summary": "从 Sandy Bridge 开始个人计算机处理器的发展有很明显趋于缓和的现象，接下来的 Ivy Bridge、Haswell、Broadwell、Skylake 其实都不会有太让人惊艳的提升或变革。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_16.html",
+"summary": "AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_15.html",
+"summary": "今天要谈的是 Intel Nehalem 架构，这个架构在近十年内的 Intel x86 处理器演进中占有几乎与 Core Microarchitecture 同等重要的地位，今天我们所见到的 Sandy Bridge、Ivy Bridge、Haswell、Broadwell 与最新的 Skylake 上有很多特色都奠基于此代。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_14.html",
+"summary": "本篇要谈的是 AMD 的 K10 架构，算是 K8 架构的后继产品，开发过程中曾经短暂被称为 K8L，在上市之后则被命名为 AMD 10 处理器家族。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_13.html",
+"summary": "本节主要谈 Intel Core 架构的逆袭。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的前世",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_12.html",
+"summary": "本节开始介绍 Intel Core 架构的前世今生，先谈谈 Core 架构的再次统一 Intel x86 处理器产品线前与 Netburst 末期之间的历史。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_11.html",
+"summary": "上篇讲 Intel 的 Netburst 架构时代 (2000 ~ 2006)，本篇自然就是讲 Intel 永远的 (同时也是现在唯一的) x86 处理器对手 AMD 同时期的历史。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（10）——近代前期CPU发展史(上) Netburst 架构",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_10.html",
+"summary": "从这一节开始将进入近代的 CPU 介绍，本篇谈的是 Intel 的 Netburst (P68) 架构。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（9）——中古时代后期CPU发展史(下)",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_9.html",
+"summary": "本节将继续延续上一节的内容，要介绍的有 Intel 的 Pentium III 家族、AMD 的 K6-III 与 Athlon 家族三大系列。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（8）——中古时代后期CPU发展史(中)",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_8.html",
+"summary": "AMD 在经过 K5 的出师不利之后，绝地反击赶在 Pentium II 之前推出 AMD K6，而 Intel 基于 P6 架构推出了 Pentium II 在市场上大获成功。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（7）——中古时代后期CPU发展史(上)",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_7.html",
+"summary": "本节要谈的是俗称 586 世代的部分，从这里开始也是 x86 CPU 发展史真正要开始有趣的地方，一方面是 AMD 终于开始研制自家设计的 CPU 了，另一方面则是计算机信息科技产业的发展差不多就是在此时正式进入突飞猛进的阶段。"
+}
+,
+
+
+{
+"title": "我为什么收藏 CPU？",
+"tags": "blogcollection",
+"keywords": "",
+"url": "why_do_I_collect_cpu.html",
+"summary": "关于我为什么会开始收藏CPU的一些随想随笔。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（6）——中古前期CPU发展史",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_6.html",
+"summary": "延续上一节的主题，本节馆长要谈的是「中古时期前半」的个人计算机 CPU 发展史，从这里开始就进入 x86 指令集架构的时代了，后来你所能见到的个人计算机 CPU 几乎都奠基于此。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（5）——上古CPU发展史",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_5.html",
+"summary": "在前面的 CPU 概论结束之后，我们接下来要进入的是一段「历史课程」，本篇介绍 CPU 的上古时代，包含 Intel 的 4004、8008、8080、8085 等进入 x86 架构以前的处理器。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（4）——HT、XD？带你认识这些技术名称",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_4.html",
+"summary": "延续上一篇的主题，这节将会继续谈处理器的「技术特性」——超线程技术、处理器省电调控技术、数据执行防止技术和虚拟化技术。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（3）——鸟瞰历代处理器指令集",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_3.html",
+"summary": "近年的 CPU 除了前一节谈过的基本参数之外，通常还有很多「技术特性」加持，这些技术能提供某些额外的功能或是提升运算性能，因此要了解 CPU 的规格，对这些技术的简单了解是不可或缺的！一般而言，处理器的技术特性有指令集与专属技术两大类，本节将先探讨指令集的部分。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（2）——带你看懂CPU规格",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_2.html",
+"summary": "处理器的规格其实比绝大多数人想象复杂，本篇主要是教大家如何「使用工具来判读自己计算机目前使用的 CPU 的规格」。"
+}
+,
+
+
+{
+"title": "CPU大讲堂（1）——浅谈CPU",
+"tags": "course",
+"keywords": "",
+"url": "computer_lecture_1.html",
+"summary": "中央处理器是计算机核心三大组件之一，本期主要介绍处理器的架构及其发展。"
+}
+,
+
+
+{
+"title": "探秘民间PC收藏馆",
+"tags": "newscollection",
+"keywords": "",
+"url": "exploring_the_folk_pc_collection_museum.html",
+"summary": "《IT时报》记者认识了一群民间古董电脑收藏家。他们的私人宝库虽然撑不起千万级规模的计算机博物馆，但是星星之火渐成燎原之势，记者好比管中窥豹，重游了一段PC的童年。"
+}
+,
+
+
+{
+"title": "大话CPU收藏（三）",
+"tags": "collection",
+"keywords": "",
+"url": "talking_about_cpu_collection_3.html",
+"summary": "每颗处理器的背后都有其独特的技术发展背景，而这些故事更是与近年来的电脑科技发展息息相关。拥有了1颗处理器，就如同将那段历史的里程碑握在手上，成为电脑发展史的实际参与者。"
+}
+,
+
+
+{
+"title": "大话CPU收藏（二）",
+"tags": "collection",
+"keywords": "",
+"url": "talking_about_cpu_collection_2.html",
+"summary": "收集东西背后所驱使的动力通常是因为兴趣。如果对相关科技或是历史没有兴趣的话，收集处理器将会是一个乏味的过程。对于想要入行的朋友，笔者的衷心建议是，先为自己订立明确目标，并选定基本范围。可以从较熟悉、使用过或是对你有特殊意义的产品开始。"
+}
+,
+
+
+{
+"title": "大话CPU收藏（一）",
+"tags": "collection",
+"keywords": "",
+"url": "talking_about_cpu_collection_1.html",
+"summary": "什么是收集CPU？每每跟新遇到的朋友提到这话题，随之而来的就是要先解释CPU 到底是什么玩意。通常朋友们的反应都是：「收集这玩意到底要干嘛？」，其实收集东西的目的有时候就是个人喜好而已，就像有女生喜欢收集Kitty，背后并不是单纯的只是基于其经济效益。对于许多电脑迷而言，CPU 不只是一台电脑的核心元件，甚至可以说是精神象征。"
+}
+,
+
+
+{
+"title": "光刻如何一步一步变成了芯片制造的卡脖子技术？",
+"tags": "historycourse",
+"keywords": "",
+"url": "lithography_has_become_a_choke_technology_for_chip_manufacturing.html",
+"summary": "芯片制造用到的技术很多，光刻是芯片制造的灵魂技术，但是开始的时候，光刻并不是所有技术中最厉害的。现在大众认识到了芯片的重要性，讨论芯片产业的卡脖子问题时，提到最多的是光刻和光刻机。那么，光刻是如何一步一步变成了芯片制造的卡脖子技术？本文试图一探究竟。"
+}
+,
+
+
+{
+"title": "芯片破壁者：从电子管到晶体管“奇迹”寻踪",
+"tags": "history",
+"keywords": "",
+"url": "tracing_miracle_from_electron_tube_to_transistor.html",
+"summary": "回顾二十世纪，无论是科技、商业，还是政治、军事、娱乐生活，几乎每一个领域都发生了狂飙突进式的巨变，每个领域也都诞生出了足以彪炳史册的“关键”人物。1999年，美国《洛杉矶时报》评选出“50名本世纪经济最有影响力人物”，其中并列第一名的有三个人：美国发明家威廉·肖克利、罗伯特·诺伊斯和杰克·基尔比。肖克利是晶体管的发明人之一，诺伊斯和基尔比是集成电路的发明人。我们该如何理解三位发明家能够位列第一的殊荣呢？"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（七）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_7.html",
+"summary": "中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩尔定律的轨迹快速发展的情况。Intel公司是推动芯片技术发展的旗帜，x86系列CPU、奔腾系列CPU、酷睿系列CPU技术成为桌面计算机CPU芯片发展的里程碑，桌面互联网成为了拉动芯片技术进步和产业发展的主力。FinFET电路技术、3D芯片技术和多核心CPU技术为后来的移动终端芯片技术提供了强有力支撑。此文为下篇，主要介绍了1990年以后移动互联网成为推动芯片技术进步和产业发展动力的历史。本站将以连载的形式陆续刊登本文，第七期是该系列的最后一篇，介绍了移动终端对芯片的要求很高，促进了芯片技术创新。"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（六）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_6.html",
+"summary": "中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩尔定律的轨迹快速发展的情况。Intel公司是推动芯片技术发展的旗帜，x86系列CPU、奔腾系列CPU、酷睿系列CPU技术成为桌面计算机CPU芯片发展的里程碑，桌面互联网成为了拉动芯片技术进步和产业发展的主力。FinFET电路技术、3D芯片技术和多核心CPU技术为后来的移动终端芯片技术提供了强有力支撑。此文为下篇，主要介绍了1990年以后移动互联网成为推动芯片技术进步和产业发展动力的历史。本站将以连载的形式陆续刊登本文，第六期介绍移动终端芯片成为驱动芯片产业的有生力量。"
+}
+,
+
+
+{
+"title": "CPU 收藏感悟",
+"tags": "collection",
+"keywords": "",
+"url": "understanding_of_cpu_collection.html",
+"summary": "谈几点对于收藏的认识以及收藏的注意事项。"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（五）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_5.html",
+"summary": "在长达114年的时间里，科学家开始逐步发现、认识和研究了半导体，也简述了电子管、晶体管、集成电路、以光刻为核心的硅平面加工技术、CMOS电路、非挥发存储器、单管DRAM等重大发明。在晶体管发明后的20多年里，这些发明为芯片技术快速发展打下了基础，为芯片技术沿着摩尔定律前行铺平了道路。此文为中篇，介绍从1970年开始，芯片技术日新月异的发展历史。本站将以连载的形式陆续刊登本文，第五期介绍x86微处理器开启了PC机拉动芯片产业发展的新时代。"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（四）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_4.html",
+"summary": "在长达114年的时间里，科学家开始逐步发现、认识和研究了半导体，也简述了电子管、晶体管、集成电路、以光刻为核心的硅平面加工技术、CMOS电路、非挥发存储器、单管DRAM等重大发明。在晶体管发明后的20多年里，这些发明为芯片技术快速发展打下了基础，为芯片技术沿着摩尔定律前行铺平了道路。此文为中篇，介绍从1970年开始，芯片技术日新月异的发展历史。本站将以连载的形式陆续刊登本文，第四期介绍全球首个微处理器芯片问世，人类社会信息化大幕从此开启。"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（三）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_3.html",
+"summary": "集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第三期介绍芯片技术不断成熟，沿摩尔定律快速发展。"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（二）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_2.html",
+"summary": "集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第二期将从集成电路(芯片)的发明和光刻工艺是芯片制造的灵魂两个部分进行介绍。"
+}
+,
+
+
+{
+"title": "图说芯片技术60多年的发展史（一）",
+"tags": "history",
+"keywords": "",
+"url": "history_of_chip_technology_1.html",
+"summary": "集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第一期将从半导体发现和研究、电子管的发明和晶体管的发明三个部分进行介绍。"
+}
+,
+
+
+{
+"title": "几个关于CPU你所不知道的小秘密",
+"tags": "course",
+"keywords": "",
+"url": "a_few_little_secrets_about_cpu.html",
+"summary": "每一代处理器上市前，厂商自己都会经过复杂多样的温度测算，他们会采用什么令人意想不到的方法呢？第十代英特尔处理器有2核、4核、6核、8核、10核这5种类型，英特尔难道会傻乎乎地开5条线分别生产这5种核心类型的产品吗？如果想在旧主板上使用新的CPU，聪明的厂商会采用什么方法呢？本文将为您揭秘这些小秘密。"
+}
+,
+
+
+{
+"title": "【首发】我的第一台电脑——联想天禧6620",
+"tags": "blog",
+"keywords": "",
+"url": "the_first_computer_of_honux.html",
+"summary": "我的第一台电脑是联想天禧6620电脑，CPU是Intel Pentium III 866MHz，64M内存、20G硬盘、810e主板的集成显卡、17寸CRT显示器。记得是2000年11月，我爸和我一起去买的，那时的景象还历历在目。算起来距今也23年了，主机我还一直保留着。"
+}
+,
+
+
+{
+"title": "时代脚印 —— Zilog Z80 CPU",
+"tags": "history",
+"keywords": "",
+"url": "footprint_of_the_times_zilog_z80_cpu.html",
+"summary": "Zilog Z80 CPU，简称Z80，是一款8位微处理器，与英特尔公司出产的8080微处理器的指令集兼容。Z80可执行为8080所写的CP/M操作系统，所以过去在apple II兼容机盛行的年代，很多人都爱在电脑内加装z80扩展卡，并透过它来运行WordStar、VisiCalc等商业软件。"
+}
+,
+
+
+{
+"title": "OverDrive 的始祖 Intel RapidCAD",
+"tags": "history",
+"keywords": "",
+"url": "intel_RapidCAD_the_ancestor_of_OverDrive.html",
+"summary": "Intel RapidCAD是英特尔有史以来第一款为旧款个人计算机所提供的升级套件（也就是OverDrive的始祖）。原386的使用者不需要更换主板，只要把RapidCAD买回来将主板上旧有的中央处理器替换掉，就可以享受接近486的运算能力。"
+}
+,
+
+
+{
+"title": "CPU 历史上著名的破解有哪些？",
+"tags": "history",
+"keywords": "",
+"url": "famous_cracking_in_cpu_history.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "Intel 8008：一个被抛弃的芯片开拓了一个王朝",
+"tags": "history",
+"keywords": "",
+"url": "intel_8008_an_abandoned_chip_opens_up_a_dynasty.html",
+"summary": "如果以今天的微处理器标准衡量，甚至以过去 30 年的标准衡量，英特尔的 8008 确实是微弱而缓慢的。但它是第一个商用的 8 位单芯片微处理器，您可以用它构建有用的系统。英特尔 8080 和 8085、8 位 Zilog Z80 以及英特尔和其他处理器供应商在过去半个世纪中开发的所有 x86 微处理器都带有原始英特尔 8008 的一些爬行动物 DNA。后来，Federico Faggin 于 1974 年离开英特尔并创立了 Zilog。他将一些 8008 微处理器 DNA 放入极为成功的 8 位 Z80 微处理器中。"
+}
+,
+
+
+{
+"title": "Cyrix CPU 发展史",
+"tags": "history",
+"keywords": "",
+"url": "history_of_cyrix_cpu.html",
+"summary": "Cyrix 成立于 1988 年，最初是一家为 286 和 386 系统提供高性能数学协处理器的专业制造商。该公司由前德州仪器员工创立。Cyrix 一直是无晶圆制造商。早期，他们使用德州仪器和SGS Thomson的生产设施。1994 年，Cyrix 转向IBM微电子。Cyrix 生产了他们自己设计的 CPU，例如 486 级处理器（部分采用 Pentium 技术和 486 引脚，称为 5x86）和 Pentium Pro 级 CPU，带有 Pentium 引脚 (6x86)，使用带有 x86 转换的 RISC 内核。众所周知，6x86 的 FPU 速度较慢。与AMD不同，Cyrix 从未制造或销​​售过英特尔在许可下进行设计，但在内部设计了一切，从头开始。1997 年 8 月 Cyrix与 National Semiconductor合并。 1999 年 6 月，威盛收购了 Cyrix 的剩余部分。到了这个时候，原来的开发团队已经不复存在，产品已经过时了，唯一有价值的就是 Cyrix 的名字。"
+}
+,
+
+
+{
+"title": "英特尔最强竞争对手的兴起与衰落",
+"tags": "history",
+"keywords": "",
+"url": "the_rise_and_decline_of_intel_strongest_competitor.html",
+"summary": "Cyrix以可实现的廉价PC的形式将个人电脑的世界带给数百万人，结果却被其最好的产品和无法运行一款流行游戏所扼杀，随后又与一家更大的合作伙伴进行了一次糟糕的合并。这家公司曾有机会占领家用电脑市场，将英特尔和AMD远远地抛在身后，但最终未能成功，迅速消失在了科技的坟墓中。"
+}
+,
+
+
+{
+"title": "Intel CPU 发展史",
+"tags": "history",
+"keywords": "",
+"url": "history_of_intel_cpu.html",
+"summary": "CPU技术应该是人类发展史上最顶尖的发明了，它让人类文明乘上了快速列车！CPU的大厦也是从简单的4004一步一步发展到如今的程度，每一步的变化都是有历史原因的，是有迹可循的。"
+}
+,
+
+
+{
+"title": "这个神秘的数，让芯片巨头英特尔赔了5亿美金",
+"tags": "history",
+"keywords": "",
+"url": "pentium_FDIV_bug.html",
+"summary": "英特尔处理器是性能优良的代名词，但是，英特尔也有一段不堪的往事。这件事还和一个神秘的常数，以及一个困扰人类2300多年的神秘数学猜想有关。"
+}
+,
+
+
+{
+"title": "487是什么？简谈英特尔的“黑历史”",
+"tags": "history",
+"keywords": "",
+"url": "what_is_487.html",
+"summary": "487是给486SX准备的协处理器，和387类似，用来弥补486SX没有浮点单元的问题。但是，你真的以为英特尔会开发单独的浮点计算器吗？"
+}
+,
+
+
+{
+"title": "x86架构与授权",
+"tags": "history",
+"keywords": "",
+"url": "x86_architecture_and_licensing.html",
+"summary": "美国有家公司叫IBM，当年IBM很强大，可以说是个非常NB的科技帝国。英特尔当时还非常弱小，不过只是IBM的供应商之一而已。IBM为了规避将来可能出现的采购风险，所以就要求英特尔将x86专利授权授给几家芯片公司，AMD只是其中之一。x86架构与授权就从这里开始了。"
+}
+
+
 
 ]

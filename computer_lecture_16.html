@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构。">
+<meta name="keywords" content="course,  ">
+<title>CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构</h1>
+        <p class="post-meta"><time datetime="2023-01-01T00:00:00+08:00" itemprop="datePublished">Jan 1, 2023</time> /
+            
+            
+            
+            <a href="tag_course.html">course</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构。</div>
+        
+
+        
+
+        <p>好的，终于来到现阶段最后一篇 AMD 阵营的 CPU 发展史了，AMD Bulldozer 架构在 2011 年推出，取代了先前使用的 K10 架构，目前是 AMD 旗下全 x86 计算机处理器产品线共享的基础架构 (照惯例本系列文章目前不谈 Atom 与 Bobcat 等用于低功耗系统或客制化芯片的旁支架构)，而 Bulldozer 架构前后有 Bulldozer (推土机)、Piledriver (打桩机)、Streamroller (压路机)、Excavator (挖土机) 四个世代，但由于系出同门，彼此之间差异也不是很明显，并且同属 15h 家族因此将在本篇中一并介绍完毕。</p>
+
+<h2 id="amd-bulldozer">AMD Bulldozer</h2>
+
+<p>最早 Bulldozer 架构的设计概念可以追溯到 2003 年就已经有初步的雏形，但当时的 AMD 最后选择发展 K8 架构，因此最终该雏形的研发计划被搁置，但在 K10 完成之后则被重启，成为接替 K10 架构地位的新世代架构设计，初代产品号称性能上能胜过自家上代的 Phenom II X6 1100T (六核心) 与 Core i7-950 (4C8T) 超过 50% 以上 (well, 时至今日看起来像笑话就是了)。</p>
+
+<p>开发过程中历经无数次的跳票，最后在 2011 年 09 月 19 日发布首款产品，因此主要对手从 Westmere 变成了 2011 年 01 月就已经发布的 Sandy Bridge 与紧接着在 2012 年 02 月推出的 Ivy Bridge。</p>
+
+<h2 id="组成多线程的第三种方法">组成多线程的第三种方法……</h2>
+
+<p>通常来说处理器的多线程设计可以有两种做法，分别称为 SMT 与 CMP，前者的全名是 Simultaneous Multi-Threading，指得是不实质增加处理核心，透过增加一组前置单元电路的做法来让单一处理核心被视为「两个逻辑核心」，可以透过提高单一运算核心的利用率来提高性能 (因为绝大多数时候我们不会 100% 利用处理器的性能)，最成功的案例就是 Intel 的 Hyper-Threading Technology，概念上有点类似在高速公路上加盖第二个交流道。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/CSX9633.png"><img src="../images/blogs/computer_lecture/CSX9633-750x420.png" alt="CSX9633" /></a>
+</div>
+
+<p>后者的全名则是 Chip Multi-Processor，其实就是当今成为显学的多核心处理器，透过直接增加核心的方式来提高性能，概念上类似直接给高速公路增加一线道，在 Intel 世界来说，从 Nehalem 开始就是同时并用 CMP 与 SMT 的作法。</p>
+
+<p>至于 AMD Bulldozer 的作法则是从 SMT 与 CMP 两种做法中截长补短的结果，号称能够同时享受 SMT 与 CMP 的优点，并且不像 CMP 需要那么大的芯片面积与那么多的晶体管数，也不像 SMT 在高负载状况下可能效能不增反减。</p>
+
+<h2 id="运算模块挑战传统的核心数概念">「运算模块」挑战传统的核心数概念</h2>
+
+<p>在讨论 Bulldozer 家族的时候一直以来都有一个问题很难解释，那就是「这颗 AMD 处理器到底是几核心的？」，本来这个问题应该是很简单的，我们认知上就是完整的运算单元与专属核心的缓存合并起来的单一模块就叫做「一个核心」(类似下图右者)，也就是传统的 SMT / CMP 设计。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/AMD-Bulldozer-a.jpg"><img src="../images/blogs/computer_lecture/AMD-Bulldozer-a-750x381.jpg" alt="AMD-Bulldozer-a" /></a>
+</div>
+
+<p>但在 Bulldozer 上却不是这样，AMD 创造了一个名词「模块」来描述 Bulldozer 处理器上的运算单元，不同于以往我们认知的「一个运算核心由一组整数运算单元与一组浮点运算单元组成」，Bulldozer 核心 (上图左半边) 则是设计成每个模块有 2 组具有四条管线的整数运算单元 (各自独享 L1 数据缓存) 与 1 组浮点运算单元，而这三组运算单元共同使用属于这个模块的 L1 指令缓存与 L2 缓存，使用相同的 Fetch、Decode，这样的设计又被称为 CMT (Clustered Multi-Threading)，于是争论就由此产生了，在面对浮点运算的时候，一个 Bulldozer 模块实际上只能发挥类似单一核心 + HTT 的效果，但在面对整数运算 (AMD 认为日常情况下有 80% 的时间处理器都在做整数运算) 的时候却几乎可以被视为两个核心，那一个 Bulldozer 模块到底要算是单核心还是双核心呢？</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/ASM9963.jpg"><img src="../images/blogs/computer_lecture/ASM9963-750x422.jpg" alt="ASM9963" /></a>
+</div>
+
+<p>AMD 官方的答案是，单一一个 Bulldozer 模块是双核心，只是这两个核心共享缓存与一组浮点运算单元，之所以不直接使用 CMP 设计是因为多核心会造成晶体管数的大幅增加 (耗电)、芯片面积的大幅上升 (成本)，在宣传四模块 Bulldozer 处理器的时候，AMD 是宣称其为「八核心处理器」，不过也因为这样所以在美国惹上了标示不实的官司。</p>
+
+<p>不过值得注意的是 CMT 设计并不是第一次出现在处理器发展史中，早在 1996 年 DEC 就曾经在旗下的处理器上使用过类似的设计概念。</p>
+
+<h2 id="模块化设计">模块化设计</h2>
+
+<p>AMD 在 Bulldozer 中也效法 Intel Nehalem 导入了模块化设计，所以在设计服务器用、个人计算机用、笔记本电脑用的 Bulldozer 处理器时其实并不用耗费太多力气，同样大略可分为 Core 与 Uncore 两大部分，Core 就是前面提过的运算模块，Uncore 则包含共享的 L3 缓存与内存控制器、HyperTransport 信道。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/ABR9963.jpg" alt="ABR9963" />
+</div>
+
+<p>不过说是这么说啦，但 Bulldozer 的弹性其实远低于 Intel 的 Nehalem，基本上最多只能塞四组运算模块而已，最高可达 16 核心 (8 模块) 的改良版 Bulldozer － Piledriver 就得做成两个 Die 的 MCM 封装了。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/CPX9966.png"><img src="../images/blogs/computer_lecture/CPX9966-750x420.png" alt="CPX9966" /></a>
+</div>
+
+<h2 id="指令集大乱斗结束">指令集大乱斗结束</h2>
+
+<p>Bulldozer 同时也标志着 AMD 与 Intel 之间的指令集大乱斗正式结束，并且由 Intel 取得胜利，AMD Bulldozer 中内建了同期绝大多数 Intel 处理器具备的指令集 (新增 SSE4.1、SSE4.2、AES-NI 与 AVX)，并且取消在 K10 架构中只为了抢占 SSE4 这名号的 SSE4.A 指令集。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/TSR6655.png"><img src="../images/blogs/computer_lecture/TSR6655-750x567.png" alt="TSR6655" /></a>
+</div>
+
+<p>除此之外 Bulldozer 还额外加入了 FMA4 (四操作数融合加法)、XOP 两种 AMD 专属的指令集，主要与向量矩阵有关，但却不支持 Intel 后来内建于处理器中的 FMA3 (三操作数融合加法，要等到 Piledriver 才支持)，很遗憾的是这些指令其实不怎么实用，在 Zen 中也将被拿掉。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/FMA8966.png"><img src="../images/blogs/computer_lecture/FMA8966-750x564.png" alt="FMA8966" /></a>
+</div>
+
+<h2 id="系统架构大致上不变">系统架构大致上不变</h2>
+
+<p>Bulldozer 家族的系统架构基本上维持与 K10 时代相同，仍然维持南北桥两颗芯片的组成，内存控制器整合在处理器内，但 PCI Express 通道控制器仍然位于北桥芯片中，北桥与处理器之间也依旧使用 HyperTransport 连结但升级至 3.1 版本 (频率由 2.6 GHz 提升到 3.2 GHz，带宽可以从 5.2 GT/s 提高到 6.4 GT/s)。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/990fx-block.png" alt="990fx-block" />
+</div>
+
+<h2 id="turbocore">TurboCore</h2>
+
+<p>这功能基本上可以当成 AMD 版本的 Intel Turbo Boost，运作方式与原理几乎都如出一辙，判定升频档位的依据是采用负载率而非温度，且与 Intel 的 Turbo Boost 一样具有能在关闭部分核心的时候，将运作中核心的频率拉高到更高档位的能力。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/AMD-Turbo-CORE-clock-600x450.png" alt="AMD-Turbo-CORE-clock" />
+</div>
+
+<h2 id="近乎悲剧的性能表现">近乎悲剧的性能表现</h2>
+
+<p>还记得本篇一开始我曾经提到 AMD 曾经宣称第一代 Bulldozer 在性能上能胜过自家上代的 Phenom II X6 1100T (六核心) 与 Core i7-950 (4C8T) 超过 50% 以上吗？</p>
+
+<p>当年 AMD 在 Cebit 2011 大会的议程上也这么写道：「The U.S.-based CPU and chip maker AMD will present at CeBIT 2011 processors, which performance exceeds the current top models of the Phenom-II series by 50%」。</p>
+
+<p>姑且不论在 Sandy Bridge 已经推出之后却只敢拿上一代的 Nehalem / Westmere 比较这件事情，其实 Bulldozer 最后成品的表现，尤其是单核同频率的性能，别说是要追上 Intel Nehalem 了，甚至连自家上代 K10 架构的尾声 Phenom II 都不如，在这个世代中 AMD 也正式被大家冠上「投影片制造业」的称号，毕竟写得一手好投影片最后产品却是如此不堪一击，确实挺难堪的。</p>
+
+<p>至于当时 AMD 为 Bulldozer 的表现开脱的说法则是「Windows 7 没有办法发挥 CMT 新架构的实力，因为 CMT 架构实在太先进了」，不过后来即使微软为 Bulldozer 特别制作了两个修正程序 (KB2646060、KB2645594)，虽然可以针对 Bulldozer 改善 Windows 7 对线程的分配方式与 CPU 进入 C6 深层省电模式的频率，但也只能在某些项目带来不到 15% (且在某些情况下甚至会倒退) 的性能增长，表现仍然远不及竞争对手，在后来的 Windows 8 上面也没有甚么长进。</p>
+
+<h2 id="amd-高层承认-bulldozer-是个巨大的失败">AMD 高层承认 Bulldozer 是个巨大的失败</h2>
+
+<p>关于 Bulldozer 的成败其实已经差不多可以盖棺论定了，时任 AMD 服务器芯片事业群资深副总裁的 Andrew Feldman (同时也是原 SeaMicro 的 CEO，AMD 把 SeaMicro 买下来想发展微型服务器，结果彻底失败就算了，砸了这笔聘金之后差点连财务状况都毁了) 曾公开表示「推土机架构无疑是个巨大且难以止血的失败 (unmitigated failure)，我们是知道的」、「Bulldozer 的失败连带也让 AMD 在服务器市场错失许多机会」、「Bulldozer 的失败让 CEO 丢了工作、绝大多数的管理阶层丢了工作、研发技术副总裁也丢了工作，现在 AMD 有几乎全新的团队，我们都非常清楚这样的失败是绝对不被允许的。」</p>
+
+<p>在 Bulldozer 失败之后 AMD 曾经试图半放弃 x86 处理器，全力发展代号称为 K12 的 ARM 服务器用处理器力图在低功耗服务器市场上有所斩获，不过很快的他们也发现 ARM 市场或许比他们想象得还要险恶很多，于是重心又转回 x86 处理器的 Zen，至于后来的故事，相信我们很快就会知道了。</p>
+
+<h2 id="bulldozer-后续改进版本">Bulldozer 后续改进版本</h2>
+
+<p>从 Bulldozer 开始 AMD 便采用「一年一改版」的方式推出 Bulldozer 的改进版本，并且早在 Bulldozer 发布当时就已经确立四个世代的代号，但由于结果论而言，最终 Bulldozer 架构获得了相当大的失败，因此 AMD 也已经确认 Bulldozer 架构将在四个世代出完之后宣告结束，下一世代的处理器将回归传统的 SMT / CMP 设计。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/zambezi-slide-10.jpg"><img src="../images/blogs/computer_lecture/zambezi-slide-10-750x422.jpg" alt="zambezi-slide-10" /></a>
+</div>
+
+<p>不过失败的 Bulldozer 自然后续改进版本也不会像 AMD 预设的那么顺利就是了，最后 2013 ~ 2014 年的 AMD 实际上是这样的：</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/RMM8055.jpg"><img src="../images/blogs/computer_lecture/RMM8055-750x382.jpg" alt="RMM8055" /></a>
+</div>
+
+<h3 id="第二代-bulldozerpiledriver">第二代 Bulldozer：Piledriver</h3>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/PILEDRIVER.png"><img src="../images/blogs/computer_lecture/PILEDRIVER-750x384.png" alt="PILEDRIVER" /></a>
+</div>
+
+<p>整体来说，推出于 2012 年的 Piledriver 主体架构与 Bulldozer 几乎是一样的，主要的差异在于 (下图中橘色部分) 在增加 IPC (Instructions per clock，每周期执行指令数) 与降低漏电流、拉高频率 (很有 Netburst 的既视感吧？同频单核心效能低落那就靠拉高频率来救回来)，分支预测有强化，并加入 Intel 主导的 FMA3 (三操作数融合加法)、AVX 进阶向量扩展指令集 与 AES-NI 加解密指令集的支持，把 L1 的 TLB (转译后备缓冲区) 大小加倍并加入硬件除法器，浮点数与整数的排程器 (Scheduler) 也有强化，L2 缓存跟数据预取机制有优化等。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/APW9966.jpg" alt="APW9966" />
+</div>
+
+<p>至于制造工艺上则是延续过去 Bulldozer 使用的 32 纳米 HKMG SOI 制程，由格罗方德 (GlobalFoundries) 提供，回顾过去历史与近期，AMD 有很多次都是被 GlobalFoundries 拖住良率与上市时程，造成产品一再延期，GlobalFoundries 的前身其实就是 AMD 的制造部门，但在 2009 年独立，并且从 2011 年开始 AMD 已经不再持有任何 GlobalFoundries 的股权，但 AMD 与 GlobalFoundries 背后的大老板其实是同一人。</p>
+
+<p>而在 Piledriver 推出当时有传言表示 Piledriver 将会是最后一代面向主流效能级的 AMD x86 处理器，之后 AMD 只会在 APU 产品线推出新品，当时有很多人跳出来驳斥，不过在三年之后的现在证实这是正确的，接下来要介绍的 Steamroller 与 Excavator 都只有 APU 型号，FX 产品线直到 2016 年的今天仍然是 Piledriver。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/FX-9590-3.png" alt="FX-9590-3" />
+</div>
+
+<p>目前消费性市场中最高阶的 Piledriver 是 FX-9590，预设频率足足有 4.7 GHz，开了 Turbo Core 之后甚至可以来到 5.0 GHz，工作电压也是近五年来所看到的 x86 处理器中最高者，来到了 1.91 V，TDP 更是高达 220 W，由于功耗过高甚至还要特挑支持的主板，嗯？要说 Piledriver 是 AMD 的 Netburst 或许也不为过了吧。</p>
+
+<p>不过呢，这样等级的频率，实测性能只落在 Intel Xeon E3-1231v3 与 Core i7-4790K 之间，刚上市的时候开价新台币 28,000 元 (现价约 8,000 元) ，价格、性能、耗电量全输，只能说这东西基本上只是出来给大家看笑话的而已吧？</p>
+
+<p>不过说不定哪天 FX-9590 会以最耗电或最高频率之姿成为收藏家的目标，搞不好会涨价也说不定 XD</p>
+
+<h3 id="第三代-bulldozersteamroller">第三代 Bulldozer：Steamroller</h3>
+
+<p>原本排定要在 2013 年取代 Piledriver 的第三代改进版推土机架构 Steamroller，因为许多原因最后被延迟到 2014 年初，而且自始至终都指出现在 APU 产品在线。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/SXW9852.png"><img src="../images/blogs/computer_lecture/SXW9852-750x425.png" alt="SXW9852" /></a>
+</div>
+
+<p>Steamroller 的主要改进有两大方面，其中第一项是制造工艺上的改进，Steamroller 采用了格罗方得新开发的 28 纳米 HKMG SOI 制程，另一项则是架构上关于多线程之间「并行化」的强化，号称可以提升 14.5 % 的 IPC。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/EMM8869.jpg"><img src="../images/blogs/computer_lecture/EMM8869-750x428.jpg" alt="EMM8869" /></a>
+</div>
+
+<p>从下图的架构比较中可以看到，最明显的变化大概要属前端的指令获取与译码的部分，从 Steamroller 开始指令译码器改为两组，意味着单一模块内的两个整数运算核心不必再共享指令译码器了，这可以有效解决以往 Bulldozer 指令处理在译码阶段时塞车的问题，除此之外 Steamroller 还引入了早已在 Intel 阵营行之有年的 radix-8 除法器 (不过 Intel 早在 Core 的时代就又升级到 radix-16 除法器了)。</p>
+
+<div align="center">
+    <a href="../images/blogs/computer_lecture/CMP8852.jpg"><img src="../images/blogs/computer_lecture/CMP8852-750x359.jpg" alt="CMP8852" /></a>
+</div>
+
+<p>不过要注意的是，即使 Steamroller 已经再次针对同频单核心运算性能进行提升，仍然只有大约是 Phenom II K10 架构的九成。</p>
+
+<h3 id="第四代-bulldozerexcavator">第四代 Bulldozer：Excavator</h3>
+
+<p>Excavator 是第四代的 Bulldozer 架构改进版，同时也是目前已经规划的最后一款 Bulldozer 衍伸架构，由于仅在极少型号出现，加上大家比较关注未来将要扮演协助 AMD 绝地重生角色的 Zen，因此相关的数据并不是那么多，而且 Excavator 推出的型号很少，大半又以行动版为主，能见度又更低了，现在根本找不太到搭配 AMD 处理器的笔记本电脑。</p>
+
+<div align="center">
+    <img src="../images/blogs/computer_lecture/EXC8855-750x399.jpg" alt="EXC8855" />
+</div>
+
+<p>基本上改进的脉络与过去几次改版相当相似，不外乎就是加大缓存 (本次扩充的是 L1 数据缓存)、加强分支预测的命中率与降低延迟 (这次将 BTB 的大小又增加了 25%)，加入新的指令级 (AVX2) 支持，换取大约 4~15% 的 IPC 成长，不过如同我们过往对 AMD 的认识，连 AMD 自家的欢乐投影片都只写 4 ~ 15%，可能成长应该还是很有限吧。</p>
+
+<p>值得注意的是，后期的 Excavator 可以支持 DDR4 内存 (AM4 脚位)，而初期产品则仅能搭配 DDR3 使用 (FM2+ 脚位)。</p>
+
+<div align="center">
+<p>(未完待续)</p>
+<a href="computer_lecture_15.html" class="btn btn-primary">上一篇</a> 
+<a href="contact.html" class="btn btn-primary"><i class="fa fa-comment-o"></i> 匿名提问</a>
+</div>
+
+<hr />
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

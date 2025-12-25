@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>History | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="History">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="active"><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">History</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p>The following pages and posts are tagged with <button type="button" style="cursor: default" class="btn btn-default navbar-btn">history</button></p>
+<table><thead><tr><th>Title</th><th>Type</th><th>Excerpt</th></tr></thead>
+    <tbody>
+    
+  
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+        
+     
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+    
+   
+
+        
+        
+        
+        
+
+        <tr><td><a href="evolution_of_amd_via_zhaoxin_microarchitectures.html">VIA/Zhaoxin CPU 微架构的演进</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本文梳理了VIA/Zhaoxin x86处理器的发展历程，从早期Cyrix 5x86/6x86系列开始，历经WinChip、Cayenne、Samuel等低功耗顺序核心，到2008年推出首个乱序架构Isaiah（VIA Nano），性能大幅提升。随后兆芯接手，迭代出五道口/陆家嘴、CNS及永丰等架构，逐步改进分支... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="evolution_of_intel_cpu_microarchitectures.html">Intel CPU 微架构的演进</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 本文系统梳理了英特尔x86微架构的发展历程。从1989年的80486起步，历经P5、P6、NetBurst等关键阶段，逐步引入超标量、乱序执行等先进技术。随后演进至注重能效的Core系列与低功耗Atom系列（Bonnell, Silvermont等）。2010年后，高性能的酷睿（Sandy Bridge至Gold... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="evolution_of_amd_cpu_microarchitectures.html">AMD CPU 微架构的演进</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> AMD CPU微架构历经多代演进，从早期基于Intel 80486设计的Am486，到首个自主研发的K5，再到引入3DNow!指令集的K6。1999年的K7（Athlon）性能领先，2003年的K8则率先实现x86 64位扩展。2007年的K10引入共享三级缓存和功耗管理。2011年的推土机架构采用模块化设计但能... </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="lithography_has_become_a_choke_technology_for_chip_manufacturing.html">光刻如何一步一步变成了芯片制造的卡脖子技术？</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 芯片制造用到的技术很多，光刻是芯片制造的灵魂技术，但是开始的时候，光刻并不是所有技术中最厉害的。现在大众认识到了芯片的重要性，讨论芯片产业的卡脖子问题时，提到最多的是光刻和光刻机。那么，光刻是如何一步一步变成了芯片制造的卡脖子技术？本文试图一探究竟。 </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="tracing_miracle_from_electron_tube_to_transistor.html">芯片破壁者：从电子管到晶体管“奇迹”寻踪</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 回顾二十世纪，无论是科技、商业，还是政治、军事、娱乐生活，几乎每一个领域都发生了狂飙突进式的巨变，每个领域也都诞生出了足以彪炳史册的“关键”人物。1999年，美国《洛杉矶时报》评选出“50名本世纪经济最有影响力人物”，其中并列第一名的有三个人：美国发明家威廉·肖克利、罗伯特·诺伊斯和杰克·基尔比。肖克利是晶体管的... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_7.html">图说芯片技术60多年的发展史（七）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩尔定律的轨迹快速发展的情况。Intel公司是推动芯片技术发展的旗帜，x86系列CPU、奔腾系列CPU、酷睿系列CPU技术成为桌面计算机CPU芯片发展的里程碑，桌面互联网成为了拉动芯片技术进步和产业发展的主力。FinFET电路技术、3D芯片技术和多核心CP... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_6.html">图说芯片技术60多年的发展史（六）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 中篇主要介绍了1970～2010年的40年间，芯片产业沿着摩尔定律的轨迹快速发展的情况。Intel公司是推动芯片技术发展的旗帜，x86系列CPU、奔腾系列CPU、酷睿系列CPU技术成为桌面计算机CPU芯片发展的里程碑，桌面互联网成为了拉动芯片技术进步和产业发展的主力。FinFET电路技术、3D芯片技术和多核心CP... </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_5.html">图说芯片技术60多年的发展史（五）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 在长达114年的时间里，科学家开始逐步发现、认识和研究了半导体，也简述了电子管、晶体管、集成电路、以光刻为核心的硅平面加工技术、CMOS电路、非挥发存储器、单管DRAM等重大发明。在晶体管发明后的20多年里，这些发明为芯片技术快速发展打下了基础，为芯片技术沿着摩尔定律前行铺平了道路。此文为中篇，介绍从1970年开... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_4.html">图说芯片技术60多年的发展史（四）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 在长达114年的时间里，科学家开始逐步发现、认识和研究了半导体，也简述了电子管、晶体管、集成电路、以光刻为核心的硅平面加工技术、CMOS电路、非挥发存储器、单管DRAM等重大发明。在晶体管发明后的20多年里，这些发明为芯片技术快速发展打下了基础，为芯片技术沿着摩尔定律前行铺平了道路。此文为中篇，介绍从1970年开... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_3.html">图说芯片技术60多年的发展史（三）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第三期介绍芯片技术不断成熟，沿摩尔定律快速发展。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_2.html">图说芯片技术60多年的发展史（二）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第二期将从集成电路(芯片)的发明和光刻工艺是芯片制造的灵魂两个部分进行介绍。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_chip_technology_1.html">图说芯片技术60多年的发展史（一）</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 集成电路(芯片)技术自1958年诞生以来，已有63年的发展历史。芯片技术是如何由开始的原始和不成熟，一步一步发展成为今天高科技皇冠上的技术明珠。本站将以连载的形式陆续刊登本文，第一期将从半导体发现和研究、电子管的发明和晶体管的发明三个部分进行介绍。 </td>
+        </tr>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <tr><td><a href="footprint_of_the_times_zilog_z80_cpu.html">时代脚印 —— Zilog Z80 CPU</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> Zilog Z80 CPU，简称Z80，是一款8位微处理器，与英特尔公司出产的8080微处理器的指令集兼容。Z80可执行为8080所写的CP/M操作系统，所以过去在apple II兼容机盛行的年代，很多人都爱在电脑内加装z80扩展卡，并透过它来运行WordStar、VisiCalc等商业软件。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="intel_RapidCAD_the_ancestor_of_OverDrive.html">OverDrive 的始祖 Intel RapidCAD</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> Intel RapidCAD是英特尔有史以来第一款为旧款个人计算机所提供的升级套件（也就是OverDrive的始祖）。原386的使用者不需要更换主板，只要把RapidCAD买回来将主板上旧有的中央处理器替换掉，就可以享受接近486的运算能力。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="famous_cracking_in_cpu_history.html">CPU 历史上著名的破解有哪些？</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td>  </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="intel_8008_an_abandoned_chip_opens_up_a_dynasty.html">Intel 8008：一个被抛弃的芯片开拓了一个王朝</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 如果以今天的微处理器标准衡量，甚至以过去 30 年的标准衡量，英特尔的 8008 确实是微弱而缓慢的。但它是第一个商用的 8 位单芯片微处理器，您可以用它构建有用的系统。英特尔 8080 和 8085、8 位 Zilog Z80 以及英特尔和其他处理器供应商在过去半个世纪中开发的所有 x86 微处理器都带有原始英... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_cyrix_cpu.html">Cyrix CPU 发展史</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> Cyrix 成立于 1988 年，最初是一家为 286 和 386 系统提供高性能数学协处理器的专业制造商。该公司由前德州仪器员工创立。Cyrix 一直是无晶圆制造商。早期，他们使用德州仪器和SGS Thomson的生产设施。1994 年，Cyrix 转向IBM微电子。Cyrix 生产了他们自己设计的 CPU，例... </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="the_rise_and_decline_of_intel_strongest_competitor.html">英特尔最强竞争对手的兴起与衰落</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> Cyrix以可实现的廉价PC的形式将个人电脑的世界带给数百万人，结果却被其最好的产品和无法运行一款流行游戏所扼杀，随后又与一家更大的合作伙伴进行了一次糟糕的合并。这家公司曾有机会占领家用电脑市场，将英特尔和AMD远远地抛在身后，但最终未能成功，迅速消失在了科技的坟墓中。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="history_of_intel_cpu.html">Intel CPU 发展史</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> CPU技术应该是人类发展史上最顶尖的发明了，它让人类文明乘上了快速列车！CPU的大厦也是从简单的4004一步一步发展到如今的程度，每一步的变化都是有历史原因的，是有迹可循的。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="pentium_FDIV_bug.html">这个神秘的数，让芯片巨头英特尔赔了5亿美金</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 英特尔处理器是性能优良的代名词，但是，英特尔也有一段不堪的往事。这件事还和一个神秘的常数，以及一个困扰人类2300多年的神秘数学猜想有关。 </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="what_is_487.html">487是什么？简谈英特尔的“黑历史”</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 487是给486SX准备的协处理器，和387类似，用来弥补486SX没有浮点单元的问题。但是，你真的以为英特尔会开发单独的浮点计算器吗？ </td>
+        </tr>
+        
+        
+        
+        
+        
+
+        <tr><td><a href="x86_architecture_and_licensing.html">x86架构与授权</a></td>
+            <td><span class="label label-primary">Post</span></td>
+            <td> 美国有家公司叫IBM，当年IBM很强大，可以说是个非常NB的科技帝国。英特尔当时还非常弱小，不过只是IBM的供应商之一而已。IBM为了规避将来可能出现的采购风险，所以就要求英特尔将x86专利授权授给几家芯片公司，AMD只是其中之一。x86架构与授权就从这里开始了。 </td>
+        </tr>
+        
+        
+        
+
+   </tbody>
+</table>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

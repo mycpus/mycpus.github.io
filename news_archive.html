@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" news, blog, updates, release notes, announcements">
+<title>News | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="News">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">News</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+
+    
+
+   <div class="home">
+
+    <div class="post-list">
+
+
+    <section id="archive">
+        <h3>This year's posts</h3>
+        
+        
+        <ul class="this">
+            
+            <li><time>22 Dec</time><a href="evolution_of_amd_via_zhaoxin_microarchitectures.html">VIA/Zhaoxin CPU 微架构的演进</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>21 Dec</time><a href="evolution_of_intel_cpu_microarchitectures.html">Intel CPU 微架构的演进</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>20 Dec</time><a href="evolution_of_amd_cpu_microarchitectures.html">AMD CPU 微架构的演进</a></li>
+            
+        
+            
+            
+            
+        </ul>
+        <h3>2024</h3>
+        <ul class="past">
+            
+            
+            <li><time>26 Jul</time><a href="update.html">网站更新日志</a></li>
+            
+        
+            
+            
+            
+        </ul>
+        <h3>2023</h3>
+        <ul class="past">
+            
+            
+            <li><time>23 Jan</time><a href="whose_cpu_is_the_most_beautiful.html">不比性能比颜值，谁家生产的CPU最漂亮？</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>22 Jan</time><a href="computer_lecture_19.html">CPU大讲堂（19）——当代CPU介绍(四) Intel Haswell 与 Broadwell 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>21 Jan</time><a href="computer_lecture_18.html">CPU大讲堂（18）——当代CPU介绍(三) Intel Ivy Bridge 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>20 Jan</time><a href="computer_lecture_17.html">CPU大讲堂（17）——当代CPU介绍(二) Intel Sandy Bridge 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>01 Jan</time><a href="computer_lecture_16.html">CPU大讲堂（16）——当代CPU介绍(一) AMD 推土机架构</a></li>
+            
+        
+            
+            
+            
+        </ul>
+        <h3>2022</h3>
+        <ul class="past">
+            
+            
+            <li><time>18 Nov</time><a href="computer_lecture_15.html">CPU大讲堂（15）——近代晚期CPU发展史(四) Intel Nehalem、Westmere 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>17 Nov</time><a href="computer_lecture_14.html">CPU大讲堂（14）——近代晚期CPU发展史(三) AMD K10 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>02 Nov</time><a href="computer_lecture_13.html">CPU大讲堂（13）——近代中期CPU发展史(二) Intel Core 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>01 Nov</time><a href="computer_lecture_12.html">CPU大讲堂（12）——近代中期CPU发展史(一) Intel Core 的前世</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>28 Oct</time><a href="computer_lecture_11.html">CPU大讲堂（11）——近代前期CPU发展史(下) AMD K7.5、K8 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>27 Oct</time><a href="computer_lecture_10.html">CPU大讲堂（10）——近代前期CPU发展史(上) Netburst 架构</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>26 Oct</time><a href="computer_lecture_9.html">CPU大讲堂（9）——中古时代后期CPU发展史(下)</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>25 Oct</time><a href="computer_lecture_8.html">CPU大讲堂（8）——中古时代后期CPU发展史(中)</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>24 Oct</time><a href="computer_lecture_7.html">CPU大讲堂（7）——中古时代后期CPU发展史(上)</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>21 Oct</time><a href="why_do_I_collect_cpu.html">我为什么收藏 CPU？</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>15 Oct</time><a href="computer_lecture_6.html">CPU大讲堂（6）——中古前期CPU发展史</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>14 Oct</time><a href="computer_lecture_5.html">CPU大讲堂（5）——上古CPU发展史</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>13 Oct</time><a href="computer_lecture_4.html">CPU大讲堂（4）——HT、XD？带你认识这些技术名称</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>12 Oct</time><a href="computer_lecture_3.html">CPU大讲堂（3）——鸟瞰历代处理器指令集</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>11 Oct</time><a href="computer_lecture_2.html">CPU大讲堂（2）——带你看懂CPU规格</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>10 Oct</time><a href="computer_lecture_1.html">CPU大讲堂（1）——浅谈CPU</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>09 Oct</time><a href="exploring_the_folk_pc_collection_museum.html">探秘民间PC收藏馆</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>08 Oct</time><a href="talking_about_cpu_collection_3.html">大话CPU收藏（三）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>07 Oct</time><a href="talking_about_cpu_collection_2.html">大话CPU收藏（二）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>06 Oct</time><a href="talking_about_cpu_collection_1.html">大话CPU收藏（一）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>05 Oct</time><a href="lithography_has_become_a_choke_technology_for_chip_manufacturing.html">光刻如何一步一步变成了芯片制造的卡脖子技术？</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>04 Oct</time><a href="tracing_miracle_from_electron_tube_to_transistor.html">芯片破壁者：从电子管到晶体管“奇迹”寻踪</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>03 Oct</time><a href="history_of_chip_technology_7.html">图说芯片技术60多年的发展史（七）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>02 Oct</time><a href="history_of_chip_technology_6.html">图说芯片技术60多年的发展史（六）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>01 Oct</time><a href="understanding_of_cpu_collection.html">CPU 收藏感悟</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>01 Oct</time><a href="history_of_chip_technology_5.html">图说芯片技术60多年的发展史（五）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>30 Sep</time><a href="history_of_chip_technology_4.html">图说芯片技术60多年的发展史（四）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>29 Sep</time><a href="history_of_chip_technology_3.html">图说芯片技术60多年的发展史（三）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>28 Sep</time><a href="history_of_chip_technology_2.html">图说芯片技术60多年的发展史（二）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>27 Sep</time><a href="history_of_chip_technology_1.html">图说芯片技术60多年的发展史（一）</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>26 Sep</time><a href="a_few_little_secrets_about_cpu.html">几个关于CPU你所不知道的小秘密</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>22 Sep</time><a href="the_first_computer_of_honux.html">【首发】我的第一台电脑——联想天禧6620</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>19 Sep</time><a href="footprint_of_the_times_zilog_z80_cpu.html">时代脚印 —— Zilog Z80 CPU</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>16 Sep</time><a href="intel_RapidCAD_the_ancestor_of_OverDrive.html">OverDrive 的始祖 Intel RapidCAD</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>15 Sep</time><a href="famous_cracking_in_cpu_history.html">CPU 历史上著名的破解有哪些？</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>14 Sep</time><a href="intel_8008_an_abandoned_chip_opens_up_a_dynasty.html">Intel 8008：一个被抛弃的芯片开拓了一个王朝</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>13 Sep</time><a href="history_of_cyrix_cpu.html">Cyrix CPU 发展史</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>12 Sep</time><a href="the_rise_and_decline_of_intel_strongest_competitor.html">英特尔最强竞争对手的兴起与衰落</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>11 Sep</time><a href="history_of_intel_cpu.html">Intel CPU 发展史</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>10 Sep</time><a href="pentium_FDIV_bug.html">这个神秘的数，让芯片巨头英特尔赔了5亿美金</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>09 Sep</time><a href="what_is_487.html">487是什么？简谈英特尔的“黑历史”</a></li>
+            
+        
+            
+            
+            
+            
+            <li><time>08 Sep</time><a href="x86_architecture_and_licensing.html">x86架构与授权</a></li>
+            
+        </ul>
+    </section>
+    <hr/>
+    </div>
+</div>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

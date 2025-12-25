@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cyrix 成立于 1988 年，最初是一家为 286 和 386 系统提供高性能数学协处理器的专业制造商。该公司由前德州仪器员工创立。Cyrix 一直是无晶圆制造商。早期，他们使用德州仪器和SGS Thomson的生产设施。1994 年，Cyrix 转向IBM微电子。Cyrix 生产了他们自己设计的 CPU，例...">
+<meta name="keywords" content="history,  ">
+<title>Cyrix CPU 发展史 | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Cyrix CPU 发展史">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="导航菜单" href="#">导航菜单</a>
+      <ul>
+          
+          
+          
+          <li><a title="CPU" href="index.html">CPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GPU" href="index_GPU.html">GPU</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News" href="news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="News Archive" href="news_archive.html">News Archive</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a title="News Tags" href="#">News Tags</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="News" href="tag_news.html">News</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Blog" href="tag_blog.html">Blog</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Collection" href="tag_collection.html">Collection</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Course" href="tag_course.html">Course</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="History" href="tag_history.html">History</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Cyrix CPU 发展史</h1>
+        <p class="post-meta"><time datetime="2022-09-13T00:00:00+08:00" itemprop="datePublished">Sep 13, 2022</time> /
+            
+            
+            
+            <a href="tag_history.html">history</a>
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+        <div class="summary">Cyrix 成立于 1988 年，最初是一家为 286 和 386 系统提供高性能数学协处理器的专业制造商。该公司由前德州仪器员工创立。Cyrix 一直是无晶圆制造商。早期，他们使用德州仪器和SGS Thomson的生产设施。1994 年，Cyrix 转向IBM微电子。Cyrix 生产了他们自己设计的 CPU，例如 486 级处理器（部分采用 Pentium 技术和 486 引脚，称为 5x86）和 Pentium Pro 级 CPU，带有 Pentium 引脚 (6x86)，使用带有 x86 转换的 RISC 内核。众所周知，6x86 的 FPU 速度较慢。与AMD不同，Cyrix 从未制造或销​​售过英特尔在许可下进行设计，但在内部设计了一切，从头开始。1997 年 8 月 Cyrix与 National Semiconductor合并。 1999 年 6 月，威盛收购了 Cyrix 的剩余部分。到了这个时候，原来的开发团队已经不复存在，产品已经过时了，唯一有价值的就是 Cyrix 的名字。</div>
+        
+
+        
+
+        <h2 id="1-cyrix">1 Cyrix</h2>
+<p>Cyrix公司由JerryRogers和Tom Brightman于1988年创立，最初是制造用于286和386 CPU的高速x87数学协处理器。期间一顿操作，和前期的AMD一样，从一个小弟变成推出正面竞争的对手，后来打官司获得了x86指令集的授权。鼎盛时期发布了M2芯片，加入了mmx指令集，可惜遇到的对手是intel的奔腾II，浮点能力薄弱，1997年被NS收购，1999年NS把它卖给via威盛公司（之前做主板芯片的台湾企业），后来兜兜转转，合资成立成立兆芯，那又是另外一个目前正在上演的故事了。</p>
+
+<h3 id="11-cyrix-486">1.1 Cyrix 486</h3>
+<p>1992年，Cyrix推出了其第一代CPU， 486SLC和486DLC，旨在与英特尔的486SX和486DX竞争。它们还与386SX和386DX管脚兼容，这意味着它们可以作为老化的386主板的直接升级，制造商也用它们来销售廉价笔记本电脑。32位芯片，有1KB的L1缓存，性能都略低于英特尔486 CPU。以下是PC104规格单板，早期在工业控制领域比较常见。</p>
+
+<p><img src="/images/blogs/Cyrix-486SLC.jpg" alt="" /></p>
+
+<p>图1 采用Cyrix 486SLC单板</p>
+
+<p>Tips：PC104的小尺寸结构模块，标准模块的机械尺寸是3.6X3.8英寸，即96X90mm，PC104有两个版本，8位和16位，分别与PC和PC/AT相对应。PC104PLUS 则与PCI总线相对应，在PC104总线的两个版本中，8位PC104共有64个总线管脚，单列双排插针和插孔，P1：64针，P2：40针，合计104个总线信号，PC104因此得名。NUC平台的两款主板的体积都很小，仅100<em>100mm大，介于Nano-ITX（120</em>120mm）与Pico-ITX（100*72mm）规范之间。</p>
+
+<h3 id="12-cyrix-5x86">1.2 Cyrix 5x86</h3>
+<p>1995年8月推出，在75MHz下提供了许多五代处理器的功能，比如奔腾和AMD的K5，当时填补空缺。</p>
+
+<p><img src="/images/blogs/Cyrix-5x86.jpg" alt="" /></p>
+
+<p>图2 Cx5x86（自带散热器）</p>
+
+<p>即使三个月后推出的6x86，也是在夹缝中求生存。</p>
+
+<h3 id="13-cyrix-6x86">1.3 Cyrix 6x86</h3>
+<p>1995年10月推出了80MHz的「6x86 PR90」，命名中的PR全称是Pentium Rate，意味着性能相当于Intel的Pentium 90MHz，和后面都熟悉的AMD Athlon XP的「几千+」的命名模式如出一辙。</p>
+
+<p>6x86之后又发布了100MHz（PR120）、133MHz（PR166）、150MHz（PR200）的型号。</p>
+
+<p><img src="/images/blogs/Cyrix-6x86.jpg" alt="" /></p>
+
+<p>图3 Cyrix 6x86</p>
+
+<h3 id="14-6x86-ｍ2">1.4 6x86 Ｍ2</h3>
+<p>1997年，Cyrix发布了核心代号为Ｍ2的「6x86MX」，与前面的6x86最大的区别是内置了MMX指令集。频率从133MHz（PR166）到233MHz（PR266）。最终版本发行时间为1998年2月。Cyrix是无晶圆厂芯片设计公司，制造交由三家完成，分别为IBM、SGS汤姆逊（现意法半导体）、美国国家半导体（NS）, 制程的改进导致初版到最终版相隔一年。</p>
+
+<p><img src="/images/blogs/Cyrix-6x86-M2.jpg" alt="" /></p>
+
+<p>图4 Cyrix 6x86 M2</p>
+
+<p>6x86MX进一步将频率提升至300MHz（PR433），同时更名为「Cyrix MII」，以表示竞争对手为Pentium II。但由于推出较晚，Intel的P6（Pentium Pro、Pentium II）和AMD的K6在整数性能上已经追上Cyrix，浮点能力本来就弱，Cyrix MII失去竞争力。</p>
+
+<p>1997年3月，Cyrix被NS收购；1999年年中，NS把Cyrix卖给了VIA。</p>
+
+<h3 id="15-6x86-ｍ3">1.5 6x86 Ｍ3</h3>
+<p>VIA收购Cyrix后，上面说的已经基本开发得差不多了的Gobi，改名Joshua，于2000年2月，差一点儿就上市。VIA在收购了Cyrix之后没俩月，又收了一家x86处理器公司Centaur（WinChip），以Cyrix III为名发售，而Cyrix Gobi的CPU设计，完全没有被使用。</p>
+
+<p><img src="/images/blogs/Cyrix-6x86-MIII.jpg" alt="" /></p>
+
+<p>图5 Cyrix 6x86 MIII</p>
+
+<h2 id="2-centaur">2 Centaur</h2>
+<p>Centaur是IDT（Integrated Device Technology, Inc.，现已被瑞萨收购）的子公司，设计x86处理器。CEO是曾在IBM设计大型机System/360的Glenn Henry。Centaur设计开发采用顺序执行、单管线精简指令集（RISC）的CPU，致力于低能耗的x86兼容实现。CPU并不直接执行x86指令，而是将x86指令集转换成精简指令集后执行。实际上这种做法在Intel Pentium Pro和AMD K6上已经广泛使用，但Intel和AMD采用的是乱序执行管线，很适用于高性能地执行拆分后的精简指令。而Centaur选择精简指令集的理由是精简指令集适宜实现低耗电。</p>
+
+<p><img src="/images/blogs/WinChip-C6.jpg" alt="" /></p>
+
+<p>图6 Centaur于1997年10月发布了「WinChip C6」</p>
+
+<p>采用IDT的0.35μm工艺制造，首先推出了180/200MHz的产品。转年的1998年4月，推出了225/240MHz的型号。频率最高的240MHz型号仅有11W～13W的低耗电，但整数性能平平，且因为FPU跑在半速上，浮点性能也绝对谈不上高。</p>
+
+<p>接下来推出的C6＋，改善了劣势的FPU部分，跑在了全速上，同时加入了MMX/3DNow!单元。改进制程，提高频率，最终实现了在频率提高到250MHz的同时，耗电维持不变。</p>
+
+<p><img src="/images/blogs/WinChip-2.jpg" alt="" /></p>
+
+<p>图7 Winchip 2两种规格CPU</p>
+
+<p>改进后的C6＋，以WinChip 2和WinChip 2A的名称发售。其中WinChip 2是0.35μm制程，WinChip 2A是0.25μm。WinChip 2于1998年9月发售，WinChip 2A为1999年3月。</p>
+
+<p><img src="/images/blogs/CyrixIII-Socket370.jpg" alt="" /></p>
+
+<p>图8 CyrixIII， Socket 370，台积电生产</p>
+
+<p>VIA这颗名为CyrixIII的CPU，1级指令缓存和数据缓存各64KB，与W3相同，但依然没有加入2级缓存（两年前的Celeron 300A已经有2级缓存了），频率也仅为533～677MHz，性能相对较低。</p>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+ Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

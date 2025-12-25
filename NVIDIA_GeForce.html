@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="GPUNVIDIA,  CPU, cpu, processor, qualification, information, pictures, core, frequency, chip packaging, packaging, cpu info, x86, collection, amd, cyrix, harris, ibm, idt, iit, intel, motorola, nec, sgs, sgs-thomson, siemens, ST, signetics, mhs, ti, texas instruments, ulsi, umc, weitek, zilog, 3002, 4004, 4040, 8008, 808x, 8085, 8088, 8086, 80188, 80186, 80286, 286, 80386, 386, i386, Am386, 386sx, 386dx, 486, i486, 586, 486sx, 486dx, overdrive, 487, pentium, 586, 5x86, 386dlc, 386slc, 486dx2, mmx, ppro, pentium-pro, pro, athlon, duron, z80, dirk oppelt, dirk, oppelt, engineering, sample, samples, NVIDIA, GeForce, Quadro, TNT2, Radeon, GPU">
+<title>NVIDIA GeForce | 在线CPU博物馆 | 微处理器博物馆 | Honux's CPU Museum</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+<script src="/js/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script> -->
+<script src="/js/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+<!-- Clarity tracking code for https://mycpus.github.io/ -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dw5qu13era");
+</script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/logo.png" style="display: inline-block; width: 28px;" alt="LOGO">
+                <span class="projectTitle"> CPU Museum</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!-- <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li> -->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="index.html">CPU</a></li>
+                
+                
+                
+                <li><a href="index_GPU.html">GPU</a></li>
+                
+                
+                
+                <li><a href="news.html">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://retromuseum.org/" target="_blank" rel="noopener">电脑博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://cm.ihonux.com/" target="_blank" rel="noopener">电脑博物馆 (镜像)</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-galerie.de/" target="_blank" rel="noopener">CPU-Galerie</a></li>
+                        
+                        
+                        
+                        <li><a href="http://www.cpu-collection.de/" target="_blank" rel="noopener">cpu-collection.de</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-world.com/" target="_blank" rel="noopener">CPU-World</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cpu-galaxy.at/" target="_blank" rel="noopener">CPU Galaxy</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.mynikko.com/CPU/" target="_blank" rel="noopener">MyNikko.com 微處理器博物館</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.xuzhengfu.com/Computers/CPUs/" target="_blank" rel="noopener">Zheng-Fu Xu 的 CPU 博物馆</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.ihonux.com/" target="_blank" rel="noopener">iHonux's Projects</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.volisoft.top/" target="_blank" rel="noopener">Volisoft</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="contact.html" target="_blank"><i class="fa fa-comment-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="NVIDIA GeForce">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">显卡收藏目录 </li>
+  
+  
+  
+  <li>
+      <a title="Overview" href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a title="Get started" href="index_GPU.html">Get started</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="ATI" href="#">ATI</a>
+      <ul>
+          
+          
+          
+          <li><a title="ATI Radeon" href="ATI_Radeon.html">ATI Radeon</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="AMD" href="#">AMD</a>
+      <ul>
+          
+          
+          
+          <li><a title="AMD Radeon" href="AMD_Radeon.html">AMD Radeon</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="NVIDIA" href="#">NVIDIA</a>
+      <ul>
+          
+          
+          
+          <li><a title="NVIDIA TNT2" href="NVIDIA_TNT2.html">NVIDIA TNT2</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="NVIDIA GeForce" href="NVIDIA_GeForce.html">NVIDIA GeForce</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="NVIDIA Quadro" href="NVIDIA_Quadro.html">NVIDIA Quadro</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">NVIDIA GeForce</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary"></div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <h2 id="我的收藏">我的收藏</h2>
+
+<h3 id="nvidia-geforce-go6600-npb-128m">NVIDIA GeForce Go6600 NPB 128M</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心架构</td>
+      <td>Curie</td>
+    </tr>
+    <tr>
+      <td>GPU代号</td>
+      <td>NV43</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>110 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>100W</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>600 Mbps</td>
+    </tr>
+    <tr>
+      <td>内存类型</td>
+      <td>DDR</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>128 bit</td>
+    </tr>
+    <tr>
+      <td>最大显存</td>
+      <td>128 MB</td>
+    </tr>
+    <tr>
+      <td>晶片编号</td>
+      <td>Go6600 NPB</td>
+    </tr>
+    <tr>
+      <td>代工厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>核心面积</td>
+      <td>154 mm²</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 1.0 x16</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>1.500 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>3.000 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>9.600 GB/s</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>9.0c (9_3)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>2.0 (full) 2.1 (partial)</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Shader model</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2005</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/NVIDIA/GeForce_Go6600_NPB_128M_1.jpg" alt="NVIDIA GeForce Go6600 NPB 128M 侧面" />
+<img src="/images/gpus/NVIDIA/GeForce_Go6600_NPB_128M_2.jpg" alt="NVIDIA GeForce Go6600 NPB 128M 正面" /></p>
+
+<hr />
+
+<h3 id="nvidia-geforce-7800gt">NVIDIA GeForce 7800GT</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心架构</td>
+      <td>Curie</td>
+    </tr>
+    <tr>
+      <td>GPU代号</td>
+      <td>NV70</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>110 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>65W</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>1000 Mbps</td>
+    </tr>
+    <tr>
+      <td>内存类型</td>
+      <td>DDR</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>256 bit</td>
+    </tr>
+    <tr>
+      <td>最大显存</td>
+      <td>256 MB</td>
+    </tr>
+    <tr>
+      <td>晶片编号</td>
+      <td>GF-7800-GT-A2</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>302 million</td>
+    </tr>
+    <tr>
+      <td>代工厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>核心面积</td>
+      <td>333 mm²</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 1.0 x16</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>6.400 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>8.000 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>32.00 GB/s</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>9.0c (9_3)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>2.0 (full) 2.1 (partial)</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Shader model</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2005</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>XFX 讯景显卡
+GF 8700 GT 256MB DDR3 DUAL DVI VIVO PCI-E
+</code></pre></div></div>
+
+<p><img src="/images/gpus/NVIDIA/NVIDIA_GeForce_7800GT_(256M_XFX)_1.jpg" alt="NVIDIA GeForce 7800GT 正面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_7800GT_(256M_XFX)_2.jpg" alt="NVIDIA GeForce 7800GT 背面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_7800GT_(256M_XFX)_3.jpg" alt="NVIDIA GeForce 7800GT 接口" /></p>
+
+<hr />
+
+<h3 id="nvidia-geforce-9500gt">NVIDIA GeForce 9500GT</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心频率</td>
+      <td>550 MHz</td>
+    </tr>
+    <tr>
+      <td>流处理单元</td>
+      <td>32 个</td>
+    </tr>
+    <tr>
+      <td>核心架构</td>
+      <td>Tesla</td>
+    </tr>
+    <tr>
+      <td>GPU代号</td>
+      <td>G96</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>65 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>50W</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>2 Gbps</td>
+    </tr>
+    <tr>
+      <td>内存类型</td>
+      <td>GDDR3</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>128 bit</td>
+    </tr>
+    <tr>
+      <td>最大显存</td>
+      <td>512 MB</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>314 million</td>
+    </tr>
+    <tr>
+      <td>代工厂</td>
+      <td>UMC</td>
+    </tr>
+    <tr>
+      <td>核心面积</td>
+      <td>144 mm²</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>32 KB</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>SM count</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>建议电源</td>
+      <td>250 W</td>
+    </tr>
+    <tr>
+      <td>公版接口</td>
+      <td>2x DVI, 1x S-Video</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 2.0 x16</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>4.800 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>9.600 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>32.00 GB/s</td>
+    </tr>
+    <tr>
+      <td>FP32</td>
+      <td>96.00 GFLOPS</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>11.1 (10_0)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CUDA</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Shader model</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2008年7月29日</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_1.jpg" alt="NVIDIA GeForce 9500GT 正面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_2.jpg" alt="NVIDIA GeForce 9500GT 背面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_3.jpg" alt="NVIDIA GeForce 9500GT 接口" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_9500GT_(1G_DDR2)_4.jpg" alt="NVIDIA GeForce 9500GT 上面" /></p>
+
+<hr />
+
+<h3 id="nvidia-geforce-9800-gtx">NVIDIA GeForce 9800 GTX+</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPU Name</td>
+      <td>G92B</td>
+    </tr>
+    <tr>
+      <td>GPU Variant</td>
+      <td>G92-420-B1</td>
+    </tr>
+    <tr>
+      <td>Architecture</td>
+      <td>Tesla</td>
+    </tr>
+    <tr>
+      <td>Foundry</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>Process Size</td>
+      <td>55 nm</td>
+    </tr>
+    <tr>
+      <td>Transistors</td>
+      <td>754 million</td>
+    </tr>
+    <tr>
+      <td>Density</td>
+      <td>2.9M / mm²</td>
+    </tr>
+    <tr>
+      <td>Die Size</td>
+      <td>260 mm²</td>
+    </tr>
+    <tr>
+      <td>Chip Package</td>
+      <td>FCBGA-1148</td>
+    </tr>
+    <tr>
+      <td>Memory Size</td>
+      <td>512 MB</td>
+    </tr>
+    <tr>
+      <td>Memory Type</td>
+      <td>GDDR3</td>
+    </tr>
+    <tr>
+      <td>Memory Bus</td>
+      <td>256 bit</td>
+    </tr>
+    <tr>
+      <td>Bandwidth</td>
+      <td>70.40 GB/s</td>
+    </tr>
+    <tr>
+      <td>Generation</td>
+      <td>GeForce 9 (9800)</td>
+    </tr>
+    <tr>
+      <td>Bus Interface</td>
+      <td>PCIe 2.0 x16</td>
+    </tr>
+    <tr>
+      <td>GPU Clock</td>
+      <td>738 MHz</td>
+    </tr>
+    <tr>
+      <td>Shader Clock</td>
+      <td>1836 MHz</td>
+    </tr>
+    <tr>
+      <td>Memory Clock</td>
+      <td>1100 MHz, 2.2 Gbps effective</td>
+    </tr>
+    <tr>
+      <td>Shading Units</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>TMUs</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>ROPs</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>SM Count</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>L2 Cache</td>
+      <td>64 KB</td>
+    </tr>
+    <tr>
+      <td>Pixel Rate</td>
+      <td>11.81 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>Texture Rate</td>
+      <td>47.23 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>FP32 (float)</td>
+      <td>470.0 GFLOPS</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>11.1 (10_0)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>CUDA</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Shader Model</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>Release Date</td>
+      <td>Jan 16th, 2009</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>影驰 9800GTX+ 上将版
+738/2200 512M/256位 DDR3 PCI-E HDMI
+【在用】
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="nvidia-geforce-g310">NVIDIA GeForce G310</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心</td>
+      <td>GT218</td>
+    </tr>
+    <tr>
+      <td>工艺</td>
+      <td>40 nm</td>
+    </tr>
+    <tr>
+      <td>流处理器</td>
+      <td>16个</td>
+    </tr>
+    <tr>
+      <td>核心频率</td>
+      <td>625 MHz</td>
+    </tr>
+    <tr>
+      <td>着色器频率</td>
+      <td>1530 MHz</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>64 bit</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>500/800 MHz</td>
+    </tr>
+    <tr>
+      <td>浮点运算能力</td>
+      <td>73 GFlops</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 2.0 x16</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2009</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_1.jpg" alt="NVIDIA GeForce G310 正面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_2.jpg" alt="NVIDIA GeForce G310 背面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_3.jpg" alt="NVIDIA GeForce G310 接口" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_G310_(512M_和硕)_4.jpg" alt="NVIDIA GeForce G310 上面" /></p>
+
+<hr />
+
+<h3 id="nvidia-geforce-gtx-750">NVIDIA GeForce GTX 750</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心频率</td>
+      <td>1020 MHz</td>
+    </tr>
+    <tr>
+      <td>Turbo频率</td>
+      <td>1085 MHz</td>
+    </tr>
+    <tr>
+      <td>流处理单元</td>
+      <td>512 个</td>
+    </tr>
+    <tr>
+      <td>核心架构</td>
+      <td>Maxwell</td>
+    </tr>
+    <tr>
+      <td>GPU代号</td>
+      <td>GM107</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>28 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>55W</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>5 Gbps</td>
+    </tr>
+    <tr>
+      <td>内存类型</td>
+      <td>GDDR5</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>128 bit</td>
+    </tr>
+    <tr>
+      <td>最大显存</td>
+      <td>1024 MB</td>
+    </tr>
+    <tr>
+      <td>晶片编号</td>
+      <td>GM107-300-A2</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>1,870 million</td>
+    </tr>
+    <tr>
+      <td>代工厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>核心面积</td>
+      <td>148 mm²</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>64 KB (per SMM)</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>2 MB</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>建议电源</td>
+      <td>250 W</td>
+    </tr>
+    <tr>
+      <td>公版接口</td>
+      <td>2x DVI, 1x mini-HDMI</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 3.0 x16</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>17.36 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>34.72 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>80.19 GB/s</td>
+    </tr>
+    <tr>
+      <td>FP32</td>
+      <td>1,111 GFLOPS</td>
+    </tr>
+    <tr>
+      <td>FP64</td>
+      <td>34.72 GFLOPS (1:32)</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>12 (11_0)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>CUDA</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Shader model</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2014年2月18日</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_1.jpg" alt="NVIDIA GeForce GTX 750 正面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_2.jpg" alt="NVIDIA GeForce GTX 750 背面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_3.jpg" alt="NVIDIA GeForce GTX 750 接口" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_750_(1G_微星)_4.jpg" alt="NVIDIA GeForce GTX 750 上面" /></p>
+
+<hr />
+
+<h3 id="nvidia-geforce-gtx-760">NVIDIA GeForce GTX 760</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心频率</td>
+      <td>980 MHz</td>
+    </tr>
+    <tr>
+      <td>Turbo频率</td>
+      <td>1032 MHz</td>
+    </tr>
+    <tr>
+      <td>流处理单元</td>
+      <td>1152 个</td>
+    </tr>
+    <tr>
+      <td>核心架构</td>
+      <td>Kepler</td>
+    </tr>
+    <tr>
+      <td>GPU代号</td>
+      <td>GK104</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>28 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>170W</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>6 Gbps</td>
+    </tr>
+    <tr>
+      <td>内存类型</td>
+      <td>GDDR5</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>256 bit</td>
+    </tr>
+    <tr>
+      <td>最大显存</td>
+      <td>2 GB</td>
+    </tr>
+    <tr>
+      <td>晶片编号</td>
+      <td>GK104-225-A2</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>3,540 million</td>
+    </tr>
+    <tr>
+      <td>代工厂</td>
+      <td>TSMC</td>
+    </tr>
+    <tr>
+      <td>核心面积</td>
+      <td>294 mm²</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>16 KB (per SMX)</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>512 KB</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>建议电源</td>
+      <td>450 W</td>
+    </tr>
+    <tr>
+      <td>公版供电</td>
+      <td>2x 6-pin</td>
+    </tr>
+    <tr>
+      <td>公版接口</td>
+      <td>2x DVI, 1x HDMI, 1x DisplayPort</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 3.0 x16</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>24.77 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>99.07 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>192.3 GB/s</td>
+    </tr>
+    <tr>
+      <td>FP32</td>
+      <td>2.378 TFLOPS</td>
+    </tr>
+    <tr>
+      <td>FP64</td>
+      <td>99.07 GFLOPS (1:24)</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>12 (11_0)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>CUDA</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Shader model</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2013年6月25日</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_1.jpg" alt="NVIDIA GeForce GTX 760 正面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_2.jpg" alt="NVIDIA GeForce GTX 760 背面" />
+<img src="/images/gpus/NVIDIA/NVIDIA_GeForce_GTX_760_(2G_256Bit_DDR5_丽台)_3.jpg" alt="NVIDIA GeForce GTX 760 接口" /></p>
+
+<hr />
+
+<h3 id="nvidia-geforce-gtx-1050">NVIDIA GeForce GTX 1050</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>参数</th>
+      <th>数值</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>核心频率</td>
+      <td>1354 MHz</td>
+    </tr>
+    <tr>
+      <td>Turbo频率</td>
+      <td>1455 MHz</td>
+    </tr>
+    <tr>
+      <td>流处理单元</td>
+      <td>640 个</td>
+    </tr>
+    <tr>
+      <td>核心架构</td>
+      <td>Pascal</td>
+    </tr>
+    <tr>
+      <td>GPU代号</td>
+      <td>GP107</td>
+    </tr>
+    <tr>
+      <td>生产工艺</td>
+      <td>14 nm</td>
+    </tr>
+    <tr>
+      <td>TDP功耗</td>
+      <td>75W</td>
+    </tr>
+    <tr>
+      <td>内存频率</td>
+      <td>7 Gbps</td>
+    </tr>
+    <tr>
+      <td>内存类型</td>
+      <td>GDDR5</td>
+    </tr>
+    <tr>
+      <td>内存位宽</td>
+      <td>128 bit</td>
+    </tr>
+    <tr>
+      <td>最大显存</td>
+      <td>4 GB</td>
+    </tr>
+    <tr>
+      <td>晶片编号</td>
+      <td>GP107-300-A1</td>
+    </tr>
+    <tr>
+      <td>晶体管数量</td>
+      <td>3,300 million</td>
+    </tr>
+    <tr>
+      <td>代工厂</td>
+      <td>Samsung</td>
+    </tr>
+    <tr>
+      <td>核心面积</td>
+      <td>132 mm²</td>
+    </tr>
+    <tr>
+      <td>一级缓存</td>
+      <td>48 KB</td>
+    </tr>
+    <tr>
+      <td>二级缓存</td>
+      <td>1024 KB</td>
+    </tr>
+    <tr>
+      <td>光栅单元</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>纹理单元</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>SM count</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>建议电源</td>
+      <td>250 W</td>
+    </tr>
+    <tr>
+      <td>公版接口</td>
+      <td>1x DVI, 1x HDMI, 1x DisplayPort</td>
+    </tr>
+    <tr>
+      <td>总线接口</td>
+      <td>PCIe 3.0 x16</td>
+    </tr>
+    <tr>
+      <td>像素填充率</td>
+      <td>46.56 GPixel/s</td>
+    </tr>
+    <tr>
+      <td>纹理填充率</td>
+      <td>58.20 GTexel/s</td>
+    </tr>
+    <tr>
+      <td>显存带宽</td>
+      <td>112.1 GB/s</td>
+    </tr>
+    <tr>
+      <td>FP16</td>
+      <td>29.10 GFLOPS (1:64)</td>
+    </tr>
+    <tr>
+      <td>FP32</td>
+      <td>1.862 TFLOPS</td>
+    </tr>
+    <tr>
+      <td>FP64</td>
+      <td>58.20 GFLOPS (1:32)</td>
+    </tr>
+    <tr>
+      <td>DirectX</td>
+      <td>12 (12_1)</td>
+    </tr>
+    <tr>
+      <td>OpenGL</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td>OpenCL</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Vulkan</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>CUDA</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
+      <td>Shader model</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td>上市时间</td>
+      <td>2016年10月</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>【在用】
+</code></pre></div></div>
+
+<hr />
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_GPU.html" class="btn btn-default navbar-btn cursorNorm" role="button">GPU</a>
+        
+        
+        
+        <a href="tag_NVIDIA.html" class="btn btn-default navbar-btn cursorNorm" role="button">NVIDIA</a>
+        
+        
+        
+    </div>
+
+
+
+<div id="tcomment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
+<script>
+twikoo.init({
+  envId: 'https://comment.ihonux.com', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+
+<div></div>
+<script type="text/javascript" src="js/tctip-1.0.2.js"></script>
+<script type="text/javascript">
+  new tctip({
+    top: '20%',
+    button: {
+      id: 9,
+      type: 'dashang'
+    },
+    list: [
+      {
+        type: 'wechat',
+        qrImg: '/images/donate/weipayimg.png'
+      }, {
+        type: 'alipay',
+        qrImg: '/images/donate/alipayimg.png'
+      }
+    ]
+  }).init()
+</script>
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            <ul class="list-inline">
+                <li><a href="https://cpu.retromuseum.org/">Master</a></li>
+                <li><a href="https://chip.retromuseum.org/">Mirror</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/support.html">Support</a></li>
+                <li><a href="/contact.html">Feedback</a></li>
+            </ul>
+        <div>
+        <div class="col-lg-12 footer">
+        &copy;2025 Copyright 2022-2026 Honux. All rights reserved. <br />
+<span>Page last updated:</span> Aug 14, 2023<br/> Site last generated: Dec 24, 2025 <br />
+<!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
+
+        </div>
+    </div>
+</footer>
+
+<script async src="https://ackee.ihonux.com/tracker.js" data-ackee-server="https://ackee.ihonux.com" data-ackee-domain-id="cedf300a-2042-4169-a5c4-db53bcb80708" data-ackee-opts='{ "detailed": true }'></script>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
